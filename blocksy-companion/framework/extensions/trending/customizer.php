@@ -44,7 +44,7 @@ foreach ($all_post_types as $custom_post_type => $label) {
 		$taxonomies = get_object_taxonomies($custom_post_type);
 
 		if (count($taxonomies) > 0) {
-			$taxonomy = $taxonomies;
+			$taxonomy = array_slice($taxonomies, 0, 20);
 		} else {
 			$taxonomy = 'nonexistent';
 		}

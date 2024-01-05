@@ -159,9 +159,9 @@ const SingleCondition = ({ className = '', condition, onRemove, onChange }) => {
 						choices: allTaxonomies
 							.filter(
 								(taxonomy) =>
-									!(taxonomy?.post_types || []).includes(
-										'product'
-									)
+									!Object.values(
+										taxonomy?.post_types || []
+									).includes('product')
 							)
 							.map((taxonomy) => ({
 								key: taxonomy.id,

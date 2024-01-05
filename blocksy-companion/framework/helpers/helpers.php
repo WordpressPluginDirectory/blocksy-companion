@@ -22,10 +22,41 @@ function blc_site_has_feature($feature = 'base_pro') {
 	);
 }
 
+// https://developer.wordpress.org/reference/functions/is_ssl/
+function blc_maybe_is_ssl() {
+	// cloudflare
+	if (! empty($_SERVER['HTTP_CF_VISITOR'])) {
+		$cfo = json_decode($_SERVER['HTTP_CF_VISITOR']);
+
+		if (isset($cfo->scheme) && 'https' === $cfo->scheme) {
+			return true;
+		}
+	}
+
+	// other proxy
+	if (
+		! empty($_SERVER['HTTP_X_FORWARDED_PROTO'])
+		&&
+		'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']
+	) {
+		return true;
+	}
+
+	return function_exists('is_ssl') ? is_ssl() : false;
+}
+
+// Don't use protocol relative URL, it's an anti pattern.
+// https://www.paulirish.com/2010/the-protocol-relative-url/
 function blc_normalize_site_url($url) {
 	$parsed_url = parse_url($url);
 
-	$result = '//' . $parsed_url['host'];
+	$protocol = 'http';
+
+	if (blc_maybe_is_ssl()) {
+		$protocol .= 's';
+	}
+
+	$result = $protocol . '://' . $parsed_url['host'];
 
 	if (isset($parsed_url['port'])) {
 		$result = $result . ':' . $parsed_url['port'];
