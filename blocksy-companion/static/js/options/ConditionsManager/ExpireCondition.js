@@ -6,6 +6,7 @@ import {
 	createElement,
 } from '@wordpress/element'
 import classnames from 'classnames'
+import { __ } from 'ct-i18n'
 
 import {
 	DateTimePicker,
@@ -103,6 +104,37 @@ const ExpireCondition = ({ onChange, condition }) => {
 								new Date()
 							}
 							onChange={(date) => {
+								if (
+									currentTab === 'end' &&
+									new Date(date).getTime() <
+										(condition.payload.start
+											? new Date(
+													condition.payload.start
+											  ).getTime()
+											: new Date().getTime())
+								) {
+									date = condition.payload.start
+
+									alert(
+										__(
+											'The expiration date cannot be set earlier than the start date.',
+											'blocksy-companion'
+										)
+									)
+								}
+
+								if (
+									currentTab === 'start' &&
+									new Date(date).getTime() >
+										(condition.payload.end
+											? new Date(
+													condition.payload.end
+											  ).getTime()
+											: new Date().getTime())
+								) {
+									condition.payload.end = date
+								}
+
 								onChange({
 									...condition,
 									payload: {

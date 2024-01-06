@@ -134,6 +134,7 @@ $options = [
 											'h4' => 'H4',
 											'h5' => 'H5',
 											'h6' => 'H6',
+											'p' => 'p',
 											'span' => 'span',
 										]
 									),
@@ -444,7 +445,11 @@ $options = [
 
 										'var(--theme-heading-6-color, var(--theme-headings-color))' => [
 											'trending_block_label_tag' => 'h6'
-										]
+										],
+
+										'var(--theme-text-color)' => [
+											'trending_block_label_tag' => 'span|p'
+										],
 									]
 								],
 							],

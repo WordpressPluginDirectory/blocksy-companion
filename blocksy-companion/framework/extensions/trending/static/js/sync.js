@@ -12,11 +12,11 @@ ctEvents.on(
 
 			...typographyOption({
 				id: 'trendingBlockHeadingFont',
-				selector: '.ct-trending-block .ct-block-title',
+				selector: '.ct-trending-block .ct-module-title',
 			}),
 
 			trendingBlockHeadingFontColor: {
-				selector: '.ct-trending-block .ct-block-title',
+				selector: '.ct-trending-block .ct-module-title',
 				variable: 'theme-heading-color',
 				type: 'color',
 				responsive: true,
@@ -88,7 +88,7 @@ wp.customize('trending_block_visibility', (value) =>
 wp.customize('trending_block_label', (value) =>
 	value.bind((to) => {
 		const title = document.querySelector(
-			'.ct-trending-block .ct-block-title'
+			'.ct-trending-block .ct-module-title'
 		)
 
 		if (title) {

@@ -9,7 +9,7 @@ blocksy_output_font_css([
 	'css' => $css,
 	'tablet_css' => $tablet_css,
 	'mobile_css' => $mobile_css,
-	'selector' => '.ct-trending-block .ct-block-title',
+	'selector' => '.ct-trending-block .ct-module-title',
 ]);
 
 blocksy_output_colors([
@@ -22,7 +22,7 @@ blocksy_output_colors([
 	'mobile_css' => $mobile_css,
 	'variables' => [
 		'default' => [
-			'selector' => '.ct-trending-block .ct-block-title',
+			'selector' => '.ct-trending-block .ct-module-title',
 			'variable' => 'theme-heading-color'
 		],
 	],

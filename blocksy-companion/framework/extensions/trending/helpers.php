@@ -244,7 +244,7 @@ function blc_get_trending_block($result = null) {
 
 	<section <?php echo blocksy_attr_to_html($attr) ?>>
 		<div class="ct-container" <?php echo $data_page ?>>
-			<<?php echo $label_tag ?> class="ct-block-title">
+			<<?php echo $label_tag ?> class="ct-module-title">
 				<?php 
 					echo $trending_label;
 
