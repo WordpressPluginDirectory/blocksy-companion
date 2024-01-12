@@ -33,10 +33,6 @@
 		border-radius: var(--theme-border-radius);
 		background: var(--background-color, #fff);
 		box-shadow: var(--theme-box-shadow);
-		opacity: 0;
-		visibility: hidden;
-		transform: translate3d(0, 15px, 0);
-		transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
 
 		&[data-placement='left'] {
 			right: var(--theme-submenu-inline-offset, -20px);
@@ -87,16 +83,6 @@
 			width: 100%;
 			height: var(--dropdown-top-offset, 15px);
 			transform: translateY(-100%);
-		}
-	}
-
-	&:hover,
-	&:focus-within {
-		
-		> ul[data-placement] {
-			visibility: visible;
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
 		}
 	}
 }

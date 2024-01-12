@@ -417,7 +417,7 @@ $options = [
 								),
 								'type' => 'ct-slider',
 								'min' => 10,
-								'max' => 40,
+								'max' => 100,
 								'value' => 18,
 								'responsive' => true,
 								'divider' => 'top',

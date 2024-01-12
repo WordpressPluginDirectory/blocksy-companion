@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-12-19 15:49:58+0000\n"
+"PO-Revision-Date: 2024-01-09 15:00:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -522,7 +522,7 @@ msgstr ""
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:20
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:342
 msgid "Available Fonts"
-msgstr ""
+msgstr "Polices disponibles"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:164
 msgid "Please enter a valid Project ID to get all fonts."
@@ -5825,7 +5825,7 @@ msgstr "Remplacez la marque Blocksy par la vôtre. Masquez facilement les inform
 
 #: framework/premium/extensions/sidebars/form.php:20
 msgid "Available Sidebars/Widget Areas"
-msgstr ""
+msgstr "Zones de colonnes latérales/widgets disponibles"
 
 #: framework/premium/extensions/sidebars/form.php:16
 #: framework/premium/extensions/sidebars/static/js/main.js:66
