@@ -176,10 +176,31 @@ class ThemeIntegration {
 		});
 
 		add_filter('blocksy:general:ct-scripts-localizations', function ($data) {
+			if (! function_exists('get_plugin_data')){
+				require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+			}
+
+			$plugin_data = get_plugin_data(BLOCKSY__FILE__);
+
 			$data['dynamic_styles_selectors'][] = [
 				'selector' => '#account-modal',
-				'url' => blocksy_cdn_url(
-					BLOCKSY_URL . 'static/bundle/header-account-modal-lazy.min.css'
+				'url' => add_query_arg(
+					'ver',
+					$plugin_data['Version'],
+					blocksy_cdn_url(
+						BLOCKSY_URL . 'static/bundle/header-account-modal-lazy.min.css'
+					)
+				)
+			];
+
+			$data['dynamic_styles_selectors'][] = [
+				'selector' => '.ct-header-account',
+				'url' => add_query_arg(
+					'ver',
+					$plugin_data['Version'],
+					blocksy_cdn_url(
+						BLOCKSY_URL . 'static/bundle/header-account-dropdown-lazy.min.css'
+					)
 				)
 			];
 

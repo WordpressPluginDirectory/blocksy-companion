@@ -2,9 +2,6 @@
 
 namespace Blocksy;
 
-/*
- */
-
 class Capabilities {
 	private $accounts_cache = null;
 	private $plans = [];
@@ -13,12 +10,44 @@ class Capabilities {
 	private $module_slug = 'blocksy-companion';
 
 	public function __construct() {
-		$this->accounts_cache = get_option('fs_accounts');
+		// Drop current cache if it is broken.
+		$option_cache = wp_cache_get('fs_accounts', 'options');
+
+		if (
+			$option_cache
+			&&
+			strpos(
+				json_encode($option_cache),
+				'__PHP_Incomplete_Class'
+			) !== false
+		) {
+			wp_cache_delete('fs_accounts', 'options');
+		}
+
+		$this->accounts_cache = blc_get_option_from_db('fs_accounts');
 
 		$for_plans = $this->accounts_cache;
 
 		if (is_multisite()) {
-			$for_plans = get_network_option(null, 'fs_accounts');
+			// Drop current cache if it is broken.
+			$network_id = get_current_network_id();
+
+			$cache_key = "$network_id:fs_accounts";
+
+			$network_option_cache = wp_cache_get($cache_key, 'site-options');
+
+			if (
+				$network_option_cache
+				&&
+				strpos(
+					json_encode($network_option_cache),
+					'__PHP_Incomplete_Class'
+				) !== false
+			) {
+				wp_cache_delete($cache_key, 'site-options');
+			}
+
+			$for_plans = blc_get_network_option_from_db(null, 'fs_accounts');
 		}
 
 		if (

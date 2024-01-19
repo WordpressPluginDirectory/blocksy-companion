@@ -11,6 +11,51 @@ $layer_settings = [
 	'user_info' => [
 		'label' => __('User Info', 'blocksy-companion'),
 		'options' => [
+			'account_user_info_link' => [
+				'label' => __( 'Action Link', 'blocksy-companion' ),
+				'type' => 'ct-select',
+				'value' => 'none',
+				'view' => 'text',
+				'design' => 'block',
+				'choices' => blocksy_ordered_keys(
+					[
+						'none' => __( 'None', 'blocksy-companion' ),
+						'dashboard' => __( 'Dashboard', 'blocksy-companion' ),
+						'profile' => __( 'Profile', 'blocksy-companion' ),
+						'custom' => __( 'Custom', 'blocksy-companion' ),
+					]
+				),
+			],
+
+			blocksy_rand_md5() => [
+				'type' => 'ct-condition',
+				'condition' => [ 'account_user_info_link' => 'custom' ],
+				'options' => [
+
+					'account_user_info_custom_link' => [
+						'label' => __('Custom Link', 'blocksy-companion'),
+						'type' => 'text',
+						'value' => '#',
+						'design' => 'block',
+						'sync' => [
+							'shouldSkip' => true,
+						],
+					],
+
+				],
+			],
+
+			'account_user_info_additional_fields' => [
+				'label' => __('Additional User Info', 'blocksy-companion'),
+				'type' => 'text',
+				'value' => '{user_email}',
+				'design' => 'block',
+				'desc' => __('Available fields: {user_email}, {user_name}, {user_role}', 'blocksy-companion'),
+				'sync' => [
+					'shouldSkip' => true,
+				],
+			],
+
 			'has_account_dropdown_avatar' => [
 				'label' => __('User Avatar', 'blocksy-companion'),
 				'type' => 'ct-switch',
@@ -89,6 +134,31 @@ $layer_settings = [
 				'sync' => [
 					'shouldSkip' => true,
 				],
+			],
+		],
+	],
+
+	'menu' => [
+		'label' => __('Menu', 'blocksy-companion'),
+		'options' => [
+			'menu' => [
+				'label' => __('Select Menu', 'blocksy-companion'),
+				'type' => 'ct-select',
+				'value' => 'blocksy_location',
+				'view' => 'text',
+				'design' => 'inline',
+				'setting' => [ 'transport' => 'postMessage' ],
+				'placeholder' => __('Select menu...', 'blocksy-companion'),
+				'choices' => blocksy_ordered_keys(blocksy_get_menus_items()),
+				'desc' => sprintf(
+					// translators: placeholder here means the actual URL.
+					__( 'Manage your menus in the %sMenus screen%s.', 'blocksy-companion' ),
+					sprintf(
+						'<a href="%s" target="_blank">',
+						admin_url('/nav-menus.php')
+					),
+					'</a>'
+				),
 			],
 		],
 	],
@@ -211,14 +281,8 @@ $logout_link_options = [
 ];
 
 if (class_exists('WooCommerce')) {
-	$link_options['woocommerce_account'] = __(
-		'WooCommerce Account',
-		'blocksy-companion'
-	);
-	$logout_link_options['woocommerce_account'] = __(
-		'WooCommerce Account',
-		'blocksy-companion'
-	);
+	$link_options['woocommerce_account'] = __('WooCommerce Account', 'blocksy-companion');
+	$logout_link_options['woocommerce_account'] = __('WooCommerce Account', 'blocksy-companion');
 }
 
 $options = [
@@ -228,10 +292,7 @@ $options = [
 		'options' => [
 			blocksy_rand_md5() => [
 				'type' => 'ct-title',
-				'label' => __(
-					'Customizing: Logged in State',
-					'blocksy-companion'
-				),
+				'label' => __('Customizing: Logged in State', 'blocksy-companion'),
 			],
 		],
 	],
@@ -242,10 +303,7 @@ $options = [
 		'options' => [
 			blocksy_rand_md5() => [
 				'type' => 'ct-title',
-				'label' => __(
-					'Customizing: Logged out State',
-					'blocksy-companion'
-				),
+				'label' => __('Customizing: Logged out State', 'blocksy-companion'),
 			],
 		],
 	],
@@ -269,129 +327,14 @@ $options = [
 	],
 
 	blocksy_rand_md5() => [
-		'type' => 'ct-divider',
-	],
-
-	blocksy_rand_md5() => [
 		'title' => __('General', 'blocksy-companion'),
 		'type' => 'tab',
 		'options' => [
+
 			blocksy_rand_md5() => [
 				'type' => 'ct-condition',
 				'condition' => ['account_state' => 'in'],
 				'options' => [
-					'loggedin_interaction_type' => [
-						'label' => __('Account Action', 'blocksy-companion'),
-						'type' => 'ct-select',
-						'value' => 'dropdown',
-						'view' => 'text',
-						'design' => 'inline',
-						'choices' => blocksy_ordered_keys([
-							'dropdown' => __('Dropdown', 'blocksy-companion'),
-							'link' => __('Link', 'blocksy-companion'),
-						]),
-					],
-
-					blocksy_rand_md5() => [
-						'type' => 'ct-condition',
-						'condition' => [
-							'loggedin_interaction_type' => 'dropdown',
-						],
-						'options' => [
-							'dropdown_items' => [
-								'label' => __(
-									'Dropdown Items',
-									'blocksy-companion'
-								),
-								'type' => 'ct-layers',
-								'value' => [
-									[
-										'id' => 'user_info',
-										'enabled' => true,
-										'label' => __(
-											'User Info',
-											'blocksy-companion'
-										),
-									],
-
-									[
-										'id' => 'divider',
-										'enabled' => true,
-									],
-
-									[
-										'id' => 'dashboard',
-										'enabled' => true,
-										'label' => __(
-											'Dashboard',
-											'blocksy-companion'
-										),
-									],
-
-									[
-										'id' => 'profile',
-										'enabled' => true,
-										'label' => __(
-											'Edit Profile',
-											'blocksy-companion'
-										),
-									],
-
-									[
-										'id' => 'logout',
-										'enabled' => true,
-										'label' => __(
-											'Log Out',
-											'blocksy-companion'
-										),
-									],
-								],
-								'manageable' => true,
-								'settings' => apply_filters(
-									'blocksy-companion:pro:header:account:dropdown-items',
-									$layer_settings
-								),
-							],
-						],
-					],
-
-					blocksy_rand_md5() => [
-						'type' => 'ct-condition',
-						'condition' => ['loggedin_interaction_type' => 'link'],
-						'options' => [
-							'account_link' => [
-								'label' => __('Link To', 'blocksy-companion'),
-								'type' => 'ct-select',
-								'value' => 'profile',
-								'view' => 'text',
-								'design' => 'inline',
-								'choices' => blocksy_ordered_keys(
-									$link_options
-								),
-							],
-
-							blocksy_rand_md5() => [
-								'type' => 'ct-condition',
-								'condition' => ['account_link' => 'custom'],
-								'options' => [
-									'account_custom_page' => [
-										'label' => __(
-											'Custom Page Link',
-											'blocksy-companion'
-										),
-										'type' => 'text',
-										'design' => 'inline',
-										'disableRevertButton' => true,
-										'value' => '',
-									],
-								],
-							],
-						],
-					],
-
-					blocksy_rand_md5() => [
-						'type' => 'ct-divider',
-					],
 
 					'loggedin_media' => [
 						'label' => __('Account Image', 'blocksy-companion'),
@@ -411,10 +354,7 @@ $options = [
 						'condition' => ['loggedin_media' => 'avatar'],
 						'options' => [
 							'accountHeaderAvatarSize' => [
-								'label' => __(
-									'Avatar Size',
-									'blocksy-companion'
-								),
+								'label' => __('Avatar Size', 'blocksy-companion'),
 								'type' => 'ct-slider',
 								'min' => 10,
 								'max' => 100,
@@ -432,10 +372,7 @@ $options = [
 							blc_site_has_feature()
 								? [
 									'loggedin_icon_source' => [
-										'label' => __(
-											'Icon Source',
-											'blocksy-companion'
-										),
+										'label' => __('Icon Source', 'blocksy-companion'),
 										'type' => 'ct-radio',
 										'value' => 'default',
 										'view' => 'text',
@@ -579,14 +516,11 @@ $options = [
 						],
 					],
 
-					blocksy_rand_md5() => [
-						'type' => 'ct-divider',
-					],
-
 					'loggedin_account_label_visibility' => [
 						'label' => __('Label Visibility', 'blocksy-companion'),
 						'type' => 'ct-visibility',
 						'design' => 'block',
+						'divider' => 'top',
 						'allow_empty' => true,
 						'value' => [
 							'desktop' => false,
@@ -617,38 +551,23 @@ $options = [
 								'options' => [
 									'loggedin_label_position' => [
 										'type' => 'ct-radio',
-										'label' => __(
-											'Label Position',
-											'blocksy-companion'
-										),
+										'label' => __('Label Position', 'blocksy-companion'),
 										'value' => 'left',
 										'view' => 'text',
 										'design' => 'block',
 										'divider' => 'top',
 										'responsive' => ['tablet' => 'skip'],
 										'choices' => [
-											'left' => __(
-												'Left',
-												'blocksy-companion'
-											),
-											'right' => __(
-												'Right',
-												'blocksy-companion'
-											),
-											'bottom' => __(
-												'Bottom',
-												'blocksy-companion'
-											),
+											'left' => __('Left', 'blocksy-companion'),
+											'right' => __('Right', 'blocksy-companion'),
+											'bottom' => __('Bottom', 'blocksy-companion'),
 										],
 									],
 								],
 							],
 
 							'loggedin_text' => [
-								'label' => __(
-									'Label Type',
-									'blocksy-companion'
-								),
+								'label' => __('Label Type', 'blocksy-companion'),
 								'type' => 'ct-radio',
 								'view' => 'text',
 								'design' => 'block',
@@ -656,10 +575,7 @@ $options = [
 								'value' => 'label',
 								'choices' => [
 									'label' => __('Text', 'blocksy-companion'),
-									'username' => __(
-										'Name',
-										'blocksy-companion'
-									),
+									'username' => __('Name', 'blocksy-companion'),
 								],
 							],
 
@@ -690,6 +606,127 @@ $options = [
 							],
 						],
 					],
+
+					'loggedin_interaction_type' => [
+						'label' => __('Account Action', 'blocksy-companion'),
+						'type' => 'ct-radio',
+						'view' => 'text',
+						'design' => 'block',
+						'divider' => 'top:full',
+						'value' => 'dropdown',
+						'choices' => [
+							'dropdown' => __('Dropdown', 'blocksy-companion'),
+							'link' => __('Link', 'blocksy-companion'),
+						],
+					],
+
+					blocksy_rand_md5() => [
+						'type' => 'ct-condition',
+						'condition' => [
+							'loggedin_interaction_type' => 'dropdown',
+						],
+						'options' => [
+							'dropdown_items' => [
+								'label' => __(
+									'Dropdown Items',
+									'blocksy-companion'
+								),
+								'type' => 'ct-layers',
+								'value' => [
+									[
+										'id' => 'user_info',
+										'enabled' => true
+									],
+
+									[
+										'id' => 'divider',
+										'enabled' => true,
+									],
+
+									[
+										'id' => 'dashboard',
+										'enabled' => true,
+										'label' => __(
+											'Dashboard',
+											'blocksy-companion'
+										),
+									],
+
+									[
+										'id' => 'profile',
+										'enabled' => true,
+										'label' => __(
+											'Edit Profile',
+											'blocksy-companion'
+										),
+									],
+
+									[
+										'id' => 'logout',
+										'enabled' => true,
+										'label' => __(
+											'Log Out',
+											'blocksy-companion'
+										),
+									],
+								],
+								'manageable' => true,
+								'settings' => apply_filters(
+									'blocksy-companion:pro:header:account:dropdown-items',
+									$layer_settings
+								),
+							],
+						],
+					],
+
+					blocksy_rand_md5() => [
+						'type' => 'ct-condition',
+						'condition' => ['loggedin_interaction_type' => 'link'],
+						'options' => [
+							'account_link' => [
+								'label' => __('Link To', 'blocksy-companion'),
+								'type' => 'ct-select',
+								'value' => 'profile',
+								'view' => 'text',
+								'design' => 'inline',
+								'choices' => blocksy_ordered_keys(
+									$link_options
+								),
+							],
+
+							blocksy_rand_md5() => [
+								'type' => 'ct-condition',
+								'condition' => ['account_link' => 'custom'],
+								'options' => [
+									'account_custom_page' => [
+										'label' => __(
+											'Custom Page Link',
+											'blocksy-companion'
+										),
+										'type' => 'text',
+										'design' => 'inline',
+										'disableRevertButton' => true,
+										'value' => '',
+									],
+								],
+							],
+						],
+					],
+
+					'dropdown_items_type' => [
+						'label' => __('Items Hover Effect', 'blocksy-companion'),
+						'type' => 'ct-radio',
+						'value' => 'simple',
+						'view' => 'radio',
+						'design' => 'block',
+						'divider' => 'top',
+						'attr' => [ 'data-columns' => '2' ],
+						'setting' => [ 'transport' => 'postMessage' ],
+						'choices' => [
+							'simple' => __( 'Simple', 'blocksy-companion' ),
+							'boxed' => __( 'Boxed Color', 'blocksy-companion' ),
+						],
+					],
 				],
 			],
 
@@ -697,35 +734,6 @@ $options = [
 				'type' => 'ct-condition',
 				'condition' => ['account_state' => 'out'],
 				'options' => [
-					'login_account_action' => [
-						'label' => __('Account Action', 'blocksy-companion'),
-						'type' => 'ct-select',
-						'value' => 'modal',
-						'view' => 'text',
-						'design' => 'inline',
-						'choices' => blocksy_ordered_keys($logout_link_options),
-					],
-
-					blocksy_rand_md5() => [
-						'type' => 'ct-condition',
-						'condition' => ['login_account_action' => 'custom'],
-						'options' => [
-							'loggedout_account_custom_page' => [
-								'label' => __(
-									'Custom Page Link',
-									'blocksy-companion'
-								),
-								'type' => 'text',
-								'design' => 'inline',
-								'disableRevertButton' => true,
-								'value' => '',
-							],
-						],
-					],
-
-					blocksy_rand_md5() => [
-						'type' => 'ct-divider',
-					],
 
 					'logged_out_style' => [
 						'label' => __('Account Image', 'blocksy-companion'),
@@ -971,14 +979,11 @@ $options = [
 							],
 					],
 
-					blocksy_rand_md5() => [
-						'type' => 'ct-divider',
-					],
-
 					'loggedout_account_label_visibility' => [
 						'label' => __('Label Visibility', 'blocksy-companion'),
 						'type' => 'ct-visibility',
 						'design' => 'block',
+						'divider' => 'top',
 						'allow_empty' => true,
 						'value' => [
 							'desktop' => false,
@@ -1046,6 +1051,33 @@ $options = [
 								'divider' => 'top',
 								'disableRevertButton' => true,
 								'value' => __('Login', 'blocksy-companion'),
+							],
+						],
+					],
+
+					'login_account_action' => [
+						'label' => __('Account Action', 'blocksy-companion'),
+						'type' => 'ct-select',
+						'value' => 'modal',
+						'view' => 'text',
+						'design' => 'inline',
+						'divider' => 'top:full',
+						'choices' => blocksy_ordered_keys($logout_link_options),
+					],
+
+					blocksy_rand_md5() => [
+						'type' => 'ct-condition',
+						'condition' => ['login_account_action' => 'custom'],
+						'options' => [
+							'loggedout_account_custom_page' => [
+								'label' => __(
+									'Custom Page Link',
+									'blocksy-companion'
+								),
+								'type' => 'text',
+								'design' => 'inline',
+								'disableRevertButton' => true,
+								'value' => '',
 							],
 						],
 					],
@@ -1858,10 +1890,19 @@ $options = [
 						'label' => __('Dropdown Options', 'blocksy-companion'),
 					],
 
+					'header_account_dropdown_font' => [
+						'type' => 'ct-typography',
+						'label' => __('Font', 'blocksy-companion'),
+						'value' => blocksy_typography_default_values([
+							'size' => '14px',
+						]),
+					],
+
 					'header_account_dropdown_font_color' => [
 						'label' => __( 'Font Color', 'blocksy-companion' ),
 						'type'  => 'ct-color-picker',
 						'design' => 'inline',
+						'divider' => 'top',
 						'setting' => [ 'transport' => 'postMessage' ],
 						'value' => [
 							'default' => [
@@ -1869,10 +1910,14 @@ $options = [
 							],
 
 							'link_initial' => [
-								'color' => 'var(--theme-text-color)',
+								'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT'),
 							],
 
 							'link_hover' => [
+								'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT'),
+							],
+
+							'link_active' => [
 								'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT'),
 							],
 						],
@@ -1887,12 +1932,19 @@ $options = [
 							[
 								'title' => __( 'Link Initial', 'blocksy-companion' ),
 								'id' => 'link_initial',
+								'inherit' => 'self:default'
 							],
 
 							[
 								'title' => __( 'Link Hover', 'blocksy-companion' ),
 								'id' => 'link_hover',
 								'inherit' => 'var(--theme-link-hover-color)'
+							],
+
+							[
+								'title' => __( 'Link Active', 'blocksy-companion' ),
+								'id' => 'link_active',
+								'inherit' => 'self:link_hover'
 							],
 						],
 					],
@@ -1907,12 +1959,33 @@ $options = [
 							'default' => [
 								'color' => 'var(--theme-palette-color-8)',
 							],
+
+							'hover' => [
+								'color' => 'rgba(0, 0, 0, 0.05)',
+							],
+
+							'active' => [
+								'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT'),
+							],
 						],
 
 						'pickers' => [
 							[
 								'title' => __( 'Initial', 'blocksy-companion' ),
 								'id' => 'default',
+							],
+
+							[
+								'title' => __( 'Hover', 'blocksy-companion' ),
+								'id' => 'hover',
+								'condition' => [ 'dropdown_items_type' => 'boxed' ],
+							],
+
+							[
+								'title' => __( 'Active', 'blocksy-companion' ),
+								'id' => 'active',
+								'condition' => [ 'dropdown_items_type' => 'boxed' ],
+								'inherit' => 'self:hover'
 							],
 						],
 					],

@@ -1,5 +1,5 @@
 import ctEvents from 'ct-events'
-import { loadStyle, registerDynamicChunk } from 'blocksy-frontend'
+import { registerDynamicChunk } from 'blocksy-frontend'
 import { handleAccountModal, activateScreen } from './frontend/account'
 
 let maybeTemplate = ''
@@ -41,11 +41,6 @@ registerDynamicChunk('blocksy_account', {
 			panel = document.querySelector('.ct-drawer-canvas').lastChild
 		}
 
-		const maybeMatchingContainer =
-			ct_localizations.dynamic_styles_selectors.find((descriptor) =>
-				panel.matches(descriptor.selector)
-			)
-
 		const actuallyOpen = () => {
 			handleAccountModal(panel)
 
@@ -86,13 +81,7 @@ registerDynamicChunk('blocksy_account', {
 			})
 		}
 
-		if (!maybeMatchingContainer) {
-			actuallyOpen()
-		} else {
-			loadStyle(maybeMatchingContainer.url).then(() => {
-				actuallyOpen()
-			})
-		}
+		actuallyOpen()
 	},
 })
 

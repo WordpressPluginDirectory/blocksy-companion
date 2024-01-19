@@ -660,12 +660,31 @@ $loggedin_interaction_type = blocksy_akg( 'loggedin_interaction_type', $atts, 'd
 
 if ($loggedin_interaction_type === 'dropdown') {
 
+	blocksy_output_font_css([
+		'font_value' => blocksy_akg( 'header_account_dropdown_font', $atts,
+			blocksy_typography_default_values([
+				'size' => '14px',
+			])
+		),
+		'css' => $css,
+		'tablet_css' => $tablet_css,
+		'mobile_css' => $mobile_css,
+		'selector' => blocksy_assemble_selector(
+			blocksy_mutate_selector([
+				'selector' => $root_selector,
+				'operation' => 'suffix',
+				'to_add' => '.ct-header-account-dropdown'
+			])
+		),
+	]);
+
 	blocksy_output_colors([
 		'value' => blocksy_akg('header_account_dropdown_font_color', $atts),
 		'default' => [
 			'default' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
-			'link_initial' => [ 'color' => 'var(--theme-text-color)' ],
+			'link_initial' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
 			'link_hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+			'link_active' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
 		],
 		'css' => $css,
 		'tablet_css' => $tablet_css,
@@ -676,7 +695,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 					blocksy_mutate_selector([
 						'selector' => $root_selector,
 						'operation' => 'suffix',
-						'to_add' => '> ul'
+						'to_add' => '.ct-header-account-dropdown'
 					])
 				),
 				'variable' => 'theme-text-color'
@@ -687,7 +706,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 					blocksy_mutate_selector([
 						'selector' => $root_selector,
 						'operation' => 'suffix',
-						'to_add' => '> ul'
+						'to_add' => '.ct-header-account-dropdown'
 					])
 				),
 				'variable' => 'theme-link-initial-color'
@@ -698,10 +717,21 @@ if ($loggedin_interaction_type === 'dropdown') {
 					blocksy_mutate_selector([
 						'selector' => $root_selector,
 						'operation' => 'suffix',
-						'to_add' => '> ul'
+						'to_add' => '.ct-header-account-dropdown'
 					])
 				),
 				'variable' => 'theme-link-hover-color'
+			],
+
+			'link_active' => [
+				'selector' => blocksy_assemble_selector(
+					blocksy_mutate_selector([
+						'selector' => $root_selector,
+						'operation' => 'suffix',
+						'to_add' => '.ct-header-account-dropdown'
+					])
+				),
+				'variable' => 'theme-link-active-color'
 			],
 		],
 	]);
@@ -710,6 +740,8 @@ if ($loggedin_interaction_type === 'dropdown') {
 		'value' => blocksy_akg('header_account_dropdown_color', $atts),
 		'default' => [
 			'default' => [ 'color' => 'var(--theme-palette-color-8)' ],
+			'hover' => [ 'color' => 'rgba(0, 0, 0, 0.05)' ],
+			'active' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
 		],
 		'css' => $css,
 		'tablet_css' => $tablet_css,
@@ -720,10 +752,32 @@ if ($loggedin_interaction_type === 'dropdown') {
 					blocksy_mutate_selector([
 						'selector' => $root_selector,
 						'operation' => 'suffix',
-						'to_add' => '> ul'
+						'to_add' => '.ct-header-account-dropdown'
 					])
 				),
-				'variable' => 'background-color'
+				'variable' => 'dropdown-background-color'
+			],
+
+			'hover' => [
+				'selector' => blocksy_assemble_selector(
+					blocksy_mutate_selector([
+						'selector' => $root_selector,
+						'operation' => 'suffix',
+						'to_add' => '.ct-header-account-dropdown'
+					])
+				),
+				'variable' => 'dropdown-items-background-hover-color'
+			],
+
+			'active' => [
+				'selector' => blocksy_assemble_selector(
+					blocksy_mutate_selector([
+						'selector' => $root_selector,
+						'operation' => 'suffix',
+						'to_add' => '.ct-header-account-dropdown'
+					])
+				),
+				'variable' => 'dropdown-items-background-active-color'
 			],
 		],
 		'responsive' => true
@@ -735,7 +789,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 			blocksy_mutate_selector([
 				'selector' => $root_selector,
 				'operation' => 'suffix',
-				'to_add' => '> ul'
+				'to_add' => '.ct-header-account-dropdown'
 			])
 		),
 		'variableName' => 'theme-border',
@@ -757,7 +811,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 			blocksy_mutate_selector([
 				'selector' => $root_selector,
 				'operation' => 'suffix',
-				'to_add' => '> ul'
+				'to_add' => '.ct-header-account-dropdown'
 			])
 		),
 		'value' => blocksy_akg('header_account_dropdown_shadow', $atts, blocksy_box_shadow_value([
@@ -782,7 +836,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 			blocksy_mutate_selector([
 				'selector' => $root_selector,
 				'operation' => 'suffix',
-				'to_add' => '> ul'
+				'to_add' => '.ct-header-account-dropdown'
 			])
 		),
 		'property' => 'theme-border-radius',
