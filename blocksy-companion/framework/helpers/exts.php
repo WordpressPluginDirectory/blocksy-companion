@@ -330,3 +330,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 
 	return $data[$ext];
 }
+
+function blc_get_ext($id, $args = []) {
+	return \Blocksy\Plugin::instance()->extensions->get($id, $args);
+}

@@ -69,10 +69,6 @@ function blc_normalize_site_url($url) {
 	return $result;
 }
 
-function blc_get_ext($id, $args = []) {
-	return \Blocksy\Plugin::instance()->extensions->get($id, $args);
-}
-
 if (! function_exists('blc_load_xml_file')) {
 	function blc_load_xml_file($url, $useragent = '') {
 		set_time_limit(300);
