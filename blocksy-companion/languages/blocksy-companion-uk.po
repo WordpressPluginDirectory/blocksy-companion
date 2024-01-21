@@ -6653,7 +6653,7 @@ msgstr "Популярне від"
 
 #: framework/extensions/trending/customizer.php:204
 msgid "Separate posts ID by comma. How to find the %spost ID%s."
-msgstr "Відокремте ID дописів комами. Як ��найти %sID допису%s."
+msgstr "Відокремте ID дописів комами. Як знайти %sID допису%s."
 
 #: framework/extensions/trending/customizer.php:200
 msgid "Posts ID"
