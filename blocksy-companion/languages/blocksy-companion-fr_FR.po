@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-09 15:00:38+0000\n"
+"PO-Revision-Date: 2024-01-25 08:43:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1502,12 +1502,12 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:649
 msgid "Upload Image (Optional)"
-msgstr ""
+msgstr "Téléverser une image (facultatif)"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:621,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:44
 msgid "Review Title"
-msgstr ""
+msgstr "Titre de l'avis"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:559
 msgid "%s of %s found this review helpful"
@@ -1515,7 +1515,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:399
 msgid "%s%% of custommers recommend this product"
-msgstr ""
+msgstr "%s%% des clients recommandent ce produit"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:333
 msgid "Stars"

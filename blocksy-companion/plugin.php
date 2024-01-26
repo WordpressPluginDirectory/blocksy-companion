@@ -183,6 +183,10 @@ class Plugin {
 	}
 
 	public function check_if_blocksy_is_activated() {
+		if (defined('WP_CLI') && WP_CLI) {
+			return false;
+		}
+
 		if ($this->is_blocksy === '__NOT_SET__') {
 			$theme = wp_get_theme(get_template());
 

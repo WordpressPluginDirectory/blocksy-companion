@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-27 16:05:37+0000\n"
+"PO-Revision-Date: 2024-01-25 08:42:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,31 +33,31 @@ msgstr ""
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "Kun ukedager"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Kun helger"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Hver dag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:27
 msgid "Sun"
-msgstr ""
+msgstr "Søn"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:26
 msgid "Sat"
-msgstr ""
+msgstr "Lør"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:25
 msgid "Fri"
-msgstr ""
+msgstr "Fre"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:24
 msgid "Thu"
-msgstr ""
+msgstr "Tor"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:234
 msgid "Stop Time"
@@ -65,11 +65,11 @@ msgstr ""
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:23
 msgid "Wed"
-msgstr ""
+msgstr "Ons"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:22
 msgid "Tue"
-msgstr ""
+msgstr "Tir"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:211
 msgid "Start Time"
@@ -77,39 +77,39 @@ msgstr ""
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:21
 msgid "Mon"
-msgstr ""
+msgstr "Man"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:179
 msgid "Sunday"
-msgstr ""
+msgstr "Søndag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:174
 msgid "Saturday"
-msgstr ""
+msgstr "Lørdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
-msgstr ""
+msgstr "Fredag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Torsdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Onsdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Tirsdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:149
 msgid "Monday"
-msgstr ""
+msgstr "Mandag"
 
 #: static/js/options/ConditionsManager/PostIdPicker.js:78
 msgid "Select product"
-msgstr ""
+msgstr "Velg produkt"
 
 #: static/js/options/ConditionsManager.js:197
 msgid "Advanced Mode"
@@ -121,11 +121,11 @@ msgstr ""
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:330
 msgid "Manage"
-msgstr ""
+msgstr "Organiser"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:300
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentasjon"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:60
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:18
 msgid "Professional"
-msgstr ""
+msgstr "Profesjonell"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:17
 msgid "Personal"
@@ -177,7 +177,7 @@ msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:117
 msgid "Compare Plans"
-msgstr ""
+msgstr "Sammenligne planer"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:11
 msgid "Free"
@@ -193,7 +193,7 @@ msgstr ""
 
 #: static/js/dashboard/VersionMismatch.js:41
 msgid "Update Now"
-msgstr ""
+msgstr "Oppdater nå"
 
 #: static/js/dashboard/VersionMismatch.js:29
 msgid "In order to take full advantage of all features it has to offer - please install and activate the latest versions of both Blocksy theme and Blocksy Companion plugin."
@@ -522,7 +522,7 @@ msgstr ""
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:20
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:342
 msgid "Available Fonts"
-msgstr ""
+msgstr "Tilgjengelige Fonter"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:164
 msgid "Please enter a valid Project ID to get all fonts."
@@ -2124,7 +2124,7 @@ msgstr ""
 #: framework/features/conditions/rules/basic.php:6,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/options.php:12
 msgid "All Products"
-msgstr ""
+msgstr "Alle Produkter"
 
 #: framework/extensions/newsletter-subscribe/providers/demo.php:16
 msgid "Demo List"
@@ -2323,7 +2323,7 @@ msgstr ""
 
 #: framework/helpers/exts.php:230
 msgid "Advanced Gallery"
-msgstr ""
+msgstr "Avansert Galleri"
 
 #: framework/helpers/exts.php:223
 msgid "Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection."
@@ -2446,7 +2446,7 @@ msgstr ""
 
 #: framework/premium/static/js/options/IconPicker/Modal.js:135
 msgid "All Icons"
-msgstr ""
+msgstr "Alle Ikoner"
 
 #: framework/premium/static/js/options/IconPicker/CustomIcon.js:22
 msgid "Click to upload"
@@ -3091,7 +3091,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/admin-ui.php:252
 msgid "All types"
-msgstr ""
+msgstr "Alle typer"
 
 #: framework/features/header/header-options.php:84
 msgid "Offset"
@@ -4618,7 +4618,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:30
 msgid "All Users"
-msgstr ""
+msgstr "Alle Brukere"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:29
 msgid "Logged Users"
@@ -4654,7 +4654,7 @@ msgstr ""
 #: framework/premium/extensions/post-types-extra/features/filtering/helpers.php:173,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:181
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: framework/helpers/exts.php:90,
 #: framework/premium/extensions/post-types-extra/features/read-time/estimated-read-time.php:11,

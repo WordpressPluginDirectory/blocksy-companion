@@ -4872,7 +4872,7 @@ msgstr "Ссылка на страницу"
 #: framework/features/header/items/account/options.php:284,
 #: framework/features/header/items/account/options.php:701
 msgid "Account Action"
-msgstr "Действие проф��ля"
+msgstr "Действие ��рофиля"
 
 #: framework/features/header/items/account/options.php:266
 msgid "Logged Out Options"
@@ -6704,7 +6704,7 @@ msgstr "Товары"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных за ук��занный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных з�� указанный период времени."
 
 #: framework/extensions/trending/customizer.php:106
 msgid "Trending Posts"
@@ -7106,7 +7106,7 @@ msgstr "Цвет описания"
 #: framework/extensions/newsletter-subscribe/customizer.php:153,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:146
 msgid "Title Color"
-msgstr "Цвет з��головка"
+msgstr "Цв��т заголовка"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:140,
 #: framework/extensions/trending/customizer.php:281,
