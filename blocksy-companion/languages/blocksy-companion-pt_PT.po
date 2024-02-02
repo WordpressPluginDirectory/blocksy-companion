@@ -3890,7 +3890,7 @@ msgstr "Pode carregar uma imagem ou inserir uma ligação para uma imagem alojad
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:494
 msgid "Gutenberg Options Panel Icon URL"
-msgstr "URL do ícone do painel de opções do Gutenberg"
+msgstr "URL do ícone do painel de op��ões do Gutenberg"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:485
 msgid "You can insert the link to a self hosted image or upload one. The recommended image size is 18px wide by 18px tall."

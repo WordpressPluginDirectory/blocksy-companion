@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-25 08:43:08+0000\n"
+"PO-Revision-Date: 2024-01-25 22:12:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -233,7 +233,7 @@ msgstr "Modèle de maintenance"
 
 #: framework/premium/static/js/hooks/CreateHook.js:156
 msgid "Nothing Found Template"
-msgstr ""
+msgstr "Modèle Aucun résultat"
 
 #: framework/premium/static/js/blocks/ContentBlock.js:26
 msgid "Insert a specific Content Block anywhere on the site."
@@ -1996,7 +1996,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/admin-ui.php:246
 msgid "Nothing Found"
-msgstr ""
+msgstr "Aucun résultat"
 
 #: framework/premium/extensions/woocommerce-extra/extension.php:338
 msgid "Cart Page"
@@ -2825,7 +2825,7 @@ msgstr "Nom du crochet"
 
 #: framework/premium/static/js/hooks/CreateHook.js:124
 msgid "Single Template"
-msgstr ""
+msgstr "Modèle unique"
 
 #: framework/premium/static/js/hooks/CreateHook.js:116
 msgid "Archive Template"
@@ -3692,7 +3692,7 @@ msgstr "Sélectionnez le type de modèle…"
 
 #: framework/premium/static/js/hooks/CreateHook.js:36
 msgid "Please select the type of your content block and place it in the location you want based on your display and user conditions."
-msgstr ""
+msgstr "Veuillez sélectionner le type de votre bloc de contenu et le placer à l’emplacement souhaité en fonction de votre affichage et vos conditions utilisateurs/utilisatrices."
 
 #: framework/premium/static/js/hooks/CreateHook.js:223
 msgid "Create Content Block"
@@ -6408,14 +6408,14 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:466,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:269
 msgid "Nothing found in Trash"
-msgstr "Rien n’a été trouvé dans la corbeille"
+msgstr "Aucun résultat dans la corbeille"
 
 #: framework/premium/features/content-blocks.php:287,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:110,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:465,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:268
 msgid "Nothing found"
-msgstr "Rien n’a été trouvé"
+msgstr "Aucun résultat"
 
 #: framework/premium/features/content-blocks.php:286
 msgid "Search Content Blocks"

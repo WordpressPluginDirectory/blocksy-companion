@@ -3147,7 +3147,7 @@ msgstr "Текст кнопки отказа"
 
 #: framework/extensions/cookies-consent/customizer.php:76
 msgid "Accept Button text"
-msgstr "Текст кнопки подтверждения"
+msgstr "Текст кнопки подтв��рждения"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/extensions/cookies-consent/config.php:5,
@@ -3494,7 +3494,7 @@ msgstr "Выберите, какой набор настроек вы хотит
 
 #: static/js/options/CustomizerOptionsManager.js:390
 msgid "Export Settings"
-msgstr "Параметры экспорта"
+msgstr "Параметры экс��орта"
 
 #: static/js/options/CustomizerOptionsManager.js:376
 msgid "Yes, I am sure"
@@ -4872,7 +4872,7 @@ msgstr "Ссылка на страницу"
 #: framework/features/header/items/account/options.php:284,
 #: framework/features/header/items/account/options.php:701
 msgid "Account Action"
-msgstr "Действие ��рофиля"
+msgstr "Действие профиля"
 
 #: framework/features/header/items/account/options.php:266
 msgid "Logged Out Options"
@@ -6704,7 +6704,7 @@ msgstr "Товары"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных з�� указанный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных за указанный период времени."
 
 #: framework/extensions/trending/customizer.php:106
 msgid "Trending Posts"
@@ -7106,7 +7106,7 @@ msgstr "Цвет описания"
 #: framework/extensions/newsletter-subscribe/customizer.php:153,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:146
 msgid "Title Color"
-msgstr "Цв��т заголовка"
+msgstr "Цвет заголовка"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:140,
 #: framework/extensions/trending/customizer.php:281,

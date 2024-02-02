@@ -4,6 +4,35 @@ import { handleAccountModal, activateScreen } from './frontend/account'
 
 let maybeTemplate = ''
 
+const integrations = () => {
+	if (window.anr_onloadCallback) {
+		window.anr_onloadCallback()
+	}
+
+	if (window.turnstile) {
+		if (
+			document.querySelector('.ct-account-modal #loginform .cf-turnstile')
+		) {
+			turnstile.reset('.ct-account-modal #loginform .cf-turnstile')
+		}
+
+		if (
+			document.querySelector(
+				'.ct-account-modal #registerform .cf-turnstile'
+			)
+		) {
+			turnstile.reset('.ct-account-modal #registerform .cf-turnstile')
+			turnstile.remove(
+				'.ct-account-modal #registerform .sct-woocommerce-register'
+			)
+		}
+	}
+
+	if (window.Dokan_Vendor_Registration) {
+		window.Dokan_Vendor_Registration.init()
+	}
+}
+
 registerDynamicChunk('blocksy_account', {
 	mount: (el, { event }) => {
 		// Don't do anything if there's a panel opened already.
@@ -48,13 +77,7 @@ registerDynamicChunk('blocksy_account', {
 				screen: el.dataset.view || 'login',
 			})
 
-			if (window.anr_onloadCallback) {
-				window.anr_onloadCallback()
-			}
-
-			if (window.Dokan_Vendor_Registration) {
-				window.Dokan_Vendor_Registration.init()
-			}
+			integrations()
 
 			ctEvents.trigger('ct:overlay:handle-click', {
 				e: event,
