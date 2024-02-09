@@ -115,7 +115,7 @@ $options = [
 						'forms_cookie_consent_content' => [
 							'label' => false,
 							'type' => 'wp-editor',
-							'value' => sprintf(
+							'value' => blc_safe_sprintf(
 								__('I accept the %sPrivacy Policy%s*', 'blocksy-companion'),
 								'<a href="' . get_privacy_policy_url() . '">',
 								'</a>'

@@ -20,7 +20,7 @@ foreach ($custom_post_types as $custom_post_type) {
 	if ($filter === 'all' || $filter === 'singular') {
 		$cpts[] = [
 			'id' => 'post_type_single_' . $custom_post_type,
-			'title' => sprintf(
+			'title' => blc_safe_sprintf(
 				__('%s Single', 'blocksy-companion'),
 				$post_type_object->labels->singular_name
 			)
@@ -30,7 +30,7 @@ foreach ($custom_post_types as $custom_post_type) {
 	if ($filter === 'all' || $filter === 'archive') {
 		$cpts[] = [
 			'id' => 'post_type_archive_' . $custom_post_type,
-			'title' => sprintf(
+			'title' => blc_safe_sprintf(
 				__('%s Archive', 'blocksy-companion'),
 				$post_type_object->labels->singular_name
 			)
@@ -43,7 +43,7 @@ foreach ($custom_post_types as $custom_post_type) {
 		foreach ($taxonomies as $single_taxonomy) {
 			$cpts[] = [
 				'id' => 'post_type_taxonomy_' . $single_taxonomy,
-				'title' => sprintf(
+				'title' => blc_safe_sprintf(
 					__('%s %s Taxonomy', 'blocksy-companion'),
 					$post_type_object->labels->singular_name,
 					get_taxonomy($single_taxonomy)->label

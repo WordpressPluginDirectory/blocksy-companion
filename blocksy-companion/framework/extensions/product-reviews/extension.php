@@ -612,7 +612,7 @@ class BlocksyExtensionProductReviews {
 	public function setup_meta_box() {
 		add_meta_box(
 			'blocksy_settings_meta_box',
-			sprintf(
+			blc_safe_sprintf(
 				// Translators: %s is the theme name.
 				__( '%s Settings', 'blocksy-companion' ),
 				__( 'Blocksy', 'blocksy-companion' )

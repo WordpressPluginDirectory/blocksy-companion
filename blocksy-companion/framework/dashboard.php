@@ -146,7 +146,7 @@ class Dashboard {
 					$is_network_upgrade_mode = ( fs_is_network_admin() && blc_fs()->is_network_upgrade_mode() );
 					$slug = blc_fs()->get_slug();
 					$is_gdpr_required = \FS_GDPR_Manager::instance()->is_required();
-					$hey_x_text = esc_html( sprintf( fs_text_x_inline( 'Hey %s,', 'greeting', 'hey-x', $slug ), $user_first_name ) );
+					$hey_x_text = esc_html( blc_safe_sprintf( fs_text_x_inline( 'Hey %s,', 'greeting', 'hey-x', $slug ), $user_first_name ) );
 
 					$default_optin_message = $is_gdpr_required ?
 						fs_text_inline( 'Never miss an important update - opt in to our security & feature updates notifications, educational content, offers, and non-sensitive diagnostic tracking with %4$s. If you skip this, that\'s okay! %1$s will still work just fine.', 'connect-message_on-update', $slug ) :
@@ -159,7 +159,7 @@ class Dashboard {
 						/* translators: %s: name (e.g. Hey John,) */
 						'<span>' . $hey_x_text . '</span>'
 					) .
-					sprintf(
+					blc_safe_sprintf(
 						esc_html( $default_optin_message ),
 						'<b>' . esc_html( blc_fs()->get_plugin_name() ) . '</b>',
 						'<b>' . $user_login . '</b>',

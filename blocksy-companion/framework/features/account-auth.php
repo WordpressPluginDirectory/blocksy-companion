@@ -83,7 +83,7 @@ class AccountAuth {
 					foreach ($notices['error'] as $notice) {
 						$errors->add(
 							'invalidcombo',
-							sprintf(
+							blc_safe_sprintf(
 								__('<strong>Error</strong>: %s'),
 								$notice['notice']
 							)
@@ -101,7 +101,7 @@ class AccountAuth {
 
 			$errors->add(
 				'confirm',
-				sprintf(
+				blc_safe_sprintf(
 					/* translators: 1: link open 2: link close */
 					__(
 						'Check your email for the confirmation link, then visit the %slogin page%s.',
@@ -222,7 +222,7 @@ class AccountAuth {
 			$errors = new \WP_Error();
 
 			if ($this->get_registration_strategy() === 'woocommerce') {
-				$error_message = sprintf(
+				$error_message = blc_safe_sprintf(
 					__(
 						/* translators: 1: link open 2: link close */
 						'Your account was created successfully. Your login details have been sent to your email address. Please visit the %1$slogin page%2$s.',
@@ -233,7 +233,7 @@ class AccountAuth {
 				);
 
 				if ('yes' === get_option('woocommerce_registration_generate_password')) {
-					$error_message = sprintf(
+					$error_message = blc_safe_sprintf(
 						/* translators: 1: link open 2: link close */
 						__(
 							'Your account was created successfully and a password has been sent to your email address. Please visit the %1$slogin page%2$s.',
@@ -248,7 +248,7 @@ class AccountAuth {
 			} else {
 				$errors->add(
 					'registered',
-					sprintf(
+					blc_safe_sprintf(
 						/* translators: 1: link open 2: link close */
 						__(
 							'Registration complete. Please check your email, then visit the %1$slogin page%2$s.',

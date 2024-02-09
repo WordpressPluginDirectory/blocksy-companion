@@ -119,7 +119,7 @@ $options = [
 									'value' => __( 'Trending now', 'blocksy-companion' ),
 									'sync' => 'live',
 								],
-	
+
 								'trending_block_label_tag' => [
 									'label' => __( 'Module Title Tag', 'blocksy-companion' ),
 									'type' => 'ct-select',
@@ -262,7 +262,7 @@ $options = [
 										'label' => __( 'Posts ID', 'blocksy-companion' ),
 										'type' => 'text',
 										'design' => 'inline',
-										'desc' => sprintf(
+										'desc' => blc_safe_sprintf(
 											__('Separate posts ID by comma. How to find the %spost ID%s.', 'blocksy-companion'),
 											'<a href="https://www.wpbeginner.com/beginners-guide/how-to-find-post-category-tag-comments-or-user-id-in-wordpress/" target="_blank">',
 											'</a>'

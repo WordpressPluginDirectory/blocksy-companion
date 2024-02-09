@@ -90,7 +90,9 @@ const useExtsStatus = () => {
 	}
 
 	useEffect(() => {
-		syncExts({ verbose: !exts_status_cache })
+		if (!exts_status_cache) {
+			syncExts({ verbose: true })
+		}
 
 		const cb = () => {
 			syncExts()

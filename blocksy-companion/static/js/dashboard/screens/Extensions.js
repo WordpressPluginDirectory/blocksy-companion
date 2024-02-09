@@ -44,7 +44,7 @@ const Extensions = ({ navigate }) => {
 							<animated.p
 								style={props}
 								className="ct-loading-text">
-								
+
 								<svg width="16" height="16" viewBox="0 0 100 100">
 
 									<g transform="translate(50,50)">

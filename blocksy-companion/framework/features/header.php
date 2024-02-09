@@ -565,6 +565,20 @@ class HeaderAdditions {
 
 		$atts = $render->get_item_data_for('account');
 
+		$account_user_visibility = blocksy_akg('account_user_visibility', $atts, [
+			'logged_in' => true,
+			'logged_out' => true,
+		]);
+		
+		if (
+			! $account_user_visibility['logged_out']
+			&&
+			! is_user_logged_in()
+		) {
+			$this->has_account_modal = false;
+			return false;
+		}
+
 		if (blocksy_akg('login_account_action', $atts, 'modal') !== 'modal') {
 			$this->has_account_modal = false;
 			return false;

@@ -42,6 +42,12 @@ function blc_maybe_is_ssl() {
 		return true;
 	}
 
+	// is_ssl() sometimes returns false when it should return true,
+	// for example updates.
+	if (strpos(strtolower(get_site_url()), 'https://') === 0) {
+		return true;
+	}
+
 	return function_exists('is_ssl') ? is_ssl() : false;
 }
 
@@ -192,4 +198,37 @@ function blc_get_network_option_from_db($network_id, $option, $default = '') {
 	}
 
 	return $default;
+}
+
+function blc_safe_sprintf($format, ...$args) {
+	$result = $format;
+
+	$is_error = false;
+
+	// vsprintf() triggers a warning on PHP < 8 and throws an exception on PHP 8+
+	// We need to handle both.
+	// https://www.php.net/manual/en/function.vsprintf.php#refsect1-function.vsprintf-errors
+
+	set_error_handler(function () use (&$is_error) {
+		$is_error = true;
+	});
+
+	if (interface_exists('Throwable')) {
+		try {
+			$result = vsprintf($format, $args);
+		} catch (\Throwable $e) {
+			$is_error = true;
+		}
+	} else {
+		$result = vsprintf($format, $args);
+	}
+
+	restore_error_handler();
+
+	if ($is_error) {
+		// TODO: maybe cleanup format from %s, %d, etc
+		return $format;
+	}
+
+	return $result;
 }

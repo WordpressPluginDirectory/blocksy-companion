@@ -34,7 +34,7 @@ $options = [
 						// 'SoftwareApplication' => __( 'Software Application', 'blocksy-companion' ),
 					]
 				),
-				'desc' => sprintf(
+				'desc' => blc_safe_sprintf(
 					__(
 						'More info about review entity and how to choose the right one can be found %shere%s.',
 						'blocksy-companion'

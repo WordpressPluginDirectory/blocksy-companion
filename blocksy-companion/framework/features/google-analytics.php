@@ -101,7 +101,7 @@ class GoogleAnalytics {
 				'type' => 'text',
 				'design' => 'block',
 				'value' => '',
-				'desc' => sprintf(
+				'desc' => blc_safe_sprintf(
 					__(
 						'Link your Google Analytics 4 tracking ID. More info and instructions can be found %shere%s.',
 						'blocksy-companion'

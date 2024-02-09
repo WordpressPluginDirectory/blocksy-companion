@@ -60,7 +60,7 @@ function blocksy_ext_cookies_checkbox($prefix = '') {
 
 	$message = blocksy_get_theme_mod(
 		'forms_cookie_consent_content',
-		sprintf(
+		blc_safe_sprintf(
 			__('I accept the %sPrivacy Policy%s', 'blocksy-companion'),
 			'<a href="' . get_privacy_policy_url() . '">',
 			'</a>'
