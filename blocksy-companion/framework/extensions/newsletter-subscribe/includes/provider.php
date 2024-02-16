@@ -51,14 +51,16 @@ class Provider {
 			$option = [];
 		}
 
+		$free_providers = ['mailchimp', 'demo'];
+
 		if (
 			isset($option['provider'])
 			&&
-			$option['provider'] !== 'mailchimp'
+			! in_array($option['provider'], $free_providers)
 			&&
 			blc_get_capabilities()->get_plan() === 'free'
 		) {
-			$option['provider'] = 'mailchimp';
+			$option['provider'] = $free_providers[0];
 		}
 
 		return array_merge([

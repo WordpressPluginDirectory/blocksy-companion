@@ -4,29 +4,39 @@ import { handleAccountModal, activateScreen } from './frontend/account'
 
 let maybeTemplate = ''
 
+const resetTurnstile = () => {
+	if (!window.turnstile) {
+		return
+	}
+
+	if (document.querySelector('.ct-account-modal #loginform .cf-turnstile')) {
+		turnstile.reset('.ct-account-modal #loginform .cf-turnstile')
+	}
+
+	if (
+		document.querySelector(
+			'.ct-account-modal #lostpasswordform .cf-turnstile'
+		)
+	) {
+		turnstile.reset('.ct-account-modal #lostpasswordform .cf-turnstile')
+	}
+
+	if (
+		document.querySelector('.ct-account-modal #registerform .cf-turnstile')
+	) {
+		turnstile.reset('.ct-account-modal #registerform .cf-turnstile')
+		turnstile.remove(
+			'.ct-account-modal #registerform .sct-woocommerce-register'
+		)
+	}
+}
+
 const integrations = () => {
 	if (window.anr_onloadCallback) {
 		window.anr_onloadCallback()
 	}
 
-	if (window.turnstile) {
-		if (
-			document.querySelector('.ct-account-modal #loginform .cf-turnstile')
-		) {
-			turnstile.reset('.ct-account-modal #loginform .cf-turnstile')
-		}
-
-		if (
-			document.querySelector(
-				'.ct-account-modal #registerform .cf-turnstile'
-			)
-		) {
-			turnstile.reset('.ct-account-modal #registerform .cf-turnstile')
-			turnstile.remove(
-				'.ct-account-modal #registerform .sct-woocommerce-register'
-			)
-		}
-	}
+	resetTurnstile()
 
 	if (window.Dokan_Vendor_Registration) {
 		window.Dokan_Vendor_Registration.init()

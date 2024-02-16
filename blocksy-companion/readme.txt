@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.24
+Stable tag: 2.0.25
 
 == Description ==
 
@@ -23,6 +23,9 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+2.0.25: 2024-02-15
+- Improvement: General fixes and improvements
+
 2.0.24: 2024-02-08
 - Improvement: Don't output account modal for logged out users if account is disabled for them
 - Improvement: Harden the check for blc_maybe_is_ssl() function
