@@ -245,7 +245,21 @@ if ($loggedin_interaction_type === 'dropdown') {
 				$message = blocksy_akg('account_user_info_additional_fields', $dropdown_row, '{user_email}');
 				$message = str_replace('{user_email}', $user->user_email, $message);
 				$message = str_replace('{user_name}', $user->display_name, $message);
-				$message = str_replace('{user_role}', $user->roles[0], $message);
+				
+				$user_role = '';
+
+				if (! empty($user->roles)) {
+					$user_role = array_pop($user->roles);
+
+					global $wp_roles;
+					$all_roles = $wp_roles->roles; 
+
+					if (isset($all_roles[$user_role])) {
+						$user_role = $all_roles[$user_role]['name'];
+					}
+				}
+
+				$message = str_replace('{user_role}', $user_role, $message);
 
 				$additional_fields_html = blocksy_html_tag(
 					'small',
@@ -253,7 +267,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 						is_customize_preview() ? [
 							'data-email' => $user->user_email,
 							'data-name' => $user->display_name,
-							'data-role' => $user->roles[0],
+							'data-role' => $user_role
 						] : []
 					),
 					$message

@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.25
+Stable tag: 2.0.26
 
 == Description ==
 
@@ -23,6 +23,9 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+2.0.26: 2024-02-22
+- Fix: PHP Warning when using Multi-Vendor Marketplace Lite plugin and account header element
+
 2.0.25: 2024-02-15
 - Improvement: General fixes and improvements
 

@@ -39,6 +39,7 @@ const CurrentExtension = ({
 					extension: currentExtension,
 					onExtsSync,
 					setExtsStatus,
+					navigate,
 				}
 		  )
 		: defaultContentDescriptor

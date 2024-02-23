@@ -74,7 +74,7 @@ blocksy_output_background_css([
 		blocksy_background_default_value([
 			'backgroundColor' => [
 				'default' => [
-					'color' => '#ffffff'
+					'color' => 'var(--theme-palette-color-8)'
 				],
 			],
 		])
