@@ -249,7 +249,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 				$user_role = '';
 
 				if (! empty($user->roles)) {
-					$user_role = array_pop($user->roles);
+					$user_role = reset($user->roles);
 
 					global $wp_roles;
 					$all_roles = $wp_roles->roles; 

@@ -124,6 +124,7 @@ class ConditionsManager {
 				'specific',
 				'user-auth',
 				'date-time',
+				'localization'
 			];
 		}
 
@@ -132,6 +133,7 @@ class ConditionsManager {
 				'basic',
 				'user-auth',
 				'date-time',
+				'localization'
 			];
 		}
 

@@ -182,12 +182,6 @@ if ($args['view'] === 'slider') {
 		}
 	}
 
-	global $wp_query;
-
-	$previous_query = $wp_query;
-
-	$wp_query = $query;
-
 	echo '<div class="' . $shortcode_class . '" data-prefix="' . $prefix . '">';
 
 	if (
@@ -206,6 +200,12 @@ if ($args['view'] === 'slider') {
 			'use_children_tax_ids' => $args['filtering_use_children_tax_ids'] === 'yes'
 		]);
 	}
+
+	global $wp_query;
+
+	$previous_query = $wp_query;
+
+	$wp_query = $query;
 
 	echo blocksy_render_archive_cards([
 		'prefix' => $prefix,

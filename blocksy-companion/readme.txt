@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.26
+Stable tag: 2.0.28
 
 == Description ==
 
@@ -23,6 +23,14 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+2.0.28: 2024-02-29
+- Improvement: General fixes and improvements
+
+2.0.27: 2024-02-29
+- Improvement: Account header element - overflow issue when email address is very long
+- Improvement: Display proper label for language conditions
+- Improvement: Make sure the header account element is getting the correct user role
+
 2.0.26: 2024-02-22
 - Fix: PHP Warning when using Multi-Vendor Marketplace Lite plugin and account header element
 

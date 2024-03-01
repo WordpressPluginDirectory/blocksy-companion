@@ -212,7 +212,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 				[
 					'id' => 'compareview',
 					'title' => __('Compare View', 'blocksy-companion'),
-					'description' => __('Compare products with a clear and concise table system that givis your users a way to make a quick decision.', 'blocksy-companion'),
+					'description' => __('Compare products with a clear and concise table system that gives your users a way to make a quick decision.', 'blocksy-companion'),
 					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_compare_panel'),
 				],
