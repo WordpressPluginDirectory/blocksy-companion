@@ -53,41 +53,53 @@ class DemoInstall {
 	}
 
 	public function blocksy_demo_install_child_theme() {
+		$this->check_nonce();
+
 		$m = new DemoInstallChildThemeInstaller();
 		$m->import();
 	}
 
 	public function blocksy_demo_erase_content() {
+		$this->check_nonce();
 		$plugins = new DemoInstallContentEraser();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_install_widgets() {
+		$this->check_nonce();
 		$plugins = new DemoInstallWidgetsInstaller();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_install_options() {
+		$this->check_nonce();
+
 		$plugins = new DemoInstallOptionsInstaller();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_install_content() {
+		$this->check_nonce();
+
 		$plugins = new DemoInstallContentInstaller();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_activate_plugins() {
+		$this->check_nonce();
 		$plugins = new DemoInstallPluginsInstaller();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_fake_step() {
+		$this->check_nonce();
 		$plugins = new DemoInstallFakeContentEraser();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_register_current_demo() {
+		$this->check_nonce();
+
 		$this->start_streaming();
 
 		if (! isset($_REQUEST['demo_name']) || !$_REQUEST['demo_name']) {
@@ -119,6 +131,8 @@ class DemoInstall {
 	}
 
 	public function blocksy_demo_deregister_current_demo() {
+		$this->check_nonce();
+
 		$this->start_streaming();
 
 		update_option('blocksy_ext_demos_current_demo', null);
@@ -132,11 +146,15 @@ class DemoInstall {
 	}
 
 	public function blocksy_demo_deactivate_plugins() {
+		$this->check_nonce();
+
 		$plugins = new DemoInstallPluginsUninstaller();
 		$plugins->import();
 	}
 
 	public function blocksy_demo_install_finish() {
+		$this->check_nonce();
+
 		$finish = new DemoInstallFinalActions();
 		$finish->import();
 	}
@@ -230,6 +248,8 @@ class DemoInstall {
 	}
 
 	public function blocksy_demo_list() {
+		$this->check_nonce();
+
 		$demos = $this->fetch_all_demos();
 
 		if (! $demos) {
@@ -277,6 +297,8 @@ class DemoInstall {
 	}
 
 	public function blocksy_demo_export() {
+		$this->check_nonce();
+
 		if (! current_user_can('edit_theme_options')) {
 			wp_send_json_error();
 		}
@@ -331,7 +353,7 @@ class DemoInstall {
 		foreach ($this->ajax_actions as $action) {
 			add_action(
 				'wp_ajax_' . $action,
-				[ $this, $action ]
+				[$this, $action]
 			);
 		}
 	}
@@ -382,5 +404,11 @@ class DemoInstall {
 		// Extra padding.
 		echo ':' . str_repeat( ' ', 2048 ) . "\n\n";
 		flush();
+	}
+
+	public function check_nonce() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
 	}
 }

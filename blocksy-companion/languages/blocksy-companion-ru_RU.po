@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-19 16:15:49+0000\n"
+"PO-Revision-Date: 2024-03-06 20:24:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -951,7 +951,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:72
 msgid "Modal Trigger"
-msgstr ""
+msgstr "Триггер модала"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:33,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:80,
@@ -1884,7 +1884,7 @@ msgstr "Зациклить видео"
 
 #: framework/premium/features/media-video/options.php:97
 msgid "Automatically start video playback after the gallery is loaded."
-msgstr "Автоматическое воспроизведение видео после загрузки галереи."
+msgstr "Автоматическое воспроизведение видео после заг��узки галереи."
 
 #: framework/premium/features/media-video/options.php:94
 msgid "Autoplay Video"
@@ -2655,7 +2655,7 @@ msgstr "Показать зацепы WooCommerce"
 
 #: framework/premium/features/content-blocks/admin-ui.php:651
 msgid "Hide WooCommerce Hooks"
-msgstr "Спрятать зацепы WooCommerce"
+msgstr "Спрятать ��ацепы WooCommerce"
 
 #: framework/premium/features/content-blocks/admin-ui.php:643
 msgid "Show Theme Hooks"
@@ -3147,7 +3147,7 @@ msgstr "Текст кнопки отказа"
 
 #: framework/extensions/cookies-consent/customizer.php:76
 msgid "Accept Button text"
-msgstr "Текст кнопки подтв��рждения"
+msgstr "Текст кнопки подтверждения"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/extensions/cookies-consent/config.php:5,
@@ -3309,7 +3309,7 @@ msgstr "Необходимые плагины"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:122
 msgid "Child theme"
-msgstr "Дочерняя тема"
+msgstr "Дочерн��я тема"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:111
 msgid "Register demo"
@@ -3494,7 +3494,7 @@ msgstr "Выберите, какой набор настроек вы хотит
 
 #: static/js/options/CustomizerOptionsManager.js:390
 msgid "Export Settings"
-msgstr "Параметры экс��орта"
+msgstr "Параметры экспорта"
 
 #: static/js/options/CustomizerOptionsManager.js:376
 msgid "Yes, I am sure"
@@ -6704,7 +6704,7 @@ msgstr "Товары"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных за указанный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе колич��ства комментариев или отзывов, полученных за указанный период времени."
 
 #: framework/extensions/trending/customizer.php:106
 msgid "Trending Posts"
@@ -7641,7 +7641,7 @@ msgstr "Исходный"
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:240,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:269
 msgid "Font Color"
-msgstr "вет шрифта"
+msgstr "Цвет шрифта"
 
 #: framework/extensions/cookies-consent/customizer.php:142,
 #: framework/extensions/newsletter-subscribe/customizer.php:148,

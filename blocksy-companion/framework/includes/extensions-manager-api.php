@@ -5,7 +5,6 @@ namespace Blocksy;
 class ExtensionsManagerApi {
 	public function __construct() {
 		$this->attach_ajax_actions();
-
 	}
 
 	protected $ajax_actions = [
@@ -16,6 +15,10 @@ class ExtensionsManagerApi {
 	];
 
 	public function blocksy_flush_permalinks() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->check_capability('edit_theme_options');
 
 		flush_rewrite_rules();
@@ -24,6 +27,10 @@ class ExtensionsManagerApi {
 	}
 
 	public function blocksy_extensions_status() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->check_capability('edit_theme_options');
 
 		$manager = Plugin::instance()->extensions;
@@ -60,7 +67,12 @@ class ExtensionsManagerApi {
 	}
 
 	public function blocksy_extension_activate() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->check_capability('edit_theme_options');
+
 		$manager = Plugin::instance()->extensions;
 
 		$manager->activate_extension($this->get_extension_from_request());
@@ -69,6 +81,10 @@ class ExtensionsManagerApi {
 	}
 
 	public function blocksy_extension_deactivate() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->check_capability('edit_theme_options');
 
 		$manager = Plugin::instance()->extensions;

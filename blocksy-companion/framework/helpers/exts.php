@@ -174,13 +174,18 @@ function blc_exts_get_preliminary_config($ext = null) {
 			//  translators: This is a brand name. Preferably to not be translated
 			'name' => _x('Shop Extra', 'Extension Brand Name', 'blocksy-companion'),
 			'description' => __('Make the shopping experience better for your visitors! Add features such as Product Quick View, Wishlist functionality and a Floating Add to Cart button. Customize the single product gallery/slider and the layout.', 'blocksy-companion'),
+			'pro' => true,
+			'plans' => blc_get_capabilities()->get_features()['shop_extra'],
+			'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/woocommerce-general/',
+			// 'video' => 'https://www.youtube.com/watch?v=Je18wF6xfWo',
+			'icon' => '<svg with="16" height="16" viewBox="0 0 16 16"><path d="M15 .9H1L0 5.1v2.1h1.1V15h13.8V7.1H16v-2L15 .9zM8.7 2.3h1.9l.4 2.9v.7H8.7V2.3zM5.1 5.1l.4-2.9h1.9v3.5H5.1v-.6zm9.6.7h-2.4V5l-.4-2.7H14l.7 2.9v.6z"/></svg>',
 
 			'features' => [
 				[
 					'id' => 'floating-cart',
 					'title' => __('Floating Cart', 'blocksy-companion'),
 					'description' => __('Adds the “add to cart” actions to the product page as a floating bar if the product summary has disappeared from view.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/floating-cart/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:has_floating_bar'),
 				],
 
@@ -188,7 +193,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'quick-view',
 					'title' => __('Quick View', 'blocksy-companion'),
 					'description' => __('Preview the available products and let your users make quick and informative decisions about their purchase.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/quick-view/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_quick_view_panel'),
 				],
 
@@ -196,7 +201,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'filters',
 					'title' => __('Filters', 'blocksy-companion'),
 					'description' => __('Drill down the product list with new filtering widgets, an off canvas area for them and showing the active filters on the page.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/product-filters/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_posts_archives:has_woo_offcanvas_filter'),
 				],
 
@@ -204,8 +209,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'wishlist',
 					'title' => __('Wishlist', 'blocksy-companion'),
 					'description' => __('A set of features that lets you create easily your dream products wishlists and share them with friends and family.', 'blocksy-companion'),
-
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/product-wishlist/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_wishlist_panel'),
 				],
 
@@ -213,46 +217,15 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'compareview',
 					'title' => __('Compare View', 'blocksy-companion'),
 					'description' => __('Compare products with a clear and concise table system that gives your users a way to make a quick decision.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/compare-view/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_compare_panel'),
-				],
-
-				[
-					'id' => 'single-product-share-box',
-					'title' => __('Product Share Box', 'blocksy-companion'),
-					'description' => __('Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:woo_product_elements'),
-				],
-
-				[
-					'id' => 'advanced-gallery',
-					'title' => __('Advanced Gallery', 'blocksy-companion'),
-					'description' => __('Replace the standard product gallery with additional layouts which can showcase the photos as a grid or even a slider.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:woo_product_gallery'),
-				],
-
-				[
-					'id' => 'search-by-sku',
-					'title' => __('Search by SKU', 'blocksy-companion'),
-					'description' => __('Advanced searching for products by their SKU classification can be useful in cases of vast product catalogues.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-				],
-
-				[
-					'id' => 'free-shipping',
-					'title' => __('Free Shipping Bar', 'blocksy-companion'),
-					'description' => __('Add a visual cue that tells your visitors how much the cart total must be to be able to benefit of free shipping.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_free_shipping_panel'),
 				],
 
 				[
 					'id' => 'variation-swatches',
 					'title' => __('Variation Swatches', 'blocksy-companion'),
 					'description' => __('Catch the attention of your clients by showcasing your product variations as colour, image or button swatches.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/variation-swatches/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_variation_swatches_panel'),
 				],
 
@@ -260,17 +233,9 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'product-brands',
 					'title' => __('Product Brands', 'blocksy-companion'),
 					'description' => __('Categorise products by brands and show their logo in archive or single page so users could discover more about their makers.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/product-brands/',
 					'manage' => admin_url('edit-tags.php?taxonomy=product_brands&post_type=product'),
 					'require_refresh' => true,
-				],
-
-				[
-					'id' => 'product-affiliates',
-					'title' => __('Affiliate Product Links', 'blocksy-companion'),
-					'description' => __('Better management for affiliate products with a few simple options that strengthen the external integration with these.', 'blocksy-companion'),
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_product_affiliates_panel'),
 				],
 
 				[
@@ -278,8 +243,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'title' => __('Custom Tabs', 'blocksy-companion'),
 					'description' => __('Present additional information about your products by adding new custom tabs to the product information section.', 'blocksy-companion'),
 					'require_refresh' => true,
-
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/custom-tabs/',
 					'manage' => admin_url('edit.php?post_type=ct_product_tab'),
 				],
 
@@ -287,8 +251,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'product-size-guide',
 					'title' => __('Size Guide', 'blocksy-companion'),
 					'description' => __('Show a size chart guide so that your visitors can pick the right size for them when ordering a product.', 'blocksy-companion'),
-
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/size-guides/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_size_guide_panel'),
 					'require_refresh' => true,
 				],
@@ -297,8 +260,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'product-custom-thank-you-page',
 					'title' => __('Custom Thank You Pages', 'blocksy-companion'),
 					'description' => __('Create a customized order “Thank You” page for your customers, giving them a personalized experience.', 'blocksy-companion'),
-
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/custom-thank-you-pages/',
 					'manage' => admin_url('edit.php?post_type=ct_thank_you_page'),
 					'require_refresh' => true,
 				],
@@ -307,19 +269,49 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'product-advanced-reviews',
 					'title' => __('Advanced Reviews', 'blocksy-companion'),
 					'description' => __('Enhance your WooCommerce reviews with rich content, images and a thumbs up system that help your shoppers find the perfect product.', 'blocksy-companion'),
-
-					'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/advanced-woocommerce-product-reviews/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_product_advanced_reviews_panel'),
-				]
+				],
+
+				[
+					'id' => 'free-shipping',
+					'title' => __('Free Shipping Bar', 'blocksy-companion'),
+					'description' => __('Add a visual cue that tells your visitors how much the cart total must be to be able to benefit of free shipping.', 'blocksy-companion'),
+					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_free_shipping_panel'),
+				],
+
+				[
+					'id' => 'advanced-gallery',
+					'title' => __('Advanced Gallery', 'blocksy-companion'),
+					'description' => __('Replace the standard product gallery with additional layouts which can showcase the photos as a grid or even a slider.', 'blocksy-companion'),
+					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:woo_product_gallery'),
+				],
+
+				[
+					'id' => 'single-product-share-box',
+					'title' => __('Product Share Box', 'blocksy-companion'),
+					'description' => __('Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection.', 'blocksy-companion'),
+					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:woo_product_elements'),
+				],
+
+				[
+					'id' => 'search-by-sku',
+					'title' => __('Search by SKU', 'blocksy-companion'),
+					'description' => __('Advanced searching for products by their SKU classification can be useful in cases of vast product catalogues.', 'blocksy-companion'),
+					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+				],
+
+				[
+					'id' => 'product-affiliates',
+					'title' => __('Affiliate Product Links', 'blocksy-companion'),
+					'description' => __('Better management for affiliate products with a few simple options that strengthen the external integration with these.', 'blocksy-companion'),
+					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_product_affiliates_panel'),
+				],
 			],
-
-			'pro' => true,
-
-			'plans' => blc_get_capabilities()->get_features()['shop_extra'],
-
-			'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
-			// 'video' => 'https://www.youtube.com/watch?v=Je18wF6xfWo',
-			'icon' => '<svg with="16" height="16" viewBox="0 0 16 16"><path d="M15 .9H1L0 5.1v2.1h1.1V15h13.8V7.1H16v-2L15 .9zM8.7 2.3h1.9l.4 2.9v.7H8.7V2.3zM5.1 5.1l.4-2.9h1.9v3.5H5.1v-.6zm9.6.7h-2.4V5l-.4-2.7H14l.7 2.9v.6z"/></svg>'
 		],
 
 	];

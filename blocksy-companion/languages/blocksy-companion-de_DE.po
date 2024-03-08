@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-11-13 16:57:54+0000\n"
+"PO-Revision-Date: 2024-03-04 12:57:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,63 +13,63 @@ msgstr ""
 
 #: static/js/options/DisplayCondition.js:62
 msgid "Add Conditions"
-msgstr ""
+msgstr "Bedingung hinzufügen"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:430
 msgid "Display if query string is present in URL"
-msgstr ""
+msgstr "Anzeigen bei Vorhandensein einer Abfrage in der URL"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:398
 msgid "Display if cookie is present"
-msgstr ""
+msgstr "Anzeigen, wenn Cookie gesetzt"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:366
 msgid "Display based on referer domain"
-msgstr ""
+msgstr "Anzeige basiert auf der verweisenden Domain"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:315
 msgid "Select sub field"
-msgstr ""
+msgstr "Auswählen des Sub Felds"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "Nur wochentags"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Nur am Wochenende"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Täglich"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:27
 msgid "Sun"
-msgstr ""
+msgstr "Son"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:26
 msgid "Sat"
-msgstr ""
+msgstr "Sam"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:25
 msgid "Fri"
-msgstr ""
+msgstr "Fre"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:24
 msgid "Thu"
-msgstr ""
+msgstr "Don"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:234
 msgid "Stop Time"
-msgstr ""
+msgstr "Ende"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:23
 msgid "Wed"
-msgstr ""
+msgstr "Mit"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:22
 msgid "Tue"
-msgstr ""
+msgstr "Die"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:211
 msgid "Start Time"
@@ -406,49 +406,49 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:88
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:28
 msgid "Total"
-msgstr ""
+msgstr "Gesamt"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:85
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:43
 msgid "Cash on delivery"
-msgstr ""
+msgstr "Barzahlung bei Lieferung"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:83
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:42
 msgid "Payment method"
-msgstr ""
+msgstr "Bezahlmethode"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:79
 msgid "Free shipping"
-msgstr ""
+msgstr "Kostenloser Versand"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:77
 msgid "Shipping"
-msgstr ""
+msgstr "Versand"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:64
 msgid "Subtotal"
-msgstr ""
+msgstr "Zwischensumme"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:34
 msgid "Shipping address"
-msgstr ""
+msgstr "Versandadresse"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:10
 msgid "Billing address"
-msgstr ""
+msgstr "Rechnungsadresse"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:54
 msgid "Product Attributes"
-msgstr ""
+msgstr "Produkt Attribute"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:114
 msgid "Exclude speciffic taxonomy."
-msgstr ""
+msgstr "Taxonomy ausschließen"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:111
 msgid "Exclude %s"
-msgstr ""
+msgstr "%s ausschließen"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/Disabled.js:6
 msgid "Please install and activate the Blocksy Brands extension."
@@ -607,33 +607,33 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/filter-presenter.php:58
 msgid "Reset Filter"
-msgstr ""
+msgstr "Filter zurücksetzen"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:94
 msgid "Reset Filters"
-msgstr ""
+msgstr "Filter zurücksetzen"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:22
 msgid "Active Filters Label"
-msgstr ""
+msgstr "Aktive Filter Bezeichnungen"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:12,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:37,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:130
 msgid "Active Filters"
-msgstr ""
+msgstr "Aktive Filter"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:501
 msgid "In Stock"
-msgstr ""
+msgstr "Lagernd"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:630
 msgid "You don't have any products in your compare list yet."
-msgstr ""
+msgstr "Keine Produkte in der Vergleichsliste"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:807
 msgid "Dropdown Font"
-msgstr ""
+msgstr "Dropdown Schriftart"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:779
 msgid "Input Border Radius"
@@ -762,15 +762,15 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:231,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/render.php:116
 msgid "Out of Stock"
-msgstr ""
+msgstr "Ausverkauft"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:80
 msgid "Sorry, this product is unavailable. Please choose a different combination."
-msgstr ""
+msgstr "Dieses Produkt ist nicht verfügbar. Bitte eine andere Kombination wählen."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:79
 msgid "Please select some product options before adding this product to your cart."
-msgstr ""
+msgstr "Bevor dieses Produkt hinzugefügt werden kann, müssen Optionen selektiert werden."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:78
 msgid "Sorry, no products matched your selection. Please choose a different combination."
@@ -1052,7 +1052,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-cart/feature.php:157
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Warenkorb"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:48
 msgid "Automatically scroll page to top after user interaction."
@@ -1835,14 +1835,14 @@ msgstr ""
 #: framework/features/header/items/account/views/login.php:169,
 #: framework/features/header/items/account/views/login.php:301
 msgid "Log Out"
-msgstr ""
+msgstr "abmelden"
 
 #: framework/features/header/items/account/options.php:46,
 #: framework/features/header/items/account/options.php:334,
 #: framework/features/header/items/account/views/login.php:163,
 #: framework/features/header/items/account/views/login.php:279
 msgid "Edit Profile"
-msgstr ""
+msgstr "Account bearbeiten"
 
 #: framework/features/header/items/account/options.php:15
 msgid "User Avatar"
@@ -2133,7 +2133,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:116,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:144
 msgid "Your email *"
-msgstr ""
+msgstr "Deine E-Mail *"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:68
 msgid "Stacked"
@@ -2413,15 +2413,15 @@ msgstr ""
 
 #: framework/theme-integration.php:342
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: framework/theme-integration.php:329
 msgid "X (Twitter)"
-msgstr ""
+msgstr "X (Twitter)"
 
 #: framework/dashboard.php:399
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Fehlende Zugriffsberechtigungen für diese Seite"
 
 #: framework/dashboard.php:34,
 #: framework/features/header/items/account/options.php:28,
@@ -2430,7 +2430,7 @@ msgstr ""
 #: framework/features/header/items/account/views/login.php:157,
 #: framework/features/header/items/account/views/login.php:249
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
 #: static/js/dashboard/screens/DemoInstall/components/Error.js:18
 msgid "Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site."
@@ -5645,11 +5645,11 @@ msgstr "Teilen-Box"
 
 #: framework/premium/features/content-blocks/options/popup.php:627
 msgid "Close Icon Background"
-msgstr ""
+msgstr "Schließen Icon Hintergrundfarbe"
 
 #: framework/premium/features/content-blocks/options/popup.php:596
 msgid "Close Icon Color"
-msgstr ""
+msgstr "Schliessen Icon Farbe"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:277,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:76
@@ -6256,7 +6256,7 @@ msgstr "Die Registrierungsbestätigung wird Ihnen per E-Mail zugesandt"
 
 #: framework/features/header/modal/register.php:41
 msgid "Username"
-msgstr "Username"
+msgstr "Benutzername"
 
 #: framework/features/header/modal/lostpassword.php:13
 msgid "Get New Password"
@@ -6265,7 +6265,7 @@ msgstr "Neues Passwort anfordern"
 #: framework/features/header/modal/login.php:28,
 #: framework/features/header/modal/lostpassword.php:5
 msgid "Username or Email Address"
-msgstr "Username oder  E-Mail-Adresse"
+msgstr "Benutzername oder E-Mail-Adresse"
 
 #: framework/features/header/modal/login.php:69
 msgid "Log In"
@@ -6277,7 +6277,7 @@ msgstr "Passwort vergessen?"
 
 #: framework/features/header/modal/login.php:43
 msgid "Remember Me"
-msgstr "Erinnere dich an mich"
+msgstr "Anmeldung merken"
 
 #: framework/features/header/modal/login.php:33,
 #: framework/features/header/modal/register.php:53

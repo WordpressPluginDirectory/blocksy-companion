@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-25 22:12:03+0000\n"
+"PO-Revision-Date: 2024-03-06 15:40:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -277,7 +277,7 @@ msgstr "Afficher le libellé"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:472
 msgid "Show frame around the logo."
-msgstr ""
+msgstr "Afficher un cadre autour du logo."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:468
 msgid "Show Image Frame"
@@ -502,17 +502,17 @@ msgstr "Police variable"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:356
 msgid "Simple Font"
-msgstr ""
+msgstr "Police simple"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/PreloadTab.js:14
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/AdvancedTab.js:19
 msgid "Preload Variations"
-msgstr ""
+msgstr "Préchargement des variations"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:135
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:320
 msgid "Upload Font"
-msgstr ""
+msgstr "Téléverser une police"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:89
 msgid "Once you insert your %sProject ID%s and click the \"Fetch Fonts\" button, your fonts will become available in all theme’s typography options."
@@ -569,7 +569,7 @@ msgstr "Couleur du texte du bouton"
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:494,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:524
 msgid "Badge Color"
-msgstr ""
+msgstr "Couleur du badge"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:278,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:399
@@ -645,7 +645,7 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/search-input/options.php:132
 msgid "Taxonomy Filter"
-msgstr ""
+msgstr "Filtre de taxonomie"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:119
 msgid "Live Results Product Status"
@@ -672,7 +672,7 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/contacts/view.php:46
 msgid "Download"
-msgstr ""
+msgstr "Télécharger"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:367
 msgid "Link Icons"
@@ -762,11 +762,11 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:231,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/render.php:116
 msgid "Out of Stock"
-msgstr ""
+msgstr "En rupture de stock"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:80
 msgid "Sorry, this product is unavailable. Please choose a different combination."
-msgstr ""
+msgstr "Désolé, ce produit est indisponible. Veuillez choisir une combinaison différente."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:79
 msgid "Please select some product options before adding this product to your cart."
@@ -819,21 +819,21 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:16
 msgid "Size Guide Placement"
-msgstr ""
+msgstr "Emplacement du guide des tailles"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:5,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:259,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:265
 msgid "Size Guides"
-msgstr ""
+msgstr "Guides des tailles"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:123
 msgid "Progress Bar Color"
-msgstr ""
+msgstr "Couleur de la barre de progression"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:102
 msgid "Success Message"
-msgstr ""
+msgstr "Message de réussite"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:98
 msgid "You can use dynamic code tags such as {price} inside this option."
@@ -841,7 +841,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:88
 msgid "Default Message"
-msgstr ""
+msgstr "Message par défaut"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:84
 msgid "Include or exclude the discount code when calculating the shipping progress."
@@ -849,7 +849,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:74
 msgid "Discount Calculation"
-msgstr ""
+msgstr "Calcul de la remise"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:68
 msgid "The calculation method will be based on WooCommerce zones."
@@ -861,23 +861,23 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:52
 msgid "Goal Amount"
-msgstr ""
+msgstr "Montant de l’objectif"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:34
 msgid "Calculation Method"
-msgstr ""
+msgstr "Méthode de calcul"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:27
 msgid "Show In Mini Cart"
-msgstr ""
+msgstr "Afficher dans le mini panier"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:21
 msgid "Show In Checkout Page"
-msgstr ""
+msgstr "Afficher dans la page de commande"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:15
 msgid "Show In Cart Page"
-msgstr ""
+msgstr "Afficher dans la page panier"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:281,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90
@@ -978,7 +978,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:259,
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:291
 msgid "Hurry up! This sale ends in"
-msgstr ""
+msgstr "Dépêchez-vous ! Cette vente se termine dans"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:83,
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:245
@@ -4606,7 +4606,7 @@ msgstr "Vous n'avez encore aucun produit dans votre liste de souhaits."
 #: framework/premium/features/premium-header/items/language-switcher/options.php:284,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:313
 msgid "Hover/Active"
-msgstr ""
+msgstr "Survol/Actif"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:46
 msgid "The page you select here will display the wish list for your logged out users."
@@ -4664,11 +4664,11 @@ msgstr "Temps de lecture"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:1074
 msgid "%s %s Color"
-msgstr ""
+msgstr "Couleur %s %s"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:1063
 msgid "%s %s Font"
-msgstr ""
+msgstr "Police %s %s"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:576
 msgid "%s Field"
@@ -4676,7 +4676,7 @@ msgstr "Champ %s"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:564
 msgid "Fallback"
-msgstr ""
+msgstr "Alternative"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:515,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:60
@@ -5041,11 +5041,11 @@ msgstr "Avant l’en-tête numéro"
 #: framework/premium/features/content-blocks/options/hook.php:106
 #: framework/premium/static/js/options/MultipleLocationsSelect.js:90
 msgid "After Block Number"
-msgstr ""
+msgstr "Après le block numéro"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:988
 msgid "Custom Hook (%s)"
-msgstr ""
+msgstr "Crochet personnalisé (%s)"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:973
 msgid "Footer after"
@@ -5060,7 +5060,7 @@ msgstr ""
 #: framework/premium/features/content-blocks/hooks-manager.php:966,
 #: framework/premium/features/content-blocks/hooks-manager.php:974
 msgid "Footer"
-msgstr ""
+msgstr "Pied de page"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:957
 msgid "WP footer"
@@ -5107,7 +5107,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:916
 msgid "After checkout form"
-msgstr ""
+msgstr "Après le formulaire de commande"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:912
 msgid "Checkout after order review"
@@ -5195,7 +5195,7 @@ msgstr "Panier WooCommerce"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:828
 msgid "After Mini Cart"
-msgstr ""
+msgstr "Après le mini panier"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:823
 msgid "Widget Shopping Cart After Buttons"
@@ -5486,12 +5486,12 @@ msgstr "Après le contenu"
 #: framework/premium/features/content-blocks/hooks-manager.php:282,
 #: framework/premium/features/content-blocks/hooks-manager.php:469
 msgid "Bottom content"
-msgstr "Contenu du bas"
+msgstr "Bas du contenu"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:274,
 #: framework/premium/features/content-blocks/hooks-manager.php:447
 msgid "Top content"
-msgstr "Contenu du haut"
+msgstr "Haut du contenu"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:266
 msgid "Before content"
@@ -6463,11 +6463,11 @@ msgstr "Blocs de contenu"
 
 #: framework/premium/features/content-blocks/admin-ui.php:361
 msgid "Up"
-msgstr ""
+msgstr "Haut"
 
 #: framework/premium/features/content-blocks/admin-ui.php:360
 msgid "Down"
-msgstr ""
+msgstr "Bas"
 
 #: framework/premium/features/content-blocks/admin-ui.php:356,
 #: framework/premium/features/content-blocks/options/popup.php:83
@@ -6477,12 +6477,12 @@ msgstr "Intention de sortie de page"
 #: framework/premium/features/content-blocks/admin-ui.php:354,
 #: framework/premium/features/content-blocks/options/popup.php:81
 msgid "After x time"
-msgstr ""
+msgstr "Après x fois"
 
 #: framework/premium/features/content-blocks/admin-ui.php:353,
 #: framework/premium/features/content-blocks/options/popup.php:80
 msgid "After inactivity"
-msgstr ""
+msgstr "Après inactivité "
 
 #: framework/premium/features/content-blocks/admin-ui.php:352,
 #: framework/premium/features/content-blocks/options/popup.php:79

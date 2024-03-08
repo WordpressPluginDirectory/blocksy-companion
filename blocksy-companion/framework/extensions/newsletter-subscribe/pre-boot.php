@@ -45,10 +45,18 @@ class BlocksyExtensionNewsletterSubscribePreBoot {
 	}
 
 	public function save_credentials() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->maybe_save_credentials();
 	}
 
 	public function get_actual_lists() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$m = \Blocksy\Extensions\NewsletterSubscribe\Provider::get_for_settings();
 
 		if (! $m->can()) {
@@ -65,6 +73,10 @@ class BlocksyExtensionNewsletterSubscribePreBoot {
 	}
 
 	public function get_lists() {
+		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
+			wp_send_json_error('nonce');
+		}
+
 		$this->maybe_save_credentials(false);
 	}
 

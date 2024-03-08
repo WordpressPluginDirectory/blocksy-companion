@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-02-29 20:50+0000\n"
+"POT-Creation-Date: 2024-03-07 22:23+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: framework/theme-integration.php:425,
 #: build_tmp/build/framework/theme-integration.php:425
-#: static/js/dashboard/screens/SiteExport.js:110
+#: static/js/dashboard/screens/SiteExport.js:112
 msgid "PRO"
 msgstr ""
 
@@ -200,16 +200,16 @@ msgstr ""
 
 #: framework/features/conditions-manager.php:200,
 #: build_tmp/build/framework/features/conditions-manager.php:200,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:125,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:125
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:126,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:126
 #: static/js/options/ConditionsManager/SingleCondition.js:89
 msgid "Include"
 msgstr ""
 
 #: framework/features/conditions-manager.php:200,
 #: build_tmp/build/framework/features/conditions-manager.php:200,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:126,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:126
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:127,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:127
 #: static/js/options/ConditionsManager/SingleCondition.js:90
 msgid "Exclude"
 msgstr ""
@@ -219,8 +219,8 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: framework/features/demo-install.php:268,
-#: build_tmp/build/framework/features/demo-install.php:268
+#: framework/features/demo-install.php:288,
+#: build_tmp/build/framework/features/demo-install.php:288
 msgid ""
 "Your PHP installation doesn't have support for XML. Please install the "
 "<i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install "
@@ -507,48 +507,48 @@ msgid ""
 "button. Customize the single product gallery/slider and the layout."
 msgstr ""
 
-#: framework/helpers/exts.php:181,
-#: build_tmp/build/framework/helpers/exts.php:181,
+#: framework/helpers/exts.php:186,
+#: build_tmp/build/framework/helpers/exts.php:186,
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:4,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:4
 msgid "Floating Cart"
 msgstr ""
 
-#: framework/helpers/exts.php:182,
-#: build_tmp/build/framework/helpers/exts.php:182
+#: framework/helpers/exts.php:187,
+#: build_tmp/build/framework/helpers/exts.php:187
 msgid ""
 "Adds the “add to cart” actions to the product page as a floating bar if the "
 "product summary has disappeared from view."
 msgstr ""
 
-#: framework/helpers/exts.php:189,
-#: build_tmp/build/framework/helpers/exts.php:189,
+#: framework/helpers/exts.php:194,
+#: build_tmp/build/framework/helpers/exts.php:194,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58
 msgid "Quick View"
 msgstr ""
 
-#: framework/helpers/exts.php:190,
-#: build_tmp/build/framework/helpers/exts.php:190
+#: framework/helpers/exts.php:195,
+#: build_tmp/build/framework/helpers/exts.php:195
 msgid ""
 "Preview the available products and let your users make quick and informative "
 "decisions about their purchase."
 msgstr ""
 
-#: framework/helpers/exts.php:197,
-#: build_tmp/build/framework/helpers/exts.php:197
+#: framework/helpers/exts.php:202,
+#: build_tmp/build/framework/helpers/exts.php:202
 msgid "Filters"
 msgstr ""
 
-#: framework/helpers/exts.php:198,
-#: build_tmp/build/framework/helpers/exts.php:198
+#: framework/helpers/exts.php:203,
+#: build_tmp/build/framework/helpers/exts.php:203
 msgid ""
 "Drill down the product list with new filtering widgets, an off canvas area "
 "for them and showing the active filters on the page."
 msgstr ""
 
-#: framework/helpers/exts.php:205,
-#: build_tmp/build/framework/helpers/exts.php:205,
+#: framework/helpers/exts.php:210,
+#: build_tmp/build/framework/helpers/exts.php:210,
 #: framework/premium/extensions/shortcuts/customizer.php:449,
 #: framework/premium/extensions/shortcuts/customizer.php:472,
 #: build_tmp/build/framework/premium/extensions/shortcuts/customizer.php:449,
@@ -576,130 +576,66 @@ msgstr ""
 msgid "Wishlist"
 msgstr ""
 
-#: framework/helpers/exts.php:206,
-#: build_tmp/build/framework/helpers/exts.php:206
+#: framework/helpers/exts.php:211,
+#: build_tmp/build/framework/helpers/exts.php:211
 msgid ""
 "A set of features that lets you create easily your dream products wishlists "
 "and share them with friends and family."
 msgstr ""
 
-#: framework/helpers/exts.php:214,
-#: build_tmp/build/framework/helpers/exts.php:214
+#: framework/helpers/exts.php:218,
+#: build_tmp/build/framework/helpers/exts.php:218
 msgid "Compare View"
 msgstr ""
 
-#: framework/helpers/exts.php:215,
-#: build_tmp/build/framework/helpers/exts.php:215
+#: framework/helpers/exts.php:219,
+#: build_tmp/build/framework/helpers/exts.php:219
 msgid ""
 "Compare products with a clear and concise table system that gives your users "
 "a way to make a quick decision."
 msgstr ""
 
-#: framework/helpers/exts.php:222,
-#: build_tmp/build/framework/helpers/exts.php:222
-msgid "Product Share Box"
-msgstr ""
-
-#: framework/helpers/exts.php:223,
-#: build_tmp/build/framework/helpers/exts.php:223
-msgid ""
-"Enable social sharing abilities for products available on the site, letting "
-"even more users discover your great shop selection."
-msgstr ""
-
-#: framework/helpers/exts.php:230,
-#: build_tmp/build/framework/helpers/exts.php:230
-msgid "Advanced Gallery"
-msgstr ""
-
-#: framework/helpers/exts.php:231,
-#: build_tmp/build/framework/helpers/exts.php:231
-msgid ""
-"Replace the standard product gallery with additional layouts which can "
-"showcase the photos as a grid or even a slider."
-msgstr ""
-
-#: framework/helpers/exts.php:238,
-#: build_tmp/build/framework/helpers/exts.php:238
-msgid "Search by SKU"
-msgstr ""
-
-#: framework/helpers/exts.php:239,
-#: build_tmp/build/framework/helpers/exts.php:239
-msgid ""
-"Advanced searching for products by their SKU classification can be useful in "
-"cases of vast product catalogues."
-msgstr ""
-
-#: framework/helpers/exts.php:245,
-#: build_tmp/build/framework/helpers/exts.php:245,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:123,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:123,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4
-msgid "Free Shipping Bar"
-msgstr ""
-
-#: framework/helpers/exts.php:246,
-#: build_tmp/build/framework/helpers/exts.php:246
-msgid ""
-"Add a visual cue that tells your visitors how much the cart total must be to "
-"be able to benefit of free shipping."
-msgstr ""
-
-#: framework/helpers/exts.php:253,
-#: build_tmp/build/framework/helpers/exts.php:253,
+#: framework/helpers/exts.php:226,
+#: build_tmp/build/framework/helpers/exts.php:226,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
 msgstr ""
 
-#: framework/helpers/exts.php:254,
-#: build_tmp/build/framework/helpers/exts.php:254
+#: framework/helpers/exts.php:227,
+#: build_tmp/build/framework/helpers/exts.php:227
 msgid ""
 "Catch the attention of your clients by showcasing your product variations as "
 "colour, image or button swatches."
 msgstr ""
 
-#: framework/helpers/exts.php:261,
-#: build_tmp/build/framework/helpers/exts.php:261
+#: framework/helpers/exts.php:234,
+#: build_tmp/build/framework/helpers/exts.php:234
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/TaxonomySelector.js:50
 msgid "Product Brands"
 msgstr ""
 
-#: framework/helpers/exts.php:262,
-#: build_tmp/build/framework/helpers/exts.php:262
+#: framework/helpers/exts.php:235,
+#: build_tmp/build/framework/helpers/exts.php:235
 msgid ""
 "Categorise products by brands and show their logo in archive or single page "
 "so users could discover more about their makers."
 msgstr ""
 
-#: framework/helpers/exts.php:270,
-#: build_tmp/build/framework/helpers/exts.php:270
-msgid "Affiliate Product Links"
-msgstr ""
-
-#: framework/helpers/exts.php:271,
-#: build_tmp/build/framework/helpers/exts.php:271
-msgid ""
-"Better management for affiliate products with a few simple options that "
-"strengthen the external integration with these."
-msgstr ""
-
-#: framework/helpers/exts.php:278,
-#: build_tmp/build/framework/helpers/exts.php:278
+#: framework/helpers/exts.php:243,
+#: build_tmp/build/framework/helpers/exts.php:243
 msgid "Custom Tabs"
 msgstr ""
 
-#: framework/helpers/exts.php:279,
-#: build_tmp/build/framework/helpers/exts.php:279
+#: framework/helpers/exts.php:244,
+#: build_tmp/build/framework/helpers/exts.php:244
 msgid ""
 "Present additional information about your products by adding new custom tabs "
 "to the product information section."
 msgstr ""
 
-#: framework/helpers/exts.php:288,
-#: build_tmp/build/framework/helpers/exts.php:288,
+#: framework/helpers/exts.php:252,
+#: build_tmp/build/framework/helpers/exts.php:252,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:58,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:62,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:260,
@@ -715,37 +651,101 @@ msgstr ""
 msgid "Size Guide"
 msgstr ""
 
-#: framework/helpers/exts.php:289,
-#: build_tmp/build/framework/helpers/exts.php:289
+#: framework/helpers/exts.php:253,
+#: build_tmp/build/framework/helpers/exts.php:253
 msgid ""
 "Show a size chart guide so that your visitors can pick the right size for "
 "them when ordering a product."
 msgstr ""
 
-#: framework/helpers/exts.php:298,
-#: build_tmp/build/framework/helpers/exts.php:298
+#: framework/helpers/exts.php:261,
+#: build_tmp/build/framework/helpers/exts.php:261
 msgid "Custom Thank You Pages"
 msgstr ""
 
-#: framework/helpers/exts.php:299,
-#: build_tmp/build/framework/helpers/exts.php:299
+#: framework/helpers/exts.php:262,
+#: build_tmp/build/framework/helpers/exts.php:262
 msgid ""
 "Create a customized order “Thank You” page for your customers, giving them a "
 "personalized experience."
 msgstr ""
 
-#: framework/helpers/exts.php:308,
-#: build_tmp/build/framework/helpers/exts.php:308,
+#: framework/helpers/exts.php:270,
+#: build_tmp/build/framework/helpers/exts.php:270,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:5,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:5
 msgid "Advanced Reviews"
 msgstr ""
 
-#: framework/helpers/exts.php:309,
-#: build_tmp/build/framework/helpers/exts.php:309
+#: framework/helpers/exts.php:271,
+#: build_tmp/build/framework/helpers/exts.php:271
 msgid ""
 "Enhance your WooCommerce reviews with rich content, images and a thumbs up "
 "system that help your shoppers find the perfect product."
+msgstr ""
+
+#: framework/helpers/exts.php:278,
+#: build_tmp/build/framework/helpers/exts.php:278,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:123,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:123,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4
+msgid "Free Shipping Bar"
+msgstr ""
+
+#: framework/helpers/exts.php:279,
+#: build_tmp/build/framework/helpers/exts.php:279
+msgid ""
+"Add a visual cue that tells your visitors how much the cart total must be to "
+"be able to benefit of free shipping."
+msgstr ""
+
+#: framework/helpers/exts.php:286,
+#: build_tmp/build/framework/helpers/exts.php:286
+msgid "Advanced Gallery"
+msgstr ""
+
+#: framework/helpers/exts.php:287,
+#: build_tmp/build/framework/helpers/exts.php:287
+msgid ""
+"Replace the standard product gallery with additional layouts which can "
+"showcase the photos as a grid or even a slider."
+msgstr ""
+
+#: framework/helpers/exts.php:294,
+#: build_tmp/build/framework/helpers/exts.php:294
+msgid "Product Share Box"
+msgstr ""
+
+#: framework/helpers/exts.php:295,
+#: build_tmp/build/framework/helpers/exts.php:295
+msgid ""
+"Enable social sharing abilities for products available on the site, letting "
+"even more users discover your great shop selection."
+msgstr ""
+
+#: framework/helpers/exts.php:302,
+#: build_tmp/build/framework/helpers/exts.php:302
+msgid "Search by SKU"
+msgstr ""
+
+#: framework/helpers/exts.php:303,
+#: build_tmp/build/framework/helpers/exts.php:303
+msgid ""
+"Advanced searching for products by their SKU classification can be useful in "
+"cases of vast product catalogues."
+msgstr ""
+
+#: framework/helpers/exts.php:309,
+#: build_tmp/build/framework/helpers/exts.php:309
+msgid "Affiliate Product Links"
+msgstr ""
+
+#: framework/helpers/exts.php:310,
+#: build_tmp/build/framework/helpers/exts.php:310
+msgid ""
+"Better management for affiliate products with a few simple options that "
+"strengthen the external integration with these."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
@@ -1056,7 +1056,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:257,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:559,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:132,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:189,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:190,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:66,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:180,
 #: framework/premium/features/premium-header/items/contacts/options.php:501,
@@ -1083,7 +1083,7 @@ msgstr ""
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:257,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:559,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:132,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:189,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:190,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:66,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/swatches/options.php:180,
 #: build_tmp/build/framework/premium/features/premium-header/items/contacts/options.php:501,
@@ -1193,7 +1193,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:381,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:409,
 #: framework/premium/extensions/woocommerce-extra/features/share-box-layer/feature.php:50,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:210,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:211,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:233,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:269,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:310,
@@ -1273,7 +1273,7 @@ msgstr ""
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:381,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:409,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/share-box-layer/feature.php:50,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:210,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:211,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:233,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:269,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:310,
@@ -1751,7 +1751,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:50,
 #: build_tmp/build/framework/extensions/newsletter-subscribe/customizer.php:61,
 #: build_tmp/build/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:50
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:202
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:204
 msgid "List ID"
 msgstr ""
 
@@ -2302,14 +2302,14 @@ msgstr ""
 #: build_tmp/build/framework/extensions/product-reviews/extension.php:492,
 #: framework/features/header/items/account/options.php:1985,
 #: build_tmp/build/framework/premium/extensions/mega-menu/options.php:855,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:216,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:217,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:221,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:265,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:310,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:349,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:389,
 #: build_tmp/build/framework/features/header/items/account/options.php:1985,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:216,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:217,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/swatches/options.php:221,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/swatches/options.php:265,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/swatches/options.php:310,
@@ -3527,7 +3527,7 @@ msgstr ""
 #: framework/features/header/items/account/options.php:578,
 #: build_tmp/build/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:232,
 #: build_tmp/build/framework/features/header/items/account/options.php:578
-#: static/js/dashboard/screens/SiteExport.js:86
+#: static/js/dashboard/screens/SiteExport.js:88
 msgid "Name"
 msgstr ""
 
@@ -8659,23 +8659,23 @@ msgid "Show if cart is empty"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:315,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:175,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:176,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:315,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:175
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:176
 msgid "Congratulations! You got free shipping 🎉"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:292,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:134,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:135,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:292,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:134
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:135
 msgid "Add {price} more to get free shipping!"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:305,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:159,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:160,
 #: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:305,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:159
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:160
 msgid "Add {items} more items to get free shipping!"
 msgstr ""
 
@@ -8719,61 +8719,61 @@ msgstr ""
 msgid "Goal Amount"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:75,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:75
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:76,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:76
 msgid "Amount the client has to reach in order to get free shipping."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:85,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:85
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:86,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:86
 msgid "Goal Items"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:89,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:89
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90
 msgid "Amount of items the client has to buy in order to get free shipping."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:103,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:103
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:104,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:104
 msgid "The calculation method will be based on WooCommerce zones."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:118,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:118
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:119,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:119
 msgid "Discount Calculation"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:128,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:128
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:129,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:129
 msgid ""
 "Include or exclude the discount code when calculating the shipping progress."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:132,
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:157,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:132,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:157
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:133,
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:158,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:133,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:158
 msgid "Default Message"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:142,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:142
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:143,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:143
 msgid "You can use dynamic code tags such as {price} inside this option."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:167,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:167
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:168,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:168
 msgid "You can use dynamic code tags such as {items} inside this option."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:173,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:173
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:174,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:174
 msgid "Success Message"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:194,
-#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:194
+#: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:195,
+#: build_tmp/build/framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:195
 msgid "Progress Bar Color"
 msgstr ""
 
@@ -9575,19 +9575,19 @@ msgid "Reset Filters"
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker.js:14
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:63
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:323
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:65
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:325
 #: static/js/dashboard/NoTheme.js:62
-#: static/js/dashboard/screens/SiteExport.js:169
+#: static/js/dashboard/screens/SiteExport.js:171
 msgid "Loading..."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:64
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:66
 msgid "Invalid API Key..."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:92
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:116
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:94
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:118
 msgid "Select list..."
 msgstr ""
 
@@ -9599,25 +9599,25 @@ msgstr ""
 msgid "Newsletter Controls"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:150
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:152
 msgid "Version"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:160
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:162
 msgid "Pick Mailing Service"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:189
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:191
 msgid "API Key"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:220
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:222
 msgid ""
 "More information on how to generate an API key for Mailchimp can be found "
 "%shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:238
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:240
 msgid ""
 "More information on how to generate an API key for Mailerlite can be found "
 "%shere%s. Please note that it is required at least one group to be created "
@@ -9625,31 +9625,31 @@ msgid ""
 "group %shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:256
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:258
 msgid ""
 "This provider is used only for testing purposes. It doesnt register any real "
 "subscribers."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:270
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:272
 msgid ""
 "More information on how to generate an API key for Brevo can be found "
 "%shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:288
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:290
 msgid ""
 "More information on how to generate an API key for ConvertKit can be found "
 "%shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:306
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:308
 msgid ""
 "More information on how to generate an API key for Campaign Monitor can be "
 "found %shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:324
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:326
 #: framework/extensions/product-reviews/static/js/ProductReviews.js:94
 #: framework/premium/extensions/mega-menu/static/js/SettingsManager.js:262
 #: framework/premium/extensions/sidebars/static/js/SettingsManager.js:111
@@ -9659,15 +9659,15 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:83
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:85
 msgid "Connect Newsletter Provider"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:89
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:91
 msgid "Provider"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:88
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:90
 msgid "Fetching..."
 msgstr ""
 
@@ -10649,11 +10649,11 @@ msgstr ""
 msgid "Professional or Agency"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:146
+#: static/js/dashboard/screens/DemoInstall.js:147
 msgid "Loading Starter Sites..."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:160
+#: static/js/dashboard/screens/DemoInstall.js:161
 msgid ""
 "The connection to our <b>demo.creativethemes.com</b> server didn't worked. "
 "This connection is required for importing the starter sites from our demo "
@@ -10983,20 +10983,20 @@ msgstr ""
 msgid "Pro Extensions"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:124
+#: static/js/dashboard/screens/SiteExport.js:100
+msgid "Preview URL"
+msgstr ""
+
+#: static/js/dashboard/screens/SiteExport.js:126
 msgid "Builder"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:170
+#: static/js/dashboard/screens/SiteExport.js:172
 msgid "Export site"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:72
+#: static/js/dashboard/screens/SiteExport.js:74
 msgid "Site export"
-msgstr ""
-
-#: static/js/dashboard/screens/SiteExport.js:98
-msgid "Preview URL"
 msgstr ""
 
 #: static/js/header/EditConditions.js:107

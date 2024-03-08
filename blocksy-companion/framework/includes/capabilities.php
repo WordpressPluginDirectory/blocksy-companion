@@ -164,6 +164,10 @@ class Capabilities {
 		foreach ($this->plans as $incomplete_plan) {
 			$plan = $this->casttoclass('stdClass', $incomplete_plan);
 
+			if (! isset($plan->id) || empty($plan->id)) {
+				continue;
+			}
+
 			$id = base64_decode($plan->id);
 
 			if (strval($id) === strval($site->plan_id)) {
