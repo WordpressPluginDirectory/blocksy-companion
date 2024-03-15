@@ -72,6 +72,13 @@ const DemoInstall = ({ children, path, location }) => {
 					demos_cache = data.demos
 					demos_error_cache = data.demo_error
 				}
+
+				if (!success) {
+					console.error(
+						'Blocksy:Dashboard:DemoInstall:demos_list',
+						data
+					)
+				}
 			}
 		} catch (e) {}
 

@@ -2,14 +2,6 @@
 
 
 function blocksy_ext_cookies_consent_output() {
-	/*
-	if (! BlocksyExtensionCookiesConsent::should_display_notification()) {
-		if (! $forced) {
-			return;
-		}
-	}
-	 */
-
 	$content = blocksy_get_theme_mod(
 		'cookie_consent_content',
 		__('We use cookies to ensure that we give you the best experience on our website.', 'blocksy-companion')
@@ -30,7 +22,6 @@ function blocksy_ext_cookies_consent_output() {
 	ob_start();
 
 	?>
-
 
 	<div class="cookie-notification ct-fade-in-start" data-period="<?php echo esc_attr($period) ?>" data-type="<?php echo esc_attr($type) ?>">
 

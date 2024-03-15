@@ -214,7 +214,14 @@ class DemoInstall {
 		);
 
 		if (is_wp_error($request)) {
-			return false;
+			return $request;
+		}
+
+		if (wp_remote_retrieve_response_code($request) !== 200) {
+			return new \WP_Error(
+				'demo_fetch_failed',
+				'Failed to fetch demos with status code ' . wp_remote_retrieve_response_code($request)
+			);
 		}
 
 		$body = wp_remote_retrieve_body($request);
@@ -252,8 +259,11 @@ class DemoInstall {
 
 		$demos = $this->fetch_all_demos();
 
-		if (! $demos) {
-			wp_send_json_error();
+		if (! $demos || is_wp_error($demos)) {
+			wp_send_json_error([
+				'demos' => [],
+				'demo_error' => is_wp_error($demos) ? $demos->get_error_message() : ''
+			]);
 		}
 
 		$plugins = [];

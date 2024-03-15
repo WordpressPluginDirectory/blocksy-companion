@@ -164,6 +164,10 @@ if ($args['view'] === 'slider') {
 		'slide_image_args' => function ($index, $args) use ($posts_to_render) {
 			$post = $posts_to_render[$index];
 			$args['html_atts']['href'] = get_permalink($post);
+			
+			unset($args['html_atts']['data-src']);
+
+			$args['tag_name'] = 'a';
 
 			return $args;
 		},

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-11-20 08:21:55+0000\n"
+"PO-Revision-Date: 2024-03-11 10:26:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2948,7 +2948,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:338,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:197
 msgid "Border"
-msgstr ""
+msgstr "Borde"
 
 #: framework/features/header/items/account/options.php:1699,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:337,
@@ -5734,7 +5734,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/view.php:77
 msgid "Go to product page"
-msgstr ""
+msgstr "Ir a página del producto"
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:54
 msgid "Floating Cart Visibility"
@@ -6123,7 +6123,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:512,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:542
 msgid "Background"
-msgstr ""
+msgstr "Fondo"
 
 #: framework/premium/extensions/mega-menu/options.php:550,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:99,

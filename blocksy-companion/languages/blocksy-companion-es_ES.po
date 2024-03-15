@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-11-20 08:22:11+0000\n"
+"PO-Revision-Date: 2024-03-11 10:26:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,79 +33,79 @@ msgstr ""
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "Únicamente días laborales"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Únicamente fines de semana"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Todos los días"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:27
 msgid "Sun"
-msgstr ""
+msgstr "Dom"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:26
 msgid "Sat"
-msgstr ""
+msgstr "Sáb"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:25
 msgid "Fri"
-msgstr ""
+msgstr "Vie"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:24
 msgid "Thu"
-msgstr ""
+msgstr "Jue"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:234
 msgid "Stop Time"
-msgstr ""
+msgstr "Hora de parada"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:23
 msgid "Wed"
-msgstr ""
+msgstr "Mie"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:22
 msgid "Tue"
-msgstr ""
+msgstr "Mar"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:211
 msgid "Start Time"
-msgstr ""
+msgstr "Hora de inicio"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:21
 msgid "Mon"
-msgstr ""
+msgstr "Lun"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:179
 msgid "Sunday"
-msgstr ""
+msgstr "Domingo"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:174
 msgid "Saturday"
-msgstr ""
+msgstr "Sábado"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
-msgstr ""
+msgstr "Viernes"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Jueves"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Miércoles"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Martes"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:149
 msgid "Monday"
-msgstr ""
+msgstr "Lunes"
 
 #: static/js/options/ConditionsManager/PostIdPicker.js:78
 msgid "Select product"
@@ -681,7 +681,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:378,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:627
 msgid "Browse products"
-msgstr ""
+msgstr "Explorar productos"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:61
 msgid "This option will allow you to add a speciffic product variation to wishlist."
@@ -969,7 +969,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/helpers.php:30
 msgid "Quick view"
-msgstr ""
+msgstr "Vista rápida"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:285
 msgid "Countdown Box"
@@ -1275,7 +1275,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/helpers.php:93,
 #: framework/premium/extensions/woocommerce-extra/features/compare/helpers.php:152
 msgid "Add to compare"
-msgstr ""
+msgstr "Incluir para comparar"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/feature.php:272
 msgid "Close Compare Modal"
@@ -2360,7 +2360,7 @@ msgstr ""
 #: framework/helpers/exts.php:189,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58
 msgid "Quick View"
-msgstr ""
+msgstr "Vista Rápida"
 
 #: framework/helpers/exts.php:182
 msgid "Adds the “add to cart” actions to the product page as a floating bar if the product summary has disappeared from view."
@@ -2972,7 +2972,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/view.php:45
 msgid "Close quick view"
-msgstr ""
+msgstr "Cerrar vista rápida"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/views/panel.php:47
 msgid "Close filters modal"
@@ -5813,11 +5813,11 @@ msgstr "Tipo 3"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/feature.php:14
 msgid "Quick View Button"
-msgstr ""
+msgstr "Botón de vista rápida"
 
 #: framework/helpers/exts.php:176
 msgid "Make the shopping experience better for your visitors! Add features such as Product Quick View, Wishlist functionality and a Floating Add to Cart button. Customize the single product gallery/slider and the layout."
-msgstr ""
+msgstr "¡Mejore la experiencia de compra para sus visitantes! Agregue funciones como Vista rápida del producto, funcionalidad de lista de deseos y un botón flotante para Agregar al carrito. Personalice el diseño y la galería/control deslizante para producto individual."
 
 #: framework/helpers/exts.php:163
 msgid "Replace Blocksy's branding with your own. Easily hide licensing info and other sections of the theme and companion plugin from your clients and make your final product look more professional."

@@ -232,6 +232,8 @@ class ConditionsManager {
 					$condition['rule'] === 'post_with_taxonomy_ids'
 					||
 					$condition['rule'] === 'product_with_taxonomy_ids'
+					||
+					$condition['rule'] === 'product_taxonomy_ids'
 				) && isset($condition['payload']['taxonomy_id'])
 			) {
 				$tax = get_term_by(

@@ -16,19 +16,6 @@ class BlocksyExtensionCookiesConsent {
 	}
 
 	public function __construct() {
-		add_filter(
-			'blocksy:footer:offcanvas-drawer',
-			function ($els, $payload) {
-				if ($payload['location'] === 'start') {
-					$els[] = blocksy_ext_cookies_consent_output();
-				}
-
-				return $els;
-			},
-			10,
-			2
-		);
-
 		add_filter('blocksy-async-scripts-handles', function ($d) {
 			$d[] = 'blocksy-ext-cookies-consent-scripts';
 			return $d;
@@ -69,13 +56,6 @@ class BlocksyExtensionCookiesConsent {
 				return;
 			}
 
-			wp_enqueue_style(
-				'blocksy-ext-cookies-consent-styles',
-				BLOCKSY_URL . 'framework/extensions/cookies-consent/static/bundle/main.min.css',
-				['ct-main-styles'],
-				$data['Version']
-			);
-
 			wp_enqueue_script(
 				'blocksy-ext-cookies-consent-scripts',
 				BLOCKSY_URL . 'framework/extensions/cookies-consent/static/bundle/main.js',
@@ -84,6 +64,14 @@ class BlocksyExtensionCookiesConsent {
 				true
 			);
 		}, 50);
+
+		add_filter('blocksy:general:ct-scripts-localizations', function ($data) {
+			$data['dynamic_styles']['cookie_notification'] = blocksy_cdn_url(
+				BLOCKSY_URL . 'framework/extensions/cookies-consent/static/bundle/main.min.css'
+			);
+
+			return $data;
+		});
 
 		add_action(
 			'blocksy:global-dynamic-css:enqueue',
@@ -129,21 +117,24 @@ class BlocksyExtensionCookiesConsent {
 			add_filter('woocommerce_product_review_comment_form_args', [$this, 'change_comment_form']);
 		}, 999);
 
-		add_action('wp_ajax_blc_load_blocked_scripts', [
+		add_action('wp_ajax_blc_load_cookies_consent_data', [
 			$this,
-			'blc_load_blocked_scripts',
+			'blc_load_cookies_consent_data',
 		]);
 
 		add_action(
-			'wp_ajax_nopriv_blc_load_blocked_scripts',
-			[$this, 'blc_load_blocked_scripts']
+			'wp_ajax_nopriv_blc_load_cookies_consent_data',
+			[$this, 'blc_load_cookies_consent_data']
 		);
 	}
 
-	public function blc_load_blocked_scripts() {
+	public function blc_load_cookies_consent_data() {
 		$scripts = apply_filters('blocksy:cookies-consent:scripts-to-load', [], PHP_INT_MAX);
 
-		wp_send_json_success($scripts);
+		wp_send_json_success([
+			'scripts' => $scripts,
+			'consent_output' => blocksy_ext_cookies_consent_output(),
+		]);
 	}
 
 	public function change_comment_form($comment_form) {
