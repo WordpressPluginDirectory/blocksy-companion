@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-14 18:14+0000\n"
+"POT-Creation-Date: 2024-03-15 15:13+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -644,7 +644,6 @@ msgstr ""
 #: framework/premium/features/content-blocks/options/single.php:54,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:6,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:35,
-#: framework/premium/extensions/woocommerce-extra/features/auto-update/options.php:10,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:41,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:120,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:380,
@@ -808,7 +807,6 @@ msgstr ""
 #: framework/premium/features/content-blocks/options/single.php:128,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:147,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:174,
-#: framework/premium/extensions/woocommerce-extra/features/auto-update/options.php:24,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:289,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:460,
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:77,
@@ -1674,7 +1672,7 @@ msgid "Review Entity"
 msgstr ""
 
 #: framework/extensions/product-reviews/metabox.php:18,
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:73
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:76
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:11
 msgid "Product"
 msgstr ""
@@ -1935,7 +1933,10 @@ msgid "Last Month"
 msgstr ""
 
 #: framework/extensions/trending/customizer.php:307,
-#: framework/premium/extensions/woocommerce-extra/features/compare/options.php:133
+#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:35,
+#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:32,
+#: framework/premium/extensions/woocommerce-extra/features/compare/options.php:133,
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:73
 msgid "Image Size"
 msgstr ""
 
@@ -2374,13 +2375,13 @@ msgstr ""
 msgid "Newsletter"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:232,
+#: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:231,
 #: framework/features/header/items/account/options.php:578
 #: static/js/dashboard/screens/SiteExport.js:88
 msgid "Name"
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:239,
+#: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:238,
 #: framework/features/header/modal/register.php:47,
 #: framework/premium/extensions/shortcuts/customizer.php:130,
 #: framework/premium/extensions/shortcuts/customizer.php:153,
@@ -3000,8 +3001,7 @@ msgstr ""
 
 #: framework/premium/extensions/shortcuts/customizer.php:337,
 #: framework/premium/extensions/shortcuts/customizer.php:360,
-#: framework/premium/extensions/shortcuts/views/bar.php:48,
-#: framework/premium/extensions/woocommerce-extra/features/auto-update/options.php:5
+#: framework/premium/extensions/shortcuts/views/bar.php:48
 msgid "Cart"
 msgstr ""
 
@@ -3182,31 +3182,31 @@ msgid ""
 "This extension requires the WooCommerce plugin to be installed and activated."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:128
+#: framework/premium/extensions/woocommerce-extra/extension.php:127
 msgid "Quick view title before"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:133
+#: framework/premium/extensions/woocommerce-extra/extension.php:132
 msgid "Quick view title after"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:138
+#: framework/premium/extensions/woocommerce-extra/extension.php:137
 msgid "Quick view price before"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:143
+#: framework/premium/extensions/woocommerce-extra/extension.php:142
 msgid "Quick view price after"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:148
+#: framework/premium/extensions/woocommerce-extra/extension.php:147
 msgid "Quick view summary before"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:153
+#: framework/premium/extensions/woocommerce-extra/extension.php:152
 msgid "Quick view summary after"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:338
+#: framework/premium/extensions/woocommerce-extra/extension.php:337
 msgid "Cart Page"
 msgstr ""
 
@@ -5483,16 +5483,8 @@ msgid "Image AffiliateLink"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/archive-card/feature.php:56,
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:74
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:77
 msgid "Add to cart"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/auto-update/feature.php:11
-msgid "Quantity Auto Update"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/auto-update/options.php:15
-msgid "Cart Auto Update"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/brands-import-export.php:17,
@@ -5598,11 +5590,27 @@ msgstr ""
 msgid "Brand Name In Tab Title"
 msgstr ""
 
+#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:5
+msgid "Coupon Form"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:14
+msgid "Quantity Auto Update"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:24,
+#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:20,
+#: framework/premium/extensions/woocommerce-extra/features/compare/options.php:123,
+#: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:112,
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:65
+msgid "Image Ratio"
+msgstr ""
+
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:5
 msgid "Product Image"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:15
+#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:54
 msgid "Quantity Input"
 msgstr ""
 
@@ -5646,11 +5654,6 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:75
 msgid "Compare Table Fields"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/compare/options.php:123,
-#: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:112
-msgid "Image Ratio"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:162
@@ -5839,10 +5842,6 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/select.php:33
 msgid "Choose a custom thank you page for this product."
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/disable-cart-coupons/feature.php:28
-msgid "Coupon Form"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:44
@@ -6435,16 +6434,16 @@ msgid ""
 "This option will allow you to add a speciffic product variation to wishlist."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:378,
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:386,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:601
 msgid "Browse products"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:381
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:389
 msgid "You don't have any products in your wish list yet."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:185,
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:188,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/bar.php:101,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:142,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:145

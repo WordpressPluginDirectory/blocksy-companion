@@ -223,7 +223,6 @@ foreach ($button_colors as $key => $value) {
 
 ?>
 	<form <?php echo blocksy_attr_to_html($form_attrs); ?>>
-
 		<?php if ($has_name) { ?>
 			<input
 				type="text"
@@ -239,13 +238,15 @@ foreach ($button_colors as $key => $value) {
 			title="<?php echo __('Email', 'blocksy-companion'); ?>"
 			required>
 
-		<button class="wp-element-button" <?php echo ! empty($button_colors_css) ? 'style="' . $button_colors_css . '"' : '' ?>>
+		<button class="wp-element-button" <?php echo ! empty($button_colors_css) ? 'style="' . esc_attr($button_colors_css) . '"' : '' ?>>
 			<?php echo esc_html($button_text); ?>
 		</button>
 
-		<?php if (function_exists('blocksy_ext_cookies_checkbox')) {
-  	echo blocksy_ext_cookies_checkbox('newsletter-subscribe');
-  } ?>
+		<?php
+			if (function_exists('blocksy_ext_cookies_checkbox')) {
+				echo blocksy_ext_cookies_checkbox('newsletter-subscribe');
+			}
+		?>
 
 		<div class="ct-newsletter-subscribe-message"></div>
 	</form>

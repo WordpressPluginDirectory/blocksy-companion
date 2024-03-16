@@ -6704,7 +6704,7 @@ msgstr "Товары"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных за указанный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе колич��ства комментариев или отзывов, полученных за указанный период времени."
 
 #: framework/extensions/trending/customizer.php:106
 msgid "Trending Posts"
