@@ -16,6 +16,15 @@ import { getNameForPlugin } from './Wizzard/Plugins'
 import { DemosContext } from '../DemoInstall'
 import useProExtensionInFree from '../../helpers/useProExtensionInFree'
 
+const smartJoin = (arr, type = 'conjunction') => {
+	const formatter = new Intl.ListFormat('en-GB', {
+		style: 'long',
+		type,
+	})
+
+	return formatter.format(arr)
+}
+
 const SingleDemo = ({ demo }) => {
 	const {
 		currentlyInstalledDemo,
@@ -75,36 +84,76 @@ const SingleDemo = ({ demo }) => {
 					<img src={demo.screenshot} />
 
 					<section>
+						{demo.is_pro && (
+							<Fragment>
+								<h3>
+									{__('Required plan', 'blocksy-companion')}
+								</h3>
+
+								<span className="ct-required-plans">
+									{smartJoin(
+										(demo.plans
+											? demo.plans
+											: [
+													'personal_v2',
+													'professional_v2',
+													'agency_v2',
+											  ]
+										)
+											.filter((plan) => {
+												return plan.indexOf('v2') > -1
+											})
+											.map((plan) => {
+												return {
+													personal_v2: __(
+														'Personal',
+														'blocksy-companion'
+													),
+													professional_v2: __(
+														'Professional',
+														'blocksy-companion'
+													),
+													agency_v2: __(
+														'Agency',
+														'blocksy-companion'
+													),
+												}[plan]
+											}),
+										'disjunction'
+									)}
+								</span>
+							</Fragment>
+						)}
+
 						<h3>{__('Available for', 'blocksy-companion')}</h3>
-						<div>
-							{demos_list
-								.filter(({ name }) => name === demo.name || '')
+						<span className="ct-available-builders">
+							{smartJoin(
+								demos_list
+									.filter(
+										({ name }) => name === demo.name || ''
+									)
 
-								.sort((a, b) => {
-									if (a.builder < b.builder) {
-										return -1
-									}
+									.sort((a, b) => {
+										if (a.builder < b.builder) {
+											return -1
+										}
 
-									if (a.builder > b.builder) {
-										return 1
-									}
+										if (a.builder > b.builder) {
+											return 1
+										}
 
-									return 0
-								})
-								.map(({ builder }) => (
-									<span key={builder}>
-										{getNameForPlugin(builder) ||
-											'Gutenberg'}
-									</span>
-								))}
-						</div>
+										return 0
+									})
+									.map(
+										({ builder }) =>
+											getNameForPlugin(builder) ||
+											'Gutenberg'
+									)
+							)}
+						</span>
 					</section>
 
-					{demo.is_pro && (
-						<a onClick={(e) => e.preventDefault()} href="#">
-							PRO
-						</a>
-					)}
+					{demo.is_pro && <span className="ct-pro-badge">PRO</span>}
 				</figure>
 
 				<div className="ct-demo-actions">

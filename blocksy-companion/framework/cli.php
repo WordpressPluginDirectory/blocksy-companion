@@ -15,15 +15,9 @@ add_action('blocksy:customizer:load:before', function () {
 
 class Cli {
 	public function __construct() {
-		\WP_CLI::add_command('blocksy demo options', function ($args) {
-			$options = new DemoInstallOptionsInstaller([
-				'has_streaming' => false,
-				'demo_name' => 'Main:elementor'
-			]);
-
-			$options->import();
-		});
-
+		/**
+		 * Move all widgets to the inactive widgets area.
+		 */
 		\WP_CLI::add_command('blocksy widgets drop', function ($args) {
 			$sidebars_widgets = get_option('sidebars_widgets', array());
 
@@ -57,24 +51,17 @@ class Cli {
 			]);
 		});
 
-		\WP_CLI::add_command('blocksy demo widgets', function ($args) {
-			$options = new DemoInstallWidgetsInstaller([
-				'has_streaming' => false,
-				'demo_name' => 'Blocksy News:elementor'
-			]);
-
-			$options->import();
-		});
-
-		\WP_CLI::add_command('blocksy demo content', function ($args) {
-			$options = new DemoInstallContentInstaller([
-				'has_streaming' => false,
-				'demo_name' => 'Main:elementor'
-			]);
-
-			$options->import();
-		});
-
+		/**
+		 * Kick start the demo import process.
+		 *
+		 * ## OPTIONS
+		 *
+		 * <demo>
+		 * : The demo name.
+		 *
+		 * <builder>
+		 * : The builder name. Default to `gutenberg`.
+		 */
 		\WP_CLI::add_command('blocksy demo import:start', function ($cli_argv) {
 			$args = $this->get_demo_args($cli_argv);
 
@@ -86,10 +73,19 @@ class Cli {
 				'demo' => $args['demo'],
 				'builder' => $args['builder']
 			]);
-
-			print_r($demo_data);
 		});
 
+		/**
+		 * Import the plugins required by the demo.
+		 *
+		 * ## OPTIONS
+		 *
+		 * <demo>
+		 * : The demo name.
+		 *
+		 * <builder>
+		 * : The builder name. Default to `gutenberg`.
+		 */
 		\WP_CLI::add_command('blocksy demo import:plugins', function ($cli_argv) {
 			$args = $this->get_demo_args($cli_argv);
 
@@ -106,6 +102,17 @@ class Cli {
 			$plugins->import();
 		});
 
+		/**
+		 * Import the options required by the demo.
+		 *
+		 * ## OPTIONS
+		 *
+		 * <demo>
+		 * : The demo name.
+		 *
+		 * <builder>
+		 * : The builder name. Default to `gutenberg`.
+		 */
 		\WP_CLI::add_command('blocksy demo import:options', function ($cli_argv) {
 			$args = $this->get_demo_args($cli_argv);
 
@@ -117,6 +124,17 @@ class Cli {
 			$options->import();
 		});
 
+		/**
+		 * Import the widgets required by the demo.
+		 *
+		 * ## OPTIONS
+		 *
+		 * <demo>
+		 * : The demo name.
+		 *
+		 * <builder>
+		 * : The builder name. Default to `gutenberg`.
+		 */
 		\WP_CLI::add_command('blocksy demo import:widgets', function ($cli_argv) {
 			$args = $this->get_demo_args($cli_argv);
 
@@ -128,6 +146,17 @@ class Cli {
 			$widgets->import();
 		});
 
+		/**
+		 * Import the content required by the demo.
+		 *
+		 * ## OPTIONS
+		 *
+		 * <demo>
+		 * : The demo name.
+		 *
+		 * <builder>
+		 * : The builder name. Default to `gutenberg`.
+		 */
 		\WP_CLI::add_command('blocksy demo import:content', function ($cli_argv) {
 			$args = $this->get_demo_args($cli_argv);
 
@@ -139,6 +168,9 @@ class Cli {
 			$content->import();
 		});
 
+		/**
+		 * Clean the currently installed demo.
+		 */
 		\WP_CLI::add_command('blocksy demo clean', function ($cli_argv) {
 			update_option('blocksy_ext_demos_current_demo', null);
 
@@ -149,6 +181,9 @@ class Cli {
 			$eraser->import();
 		});
 
+		/**
+		 * Finish the demo import process.
+		 */
 		\WP_CLI::add_command('blocksy demo import:finish', function ($args) {
 			$finish = new DemoInstallFinalActions([
 				'has_streaming' => false

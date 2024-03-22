@@ -59,7 +59,7 @@ class BlocksyExtensionCookiesConsent {
 			wp_enqueue_script(
 				'blocksy-ext-cookies-consent-scripts',
 				BLOCKSY_URL . 'framework/extensions/cookies-consent/static/bundle/main.js',
-				[],
+				['ct-scripts'],
 				$data['Version'],
 				true
 			);

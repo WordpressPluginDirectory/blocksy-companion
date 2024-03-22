@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.32
+Stable tag: 2.0.33
 
 == Description ==
 
@@ -23,6 +23,10 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+2.0.33: 2024-03-21
+- Improvement: Add filter functionality to starter sites
+- Fix: Newsletter block and single subscribe form can't get the custom list ID
+
 2.0.32: 2024-03-15
 - Improvement: Correctly escape style attribute in newsletter subscribe block
 

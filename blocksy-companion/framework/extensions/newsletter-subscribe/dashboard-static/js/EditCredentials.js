@@ -114,7 +114,7 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 								},
 
 								{
-									key: 'mailerlite',
+									key: 'mailerlite-new',
 									value: 'Mailerlite',
 								},
 
@@ -149,7 +149,7 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 
 				{provider.indexOf('mailerlite') > -1 && (
 					<section>
-						<label>{__('Version', 'blocksy-companion')}</label>
+						<label>{__('API Version', 'blocksy-companion')}</label>
 						<Select
 							onChange={(copy) => {
 								setProvider(

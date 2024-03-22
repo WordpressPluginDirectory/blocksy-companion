@@ -14,7 +14,7 @@ import { Transition, animated } from 'blocksy-options'
 import DemosList from './DemoInstall/DemosList'
 import DemoToInstall from './DemoInstall/DemoToInstall'
 
-import SiteExport from './SiteExport'
+import useDemoListFilters from './DemoInstall/filters/useDemoListFilters'
 
 export const DemosContext = createContext({
 	demos: [],
@@ -35,6 +35,10 @@ const DemoInstall = ({ children, path, location }) => {
 	const [currentlyInstalledDemo, setCurrentlyInstalledDemo] = useState(
 		currently_installed_demo_cache
 	)
+
+	const filtersPayload = useDemoListFilters({
+		demos_list,
+	})
 
 	const [demo_error, setDemoError] = useState(false)
 
@@ -182,11 +186,6 @@ const DemoInstall = ({ children, path, location }) => {
 								<DemosContext.Provider
 									value={{
 										demo_error,
-										demos_list: demos_list.filter(
-											(ext) =>
-												!ext.dev_v2 ||
-												ct_localizations.is_dev_mode
-										),
 										currentDemo,
 										pluginsStatus,
 										installerBlockingReleased,
@@ -194,10 +193,20 @@ const DemoInstall = ({ children, path, location }) => {
 										setCurrentDemo,
 										currentlyInstalledDemo,
 										setCurrentlyInstalledDemo,
+
+										unfiltered_demos_list:
+											filtersPayload.unfiltered_demos_list,
+										demos_list: filtersPayload.demos_list,
+										filters: filtersPayload.filters,
+										setFilters: filtersPayload.setFilters,
+
+										allPlans: filtersPayload.allPlans,
+										allCategories:
+											filtersPayload.allCategories,
 									}}>
+									{filtersPayload.display()}
 									<DemosList />
 									<DemoToInstall />
-									<SiteExport />
 								</DemosContext.Provider>
 								<SubmitSupport />
 							</Fragment>

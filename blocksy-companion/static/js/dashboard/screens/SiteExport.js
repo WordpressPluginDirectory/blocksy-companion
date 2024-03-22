@@ -13,15 +13,77 @@ import Overlay from '../../helpers/Overlay'
 
 import { getPluginsMap } from './DemoInstall/Wizzard/Plugins'
 
-const SiteExport = () => {
+const SiteExport = ({ allPlans, allCategories }) => {
 	const [isLoading, setIsLoading] = useState(false)
 	const [isShowing, setIsShowing] = useState(false)
 
-	const [name, setName] = useState('')
+	const [remoteDemos, setRemoteDemos] = useState([])
+
+	const [demoId, setDemoId] = useState(null)
+
 	const [builder, setBuilder] = useState('')
 	const [plugins, setPlugins] = useState([])
-	const [url, setUrl] = useState('')
-	const [isPro, setIsPro] = useState(false)
+
+	useEffect(() => {
+		const fetchInitialData = async () => {
+			const body = new FormData()
+
+			body.append('action', 'blocksy_demo_get_export_data')
+			body.append(
+				'nonce',
+				ctDashboardLocalizations.dashboard_actions_nonce
+			)
+
+			try {
+				const response = await fetch(
+					ctDashboardLocalizations.ajax_url,
+					{
+						method: 'POST',
+						body,
+					}
+				)
+
+				if (response.status === 200) {
+					const { success, data } = await response.json()
+
+					if (success) {
+						const fields = data.data
+
+						if (fields && fields.builder) {
+							setBuilder(fields.builder)
+						}
+
+						if (fields && fields.plugins) {
+							setPlugins(fields.plugins)
+						}
+
+						if (fields && fields.demoId) {
+							setDemoId(parseFloat(fields.demoId))
+						}
+					}
+				}
+			} catch (e) {}
+		}
+
+		const fetchRemoteDemos = async () => {
+			try {
+				const response = await fetch(
+					'https://creativethemes.com/blocksy/wp-json/ct/v1/starter-sites',
+					{
+						method: 'GET',
+					}
+				)
+
+				if (response.status === 200) {
+					const data = await response.json()
+					setRemoteDemos(data)
+				}
+			} catch (e) {}
+		}
+
+		fetchInitialData()
+		fetchRemoteDemos()
+	}, [])
 
 	const downloadExport = async () => {
 		setIsLoading(true)
@@ -31,11 +93,10 @@ const SiteExport = () => {
 		body.append('action', 'blocksy_demo_export')
 		body.append('nonce', ctDashboardLocalizations.dashboard_actions_nonce)
 
-		body.append('name', name)
-		body.append('is_pro', isPro)
-		body.append('url', url)
+		body.append('demoId', demoId)
 		body.append('builder', builder)
 		body.append('plugins', plugins.join(','))
+
 		body.append('wp_customize', 'on')
 
 		try {
@@ -48,11 +109,45 @@ const SiteExport = () => {
 				const { success, data } = await response.json()
 
 				if (success) {
-					var blob = new Blob([JSON.stringify(data.demo)], {
+					const remoteDemo = remoteDemos.find(
+						(demo) => demo.id === demoId
+					)
+
+					const finalDemo = {
+						name: remoteDemo.title,
+						url: remoteDemo.demo_live_link,
+						is_pro: remoteDemo.is_pro === 'Pro',
+
+						categories: remoteDemo.categories,
+						keywords: remoteDemo.keywords,
+
+						...(remoteDemo.is_pro === 'Pro' && remoteDemo.plans
+							? {
+									plans: [
+										'personal',
+										'professional',
+										'agency',
+
+										...remoteDemo.plans.map((plan) => {
+											return `${plan}_v2`
+										}),
+									],
+							  }
+							: {}),
+
+						...data.demo,
+					}
+
+					console.log('Blocksy:Dashboard:DemoInstall:exported', {
+						remoteDemo,
+						finalDemo,
+					})
+
+					var blob = new Blob([JSON.stringify(finalDemo)], {
 						type: 'text/plain;charset=utf-8',
 					})
 
-					fileSaver.saveAs(blob, `${name}.json`)
+					fileSaver.saveAs(blob, `${remoteDemo.title}.json`)
 				}
 			}
 		} catch (e) {}
@@ -60,18 +155,25 @@ const SiteExport = () => {
 		setIsLoading(false)
 	}
 
-	if (!ct_localizations.is_dev_mode) {
-		return null
-	}
-
 	return (
-		<div className="ct-export">
+		<div className="ct-filter-trigger-export">
 			<button
-				className="ct-button"
+				type="button"
+				className="components-button has-icon has-text"
 				onClick={(e) => {
 					setIsShowing(true)
 				}}>
-				{__('Site export')}
+				<svg
+					aria-hidden="true"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill-rule="evenodd"
+					fill="currentColor">
+					<path d="M20 15v5H4v-5h1.5v3.5h6V6.8l-4 4-1-1.1L12.2 4l6.3 5.7-1 1.1L13 6.7v11.8h5.5V15H20z" />
+				</svg>
+
+				{__('Export Site')}
 			</button>
 
 			<Overlay
@@ -79,98 +181,136 @@ const SiteExport = () => {
 				className="ct-site-export-modal"
 				onDismiss={() => setIsShowing(false)}
 				render={() => (
-					<div className="ct-site-export">
-						<label>
-							{__('Name', 'blocksy-companion')}
+					<div className="ct-modal-content">
+						<h2>Export Settings</h2>
 
-							<input
-								type="text"
-								placeholder={__('Name', 'blocksy-companion')}
-								value={name}
-								onChange={({ target: { value } }) =>
-									setName(value)
-								}
-							/>
-						</label>
+						<div className="ct-site-export-settings ct-modal-scroll">
+							<section className="general-section has-divider">
+								<label>
+									<span className="ct-label">
+										{__(
+											'Starter site',
+											'blocksy-companion'
+										)}
+									</span>
 
-						<label>
-							{__('Preview URL', 'blocksy-companion')}
-							<input
-								type="text"
-								placeholder={__(
-									'Preview URL',
-									'blocksy-companion'
-								)}
-								value={url}
-								onChange={({ target: { value } }) =>
-									setUrl(value)
-								}
-							/>
-						</label>
+									<select
+										value={demoId}
+										onChange={({ target: { value } }) =>
+											setDemoId(parseFloat(value))
+										}>
+										<option value="">
+											{__(
+												'Select a starter site',
+												'blocksy-companion'
+											)}
+										</option>
+										{remoteDemos
+											.sort((a, b) => {
+												const fa = a.title.toLowerCase()
+												const fb = b.title.toLowerCase()
 
-						<label>
-							{__('PRO', 'blocksy-companion')}
-							<input
-								type="checkbox"
-								value={isPro}
-								onChange={({ target: { value } }) =>
-									setIsPro(!isPro)
-								}
-							/>
-						</label>
+												if (fa < fb) {
+													return -1
+												}
+												if (fa > fb) {
+													return 1
+												}
 
-						<label>
-							{__('Builder', 'blocksy-companion')}
-							<input
-								type="text"
-								placeholder={__('Builder', 'blocksy-companion')}
-								value={builder}
-								onChange={({ target: { value } }) =>
-									setBuilder(value)
-								}
-							/>
-						</label>
+												return 0
+											})
+											.map((demo) => (
+												<option
+													value={demo.id}
+													key={demo.id}>
+													{demo.title}
+												</option>
+											))}
+									</select>
+								</label>
 
-						<h3>Required plugins</h3>
-
-						<div className="ct-bundled-plugins-list ct-modal-scroll">
-							{Object.keys(getPluginsMap()).map((plugin) => (
-								<label
-									tabindex="0"
-									onClick={(e) => {
-										e.preventDefault()
-
-										setPlugins((plugins) => {
-											if (plugins.includes(plugin)) {
-												return plugins.filter(
-													(p) => p !== plugin
-												)
-											}
-
-											return [...plugins, plugin]
-										})
-									}}>
-									<span>{getPluginsMap()[plugin]}</span>
+								<label>
+									<span className="ct-label">
+										{__('Builder', 'blocksy-companion')}
+									</span>
 
 									<input
-										type="checkbox"
-										checked={plugins.indexOf(plugin) > -1}
-										onChange={({
-											target: { checked },
-										}) => {}}
+										type="text"
+										placeholder={__(
+											'Builder',
+											'blocksy-companion'
+										)}
+										value={builder}
+										onChange={({ target: { value } }) =>
+											setBuilder(value)
+										}
 									/>
 								</label>
-							))}
+							</section>
+
+							<section className="plugins-section">
+								<h4>Required plugins</h4>
+
+								<div className="ct-bundled-plugins-list grid-labels">
+									{Object.keys(getPluginsMap())
+										.filter(
+											(plugin) => plugin !== 'gutenberg'
+										)
+										.map((plugin) => (
+											<label
+												tabindex="0"
+												onClick={(e) => {
+													e.preventDefault()
+
+													setPlugins((plugins) => {
+														if (
+															plugins.includes(
+																plugin
+															)
+														) {
+															return plugins.filter(
+																(p) =>
+																	p !== plugin
+															)
+														}
+
+														return [
+															...plugins,
+															plugin,
+														]
+													})
+												}}>
+												<input
+													type="checkbox"
+													checked={
+														plugins.indexOf(
+															plugin
+														) > -1
+													}
+													onChange={({
+														target: { checked },
+													}) => {}}
+												/>
+
+												<span>
+													{getPluginsMap()[plugin]}
+												</span>
+											</label>
+										))}
+								</div>
+							</section>
 						</div>
 
-						<button
-							className="ct-button"
-							disabled={isLoading}
-							onClick={() => downloadExport()}>
-							{isLoading
-								? __('Loading...', 'blocksy-companion')
-								: __('Export site', 'blocksy-companion')}
-						</button>
+						<div className="ct-modal-actions has-divider">
+							<button
+								className="button button-primary"
+								disabled={isLoading}
+								onClick={() => downloadExport()}>
+								{isLoading
+									? __('Loading...', 'blocksy-companion')
+									: __('Export site', 'blocksy-companion')}
+							</button>
+						</div>
 					</div>
 				)}
 			/>

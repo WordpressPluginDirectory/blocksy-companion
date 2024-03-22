@@ -2382,7 +2382,7 @@ msgstr "Настройки таксономии"
 
 #: framework/helpers/exts.php:105
 msgid "Let your guests easily filter the posts by their category or tags taxonomy terms, instantly drilling down the listings."
-msgstr "Мгновенная фильтрация посетителями записей по рубрикам или меткам при просмотре списков."
+msgstr "Мгновенная фильтрация посетителями записей по руб��икам или меткам при просмотре списков."
 
 #: framework/helpers/exts.php:98
 msgid "Integrates custom fields solutions in the meta layers of a post and presents additional information."
@@ -2655,7 +2655,7 @@ msgstr "Показать зацепы WooCommerce"
 
 #: framework/premium/features/content-blocks/admin-ui.php:651
 msgid "Hide WooCommerce Hooks"
-msgstr "Спрятать ��ацепы WooCommerce"
+msgstr "Спрятать зацепы WooCommerce"
 
 #: framework/premium/features/content-blocks/admin-ui.php:643
 msgid "Show Theme Hooks"
@@ -3309,7 +3309,7 @@ msgstr "Необходимые плагины"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:122
 msgid "Child theme"
-msgstr "Дочерн��я тема"
+msgstr "Дочерняя тема"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:111
 msgid "Register demo"
@@ -3873,7 +3873,7 @@ msgstr "Вы можете вставить ссылку на собственн�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:760
 msgid "Choose File"
-msgstr "Выберите файл"
+msgstr "Выберите фа��л"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:670
 msgid "Plugin Thumbnail URL"
@@ -6704,7 +6704,7 @@ msgstr "Товары"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярные записи или товары на основе колич��ства комментариев или отзывов, полученных за указанный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, по��ученных за указанный период времени."
 
 #: framework/extensions/trending/customizer.php:106
 msgid "Trending Posts"

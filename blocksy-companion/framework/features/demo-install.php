@@ -5,6 +5,8 @@ namespace Blocksy;
 class DemoInstall {
 	protected $ajax_actions = [
 		'blocksy_demo_export',
+		'blocksy_demo_get_export_data',
+
 		'blocksy_demo_list',
 		'blocksy_demo_install_child_theme',
 		'blocksy_demo_activate_plugins',
@@ -315,11 +317,9 @@ class DemoInstall {
 
 		global $wp_customize;
 
-		$name = sanitize_text_field($_REQUEST['name']);
+		$demoId = sanitize_text_field($_REQUEST['demoId']);
 		$builder = sanitize_text_field($_REQUEST['builder']);
 		$plugins = sanitize_text_field($_REQUEST['plugins']);
-		$url = sanitize_text_field($_REQUEST['url']);
-		$is_pro = sanitize_text_field($_REQUEST['is_pro']) === 'true';
 
 		$plugins = explode(',', preg_replace('/\s+/', '', $plugins));
 
@@ -340,7 +340,6 @@ class DemoInstall {
 		$content_data = $content_data->export();
 
 		$demo_data = [
-			'name' => $name,
 			'options' => $options_data->export(),
 			'widgets' => $widgets_data,
 			'content' => $content_data,
@@ -348,14 +347,35 @@ class DemoInstall {
 			'pages_ids_options' => $options_data->export_pages_ids_options(),
 			'created_at' => date('d-m-Y'),
 
-			'url' => $url,
-			'is_pro' => !!$is_pro,
 			'builder' => $builder,
 			'plugins' => $plugins
 		];
 
+		update_option( 'blocksy_ext_demos_exported_demo_data', [
+			'demoId' => $demoId,
+			'builder' => $builder,
+			'plugins' => $plugins
+		]);
+
 		wp_send_json_success([
 			'demo' => $demo_data
+		]);
+	}
+
+	public function blocksy_demo_get_export_data() {
+		$this->check_nonce();
+
+		if (! current_user_can('edit_theme_options')) {
+			wp_send_json_error();
+		}
+
+		$data = get_option(
+			'blocksy_ext_demos_exported_demo_data',
+			[]
+		);
+
+		wp_send_json_success([
+			'data' => $data
 		]);
 	}
 

@@ -184,7 +184,13 @@ class Plugin {
 
 	public function check_if_blocksy_is_activated() {
 		if (defined('WP_CLI') && WP_CLI) {
-			return false;
+			$theme = wp_get_theme(get_template());
+
+			if ($theme->parent() && $theme->parent()->exists()) {
+				$theme = $theme->parent();
+			}
+
+			return strpos($theme->get('Name'), 'Blocksy') !== false;
 		}
 
 		if ($this->is_blocksy === '__NOT_SET__') {

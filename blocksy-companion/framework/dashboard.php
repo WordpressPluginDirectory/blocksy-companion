@@ -336,7 +336,7 @@ class Dashboard {
 		wp_enqueue_style(
 			'blocksy-dashboard-styles',
 			BLOCKSY_URL . 'static/bundle/dashboard.min.css',
-			[],
+			['wp-components'],
 			$data['Version']
 		);
 	}

@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-15 15:13+0000\n"
+"POT-Creation-Date: 2024-03-21 18:38+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -119,7 +119,6 @@ msgid "Companion"
 msgstr ""
 
 #: framework/theme-integration.php:425
-#: static/js/dashboard/screens/SiteExport.js:112
 msgid "PRO"
 msgstr ""
 
@@ -177,7 +176,7 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: framework/features/demo-install.php:298
+#: framework/features/demo-install.php:300
 msgid ""
 "Your PHP installation doesn't have support for XML. Please install the "
 "<i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install "
@@ -1628,6 +1627,7 @@ msgid "Search Category"
 msgstr ""
 
 #: framework/extensions/product-reviews/extension.php:592
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:88
 msgid "All Categories"
 msgstr ""
 
@@ -1933,7 +1933,6 @@ msgid "Last Month"
 msgstr ""
 
 #: framework/extensions/trending/customizer.php:307,
-#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:35,
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:32,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:133,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:73
@@ -2377,7 +2376,6 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:231,
 #: framework/features/header/items/account/options.php:578
-#: static/js/dashboard/screens/SiteExport.js:88
 msgid "Name"
 msgstr ""
 
@@ -2887,7 +2885,7 @@ msgid "Link Hover/Active"
 msgstr ""
 
 #: framework/premium/extensions/mega-menu/options.php:629,
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:167
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:169
 msgid "Background Hover"
 msgstr ""
 
@@ -4518,7 +4516,7 @@ msgid "Dropdown Options"
 msgstr ""
 
 #: framework/features/header/items/account/options.php:1927,
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:152,
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:154,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:617,
 #: framework/premium/features/premium-header/items/contacts/options.php:567,
 #: framework/premium/features/premium-header/items/contacts/options.php:609,
@@ -5328,25 +5326,25 @@ msgid ""
 "cycling an item."
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:120
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:122
 msgid "Featured Image"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:124,
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:126,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:490,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:328
 msgid "Select Image"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:128
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:130
 msgid "Accent Color"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:157
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:159
 msgid "Text Hover"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:162
+#: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:164
 msgid "Background Initial"
 msgstr ""
 
@@ -5598,16 +5596,15 @@ msgstr ""
 msgid "Quantity Auto Update"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:24,
+#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:5
+msgid "Product Image"
+msgstr ""
+
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:20,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:123,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:112,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:65
 msgid "Image Ratio"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:5
-msgid "Product Image"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:54
@@ -6320,7 +6317,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:81,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:481,
-#: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:248,
+#: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:259,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/render.php:120
 msgid "Out of Stock"
 msgstr ""
@@ -6434,12 +6431,12 @@ msgid ""
 "This option will allow you to add a speciffic product variation to wishlist."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:386,
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:387,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:601
 msgid "Browse products"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:389
+#: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:390
 msgid "You don't have any products in your wish list yet."
 msgstr ""
 
@@ -6849,20 +6846,20 @@ msgid "Reset Filters"
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker.js:14
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:65
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:72
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:325
 #: static/js/dashboard/NoTheme.js:62
-#: static/js/dashboard/screens/SiteExport.js:171
+#: static/js/dashboard/screens/SiteExport.js:310
 msgid "Loading..."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:66
-msgid "Invalid API Key..."
-msgstr ""
-
-#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:94
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:101
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:118
 msgid "Select list..."
+msgstr ""
+
+#: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:73
+msgid "Invalid API Key..."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:219
@@ -6874,7 +6871,7 @@ msgid "Newsletter Controls"
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:152
-msgid "Version"
+msgid "API Version"
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:162
@@ -7874,10 +7871,12 @@ msgid "This is a Pro extension"
 msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:103
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:116
 msgid "Agency"
 msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:11
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:14
 msgid "Free"
 msgstr ""
 
@@ -7890,10 +7889,12 @@ msgid "Upgrade Now"
 msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:17
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:108
 msgid "Personal"
 msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:18
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:112
 msgid "Professional"
 msgstr ""
 
@@ -7923,11 +7924,11 @@ msgstr ""
 msgid "Professional or Agency"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:154
+#: static/js/dashboard/screens/DemoInstall.js:158
 msgid "Loading Starter Sites..."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:168
+#: static/js/dashboard/screens/DemoInstall.js:172
 msgid ""
 "The connection to our <b>demo.creativethemes.com</b> server didn't worked. "
 "This connection is required for importing the starter sites from our demo "
@@ -8077,42 +8078,46 @@ msgstr ""
 msgid "Import content"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:118
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:128
+msgid "Available for"
+msgstr ""
+
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:167
 msgid "Preview"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:134
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:183
 msgid "Modify"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:135
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:184
 msgid "Import"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:45
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:54
 msgid "This is a Pro starter site"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:46
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:55
 msgid ""
 "Upgrade to any pro plan and get instant access to this starter site and many "
 "other features."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:53
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:62
 msgid ""
 "Upgrade to the professional or agency plan and get instant access to this "
 "starter site and many other features."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:60
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:69
 msgid ""
 "Upgrade to the agency plan and get instant access to this starter site and "
 "many other features."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:78
-msgid "Available for"
+#: static/js/dashboard/screens/DemoInstall/SingleDemo.js:90
+msgid "Required plan"
 msgstr ""
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/ChildTheme.js:108
@@ -8202,11 +8207,11 @@ msgid ""
 "Please select one in order to continue."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:68
+#: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:70
 msgid "Install & Activate Plugins"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:70
+#: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:72
 msgid ""
 "The following plugins are required for this starter site in order to work "
 "properly."
@@ -8230,6 +8235,22 @@ msgstr ""
 msgid ""
 "Please be patient and don't refresh this page, the import process may take a "
 "while, this also depends on your server."
+msgstr ""
+
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:13
+msgid "All Plans"
+msgstr ""
+
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:15
+msgid "Pro"
+msgstr ""
+
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:182
+msgid "All Builders"
+msgstr ""
+
+#: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:206
+msgid "Search for a starter site..."
 msgstr ""
 
 #: static/js/dashboard/screens/Extension.js:89
@@ -8257,20 +8278,24 @@ msgstr ""
 msgid "Pro Extensions"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:100
-msgid "Preview URL"
+#: static/js/dashboard/screens/SiteExport.js:176
+msgid "Export Site"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:126
+#: static/js/dashboard/screens/SiteExport.js:191
+msgid "Starter site"
+msgstr ""
+
+#: static/js/dashboard/screens/SiteExport.js:203
+msgid "Select a starter site"
+msgstr ""
+
+#: static/js/dashboard/screens/SiteExport.js:239
 msgid "Builder"
 msgstr ""
 
-#: static/js/dashboard/screens/SiteExport.js:172
+#: static/js/dashboard/screens/SiteExport.js:311
 msgid "Export site"
-msgstr ""
-
-#: static/js/dashboard/screens/SiteExport.js:74
-msgid "Site export"
 msgstr ""
 
 #: static/js/header/EditConditions.js:107
