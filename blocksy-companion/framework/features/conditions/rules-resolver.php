@@ -576,3 +576,4 @@ class ConditionsRulesResolver {
 		return false;
 	}
 }
+

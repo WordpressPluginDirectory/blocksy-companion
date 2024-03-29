@@ -164,7 +164,6 @@ class DynamicCss {
 			}
 
 			$file = $theme_paths['css_path'] . '/' . $chunk['filename'];
-			$url = $theme_paths['css_url'] . '/' . $chunk['filename'];
 
 			if (
 				function_exists('blocksy_get_dynamic_css_file_content')
@@ -179,7 +178,7 @@ class DynamicCss {
 		}
 	}
 
-	private function maybe_prepare_theme_uploads_path($args = []) {
+	public function maybe_prepare_theme_uploads_path($args = []) {
 		$args = wp_parse_args($args, [
 			'should_generate' => false,
 		]);
@@ -280,6 +279,10 @@ class DynamicCss {
 		}
 
 		return false;
+	}
+
+	public function get_wp_filesystem() {
+		return $this->wp_filesystem;
 	}
 }
 

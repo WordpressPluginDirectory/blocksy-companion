@@ -243,7 +243,12 @@ class ThemeIntegration {
 						'group' => get_taxonomy($tax->taxonomy)->label,
 						'post_types' => get_taxonomy($tax->taxonomy)->object_type
 					];
-				}, get_terms(['taxonomy' => $taxonomy, 'lang' => '']));
+				}, blc_get_terms([
+					'taxonomy' => $taxonomy,
+					'hide_empty' => false,
+				], [
+					'all_languages' => true
+				]));
 
 				if (empty($local_terms)) {
 					continue;
