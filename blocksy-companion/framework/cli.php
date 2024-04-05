@@ -14,183 +14,418 @@ add_action('blocksy:customizer:load:before', function () {
  */
 
 class Cli {
+	private $commands = [];
+
 	public function __construct() {
-		/**
-		 * Move all widgets to the inactive widgets area.
-		 */
-		\WP_CLI::add_command('blocksy widgets drop', function ($args) {
-			$sidebars_widgets = get_option('sidebars_widgets', array());
+		// Declare method and command pairings.
+		$this->commands = [
+			'drop_widgets' => 'blocksy widgets drop',
 
-			if (! isset($sidebars_widgets['wp_inactive_widgets'])) {
-				$sidebars_widgets['wp_inactive_widgets'] = [];
+			'demo_import_start' => 'blocksy demo import:start',
+			'demo_import_plugins' => 'blocksy demo import:plugins',
+			'demo_import_options' => 'blocksy demo import:options',
+			'demo_import_widgets' => 'blocksy demo import:widgets',
+			'demo_import_content' => 'blocksy demo import:content',
+			'demo_clean' => 'blocksy demo clean',
+			'demo_import_finish' => 'blocksy demo import:finish',
+
+			'demo_list' => 'blocksy demo list',
+			'demo_install' => 'blocksy demo install',
+		];
+
+		// Register commands.
+		foreach ($this->commands as $method => $command) {
+			\WP_CLI::add_command($command, [$this, $method]);
+		}
+	}
+
+	/**
+	 * Move all widgets to the inactive widgets area.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <none>
+	 *
+	 * ## EXAMPLES
+	 *
+	 *     wp blocksy widgets drop
+	 *
+	 * @when after_wp_load
+	 */
+	public function drop_widgets($args, $assoc_args) {
+		$sidebars_widgets = get_option('sidebars_widgets', []);
+
+		if (! isset($sidebars_widgets['wp_inactive_widgets'])) {
+			$sidebars_widgets['wp_inactive_widgets'] = [];
+		}
+
+		foreach ($sidebars_widgets as $sidebar_id => $widgets) {
+			if (! $widgets) continue;
+			if ($sidebar_id === 'wp_inactive_widgets') {
+				continue;
 			}
 
-			foreach ($sidebars_widgets as $sidebar_id => $widgets) {
-				if (! $widgets) continue;
-				if ($sidebar_id === 'wp_inactive_widgets') {
-					continue;
-				}
-
-				if ($sidebar_id === 'array_version') {
-					continue;
-				}
-
-				foreach ($widgets as $widget_id) {
-					$sidebars_widgets['wp_inactive_widgets'][] = $widget_id;
-				}
-
-				$sidebars_widgets[$sidebar_id] = [];
+			if ($sidebar_id === 'array_version') {
+				continue;
 			}
 
-			update_option('sidebars_widgets', $sidebars_widgets);
-			unset($sidebars_widgets['array_version']);
+			foreach ($widgets as $widget_id) {
+				$sidebars_widgets['wp_inactive_widgets'][] = $widget_id;
+			}
 
-			set_theme_mod('sidebars_widgets', [
-				'time' => time(),
-				'data' => $sidebars_widgets
-			]);
-		});
+			$sidebars_widgets[$sidebar_id] = [];
+		}
 
-		/**
-		 * Kick start the demo import process.
-		 *
-		 * ## OPTIONS
-		 *
-		 * <demo>
-		 * : The demo name.
-		 *
-		 * <builder>
-		 * : The builder name. Default to `gutenberg`.
-		 */
-		\WP_CLI::add_command('blocksy demo import:start', function ($cli_argv) {
-			$args = $this->get_demo_args($cli_argv);
+		update_option('sidebars_widgets', $sidebars_widgets);
+		unset($sidebars_widgets['array_version']);
 
-			Plugin::instance()->demo->set_current_demo(
-				$args['demo'] . ':' . $args['builder']
+		set_theme_mod('sidebars_widgets', [
+			'time' => time(),
+			'data' => $sidebars_widgets
+		]);
+	}
+
+	/**
+	 * Kickstart the demo import process.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The demo name.
+	 *
+	 * [<builder>]
+	 * : The builder name. Default to `gutenberg`.
+	 */
+	public function demo_import_start($args, $assoc_args) {
+		$args = $this->get_demo_args($args);
+
+		Plugin::instance()->demo->set_current_demo(
+			$args['demo'] . ':' . $args['builder']
+		);
+	}
+
+	/**
+	 * Import the plugins required by the demo.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The demo name.
+	 *
+	 * [<builder>]
+	 * : The builder name. Default to `gutenberg`.
+	 */
+	public function demo_import_plugins($args) {
+		$args = $this->get_demo_args($args);
+
+		$demo_data = Plugin::instance()->demo->fetch_single_demo([
+			'demo' => $args['demo'],
+			'builder' => $args['builder']
+		]);
+
+		$plugins = new DemoInstallPluginsInstaller([
+			'has_streaming' => false,
+			'plugins' => implode(':', $demo_data['plugins'])
+		]);
+
+		$plugins->import();
+	}
+
+	/**
+	 * Import the options required by the demo.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The demo name.
+	 *
+	 * [<builder>]
+	 * : The builder name. Default to `gutenberg`.
+	 */
+	public function demo_import_options($args, $assoc_args) {
+		$args = $this->get_demo_args($args);
+
+		$options = new DemoInstallOptionsInstaller([
+			'has_streaming' => false,
+			'demo_name' => $args['demo'] . ':' . $args['builder']
+		]);
+
+		$options->import();
+	}
+
+	/**
+	 * Import the widgets required by the demo.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The demo name.
+	 *
+	 * [<builder>]
+	 * : The builder name. Default to `gutenberg`.
+	 */
+	public function demo_import_widgets($args) {
+		$args = $this->get_demo_args($args);
+
+		$widgets = new DemoInstallWidgetsInstaller([
+			'has_streaming' => false,
+			'demo_name' => $args['demo'] . ':' . $args['builder']
+		]);
+
+		$widgets->import();
+	}
+
+	/**
+	 * Import the content required by the demo.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The demo name.
+	 *
+	 * [<builder>]
+	 * : The builder name. Default to `gutenberg`.
+	 */
+	public function demo_import_content($args) {
+		$args = $this->get_demo_args($args);
+
+		$content = new DemoInstallContentInstaller([
+			'has_streaming' => false,
+			'demo_name' => $args['demo'] . ':' . $args['builder']
+		]);
+
+		$content->import();
+	}
+
+	/**
+	 * Clean the currently installed demo.
+	 */
+	public function demo_clean($args) {
+		update_option('blocksy_ext_demos_current_demo', null);
+
+		$eraser = new DemoInstallContentEraser([
+			'has_streaming' => false
+		]);
+
+		$eraser->import();
+
+		\WP_CLI::success("Site cleaned up.");
+	}
+
+	/**
+	 * Finish the demo import process.
+	 */
+	public function demo_import_finish($args) {
+		$finish = new DemoInstallFinalActions([
+			'has_streaming' => false
+		]);
+
+		$finish->import();
+	}
+
+	/**
+	 * List available demos.
+	 *
+	 * ## OPTIONS
+	 *
+	 * [--format=<format>]
+	 * : Render output in a particular format.
+	 * ---
+	 * default: table
+	 * options:
+	 *   - table
+	 *   - csv
+	 *   - json
+	 *   - ids
+	 * ---
+	 *
+	 * [--fields=<fields>]
+	 * : Fields to display in the output.
+	 * ---
+	 * default: name,builder,categories,plugins
+	 * options:
+	 *  - name
+	 *  - builder
+	 *  - categories
+	 *  - plugins
+	 *  - created_at
+	 *  - keywords
+	 * ---
+	 *
+	 * ## EXAMPLES
+	 *
+	 *     wp blocksy demo list --format=json
+	 *
+	 * @when after_wp_load
+	 */
+	public function demo_list($args, $assoc_args) {
+		$demo_data = Plugin::instance()->demo->fetch_all_demos();
+
+		$merged_data = [];
+
+		foreach ($demo_data as $demo) {
+			$name = $demo['name'];
+			$id = strtolower($name);
+
+			// Initialize array key if it doesn't exist
+			if (!isset($merged_data[$id])) {
+				$merged_data[$id] = [
+					'name' => $name,
+					'categories' => [],
+					'keywords' => [],
+					'created_at' => [],
+					'builder' => [],
+					'plugins' => [],
+				];
+			}
+
+			// Safely add data, ensuring uniqueness and handling missing properties
+			$merged_data[$id]['categories'] = array_unique(
+				array_merge(
+					$merged_data[$id]['categories'],
+					! empty($demo['categories']) ? $demo['categories'] : []
+				)
 			);
 
-			$demo_data = Plugin::instance()->demo->fetch_single_demo([
-				'demo' => $args['demo'],
-				'builder' => $args['builder']
-			]);
+			$merged_data[$id]['keywords'] = array_unique(
+				array_merge(
+					$merged_data[$id]['keywords'],
+					explode(
+						', ',
+						! empty($demo['keywords']) ? $demo['keywords'] : ''
+					)
+				)
+			);
+
+			$merged_data[$id]['created_at'][] = ! empty($demo['created_at']) ? $demo['created_at'] : '';
+
+			$merged_data[$id]['builder'][] = ! empty($demo['builder']) ? $demo['builder'] : 'gutenberg';
+
+			$merged_data[$id]['plugins'] = array_unique(
+				array_merge(
+					$merged_data[$id]['plugins'],
+					! empty($demo['plugins']) ? $demo['plugins'] : []
+				)
+			);
+		}
+
+		// Sort alphabetically by name
+		usort($merged_data, function($a, $b) {
+			return $a['name'] <=> $b['name'];
 		});
 
-		/**
-		 * Import the plugins required by the demo.
-		 *
-		 * ## OPTIONS
-		 *
-		 * <demo>
-		 * : The demo name.
-		 *
-		 * <builder>
-		 * : The builder name. Default to `gutenberg`.
-		 */
-		\WP_CLI::add_command('blocksy demo import:plugins', function ($cli_argv) {
-			$args = $this->get_demo_args($cli_argv);
+		// Remove duplicates from non-array fields if necessary and convert arrays to strings
+		foreach ($merged_data as $key => $value) {
+			$merged_data[$key]['builder'] = implode(', ', array_unique($value['builder']));
+			$merged_data[$key]['created_at'] = implode(', ', array_unique($value['created_at']));
+			$merged_data[$key]['categories'] = implode(', ', array_unique($value['categories']));
+			$merged_data[$key]['plugins'] = implode(', ', array_unique($value['plugins']));
+			$merged_data[$key]['keywords'] = implode(', ', array_filter($value['keywords'], function($keyword) { return !empty($keyword); }));
+		}
 
-			$demo_data = Plugin::instance()->demo->fetch_single_demo([
-				'demo' => $args['demo'],
-				'builder' => $args['builder']
-			]);
+		// Known fields
+		$known_fields = ['id', 'name', 'builder', 'plugins', 'categories', 'keywords', 'created_at'];
 
-			$plugins = new DemoInstallPluginsInstaller([
-				'has_streaming' => false,
-				'plugins' => implode(':', $demo_data['plugins'])
-			]);
+		// Get the format from the --format flag. Defaults to 'table'.
+		$format = \WP_CLI\Utils\get_flag_value($assoc_args, 'format', 'table');
 
-			$plugins->import();
-		});
+		// Get and validate fields from the --fields flag. Defaults to all known fields.
+		$fields = array_filter(
+			explode(
+				',',
+				\WP_CLI\Utils\get_flag_value($assoc_args, 'fields', implode(',', $known_fields))
+			),
+			function($field) use ($known_fields) {
+				return in_array($field, $known_fields);
+			}
+		);
 
-		/**
-		 * Import the options required by the demo.
-		 *
-		 * ## OPTIONS
-		 *
-		 * <demo>
-		 * : The demo name.
-		 *
-		 * <builder>
-		 * : The builder name. Default to `gutenberg`.
-		 */
-		\WP_CLI::add_command('blocksy demo import:options', function ($cli_argv) {
-			$args = $this->get_demo_args($cli_argv);
+		// Output the data in the specified format.
+		\WP_CLI\Utils\format_items($format, $merged_data, $fields);
+	}
 
-			$options = new DemoInstallOptionsInstaller([
-				'has_streaming' => false,
-				'demo_name' => $args['demo'] . ':' . $args['builder']
-			]);
+	/**
+	 * Install demo profile.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <demo>
+	 * : The identifier or name of the demo to install.
+	 *
+	 * [<builder>]
+	 * : The page builder to use with the demo. Defaults to 'gutenberg'.
+	 *
+	 * [--clean]
+	 * : If set, cleans the existing content before installing the demo.
+	 *
+	 * [--yes]
+	 * : If set, skips the confirmation prompt.
+	 *
+	 * ## EXAMPLES
+	 *
+	 *     wp blocksy demo install "Tasty"
+	 *     wp blocksy demo install "Tasty" --clean
+	 *     wp blocksy demo install "Tasty" elementor --clean
+	 *     wp blocksy demo install "Tasty" elementor --clean --yes
+	 *
+	 *
+	 * @when after_wp_load
+	 */
+	public function demo_install($args, $assoc_args) {
+		$clean = \WP_CLI\Utils\get_flag_value($assoc_args, 'clean', false);
 
-			$options->import();
-		});
+		// Get demo profile arguments.
+		$demo_args = $this->get_demo_args($args);
+		$demo_data = Plugin::instance()->demo->fetch_single_demo([
+			'demo' => $demo_args['demo'],
+			'builder' => $demo_args['builder']
+		]);
 
-		/**
-		 * Import the widgets required by the demo.
-		 *
-		 * ## OPTIONS
-		 *
-		 * <demo>
-		 * : The demo name.
-		 *
-		 * <builder>
-		 * : The builder name. Default to `gutenberg`.
-		 */
-		\WP_CLI::add_command('blocksy demo import:widgets', function ($cli_argv) {
-			$args = $this->get_demo_args($cli_argv);
+		// Check for empty demo.
+		if (empty($demo_data)) {
+			\WP_CLI::error('Demo not found. Please check the demo name and builder configuration and try again.');
+		}
 
-			$widgets = new DemoInstallWidgetsInstaller([
-				'has_streaming' => false,
-				'demo_name' => $args['demo'] . ':' . $args['builder']
-			]);
+		// Import individual demo components.
+		$commands = [
+			'demo_import_start' => "Starting demo import for {$demo_args['demo']}...",
+			'demo_import_plugins' => 'Importing demo plugins...',
+			'demo_import_options' => 'Importing demo options...',
+			'demo_import_widgets' => 'Importing demo widgets...',
+			'demo_import_content' => 'Importing demo content...',
+			'demo_import_finish' => 'Finishing demo import...',
+		];
 
-			$widgets->import();
-		});
+		// Confirm the clean option, run clean command first.
+		if ($clean) {
+			\WP_CLI::confirm("This option will remove the previous imported content and will perform a fresh and clean install.", $assoc_args);
+			$commands = ['demo_clean' => 'Cleaning up current demo...'] + $commands;
+		}
 
-		/**
-		 * Import the content required by the demo.
-		 *
-		 * ## OPTIONS
-		 *
-		 * <demo>
-		 * : The demo name.
-		 *
-		 * <builder>
-		 * : The builder name. Default to `gutenberg`.
-		 */
-		\WP_CLI::add_command('blocksy demo import:content', function ($cli_argv) {
-			$args = $this->get_demo_args($cli_argv);
+		// Create a progress bar
+		$progress = \WP_CLI\Utils\make_progress_bar(
+			'Overall Progress',
+			count($commands) + 1
+		);
 
-			$content = new DemoInstallContentInstaller([
-				'has_streaming' => false,
-				'demo_name' => $args['demo'] . ':' . $args['builder']
-			]);
+		// Run each command in sequence.
+		foreach ($commands as $command => $message) {
+			\WP_CLI::runcommand(
+				$this->commands[$command],
+				[
+					'return' => true,
+					'launch' => true,
+					'exit_error' => false,
+					'command_args' => $args
+				]
+			);
 
-			$content->import();
-		});
+			// Update the progress bar.
+			$progress->tick(1, $message);
+		}
 
-		/**
-		 * Clean the currently installed demo.
-		 */
-		\WP_CLI::add_command('blocksy demo clean', function ($cli_argv) {
-			update_option('blocksy_ext_demos_current_demo', null);
-
-			$eraser = new DemoInstallContentEraser([
-				'has_streaming' => false
-			]);
-
-			$eraser->import();
-		});
-
-		/**
-		 * Finish the demo import process.
-		 */
-		\WP_CLI::add_command('blocksy demo import:finish', function ($args) {
-			$finish = new DemoInstallFinalActions([
-				'has_streaming' => false
-			]);
-
-			$finish->import();
-		});
+		$progress->finish();
+		\WP_CLI::success("Import completed.");
 	}
 
 	private function get_demo_args($cli_argv) {

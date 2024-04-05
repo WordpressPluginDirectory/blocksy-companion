@@ -2,10 +2,10 @@
 Tags: widget, widgets
 Requires at least: 5.2
 Requires PHP: 7.0
-Tested up to: 6.4
+Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.37
+Stable tag: 2.0.38
 
 == Description ==
 
@@ -22,7 +22,40 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 1. Upload `Blocksy-Companion-version_number.zip` to the `/wp-content/plugins/` directory and extract.
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
+== Frequently Asked Questions ==
+
+= Why do I need this plugin? =
+
+You need this plugin if you are using the Blocksy theme. It gives you the
+ability to install any starter site and also a lot of additional extensions
+and features.
+
+= How do I use the Blocksy Companion? =
+
+After you installed this plugin, just go to the Blocksy dashboard from the top
+level menu in the WordPress admin area. When you are there, you will be able
+to see all the awesome extensions that the plugin brings and also the starter
+sites that are ready to be imported with just a few clicks and get you started
+in no time.
+
+= What do I do if the plugin doesn't work? =
+
+If you are using the free version of the plugin, you can post your issue on
+the support forum of the plugin. In case you have bought the premium version,
+please reach out to the support
+[here](https://creativethemes.com/blocksy/support/).
+
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure
+Program. The Patchstack team help validate, triage and handle any security
+vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
+
 == Changelog ==
+2.0.38: 2024-04-04
+- Improvement: Introduce a WP CLI command for installing a starter site in one step
+- Improvement: Make sure Product Reviews extension post contents is searchable
+
 2.0.37: 2024-03-29
 - Improvement: Correctly generate translation files
 
