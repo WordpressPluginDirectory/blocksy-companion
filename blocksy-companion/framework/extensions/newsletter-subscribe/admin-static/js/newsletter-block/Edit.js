@@ -48,13 +48,11 @@ const Edit = ({
 			'--theme-form-text-focus-color': inputFontColorFocus?.color,
 
 			'--theme-form-field-border-initial-color': inputBorderColor?.color,
-			'--theme-form-field-border-focus-color':
-				inputBorderColorFocus?.color,
+			'--theme-form-field-border-focus-color': inputBorderColorFocus?.color,
 
-			'--theme-form-field-background-initial-color':
-				inputBackgroundColor?.color,
-			'--theme-form-field-background-focus-color':
-				inputBackgroundColorFocus?.color,
+			'--theme-form-field-background-initial-color': inputBackgroundColor?.color,
+			'--theme-form-field-background-focus-color': inputBackgroundColorFocus?.color,
+
 			...(attributes?.newsletter_subscribe_height
 				? {
 						'--theme-form-field-height': `${attributes.newsletter_subscribe_height}px`,
@@ -127,7 +125,7 @@ const Edit = ({
 
 			<InspectorControls group="styles">
 				<ColorsPanel
-					label={__('Input Font Color', 'blocksy')}
+					label={__('Input Font Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputFontColor(colors.inputFontColor)
 						setInputFontColorFocus(colors.inputFontColorFocus)
@@ -136,7 +134,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputFontColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputFontColor(
@@ -145,7 +143,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputFontColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputFontColorFocus(
@@ -156,7 +154,9 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Input Border Color', 'blocksy')}
+					label={attributes.newsletter_subscribe_container_type === 'boxed'
+						? __('Container Border Color', 'blocksy-companion')
+						: __('Input Border Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputBorderColor(colors.inputBorderColor)
 						setInputBorderColorFocus(colors.inputBorderColorFocus)
@@ -165,7 +165,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputBorderColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputBorderColor(
@@ -174,7 +174,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputBorderColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputBorderColorFocus(
@@ -185,7 +185,9 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Input Background Color', 'blocksy')}
+					label={attributes.newsletter_subscribe_container_type === 'boxed'
+						? __('Container Background Color', 'blocksy-companion')
+						: __('Input Background Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputBackgroundColor(colors.inputBackgroundColor)
 						setInputBackgroundColorFocus(
@@ -196,7 +198,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputBackgroundColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputBackgroundColor(
@@ -205,7 +207,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputBackgroundColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputBackgroundColorFocus(
@@ -216,7 +218,7 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Button Text Color', 'blocksy')}
+					label={__('Button Text Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputIconColor(colors.inputIconColor)
 						setInputIconColorFocus(colors.inputIconColorFocus)
@@ -225,7 +227,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputIconColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputIconColor(
@@ -234,7 +236,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputIconColorFocus.color,
-							label: __('Hover', 'blocksy'),
+							label: __('Hover', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setInputIconColorFocus(
@@ -245,7 +247,7 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Button Background Color', 'blocksy')}
+					label={__('Button Background Color', 'blocksy-companion')}
 					resetAll={() => {
 						setButtonBackgroundColor(colors.buttonBackgroundColor)
 						setButtonBackgroundColorHover(
@@ -256,7 +258,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: buttonBackgroundColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setButtonBackgroundColor(
@@ -265,7 +267,7 @@ const Edit = ({
 						},
 						{
 							colorValue: buttonBackgroundColorHover.color,
-							label: __('Hover', 'blocksy'),
+							label: __('Hover', 'blocksy-companion'),
 							enableAlpha: true,
 							onColorChange: (value) =>
 								setButtonBackgroundColorHover(

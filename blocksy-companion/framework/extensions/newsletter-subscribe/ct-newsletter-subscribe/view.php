@@ -54,7 +54,7 @@ if (isset($atts['style']['border']['radius'])) {
 
 $colors = [
 	'--theme-form-text-initial-color' => blocksy_default_akg('customInputFontColor', $atts, ''),
-	'--theme-form-text-focus-color' => blocksy_default_akg('customInputFontFocusColor', $atts, ''),
+	'--theme-form-text-focus-color' => blocksy_default_akg('customInputFontColorFocus', $atts, ''),
 	'--theme-form-field-border-initial-color' => blocksy_default_akg('customInputBorderColor', $atts, ''),
 	'--theme-form-field-border-focus-color' => blocksy_default_akg('customInputBorderColorFocus', $atts, ''),
 	'--theme-form-field-background-initial-color' => blocksy_default_akg('customInputBackgroundColor', $atts, ''),
@@ -166,8 +166,20 @@ $form_attrs = [
 	'data-provider' => $provider_data['provider'],
 ];
 
+$container_atts = [];
+
 if ($view_type === 'inline') {
-	$form_attrs['data-columns'] = $fields_number;
+	$container_atts['data-columns'] = $fields_number;
+}
+
+$container_type = blocksy_default_akg(
+	'newsletter_subscribe_container_type',
+	$atts,
+	'default'
+);
+
+if ($container_type === 'boxed') {
+	$container_atts['data-container'] = 'boxed';
 }
 
 $skip_submit_output = '';
@@ -223,24 +235,27 @@ foreach ($button_colors as $key => $value) {
 
 ?>
 	<form <?php echo blocksy_attr_to_html($form_attrs); ?>>
-		<?php if ($has_name) { ?>
+
+		<div class="ct-newsletter-subscribe-form-elements"  <?php echo blocksy_attr_to_html($container_atts); ?>>
+			<?php if ($has_name) { ?>
+				<input
+					type="text"
+					name="FNAME"
+					placeholder="<?php esc_attr_e($name_label, 'blocksy-companion'); ?>"
+					title="<?php echo __('Name', 'blocksy-companion'); ?>">
+			<?php } ?>
+
 			<input
-				type="text"
-				name="FNAME"
-				placeholder="<?php esc_attr_e($name_label, 'blocksy-companion'); ?>"
-				title="<?php echo __('Name', 'blocksy-companion'); ?>">
-		<?php } ?>
+				type="email"
+				name="EMAIL"
+				placeholder="<?php esc_attr_e($email_label, 'blocksy-companion'); ?>"
+				title="<?php echo __('Email', 'blocksy-companion'); ?>"
+				required>
 
-		<input
-			type="email"
-			name="EMAIL"
-			placeholder="<?php esc_attr_e($email_label, 'blocksy-companion'); ?>"
-			title="<?php echo __('Email', 'blocksy-companion'); ?>"
-			required>
-
-		<button class="wp-element-button" <?php echo ! empty($button_colors_css) ? 'style="' . esc_attr($button_colors_css) . '"' : '' ?>>
-			<?php echo esc_html($button_text); ?>
-		</button>
+			<button class="wp-element-button" <?php echo ! empty($button_colors_css) ? 'style="' . esc_attr($button_colors_css) . '"' : '' ?>>
+				<?php echo esc_html($button_text); ?>
+			</button>
+		</div>
 
 		<?php
 			if (function_exists('blocksy_ext_cookies_checkbox')) {

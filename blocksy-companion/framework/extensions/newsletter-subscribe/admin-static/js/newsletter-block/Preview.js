@@ -13,6 +13,7 @@ const Preview = ({ attributes, buttonStyles, setAttributes }) => {
 		newsletter_subscribe_button_text,
 		has_newsletter_subscribe_name,
 		newsletter_subscribe_mail_label,
+		newsletter_subscribe_container_type = 'default',
 	} = attributes
 
 	return (
@@ -22,51 +23,59 @@ const Preview = ({ attributes, buttonStyles, setAttributes }) => {
 				method="post"
 				target="_blank"
 				className="ct-newsletter-subscribe-form"
-				{...(newsletter_subscribe_view_type !== 'inline'
-					? {}
-					: {
-							'data-columns':
-								has_newsletter_subscribe_name === 'yes' ? 3 : 2,
-					  })}
-				data-provider="convertkit">
-				{has_newsletter_subscribe_name === 'yes' ? (
+				data-provider="demo">
+				<div
+					className="ct-newsletter-subscribe-form-elements"
+					{...(newsletter_subscribe_container_type === 'default'
+						? {}
+						: {
+							'data-container': newsletter_subscribe_container_type,
+						  })}
+					{...(newsletter_subscribe_view_type !== 'inline'
+						? {}
+						: {
+							'data-columns': has_newsletter_subscribe_name === 'yes' ? 3 : 2,
+						  })}>
+					{has_newsletter_subscribe_name === 'yes' ? (
+						<input
+							type="text"
+							name="FNAME"
+							title="Name"
+							value={newsletter_subscribe_name_label}
+							onChange={(e) => {
+								setAttributes({
+									newsletter_subscribe_name_label:
+										e.target.value,
+								})
+							}}
+						/>
+					) : null}
 					<input
-						type="text"
-						name="FNAME"
-						title="Name"
-						value={newsletter_subscribe_name_label}
+						type="email"
+						name="EMAIL"
+						title="Email"
+						required=""
+						value={newsletter_subscribe_mail_label}
 						onChange={(e) => {
 							setAttributes({
-								newsletter_subscribe_name_label: e.target.value,
+								newsletter_subscribe_mail_label: e.target.value,
 							})
 						}}
 					/>
-				) : null}
-				<input
-					type="email"
-					name="EMAIL"
-					title="Email"
-					required=""
-					value={newsletter_subscribe_mail_label}
-					onChange={(e) => {
-						setAttributes({
-							newsletter_subscribe_mail_label: e.target.value,
-						})
-					}}
-				/>
-				<RichText
-					className="wp-element-button"
-					style={{ ...buttonStyles }}
-					tagName="span"
-					value={newsletter_subscribe_button_text}
-					placeholder="Search"
-					allowedFormats={[]}
-					onChange={(content) =>
-						setAttributes({
-							newsletter_subscribe_button_text: content,
-						})
-					}
-				/>
+					<RichText
+						className="wp-element-button"
+						style={{ ...buttonStyles }}
+						tagName="span"
+						value={newsletter_subscribe_button_text}
+						placeholder="Search"
+						allowedFormats={[]}
+						onChange={(content) =>
+							setAttributes({
+								newsletter_subscribe_button_text: content,
+							})
+						}
+					/>
+				</div>
 
 				{cookies_checkbox_enabled ? (
 					<p className="gdpr-confirm-policy">

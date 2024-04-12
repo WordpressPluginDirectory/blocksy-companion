@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.38
+Stable tag: 2.0.39
 
 == Description ==
 
@@ -52,6 +52,9 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.39: 2024-04-11
+- Improvement: General fixes and improvements
+
 2.0.38: 2024-04-04
 - Improvement: Introduce a WP CLI command for installing a starter site in one step
 - Improvement: Make sure Product Reviews extension post contents is searchable

@@ -69,6 +69,20 @@ $options = [
 		],
 	],
 
+	'newsletter_subscribe_container_type' => [
+		'type' => 'ct-radio',
+		'label' => __('Container Style', 'blocksy-companion'),
+		'value' => 'default',
+		'view' => 'radio',
+		'inline' => true,
+		'divider' => 'top:full',
+		'disableRevertButton' => true,
+		'choices' => [
+			'default' => __('Default', 'blocksy-companion'),
+			'boxed' => __('Boxed', 'blocksy-companion'),
+		],
+	],
+
 	'newsletter_subscribe_height' => [
 		'label' => __( 'Input Height', 'blocksy' ),
 		'type' => 'ct-slider',

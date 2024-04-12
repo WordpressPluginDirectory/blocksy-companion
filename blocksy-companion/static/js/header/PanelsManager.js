@@ -157,7 +157,7 @@ const PanelsManager = () => {
 											id !== builderValue.id && (
 												<span
 													className="ct-remove-instance"
-													data-tooltip="top"
+													data-tooltip-reveal="top"
 													onClick={(e) => {
 														e.preventDefault()
 														e.stopPropagation()

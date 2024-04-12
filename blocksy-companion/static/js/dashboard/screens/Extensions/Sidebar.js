@@ -115,7 +115,7 @@ const Sidebar = ({ navigate, currentExtension, exts_status }) => {
 											})
 										}}>
 										{config.name}
-										<span data-tooltip="top">
+										<span data-tooltip-reveal="top">
 											<i className="ct-tooltip">
 												{__(
 													'Active',
