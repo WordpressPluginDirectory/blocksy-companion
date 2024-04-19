@@ -153,8 +153,14 @@ class ConditionsManager {
 	}
 
 	public function humanize_conditions($conditions) {
+		
 		if (isset($conditions['conditions'])) {
 			$conditions = $conditions['conditions'];
+		}
+
+		// Check for nested conditions in Advanced Mode
+		if (isset($conditions[0]['conditions'])) {
+			$conditions = $conditions[0]['conditions'];
 		}
 
 		// Check if it looks like a normal rules array. If it doesn't -- bail out.

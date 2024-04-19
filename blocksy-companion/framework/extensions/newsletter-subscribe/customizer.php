@@ -89,6 +89,29 @@ $options = [
 					'condition' => [ 'has_newsletter_subscribe_name' => 'yes' ],
 					'options' => [
 
+						'newsletter_subscribe_name_required' => [
+							'type' => 'ct-switch',
+							'label' => __('Make Name Field Required', 'blocksy-companion'),
+							'value' => 'no',
+							'disableRevertButton' => true,
+							'sync' => blocksy_sync_single_post_container([
+								'loader_selector' => '.ct-newsletter-subscribe-container'
+							]),
+						],
+
+					],
+				],
+
+				blocksy_rand_md5() => [
+					'type' => 'ct-divider',
+					'attr' => [ 'data-type' => 'small' ],
+				],
+
+				blocksy_rand_md5() => [
+					'type' => 'ct-condition',
+					'condition' => [ 'has_newsletter_subscribe_name' => 'yes' ],
+					'options' => [
+
 						'newsletter_subscribe_name_label' => [
 							'type' => 'text',
 							'label' => __( 'Name Label', 'blocksy-companion' ),
@@ -97,7 +120,6 @@ $options = [
 							'disableRevertButton' => true,
 							'setting' => [ 'transport' => 'postMessage' ],
 						],
-
 					],
 				],
 

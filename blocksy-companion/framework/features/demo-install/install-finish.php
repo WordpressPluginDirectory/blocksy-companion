@@ -84,6 +84,8 @@ class DemoInstallFinalActions {
 
 		$this->maybe_activate_elementor_experimental_container();
 
+		$this->update_counts_for_all_terms();
+
 		if ($this->has_streaming) {
 			Plugin::instance()->demo->emit_sse_message([
 				'action' => 'complete',
@@ -283,6 +285,37 @@ class DemoInstallFinalActions {
 		}
 
 		update_option('elementor_experiment-container', 'active');
+	}
+
+	public function update_counts_for_all_terms() {
+		if (! function_exists('blocksy_manager')) {
+			return;
+		}
+
+		$taxonomies = array_reduce(
+			blocksy_manager()->post_types->get_supported_post_types(),
+			function ($result, $item) {
+				return array_unique(array_merge(
+					$result,
+					array_values(array_diff(
+						get_object_taxonomies($item),
+						['post_format']
+					))
+				));
+			},
+			[]
+		);
+
+		foreach ($taxonomies as $taxonomy) {
+			if (! taxonomy_exists($taxonomy)) {
+				continue;
+			}
+
+			$terms = get_terms($taxonomy, ['hide_empty' => false]);
+			$term_taxonomy_ids = wp_list_pluck($terms, 'term_taxonomy_id');
+
+			wp_update_term_count($term_taxonomy_ids, $taxonomy);
+		}
 	}
 }
 

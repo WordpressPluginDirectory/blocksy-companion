@@ -14,6 +14,7 @@ const Preview = ({ attributes, buttonStyles, setAttributes }) => {
 		has_newsletter_subscribe_name,
 		newsletter_subscribe_mail_label,
 		newsletter_subscribe_container_type = 'default',
+		newsletter_subscribe_name_required = 'no',
 	} = attributes
 
 	return (
@@ -29,19 +30,27 @@ const Preview = ({ attributes, buttonStyles, setAttributes }) => {
 					{...(newsletter_subscribe_container_type === 'default'
 						? {}
 						: {
-							'data-container': newsletter_subscribe_container_type,
+								'data-container':
+									newsletter_subscribe_container_type,
 						  })}
 					{...(newsletter_subscribe_view_type !== 'inline'
 						? {}
 						: {
-							'data-columns': has_newsletter_subscribe_name === 'yes' ? 3 : 2,
+								'data-columns':
+									has_newsletter_subscribe_name === 'yes'
+										? 3
+										: 2,
 						  })}>
 					{has_newsletter_subscribe_name === 'yes' ? (
 						<input
 							type="text"
 							name="FNAME"
 							title="Name"
-							value={newsletter_subscribe_name_label}
+							value={`${newsletter_subscribe_name_label} ${
+								newsletter_subscribe_name_required === 'yes'
+									? '*'
+									: ''
+							}`}
 							onChange={(e) => {
 								setAttributes({
 									newsletter_subscribe_name_label:

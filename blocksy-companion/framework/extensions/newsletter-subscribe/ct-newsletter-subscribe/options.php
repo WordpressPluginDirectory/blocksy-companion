@@ -121,6 +121,13 @@ $options = [
 				'label' => __('Name Label', 'blocksy-companion'),
 				'value' => __('Your name', 'blocksy-companion'),
 			],
+
+			'newsletter_subscribe_name_required' => [
+				'type' => 'ct-switch',
+				'label' => __('Make Name Field Required', 'blocksy-companion'),
+				'value' => 'no',
+				'disableRevertButton' => true,
+			],
 		],
 	],
 

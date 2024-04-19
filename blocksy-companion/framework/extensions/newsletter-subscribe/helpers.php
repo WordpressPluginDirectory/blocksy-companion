@@ -31,6 +31,7 @@ function blc_ext_newsletter_subscribe_form() {
 			__('Subscribe', 'blocksy-companion')
 		),
 		'has_name' => blocksy_get_theme_mod('has_newsletter_subscribe_name', 'no'),
+		'name_required' => blocksy_get_theme_mod('newsletter_subscribe_name_required', 'no'),
 		'name_label' => blocksy_get_theme_mod(
 			'newsletter_subscribe_name_label',
 			__('Your name', 'blocksy-companion')
@@ -76,6 +77,7 @@ function blc_ext_newsletter_subscribe_output_form($args = []) {
 			'Subscribe', 'blocksy-companion'
 		),
 		'has_name' => 'no',
+		'name_required' => 'no',
 		'name_label' => __('Your name', 'blocksy-companion'),
 		'email_label' => __('Your email', 'blocksy-companion'),
 		'list_id' => '',
@@ -133,7 +135,13 @@ function blc_ext_newsletter_subscribe_output_form($args = []) {
 
 			<div class="ct-newsletter-subscribe-form-elements" data-columns="<?php echo $fields_number ?>">
 				<?php if ($has_name) { ?>
-					<input type="text" name="FNAME" placeholder="<?php esc_attr_e($args['name_label'], 'blocksy-companion'); ?>" aria-label="<?php echo __('First name', 'blocksy-companion') ?>">
+					<input
+						type="text"
+						name="FNAME"
+						placeholder="<?php echo esc_attr($args['name_label'], 'blocksy-companion') . ($args['name_required'] === 'yes' ? ' *' : ''); ?>"
+						aria-label="<?php echo __('First name', 'blocksy-companion') ?>"
+						<?php echo ($args['name_required'] === 'yes' ? 'required' : ''); ?>
+					>
 				<?php } ?>
 
 				<input type="email" name="EMAIL" placeholder="<?php esc_attr_e($args['email_label'], 'blocksy-companion'); ?> *" aria-label="<?php echo __('Email address', 'blocksy-companion') ?>" required>

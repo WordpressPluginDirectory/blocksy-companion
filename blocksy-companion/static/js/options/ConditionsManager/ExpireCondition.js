@@ -139,6 +139,9 @@ const ExpireCondition = ({ onChange, condition }) => {
 									...condition,
 									payload: {
 										...condition.payload,
+										...(!condition.payload.start
+											? { start }
+											: {}),
 										[currentTab]: date,
 									},
 								})

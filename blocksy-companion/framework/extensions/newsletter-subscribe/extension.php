@@ -227,7 +227,6 @@ class BlocksyExtensionNewsletterSubscribe {
 		add_action('init', [$this, 'blocksy_newsletter_block']);
 		add_action('enqueue_block_editor_assets', [$this, 'enqueue_admin']);
 
-
 		add_filter('blocksy:gutenberg-blocks-data', function ($data) {
 			$options_file =
 				BLOCKSY_PATH .
@@ -262,6 +261,9 @@ class BlocksyExtensionNewsletterSubscribe {
 	public function blocksy_newsletter_block() {
 		register_block_type('blocksy/newsletter', [
 			'render_callback' => [$this, 'render_block'],
+			'editor_style_handles' => [
+				'blocksy/newsletter',
+			]
 		]);
 	}
 
@@ -297,7 +299,7 @@ class BlocksyExtensionNewsletterSubscribe {
 			$data
 		);
 
-		wp_enqueue_style(
+		wp_register_style(
 			'blocksy/newsletter',
 			BLOCKSY_URL .
 				'framework/extensions/newsletter-subscribe/admin-static/bundle/admin.min.css'

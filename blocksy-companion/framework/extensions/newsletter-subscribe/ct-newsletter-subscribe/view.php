@@ -21,6 +21,14 @@ $button_text = blocksy_default_akg(
 	__('Subscribe', 'blocksy-companion')
 );
 
+$newsletter_subscribe_name_required = blocksy_default_akg(
+	'newsletter_subscribe_name_required',
+	$atts,
+	'no'
+) === 'yes';
+
+
+
 $style = '';
 
 $newsletter_subscribe_height = blocksy_default_akg('newsletter_subscribe_height', $atts, '');
@@ -241,8 +249,10 @@ foreach ($button_colors as $key => $value) {
 				<input
 					type="text"
 					name="FNAME"
-					placeholder="<?php esc_attr_e($name_label, 'blocksy-companion'); ?>"
-					title="<?php echo __('Name', 'blocksy-companion'); ?>">
+					placeholder="<?php echo esc_attr($name_label, 'blocksy-companion') . ($newsletter_subscribe_name_required ? ' *' : ''); ?>"
+					title="<?php echo __('Name', 'blocksy-companion'); ?>"
+					<?php echo ($newsletter_subscribe_name_required ? 'required' : ''); ?>
+				>
 			<?php } ?>
 
 			<input
