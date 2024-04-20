@@ -158,13 +158,22 @@ if ($args['view'] === 'slider') {
 		$slider_args['autoplay'] = intval($args['slider_autoplay']);
 	}
 
+	$pills_container_attr = [
+		'data-flexy' => 'no'
+	];
+
+	if (count($images) <= 4) {
+		$pills_container_attr['data-flexy'] .= ':paused';
+	}
+
 	echo blocksy_flexy(array_merge([
 		'class' => $shortcode_class,
 		'images' => $images,
+		'pills_container_attr' => $pills_container_attr,
 		'slide_image_args' => function ($index, $args) use ($posts_to_render) {
 			$post = $posts_to_render[$index];
 			$args['html_atts']['href'] = get_permalink($post);
-			
+
 			unset($args['html_atts']['data-src']);
 
 			$args['tag_name'] = 'a';
@@ -218,9 +227,9 @@ if ($args['view'] === 'slider') {
 	]);
 
 	$wp_query = $previous_query;
-	
+
 	wp_reset_postdata();
-	
+
 
 	echo '</div>';
 }

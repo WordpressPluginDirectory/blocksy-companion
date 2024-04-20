@@ -2,6 +2,7 @@ import { createElement } from '@wordpress/element'
 
 import { __ } from 'ct-i18n'
 import { registerBlockType } from '@wordpress/blocks'
+import { addFilter } from '@wordpress/hooks'
 
 import Edit from './Edit'
 import { getAttributesFromOptions, getOptionsForBlock } from 'blocksy-options'
@@ -27,7 +28,6 @@ registerBlockType('blocksy/newsletter', {
 	category: 'widgets',
 	supports: {
 		html: false,
-		multiple: false,
 		inserter: false,
 		lock: false,
 
