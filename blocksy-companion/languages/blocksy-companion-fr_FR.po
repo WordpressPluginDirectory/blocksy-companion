@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-18 17:57:12+0000\n"
+"PO-Revision-Date: 2024-04-22 14:08:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4264,11 +4264,11 @@ msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:38
 msgid "Automatically hide the read progress bar once you arrive at the bottom of the article."
-msgstr ""
+msgstr "Masquer automatiquement la barre de progression de lecture une fois arrivé en bas de l’article."
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:34
 msgid "Auto Hide"
-msgstr ""
+msgstr "Masquer automatiquement"
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:24
 msgid "Indicator Height"
@@ -4276,7 +4276,7 @@ msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:4
 msgid "Read Progress"
-msgstr ""
+msgstr "Progression de lecture"
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:258
 msgid "Button Padding"
@@ -6572,7 +6572,7 @@ msgstr "Activer sur"
 
 #: framework/features/header/header-options.php:79
 msgid "Auto Hide/Show"
-msgstr "Automatiquement afficher/masquer"
+msgstr "Afficher/masquer automatiquement"
 
 #: framework/features/header/header-options.php:78
 msgid "Fade"

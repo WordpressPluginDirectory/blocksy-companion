@@ -30,7 +30,6 @@ const SingleDemo = ({ demo }) => {
 		currentlyInstalledDemo,
 		demos_list,
 		setCurrentDemo,
-		demo_error,
 		setInstallerBlockingReleased,
 	} = useContext(DemosContext)
 
@@ -176,8 +175,7 @@ const SingleDemo = ({ demo }) => {
 									setInstallerBlockingReleased(false)
 									setCurrentDemo(demo.name)
 								}
-							}}
-							disabled={!!demo_error}>
+							}}>
 							{currentlyInstalledDemo &&
 							currentlyInstalledDemo.demo.indexOf(demo.name) > -1
 								? __('Modify', 'blocksy-companion')

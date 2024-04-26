@@ -3,27 +3,13 @@
 namespace Blocksy;
 
 class DemoInstallFinalActions {
-	protected $has_streaming = true;
-
-	public function __construct($args = []) {
-		$args = wp_parse_args($args, [
-			'has_streaming' => true
-		]);
-
-		$this->has_streaming = $args['has_streaming'];
-	}
+	public function __construct() {}
 
 	public function import() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->start_streaming();
-
-			if (! current_user_can('edit_theme_options')) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => false,
-				]);
-				exit;
-			}
+		if (! current_user_can('edit_theme_options')) {
+			wp_send_json_error([
+				'message' => __("Sorry, you don't have permission to finish the installation.", 'blocksy-companion')
+			]);
 		}
 
 		$wpforms_settings = get_option('wpforms_settings', []);
@@ -86,13 +72,9 @@ class DemoInstallFinalActions {
 
 		$this->update_counts_for_all_terms();
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => false,
-			]);
-			exit;
-		}
+		$this->patch_attachment_ids_in_mods();
+
+		wp_send_json_success();
 	}
 
 	/**
@@ -316,6 +298,178 @@ class DemoInstallFinalActions {
 
 			wp_update_term_count($term_taxonomy_ids, $taxonomy);
 		}
+	}
+
+	public function patch_attachment_ids_in_mods() {
+		$body = json_decode(file_get_contents('php://input'), true);
+
+		if (! $body) {
+			return;
+		}
+
+		$requestsPayload = [];
+
+		if (isset($body['requestsPayload'])) {
+			$requestsPayload = $body['requestsPayload'];
+		}
+
+		if (! isset($requestsPayload['processed_posts'])) {
+			return;
+		}
+
+		$all_mods = get_theme_mods();
+
+		foreach ($all_mods as $key => $val) {
+			if ($key === 'header_placements') {
+				$new_val = $val;
+
+				foreach ($val['sections'] as $section_index => $section) {
+					foreach ($section['items'] as $item_index => $item) {
+						$new_val['sections'][$section_index][
+							'items'
+						][$item_index]['values'] = $this->patch_attachment_ids_in_array(
+							$item['values'],
+							$requestsPayload
+						);
+					}
+				}
+
+				set_theme_mod($key, $new_val);
+			}
+
+			if (
+				$key === 'custom_logo'
+				&&
+				is_array($val)
+				&&
+				isset($val['desktop'])
+			) {
+				$new_val = $val;
+
+				$desktop_val = intval($val['desktop']);
+
+				if (isset($requestsPayload['processed_posts'][$desktop_val])) {
+					$new_val['desktop'] = intval($requestsPayload['processed_posts'][$desktop_val]);
+				}
+
+				$tablet_val = intval($val['tablet']);
+
+				if (isset($requestsPayload['processed_posts'][$tablet_val])) {
+					$new_val['tablet'] = intval($requestsPayload['processed_posts'][$tablet_val]);
+				}
+
+				$mobile_val = intval($val['mobile']);
+
+				if (isset($requestsPayload['processed_posts'][$mobile_val])) {
+					$new_val['mobile'] = intval($requestsPayload['processed_posts'][$mobile_val]);
+				}
+
+				set_theme_mod($key, $new_val);
+			}
+
+			if (
+				$key === 'custom_logo'
+				&&
+				is_numeric($val)
+				&&
+				isset($requestsPayload['processed_posts'][intval($val)])
+			) {
+				set_theme_mod(
+					$key,
+					intval($requestsPayload['processed_posts'][intval($val)])
+				);
+			}
+
+			if (
+				is_array($val)
+				&&
+				isset($val['attachment_id'])
+				&&
+				$val['attachment_id']
+				&&
+				isset(
+					$requestsPayload['processed_posts'][
+						intval($val['attachment_id'])
+					]
+				)
+			) {
+				$new_val = $val;
+
+				$new_val['attachment_id'] = intval($requestsPayload['processed_posts'][
+					intval($val['attachment_id'])
+				]);
+
+				set_theme_mod($key, $new_val);
+			}
+		}
+	}
+
+	public function patch_attachment_ids_in_array($array, $requestsPayload) {
+		foreach ($array as $key => $val) {
+			if (
+				$key === 'custom_logo'
+				&&
+				is_array($val)
+				&&
+				isset($val['desktop'])
+			) {
+				$new_val = $val;
+
+				$desktop_val = intval($val['desktop']);
+
+				if (isset($requestsPayload['processed_posts'][$desktop_val])) {
+					$new_val['desktop'] = intval($requestsPayload['processed_posts'][$desktop_val]);
+				}
+
+				$tablet_val = intval($val['tablet']);
+
+				if (isset($requestsPayload['processed_posts'][$tablet_val])) {
+					$new_val['tablet'] = intval($requestsPayload['processed_posts'][$tablet_val]);
+				}
+
+				$mobile_val = intval($val['mobile']);
+
+				if (isset($requestsPayload['processed_posts'][$mobile_val])) {
+					$new_val['mobile'] = intval($requestsPayload['processed_posts'][$mobile_val]);
+				}
+
+				$array[$key] = $new_val;
+			}
+
+			if (
+				$key === 'custom_logo'
+				&&
+				is_numeric($val)
+				&&
+				isset($requestsPayload['processed_posts'][intval($val)])
+			) {
+				$array[$key] = intval($requestsPayload['processed_posts'][intval($val)]);
+			}
+
+			if (
+				is_array($val)
+				&&
+				isset($val['attachment_id'])
+				&&
+				$val['attachment_id']
+				&&
+				isset(
+					$requestsPayload['processed_posts'][
+						intval($val['attachment_id'])
+					]
+				)
+			) {
+				$new_val = $val;
+
+				$new_val['attachment_id'] = intval($requestsPayload['processed_posts'][
+					intval($val['attachment_id'])
+				]);
+
+				$array[$key] = $new_val;
+			}
+		}
+
+		return $array;
 	}
 }
 

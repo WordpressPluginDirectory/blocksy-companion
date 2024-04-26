@@ -5,7 +5,7 @@ import classnames from 'classnames'
 
 import { getMessageForAction } from '../Installer/messages'
 
-const Progress = ({ stepName, stepsDescriptors, lastMessage, progress }) => {
+const Progress = ({ lastMessage, progress }) => {
 	return (
 		<Fragment>
 			<i className="ct-demo-icon">
@@ -38,11 +38,7 @@ const Progress = ({ stepName, stepsDescriptors, lastMessage, progress }) => {
 			</p>
 
 			<div className="ct-progress-info">
-				{stepsDescriptors[stepName].title}
-				{lastMessage &&
-				getMessageForAction(lastMessage, stepsDescriptors)
-					? `: ${getMessageForAction(lastMessage, stepsDescriptors)}`
-					: ''}
+				{lastMessage}
 				<span>{Math.round(progress)}%</span>
 			</div>
 

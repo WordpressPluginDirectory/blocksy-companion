@@ -12,6 +12,8 @@ import classnames from 'classnames'
 import { DemosContext } from '../../DemoInstall'
 import DashboardContext from '../../../DashboardContext'
 
+import { prepareUrl } from '../Installer/useInstaller'
+
 const ModifyDemo = ({ style, nextStep }) => {
 	const { is_child_theme } = useContext(DashboardContext)
 	const {
@@ -19,9 +21,10 @@ const ModifyDemo = ({ style, nextStep }) => {
 		setCurrentDemo,
 		currentDemo,
 		demos_list,
-	} = useContext(DemosContext)
 
-	const [currentStep, setCurrentStep] = useState(0)
+		pluginsStatus,
+		setPluginsStatus,
+	} = useContext(DemosContext)
 
 	// idle | loading | done
 	const [runningState, setRunningState] = useState('idle')
@@ -32,67 +35,91 @@ const ModifyDemo = ({ style, nextStep }) => {
 		({ name }) => name === properDemoName
 	)
 
-	const stepsDescriptors = {
-		erase_content: {
-			title: __('Erase content', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_erase_content&wp_customize=on`,
-		},
+	const executeRemoveSteps = async () => {
+		const stepsDescriptors = {
+			erase_content: {
+				requests: [
+					{
+						title: __('Erase content', 'blocksy-companion'),
+						params: {
+							action: 'blocksy_demo_erase_content',
+							wp_customize: 'on',
+						},
+					},
+				],
+			},
 
-		deactivate_demo_plugins: {
-			title: __('Deactivate demo plugins', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_deactivate_plugins&plugins=${demoVariations[0].plugins.join(
-				':'
-			)}`,
-		},
+			deactivate_demo_plugins: {
+				requests: [
+					{
+						title: __(
+							'Deactivate demo plugins',
+							'blocksy-companion'
+						),
+						params: {
+							action: 'blocksy_demo_deactivate_plugins',
+							plugins: demoVariations[0].plugins.join(':'),
+						},
+					},
+				],
+			},
 
-		deregister_current_demo: {
-			title: __('Erase content', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_deregister_current_demo`,
-		},
-	}
+			deregister_current_demo: {
+				requests: [
+					{
+						title: __('Erase content', 'blocksy-companion'),
+						params: {
+							action: 'blocksy_demo_deregister_current_demo',
+						},
+					},
+				],
+			},
+		}
 
-	const stepsForConfiguration = [
-		'erase_content',
-		'deactivate_demo_plugins',
-		'deregister_current_demo',
-	]
+		const stepsForConfiguration = [
+			'erase_content',
+			'deactivate_demo_plugins',
+			'deregister_current_demo',
+		]
 
-	const stepName = stepsForConfiguration[currentStep]
+		for (const step of stepsForConfiguration) {
+			const stepDescriptor = stepsDescriptors[step]
 
-	const fireOffNextStep = () => {
-		const stepDescriptor = stepsDescriptors[stepName]
+			if (!stepDescriptor || stepDescriptor.requests.length === 0) {
+				continue
+			}
 
-		var evtSource = new EventSource(
-			`${ctDashboardLocalizations.ajax_url}?${stepDescriptor.query_string}&nonce=${ctDashboardLocalizations.dashboard_actions_nonce}`
-		)
+			for (const request of stepDescriptor.requests) {
+				const response = await fetch(prepareUrl(request.params), {
+					method: 'POST',
 
-		evtSource.onmessage = (e) => {
-			var data = JSON.parse(e.data)
+					body: JSON.stringify({
+						...(request.body || {}),
+					}),
+				})
 
-			if (data.action === 'complete') {
-				evtSource && evtSource.close && evtSource.close()
-
-				if (currentStep === stepsForConfiguration.length - 1) {
+				if (response.status !== 200) {
 					setRunningState('done')
-					return
+					break
 				}
 
-				setCurrentStep(
-					Math.min(stepsForConfiguration.length - 1, currentStep + 1)
-				)
+				if (step === 'deactivate_demo_plugins') {
+					setPluginsStatus({
+						...pluginsStatus,
+
+						...demoVariations[0].plugins.reduce((acc, plugin) => {
+							return {
+								...acc,
+								[plugin]: false,
+							}
+						}, {}),
+					})
+				}
 			}
 		}
+
+		setRunningState('done')
 	}
-
-	useEffect(() => {
-		if (currentStep === 0) return
-
-		if (runningState === 'done') {
-			return
-		}
-
-		fireOffNextStep()
-	}, [stepName])
 
 	return (
 		<div className="ct-modify-demo" style={style}>
@@ -151,8 +178,10 @@ const ModifyDemo = ({ style, nextStep }) => {
 							className="ct-demo-btn demo-remove"
 							onClick={(e) => {
 								setRunningState('loading')
+
+								executeRemoveSteps()
+
 								e.preventDefault()
-								fireOffNextStep()
 								setCurrentlyInstalledDemo()
 							}}>
 							{__('Remove', 'blocksy-companion')}

@@ -78,7 +78,16 @@ class Blocksy_WXR_Parser_SimpleXML {
 		) {
 			$old_value = libxml_disable_entity_loader(true);
 		}
-		$success = $dom->loadXML(blc_load_xml_file($file));
+		
+		$content = '';
+
+		if (strpos($file, '<?xml') === false) {
+			$content = blc_load_xml_file($file);
+		} else {
+			$content = $file;
+		}
+
+		$success = $dom->loadXML($content);
 
 		if (! is_null($old_value)) {
 			libxml_disable_entity_loader($old_value);
@@ -334,7 +343,15 @@ class Blocksy_WXR_Parser_XML {
 		xml_set_character_data_handler($xml, 'cdata');
 		xml_set_element_handler($xml, 'tag_open', 'tag_close');
 
-		if (! xml_parse($xml, blc_load_xml_file($file), true)) {
+		$content = '';
+
+		if (strpos($file, '<?xml') === false) {
+			$content = blc_load_xml_file($file);
+		} else {
+			$content = $file;
+		}
+
+		if (! xml_parse($xml, $content, true)) {
 			$current_line = xml_get_current_line_number($xml);
 			$current_column = xml_get_current_column_number($xml);
 			$error_code = xml_get_error_code($xml);

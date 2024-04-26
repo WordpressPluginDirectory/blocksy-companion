@@ -3,12 +3,10 @@
 namespace Blocksy;
 
 class DemoInstallContentInstaller {
-	protected $has_streaming = true;
 	protected $demo_name = null;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'has_streaming' => true,
 			'demo_name' => null
 		]);
 
@@ -22,7 +20,6 @@ class DemoInstallContentInstaller {
 			$args['demo_name'] = $_REQUEST['demo_name'];
 		}
 
-		$this->has_streaming = $args['has_streaming'];
 		$this->demo_name = $args['demo_name'];
 	}
 
@@ -37,17 +34,10 @@ class DemoInstallContentInstaller {
 			);
 		}
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->start_streaming();
-
-			if (! current_user_can('edit_theme_options')) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => 'No permission.',
-				]);
-
-				exit;
-			}
+		if (! current_user_can('edit_theme_options')) {
+			wp_send_json_error([
+				'message' => __("Sorry, you don't have permission to install content.", 'blocksy-companion')
+			]);
 		}
 
 		if (class_exists('\Elementor\Compatibility')) {
@@ -61,7 +51,6 @@ class DemoInstallContentInstaller {
 			'blocksy_wp_import_insert_term',
 			function($term_id) {
 				$this->track_term_insert($term_id);
-				$this->send_update('term');
 			},
 			10,
 			1
@@ -72,7 +61,6 @@ class DemoInstallContentInstaller {
 			function($t) {
 				$term_id = $t['term_id'];
 				$this->track_term_insert($term_id);
-				$this->send_update('term');
 			},
 			10,
 			1
@@ -83,13 +71,7 @@ class DemoInstallContentInstaller {
 			function($meta, $post_id, $post) {
 				$this->track_post_insert($post_id);
 
-				if (get_post_type($post_id) === 'attachment') {
-					$this->send_update('media');
-				} else {
-					$this->send_update('post');
-				}
-
-				$wp_importer = get_plugins( '/wordpress-importer' );
+				$wp_importer = get_plugins('/wordpress-importer');
 
 				if (! empty($wp_importer)) {
 					$wp_importer_version = $wp_importer['wordpress-importer.php']['Version'];
@@ -132,9 +114,8 @@ class DemoInstallContentInstaller {
 
 		add_filter(
 			'wp_import_term_meta',
-			function( $meta, $term_id, $post ) {
+			function($meta, $term_id, $post) {
 				$this->track_term_insert($term_id);
-				$this->send_update('term');
 
 				return $meta;
 			},
@@ -142,23 +123,10 @@ class DemoInstallContentInstaller {
 			3
 		);
 
-		add_action(
-			'wp_import_insert_comment',
-			function($comment_id, $comment, $comment_post_id, $post) {
-				$this->send_update('comment');
-			},
-			10,
-			4
-		);
-
-		if ($this->has_streaming) {
-			if (! $this->demo_name) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => 'No demo name passed.',
-				]);
-				exit;
-			}
+		if (! $this->demo_name) {
+			wp_send_json_error([
+				'message' => __("No demo name provided.", 'blocksy-companion')
+			]);
 		}
 
 		$demo_name = explode(':', $this->demo_name);
@@ -170,22 +138,11 @@ class DemoInstallContentInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		$url = \Blocksy\Plugin::instance()->demo->get_demo_remote_url([
-			'route' => 'get_single_xml',
-			'demo' => $demo . ':' . $builder
-		]);
+		$body = json_decode(file_get_contents('php://input'), true);
 
 		$wp_import = new \Blocksy_WP_Import();
-		$import_data = $wp_import->parse($url);
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'get_content_preliminary_data',
-				'url' => $url,
-				'our_data' => blc_load_xml_file($url),
-				'data' => $import_data,
-			]);
-		}
+		$import_data = $wp_import->parse($body['content']);
 
 		$wp_import->get_authors_from_import($import_data);
 
@@ -244,6 +201,14 @@ class DemoInstallContentInstaller {
 			# return new WP_Error( 'invalid-author-mapping', sprintf( 'These user_logins are invalid: %s', implode( ',', $invalid_user_select ) ) );
 		}
 
+		// Enable default GD library.
+		add_filter('wp_image_editors', function ($editors) {
+			$gd_editor = 'WP_Image_Editor_GD';
+			$editors = array_diff($editors, array($gd_editor));
+			array_unshift($editors, $gd_editor);
+			return $editors;
+		});
+
 		unset($author_out);
 
 		$wp_import->fetch_attachments = true;
@@ -256,16 +221,8 @@ class DemoInstallContentInstaller {
 		$_POST['fetch_attachments'] = $wp_import->fetch_attachments;
 
 		ob_start();
-		$wp_import->import( $url );
+		$wp_import->import($body['content']);
 		ob_end_clean();
-
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'test_terms',
-				'error' => false,
-				'terms' => $wp_import->processed_terms
-			]);
-		}
 
 		if (class_exists('Blocksy_Customizer_Builder')) {
 			$header_builder = new \Blocksy_Customizer_Builder();
@@ -292,14 +249,9 @@ class DemoInstallContentInstaller {
 		$this->clean_plugins_cache();
 		$this->assign_pages_ids($demo, $builder);
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => false
-			]);
-
-			exit;
-		}
+		wp_send_json_success([
+			'processed_posts' => $wp_import->processed_posts,
+		]);
 	}
 
 	public function track_post_insert($post_id) {
@@ -310,28 +262,7 @@ class DemoInstallContentInstaller {
 		update_term_meta($term_id, 'blocksy_demos_imported_term', true);
 	}
 
-	public function send_update($kind = null) {
-		if ($this->has_streaming) {
-			ob_end_clean();
-
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'content_installer_progress',
-				'kind' => $kind,
-				'error' => false,
-			]);
-
-			ob_start();
-		}
-	}
-
 	public function clean_plugins_cache() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'cleanup_plugins_cache',
-				'error' => false,
-			]);
-		}
-
 		if (class_exists('\Elementor\Plugin')) {
 			\Elementor\Plugin::$instance->posts_css_manager->clear_cache();
 		}
@@ -342,13 +273,6 @@ class DemoInstallContentInstaller {
 	}
 
 	public function assign_pages_ids($demo, $builder) {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'cleanup_plugins_cache',
-				'error' => false,
-			]);
-		}
-
 		$demo_content = Plugin::instance()->demo->fetch_single_demo([
 			'demo' => $demo,
 			'builder' => $builder,
@@ -356,14 +280,9 @@ class DemoInstallContentInstaller {
 		]);
 
 		if (! isset($demo_content['pages_ids_options'])) {
-			if ($this->has_streaming) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => __('Downloaded demo is corrupted.'),
-				]);
-
-				exit;
-			}
+			wp_send_json_error([
+				'message' => __("No pages to assign.", 'blocksy-companion')
+			]);
 		}
 
 		foreach ($demo_content['pages_ids_options'] as $option_id => $page_title) {
@@ -381,7 +300,7 @@ class DemoInstallContentInstaller {
 		}
 	}
 
-	private function process_author_mapping( $authors_arg, $author_data ) {
+	private function process_author_mapping($authors_arg, $author_data) {
 		switch ($authors_arg) {
 		// Create authors if they don't yet exist; maybe match on email or user_login
 		case 'create':
@@ -394,8 +313,9 @@ class DemoInstallContentInstaller {
 		}
 	}
 
-	private function create_authors_for_mapping( $author_data ) {
-		$author_mapping = array();
+	private function create_authors_for_mapping($author_data) {
+		$author_mapping = [];
+
 		foreach ($author_data as $author) {
 			if (isset($author->user_email)) {
 				$user = get_user_by('email', $author->user_email);
@@ -405,6 +325,7 @@ class DemoInstallContentInstaller {
 						'old_user_login' => $author->user_login,
 						'new_user_login' => $user->user_login,
 					];
+
 					continue;
 				}
 			}
@@ -418,6 +339,7 @@ class DemoInstallContentInstaller {
 				];
 				continue;
 			}
+
 			$user = array(
 				'user_login' => '',
 				'user_email' => '',
@@ -437,6 +359,7 @@ class DemoInstallContentInstaller {
 				'new_user_login' => $user->user_login,
 			];
 		}
+
 		return $author_mapping;
 	}
 }

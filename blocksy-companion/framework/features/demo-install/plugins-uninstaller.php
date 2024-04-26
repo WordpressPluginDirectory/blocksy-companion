@@ -4,24 +4,14 @@ namespace Blocksy;
 
 class DemoInstallPluginsUninstaller {
 	public function import() {
-		Plugin::instance()->demo->start_streaming();
-
 		if (! current_user_can('edit_theme_options')) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => false,
+			wp_send_json_error([
+				'message' => __("Sorry, you don't have permission to uninstall plugins.", 'blocksy-companion')
 			]);
-
-			exit;
 		}
 
 		if (! isset($_REQUEST['plugins']) || !$_REQUEST['plugins']) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => false,
-			]);
-
-			exit;
+			wp_send_json_success();
 		}
 
 		$plugins = explode(':', $_REQUEST['plugins']);
@@ -32,12 +22,7 @@ class DemoInstallPluginsUninstaller {
 			$plugins_manager->plugin_deactivation($single_plugin);
 		}
 
-		Plugin::instance()->demo->emit_sse_message([
-			'action' => 'complete',
-			'error' => false,
-		]);
-
-		exit;
+		wp_send_json_success();
 	}
 }
 

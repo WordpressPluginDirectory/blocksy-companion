@@ -3,12 +3,10 @@
 namespace Blocksy;
 
 class DemoInstallWidgetsInstaller {
-	protected $has_streaming = true;
 	protected $demo_name = null;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'has_streaming' => true,
 			'demo_name' => null
 		]);
 
@@ -22,30 +20,20 @@ class DemoInstallWidgetsInstaller {
 			$args['demo_name'] = $_REQUEST['demo_name'];
 		}
 
-		$this->has_streaming = $args['has_streaming'];
 		$this->demo_name = $args['demo_name'];
 	}
 
 	public function import() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->start_streaming();
+		if (! current_user_can('edit_theme_options')) {
+			wp_send_json_error([
+				'message' => __("Sorry, you don't have permission to install widgets.", 'blocksy-companion')
+			]);
+		}
 
-			if (! current_user_can('edit_theme_options')) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => 'No permission.',
-				]);
-
-				exit;
-			}
-
-			if (! $this->demo_name) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'error' => 'No demo name passed.',
-				]);
-				exit;
-			}
+		if (! $this->demo_name) {
+			wp_send_json_error([
+				'message' => __("No widgets to install.", 'blocksy-companion')
+			]);
 		}
 
 		$demo_name = explode(':', $this->demo_name);
@@ -57,33 +45,11 @@ class DemoInstallWidgetsInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'download_demo_widgets',
-				'error' => false,
-			]);
-		}
+		$demo_content = json_decode(file_get_contents('php://input'), true);
 
-		$demo_content = Plugin::instance()->demo->fetch_single_demo([
-			'demo' => $demo,
-			'builder' => $builder,
-			'field' => 'widgets'
-		]);
-
-		if ($this->has_streaming) {
-			if (! isset($demo_content['widgets'])) {
-				Plugin::instance()->demo->emit_sse_message([
-					'action' => 'complete',
-					'demo' => $demo,
-					'error' => __('Downloaded demo is corrupted.'),
-				]);
-
-				exit;
-			}
-
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'apply_demo_widgets',
-				'error' => false,
+		if (! isset($demo_content['widgets'])) {
+			wp_send_json_error([
+				'message' => __("No widgets to install.", 'blocksy-companion')
 			]);
 		}
 
@@ -91,15 +57,7 @@ class DemoInstallWidgetsInstaller {
 
 		$result = $this->import_data($data);
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'data' => $result,
-				'error' => false,
-			]);
-
-			exit;
-		}
+		wp_send_json_success();
 	}
 
 	public function import_data($data) {

@@ -40,7 +40,11 @@ const DemoInstall = ({ children, path, location }) => {
 		demos_list,
 	})
 
-	const [demo_error, setDemoError] = useState(false)
+	const [demo_error, setDemoError] = useState({
+		isError: false,
+		message: '',
+		reason: 'generic',
+	})
 
 	const [demoConfiguration, setDemoConfiguration] = useState({
 		builder: '',
@@ -71,20 +75,36 @@ const DemoInstall = ({ children, path, location }) => {
 					setDemosList(data.demos)
 					setPluginsStatus(data.active_plugins)
 					setCurrentlyInstalledDemo(data.current_installed_demo)
-					setDemoError(data.demo_error)
 					plugins_cache = data.active_plugins
 					demos_cache = data.demos
-					demos_error_cache = data.demo_error
 				}
 
 				if (!success) {
+					demos_error_cache = {
+						isError: true,
+						message: data.error_message,
+						reason: data.error_reason || 'generic',
+					}
+
+					setDemoError(demos_error_cache)
+
 					console.error(
 						'Blocksy:Dashboard:DemoInstall:demos_list',
 						data
 					)
 				}
 			}
-		} catch (e) {}
+		} catch (e) {
+			console.error('Blocksy:Dashboard:DemoInstall:demos_list', { e })
+
+			demos_error_cache = {
+				isError: true,
+				message: e.message || e,
+				reason: 'remote_fetch_failed',
+			}
+
+			setDemoError(demos_error_cache)
+		}
 
 		setIsLoading(false)
 	}
@@ -95,14 +115,6 @@ const DemoInstall = ({ children, path, location }) => {
 
 	return (
 		<div className="ct-demos-list-container">
-			{demo_error && (
-				<div
-					className="ct-demo-notification"
-					dangerouslySetInnerHTML={{
-						__html: demo_error,
-					}}
-				/>
-			)}
 			<Transition
 				items={isLoading}
 				from={{ opacity: 0 }}
@@ -163,18 +175,34 @@ const DemoInstall = ({ children, path, location }) => {
 						)
 					}
 
-					if (demos_list.length === 0) {
+					if (demo_error.isError) {
 						return (props) => (
 							<animated.div style={props}>
-								<div
-									className="ct-demo-notification"
-									dangerouslySetInnerHTML={{
-										__html: __(
-											"The connection to our <b>demo.creativethemes.com</b> server didn't worked. This connection is required for importing the starter sites from our demo content server. All you have to do is to contact your hosting provider and ask them to white list our demo server address.",
-											'blocksy-companion'
-										),
-									}}
-								/>
+								{demo_error.reason ===
+									'remote_fetch_failed' && (
+									<div
+										className="ct-demo-notification"
+										dangerouslySetInnerHTML={{
+											__html: sprintf(
+												__(
+													'Failed to retrieve starter sites list.<br> Error code - %s',
+													'blocksy-companion'
+												),
+												demo_error.message
+											),
+										}}
+									/>
+								)}
+
+								{demo_error.reason === 'generic' && (
+									<div
+										className="ct-demo-notification"
+										dangerouslySetInnerHTML={{
+											__html: demo_error.message,
+										}}
+									/>
+								)}
+
 								<SubmitSupport />
 							</animated.div>
 						)
@@ -185,9 +213,11 @@ const DemoInstall = ({ children, path, location }) => {
 							<Fragment>
 								<DemosContext.Provider
 									value={{
-										demo_error,
 										currentDemo,
+
 										pluginsStatus,
+										setPluginsStatus,
+
 										installerBlockingReleased,
 										setInstallerBlockingReleased,
 										setCurrentDemo,

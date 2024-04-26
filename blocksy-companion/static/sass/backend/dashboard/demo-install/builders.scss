@@ -10,8 +10,9 @@
 
 	ul {
 		display: grid;
-		@include list-normalize;
+		list-style: none;
 		margin: 30px auto 0 auto;
+		padding: 0;
 
 		&[data-count="2"] {
 			max-width: 70%;

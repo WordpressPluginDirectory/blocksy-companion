@@ -50,9 +50,11 @@ class Autoloader {
 			'DynamicCss' => 'framework/features/dynamic-css.php',
 			'CustomizerOptionsManager' => 'framework/features/customizer-options-manager.php',
 			'DemoInstall' => 'framework/features/demo-install.php',
-			'DemoInstallContentExport' => 'framework/features/demo-install/content-export.php',
-			'DemoInstallWidgetsExport' => 'framework/features/demo-install/widgets-export.php',
-			'DemoInstallOptionsExport' => 'framework/features/demo-install/options-export.php',
+
+			'DemoInstallExport' => 'framework/features/demo-install/export/demo-export.php',
+			'DemoInstallContentExport' => 'framework/features/demo-install/export/content-export.php',
+			'DemoInstallWidgetsExport' => 'framework/features/demo-install/export/widgets-export.php',
+			'DemoInstallOptionsExport' => 'framework/features/demo-install/export/options-export.php',
 
 			'DemoInstallChildThemeInstaller' => 'framework/features/demo-install/child-theme.php',
 			'DemoInstallPluginsInstaller' => 'framework/features/demo-install/required-plugins.php',
@@ -61,8 +63,9 @@ class Autoloader {
 			'DemoInstallOptionsInstaller' => 'framework/features/demo-install/options-import.php',
 			'DemoInstallWidgetsInstaller' => 'framework/features/demo-install/widgets-import.php',
 			'DemoInstallContentEraser' => 'framework/features/demo-install/content-eraser.php',
-			'DemoInstallFakeContentEraser' => 'framework/features/demo-install/fake-content-eraser.php',
 			'DemoInstallFinalActions' => 'framework/features/demo-install/install-finish.php',
+			'DemoInstallRegisterDemo' => 'framework/features/demo-install/demo-register.php',
+
 			'Premium' => 'framework/premium/pro.php',
 
 			/**

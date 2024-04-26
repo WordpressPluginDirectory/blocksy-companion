@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-06 13:58:14+0000\n"
+"PO-Revision-Date: 2024-04-22 05:17:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,147 +13,147 @@ msgstr ""
 
 #: static/js/options/DisplayCondition.js:62
 msgid "Add Conditions"
-msgstr ""
+msgstr "Adauga Conditii"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:430
 msgid "Display if query string is present in URL"
-msgstr ""
+msgstr "Afișează dacă șirul de interogare este prezent în URL"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:398
 msgid "Display if cookie is present"
-msgstr ""
+msgstr "Afiseaza cookie-ul prezent"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:366
 msgid "Display based on referer domain"
-msgstr ""
+msgstr "Afișează in baza domeniului de referinta"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:315
 msgid "Select sub field"
-msgstr ""
+msgstr "Selecteaza camp secundar"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "De luni pana vineri"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Sambata si Duminica"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Orice zi"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:27
 msgid "Sun"
-msgstr ""
+msgstr "Duminica"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:26
 msgid "Sat"
-msgstr ""
+msgstr "Sambata"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:25
 msgid "Fri"
-msgstr ""
+msgstr "Vineri"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:24
 msgid "Thu"
-msgstr ""
+msgstr "Joi"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:234
 msgid "Stop Time"
-msgstr ""
+msgstr "Timp de oprire"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:23
 msgid "Wed"
-msgstr ""
+msgstr "Miercuri"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:22
 msgid "Tue"
-msgstr ""
+msgstr "Marti"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:211
 msgid "Start Time"
-msgstr ""
+msgstr "Timp de pornire"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:21
 msgid "Mon"
-msgstr ""
+msgstr "Luni"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:179
 msgid "Sunday"
-msgstr ""
+msgstr "Duminica"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:174
 msgid "Saturday"
-msgstr ""
+msgstr "Sambata"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
-msgstr ""
+msgstr "Vineri"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Joi"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Miercuri"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Marti"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:149
 msgid "Monday"
-msgstr ""
+msgstr "Luni"
 
 #: static/js/options/ConditionsManager/PostIdPicker.js:78
 msgid "Select product"
-msgstr ""
+msgstr "Selecteaza produsul"
 
 #: static/js/options/ConditionsManager.js:197
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Mod avansat"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:81
 msgid "Video Tutorial"
-msgstr ""
+msgstr "Tutorial Video"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:330
 msgid "Manage"
-msgstr ""
+msgstr "Administreaza"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:300
 msgid "Documentation"
-msgstr ""
+msgstr "Documentatie"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:60
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Treceti la planul pentru agentii si obtineti acces instant la acest template si multe alte functionalitati."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:53
 msgid "Upgrade to the professional or agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Treceti la planul profesional sau pentru agentii si obtineti acces instant la acest template si multe alte functionalitati."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:46
 msgid "Upgrade to any pro plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Treceti la orice plan platit si obtineti acces instant la acest template si multe alte functionalitati."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:45
 msgid "This is a Pro starter site"
-msgstr ""
+msgstr "Acesta e un template care poate fi accesat doar cu licenta platita"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:128
 msgid "Advanced Custom Fields data"
-msgstr ""
+msgstr "Date Campuri Avansate"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:88
 msgid "Professional or Agency"
-msgstr ""
+msgstr "Profesional sau Agentie"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:42
 msgid "Upgrade to the agency plan and get instant access to this and many other features."
-msgstr ""
+msgstr "Treceti la planul pentru agentii si obtineti acces instant si beneficiati de multe alte functionalitati"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:35
 msgid "Upgrade to the professional or agency plan and get instant access to this and many other features."

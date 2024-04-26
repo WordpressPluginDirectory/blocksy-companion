@@ -222,7 +222,8 @@ if ($loggedin_interaction_type === 'dropdown') {
 
 			if (blocksy_akg('has_account_dropdown_avatar', $dropdown_row, 'yes') === 'yes') {
 				$image_html = blocksy_simple_image(
-					get_avatar_url($current_user_id, [
+					blocksy_get_avatar_url([
+						'avatar_entity' => $current_user_id,
 						'size' => $avatar_size * 2,
 					]),
 					[

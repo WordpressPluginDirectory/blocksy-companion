@@ -49,9 +49,7 @@ class CustomizerOptionsManager {
 			// The above code will only import stuff from $data['mods']
 			// that is actually a customizer control. Everything else will be ignored
 			if (isset($data['mods'])) {
-				$importer = new DemoInstallOptionsInstaller([
-					'has_streaming' => false
-				]);
+				$importer = new DemoInstallOptionsInstaller();
 
 				$demo_data = null;
 
@@ -68,9 +66,7 @@ class CustomizerOptionsManager {
 			// widget. Everything else is going to be ignored from being
 			// processed.
 			if (isset($data['blocksy_widgets'])) {
-				$importer = new DemoInstallWidgetsInstaller([
-					'has_streaming' => false
-				]);
+				$importer = new DemoInstallWidgetsInstaller();
 
 				$importer->import_data($data['blocksy_widgets']);
 			}
@@ -115,9 +111,7 @@ class CustomizerOptionsManager {
 
 			$data = $this->get_data($theme_for_data);
 
-			$importer = new DemoInstallOptionsInstaller([
-				'has_streaming' => false
-			]);
+			$importer = new DemoInstallOptionsInstaller();
 
 			$importer->import_options($data);
 

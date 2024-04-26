@@ -3,30 +3,13 @@
 namespace Blocksy;
 
 class DemoInstallContentEraser {
-	protected $has_streaming = true;
-
-	public function __construct($args = []) {
-		$args = wp_parse_args($args, [
-			'has_streaming' => true
-		]);
-
-		$this->has_streaming = $args['has_streaming'];
-	}
+	public function __construct() {}
 
 	public function import() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->start_streaming();
-		}
-
 		if (! current_user_can('edit_theme_options')) {
-			/*
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => 'No permission.',
+			wp_send_json_error([
+				'message' => __("Sorry, you don't have permission to erase content.", 'blocksy-companion')
 			]);
-
-			exit;
-			 */
 		}
 
 		$this->reset_widgets_data();
@@ -36,24 +19,10 @@ class DemoInstallContentEraser {
 		$this->reset_previous_terms();
 		$this->reset_menus();
 
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'complete',
-				'error' => false,
-			]);
-
-			exit;
-		}
+		wp_send_json_success();
 	}
 
 	private function reset_previous_posts() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'erase_previous_posts',
-				'error' => false,
-			]);
-		}
-
 		global $wpdb;
 
 		$post_ids = $wpdb->get_col(
@@ -70,13 +39,6 @@ class DemoInstallContentEraser {
 	}
 
 	private function reset_previous_terms() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'erase_previous_terms',
-				'error' => false,
-			]);
-		}
-
 		global $wpdb;
 
 		$term_ids = $wpdb->get_col(
@@ -98,13 +60,6 @@ class DemoInstallContentEraser {
 	}
 
 	private function erase_default_pages() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'erase_default_pages',
-				'error' => false,
-			]);
-		}
-
 		$sample_page = get_page_by_path('sample-page', OBJECT, 'page');
 		$hello_world_post = get_page_by_path('hello-world', OBJECT, 'post');
 
@@ -119,13 +74,6 @@ class DemoInstallContentEraser {
 
 	private function reset_customizer() {
 		global $wp_customize;
-
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'erase_customizer_settings',
-				'error' => false,
-			]);
-		}
 
 		if (! $wp_customize) {
 			return;
@@ -143,13 +91,6 @@ class DemoInstallContentEraser {
 	}
 
 	private function reset_widgets_data() {
-		if ($this->has_streaming) {
-			Plugin::instance()->demo->emit_sse_message([
-				'action' => 'erase_widgets_data',
-				'error' => false,
-			]);
-		}
-
 		$sidebars_widgets = get_option('sidebars_widgets', array());
 
 		if (! isset($sidebars_widgets['wp_inactive_widgets'])) {
@@ -183,11 +124,6 @@ class DemoInstallContentEraser {
 
 	private function reset_menus() {
 		return;
-
-		Plugin::instance()->demo->emit_sse_message([
-			'action' => 'erase_menus_data',
-			'error' => false,
-		]);
 
 		$menus = get_terms('nav_menu', ['hide_empty' => false]);
 

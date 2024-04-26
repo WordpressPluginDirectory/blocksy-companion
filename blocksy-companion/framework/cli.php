@@ -124,7 +124,6 @@ class Cli {
 		]);
 
 		$plugins = new DemoInstallPluginsInstaller([
-			'has_streaming' => false,
 			'plugins' => implode(':', $demo_data['plugins'])
 		]);
 
@@ -146,7 +145,6 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$options = new DemoInstallOptionsInstaller([
-			'has_streaming' => false,
 			'demo_name' => $args['demo'] . ':' . $args['builder']
 		]);
 
@@ -168,7 +166,6 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$widgets = new DemoInstallWidgetsInstaller([
-			'has_streaming' => false,
 			'demo_name' => $args['demo'] . ':' . $args['builder']
 		]);
 
@@ -190,7 +187,6 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$content = new DemoInstallContentInstaller([
-			'has_streaming' => false,
 			'demo_name' => $args['demo'] . ':' . $args['builder']
 		]);
 
@@ -203,9 +199,7 @@ class Cli {
 	public function demo_clean($args) {
 		update_option('blocksy_ext_demos_current_demo', null);
 
-		$eraser = new DemoInstallContentEraser([
-			'has_streaming' => false
-		]);
+		$eraser = new DemoInstallContentEraser();
 
 		$eraser->import();
 
@@ -216,9 +210,7 @@ class Cli {
 	 * Finish the demo import process.
 	 */
 	public function demo_import_finish($args) {
-		$finish = new DemoInstallFinalActions([
-			'has_streaming' => false
-		]);
+		$finish = new DemoInstallFinalActions();
 
 		$finish->import();
 	}

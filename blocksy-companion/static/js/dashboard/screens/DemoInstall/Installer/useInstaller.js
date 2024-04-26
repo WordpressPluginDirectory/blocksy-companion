@@ -4,6 +4,8 @@ import {
 	useEffect,
 	useState,
 	useRef,
+	useCallback,
+	useMemo,
 	createContext,
 	useContext,
 	Fragment,
@@ -12,6 +14,24 @@ import DashboardContext from '../../../DashboardContext'
 import { DemosContext } from '../../DemoInstall'
 
 import { sprintf, __ } from 'ct-i18n'
+import { getNameForPlugin } from '../Wizzard/Plugins'
+
+import { computeRequestsForDemoContent } from './contentCalculation'
+
+export const prepareUrl = (query_string) => {
+	const params = new URLSearchParams({
+		nonce: ctDashboardLocalizations.dashboard_actions_nonce,
+		wp_customize: 'on',
+		...query_string,
+	})
+
+	return `${ctDashboardLocalizations.ajax_url}?${params.toString()}`
+}
+
+const GENERIC_MESSAGE = __(
+	"Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site.",
+	'blocksy-companion'
+)
 
 const listener = (e) => {
 	e.preventDefault()
@@ -60,292 +80,302 @@ export const getStepsForDemoConfiguration = ({
 		steps.push('content')
 	}
 
-	steps.push('install_finish')
+	if (includeMetaSteps) {
+		steps.push('install_finish')
+	}
 
 	return steps
+}
+
+const getInitialStepsDescriptors = (params) => {
+	const {
+		currentDemoWithVariation,
+		demoConfiguration,
+
+		pluginsStatus,
+
+		demoContent,
+	} = params
+
+	const { content, widgets, ...optionsBody } = demoContent
+
+	const pluginsToActivate = demoConfiguration.plugins
+		.filter(({ enabled, plugin }) => enabled && !pluginsStatus[plugin])
+		.map(({ plugin }) => plugin)
+
+	return {
+		register_current_demo: {
+			requests: [
+				{
+					title: __('Preparing data...', 'blocksy-companion'),
+					params: {
+						action: 'blocksy_demo_register_current_demo',
+						demo_name: currentDemoWithVariation,
+					},
+				},
+			],
+		},
+
+		child_theme: {
+			requests: [
+				{
+					title: __('Child theme', 'blocksy-companion'),
+					params: {
+						action: 'blocksy_demo_install_child_theme',
+					},
+				},
+			],
+		},
+
+		plugins: {
+			requests: pluginsToActivate.map((plugin) => ({
+				title: sprintf(
+					__('Installing %s', 'blocksy-companion'),
+					getNameForPlugin(plugin)
+				),
+
+				params: {
+					action: 'blocksy_demo_activate_plugins',
+					plugins: plugin,
+				},
+			})),
+		},
+
+		erase_content: {
+			requests: [
+				{
+					title: __('Erase content', 'blocksy-companion'),
+
+					params: {
+						action: 'blocksy_demo_erase_content',
+					},
+				},
+			],
+		},
+
+		options: {
+			requests: [
+				{
+					title: __('Import options', 'blocksy-companion'),
+
+					params: {
+						action: 'blocksy_demo_install_options',
+						demo_name: currentDemoWithVariation,
+					},
+
+					body: optionsBody,
+				},
+			],
+		},
+
+		widgets: {
+			requests: [
+				{
+					title: __('Import widgets', 'blocksy-companion'),
+
+					params: {
+						action: 'blocksy_demo_install_widgets',
+						demo_name: currentDemoWithVariation,
+					},
+
+					body: {
+						widgets,
+					},
+				},
+			],
+		},
+
+		content: {
+			requests: computeRequestsForDemoContent(params),
+		},
+
+		install_finish: {
+			requests: [
+				{
+					title: __('Final touches', 'blocksy-companion'),
+
+					params: {
+						action: 'blocksy_demo_install_finish',
+					},
+				},
+			],
+		},
+	}
 }
 
 export const useInstaller = (demoConfiguration) => {
 	const {
 		demos_list,
 		currentDemo,
-		setCurrentDemo,
 		setInstallerBlockingReleased,
 		setCurrentlyInstalledDemo,
 		pluginsStatus,
 	} = useContext(DemosContext)
 
-	const { home_url, customizer_url, is_child_theme, Link } =
-		useContext(DashboardContext)
+	const { is_child_theme } = useContext(DashboardContext)
 
 	const [isCompleted, setIsCompleted] = useState(false)
-	const [isError, setIsError] = useState(false)
-	const [currentStep, setCurrentStep] = useState(0)
-
-	const [properDemoName, _] = (currentDemo || '').split(':')
-
-	const demoVariations = demos_list
-		.filter(({ name }) => name === properDemoName)
-		.sort((a, b) => {
-			if (a.builder < b.builder) {
-				return -1
-			}
-
-			if (a.builder > b.builder) {
-				return 1
-			}
-
-			return 0
-		})
-
-	const pluginsToActivate = demoConfiguration.plugins
-		.filter(({ enabled, plugin }) => enabled && !pluginsStatus[plugin])
-		.map(({ plugin }) => plugin)
-
-	const [stepsDescriptors, setStepsDescriptors] = useState({
-		register_current_demo: {
-			title: __('Register demo', 'blocksy-companion'),
-
-			query_string: `action=blocksy_demo_register_current_demo&wp_customize=on&demo_name=${currentDemo}:${
-				demoConfiguration.builder === null
-					? demoVariations[0].builder
-					: demoConfiguration.builder
-			}`,
-			expected_signals: 1,
-		},
-
-		child_theme: {
-			title: __('Child theme', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_install_child_theme`,
-			expected_signals: 3,
-		},
-
-		plugins: {
-			title: __('Required plugins', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_activate_plugins&plugins=${pluginsToActivate.join(
-				':'
-			)}`,
-			expected_signals: pluginsToActivate.length * 2 + 1,
-		},
-
-		erase_content: {
-			title: __('Erase content', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_erase_content&wp_customize=on`,
-			expected_signals: 6,
-		},
-
-		install_finish: {
-			title: __('Final touches', 'blocksy-companion'),
-			query_string: 'action=blocksy_demo_install_finish&wp_customize=on',
-			expected_signals: 1,
-		},
-
-		options: {
-			title: __('Import options', 'blocksy-companion'),
-
-			query_string: `action=blocksy_demo_install_options&wp_customize=on&demo_name=${currentDemo}:${
-				demoConfiguration.builder === null
-					? demoVariations[0].builder
-					: demoConfiguration.builder
-			}`,
-			expected_signals: 5,
-		},
-		widgets: {
-			title: __('Import widgets', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_install_widgets&wp_customize=on&demo_name=${currentDemo}:${
-				demoConfiguration.builder === null
-					? demoVariations[0].builder
-					: demoConfiguration.builder
-			}`,
-			expected_signals: 3,
-		},
-
-		content: {
-			title: __('Import content', 'blocksy-companion'),
-			query_string: `action=blocksy_demo_install_content&wp_customize=on&demo_name=${currentDemo}:${
-				demoConfiguration.builder === null
-					? demoVariations[0].builder
-					: demoConfiguration.builder
-			}`,
-			expected_signals: 50,
-		},
-	})
-
-	const stepsForConfiguration = getStepsForDemoConfiguration({
-		demoConfiguration,
-		pluginsStatus,
-		is_child_theme,
-		includeMetaSteps: true,
-	})
-
-	const stepName = stepsForConfiguration[currentStep]
-
-	const [progressSignals, setProgressSignals] = useState(0)
 	const [lastMessage, setLastMessage] = useState(null)
+	const [isError, setIsError] = useState(false)
+	const [progress, setProgress] = useState(0)
 
-	let progressSignalsRef = useRef(progressSignals)
-	let stepsDescriptorsRef = useRef(stepsDescriptors)
+	const currentDemoWithVariation = useMemo(() => {
+		const [properDemoName, _] = (currentDemo || '').split(':')
+		const demoVariations = demos_list
+			.filter(({ name }) => name === properDemoName)
+			.sort((a, b) => {
+				if (a.builder < b.builder) {
+					return -1
+				}
 
-	useEffect(() => {
-		progressSignalsRef.current = progressSignals
-		stepsDescriptorsRef.current = stepsDescriptors
-	})
+				if (a.builder > b.builder) {
+					return 1
+				}
 
-	const getPercentageForStep = (step) => {
-		if (step === 'content') {
-			return stepsForConfiguration.length === 1 ? 100 : 50
-		}
+				return 0
+			})
 
-		return stepsForConfiguration.indexOf('content') > -1
-			? 50 / (stepsForConfiguration.length - 1)
-			: 100 / stepsForConfiguration.length
-	}
+		return `${currentDemo}:${
+			demoConfiguration.builder === null
+				? demoVariations[0].builder
+				: demoConfiguration.builder
+		}`
+	}, [currentDemo, demoConfiguration, demos_list])
 
-	const progress =
-		stepsForConfiguration.reduce((currentProgress, step, index) => {
-			if (index >= currentStep) {
-				return currentProgress
-			}
+	const stepsForConfiguration = useMemo(
+		() =>
+			getStepsForDemoConfiguration({
+				demoConfiguration,
+				pluginsStatus,
+				is_child_theme,
+				includeMetaSteps: true,
+			}),
+		[demoConfiguration, pluginsStatus, is_child_theme]
+	)
 
-			return currentProgress + getPercentageForStep(step)
-		}, 0) +
-		((progressSignals * 100) /
-			stepsDescriptors[stepName].expected_signals) *
-			(getPercentageForStep(stepName) / 100)
+	const processSteps = useCallback(
+		async (demoContent) => {
+			const stepsDescriptors = getInitialStepsDescriptors({
+				currentDemoWithVariation,
+				demoConfiguration,
+				pluginsStatus,
+				demoContent,
+			})
 
-	const fireOffNextStep = () => {
-		const stepDescriptor = stepsDescriptors[stepName]
+			const totalRequests = stepsForConfiguration.reduce((acc, step) => {
+				return acc + stepsDescriptors[step].requests.length
+			}, 0)
 
-		var evtSource = new EventSource(
-			`${ctDashboardLocalizations.ajax_url}?${stepDescriptor.query_string}&nonce=${ctDashboardLocalizations.dashboard_actions_nonce}`
-		)
+			let processedRequests = 0
 
-		evtSource.onerror = (e) => {
-			setIsError(true)
-		}
+			let requestsPayload = {}
 
-		evtSource.onmessage = (e) => {
-			var data = JSON.parse(e.data)
+			for (const step of stepsForConfiguration) {
+				const stepDescriptor = stepsDescriptors[step]
 
-			setProgressSignals(progressSignalsRef.current + 1)
+				if (!stepDescriptor || stepDescriptor.requests.length === 0) {
+					continue
+				}
 
-			if (data.action === 'content_installer_progress') {
-				const { kind } = data
+				for (const request of stepDescriptor.requests) {
+					setLastMessage(request.title)
 
-				if (kind) {
-					setLastMessage(data)
+					const response = await fetch(prepareUrl(request.params), {
+						method: 'POST',
 
-					setStepsDescriptors({
-						...stepsDescriptorsRef.current,
-						content: {
-							...stepsDescriptorsRef.current.content,
-							[`${kind}_count`]:
-								stepsDescriptorsRef.current.content[
-									`${kind}_count`
-								] + 1,
-						},
+						body: JSON.stringify({
+							requestsPayload,
+							...(request.body || {}),
+						}),
 					})
+
+					if (response.status !== 200) {
+						setIsError(GENERIC_MESSAGE)
+						break
+					}
+
+					const body = await response.json()
+
+					if (!body) {
+						setIsError(GENERIC_MESSAGE)
+						break
+					}
+
+					if (!body.success) {
+						setIsError(
+							body.data && body.data.message
+								? body.data.message
+								: GENERIC_MESSAGE
+						)
+
+						break
+					}
+
+					if (
+						body.data &&
+						body.data != null &&
+						body.data.constructor.name === 'Object'
+					) {
+						requestsPayload = {
+							...requestsPayload,
+							...body.data,
+						}
+					}
+
+					processedRequests++
+
+					setProgress((processedRequests / totalRequests) * 100)
+
+					if (totalRequests === processedRequests) {
+						console.timeEnd('Blocksy:Dashboard:DemoInstall')
+
+						setIsCompleted(true)
+						setInstallerBlockingReleased(true)
+						window.removeEventListener('beforeunload', listener)
+					}
 				}
-			} else {
-				setLastMessage(data)
 			}
+		},
+		[stepsForConfiguration, setProgress]
+	)
 
-			if (data.action === 'get_content_preliminary_data') {
-				const {
-					comment_count,
-					media_count,
-					post_count,
-					term_count,
-					users,
-				} = data.data
-
-				const preliminary_data = {
-					...data.data,
-					term_count: data.data.terms.length,
-					post_count: data.data.posts.filter(
-						({ post_type }) => post_type !== 'attachment'
-					).length,
-					media_count: data.data.posts.filter(
-						({ post_type }) => post_type === 'attachment'
-					).length,
-					comment_count: data.data.posts.reduce(
-						(total, post) => total + (post.comments || []).length,
-						0
-					),
-					users_count: Object.keys(data.data.authors).length,
-				}
-
-				setStepsDescriptors({
-					...stepsDescriptorsRef.current,
-					content: {
-						...stepsDescriptorsRef.current.content,
-						preliminary_data,
-
-						comment_count: 0,
-						media_count: 0,
-						post_count: 0,
-						term_count: 0,
-						users_count: 0,
-
-						expected_signals:
-							preliminary_data.comment_count +
-							preliminary_data.media_count +
-							preliminary_data.post_count +
-							preliminary_data.term_count +
-							preliminary_data.users_count +
-							3,
-					},
-				})
-			}
-
-			if (data.action === 'complete') {
-				evtSource && evtSource.close && evtSource.close()
-
-				if (currentStep === stepsForConfiguration.length - 1) {
-					setIsCompleted(true)
-					setInstallerBlockingReleased(true)
-					window.removeEventListener('beforeunload', listener)
-					return
-				}
-
-				setLastMessage(null)
-				setProgressSignals(0)
-
-				setCurrentStep(
-					Math.min(stepsForConfiguration.length - 1, currentStep + 1)
-				)
-			}
-		}
-	}
-
-	useEffect(() => {
-		if (isCompleted) {
-			return
-		}
-
-		setLastMessage(null)
-		setProgressSignals(0)
-
-		fireOffNextStep()
-	}, [stepName])
-
-	useEffect(() => {
+	const prepareData = useCallback(async () => {
 		window.addEventListener('beforeunload', listener)
+
+		console.time('Blocksy:Dashboard:DemoInstall')
 
 		setCurrentlyInstalledDemo({
 			demo: `${currentDemo}:${demoConfiguration.builder}`,
 		})
 
-		return () => {
-			window.removeEventListener('beforeunload', listener)
+		setLastMessage(__('Preparing data...', 'blocksy-companion'))
+
+		const response = await fetch(
+			prepareUrl({
+				action: 'blocksy_demo_get_content_preliminary_data',
+				demo_name: currentDemoWithVariation,
+			})
+		)
+
+		if (response.status === 200) {
+			const body = await response.json()
+
+			if (!body.success) {
+				setIsError(body.data.message || GENERIC_MESSAGE)
+				return
+			}
+
+			processSteps(body.data)
 		}
+	}, [processSteps, currentDemoWithVariation])
+
+	useEffect(() => {
+		prepareData()
 	}, [])
 
 	return {
 		isCompleted,
 		isError,
-		stepName,
-		stepsDescriptors,
 		lastMessage,
 		progress,
 	}

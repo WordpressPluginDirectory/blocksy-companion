@@ -9,14 +9,8 @@ import Progress from './components/Progress'
 import Error from './components/Error'
 
 const DemoInstaller = ({ demoConfiguration, style }) => {
-	const {
-		isCompleted,
-		isError,
-		stepName,
-		stepsDescriptors,
-		lastMessage,
-		progress,
-	} = useInstaller(demoConfiguration)
+	const { isCompleted, isError, lastMessage, progress } =
+		useInstaller(demoConfiguration)
 
 	const screenName = isCompleted ? 'complete' : isError ? 'error' : 'progress'
 
@@ -42,12 +36,12 @@ const DemoInstaller = ({ demoConfiguration, style }) => {
 					(
 						<div style={props}>
 							{screenName === 'complete' && <InstallCompleted />}
-							{screenName === 'error' && <Error />}
+							{screenName === 'error' && (
+								<Error isError={isError} />
+							)}
 							{screenName === 'progress' && (
 								<Progress
 									{...{
-										stepName,
-										stepsDescriptors,
 										lastMessage,
 										progress,
 									}}
