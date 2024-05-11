@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.42
+Stable tag: 2.0.47
 
 == Description ==
 
@@ -52,6 +52,27 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.47: 2024-05-10
+- Improvement: General fixes and improvements
+
+2.0.46: 2024-05-09
+- Improvement: Sanitize all SVG images upon upload into media gallery
+
+2.0.45: 2024-05-03
+- Improvement: General fixes and improvements
+
+2.0.44: 2024-05-03
+- Improvement: General fixes and improvements
+
+2.0.43: 2024-05-02
+- Improvement: Account element drop down menu remains open indefinitely if clicked on the element itself
+- Improvement: Dont allow URLs in region portion of the Mailchimp API Key
+- Improvement: Enforce year structure of uploads during starter site install
+- Improvement: Make sure starter sites are correctly installed via WP CLI
+- Improvement: Respect login_redirect filter in the account modal
+- Improvement: Starter Site content install step dont pass XML in the request body
+- Improvement: Starter sites list - better filtering by categories
+
 2.0.42: 2024-04-25
 - Improvement: Account header element profile photo support YITH Customize My Account plugin
 - Improvement: Starter sites installation process improvements

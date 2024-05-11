@@ -21,7 +21,7 @@ if (
 		$has_password = true;
 	}
 
-    $class .= " woocommerce-form-register";
+	$class .= " woocommerce-form-register";
     $password_class .= " password-input";
 }
 
@@ -52,7 +52,21 @@ if (
 		<p>
 			<label for="user_pass_register"><?php echo __('Password', 'blocksy-companion') ?></label>
 			<span class="<?php echo $password_class ?>">
-				<input type="password" name="user_pass" id="user_pass_register" class="input" value="" size="20" autocapitalize="off" autocomplete="new-password">
+				<?php
+					echo blocksy_html_tag(
+						'input',
+						apply_filters('blocksy:account:modal:register:password:attr', [
+							'type' => 'password',
+							'name' => 'user_pass',
+							'id' => 'user_pass_register',
+							'class' => 'input',
+							'value' => '',
+							'size' => '20',
+							'autocomplete' => 'new-password',
+							'autocapitalize' => 'off'
+						])
+					);
+				?>
 			</span>
 		</p>
 	<?php } ?>

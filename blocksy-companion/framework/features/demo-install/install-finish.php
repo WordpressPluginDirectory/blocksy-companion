@@ -3,14 +3,28 @@
 namespace Blocksy;
 
 class DemoInstallFinalActions {
-	public function __construct() {}
+	protected $is_ajax_request = true;
+
+	public function __construct($args = []) {
+		$args = wp_parse_args($args, [
+			'is_ajax_request' => true,
+		]);
+
+		$this->is_ajax_request = $args['is_ajax_request'];
+	}
 
 	public function import() {
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to finish the installation.", 'blocksy-companion')
 			]);
 		}
+
+		delete_option('blocksy_ext_demos_currently_installing_demo');
 
 		$wpforms_settings = get_option('wpforms_settings', []);
 		$wpforms_settings['disable-css'] = '2';
@@ -74,7 +88,9 @@ class DemoInstallFinalActions {
 
 		$this->patch_attachment_ids_in_mods();
 
-		wp_send_json_success();
+		if ($this->is_ajax_request) {
+			wp_send_json_success();
+		}
 	}
 
 	/**

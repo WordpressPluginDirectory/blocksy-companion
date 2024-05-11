@@ -99,9 +99,19 @@ class Cli {
 	public function demo_import_start($args, $assoc_args) {
 		$args = $this->get_demo_args($args);
 
-		Plugin::instance()->demo->set_current_demo(
-			$args['demo'] . ':' . $args['builder']
-		);
+		update_option('blocksy_ext_demos_current_demo', [
+			'demo' => $args['demo'] . ':' . $args['builder']
+		]);
+
+		$demo_content = Plugin::instance()->demo->fetch_single_demo([
+			'demo' => $args['demo'],
+			'builder' => $args['builder'],
+			'field' => 'all'
+		]);
+
+		update_option('blocksy_ext_demos_currently_installing_demo', [
+			'demo' => $demo_content
+		]);
 	}
 
 	/**
@@ -124,7 +134,8 @@ class Cli {
 		]);
 
 		$plugins = new DemoInstallPluginsInstaller([
-			'plugins' => implode(':', $demo_data['plugins'])
+			'plugins' => implode(':', $demo_data['plugins']),
+			'is_ajax_request' => false,
 		]);
 
 		$plugins->import();
@@ -145,7 +156,8 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$options = new DemoInstallOptionsInstaller([
-			'demo_name' => $args['demo'] . ':' . $args['builder']
+			'demo_name' => $args['demo'] . ':' . $args['builder'],
+			'is_ajax_request' => false,
 		]);
 
 		$options->import();
@@ -166,7 +178,8 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$widgets = new DemoInstallWidgetsInstaller([
-			'demo_name' => $args['demo'] . ':' . $args['builder']
+			'demo_name' => $args['demo'] . ':' . $args['builder'],
+			'is_ajax_request' => false,
 		]);
 
 		$widgets->import();
@@ -187,7 +200,8 @@ class Cli {
 		$args = $this->get_demo_args($args);
 
 		$content = new DemoInstallContentInstaller([
-			'demo_name' => $args['demo'] . ':' . $args['builder']
+			'demo_name' => $args['demo'] . ':' . $args['builder'],
+			'is_ajax_request' => false,
 		]);
 
 		$content->import();
@@ -199,7 +213,9 @@ class Cli {
 	public function demo_clean($args) {
 		update_option('blocksy_ext_demos_current_demo', null);
 
-		$eraser = new DemoInstallContentEraser();
+		$eraser = new DemoInstallContentEraser([
+			'is_ajax_request' => false,
+		]);
 
 		$eraser->import();
 
@@ -210,7 +226,9 @@ class Cli {
 	 * Finish the demo import process.
 	 */
 	public function demo_import_finish($args) {
-		$finish = new DemoInstallFinalActions();
+		$finish = new DemoInstallFinalActions([
+			'is_ajax_request' => false,
+		]);
 
 		$finish->import();
 	}
@@ -368,6 +386,7 @@ class Cli {
 
 		// Get demo profile arguments.
 		$demo_args = $this->get_demo_args($args);
+		
 		$demo_data = Plugin::instance()->demo->fetch_single_demo([
 			'demo' => $demo_args['demo'],
 			'builder' => $demo_args['builder']

@@ -93,12 +93,8 @@ const getInitialStepsDescriptors = (params) => {
 		demoConfiguration,
 
 		pluginsStatus,
-
 		demoContent,
 	} = params
-
-	const { content, widgets, ...optionsBody } = demoContent
-
 	const pluginsToActivate = demoConfiguration.plugins
 		.filter(({ enabled, plugin }) => enabled && !pluginsStatus[plugin])
 		.map(({ plugin }) => plugin)
@@ -162,8 +158,6 @@ const getInitialStepsDescriptors = (params) => {
 						action: 'blocksy_demo_install_options',
 						demo_name: currentDemoWithVariation,
 					},
-
-					body: optionsBody,
 				},
 			],
 		},
@@ -176,10 +170,6 @@ const getInitialStepsDescriptors = (params) => {
 					params: {
 						action: 'blocksy_demo_install_widgets',
 						demo_name: currentDemoWithVariation,
-					},
-
-					body: {
-						widgets,
 					},
 				},
 			],

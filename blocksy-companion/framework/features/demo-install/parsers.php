@@ -78,11 +78,11 @@ class Blocksy_WXR_Parser_SimpleXML {
 		) {
 			$old_value = libxml_disable_entity_loader(true);
 		}
-		
+
 		$content = '';
 
 		if (strpos($file, '<?xml') === false) {
-			$content = blc_load_xml_file($file);
+			$content = blc_request_remote_url($file);
 		} else {
 			$content = $file;
 		}
@@ -346,7 +346,7 @@ class Blocksy_WXR_Parser_XML {
 		$content = '';
 
 		if (strpos($file, '<?xml') === false) {
-			$content = blc_load_xml_file($file);
+			$content = blc_request_remote_url($file);
 		} else {
 			$content = $file;
 		}

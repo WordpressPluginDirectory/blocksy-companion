@@ -42,6 +42,7 @@ class Autoloader {
 			'OpenGraphMetaData' => 'framework/features/opengraph-meta-data.php',
 			'HeaderAdditions' => 'framework/features/header.php',
 			'ConditionsManager' => 'framework/features/conditions-manager.php',
+			'ConditionsManagerAPI' => 'framework/features/conditions/api.php',
 			'ConditionsRulesResolver' => 'framework/features/conditions/rules-resolver.php',
 
 			'Cli' => 'framework/cli.php',

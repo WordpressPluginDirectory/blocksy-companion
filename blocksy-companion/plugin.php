@@ -88,9 +88,9 @@ class Plugin {
 		$this->demo = new DemoInstall();
 		$this->dynamic_css = new DynamicCss();
 
-		$this->account_auth = new AccountAuth();
-
 		new CustomizerOptionsManager();
+
+		new ConditionsManagerAPI();
 	}
 
 	public function early_init() {
@@ -140,6 +140,8 @@ class Plugin {
 		new OpenGraphMetaData();
 		new SvgHandling();
 
+		$this->account_auth = new AccountAuth();
+
 		if (defined('WP_CLI') && WP_CLI) {
 			$this->cli = new Cli();
 		}
@@ -166,6 +168,7 @@ class Plugin {
 	 * @access private
 	 */
 	private function __construct() {
+		require_once BLOCKSY_PATH . '/framework/helpers/request.php';
 		require_once BLOCKSY_PATH . '/framework/helpers/helpers.php';
 		require_once BLOCKSY_PATH . '/framework/helpers/exts.php';
 
@@ -311,23 +314,8 @@ class Plugin {
 			true
 		);
 
-		$conditions_manager = new ConditionsManager();
-
 		$localize = array_merge(
 			[
-				'all_condition_rules' => $conditions_manager->get_all_rules(),
-				'singular_condition_rules' => $conditions_manager->get_all_rules([
-					'filter' => 'singular'
-				]),
-				'archive_condition_rules' => $conditions_manager->get_all_rules([
-					'filter' => 'archive'
-				]),
-				'product_tabs_rules' => $conditions_manager->get_all_rules([
-					'filter' => 'product_tabs'
-				]),
-				'maintenance_mode_rules' => $conditions_manager->get_all_rules([
-					'filter' => 'maintenance-mode'
-				]),
 				'ajax_url' => admin_url('admin-ajax.php'),
 				'rest_url' => get_rest_url(),
 			]

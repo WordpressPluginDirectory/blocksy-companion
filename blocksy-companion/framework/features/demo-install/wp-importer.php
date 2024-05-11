@@ -179,14 +179,14 @@ class Blocksy_WP_Import extends WP_Importer {
 	 * @param string $file Path to the WXR file for importing
 	 */
 	function import_start( $file ) {
-		if ( ! is_file($file) ) {
 			/*
+		if ( ! is_file($file) ) {
 			echo '<p><strong>' . __( 'Sorry, there has been an error.', 'wordpress-importer' ) . '</strong><br />';
 			echo __( 'The file does not exist, please try again.', 'wordpress-importer' ) . '</p>';
 			$this->footer();
 			die();
-			 */
 		}
+			 */
 
 		$import_data = $this->parse( $file );
 

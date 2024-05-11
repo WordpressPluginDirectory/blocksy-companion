@@ -30,6 +30,7 @@ export const maybeHandleLoginForm = (el) => {
 		maybeAddLoadingState(maybeLogin)
 
 		let body = new FormData(maybeLogin)
+		body.append('redirect_to', location.href)
 
 		// let url = maybeLogin.action
 
@@ -111,18 +112,20 @@ export const maybeHandleLoginForm = (el) => {
 									)
 								}
 							} else {
+								const body = new FormData(maybeLogin)
+
+								body.append('redirect_to', location.href)
+
 								fetch(
 									`${ct_localizations.ajax_url}?action=blc_implement_user_login`,
 									{
 										method: maybeLogin.method,
-										body: new FormData(maybeLogin),
+										body,
 									}
 								)
-									.then((response) => response.text())
-									.then((html) => {
-										location = maybeLogin.querySelector(
-											'[name="redirect_to"]'
-										).value
+									.then((response) => response.json())
+									.then(({ data: { html, redirect_to } }) => {
+										location = redirect_to
 									})
 							}
 
@@ -154,8 +157,8 @@ export const maybeHandleLoginForm = (el) => {
 				method: maybeLogin.method,
 				body,
 			})
-				.then((response) => response.text())
-				.then((html) => {
+				.then((response) => response.json())
+				.then(({ data: { html, redirect_to } }) => {
 					const { doc, hasError } = maybeAddErrors(
 						maybeLogin.closest('.ct-login-form'),
 						html
@@ -164,9 +167,7 @@ export const maybeHandleLoginForm = (el) => {
 					if (!hasError) {
 						if (!maybeMountTwoFactorForm(maybeLogin, doc)) {
 							setTimeout(() => {
-								location = maybeLogin.querySelector(
-									'[name="redirect_to"]'
-								).value
+								location = redirect_to
 							}, 2000)
 						}
 					} else {

@@ -76,32 +76,37 @@ function blc_normalize_site_url($url) {
 }
 
 if (! function_exists('blc_load_xml_file')) {
-	function blc_load_xml_file($url, $useragent = '') {
+	function blc_load_xml_file($url, $args = []) {
+		$args = wp_parse_args($args, [
+			'user_agent' => ''
+		]);
+
 		set_time_limit(300);
 
 		if (ini_get('allow_url_fopen') && ini_get('allow_url_fopen') !== 'Off') {
 			$context_options = [
 				"ssl" => [
-					"verify_peer"=>false,
-					"verify_peer_name"=>false,
+					"verify_peer" => false,
+					"verify_peer_name" => false,
 				]
 			];
 
-			if (! empty($useragent)) {
+			if (! empty($args['user_agent'])) {
 				$context_options['http'] = [
-					'user_agent' => $useragent
+					'user_agent' => $args['user_agent']
 				];
 			}
 
 			return file_get_contents(
-				$url, false,
+				$url,
+				false,
 				stream_context_create($context_options)
 			);
 		} else if (function_exists('curl_init')) {
 			$curl = curl_init($url);
 
-			if (! empty($useragent)) {
-				curl_setopt($curl, CURLOPT_USERAGENT, $user_agent);
+			if (! empty($args['user_agent'])) {
+				curl_setopt($curl, CURLOPT_USERAGENT, $args['user_agent']);
 			}
 
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -275,4 +280,9 @@ function blc_get_terms($get_terms_args, $args = []) {
 	}
 
 	return $all_terms;
+}
+
+function blc_request_remote_url($url, $args = []) {
+	$request = new \Blocksy\RequestRemoteUrl();
+	return $request->request($url, $args);
 }

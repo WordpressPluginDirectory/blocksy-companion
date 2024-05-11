@@ -17,6 +17,10 @@ class MailchimpProvider extends Provider {
 
 		$region = explode('-', $api_key);
 
+		if (strpos($region[1], '.') !== false) {
+			return 'api_key_invalid';
+		}
+
 		$response = wp_remote_get(
 			'https://' . $region[1] . '.api.mailchimp.com/3.0/lists?count=1000',
 			[

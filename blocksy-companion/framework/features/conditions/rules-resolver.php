@@ -8,14 +8,20 @@ class ConditionsRulesResolver {
 	// prefix | current-screen
 	private $strategy_or_prefix = 'current-screen';
 
+	private $conditions_purpose = 'global';
+
 	public function __construct($rule, $args = []) {
 		$args = wp_parse_args($args, [
 			// prefix | current-screen
-			'strategy' => 'current-screen'
+			'strategy' => 'current-screen',
+
+			// global | archive-loop
+			'conditions_purpose' => 'global'
 		]);
 
 		$this->rule = $rule;
 		$this->strategy_or_prefix = $args['strategy'];
+		$this->conditions_purpose = $args['conditions_purpose'];
 	}
 
 	public function resolve() {
@@ -241,13 +247,27 @@ class ConditionsRulesResolver {
 
 		if ($rule['rule'] === 'all_product_archives') {
 			if (function_exists('is_shop')) {
-				return is_shop() || is_product_tag() || is_product_category();
+				return (
+					is_shop()
+					||
+					is_product_tag()
+					||
+					is_product_category()
+					||
+					is_product_taxonomy()
+				);
 			}
 		}
 
 		if ($rule['rule'] === 'all_product_categories') {
 			if (function_exists('is_shop')) {
 				return is_product_category();
+			}
+		}
+
+		if ($rule['rule'] === 'all_product_brands') {
+			if (function_exists('is_shop')) {
+				return is_tax('product_brands');
 			}
 		}
 
@@ -420,8 +440,13 @@ class ConditionsRulesResolver {
 			$rule['rule'] === 'post_with_taxonomy_ids'
 			||
 			$rule['rule'] === 'product_with_taxonomy_ids'
+			// ||
+			// $rule['rule'] === 'card_product_with_taxonomy_ids'
+			// ||
+			// $rule['rule'] === 'card_post_with_taxonomy_ids'
 		) {
 			$is_blocksy_page = blocksy_is_page();
+
 			global $blocksy_is_quick_view;
 			global $wp_query;
 
@@ -432,6 +457,10 @@ class ConditionsRulesResolver {
 
 				if ($is_blocksy_page) {
 					$post_id = $is_blocksy_page;
+				}
+
+				if ($wp_query->in_the_loop) {
+					$post_id = get_the_ID();
 				}
 
 				if (wp_doing_ajax() && isset($_GET['product_id'])) {
@@ -461,6 +490,75 @@ class ConditionsRulesResolver {
 					);
 				}
 			}
+		}
+
+		if ($rule['rule'] === 'card_product_with_taxonomy_ids') {
+			if ($this->conditions_purpose === 'global') {
+				return $this->is_woo_archive();
+			}
+
+			global $wp_query;
+
+			if (
+				$this->conditions_purpose === 'archive-loop'
+				&&
+				$wp_query->in_the_loop
+				&&
+				$this->is_woo_archive()
+			) {
+				$post_id = get_the_ID();
+
+				if (wp_doing_ajax() && isset($_GET['product_id'])) {
+					$post_id = sanitize_text_field($_GET['product_id']);
+				}
+
+				return $this->match_taxonomy_in_rule_for($rule, $post_id);
+			}
+		}
+
+		if ($rule['rule'] === 'card_post_with_taxonomy_ids') {
+			if ($this->conditions_purpose === 'global') {
+				return $this->is_cpt_archive();
+			}
+
+			global $wp_query;
+
+			if (
+				$this->conditions_purpose === 'archive-loop'
+				&&
+				$wp_query->in_the_loop
+				&&
+				$this->is_cpt_archive()
+			) {
+				return $this->match_taxonomy_in_rule_for($rule, get_the_ID());
+			}
+		}
+
+		return false;
+	}
+
+	private function match_taxonomy_in_rule_for($rule, $post_id) {
+		if (
+			isset($rule['payload'])
+			&&
+			isset($rule['payload']['taxonomy_id'])
+			&&
+			$post_id
+			&&
+			get_term($rule['payload']['taxonomy_id'])
+			&&
+			in_array(
+				get_term($rule['payload']['taxonomy_id'])->taxonomy,
+				get_object_taxonomies([
+					'post_type' => get_post_type($post_id)
+				])
+			)
+		) {
+			return has_term(
+				$rule['payload']['taxonomy_id'],
+				get_term($rule['payload']['taxonomy_id'])->taxonomy,
+				$post_id
+			);
 		}
 
 		return false;
@@ -574,6 +672,75 @@ class ConditionsRulesResolver {
 		}
 
 		return false;
+	}
+
+	public function is_woo_archive() {
+		if (! function_exists('is_shop')) {
+			return false;
+		}
+
+		$is_product_archive_custom = false;
+
+		if (is_tax()) {
+			$object = get_queried_object();
+
+			$is_product_archive_custom = taxonomy_is_product_attribute(
+				$object->taxonomy
+			);
+		}
+
+		if (is_singular()) {
+			$object = get_queried_object();
+
+			if ($object) {
+				$is_product_archive_custom = has_shortcode(
+					$object->post_content,
+					'products'
+				);
+			}
+		}
+
+		return (
+			is_shop()
+			||
+			is_product_tag()
+			||
+			is_product_category()
+			||
+			is_product_taxonomy()
+			||
+			$is_product_archive_custom
+		);
+	}
+
+	public function is_cpt_archive() {
+		$is_archive_custom = false;
+
+		if (is_singular()) {
+			$object = get_queried_object();
+
+			if ($object) {
+				$is_product_archive = (
+					has_shortcode($object->post_content, 'blocksy_posts')
+					||
+					has_block('blocksy/query', $object)
+				);
+			}
+		}
+
+		return (
+			is_home()
+			||
+			is_archive()
+			||
+			is_post_type_archive()
+			||
+			is_category()
+			||
+			is_tag()
+			||
+			$is_archive_custom
+		);
 	}
 }
 

@@ -5,6 +5,26 @@ namespace Blocksy;
 class SvgHandling {
 	public function __construct() {
 		add_filter(
+			'wp_handle_upload_prefilter',
+			function ($file) {
+				$extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+
+				if ('svg' !== $extension) {
+					return $file;
+				}
+
+				$svg_content = file_get_contents($file['tmp_name']);
+
+				// Sanitize the SVG content
+				$sanitized_content = $this->cleanup_svg($svg_content);
+
+				file_put_contents($file['tmp_name'], $sanitized_content);
+
+				return $file;
+			}
+		);
+
+		add_filter(
 			'wp_check_filetype_and_ext',
 			function ($data = null, $file = null, $filename = null, $mimes = null) {
 				if (strpos($filename, '.svg') !== false) {
@@ -154,6 +174,26 @@ class SvgHandling {
 			'height' => $height,
 			'orientation' => ($width > $height) ? 'landscape' : 'portrait'
 		];
+	}
+
+	public function cleanup_svg($content) {
+		$base_path = BLOCKSY_PATH . 'vendor/svg-sanitizer/src';
+
+		require_once($base_path . '/data/AttributeInterface.php');
+		require_once($base_path . '/data/TagInterface.php');
+		require_once($base_path . '/data/AllowedAttributes.php');
+		require_once($base_path . '/data/AllowedTags.php');
+		require_once($base_path . '/data/XPath.php');
+		require_once($base_path . '/ElementReference/Resolver.php');
+		require_once($base_path . '/ElementReference/Subject.php');
+		require_once($base_path . '/ElementReference/Usage.php');
+		require_once($base_path . '/Exceptions/NestingException.php');
+		require_once($base_path . '/Helper.php');
+		require_once($base_path . '/Sanitizer.php');
+
+		$sanitizer = new \blocksy\enshrined\svgSanitize\Sanitizer();
+
+		return $sanitizer->sanitize($content);
 	}
 }
 

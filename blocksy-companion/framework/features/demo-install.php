@@ -131,6 +131,10 @@ class DemoInstall {
 			'field' => 'all'
 		]);
 
+		update_option('blocksy_ext_demos_currently_installing_demo', [
+			'demo' => $demo_content
+		]);
+
 		wp_send_json_success($demo_content);
 	}
 
@@ -224,22 +228,17 @@ class DemoInstall {
 			]
 		);
 
-		$request = wp_remote_get(
+		$body = blc_request_remote_url(
 			$this->get_demo_remote_url([
 				'route' => 'get_single',
 				'demo' => $args['demo'] . ':' . $args['builder'],
 				'field' => $args['field']
 			]),
+
 			[
-				'sslverify' => false
+				'user_agent_type' => 'wp'
 			]
 		);
-
-		if (is_wp_error($request)) {
-			return false;
-		}
-
-		$body = wp_remote_retrieve_body( $request );
 
 		$body = json_decode($body, true);
 
@@ -251,25 +250,19 @@ class DemoInstall {
 	}
 
 	public function fetch_all_demos() {
-		$request = wp_remote_get(
+		$body = blc_request_remote_url(
 			$this->get_demo_remote_url([
 				'route' => 'get_all'
 			]),
-			['sslverify' => false]
+
+			[
+				'user_agent_type' => 'wp'
+			]
 		);
 
-		if (is_wp_error($request)) {
-			return $request;
+		if (! $body) {
+			return new \WP_Error('demo_fetch_failed', 'Failed to fetch demos.');
 		}
-
-		if (wp_remote_retrieve_response_code($request) !== 200) {
-			return new \WP_Error(
-				'demo_fetch_failed',
-				'Failed to fetch demos with status code ' . wp_remote_retrieve_response_code($request)
-			);
-		}
-
-		$body = wp_remote_retrieve_body($request);
 
 		$body = json_decode($body, true);
 

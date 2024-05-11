@@ -7,7 +7,7 @@ $posts_options = [];
 if ($filter === 'all' || $filter === 'archive') {
 	$posts_options[] = [
 		'id' => 'all_post_archives',
-		'title' => __('All Post Archives', 'blocksy-companion')
+		'title' => __('Post Archives', 'blocksy-companion')
 	];
 
 	$posts_options[] = [

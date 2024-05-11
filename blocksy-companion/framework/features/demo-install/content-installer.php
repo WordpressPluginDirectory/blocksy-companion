@@ -4,10 +4,12 @@ namespace Blocksy;
 
 class DemoInstallContentInstaller {
 	protected $demo_name = null;
+	protected $is_ajax_request = true;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'demo_name' => null
+			'demo_name' => null,
+			'is_ajax_request' => true,
 		]);
 
 		if (
@@ -21,9 +23,16 @@ class DemoInstallContentInstaller {
 		}
 
 		$this->demo_name = $args['demo_name'];
+		$this->is_ajax_request = $args['is_ajax_request'];
 	}
 
 	public function import() {
+		add_filter(
+			'option_uploads_use_yearmonth_folders',
+			'__return_true',
+			100
+		);
+
 		if (class_exists('\Astra_Sites')) {
 			$astra_sites_instance = \Astra_Sites::get_instance();
 
@@ -34,7 +43,11 @@ class DemoInstallContentInstaller {
 			);
 		}
 
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to install content.", 'blocksy-companion')
 			]);
@@ -124,9 +137,16 @@ class DemoInstallContentInstaller {
 		);
 
 		if (! $this->demo_name) {
-			wp_send_json_error([
-				'message' => __("No demo name provided.", 'blocksy-companion')
-			]);
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No demo name provided.", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_content_no_demo_name',
+					__("No demo name provided.", 'blocksy-companion')
+				);
+			}
 		}
 
 		$demo_name = explode(':', $this->demo_name);
@@ -138,11 +158,36 @@ class DemoInstallContentInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		$body = json_decode(file_get_contents('php://input'), true);
+		$demo_to_install = get_option(
+			'blocksy_ext_demos_currently_installing_demo',
+			[]
+		);
+
+		if (
+			empty($demo_to_install)
+			||
+			! isset($demo_to_install['demo'])
+			||
+			! isset($demo_to_install['demo']['content'])
+		) {
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No demo data found.", 'blocksy-companion'),
+					'demo' => $demo_to_install
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_content_no_demo_data',
+					__("No demo data found.", 'blocksy-companion')
+				);
+			}
+		}
+
+		$demo_to_install = $demo_to_install['demo'];
 
 		$wp_import = new \Blocksy_WP_Import();
 
-		$import_data = $wp_import->parse($body['content']);
+		$import_data = $wp_import->parse($demo_to_install['content']);
 
 		$wp_import->get_authors_from_import($import_data);
 
@@ -221,7 +266,7 @@ class DemoInstallContentInstaller {
 		$_POST['fetch_attachments'] = $wp_import->fetch_attachments;
 
 		ob_start();
-		$wp_import->import($body['content']);
+		$wp_import->import($demo_to_install['content']);
 		ob_end_clean();
 
 		if (class_exists('Blocksy_Customizer_Builder')) {
@@ -249,9 +294,11 @@ class DemoInstallContentInstaller {
 		$this->clean_plugins_cache();
 		$this->assign_pages_ids($demo, $builder);
 
-		wp_send_json_success([
-			'processed_posts' => $wp_import->processed_posts,
-		]);
+		if ($this->is_ajax_request) {
+			wp_send_json_success([
+				'processed_posts' => $wp_import->processed_posts,
+			]);
+		}
 	}
 
 	public function track_post_insert($post_id) {
@@ -280,9 +327,16 @@ class DemoInstallContentInstaller {
 		]);
 
 		if (! isset($demo_content['pages_ids_options'])) {
-			wp_send_json_error([
-				'message' => __("No pages to assign.", 'blocksy-companion')
-			]);
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No pages to assign.", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_content_no_pages',
+					__("No pages to assign.", 'blocksy-companion')
+				);
+			}
 		}
 
 		foreach ($demo_content['pages_ids_options'] as $option_id => $page_title) {

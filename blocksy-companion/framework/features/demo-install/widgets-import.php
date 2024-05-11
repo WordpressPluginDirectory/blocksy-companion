@@ -4,10 +4,12 @@ namespace Blocksy;
 
 class DemoInstallWidgetsInstaller {
 	protected $demo_name = null;
+	protected $is_ajax_request = true;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'demo_name' => null
+			'demo_name' => null,
+			'is_ajax_request' => true,
 		]);
 
 		if (
@@ -21,19 +23,31 @@ class DemoInstallWidgetsInstaller {
 		}
 
 		$this->demo_name = $args['demo_name'];
+		$this->is_ajax_request = $args['is_ajax_request'];
 	}
 
 	public function import() {
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to install widgets.", 'blocksy-companion')
 			]);
 		}
 
 		if (! $this->demo_name) {
-			wp_send_json_error([
-				'message' => __("No widgets to install.", 'blocksy-companion')
-			]);
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No demo to install", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_widgets_no_demo',
+					__("No demo to install", 'blocksy-companion')
+				);
+			}
 		}
 
 		$demo_name = explode(':', $this->demo_name);
@@ -45,19 +59,38 @@ class DemoInstallWidgetsInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		$demo_content = json_decode(file_get_contents('php://input'), true);
+		$demo_to_install = get_option(
+			'blocksy_ext_demos_currently_installing_demo',
+			[]
+		);
 
-		if (! isset($demo_content['widgets'])) {
-			wp_send_json_error([
-				'message' => __("No widgets to install.", 'blocksy-companion')
-			]);
+		if (
+			empty($demo_to_install)
+			||
+			! isset($demo_to_install['demo'])
+			||
+			! isset($demo_to_install['demo']['widgets'])
+		) {
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No widgets to install.", 'blocksy-companion'),
+					'demo' => $demo_to_install
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_widgets_no_widgets',
+					__("No widgets to install.", 'blocksy-companion')
+				);
+			}
 		}
 
-		$data = json_decode(json_encode($demo_content['widgets']));
+		$data = json_decode(json_encode($demo_to_install['demo']['widgets']));
 
 		$result = $this->import_data($data);
 
-		wp_send_json_success();
+		if ($this->is_ajax_request) {
+			wp_send_json_success();
+		}
 	}
 
 	public function import_data($data) {

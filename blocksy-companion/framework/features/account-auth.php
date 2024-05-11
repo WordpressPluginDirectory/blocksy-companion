@@ -279,8 +279,37 @@ class AccountAuth {
 	}
 
 	public function blc_implement_user_login() {
+		add_filter(
+			'login_redirect',
+			function ($redirect_to, $requested_redirect_to, $user) {
+				$reauth = empty($_REQUEST['reauth']) ? false : true;
+
+				if (! is_wp_error($user) && ! $reauth) {
+					wp_send_json_success([
+						'html' => '',
+						'redirect_to' => apply_filters(
+							'blocksy:account:modal:login:redirect_to',
+							$redirect_to,
+							$requested_redirect_to,
+							$user
+						)
+					]);
+				}
+
+				return $redirect_to;
+			},
+			PHP_INT_MAX,
+			3
+		);
+
+		ob_start();
 		require_once ABSPATH . 'wp-login.php';
-		wp_die();
+		$html = ob_get_clean();
+
+		wp_send_json_success([
+			'html' => $html,
+			'redirect_to' => ''
+		]);
 	}
 
 	public function get_registration_strategy() {

@@ -1,9 +1,5 @@
 <?php
 
-if (! isset($current_url)) {
-	$current_url = home_url();
-}
-
 $form_views = [
 	'login' => '',
 	'register' => '',
@@ -15,9 +11,7 @@ foreach ($form_views as $form_key => $value) {
 		'blocksy:header:account-modal:views:' . $form_key . '-form',
 		blocksy_render_view(
 			dirname(__FILE__) . '/modal/' . $form_key . '.php',
-			[
-				'current_url' => $current_url
-			]
+			[]
 		)
 	);
 }

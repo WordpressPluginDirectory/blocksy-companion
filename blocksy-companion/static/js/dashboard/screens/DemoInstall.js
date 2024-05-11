@@ -43,6 +43,7 @@ const DemoInstall = ({ children, path, location }) => {
 	const [demo_error, setDemoError] = useState({
 		isError: false,
 		message: '',
+		// generic | remote_fetch_failed | ajax_request_failed
 		reason: 'generic',
 	})
 
@@ -88,19 +89,36 @@ const DemoInstall = ({ children, path, location }) => {
 
 					setDemoError(demos_error_cache)
 
-					console.error(
-						'Blocksy:Dashboard:DemoInstall:demos_list',
-						data
-					)
+					console.error('Blocksy:Dashboard:DemoInstall:demos_list', {
+						...data,
+						demos_error_cache,
+					})
 				}
 			}
+
+			if (response.status !== 200) {
+				demos_error_cache = {
+					isError: true,
+					message: response.statusText,
+					reason: 'generic',
+				}
+
+				setDemoError(demos_error_cache)
+
+				console.error('Blocksy:Dashboard:DemoInstall:demos_list', {
+					demos_error_cache,
+				})
+			}
 		} catch (e) {
-			console.error('Blocksy:Dashboard:DemoInstall:demos_list', { e })
+			console.error('Blocksy:Dashboard:DemoInstall:demos_list', {
+				e,
+				reason: 'ajax_request_failed',
+			})
 
 			demos_error_cache = {
 				isError: true,
 				message: e.message || e,
-				reason: 'remote_fetch_failed',
+				reason: 'ajax_request_failed',
 			}
 
 			setDemoError(demos_error_cache)
@@ -178,6 +196,24 @@ const DemoInstall = ({ children, path, location }) => {
 					if (demo_error.isError) {
 						return (props) => (
 							<animated.div style={props}>
+								{demo_error.reason ===
+									'ajax_request_failed' && (
+									<div
+										className="ct-demo-notification"
+										dangerouslySetInnerHTML={{
+											__html: sprintf(
+												__(
+													'Your site is misconfigured and AJAX requests are not reaching your backend. Please click %shere%s to find the common causes and possible solutions to this.<br> Error code - %s',
+													'blocksy-companion'
+												),
+												'<a href="https://creativethemes.com/blocksy/docs/troubleshooting/starter-site-common-issues-possible-solutions/" target="_blank">',
+												'</a>',
+												demo_error.message
+											),
+										}}
+									/>
+								)}
+
 								{demo_error.reason ===
 									'remote_fetch_failed' && (
 									<div

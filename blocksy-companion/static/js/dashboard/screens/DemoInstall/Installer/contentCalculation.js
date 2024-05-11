@@ -11,10 +11,6 @@ export const computeRequestsForDemoContent = ({
 				action: 'blocksy_demo_install_content',
 				demo_name: currentDemoWithVariation,
 			},
-
-			body: {
-				content,
-			},
 		},
 	]
 }

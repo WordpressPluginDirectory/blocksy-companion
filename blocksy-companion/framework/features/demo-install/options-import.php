@@ -6,10 +6,12 @@ class DemoInstallOptionsInstaller {
 	protected $demo_name = null;
 
 	protected $sideloaded_images = [];
+	protected $is_ajax_request = true;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'demo_name' => null
+			'demo_name' => null,
+			'is_ajax_request' => true,
 		]);
 
 		if (
@@ -23,19 +25,31 @@ class DemoInstallOptionsInstaller {
 		}
 
 		$this->demo_name = $args['demo_name'];
+		$this->is_ajax_request = $args['is_ajax_request'];
 	}
 
 	public function import() {
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to install options.", 'blocksy-companion')
 			]);
 		}
 
 		if (! $this->demo_name) {
-			wp_send_json_error([
-				'message' => __("No demo to install", 'blocksy-companion')
-			]);
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No demo to install", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_options_no_demo',
+					__("No demo to install", 'blocksy-companion')
+				);
+			}
 		}
 
 		$demo_name = explode(':', $this->demo_name);
@@ -47,18 +61,36 @@ class DemoInstallOptionsInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		$body = json_decode(file_get_contents('php://input'), true);
+		$demo_to_install = get_option(
+			'blocksy_ext_demos_currently_installing_demo',
+			[]
+		);
 
-		if (! isset($body['options'])) {
-			wp_send_json_error([
-				'message' => __("Downloaded demo is corrupted.", 'blocksy-companion')
-			]);
+		if (
+			empty($demo_to_install)
+			||
+			! isset($demo_to_install['demo'])
+			||
+			! isset($demo_to_install['demo']['options'])
+		) {
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No demo to install", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_options_no_demo',
+					__("No demo to install", 'blocksy-companion')
+				);
+			}
 		}
 
-		$options = $body['options'];
-		$this->import_options($options, $body);
+		$options = $demo_to_install['demo']['options'];
+		$this->import_options($options, $demo_to_install['demo']);
 
-		wp_send_json_success();
+		if ($this->is_ajax_request) {
+			wp_send_json_success();
+		}
 	}
 
 	public function import_options($options, $demo_content = null) {

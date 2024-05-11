@@ -3,10 +3,22 @@
 namespace Blocksy;
 
 class DemoInstallContentEraser {
-	public function __construct() {}
+	protected $is_ajax_request = true;
+
+	public function __construct($args = []) {
+		$args = wp_parse_args($args, [
+			'is_ajax_request' => true,
+		]);
+
+		$this->is_ajax_request = $args['is_ajax_request'];
+	}
 
 	public function import() {
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to erase content.", 'blocksy-companion')
 			]);
@@ -19,7 +31,9 @@ class DemoInstallContentEraser {
 		$this->reset_previous_terms();
 		$this->reset_menus();
 
-		wp_send_json_success();
+		if ($this->is_ajax_request) {
+			wp_send_json_success();
+		}
 	}
 
 	private function reset_previous_posts() {

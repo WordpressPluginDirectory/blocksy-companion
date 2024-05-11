@@ -5,10 +5,12 @@ namespace Blocksy;
 
 class DemoInstallPluginsInstaller {
 	protected $plugins = null;
+	protected $is_ajax_request = true;
 
 	public function __construct($args = []) {
 		$args = wp_parse_args($args, [
-			'plugins' => null
+			'plugins' => null,
+			'is_ajax_request' => true,
 		]);
 
 		if (
@@ -22,19 +24,31 @@ class DemoInstallPluginsInstaller {
 		}
 
 		$this->plugins = $args['plugins'];
+		$this->is_ajax_request = $args['is_ajax_request'];
 	}
 
 	public function import() {
-		if (! current_user_can('edit_theme_options')) {
+		if (
+			! current_user_can('edit_theme_options')
+			&&
+			$this->is_ajax_request
+		) {
 			wp_send_json_error([
 				'message' => __("Sorry, you don't have permission to install plugins.", 'blocksy-companion')
 			]);
 		}
 
-		if (! isset($_REQUEST['plugins']) || !$_REQUEST['plugins']) {
-			wp_send_json_error([
-				'message' => __("No plugins to install.", 'blocksy-companion')
-			]);
+		if (empty($this->plugins)) {
+			if ($this->is_ajax_request) {
+				wp_send_json_error([
+					'message' => __("No plugins to install.", 'blocksy-companion')
+				]);
+			} else {
+				return new \WP_Error(
+					'blocksy_demo_install_plugins_no_plugins',
+					__("No plugins to install.", 'blocksy-companion')
+				);
+			}
 		}
 
 		$plugins = explode(':', $this->plugins);
@@ -74,7 +88,9 @@ class DemoInstallPluginsInstaller {
 
 		ob_get_clean();
 
-		wp_send_json_success();
+		if ($this->is_ajax_request) {
+			wp_send_json_success();
+		}
 	}
 
 	public function get_plugins_api($slug) {

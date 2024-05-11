@@ -389,6 +389,18 @@ if ($loggedin_interaction_type === 'dropdown') {
 		}
 
 		if ($dropdown_row['id'] === 'custom_link') {
+
+			$custom_label = blocksy_default_akg(
+				'label',
+				$dropdown_row,
+				__('Custom Link', 'blocksy-companion')
+			);
+
+			$custom_label = blocksy_translate_dynamic(
+				$custom_label,
+				'header:' . $section_id . ':' . $dropdown_row['__id'] . ':custom_link'
+			);
+
 			$dropdown_items_descriptors[] = [
 				'attr' => [
 					'class' => 'menu-item'
@@ -405,13 +417,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 					'class' => 'ct-menu-link'
 				],
 
-				'html' => do_shortcode(
-					blocksy_default_akg(
-						'label',
-						$dropdown_row,
-						__('Custom Link', 'blocksy-companion')
-					)
-				)
+				'html' => do_shortcode($custom_label)
 			];
 		}
 

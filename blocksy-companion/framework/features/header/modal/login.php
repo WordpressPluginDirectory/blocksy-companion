@@ -2,11 +2,6 @@
 
 // wp_login_form([]);
 
-$redirect_to_url = apply_filters(
-	'blocksy:account:modal:login:redirect_to',
-	$current_url
-);
-
 $forgot_password_inline = apply_filters(
 	'blocksy:account:modal:login:forgot-password-inline',
 	true
@@ -32,7 +27,22 @@ if (! $forgot_password_inline) {
 	<p>
 		<label for="user_pass"><?php echo __('Password', 'blocksy-companion') ?></label>
 		<span class="account-password-input">
-			<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" autocomplete="current-password" spellcheck="false">
+			<?php
+				echo blocksy_html_tag(
+					'input',
+					apply_filters('blocksy:account:modal:login:password:attr', [
+						'type' => 'password',
+						'name' => 'pwd',
+						'id' => 'user_pass',
+						'class' => 'input',
+						'value' => '',
+						'size' => '20',
+						'autocomplete' => 'current-password',
+						'spellcheck' => 'false'
+					])
+				);
+			?>
+
 			<span class="show-password-input"></span>
 		</span>
 	</p>
@@ -84,8 +94,6 @@ if (! $forgot_password_inline) {
 				</path>
 			</svg>
 		</button>
-
-		<input type="hidden" name="redirect_to" value="<?php echo $redirect_to_url ?>">
 	</p>
 
 	<?php do_action('blocksy:account:modal:login:end'); ?>
