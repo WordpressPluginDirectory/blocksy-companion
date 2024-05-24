@@ -271,6 +271,18 @@ class ConditionsRulesResolver {
 			}
 		}
 
+		if ($rule['rule'] === 'all_product_attributes') {
+			if (
+				function_exists('taxonomy_is_product_attribute')
+				&&
+				isset(get_queried_object()->taxonomy)
+			) {
+				$tax_name = get_queried_object()->taxonomy;
+								
+				return taxonomy_is_product_attribute($tax_name);
+			}
+		}
+
 		if ($rule['rule'] === 'all_product_tags') {
 			if (function_exists('is_shop')) {
 				return is_product_tag();

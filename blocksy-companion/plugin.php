@@ -36,7 +36,7 @@ class Plugin {
 
 	private $is_blocksy = '__NOT_SET__';
 	public $is_blocksy_data = null;
-	private $desired_blocksy_version = '2.0.0-beta1';
+	private $desired_blocksy_version = '2.0.49-beta1';
 
 	/**
 	 * Instance.
@@ -135,6 +135,8 @@ class Plugin {
 		$this->extensions = new ExtensionsManager();
 
 		$this->header = new HeaderAdditions();
+
+		new Editor\Blocks();
 
 		$this->feat_google_analytics = new GoogleAnalytics();
 		new OpenGraphMetaData();

@@ -41,17 +41,14 @@ class ConditionsManagerAPI {
 			$initial_query_args_post_type = $query_args['post_type'];
 
 			if (strpos($initial_query_args_post_type, 'ct_cpt') !== false) {
-				$query_args['post_type'] = array_diff(
-					get_post_types(['public' => true]),
-					['post', 'page', 'product', 'attachment', 'ct_content_block']
-				);
+				$query_args['post_type'] = blocksy_manager()->post_types->get_all([
+					'exclude_built_in' => true,
+					'exclude_woo' => true
+				]);
 			}
 
 			if (strpos($initial_query_args_post_type, 'ct_all_posts') !== false) {
-				$query_args['post_type'] = array_diff(
-					get_post_types(['public' => true]),
-					['attachment', 'ct_content_block']
-				);
+				$query_args['post_type'] = blocksy_manager()->post_types->get_all();
 			}
 
 			$query = new \WP_Query($query_args);

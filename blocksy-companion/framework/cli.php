@@ -110,7 +110,7 @@ class Cli {
 		]);
 
 		update_option('blocksy_ext_demos_currently_installing_demo', [
-			'demo' => $demo_content
+			'demo' => json_encode($demo_content)
 		]);
 	}
 
@@ -386,7 +386,7 @@ class Cli {
 
 		// Get demo profile arguments.
 		$demo_args = $this->get_demo_args($args);
-		
+
 		$demo_data = Plugin::instance()->demo->fetch_single_demo([
 			'demo' => $demo_args['demo'],
 			'builder' => $demo_args['builder']

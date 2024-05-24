@@ -158,10 +158,7 @@ class DemoInstallContentInstaller {
 		$demo = $demo_name[0];
 		$builder = $demo_name[1];
 
-		$demo_to_install = get_option(
-			'blocksy_ext_demos_currently_installing_demo',
-			[]
-		);
+		$demo_to_install = Plugin::instance()->demo->get_currently_installing_demo();
 
 		if (
 			empty($demo_to_install)

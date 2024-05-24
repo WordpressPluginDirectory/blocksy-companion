@@ -12,7 +12,7 @@ class WpRemoteRequest {
 		);
 
 		if (is_wp_error($request)) {
-			return false;
+			return $request;
 		}
 
 		if (wp_remote_retrieve_response_code($request) !== 200) {
@@ -52,11 +52,28 @@ class FileGetContentsRequest {
 			];
 		}
 
-		return file_get_contents(
+		$result = file_get_contents(
 			$url,
 			false,
 			stream_context_create($context_options)
 		);
+
+		$maybe_error = error_get_last();
+
+		if (
+			! $result
+			&&
+			! empty($maybe_error)
+			&&
+			isset($maybe_error['message'])
+		) {
+			return new \WP_Error(
+				'blocksy_request_remote_url_error:file_get_contents',
+				$maybe_error['message']
+			);
+		}
+
+		return $result;
 	}
 }
 
@@ -79,6 +96,13 @@ class CurlRequest {
 		$result = curl_exec($curl);
 		curl_close($curl);
 
+		if (! $result) {
+			return new \WP_Error(
+				'blocksy_request_remote_url_error:curl',
+				curl_error($curl)
+			);
+		}
+
 		return $result;
 	}
 }
@@ -87,10 +111,9 @@ class RequestRemoteUrl {
 	private $strategies = [];
 
 	public function __construct() {
+		$this->strategies[] = new WpRemoteRequest();
 		$this->strategies[] = new FileGetContentsRequest();
 		$this->strategies[] = new CurlRequest();
-
-		$this->strategies[] = new WpRemoteRequest();
 	}
 
 	public function request($url, $args = []) {
@@ -107,15 +130,18 @@ class RequestRemoteUrl {
 
 		set_time_limit(300);
 
+		$result = null;
+
 		foreach ($this->strategies as $strategy) {
 			$result = $strategy->request($url, $args);
 
-			if ($result) {
+			if ($result && ! is_wp_error($result)) {
 				return $result;
 			}
 		}
 
-		return null;
+		return $result;
 	}
 }
+
 

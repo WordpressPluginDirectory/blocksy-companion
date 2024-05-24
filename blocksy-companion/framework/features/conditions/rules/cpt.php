@@ -2,17 +2,10 @@
 
 $cpts = [];
 
-$custom_post_types = array_diff(
-	get_post_types(['public' => true]),
-	[
-		'post',
-		'page',
-		'attachment',
-		'documentation',
-		'ct_content_block',
-		'product'
-	]
-);
+$custom_post_types = blocksy_manager()->post_types->get_all([
+	'exclude_built_in' => true,
+	'exclude_woo' => true
+]);
 
 foreach ($custom_post_types as $custom_post_type) {
 	$post_type_object = get_post_type_object($custom_post_type);

@@ -405,6 +405,11 @@ class ConditionsManager {
 			'conditions_purpose' => 'archive-loop'
 		]);
 
+		// Allow further inspection of nested rules
+		if (isset($rule['conditions'])) {
+			return true;
+		}
+
 		if (
 			$rule['rule'] === 'card_product_with_taxonomy_ids'
 			&&

@@ -531,24 +531,30 @@ if ($loggedin_interaction_type === 'dropdown') {
 				$vendor = dokan()->vendor->get($user->ID);
 				$url = $vendor->get_dashboard_url();
 
-				$dropdown_items_descriptors[] = [
-					'attr' => [
-						'class' => 'menu-item'
-					],
+				if (function_exists('dokan_get_navigation_url')) {
+					$url = dokan_get_navigation_url();
+				}
 
-					'link' => $url,
-					'link_attr' => [
-						'class' => 'ct-menu-link'
-					],
-
-					'html' => do_shortcode(
-						blocksy_default_akg(
-							'label',
-							$dropdown_row,
-							__('Dokan Dashboard', 'blocksy-companion')
+				if (! empty($url)) {
+					$dropdown_items_descriptors[] = [
+						'attr' => [
+							'class' => 'menu-item'
+						],
+	
+						'link' => $url,
+						'link_attr' => [
+							'class' => 'ct-menu-link'
+						],
+	
+						'html' => do_shortcode(
+							blocksy_default_akg(
+								'label',
+								$dropdown_row,
+								__('Dokan Dashboard', 'blocksy-companion')
+							)
 						)
-					)
-				];
+					];
+				}
 			}
 		}
 

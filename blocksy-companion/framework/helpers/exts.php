@@ -324,5 +324,9 @@ function blc_exts_get_preliminary_config($ext = null) {
 }
 
 function blc_get_ext($id, $args = []) {
+	if (! \Blocksy\Plugin::instance()->extensions) {
+		return null;
+	}
+
 	return \Blocksy\Plugin::instance()->extensions->get($id, $args);
 }

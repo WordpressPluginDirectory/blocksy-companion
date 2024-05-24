@@ -69,6 +69,13 @@ class Autoloader {
 
 			'Premium' => 'framework/premium/pro.php',
 
+			'Editor\\Blocks' => 'framework/features/blocks/blocks.php',
+			'Editor\\GutenbergBlock' => 'framework/features/blocks/gutenberg-block.php',
+			'Editor\\Blocks\\BlockWrapper' => 'framework/features/blocks/block-wrapper/block.php',
+			'Editor\\Blocks\\BreadCrumbs' => 'framework/features/blocks/breadcrumbs/block.php',
+			'Editor\\Blocks\\Query' => 'framework/features/blocks/query/block.php',
+			'Editor\\Blocks\\DynamicData' => 'framework/features/blocks/dynamic-data/block.php',
+
 			/**
 			 * No namespace
 			 */

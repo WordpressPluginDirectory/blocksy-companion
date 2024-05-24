@@ -132,7 +132,7 @@ class DemoInstall {
 		]);
 
 		update_option('blocksy_ext_demos_currently_installing_demo', [
-			'demo' => $demo_content
+			'demo' => json_encode($demo_content)
 		]);
 
 		wp_send_json_success($demo_content);
@@ -260,6 +260,10 @@ class DemoInstall {
 			]
 		);
 
+		if (is_wp_error($body)) {
+			return $body;
+		}
+
 		if (! $body) {
 			return new \WP_Error('demo_fetch_failed', 'Failed to fetch demos.');
 		}
@@ -296,5 +300,21 @@ class DemoInstall {
 		if (! check_ajax_referer('ct-dashboard', 'nonce', false)) {
 			wp_send_json_error('nonce');
 		}
+	}
+
+	public function get_currently_installing_demo() {
+		$demo_to_install = get_option(
+			'blocksy_ext_demos_currently_installing_demo',
+			[]
+		);
+
+		if (! empty($demo_to_install) && ! empty($demo_to_install['demo'])) {
+			$demo_to_install['demo'] = json_decode(
+				$demo_to_install['demo'],
+				true
+			);
+		}
+
+		return $demo_to_install;
 	}
 }

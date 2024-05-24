@@ -29,6 +29,11 @@ if ($filter === 'all') {
 				'id' => 'all_product_categories',
 				'title' => __('Product Categories', 'blocksy-companion')
 			],
+	
+			[
+				'id' => 'all_product_attributes',
+				'title' => __('Product Attributes', 'blocksy-companion')
+			],
 		],
 		(
 			$brands_enabled ? [

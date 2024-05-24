@@ -316,18 +316,19 @@ class BlocksyExtensionProductReviews {
 
 			$option['settings']['overall_score'] = [
 				'label' => __('Overall Score', 'blocksy-companion'),
-					/*
 				'options' => [
-					'excerpt_length' => [
-						'label' => __('Length', 'blocksy-companion'),
-						'type' => 'ct-number',
-						'design' => 'inline',
-						'value' => 40,
-						'min' => 10,
+					'spacing' => [
+						'label' => __('Bottom Spacing', 'blocksy-companion'),
+						'type' => 'ct-slider',
+						'min' => 0,
 						'max' => 100,
+						'value' => 20,
+						'responsive' => true,
+						'sync' => [
+							'id' => $prefix . '_archive_order_skip'
+						],
 					],
-				],
-				*/
+				]
 			];
 
 			return $option;
