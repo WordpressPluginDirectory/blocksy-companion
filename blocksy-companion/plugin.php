@@ -188,41 +188,39 @@ class Plugin {
 	}
 
 	public function check_if_blocksy_is_activated() {
-		if (defined('WP_CLI') && WP_CLI) {
+		$is_cli = defined('WP_CLI') && WP_CLI;
+
+		if ($this->is_blocksy === '__NOT_SET__') {
 			$theme = wp_get_theme(get_template());
 
 			if ($theme->parent() && $theme->parent()->exists()) {
 				$theme = $theme->parent();
 			}
 
-			return strpos($theme->get('Name'), 'Blocksy') !== false;
-		}
+			if (! $is_cli) {
+				$keys_to_check = [
+					'wp_theme_preview',
+					'theme',
+					'customize_theme'
+				];
 
-		if ($this->is_blocksy === '__NOT_SET__') {
-			$theme = wp_get_theme(get_template());
+				foreach ($keys_to_check as $key) {
+					if (! isset($_GET[$key])) {
+						continue;
+					}
 
-			$keys_to_check = [
-				'wp_theme_preview',
-				'theme',
-				'customize_theme'
-			];
+					$maybe_theme = wp_get_theme($_GET[$key]);
 
-			foreach ($keys_to_check as $key) {
-				if (! isset($_GET[$key])) {
-					continue;
+					if (! $maybe_theme->exists()) {
+						continue;
+					}
+
+					if ($maybe_theme->parent() && $maybe_theme->parent()->exists()) {
+						$maybe_theme = $maybe_theme->parent();
+					}
+
+					$theme = $maybe_theme;
 				}
-
-				$maybe_theme = wp_get_theme($_GET[$key]);
-
-				if (! $maybe_theme->exists()) {
-					continue;
-				}
-
-				if ($maybe_theme->parent() && $maybe_theme->parent()->exists()) {
-					$maybe_theme = $maybe_theme->parent();
-				}
-
-				$theme = $maybe_theme;
 			}
 
 			$is_correct_theme = strpos(
@@ -236,37 +234,61 @@ class Plugin {
 
 			$another_theme_in_preview = false;
 
-			$maybe_foreign_theme = '';
+			if (! $is_cli) {
+				$maybe_foreign_theme = '';
 
-			if (
-				isset($_REQUEST['customize_theme'])
-				&&
-				! empty($_REQUEST['customize_theme'])
-			) {
-				$maybe_foreign_theme = $_REQUEST['customize_theme'];
+				if (
+					isset($_REQUEST['customize_theme'])
+					&&
+					! empty($_REQUEST['customize_theme'])
+				) {
+					$maybe_foreign_theme = $_REQUEST['customize_theme'];
+				}
+
+				if (
+					isset($_REQUEST['theme'])
+					&&
+					! empty($_REQUEST['theme'])
+				) {
+					$maybe_foreign_theme = $_REQUEST['theme'];
+				}
+
+				if ($is_correct_theme && $maybe_foreign_theme) {
+					$foreign_theme_obj = wp_get_theme($maybe_foreign_theme);
+
+					if ($foreign_theme_obj) {
+						if ($foreign_theme_obj->parent()) {
+							$foreign_theme_obj = $foreign_theme_obj->parent();
+						}
+
+						if (
+							$foreign_theme_obj->get_stylesheet() !== $theme->get_stylesheet()
+						) {
+							$another_theme_in_preview = true;
+						}
+					}
+				}
 			}
 
-			if (
-				isset($_REQUEST['theme'])
-				&&
-				! empty($_REQUEST['theme'])
-			) {
-				$maybe_foreign_theme = $_REQUEST['theme'];
-			}
+			if ($is_cli) {
+				$cli_config = \WP_CLI::get_config();
 
-			if ($is_correct_theme && $maybe_foreign_theme) {
-				$foreign_theme_obj = wp_get_theme($maybe_foreign_theme);
-
-				if ($foreign_theme_obj) {
-					if ($foreign_theme_obj->parent()) {
-						$foreign_theme_obj = $foreign_theme_obj->parent();
-					}
-
-					if (
-						$foreign_theme_obj->get_stylesheet() !== $theme->get_stylesheet()
-					) {
-						$another_theme_in_preview = true;
-					}
+				// Companion plugin can't run if themes are skipped in WP CLI
+				// config.
+				//
+				// This happens in cPanel installations.
+				// Globally, they skip both themes and plugins.
+				// But, for some commands, they enable plugins back with
+				// --skip-plugins=false and keep themes disabled.
+				// This causes the theme to be skipped and the companion plugin
+				// to run, which causes lots of issues in various environments.
+				if (
+					isset($cli_config['skip-themes'])
+					&&
+					$cli_config['skip-themes']
+				) {
+					$is_correct_theme = false;
+					$is_correct_version = false;
 				}
 			}
 

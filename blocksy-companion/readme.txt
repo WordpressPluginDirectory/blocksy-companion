@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.49
+Stable tag: 2.0.50
 
 == Description ==
 
@@ -52,6 +52,10 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.50: 2024-05-24
+- Improvement: Ensure required theme version is correctly verified within WP CLI
+- Improvement: Login to WP dashboard through cPanel WP Toolkit doesn't work
+
 2.0.49: 2024-05-23
 - Improvement: General fixes and improvements
 

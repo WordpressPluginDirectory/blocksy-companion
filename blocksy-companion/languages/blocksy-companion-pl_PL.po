@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-12-18 10:26:34+0000\n"
+"PO-Revision-Date: 2024-05-24 15:48:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,359 +13,359 @@ msgstr ""
 
 #: static/js/options/DisplayCondition.js:62
 msgid "Add Conditions"
-msgstr ""
+msgstr "Dodaj warunki"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:430
 msgid "Display if query string is present in URL"
-msgstr ""
+msgstr "Wyświetlaj, jeśli ciąg zapytania jest obecny w adresie URL"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:398
 msgid "Display if cookie is present"
-msgstr ""
+msgstr "Wyświetl, jeśli plik cookie jest obecny"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:366
 msgid "Display based on referer domain"
-msgstr ""
+msgstr "Wyświetlanie na podstawie domeny odsyłającej"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:315
 msgid "Select sub field"
-msgstr ""
+msgstr "Wybierz pole podrzędne"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "Tylko dni powszednie"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Tylko weekendy"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Codziennie"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:27
 msgid "Sun"
-msgstr ""
+msgstr "Niedz."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:26
 msgid "Sat"
-msgstr ""
+msgstr "Sob."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:25
 msgid "Fri"
-msgstr ""
+msgstr "Pt."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:24
 msgid "Thu"
-msgstr ""
+msgstr "Czw."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:234
 msgid "Stop Time"
-msgstr ""
+msgstr "Czas zatrzymania"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:23
 msgid "Wed"
-msgstr ""
+msgstr "Śr."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:22
 msgid "Tue"
-msgstr ""
+msgstr "Wt."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:211
 msgid "Start Time"
-msgstr ""
+msgstr "Czas rozpoczęcia"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:21
 msgid "Mon"
-msgstr ""
+msgstr "Pon."
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:179
 msgid "Sunday"
-msgstr ""
+msgstr "Niedziela"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:174
 msgid "Saturday"
-msgstr ""
+msgstr "Sobota"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
-msgstr ""
+msgstr "Piątek"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Czwartek"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Środa"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Wtorek"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:149
 msgid "Monday"
-msgstr ""
+msgstr "Poniedziałek"
 
 #: static/js/options/ConditionsManager/PostIdPicker.js:78
 msgid "Select product"
-msgstr ""
+msgstr "Wybierz produkt"
 
 #: static/js/options/ConditionsManager.js:197
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Tryb zaawansowany"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:81
 msgid "Video Tutorial"
-msgstr ""
+msgstr "Samouczek wideo"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:330
 msgid "Manage"
-msgstr ""
+msgstr "Zarządzanie"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:300
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacja"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:60
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Przejdź na plan agencyjny i uzyskaj natychmiastowy dostęp do tej strony startowej i wielu innych funkcji."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:53
 msgid "Upgrade to the professional or agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Przejdź na plan profesjonalny lub agencyjny i uzyskaj natychmiastowy dostęp do tej strony startowej i wielu innych funkcji."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:46
 msgid "Upgrade to any pro plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Uaktualnij do dowolnego planu pro i uzyskaj natychmiastowy dostęp do tej strony startowej i wielu innych funkcji."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:45
 msgid "This is a Pro starter site"
-msgstr ""
+msgstr "To jest strona startowa dla wersji Pro"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:128
 msgid "Advanced Custom Fields data"
-msgstr ""
+msgstr "Zaawansowane dane pól niestandardowych"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:88
 msgid "Professional or Agency"
-msgstr ""
+msgstr "Profesjonalista lub Agencja"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:42
 msgid "Upgrade to the agency plan and get instant access to this and many other features."
-msgstr ""
+msgstr "Przejdź na plan agencyjny i uzyskaj natychmiastowy dostęp do tych i wielu innych funkcji."
 
 #: static/js/dashboard/helpers/useUpsellModal.js:35
 msgid "Upgrade to the professional or agency plan and get instant access to this and many other features."
-msgstr ""
+msgstr "Przejdź na plan profesjonalny lub agencyjny i uzyskaj natychmiastowy dostęp do tych i wielu innych funkcji."
 
 #: static/js/dashboard/helpers/useUpsellModal.js:28
 msgid "Upgrade to any pro plan and get instant access to this and many other feature."
-msgstr ""
+msgstr "Uaktualnij do dowolnego planu pro i uzyskaj natychmiastowy dostęp do tej i wielu innych funkcji."
 
 #: static/js/dashboard/helpers/useUpsellModal.js:27
 msgid "This is a Pro feature"
-msgstr ""
+msgstr "Jest to funkcja Pro"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:18
 msgid "Professional"
-msgstr ""
+msgstr "Profesjonalny"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:17
 msgid "Personal"
-msgstr ""
+msgstr "Osobiste"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:117
 msgid "Compare Plans"
-msgstr ""
+msgstr "Porównaj plany subskrypcji"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:11
 msgid "Free"
-msgstr ""
+msgstr "Darmowe"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:103
 msgid "Agency"
-msgstr ""
+msgstr "Agencja"
 
 #: static/js/dashboard/helpers/useProExtensionInFree.js:14
 msgid "This is a Pro extension"
-msgstr ""
+msgstr "To jest rozszerzenie Pro"
 
 #: static/js/dashboard/VersionMismatch.js:41
 msgid "Update Now"
-msgstr ""
+msgstr "Zaktualizuj teraz"
 
 #: static/js/dashboard/VersionMismatch.js:29
 msgid "In order to take full advantage of all features it has to offer - please install and activate the latest versions of both Blocksy theme and Blocksy Companion plugin."
-msgstr ""
+msgstr "Aby w pełni wykorzystać wszystkie funkcje, które ma do zaoferowania - zainstaluj i aktywuj najnowsze wersje zarówno motywu Blocksy, jak i wtyczki Blocksy Companion."
 
 #: static/js/dashboard/VersionMismatch.js:22
 msgid "We detected that you are using an outdated version of Blocksy Theme. Please update it to the latest version."
-msgstr ""
+msgstr "Wykryliśmy, że używasz nieaktualnej wersji motywu Blocksy. Zaktualizuj ją do najnowszej wersji."
 
 #: static/js/dashboard/VersionMismatch.js:16
 msgid "Action Required - Blocksy Theme and Companion version mismatch"
-msgstr ""
+msgstr "Wymagane działanie - Niezgodność wersji motywu Blocksy i wtyczki Companion"
 
 #: static/js/dashboard/NoTheme.js:63
 msgid "Install and activate the Blocksy theme"
-msgstr ""
+msgstr "Zainstaluj i włącz motyw Blocksy"
 
 #: static/js/dashboard/NoTheme.js:29
 msgid "In order to take full advantage of all features it has to offer - please install and activate the Blocksy theme also."
-msgstr ""
+msgstr "Aby w pełni wykorzystać wszystkie funkcje, które ma do zaoferowania - zainstaluj i włącz motyw Blocksy."
 
 #: static/js/dashboard/NoTheme.js:22
 msgid "Blocksy Companion is the complementary plugin to Blocksy theme. It adds a bunch of great features to the theme and acts as an unlocker for the Blocksy Pro package."
-msgstr ""
+msgstr "Blocksy Companion to dodatkowa wtyczka do motywu Blocksy. Dodaje wiele wspaniałych funkcji i odblokowuje pakiet Blocksy Pro."
 
 #: static/js/dashboard/NoTheme.js:16
 msgid "Action Required - Install Blocksy Theme"
-msgstr ""
+msgstr "Wymagane działanie - zainstaluj motyw Blocksy"
 
 #: framework/premium/static/js/media-video/components/EditVideoMeta.js:44
 msgid "Video Options"
-msgstr ""
+msgstr "Opcje wideo"
 
 #: framework/premium/static/js/hooks/CreateHook.js:164
 msgid "Maintenance Template"
-msgstr ""
+msgstr "Szablon konserwacji"
 
 #: framework/premium/static/js/hooks/CreateHook.js:156
 msgid "Nothing Found Template"
-msgstr ""
+msgstr "Szablon Nic nie znaleziono"
 
 #: framework/premium/static/js/blocks/ContentBlock.js:26
 msgid "Insert a specific Content Block anywhere on the site."
-msgstr ""
+msgstr "Wstaw określony blok treści w dowolnym miejscu na stronie."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:57
 msgid "Widget for filtering the WooCommerce products loop by category, attribute or brand."
-msgstr ""
+msgstr "Widżet do filtrowania pętli produktów WooCommerce według kategorii, atrybutu lub marki."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:566
 msgid "Shop Filters"
-msgstr ""
+msgstr "Filtry sklepu"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:56
 msgid "Shop Filters Controls"
-msgstr ""
+msgstr "Elementy kontrolne Filtry sklepowe"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:534
 msgid "Show or hide reset filter button."
-msgstr ""
+msgstr "Pokaż lub ukryj przycisk resetowania filtra."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:530
 msgid "Show Reset Button"
-msgstr ""
+msgstr "Pokaż przycisk resetowania"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:515
 msgid "Show or hide the item counter."
-msgstr ""
+msgstr "Pokaż lub ukryj licznik przedmiotów."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:511
 msgid "Show Counter"
-msgstr ""
+msgstr "Pokaż licznik"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:494
 msgid "Show or hide the item label."
-msgstr ""
+msgstr "Pokaż lub ukryj etykietę elementu."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:490
 msgid "Show Label"
-msgstr ""
+msgstr "Pokaż etykietę"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:472
 msgid "Show frame around the logo."
-msgstr ""
+msgstr "Pokaż ramkę wokół logo."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:468
 msgid "Show Image Frame"
-msgstr ""
+msgstr "Pokaż ramkę obrazu"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:450
 msgid "Show or hide attribute swatch."
-msgstr ""
+msgstr "Pokaż lub ukryj próbkę atrybutów."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:445
 msgid "Show Swatches"
-msgstr ""
+msgstr "Pokaż próbki"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:441
 msgid "Show Brands Images"
-msgstr ""
+msgstr "Pokaż obrazy marek"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:424
 msgid "Show or hide attribute checkboxes."
-msgstr ""
+msgstr "Pokaż lub ukryj pola wyboru atrybutów."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:420
 msgid "Show Checkboxes"
-msgstr ""
+msgstr "Pokaż pola wyboru"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:395
 msgid "Open accordion by default"
-msgstr ""
+msgstr "Domyślnie otwiera akordeon"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:391
 msgid "Expanded by Default"
-msgstr ""
+msgstr "Rozszerzony domyślnie"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:374
 msgid "Show child items as accordion."
-msgstr ""
+msgstr "Pokaż elementy podrzędne jako akordeon."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:370
 msgid "Expandable"
-msgstr ""
+msgstr "Rozszerzalny"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:352
 msgid "Show as a hierarchical tree menu."
-msgstr ""
+msgstr "Wyświetl jako hierarchiczne menu drzewa."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:348
 msgid "Show Hierarchy"
-msgstr ""
+msgstr "Pokaż hierarchię"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:329
 msgid "Show or hide checkboxes."
-msgstr ""
+msgstr "Pokaż lub ukryj pola wyboru."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:31
 msgid "Select attribute"
-msgstr ""
+msgstr "Wybierz atrybut"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:308
 msgid "Allow selecting multiple items in a filter."
-msgstr ""
+msgstr "Zezwalaj na zaznaczanie wielu elementów w filtrze."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:304
 msgid "Multiple Selections"
-msgstr ""
+msgstr "Wielokrotny wybór"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:287
 msgid "Set the maximum width of the brand image."
-msgstr ""
+msgstr "Ustaw maksymalną szerokość obrazu marki."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:283
 msgid "Image Max width"
-msgstr ""
+msgstr "Maksymalna szerokość obrazu"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:262
 msgid "Image Aspect Ratio"
-msgstr ""
+msgstr "Proporcje obrazu"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:248
 msgid "List"
-msgstr ""
+msgstr "Lista"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:237
 msgid "Display Type"
-msgstr ""
+msgstr "Typ wyświetlacza"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:223
 msgid "Attribute"
-msgstr ""
+msgstr "Atrybut"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:201
 msgid "Filter By"
@@ -432,64 +432,64 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:34
 msgid "Shipping address"
-msgstr ""
+msgstr "Adres wysyłki"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:10
 msgid "Billing address"
-msgstr ""
+msgstr "Adres rozliczeniowy"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:54
 msgid "Product Attributes"
-msgstr ""
+msgstr "Atrybuty produktu"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:114
 msgid "Exclude speciffic taxonomy."
-msgstr ""
+msgstr "Wyklucz taksonomię szczegółową."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:111
 msgid "Exclude %s"
-msgstr ""
+msgstr "Wyklucz %s"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/Disabled.js:6
 msgid "Please install and activate the Blocksy Brands extension."
-msgstr ""
+msgstr "Zainstaluj i aktywuj rozszerzenie Blocksy Brands."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/Disabled.js:10
 msgid "Please select a valid attribute."
-msgstr ""
+msgstr "Wybierz prawidłowy atrybut."
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:604
 msgid "Companion Plugin Details"
-msgstr ""
+msgstr "Szczegóły dotyczące wtyczki Companion"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/SingleFont.js:217
 msgid "Save Font"
-msgstr ""
+msgstr "Zapisz czcionkę"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:335
 msgid "Download Font"
-msgstr ""
+msgstr "Pobierz czcionkę"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:267
 msgid "Select font"
-msgstr ""
+msgstr "Wybierz czcionkę"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:255
 msgid "Local Google Fonts Settings"
-msgstr ""
+msgstr "Ustawienia lokalnych czcionek Google"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/GeneralTab.js:10
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/SingleFont.js:65
 msgid "Select Variations"
-msgstr ""
+msgstr "Wybierz warianty"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/AdvancedTab.js:54
 msgid "Preload Subsets"
-msgstr ""
+msgstr "Preload Subsets"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/VariableTab.js:30
 msgid "Upload only the %s.woff2%s or %s.ttf%s font file formats. Don't convert variable fonts by yourself. Ask the font provider to hand a correct file or the %svariable%s font won't work."
-msgstr ""
+msgstr "Prześlij tylko pliki w formacie plików czcionek %s.woff2%s lub %s.ttf%s. Nie konwertuj zmiennych czcionek samodzielnie. Poproś dostawcę czcionek o przesłanie poprawnego pliku, w przeciwnym razie czcionka %szmienna%s nie będzie działać."
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:364
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/SingleFont.js:116
@@ -530,23 +530,23 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:88
 msgid "Fetching..."
-msgstr ""
+msgstr "Pobieranie..."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:87
 msgid "Provider"
-msgstr ""
+msgstr "Dostawca"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:81
 msgid "Connect Newsletter Provider"
-msgstr ""
+msgstr "Połącz się z dostawcą Newslettera"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:305
 msgid "More information on how to generate an API key for Campaign Monitor can be found %shere%s."
-msgstr ""
+msgstr "Więcej informacji na temat generowania klucza API dla Campaign Monitor znajdziesz %stutaj%s."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:255
 msgid "This provider is used only for testing purposes. It doesnt register any real subscribers."
-msgstr ""
+msgstr "Ten dostawca jest używany wyłącznie do celów testowych. Nie rejestruje on żadnych prawdziwych subskrybentów."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:148
 msgid "Version"
@@ -554,11 +554,11 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:16
 msgid "Newsletter Controls"
-msgstr ""
+msgstr "Kontrola Newslettera"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:213
 msgid "Button Text Color"
-msgstr ""
+msgstr "Kolor tekstu przycisku"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:486,
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:520,
@@ -625,7 +625,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:501
 msgid "In Stock"
-msgstr ""
+msgstr "W magazynie"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:630
 msgid "You don't have any products in your compare list yet."
@@ -641,19 +641,19 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/search-input/options.php:144
 msgid "Filter Visibility"
-msgstr ""
+msgstr "Widoczność filtra"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:132
 msgid "Taxonomy Filter"
-msgstr ""
+msgstr "Filtr taksonomii"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:119
 msgid "Live Results Product Status"
-msgstr ""
+msgstr "Status produktu w wynikach na żywo"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:111
 msgid "Live Results Product Price"
-msgstr ""
+msgstr "Cena produktu w wynikach na żywo"
 
 #: framework/premium/features/premium-header/items/menu-tertiary/config.php:4
 msgid "Menu 3"
@@ -676,7 +676,7 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/contacts/options.php:367
 msgid "Link Icons"
-msgstr ""
+msgstr "Ikony linków"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:378,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:627
@@ -762,7 +762,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:231,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/render.php:116
 msgid "Out of Stock"
-msgstr ""
+msgstr "Brak w magazynie"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:80
 msgid "Sorry, this product is unavailable. Please choose a different combination."
@@ -895,7 +895,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:123
 msgid "Free Shipping Bar"
-msgstr ""
+msgstr "Bezpłatny pasek wysyłkowy"
 
 #: framework/premium/extensions/woocommerce-extra/features/share-box-layer/feature.php:32
 msgid "Share Box Icons Color"
@@ -1208,7 +1208,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:393
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:240
 msgid "Button Background Color"
-msgstr ""
+msgstr "Kolor tła przycisku"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:423,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:223,
@@ -1250,7 +1250,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:155
 msgid "Length"
-msgstr ""
+msgstr "Długość"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:75
 msgid "Compare Table Fields"
@@ -1266,7 +1266,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:53
 msgid "Page"
-msgstr ""
+msgstr "Strona"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:46
 msgid "Compare Placement"
@@ -1354,7 +1354,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:276,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:327
 msgid "Logo Size"
-msgstr ""
+msgstr "Rozmiar Logo"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:245,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:145,
@@ -1373,7 +1373,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:401,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:519
 msgid "Brands"
-msgstr ""
+msgstr "Marki"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:184,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:217
@@ -1638,7 +1638,7 @@ msgstr ""
 #: framework/premium/features/content-blocks/options/popup.php:447
 #: static/js/options/ConditionsManager/ScheduleDate.js:78
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: framework/premium/features/content-blocks/options/popup.php:440
 msgid "Reload Content"
@@ -1787,7 +1787,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:220,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:442
 msgid "SKU"
-msgstr ""
+msgstr "SKU"
 
 #: framework/premium/extensions/color-mode-switch/includes/logo-enhancements.php:34
 msgid "Dark Mode Logo"
@@ -1795,39 +1795,39 @@ msgstr ""
 
 #: framework/features/header/items/account/options.php:363
 msgid "Link To"
-msgstr ""
+msgstr "Odnośnik do"
 
 #: framework/features/header/items/account/options.php:302
 msgid "Dropdown Items"
-msgstr ""
+msgstr "Elementy listy rozwijanej"
 
 #: framework/features/header/items/account/options.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:32
 msgid "Link"
-msgstr ""
+msgstr "Odnośnik"
 
 #: framework/features/header/items/account/options.php:165,
 #: framework/features/header/items/account/views/login.php:500
 msgid "bbPress Dashboard"
-msgstr ""
+msgstr "pulpit nawigacyjny bbPress"
 
 #: framework/features/header/items/account/options.php:145,
 #: framework/features/header/items/account/options.php:149,
 #: framework/features/header/items/account/views/login.php:476
 msgid "Tutor LMS Dashboard"
-msgstr ""
+msgstr "Pulpit nawigacyjny Tutor LMS"
 
 #: framework/features/header/items/account/options.php:129,
 #: framework/features/header/items/account/options.php:133,
 #: framework/features/header/items/account/views/login.php:447
 msgid "Dokan Shop"
-msgstr ""
+msgstr "Sklep Dokan"
 
 #: framework/features/header/items/account/options.php:115,
 #: framework/features/header/items/account/options.php:119,
 #: framework/features/header/items/account/views/login.php:417
 msgid "Dokan Dashboard"
-msgstr ""
+msgstr "Pulpit Dokan"
 
 #: framework/features/header/items/account/options.php:56,
 #: framework/features/header/items/account/options.php:60,
@@ -1835,28 +1835,28 @@ msgstr ""
 #: framework/features/header/items/account/views/login.php:169,
 #: framework/features/header/items/account/views/login.php:301
 msgid "Log Out"
-msgstr ""
+msgstr "Wyloguj się"
 
 #: framework/features/header/items/account/options.php:46,
 #: framework/features/header/items/account/options.php:334,
 #: framework/features/header/items/account/views/login.php:163,
 #: framework/features/header/items/account/views/login.php:279
 msgid "Edit Profile"
-msgstr ""
+msgstr "Edytuj profil"
 
 #: framework/features/header/items/account/options.php:15
 msgid "User Avatar"
-msgstr ""
+msgstr "Awatar użytkownika"
 
 #: framework/features/header/items/account/options.php:12,
 #: framework/features/header/items/account/options.php:311,
 #: framework/features/header/items/account/views/login.php:146
 msgid "User Info"
-msgstr ""
+msgstr "Informacja o użytkowniku"
 
 #: framework/features/header/items/account/config.php:4
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: framework/premium/features/performance-typography/feature.php:127
 msgid "Preconnect Adobe Typekit Fonts"
@@ -1984,7 +1984,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:133,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:334
 msgid "Bottom Spacing"
-msgstr ""
+msgstr "Odstęp u dołu"
 
 #: framework/premium/features/content-blocks/admin-ui.php:351
 msgid "On click to element"
@@ -2073,75 +2073,75 @@ msgstr ""
 #: framework/features/conditions/rules/woo.php:17,
 #: framework/features/conditions/rules/woo.php:62
 msgid "Product with Taxonomy ID"
-msgstr ""
+msgstr "Produkt z identyfikatorem taksonomii"
 
 #: framework/features/conditions/rules/woo.php:12,
 #: framework/features/conditions/rules/woo.php:57
 msgid "Product ID"
-msgstr ""
+msgstr "Identyfikator produktu."
 
 #: framework/features/conditions/rules/specific.php:31
 msgid "Post with Author ID"
-msgstr ""
+msgstr "Post z identyfikatorem autora"
 
 #: framework/features/conditions/rules/requests.php:19
 msgid "Request URL"
-msgstr ""
+msgstr "Adres URL żądania"
 
 #: framework/features/conditions/rules/requests.php:14
 msgid "Request Cookie"
-msgstr ""
+msgstr "Poproś o plik cookie"
 
 #: framework/features/conditions/rules/requests.php:9
 msgid "Request Referer"
-msgstr ""
+msgstr "Odsyłacz żądania"
 
 #: framework/features/conditions/rules/requests.php:5
 msgid "Requests"
-msgstr ""
+msgstr "Żądania"
 
 #: framework/features/conditions/rules/date-time.php:14
 #: static/js/options/ConditionsManager/ScheduleDate.js:143
 msgid "Recurring Days"
-msgstr ""
+msgstr "Powtarzające się dni"
 
 #: framework/features/conditions/rules/date-time.php:9
 msgid "Range Date/Time"
-msgstr ""
+msgstr "Zakres Data/godzina"
 
 #: framework/features/conditions/rules/date-time.php:5
 msgid "Date & Time"
-msgstr ""
+msgstr "Data i czas"
 
 #: framework/features/conditions/rules/basic.php:35
 msgid "All Archives"
-msgstr ""
+msgstr "Wszystkie archiwa"
 
 #: framework/features/conditions/rules/basic.php:28
 msgid "All Singulars"
-msgstr ""
+msgstr "Wszystkie liczby pojedyncze"
 
 #: framework/features/conditions/rules/basic.php:6,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/options.php:12
 msgid "All Products"
-msgstr ""
+msgstr "Wszystkie produkty"
 
 #: framework/extensions/newsletter-subscribe/providers/demo.php:16
 msgid "Demo List"
-msgstr ""
+msgstr "Lista demonstracyjna"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:116,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:144
 msgid "Your email *"
-msgstr ""
+msgstr "Twój adres e-mail *"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:68
 msgid "Stacked"
-msgstr ""
+msgstr "Ułożone"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:60
 msgid "Form Style"
-msgstr ""
+msgstr "Styl formularza"
 
 #: framework/premium/features/socials.php:59
 msgid "Custom URL"
@@ -2158,7 +2158,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:9,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:9
 msgid "Icon Source"
-msgstr ""
+msgstr "Źródło ikonki"
 
 #: framework/premium/features/local-gravatars.php:37
 msgid "Store and load Gravatars locally for increased privacy and performance."
@@ -2187,74 +2187,74 @@ msgstr ""
 
 #: framework/extensions/trending/customizer.php:434
 msgid "Arrows Color"
-msgstr ""
+msgstr "Kolor strzałek"
 
 #: framework/extensions/trending/customizer.php:403
 msgid "Posts Title Font Color"
-msgstr ""
+msgstr "Kolor tekstu tytułu wpisów"
 
 #: framework/extensions/trending/customizer.php:394
 msgid "Posts Title Font"
-msgstr ""
+msgstr "Krój pisma tytułu wpisów"
 
 #: framework/extensions/trending/customizer.php:347
 msgid "Module Title Color"
-msgstr ""
+msgstr "Kolor tytułu modułu"
 
 #: framework/extensions/trending/customizer.php:339
 msgid "Module Title Font"
-msgstr ""
+msgstr "Czcionka tytułu modułu"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:367
 msgid "Container Shadow"
-msgstr ""
+msgstr "Cień kontenera"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:28,
 #: framework/extensions/newsletter-subscribe/helpers.php:24,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:15
 msgid "Enter your email address below and subscribe to our newsletter"
-msgstr ""
+msgstr "Wpisz swój adres e-mail poniżej i zapisz się do naszego newslettera"
 
 #: framework/extensions/cookies-consent/extension.php:118
 msgid "Comment Submission Failure"
-msgstr ""
+msgstr "Nie udało się przesłać komentarza"
 
 #: framework/extensions/cookies-consent/extension.php:117
 msgid "Please accept the Privacy Policy in order to comment."
-msgstr ""
+msgstr "Aby móc komentować, zaakceptuj Politykę prywatności."
 
 #: framework/extensions/cookies-consent/customizer.php:266
 msgid "Decline Button"
-msgstr ""
+msgstr "Przycisk odrzucenia"
 
 #: framework/extensions/cookies-consent/customizer.php:199
 msgid "Accept Button"
-msgstr ""
+msgstr "Przycisk akceptacji"
 
 #: framework/extensions/cookies-consent/customizer.php:112
 msgid "Forms Cookies Content"
-msgstr ""
+msgstr "Zgoda na pliki cookie przy formularzu"
 
 #: framework/helpers/exts.php:309
 msgid "Enhance your WooCommerce reviews with rich content, images and a thumbs up system that help your shoppers find the perfect product."
-msgstr ""
+msgstr "Wzbogać swoje recenzje WooCommerce o bogate treści, obrazy i system kciuków w górę, które pomogą kupującym znaleźć idealny produkt."
 
 #: framework/helpers/exts.php:308,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:5
 msgid "Advanced Reviews"
-msgstr ""
+msgstr "Zaawansowane recenzje"
 
 #: framework/helpers/exts.php:299
 msgid "Create a customized order “Thank You” page for your customers, giving them a personalized experience."
-msgstr ""
+msgstr "Stwórz spersonalizowaną stronę z podziękowaniem za zamówienie dla swoich klientów, zapewniając im spersonalizowane doświadczenie."
 
 #: framework/helpers/exts.php:298
 msgid "Custom Thank You Pages"
-msgstr ""
+msgstr "Własne strony z podziękowaniami"
 
 #: framework/helpers/exts.php:289
 msgid "Show a size chart guide so that your visitors can pick the right size for them when ordering a product."
-msgstr ""
+msgstr "Pokaż tabelę rozmiarów, aby odwiedzający mogli wybrać odpowiedni rozmiar podczas zamawiania produktu."
 
 #: framework/helpers/exts.php:288,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:58,
@@ -2264,45 +2264,45 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/modal-view.php:18,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/side-view.php:27
 msgid "Size Guide"
-msgstr ""
+msgstr "Przewodnik po rozmiarach"
 
 #: framework/helpers/exts.php:279
 msgid "Present additional information about your products by adding new custom tabs to the product information section."
-msgstr ""
+msgstr "Prezentuj dodatkowe informacje o swoich produktach, dodając nowe niestandardowe karty do sekcji informacji o produkcie."
 
 #: framework/helpers/exts.php:278
 msgid "Custom Tabs"
-msgstr ""
+msgstr "Zakładki niestandardowe"
 
 #: framework/helpers/exts.php:271
 msgid "Better management for affiliate products with a few simple options that strengthen the external integration with these."
-msgstr ""
+msgstr "Lepsze zarządzanie produktami partnerskimi dzięki kilku prostym opcjom, które wzmacniają zewnętrzną integrację z nimi."
 
 #: framework/helpers/exts.php:270
 msgid "Affiliate Product Links"
-msgstr ""
+msgstr "Linki do produktów partnerskich"
 
 #: framework/helpers/exts.php:262
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."
-msgstr ""
+msgstr "Kategoryzuj produkty według marek i wyświetlaj ich logo w archiwum lub na pojedynczej stronie, aby użytkownicy mogli dowiedzieć się więcej o ich producentach."
 
 #: framework/helpers/exts.php:261
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:50
 msgid "Product Brands"
-msgstr ""
+msgstr "Marki produktów"
 
 #: framework/helpers/exts.php:254
 msgid "Catch the attention of your clients by showcasing your product variations as colour, image or button swatches."
-msgstr ""
+msgstr "Przyciągnij uwagę klientów, prezentując warianty produktów w postaci próbek kolorów, obrazów lub przycisków."
 
 #: framework/helpers/exts.php:253,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
-msgstr ""
+msgstr "Próbki wariantów"
 
 #: framework/helpers/exts.php:246
 msgid "Add a visual cue that tells your visitors how much the cart total must be to be able to benefit of free shipping."
-msgstr ""
+msgstr "Dodaj wizualną wskazówkę, która informuje odwiedzających, ile musi wynosić suma koszyka, aby móc skorzystać z bezpłatnej wysyłki."
 
 #: framework/helpers/exts.php:245,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4
@@ -2311,27 +2311,27 @@ msgstr ""
 
 #: framework/helpers/exts.php:239
 msgid "Advanced searching for products by their SKU classification can be useful in cases of vast product catalogues."
-msgstr ""
+msgstr "Zaawansowane wyszukiwanie produktów według ich klasyfikacji SKU może być przydatne w przypadku obszernych katalogów produktów."
 
 #: framework/helpers/exts.php:238
 msgid "Search by SKU"
-msgstr ""
+msgstr "Szukaj SKU"
 
 #: framework/helpers/exts.php:231
 msgid "Replace the standard product gallery with additional layouts which can showcase the photos as a grid or even a slider."
-msgstr ""
+msgstr "Zastąp standardową galerię produktów dodatkowymi układami, które mogą prezentować zdjęcia w formie siatki lub nawet suwaka."
 
 #: framework/helpers/exts.php:230
 msgid "Advanced Gallery"
-msgstr ""
+msgstr "Galeria zaawansowana"
 
 #: framework/helpers/exts.php:223
 msgid "Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection."
-msgstr ""
+msgstr "Włącz funkcje udostępniania w serwisach społecznościowych produktów dostępnych w witrynie, dzięki czemu jeszcze więcej użytkowników będzie mogło zapoznać się z ofertą Twojego sklepu."
 
 #: framework/helpers/exts.php:222
 msgid "Product Share Box"
-msgstr ""
+msgstr "Skrzynka udostępniania produktu"
 
 #: framework/helpers/exts.php:215
 msgid "Compare products with a clear and concise table system that givis your users a way to make a quick decision."
@@ -2339,89 +2339,89 @@ msgstr ""
 
 #: framework/helpers/exts.php:214
 msgid "Compare View"
-msgstr ""
+msgstr "Widok porównania"
 
 #: framework/helpers/exts.php:206
 msgid "A set of features that lets you create easily your dream products wishlists and share them with friends and family."
-msgstr ""
+msgstr "Zestaw funkcji, które pozwolą Ci łatwo tworzyć listy życzeń wymarzonych produktów i dzielić się nimi z przyjaciółmi i rodziną."
 
 #: framework/helpers/exts.php:198
 msgid "Drill down the product list with new filtering widgets, an off canvas area for them and showing the active filters on the page."
-msgstr ""
+msgstr "Przejdź w dół listy produktów za pomocą nowych widżetów filtrowania, obszaru poza obszarem roboczym dla nich i wyświetlania aktywnych filtrów na stronie."
 
 #: framework/helpers/exts.php:197
 msgid "Filters"
-msgstr ""
+msgstr "Filtry"
 
 #: framework/helpers/exts.php:190
 msgid "Preview the available products and let your users make quick and informative decisions about their purchase."
-msgstr ""
+msgstr "Wyświetlaj podgląd dostępnych produktów i pozwól użytkownikom podejmować szybkie decyzje dotyczące zakupu."
 
 #: framework/helpers/exts.php:189,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58
 msgid "Quick View"
-msgstr ""
+msgstr "Szybki podgląd"
 
 #: framework/helpers/exts.php:182
 msgid "Adds the “add to cart” actions to the product page as a floating bar if the product summary has disappeared from view."
-msgstr ""
+msgstr "Dodaje akcje \"dodaj do koszyka\" do strony produktu jako pływający pasek, jeśli podsumowanie produktu zniknęło z widoku."
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:175
 msgctxt "Extension Brand Name"
 msgid "Shop Extra"
-msgstr ""
+msgstr "Sklep Extra"
 
 #: framework/helpers/exts.php:112
 msgid "Additional customisation options for your taxonomies such as hero backgrounds and custom colour labels."
-msgstr ""
+msgstr "Dodatkowe opcje dostosowywania taksonomii, takie jak tła bohaterów i niestandardowe etykiety kolorów."
 
 #: framework/helpers/exts.php:111
 msgid "Taxonomy Customisations"
-msgstr ""
+msgstr "Dostosowywanie taksonomii"
 
 #: framework/helpers/exts.php:105
 msgid "Let your guests easily filter the posts by their category or tags taxonomy terms, instantly drilling down the listings."
-msgstr ""
+msgstr "Pozwól swoim gościom łatwo filtrować posty według ich kategorii lub terminów taksonomii, tagów, natychmiast przechodząc w dół listy."
 
 #: framework/helpers/exts.php:98
 msgid "Integrates custom fields solutions in the meta layers of a post and presents additional information."
-msgstr ""
+msgstr "Integruje niestandardowe rozwiązania pól w meta warstwach postu i prezentuje dodatkowe informacje."
 
 #: framework/helpers/exts.php:97
 msgid "Dynamic Data"
-msgstr ""
+msgstr "Dane dynamiczne"
 
 #: framework/helpers/exts.php:91
 msgid "Display the approximate reading time of an article, so that visitors know what to expect when starting to read the content."
-msgstr ""
+msgstr "Wyświetlaj przybliżony czas czytania artykułu, aby odwiedzający wiedzieli, czego się spodziewać po rozpoczęciu czytania treści."
 
 #: framework/helpers/exts.php:32
 msgid "Add a dark colour scheme and switch to your website, which will make it pleasant to look at in low light environments."
-msgstr ""
+msgstr "Dodaj ciemny schemat kolorów i przełącznik do swojej witryny, co sprawi, że będzie ona przyjemna dla oka w warunkach słabego oświetlenia."
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:31
 msgctxt "Extension Brand Name"
 msgid "Color Mode Switch"
-msgstr ""
+msgstr "Przełącznik trybu koloru"
 
 #. translators: 1: link open 2: link close
 #: framework/features/account-auth.php:253
 msgid "Registration complete. Please check your email, then visit the %1$slogin page%2$s."
-msgstr ""
+msgstr "Rejestracja zakończona. Sprawdź pocztę e-mail, a następnie odwiedź %1$sstronę logowania%2$s."
 
 #: framework/theme-integration.php:342
 msgid "Mastodon"
-msgstr ""
+msgstr "Mastodon"
 
 #: framework/theme-integration.php:329
 msgid "X (Twitter)"
-msgstr ""
+msgstr "X (Twitter)"
 
 #: framework/dashboard.php:399
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Brak uprawnień, aby uzyskać dostęp do tej strony."
 
 #: framework/dashboard.php:34,
 #: framework/features/header/items/account/options.php:28,
@@ -2430,7 +2430,7 @@ msgstr ""
 #: framework/features/header/items/account/views/login.php:157,
 #: framework/features/header/items/account/views/login.php:249
 msgid "Dashboard"
-msgstr ""
+msgstr "Kokpit"
 
 #: static/js/dashboard/screens/DemoInstall/components/Error.js:18
 msgid "Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site."
@@ -2457,7 +2457,7 @@ msgstr "Kliknij, aby przesłać"
 #: framework/premium/features/premium-header/items/contacts/options.php:910,
 #: framework/premium/features/premium-header/items/contacts/options.php:949
 msgid "Icons Border Color"
-msgstr "Kolor obrysu ikon"
+msgstr "Kolor obramowania ikonek"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:825,
 #: framework/premium/features/premium-header/items/contacts/options.php:867,
@@ -2468,11 +2468,11 @@ msgstr "Kolor tła ikon"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:12
 msgid "Vertical"
-msgstr "Pionowy"
+msgstr "Pionowo"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:13
 msgid "Horizontal"
-msgstr "Poziomy"
+msgstr "Poziomo"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:6
 msgid "Items Direction"
@@ -2514,11 +2514,11 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:574
 msgid "Offcanvas Filters - Bottom"
-msgstr ""
+msgstr "Offcanvas Filters Bottom"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:568
 msgid "Offcanvas Filters - Top"
-msgstr ""
+msgstr "Offcanvas Filters Top"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:404
 msgid "After related posts"
@@ -2617,7 +2617,7 @@ msgstr "Czcionka nagłówka"
 #: framework/features/header/items/account/options.php:187,
 #: framework/premium/features/premium-header/items/content-block/options.php:16
 msgid "Create a new content Block/Hook"
-msgstr "Utwórz nowy blok treści / hak"
+msgstr "Utwórz nowy blok zawartości/hak"
 
 #: framework/premium/extensions/mega-menu/options.php:377,
 #: framework/premium/extensions/mega-menu/options.php:385,
@@ -2631,7 +2631,7 @@ msgstr "Utwórz nowy blok treści / hak"
 #: framework/premium/features/premium-header/items/content-block/options.php:21
 #: framework/premium/static/js/blocks/ContentBlock.js:110
 msgid "Select Content Block"
-msgstr "Wybierz blok treści"
+msgstr "Wybierz blok zawartości"
 
 #: framework/premium/extensions/code-snippets/extension.php:53,
 #: framework/premium/extensions/code-snippets/extension.php:100,
@@ -2647,7 +2647,7 @@ msgstr "Skrypty nagłówka"
 
 #: framework/features/header/modal/register.php:62
 msgid "A link to set a new password will be sent to your email address."
-msgstr "Link do ustawienia nowego hasła zostanie wysłany na Twój e-mail"
+msgstr "Odnośnik do ustawienia nowego hasła zostanie wysłany na adres e-mail."
 
 #: framework/premium/features/content-blocks/admin-ui.php:652
 msgid "Show WooCommerce Hooks"
@@ -2843,7 +2843,7 @@ msgstr "Edytor kodu"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:236
 msgid "More information on how to generate an API key for Mailerlite can be found %shere%s. Please note that it is required at least one group to be created in your account for the integration to work. More info on how to create a group %shere%s."
-msgstr ""
+msgstr "Więcej informacji na temat generowania klucza API dla Mailerlite można znaleźć %stutaj%s. Proszę pamiętać, że aby integracja działała, wymagamy utworzenia co najmniej jednej grupy na swoim koncie. Więcej informacji na temat %stworzenia grupy%s."
 
 #: framework/premium/features/content-blocks/options/popup.php:470,
 #: framework/premium/features/content-blocks/options/single.php:157
@@ -2997,13 +2997,13 @@ msgstr "Widoczność strzałek galerii"
 #: framework/helpers/exts.php:162
 msgctxt "Extension Brand Name"
 msgid "White Label"
-msgstr "White Label"
+msgstr "Biała etykieta"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:142
 msgctxt "Extension Brand Name"
 msgid "Multiple Sidebars"
-msgstr "Multiple Sidebars"
+msgstr "Wiele pasków bocznych"
 
 #: framework/premium/extensions/shortcuts/customizer.php:305
 msgid "Custom class"
@@ -3019,31 +3019,31 @@ msgstr "Ustaw link na nofollow"
 #: framework/premium/extensions/shortcuts/customizer.php:587
 msgctxt "Extension Brand Name"
 msgid "Shortcuts Bar"
-msgstr "Shortcuts Bar"
+msgstr "Pasek skrótów"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:84
 msgctxt "Extension Brand Name"
 msgid "Post Types Extra"
-msgstr "Post Types Extra"
+msgstr "Dodatkowe typy postów"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:71
 msgctxt "Extension Brand Name"
 msgid "Advanced Menu"
-msgstr "Zaawansowane menu"
+msgstr "Menu zaawansowane"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:56
 msgctxt "Extension Brand Name"
 msgid "Local Google Fonts"
-msgstr "Local Google Fonts"
+msgstr "Lokalne czcionki Google"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:44
 msgctxt "Extension Brand Name"
 msgid "Custom Fonts"
-msgstr "Custom Fonts"
+msgstr "Własne czcionki"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:18,
@@ -3052,13 +3052,13 @@ msgstr "Custom Fonts"
 #: framework/premium/extensions/code-snippets/extension.php:114
 msgctxt "Extension Brand Name"
 msgid "Custom Code Snippets"
-msgstr "Custom Code Snippets"
+msgstr "Własne fragmenty kodu"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:7
 msgctxt "Extension Brand Name"
 msgid "Adobe Fonts"
-msgstr "Adobe Fonts"
+msgstr "Kroje pisma Adobe"
 
 #: framework/extensions/newsletter-subscribe/providers/brevo.php:116,
 #: framework/extensions/newsletter-subscribe/providers/campaign-monitor.php:136,
@@ -3106,7 +3106,7 @@ msgstr "Efekt"
 
 #: framework/features/header/account-modal.php:31
 msgid "Close account modal"
-msgstr "Zamknij okno modalne \"Konto\""
+msgstr "Zamknij konto modalne"
 
 #: framework/extensions/trending/customizer.php:245,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:133
@@ -3158,16 +3158,16 @@ msgstr "Zgoda na pliki cookie"
 
 #: framework/features/account-auth.php:238
 msgid "Your account was created successfully and a password has been sent to your email address. Please visit the %1$slogin page%2$s."
-msgstr ""
+msgstr "Twoje konto zostało pomyślnie utworzone, a hasło zostało wysłane na podany adres e-mail. Odwiedź %1$sstronę logowania%2$s."
 
 #: framework/features/account-auth.php:226
 msgid "Your account was created successfully. Your login details have been sent to your email address. Please visit the %1$slogin page%2$s."
-msgstr ""
+msgstr "Twoje konto zostało pomyślnie utworzone. Dane logowania zostały wysłane na podany adres e-mail. Odwiedź %1$sstronę logowania%2$s."
 
 #. translators: 1: link open 2: link close
 #: framework/features/account-auth.php:106
 msgid "Check your email for the confirmation link, then visit the %slogin page%s."
-msgstr ""
+msgstr "Sprawdź email z linkiem potwierdzającym, a następnie odwiedź %sstronę logowania%s."
 
 #: static/js/dashboard/screens/SiteExport.js:98
 msgid "Preview URL"
@@ -3208,7 +3208,7 @@ msgstr "Zainstaluj i włącz wtyczki"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/PickBuilder.js:65
 msgid "This starter site can be imported and used with one of these page builders. Please select one in order to continue."
-msgstr ""
+msgstr "Witrynę startową można zaimportować i używać z jednym z tych narzędzi do tworzenia stron. Wybierz preferowane dane, aby kontynuować."
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/PickBuilder.js:62
 msgid "Choose Page Builder"
@@ -3252,7 +3252,7 @@ msgstr "Czysta instalacja"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/Content.js:59
 msgid "This will import posts, pages, comments, navigation menus, custom fields, terms and custom posts."
-msgstr ""
+msgstr "Spowoduje to zaimportowanie wpisów, stron, komentarzy, menu nawigacyjnych, pól niestandardowych, warunków i własnych wpisów"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/Content.js:56
 msgid "Import Content"
@@ -3329,7 +3329,7 @@ msgstr "obrazki"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:90
 msgid "terms"
-msgstr "taksonomie"
+msgstr "warunki"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:89
 msgid "users"
@@ -4029,7 +4029,7 @@ msgstr "Czcionka dynamiczna"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:76
 msgid "Here you can see all your custom fonts that can be used in all typography options across the theme."
-msgstr ""
+msgstr "Tutaj możesz zobaczyć wszystkie niestandardowe czcionki, które mogą być używane we wszystkich opcjach typografii w motywie."
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:74
 msgid "Custom Fonts Settings"
@@ -4089,11 +4089,11 @@ msgstr "Klucz API"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:287
 msgid "More information on how to generate an API key for ConvertKit can be found %shere%s."
-msgstr ""
+msgstr "Więcej informacji na temat generowania klucza API dla Mailerlite można znaleźć %stutaj%s."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:218
 msgid "More information on how to generate an API key for Mailchimp can be found %shere%s."
-msgstr ""
+msgstr "Więcej informacji na temat generowania klucza API dla Mailchimp można znaleźć %stutaj%s."
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:92
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:116
@@ -4122,7 +4122,7 @@ msgstr "Tło listy rozwijanej"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:817
 msgid "Dropdown Text Color"
-msgstr "Kolor tekstu listy rozwijanej"
+msgstr "Kolor rozwijanego tekstu"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:380,
 #: framework/premium/features/premium-header/items/search-input/options.php:409,
@@ -4133,23 +4133,23 @@ msgstr "Kolor ikony pola tekstowego"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:168
 msgid "Chose in which post types do you want to perform searches."
-msgstr "Wybierz, w jakiego typu wpisach chcesz przeprowadzić wyszukiwanie."
+msgstr "Wybierz, w których typach wpisów chcesz wyszukiwać."
 
 #: framework/premium/features/premium-header/items/search-input/options.php:167
 msgid "Search Through Criteria"
-msgstr "Szukaj według kryteriów"
+msgstr "Wyszukiwanie według kryteriów"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:100
 msgid "Live Results Images"
-msgstr ""
+msgstr "Obrazki w wynikach na żywo"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:88
 msgid "Live Results"
-msgstr ""
+msgstr "Wyniki na żywo"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:67
 msgid "Input Height"
-msgstr "Wpisz wysokość"
+msgstr "Wysokość wejściowa"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:55
 msgid "Input Maximum Width"
@@ -4218,7 +4218,7 @@ msgstr "Rozmiar"
 #: framework/features/header/items/account/options.php:1926,
 #: framework/premium/features/premium-header/items/divider/config.php:4
 msgid "Divider"
-msgstr "Rozdzielacz"
+msgstr "Separator"
 
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:106,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/view.php:47
@@ -4240,7 +4240,7 @@ msgstr "Margines"
 #: framework/premium/features/premium-header/items/contacts/options.php:386,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:95
 msgid "Items Spacing"
-msgstr "Odstępy między elementami"
+msgstr "Odstępy elementów"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:361
 msgid "Open Links In New Tab"
@@ -4319,7 +4319,7 @@ msgstr ""
 #: framework/helpers/exts.php:104,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:25
 msgid "Posts Filter"
-msgstr "Filtrowanie postów"
+msgstr "Filtr postów"
 
 #: framework/premium/features/content-blocks/options/popup.php:674
 msgid "Popup Backdrop Background"
@@ -4372,7 +4372,7 @@ msgstr "Przesunięcie wyskakującego okienka"
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:332,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:472
 msgid "Border Radius"
-msgstr "Promień obrysu"
+msgstr "Promień obramowania"
 
 #: framework/premium/features/content-blocks/options/popup.php:503
 msgid "Padding"
@@ -4652,12 +4652,12 @@ msgstr "Kolor akcentu"
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:112
 msgid "Featured Image"
-msgstr "Wyróżniony obrazek"
+msgstr "Wyróżniony obraz"
 
 #: framework/premium/extensions/post-types-extra/features/filtering/helpers.php:173,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:181
 msgid "All"
-msgstr "Wszystko"
+msgstr "Wszystkie"
 
 #: framework/helpers/exts.php:90,
 #: framework/premium/extensions/post-types-extra/features/read-time/estimated-read-time.php:11,
@@ -4679,7 +4679,7 @@ msgstr "%s Pole"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:564
 msgid "Fallback"
-msgstr ""
+msgstr "Plan awaryjny"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:515,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:60
@@ -5697,7 +5697,7 @@ msgstr "Typ ikony filtra"
 #: framework/premium/features/premium-header/items/contacts/options.php:619,
 #: framework/premium/features/premium-header/items/contacts/options.php:659
 msgid "Link Hover"
-msgstr "Link Hover"
+msgstr "Odnośnik po najechaniu"
 
 #: framework/features/header/items/account/options.php:1882,
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:144,
@@ -5707,7 +5707,7 @@ msgstr "Link Hover"
 #: framework/premium/features/premium-header/items/contacts/options.php:648,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:353
 msgid "Text Initial"
-msgstr "Tekst początkowy"
+msgstr "Tekst Początkowy"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:579
 msgid "Widgets Font Color"
@@ -5820,11 +5820,11 @@ msgstr "Przycisk szybkiego podglądu"
 
 #: framework/helpers/exts.php:176
 msgid "Make the shopping experience better for your visitors! Add features such as Product Quick View, Wishlist functionality and a Floating Add to Cart button. Customize the single product gallery/slider and the layout."
-msgstr "Ułatw zakupy odwiedzającym! Dodaj funkcje, takie jak Szybki podgląd produktu, funkcjonalność listy życzeń i pływający przycisk Dodaj do koszyka. Dostosuj galerię / suwak pojedynczego produktu i układ."
+msgstr "Usprawnij zakupy dla odwiedzających! Dodaj funkcje takie jak Szybki podgląd produktu, funkcjonalność Listy życzeń i pływający przycisk Dodaj do Koszyka. Dostosuj galerię pojedynczego produktu / suwak i układ."
 
 #: framework/helpers/exts.php:163
 msgid "Replace Blocksy's branding with your own. Easily hide licensing info and other sections of the theme and companion plugin from your clients and make your final product look more professional."
-msgstr "Zastąp branding Blocksy swoim własnym. Z łatwością ukryj przed klientami informacje o licencji oraz inne sekcje motywu i wtyczki towarzyszącej, aby produkt końcowy wyglądał bardziej profesjonalnie."
+msgstr "Zastąp branding Blocksy swoim własnym. Z łatwością ukryj informacje licencyjne i inne sekcje motywu i wtyczki towarzyszącej przed klientami i spraw, aby Twój produkt końcowy wyglądał bardziej profesjonalnie."
 
 #: framework/premium/extensions/sidebars/form.php:20
 msgid "Available Sidebars/Widget Areas"
@@ -5850,7 +5850,7 @@ msgstr "Utwórz nowy pasek boczny"
 
 #: framework/helpers/exts.php:143
 msgid "Create unlimited personalized sets of widget areas and display them on any page or post using our conditional logic functionality."
-msgstr "Twórz nieograniczone spersonalizowane zestawy obszarów widżetów i wyświetlaj je na dowolnej stronie lub w poście za pomocą naszej funkcji logiki warunkowej."
+msgstr "Twórz nieograniczone spersonalizowane zestawy obszarów widżetów i wyświetlaj je na dowolnej stronie lub w dowolnym poście, korzystając z naszej logiki warunkowej."
 
 #: framework/premium/extensions/shortcuts/customizer.php:1124,
 #: framework/features/header/items/account/options.php:1943,
@@ -5882,7 +5882,7 @@ msgstr "Kolor ikonek"
 #: framework/premium/features/premium-header/items/language-switcher/options.php:192,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:383
 msgid "Font"
-msgstr "Czcionka"
+msgstr "Krój pisma"
 
 #: framework/premium/extensions/shortcuts/customizer.php:832
 msgid "Add one or more conditions to display the shortcuts bar."
@@ -6012,11 +6012,11 @@ msgstr "Home"
 #: framework/helpers/exts.php:128,
 #: framework/premium/extensions/shortcuts/config.php:6
 msgid "Easily turn your websites into mobile first experiences. You can easily add the most important actions at the bottom of the screen for easy access."
-msgstr "Z łatwością przekształć swoje strony internetowe w urządzenia mobilne. Możesz łatwo dodać najważniejsze czynności u dołu ekranu, aby mieć do nich łatwy dostęp."
+msgstr "Z łatwością przekształć swoje strony internetowe w mobilne doświadczenia. Możesz łatwo dodać najważniejsze działania na dole ekranu, aby uzyskać łatwy dostęp."
 
 #: framework/helpers/exts.php:85
 msgid "Enables support for Custom Fields inside archive cards and single page post title, adds a reading progress bar for your posts and lets you set featured images and colors for your categories archives."
-msgstr "Włącza obsługę niestandardowych pól wewnątrz kart archiwum i tytułu pojedynczej strony, dodaje pasek postępu czytania twoich postów i pozwala ustawić polecane obrazy i kolory dla archiwów kategorii."
+msgstr "Włącza obsługę pól niestandardowych w kartach archiwum i tytułach postów na pojedynczej stronie, dodaje pasek postępu czytania dla twoich postów i pozwala ustawić wyróżnione obrazy i kolory dla archiwów kategorii."
 
 #: framework/premium/extensions/mega-menu/options.php:825,
 #: framework/features/header/items/account/options.php:1295,
@@ -6100,7 +6100,7 @@ msgstr "Link najechany / aktywny"
 #: framework/premium/features/premium-header/items/contacts/options.php:613,
 #: framework/premium/features/premium-header/items/contacts/options.php:653
 msgid "Link Initial"
-msgstr "Link początkowy"
+msgstr "Odnośnik początkowy"
 
 #: framework/premium/extensions/mega-menu/options.php:599
 msgid "Link Color"
@@ -6225,15 +6225,15 @@ msgstr "Ustawienia pozycji menu"
 
 #: framework/helpers/exts.php:72
 msgid "Create beautiful personalised menus that set your website apart from the others. Add icons and badges to your entries and even add Content Blocks inside your dropdowns."
-msgstr "Twórz piękne, spersonalizowane menu, które wyróżnią Twoją witrynę internetową spośród innych. Dodaj ikony i odznaki do swoich wpisów, a nawet dodaj bloki treści w swoich listach rozwijanych."
+msgstr "Twórz piękne, spersonalizowane menu, które wyróżni Twoją witrynę na tle innych. Dodawaj ikony i plakietki do swoich wpisów, a nawet dodawaj bloki treści do rozwijanych menu."
 
 #: framework/helpers/exts.php:57
 msgid "Serve your chosen Google Fonts from your own web server. This will increase the loading speed and makes sure your website complies with the privacy regulations."
-msgstr "Udostępniaj wybrane czcionki Google z własnego serwera internetowego. Zwiększy to szybkość ładowania i zapewni zgodność Twojej witryny z przepisami dotyczącymi prywatności."
+msgstr "Serwuj wybrane czcionki Google Fonts z własnego serwera internetowego. Zwiększy to szybkość ładowania i upewni się, że Twoja witryna jest zgodna z przepisami dotyczącymi prywatności."
 
 #: framework/helpers/exts.php:45
 msgid "Upload an unlimited number of custom fonts or variable fonts and use them throughout Blocksy and your favorite page builder."
-msgstr "Prześlij nieograniczoną liczbę niestandardowych czcionek lub czcionek zmiennych i używaj ich w Blocksy i swoim ulubionym kreatorze stron."
+msgstr "Prześlij nieograniczoną liczbę niestandardowych czcionek lub zmiennych czcionek i używaj ich w Blocksy i swoim ulubionym kreatorze stron."
 
 #: framework/premium/extensions/code-snippets/extension.php:42,
 #: framework/premium/extensions/code-snippets/extension.php:89,
@@ -6243,7 +6243,7 @@ msgstr "After body open scripts"
 
 #: framework/helpers/exts.php:19
 msgid "Inject custom code snippets throughout your website. The extension works globally or on a per post/page basis."
-msgstr "Wstawiaj niestandardowe fragmenty kodu na stronie. Rozszerzenie działa globalnie lub dla pojedynczego wpisu / strony."
+msgstr "Wstrzykuj niestandardowe fragmenty kodu w całej witrynie. Rozszerzenie działa globalnie lub dla każdego postu/strony."
 
 #: framework/helpers/exts.php:8
 msgid "Connect your Adobe Fonts project and use the selected fonts throughout Blocksy and your favorite page builder."
@@ -6255,7 +6255,7 @@ msgstr "Zarejestruj się"
 
 #: framework/features/header/modal/register.php:92
 msgid "Registration confirmation will be emailed to you."
-msgstr "Potwierdzenie rejestracji zostanie wysłane na Twój e-mail."
+msgstr "Potwierdzenie rejestracji zostanie wysłane na podany adres e-mail."
 
 #: framework/features/header/modal/register.php:41
 msgid "Username"
@@ -6735,7 +6735,7 @@ msgstr "Krótki opis"
 #: framework/extensions/product-reviews/metabox.php:150,
 #: framework/extensions/product-reviews/views/single-top.php:162
 msgid "Read More"
-msgstr "Czytaj dalej"
+msgstr "Dowiedz się więcej"
 
 #: framework/extensions/product-reviews/metabox.php:148
 msgid "Read More Button Label"
@@ -7886,7 +7886,7 @@ msgstr "Inne"
 
 #: framework/features/conditions/rules/user-auth.php:34
 msgid "User Role"
-msgstr ""
+msgstr "Role użytkownika"
 
 #: framework/features/conditions/rules/user-auth.php:29
 msgid "User Logged Out"
