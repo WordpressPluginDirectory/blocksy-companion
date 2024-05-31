@@ -69,14 +69,6 @@ class Plugin {
 			function () {
 				$this->enqueue_static();
 
-				$locale_data_ct = blocksy_get_jed_locale_data(
-					'blocksy-companion'
-				);
-
-				wp_add_inline_script(
-					'wp-i18n',
-					'wp.i18n.setLocaleData( ' . wp_json_encode($locale_data_ct) . ', "blocksy-companion" );'
-				);
 			},
 			50
 		);
@@ -112,6 +104,13 @@ class Plugin {
 					BLOCKSY_URL . 'static/bundle/options.min.css',
 					[],
 					$data['Version']
+				);
+
+				$locale_data_ct = blc_get_jed_locale_data('blocksy-companion');
+
+				wp_add_inline_script(
+					'wp-i18n',
+					'wp.i18n.setLocaleData( ' . wp_json_encode($locale_data_ct) . ', "blocksy-companion" );'
 				);
 			},
 			50

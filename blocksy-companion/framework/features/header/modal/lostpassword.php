@@ -9,7 +9,7 @@
 	<?php do_action('lostpassword_form'); ?>
 
 	<p>
-		<button class="ct-button has-text-align-center" name="wp-submit">
+		<button class="ct-button ct-account-lost-password-submit has-text-align-center" name="wp-submit">
 			<?php echo __('Get New Password', 'blocksy-companion') ?>
 
 			<svg class="ct-button-loader" width="16" height="16" viewBox="0 0 24 24">

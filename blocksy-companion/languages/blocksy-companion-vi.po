@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-08 14:38:48+0000\n"
+"PO-Revision-Date: 2024-05-27 16:15:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -633,7 +633,7 @@ msgstr "Bạn chưa có sản phẩm nào trong danh sách so sánh."
 
 #: framework/premium/features/premium-header/items/search-input/options.php:807
 msgid "Dropdown Font"
-msgstr "Phông chữ Dropdown"
+msgstr "Phông chữ Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:779
 msgid "Input Border Radius"
@@ -661,7 +661,7 @@ msgstr "Menu 3"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:350
 msgid "Dropdown Arrow"
-msgstr "Mũi tên Dropdown"
+msgstr "Mũi tên Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/divider/options.php:22,
 #: framework/premium/features/premium-header/items/divider/options.php:51,
@@ -1498,7 +1498,7 @@ msgstr "Cũ nhất trước"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:11
 msgid "Reviews Order"
-msgstr "Thứ t��� đánh giá"
+msgstr "Thứ tự đánh giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:649
 msgid "Upload Image (Optional)"
@@ -1799,7 +1799,7 @@ msgstr "Liên kết đến"
 
 #: framework/features/header/items/account/options.php:302
 msgid "Dropdown Items"
-msgstr "Các mục Dropdown"
+msgstr "Các mục Menu thả xuống"
 
 #: framework/features/header/items/account/options.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:32
@@ -2052,7 +2052,7 @@ msgstr "Hiển thị nội dung"
 
 #: framework/premium/extensions/mega-menu/options.php:312
 msgid "If you have complex data inside your mega menu you can enable this option in order to load the dropdown content with AJAX and improve the website loading time."
-msgstr "Nếu bạn có dữ liệu phức tạp trong menu mega, bạn có thể bật tùy chọn này để tải nội dung thả xuống bằng AJAX và cải thiện thời gian tải trang web."
+msgstr "Nếu bạn có dữ liệu phức tạp trong menu mở rộng, bạn có thể bật tùy chọn này để tải nội dung thả xuống bằng AJAX và cải thiện thời gian tải trang web."
 
 #: framework/premium/extensions/mega-menu/options.php:309
 msgid "AJAX Content Loading"
@@ -2060,7 +2060,7 @@ msgstr "Tải nội dung AJAX"
 
 #: framework/premium/extensions/mega-menu/options.php:72
 msgid "Dropdown Custom Width"
-msgstr "Chiều rộng tùy chỉnh Dropdown"
+msgstr "Chiều rộng tùy chỉnh Menu thả xuống"
 
 #: framework/premium/extensions/color-mode-switch/extension.php:94
 msgid "Dark Mode Color Palette"
@@ -2284,7 +2284,7 @@ msgstr "Link sản phẩm tiếp thị liên kết"
 
 #: framework/helpers/exts.php:262
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."
-msgstr "Phân loại sản phẩm theo nhãn hiệu và hi���n thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất của họ."
+msgstr "Phân loại sản phẩm theo nhãn hiệu và hiển thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất c���a họ."
 
 #: framework/helpers/exts.php:261
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:50
@@ -2633,17 +2633,17 @@ msgstr "Chọn Content Block"
 #: framework/premium/extensions/code-snippets/extension.php:100,
 #: framework/premium/extensions/code-snippets/extension.php:145
 msgid "Footer scripts"
-msgstr "Footer scripts"
+msgstr "Tệp lệnh chân trang"
 
 #: framework/premium/extensions/code-snippets/extension.php:31,
 #: framework/premium/extensions/code-snippets/extension.php:78,
 #: framework/premium/extensions/code-snippets/extension.php:123
 msgid "Header scripts"
-msgstr "Header scripts"
+msgstr "Tệp lệnh đầu trang"
 
 #: framework/features/header/modal/register.php:62
 msgid "A link to set a new password will be sent to your email address."
-msgstr "M���t liên kết để đặt mật khẩu mới sẽ được gửi đến địa chỉ email của bạn."
+msgstr "Một liên kết để đặt mật khẩu mới sẽ được gửi đến địa chỉ email của bạn."
 
 #: framework/premium/features/content-blocks/admin-ui.php:652
 msgid "Show WooCommerce Hooks"
@@ -2679,15 +2679,15 @@ msgstr "Điều kiện hiển thị Block xu hướng"
 
 #: framework/extensions/trending/customizer.php:306
 msgid "After Header"
-msgstr "Sau Header"
+msgstr "Sau đầu trang"
 
 #: framework/extensions/trending/customizer.php:301
 msgid "After Footer"
-msgstr "Sau Footer"
+msgstr "Sau Chân trang"
 
 #: framework/extensions/trending/customizer.php:296
 msgid "Before Footer"
-msgstr "Trước Footer"
+msgstr "Trước chân trang"
 
 #: framework/extensions/trending/customizer.php:288
 msgid "Display Location"
@@ -3079,7 +3079,7 @@ msgstr "Tải lên"
 
 #: framework/premium/features/content-blocks/popups.php:357
 msgid "Close popup"
-msgstr "Tho��t Popup"
+msgstr "Thoát Popup"
 
 #: framework/premium/features/content-blocks/admin-ui.php:355,
 #: framework/premium/features/content-blocks/options/popup.php:82
@@ -3610,15 +3610,15 @@ msgstr "Bạn sắp xóa tiêu đề tùy chỉnh, bạn có chắc chắn muố
 
 #: static/js/header/PanelsManager.js:198
 msgid "Remove Header"
-msgstr "Xoá Header"
+msgstr "Xoá đầu trang"
 
 #: static/js/header/PanelsManager.js:174
 msgid "Remove header"
-msgstr "Xoá header"
+msgstr "Xoá đầu trang"
 
 #: static/js/header/EditConditions.js:107
 msgid "Add one or more conditions in order to display your header."
-msgstr "Thêm một hoặc nhiều điều kiện để hiển thị header của bạn."
+msgstr "Thêm một hoặc nhiều điều kiện để hiển thị đầu trang của bạn."
 
 #: static/js/header/EditConditions.js:151
 #: static/js/options/DisplayCondition.js:98
@@ -4112,11 +4112,11 @@ msgstr "Khu vực Widget"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:848
 msgid "Dropdown Background"
-msgstr "Nền Dropdown"
+msgstr "Nền Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:817
 msgid "Dropdown Text Color"
-msgstr "Màu văn bản Dropdown"
+msgstr "Màu văn bản Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:380,
 #: framework/premium/features/premium-header/items/search-input/options.php:409,
@@ -4159,12 +4159,12 @@ msgstr "Hộp tìm kiếm"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:359
 msgid "Dropdown Top Offset"
-msgstr "Độ lệch trên Dropdown"
+msgstr "Độ lệch trên Menu thả xuống"
 
 #: framework/features/header/items/account/options.php:1858,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:341
 msgid "Dropdown Options"
-msgstr "Tùy chọn Thả xuống"
+msgstr "Tùy chọn Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:112
 msgid "Hide Current Language"
@@ -4193,7 +4193,7 @@ msgstr "Hiển thị"
 #: framework/features/header/items/account/options.php:290,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:37
 msgid "Dropdown"
-msgstr "Dropdown"
+msgstr "Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:17
 msgid "Top Level Options"
@@ -6046,7 +6046,7 @@ msgstr "Cài đặt cột"
 #: framework/premium/extensions/mega-menu/options.php:714,
 #: framework/premium/features/premium-header/items/search-input/options.php:870
 msgid "Dropdown Shadow"
-msgstr "Bóng Dropdown"
+msgstr "Bóng Menu thả xuống"
 
 #: framework/premium/extensions/mega-menu/options.php:699
 msgid "Columns Divider"
@@ -6202,7 +6202,7 @@ msgstr "Chiều rộng nội dung"
 
 #: framework/premium/extensions/mega-menu/options.php:28
 msgid "Dropdown Width"
-msgstr "Chiều rộng Dropdown"
+msgstr "Chiều rộng Menu thả xuống"
 
 #: framework/premium/extensions/mega-menu/options.php:16,
 #: framework/premium/extensions/mega-menu/options.php:581
@@ -6393,12 +6393,12 @@ msgstr "Header Menu 3"
 #: framework/premium/features/premium-footer.php:29,
 #: framework/premium/features/premium-footer/items/menu-secondary/config.php:4
 msgid "Footer Menu 2"
-msgstr "Footer Menu 2"
+msgstr "Menu chân trang 2"
 
 #: framework/premium/features/premium-footer.php:14,
 #: framework/premium/features/premium-footer.php:28
 msgid "Footer Menu 1"
-msgstr "Footer Menu 1"
+msgstr "Menu chân trang 1"
 
 #: framework/premium/features/content-blocks.php:288,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:111,

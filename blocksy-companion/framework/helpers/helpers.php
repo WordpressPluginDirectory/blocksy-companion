@@ -286,3 +286,30 @@ function blc_request_remote_url($url, $args = []) {
 	$request = new \Blocksy\RequestRemoteUrl();
 	return $request->request($url, $args);
 }
+
+function blc_get_jed_locale_data($domain) {
+	static $locale = [];
+
+	if (isset($locale[$domain])) {
+		return $locale[$domain];
+	}
+
+	$translations = get_translations_for_domain($domain);
+
+	$locale[$domain] = [
+		'' => [
+			'domain' => $domain,
+			'lang' => get_user_locale(),
+		]
+	];
+
+	if (! empty($translations->headers['Plural-Forms'])) {
+		$locale[$domain]['']['plural_forms'] = $translations->headers['Plural-Forms'];
+	}
+
+	foreach ($translations->entries as $msgid => $entry) {
+		$locale[$domain][$entry->key()] = $entry->translations;
+	}
+
+	return $locale[$domain];
+}

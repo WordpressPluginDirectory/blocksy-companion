@@ -108,7 +108,7 @@ if (
 	<?php } ?>
 
 	<p>
-		<button class="ct-button has-text-align-center" name="wp-submit">
+		<button class="ct-button ct-account-register-submit has-text-align-center" name="wp-submit">
 			<?php echo __('Register', 'blocksy-companion') ?>
 
 			<svg class="ct-button-loader" width="16" height="16" viewBox="0 0 24 24">

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-27 16:13:34+0000\n"
+"PO-Revision-Date: 2024-05-27 10:16:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -611,7 +611,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:94
 msgid "Reset Filters"
-msgstr ""
+msgstr "Szűrők visszaállítása"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:22
 msgid "Active Filters Label"
@@ -621,15 +621,15 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:37,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:130
 msgid "Active Filters"
-msgstr ""
+msgstr "Aktív szűrők"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:501
 msgid "In Stock"
-msgstr ""
+msgstr "Raktáron"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:630
 msgid "You don't have any products in your compare list yet."
-msgstr ""
+msgstr "Még nincs egyetlen termék sem az összehasonlítási listáján."
 
 #: framework/premium/features/premium-header/items/search-input/options.php:807
 msgid "Dropdown Font"
@@ -681,7 +681,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:378,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:627
 msgid "Browse products"
-msgstr ""
+msgstr "Böngésszen termékek között"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:61
 msgid "This option will allow you to add a speciffic product variation to wishlist."
@@ -1242,7 +1242,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:231,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:490
 msgid "Availability"
-msgstr ""
+msgstr "Elérhetőség"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:172
 msgid "Attributes"
@@ -1283,7 +1283,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/feature.php:266
 msgid "Compare Products"
-msgstr ""
+msgstr "Termékek összehasonlítása"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/feature.php:219
 msgid "Compare Button"
@@ -4590,7 +4590,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:126,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:129
 msgid "Remove Product"
-msgstr ""
+msgstr "Termék törlése"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:74
 msgid "Add to cart"
@@ -5730,7 +5730,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:258
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:568
 msgid "Filter"
-msgstr ""
+msgstr "Szűrés"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/view.php:77
 msgid "Go to product page"

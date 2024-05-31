@@ -75,7 +75,7 @@ if (! $forgot_password_inline) {
 	?>
 
 	<p class="login-submit">
-		<button class="ct-button has-text-align-center" name="wp-submit">
+		<button class="ct-button ct-account-login-submit has-text-align-center" name="wp-submit">
 			<?php echo __('Log In', 'blocksy-companion') ?>
 
 			<svg class="ct-button-loader" width="16" height="16" viewBox="0 0 24 24">

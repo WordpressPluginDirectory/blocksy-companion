@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-27 16:07:25+0000\n"
+"PO-Revision-Date: 2024-05-27 10:16:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:300
 msgid "Documentation"
-msgstr ""
+msgstr "線上說明"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:60
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
@@ -558,7 +558,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:213
 msgid "Button Text Color"
-msgstr ""
+msgstr "按鈕文字色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:486,
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:520,
@@ -569,7 +569,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:494,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:524
 msgid "Badge Color"
-msgstr ""
+msgstr "徽章色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:278,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:399
@@ -603,7 +603,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:237,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:343
 msgid "Color"
-msgstr ""
+msgstr "色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/filter-presenter.php:58
 msgid "Reset Filter"
@@ -829,7 +829,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:123
 msgid "Progress Bar Color"
-msgstr ""
+msgstr "進度列色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:102
 msgid "Success Message"
@@ -923,7 +923,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:176
 msgid "Price Color"
-msgstr ""
+msgstr "價格色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:168
 msgid "Price Font"
@@ -1208,14 +1208,14 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:393
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:240
 msgid "Button Background Color"
-msgstr ""
+msgstr "按鈕背景色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:423,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:223,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:295,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:365
 msgid "Button Font Color"
-msgstr ""
+msgstr "按鈕字型色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:410
 msgid "Add one or more conditions to display the Compare bar."
@@ -2187,11 +2187,11 @@ msgstr ""
 
 #: framework/extensions/trending/customizer.php:434
 msgid "Arrows Color"
-msgstr ""
+msgstr "箭頭色彩"
 
 #: framework/extensions/trending/customizer.php:403
 msgid "Posts Title Font Color"
-msgstr ""
+msgstr "文章標題字型色彩"
 
 #: framework/extensions/trending/customizer.php:394
 msgid "Posts Title Font"
@@ -2199,7 +2199,7 @@ msgstr ""
 
 #: framework/extensions/trending/customizer.php:347
 msgid "Module Title Color"
-msgstr ""
+msgstr "模組標題色彩"
 
 #: framework/extensions/trending/customizer.php:339
 msgid "Module Title Font"
@@ -2457,14 +2457,14 @@ msgstr ""
 #: framework/premium/features/premium-header/items/contacts/options.php:910,
 #: framework/premium/features/premium-header/items/contacts/options.php:949
 msgid "Icons Border Color"
-msgstr ""
+msgstr "圖示框線色彩"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:825,
 #: framework/premium/features/premium-header/items/contacts/options.php:867,
 #: framework/premium/features/premium-header/items/contacts/options.php:906,
 #: framework/premium/features/premium-header/items/contacts/options.php:945
 msgid "Icons Background Color"
-msgstr ""
+msgstr "圖示背景色彩"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:12
 msgid "Vertical"
@@ -2939,7 +2939,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:233,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:317
 msgid "Border Color"
-msgstr ""
+msgstr "框線色彩"
 
 #: framework/features/header/items/account/options.php:1700,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:338,
@@ -3452,7 +3452,7 @@ msgstr "載入入門網站中..."
 
 #: static/js/options/DisplayCondition.js:23
 msgid "Add one or more conditions to display the transparent header."
-msgstr "加上一個或是多個顯示透明頁首的條件"
+msgstr "加上一個或是��個顯示透明頁首的條件"
 
 #: static/js/options/DisplayCondition.js:19
 msgid "Transparent Header Display Conditions"
@@ -4248,7 +4248,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:178,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:181
 msgid "Label Font Color"
-msgstr ""
+msgstr "標籤字型色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:83,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:84
@@ -4257,7 +4257,7 @@ msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:71
 msgid "Main Color"
-msgstr ""
+msgstr "主要色彩"
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:38
 msgid "Automatically hide the read progress bar once you arrive at the bottom of the article."
@@ -4642,7 +4642,7 @@ msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:120
 msgid "Accent Color"
-msgstr ""
+msgstr "強調色彩"
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:112
 msgid "Featured Image"
@@ -4805,7 +4805,7 @@ msgstr "預設狀態"
 #: framework/features/header/items/account/options.php:1186,
 #: framework/features/header/items/account/options.php:1228
 msgid "Label Color"
-msgstr "標籤顏色"
+msgstr "標籤色彩"
 
 #: framework/features/header/items/account/options.php:1093,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:163,
@@ -5646,7 +5646,7 @@ msgstr "關閉圖示背景"
 
 #: framework/premium/features/content-blocks/options/popup.php:596
 msgid "Close Icon Color"
-msgstr "關閉圖示顏色"
+msgstr "關閉圖示色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:277,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:76
@@ -5705,7 +5705,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:579
 msgid "Widgets Font Color"
-msgstr ""
+msgstr "小工具字型色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:571
 msgid "Widgets Font"
@@ -5860,7 +5860,7 @@ msgstr ""
 
 #: framework/premium/extensions/shortcuts/customizer.php:971
 msgid "Cart Badge Color"
-msgstr ""
+msgstr "購物車徽章色彩"
 
 #: framework/premium/extensions/shortcuts/customizer.php:900,
 #: framework/premium/features/premium-header/items/contacts/options.php:684,
@@ -5868,7 +5868,7 @@ msgstr ""
 #: framework/premium/features/premium-header/items/contacts/options.php:745,
 #: framework/premium/features/premium-header/items/contacts/options.php:775
 msgid "Icons Color"
-msgstr ""
+msgstr "圖示色彩"
 
 #: framework/premium/extensions/shortcuts/customizer.php:856,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:180,
@@ -6033,7 +6033,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:367,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:396
 msgid "Icon Color"
-msgstr "圖示顏色"
+msgstr "圖示色彩"
 
 #: framework/premium/extensions/mega-menu/options.php:750
 msgid "Column Spacing"
@@ -6064,19 +6064,19 @@ msgstr ""
 #: framework/premium/extensions/mega-menu/options.php:665,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:277
 msgid "Text Color"
-msgstr ""
+msgstr "文字色彩"
 
 #: framework/premium/extensions/mega-menu/options.php:658,
 #: framework/premium/extensions/mega-menu/options.php:677,
 #: framework/premium/extensions/mega-menu/options.php:815,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/persist-attributes.php:248
 msgid "Initial Color"
-msgstr ""
+msgstr "初始色彩"
 
 #: framework/premium/extensions/mega-menu/options.php:646,
 #: framework/premium/extensions/mega-menu/options.php:803
 msgid "Heading Color"
-msgstr ""
+msgstr "標題色彩"
 
 #: framework/premium/extensions/mega-menu/options.php:629,
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:159
@@ -6098,7 +6098,7 @@ msgstr ""
 
 #: framework/premium/extensions/mega-menu/options.php:599
 msgid "Link Color"
-msgstr ""
+msgstr "連結色彩"
 
 #: framework/features/header/header-options.php:209,
 #: framework/features/header/header-options.php:236,
@@ -6966,7 +6966,7 @@ msgstr "啟用中"
 #: framework/extensions/product-reviews/extension.php:256,
 #: framework/extensions/product-reviews/extension.php:426
 msgid "Star Rating Color"
-msgstr "星級評分顏色"
+msgstr "星級評分色彩"
 
 #: framework/extensions/product-reviews/extension.php:407
 msgid "Buy Now Button"
@@ -7049,7 +7049,7 @@ msgstr "容器背景"
 #: framework/premium/features/premium-header/items/search-input/options.php:734
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:184
 msgid "Input Background Color"
-msgstr "輸入背景顏色"
+msgstr "輸入背景色彩"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:237,
 #: framework/features/header/items/account/options.php:1556,
@@ -7059,7 +7059,7 @@ msgstr "輸入背景顏色"
 #: framework/premium/features/premium-header/items/search-input/options.php:601
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:157
 msgid "Input Border Color"
-msgstr "輸入框線顏色"
+msgstr "輸入框線色彩"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:229,
 #: framework/extensions/newsletter-subscribe/customizer.php:260,
@@ -7091,16 +7091,16 @@ msgstr "焦點"
 #: framework/premium/features/premium-header/items/search-input/options.php:341
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:130
 msgid "Input Font Color"
-msgstr "輸入文字顏色"
+msgstr "輸入文字色彩"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:197
 msgid "Description Color"
-msgstr ""
+msgstr "內容說明色彩"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:153,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:146
 msgid "Title Color"
-msgstr ""
+msgstr "標題色彩"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:140,
 #: framework/extensions/trending/customizer.php:281,
@@ -7411,12 +7411,12 @@ msgstr "最大寬度"
 #: framework/premium/features/premium-header/items/language-switcher/options.php:419,
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:92
 msgid "Background Color"
-msgstr "背景顏色"
+msgstr "背景色彩"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:306,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:227
 msgid "Button Color"
-msgstr "按鈕顏色"
+msgstr "按鈕色彩"
 
 #: framework/extensions/cookies-consent/customizer.php:170,
 #: framework/extensions/cookies-consent/customizer.php:226,
@@ -7635,7 +7635,7 @@ msgstr "初始"
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:240,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:269
 msgid "Font Color"
-msgstr "字體顏色"
+msgstr "自型色彩"
 
 #: framework/extensions/cookies-consent/customizer.php:142,
 #: framework/extensions/newsletter-subscribe/customizer.php:148,
