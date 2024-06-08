@@ -146,13 +146,55 @@ class DynamicData {
 					wp_send_json_error();
 				}
 
+				$post_type = get_post_type($data['post_id']);
+
+				if (
+					$data['field_provider'] === 'woo'
+					&&
+					$data['field_id'] === 'brands'
+				) {
+					$brands = get_the_terms($data['post_id'], 'product_brands');
+
+					$brands_result = [];
+
+					foreach ($brands as $term) {
+						$term_atts = get_term_meta(
+							$term->term_id,
+							'blocksy_taxonomy_meta_options'
+						);
+
+						if (empty($term_atts)) {
+							$term_atts = [[]];
+						}
+
+						$term_atts = $term_atts[0];
+
+						$maybe_image = blocksy_akg('icon_image', $term_atts, '');
+
+						if (is_array($maybe_image)) {
+							$attachment = $maybe_image;
+						}
+
+						$brands_result[] = [
+							'term_id' => $term->term_id,
+							'name' => $term->name,
+							'slug' => $term->slug,
+							'image' => $attachment
+						];
+					}
+
+					wp_send_json_success([
+						'post_id' => $data['post_id'],
+						'post_type' => $post_type,
+						'field_data' => $brands_result
+					]);
+				}
+
 				$maybe_ext = blc_get_ext('post-types-extra');
 
 				if (! $maybe_ext || ! $maybe_ext->dynamic_data) {
 					wp_send_json_error();
 				}
-
-				$post_type = get_post_type($data['post_id']);
 
 				$field_render = blc_get_ext('post-types-extra')
 					->dynamic_data

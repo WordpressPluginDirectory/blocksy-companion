@@ -81,6 +81,22 @@ registerBlockType('blocksy/dynamic-data', {
 			return __('Dynamic Rating', 'blocksy')
 		}
 
+		if (attributes.field === 'wp:term_title') {
+			return __('Dynamic Term Title', 'blocksy')
+		}
+
+		if (attributes.field === 'wp:term_description') {
+			return __('Dynamic Term Description', 'blocksy')
+		}
+
+		if (attributes.field === 'wp:term_count') {
+			return __('Dynamic Term Count', 'blocksy')
+		}
+
+		if (attributes.field === 'wp:term_image') {
+			return __('Dynamic Term Image', 'blocksy')
+		}
+
 		return __('Dynamic Data', 'blocksy')
 	},
 })

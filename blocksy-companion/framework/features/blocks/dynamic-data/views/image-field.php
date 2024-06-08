@@ -1,6 +1,7 @@
 <?php
 
 $aspectRatio = blocksy_akg('aspectRatio', $attributes, 'auto');
+$imageFit = blocksy_akg('imageFit', $attributes, 'cover');
 $height = blocksy_akg('height', $attributes, '');
 
 $lightbox = blocksy_akg('lightbox', $attributes, '');
@@ -21,7 +22,7 @@ if (! empty($aspectRatio)) {
 	$img_attr['style'] .= "height:{$attributes['height']};";
 }
 
-$img_attr['style'] .= "object-fit: cover;";
+$img_attr['style'] .= "object-fit: {$imageFit};";
 
 if (! empty(blocksy_akg('alt_text', $attributes, ''))) {
 	$img_attr['alt'] = blocksy_akg('alt_text', $attributes, '');

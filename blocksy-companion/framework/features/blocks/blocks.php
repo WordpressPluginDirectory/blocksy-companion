@@ -127,6 +127,7 @@ class Blocks {
 
 		new \Blocksy\Editor\Blocks\BreadCrumbs();
 		new \Blocksy\Editor\Blocks\Query();
+		new \Blocksy\Editor\Blocks\TaxQuery();
 		new \Blocksy\Editor\Blocks\DynamicData();
 	}
 }

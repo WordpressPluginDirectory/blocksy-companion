@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.51
+Stable tag: 2.0.53
 
 == Description ==
 
@@ -52,6 +52,13 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.53: 2024-06-07
+- Improvement: General fixes and improvements
+
+2.0.52: 2024-06-06
+- New: Taxonomies query block
+- Improvement: Regenerate `global.css` when copying settings from parent or child theme
+
 2.0.51: 2024-05-30
 - Improvement: Correctly load JS translations for the Blocksy Companion
 

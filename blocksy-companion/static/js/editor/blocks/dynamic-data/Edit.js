@@ -19,13 +19,10 @@ const Edit = ({
 
 	context,
 }) => {
-	const { postId, postType } = context
+	const { postType, taxonomy } = context
 
 	const { fieldsDescriptor, options, fieldsChoices } =
-		useDynamicDataDescriptor({
-			postId,
-			postType,
-		})
+		useDynamicDataDescriptor(context)
 
 	const taxonomies = useTaxonomies(postType)
 
@@ -70,6 +67,14 @@ const Edit = ({
 		}
 	}, [taxonomies, attributes.field])
 
+	useEffect(() => {
+		if (attributes.field === 'wp:title' && taxonomy) {
+			setAttributes({
+				field: 'wp:term_title',
+			})
+		}
+	}, [taxonomy, attributes.fiel])
+
 	if (!fieldDescriptor) {
 		return null
 	}
@@ -84,10 +89,9 @@ const Edit = ({
 
 			<Preview
 				attributes={attributes}
-				postId={postId}
-				postType={postType}
 				fieldsDescriptor={fieldsDescriptor}
 				fieldDescriptor={fieldDescriptor}
+				{...context}
 			/>
 
 			<DynamicDataInspectorControls

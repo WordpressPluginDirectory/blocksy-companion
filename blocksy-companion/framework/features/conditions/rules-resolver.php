@@ -353,6 +353,8 @@ class ConditionsRulesResolver {
 				$wp_query->in_the_loop
 				&&
 				get_post_type($post) === $custom_post_type
+				&&
+				! is_singular($custom_post_type)
 			);
 		}
 

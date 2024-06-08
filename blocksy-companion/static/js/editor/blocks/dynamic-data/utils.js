@@ -20,7 +20,8 @@ export const fieldIsImageLike = (fieldDescriptor) => {
 		return (
 			fieldDescriptor.id === 'featured_image' ||
 			fieldDescriptor.id === 'author_avatar' ||
-			fieldDescriptor.id === 'archive_image'
+			fieldDescriptor.id === 'archive_image' ||
+			fieldDescriptor.id === 'term_image'
 		)
 	}
 

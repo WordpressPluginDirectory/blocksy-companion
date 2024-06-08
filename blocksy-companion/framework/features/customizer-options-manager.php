@@ -115,6 +115,10 @@ class CustomizerOptionsManager {
 
 			$importer->import_options($data);
 
+			do_action('customize_save_after');
+			do_action('blocksy:dynamic-css:refresh-caches');
+			do_action('blocksy:cache-manager:purge-all');
+
 			wp_send_json_success([]);
 		});
 	}

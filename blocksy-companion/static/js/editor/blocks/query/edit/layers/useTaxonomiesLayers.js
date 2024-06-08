@@ -1,7 +1,7 @@
-import { useTaxonomies } from '../utils/utils'
-import { __, sprintf } from 'ct-i18n'
-
 import { createElement } from '@wordpress/element'
+
+import { useTaxonomies, useTaxonomy } from '../utils/utils'
+import { __, sprintf } from 'ct-i18n'
 
 import { TaxonomyItem } from '../TaxonomyControls'
 
@@ -178,6 +178,49 @@ export const useTaxonomiesLayers = ({
 			}),
 		]
 	}
+
+	return {
+		taxonomiesGroup:
+			layers.length > 0
+				? {
+						label: __('Taxonomies', 'blocksy'),
+						items: layers,
+				  }
+				: null,
+	}
+}
+
+export const useTaxonomyLayers = ({
+	attributes,
+	attributes: { taxonomy },
+
+	previewedPostMatchesType,
+
+	setAttributes,
+}) => {
+	const taxonomyObj = useTaxonomy(taxonomy)
+
+	if (!taxonomyObj) {
+		return {
+			taxonomiesGroup: null,
+		}
+	}
+
+	const layers = [
+		...[
+			getIncludeLayer({
+				taxonomy: taxonomyObj,
+				attributes,
+				setAttributes,
+				previewedPostMatchesType,
+			}),
+			getExcludeLayer({
+				taxonomy: taxonomyObj,
+				attributes,
+				setAttributes,
+			}),
+		],
+	]
 
 	return {
 		taxonomiesGroup:

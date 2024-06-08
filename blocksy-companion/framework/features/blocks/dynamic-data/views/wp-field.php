@@ -77,6 +77,70 @@ if ($field === 'wp:title') {
 	}
 }
 
+if ($field === 'wp:term_title') {
+	global $blocksy_term_obj;
+
+	if (! empty($blocksy_term_obj)) {
+		$value = $blocksy_term_obj->name;
+
+		if (blocksy_akg('has_field_link', $attributes, 'no') === 'yes') {
+			$link_attr = [
+				'href' => get_term_link($blocksy_term_obj)
+			];
+	
+			if (blocksy_akg('has_field_link_new_tab', $attributes, 'no') === 'yes') {
+				$link_attr['target'] = '_blank';
+			}
+	
+			if (! empty(blocksy_akg('has_field_link_rel', $attributes, ''))) {
+				$link_attr['rel'] = blocksy_akg(
+					'has_field_link_rel',
+					$attributes,
+					''
+				);
+			}
+	
+			$value = blocksy_html_tag('a', $link_attr, $value);
+		}
+	}
+}
+
+if ($field === 'wp:term_count') {
+	global $blocksy_term_obj;
+
+	if (! empty($blocksy_term_obj)) {
+		$value = $blocksy_term_obj->count;
+
+		if (blocksy_akg('has_field_link', $attributes, 'no') === 'yes') {
+			$link_attr = [
+				'href' => get_term_link($blocksy_term_obj)
+			];
+	
+			if (blocksy_akg('has_field_link_new_tab', $attributes, 'no') === 'yes') {
+				$link_attr['target'] = '_blank';
+			}
+	
+			if (! empty(blocksy_akg('has_field_link_rel', $attributes, ''))) {
+				$link_attr['rel'] = blocksy_akg(
+					'has_field_link_rel',
+					$attributes,
+					''
+				);
+			}
+	
+			$value = blocksy_html_tag('a', $link_attr, $value);
+		}
+	}
+}
+
+if ($field === 'wp:term_description') {
+	global $blocksy_term_obj;
+
+	if (! empty($blocksy_term_obj)) {
+		$value = $blocksy_term_obj->description;
+	}
+}
+
 if ($field === 'wp:excerpt') {
 	if (blocksy_akg('tagName', $attributes, 'div') === 'p') {
 		remove_filter('the_excerpt', 'wpautop');

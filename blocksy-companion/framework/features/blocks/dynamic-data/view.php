@@ -31,6 +31,19 @@ if (strpos($field, 'wp:') === 0) {
 		);
 	}
 
+	if ($field === 'wp:term_image') {
+		global $blocksy_term_obj;
+
+		echo blocksy_render_view(
+			dirname(__FILE__) . '/views/archive-image-field.php',
+			[
+				'attributes' => $attributes,
+				'field' => $field,
+				'term_id' => $blocksy_term_obj->term_id,
+			]
+		);
+	}
+
 	if ($field === 'wp:archive_image') {
 		echo blocksy_render_view(
 			dirname(__FILE__) . '/views/archive-image-field.php',

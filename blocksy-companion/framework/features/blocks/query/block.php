@@ -270,6 +270,7 @@ class Query {
 					'posts-layout-2',
 					'posts-layout-3',
 					'posts-layout-4',
+					'posts-layout-5',
 				];
 
 				foreach ($posts_block_patterns as $posts_block_pattern) {

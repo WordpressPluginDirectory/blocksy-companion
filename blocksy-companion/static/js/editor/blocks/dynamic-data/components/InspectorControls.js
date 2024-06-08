@@ -42,12 +42,15 @@ const DynamicDataInspectorControls = ({
 						options={{
 							field: {
 								type: 'ct-select',
-								label: __('Content Source', 'blocksy'),
+								label: __(
+									'Content Source',
+									'blocksy-companion'
+								),
 								value: '',
 								search: true,
 								searchPlaceholder: __(
 									'Search for field',
-									'blocksy'
+									'blocksy-companion'
 								),
 								defaultToFirstItem: false,
 								choices: fieldsChoices,
@@ -60,7 +63,10 @@ const DynamicDataInspectorControls = ({
 								? {
 										taxonomy: {
 											type: 'ct-select',
-											label: __('Taxonomy', 'blocksy'),
+											label: __(
+												'Taxonomy',
+												'blocksy-companion'
+											),
 											value: '',
 											design: 'inline',
 											purpose: 'default',
@@ -70,6 +76,32 @@ const DynamicDataInspectorControls = ({
 													value: name,
 												})
 											),
+										},
+								  }
+								: {}),
+
+							...(attributes.field === 'wp:term_image'
+								? {
+										imageSource: {
+											type: 'ct-radio',
+											label: __(
+												'Image Source',
+												'blocksy-companion'
+											),
+											value: attributes.imageSource,
+											design: 'inline',
+											purpose: 'gutenberg',
+											divider: 'bottom',
+											choices: {
+												featured: __(
+													'Image',
+													'blocksy-companion'
+												),
+												icon: __(
+													'Icon/Logo',
+													'blocksy-companion'
+												),
+											},
 										},
 								  }
 								: {}),
@@ -97,10 +129,19 @@ const DynamicDataInspectorControls = ({
 									})
 								}}
 								options={{
-									lightbox: {
-										type: 'ct-switch',
-										label: __('Expand on click', 'blocksy'),
-										value: 'no',
+									lightbox_condition: {
+										type: 'ct-condition',
+										condition: { has_field_link: 'no' },
+										options: {
+											lightbox: {
+												type: 'ct-switch',
+												label: __(
+													'Expand on click',
+													'blocksy-companion'
+												),
+												value: 'no',
+											},
+										},
 									},
 
 									...(attributes.field === 'wp:featured_image'
@@ -108,8 +149,8 @@ const DynamicDataInspectorControls = ({
 												videoThumbnail: {
 													type: 'ct-switch',
 													label: __(
-														'Video Thumbnail',
-														'blocksy'
+														'Video thumbnail',
+														'blocksy-companion'
 													),
 													value: 'no',
 												},
@@ -117,17 +158,26 @@ const DynamicDataInspectorControls = ({
 										: {}),
 
 									image_hover_effect: {
-										label: __('Hover Effect', 'blocksy'),
+										label: __(
+											'Image Hover Effect',
+											'blocksy-companion'
+										),
 										type: 'ct-select',
 										value: 'none',
 										view: 'text',
 										design: 'inline',
 										choices: {
-											none: __('None', 'blocksy'),
-											'zoom-in': __('Zoom In', 'blocksy'),
+											none: __(
+												'None',
+												'blocksy-companion'
+											),
+											'zoom-in': __(
+												'Zoom In',
+												'blocksy-companion'
+											),
 											'zoom-out': __(
 												'Zoom Out',
-												'blocksy'
+												'blocksy-companion'
 											),
 										},
 									},
@@ -149,7 +199,10 @@ const DynamicDataInspectorControls = ({
 
 							<PanelBody>
 								<TextareaControl
-									label={__('Alternative Text', 'blocksy')}
+									label={__(
+										'Alternative Text',
+										'blocksy-companion'
+									)}
 									value={attributes.alt_text || ''}
 									onChange={(value) => {
 										setAttributes({
@@ -161,13 +214,13 @@ const DynamicDataInspectorControls = ({
 											<ExternalLink href="https://www.w3.org/WAI/tutorials/images/decision-tree">
 												{__(
 													'Describe the purpose of the image.',
-													'blocksy'
+													'blocksy-companion'
 												)}
 											</ExternalLink>
 											<br />
 											{__(
 												'Leave empty if decorative.',
-												'blocksy'
+												'blocksy-companion'
 											)}
 										</>
 									}
@@ -182,7 +235,7 @@ const DynamicDataInspectorControls = ({
 						<RangeControl
 							__nextHasNoMarginBottom
 							__next40pxDefaultSize
-							label={__('Image size', 'blocksy')}
+							label={__('Image size', 'blocksy-companion')}
 							onChange={(newSize) =>
 								setAttributes({
 									avatar_size: newSize,
@@ -201,7 +254,7 @@ const DynamicDataInspectorControls = ({
 						<RangeControl
 							__nextHasNoMarginBottom
 							__next40pxDefaultSize
-							label={__('Logo Size', 'blocksy')}
+							label={__('Logo Size', 'blocksy-companion')}
 							onChange={(newSize) =>
 								setAttributes({
 									brands_size: newSize,
@@ -215,7 +268,7 @@ const DynamicDataInspectorControls = ({
 						<RangeControl
 							__nextHasNoMarginBottom
 							__next40pxDefaultSize
-							label={__('Logo Gap', 'blocksy')}
+							label={__('Logo Gap', 'blocksy-companion')}
 							onChange={(newGap) =>
 								setAttributes({
 									brands_gap: newGap,
@@ -242,13 +295,16 @@ const DynamicDataInspectorControls = ({
 								options={{
 									before: {
 										type: 'text',
-										label: __('Before', 'blocksy'),
+										label: __(
+											'Before',
+											'blocksy-companion'
+										),
 										value: '',
 									},
 
 									after: {
 										type: 'text',
-										label: __('After', 'blocksy'),
+										label: __('After', 'blocksy-companion'),
 										value: '',
 									},
 
@@ -262,11 +318,11 @@ const DynamicDataInspectorControls = ({
 													type: 'text',
 													label: __(
 														'Fallback',
-														'blocksy'
+														'blocksy-companion'
 													),
 													value: __(
 														'Custom field fallback',
-														'blocksy'
+														'blocksy-companion'
 													),
 												},
 										  }
@@ -284,7 +340,7 @@ const DynamicDataInspectorControls = ({
 					<TextControl
 						__nextHasNoMarginBottom
 						autoComplete="off"
-						label={__('Term additional class', 'blocksy')}
+						label={__('Term additional class', 'blocksy-companion')}
 						value={attributes.termClass}
 						onChange={(nextValue) => {
 							setAttributes({
@@ -293,7 +349,7 @@ const DynamicDataInspectorControls = ({
 						}}
 						help={__(
 							'Additional class for term items. Useful for styling.',
-							'blocksy'
+							'blocksy-companion'
 						)}
 					/>
 				</InspectorControls>

@@ -30,6 +30,7 @@ const ImagePreview = ({
 	attributes,
 	attributes: {
 		aspectRatio,
+		imageFit,
 		width,
 		height,
 		imageAlign,
@@ -91,7 +92,7 @@ const ImagePreview = ({
 	const imageStyles = {
 		height: aspectRatio ? '100%' : height,
 		width: !!aspectRatio && '100%',
-		objectFit: !!(height || aspectRatio) && 'cover',
+		objectFit: imageFit,
 	}
 
 	if (!maybeUrl || !postId) {

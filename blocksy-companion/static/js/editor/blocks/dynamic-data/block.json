@@ -42,6 +42,11 @@
 			"default": "auto"
 		},
 
+		"imageFit": {
+			"type": "string",
+			"default": "cover"
+		},
+
 		"width": {
 			"type": "string"
 		},
@@ -122,6 +127,11 @@
 		"brands_gap": {
 			"type": "number",
 			"default": 10
+		},
+
+		"imageSource": {
+			"type": "string",
+			"default": "featured"
 		}
 	},
 	"supports": {
@@ -172,5 +182,13 @@
 			}
 		}
 	},
-	"usesContext": ["postId", "postType", "queryId"]
+	"usesContext": [
+		"postId",
+		"postType",
+		"queryId",
+		"taxonomy",
+		"termId",
+		"termIcon",
+		"termImage"
+	]
 }

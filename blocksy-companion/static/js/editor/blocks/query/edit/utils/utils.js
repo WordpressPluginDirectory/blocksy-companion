@@ -8,6 +8,8 @@ import { store as blockEditorStore } from '@wordpress/block-editor'
 import { decodeEntities } from '@wordpress/html-entities'
 import { cloneBlock, store as blocksStore } from '@wordpress/blocks'
 
+const EXCLUDE_TAXONOMIES = ['wp_pattern_category', 'nav_menu']
+
 /**
  * Clones a pattern's blocks and then recurses over that list of blocks,
  * transforming them to retain some `query` attribute properties.
@@ -139,10 +141,25 @@ export const useTaxonomies = (postType) => {
 				context: 'view',
 			})
 
-			return filteredTaxonomies
+			return (filteredTaxonomies || []).filter(
+				({ slug }) => !EXCLUDE_TAXONOMIES.includes(slug)
+			)
 		},
 		[postType]
 	)
 
 	return taxonomies
+}
+
+export const useTaxonomy = (taxonomy) => {
+	const taxonomyObj = useSelect(
+		(select) => {
+			const { getTaxonomy } = select(coreStore)
+
+			return getTaxonomy(taxonomy)
+		},
+		[taxonomy]
+	)
+
+	return taxonomyObj
 }

@@ -106,6 +106,14 @@ class Plugin {
 					$data['Version']
 				);
 
+				$current_screen = get_current_screen();
+
+				// Don't enqueue the script in the root WP dashboard.
+				// Sometimes it causes a redirect loop there in some setups.
+				if ($current_screen && $current_screen->base === 'dashboard') {
+					return;
+				}
+
 				$locale_data_ct = blc_get_jed_locale_data('blocksy-companion');
 
 				wp_add_inline_script(

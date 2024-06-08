@@ -9,6 +9,8 @@ import {
 	__experimentalToolsPanel as ToolsPanel,
 	__experimentalUseCustomUnits as useCustomUnits,
 	__experimentalToolsPanelItem as ToolsPanelItem,
+	__experimentalToggleGroupControl as ToggleGroupControl,
+	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 } from '@wordpress/components'
 import { useSetting } from '@wordpress/block-editor'
 import { useSelect } from '@wordpress/data'
@@ -19,7 +21,7 @@ const DEFAULT_SIZE = 'full'
 
 const DimensionControls = ({
 	clientId,
-	attributes: { aspectRatio, width, height, sizeSlug },
+	attributes: { aspectRatio, imageFit, width, height, sizeSlug },
 	setAttributes,
 }) => {
 	const imageSizes = useSelect(
@@ -114,6 +116,7 @@ const DimensionControls = ({
 					}
 				/>
 			</ToolsPanelItem>
+
 			<ToolsPanelItem
 				style={{
 					'grid-column': 'span 1 / auto',
@@ -137,6 +140,7 @@ const DimensionControls = ({
 					units={units}
 				/>
 			</ToolsPanelItem>
+
 			<ToolsPanelItem
 				style={{
 					'grid-column': 'span 1 / auto',
@@ -160,6 +164,36 @@ const DimensionControls = ({
 					units={units}
 				/>
 			</ToolsPanelItem>
+
+			<ToolsPanelItem
+				hasValue={() => !!imageFit}
+				label={__('Scale', 'blocksy')}
+				onDeselect={() => setAttributes({ imageFit: undefined })}
+				resetAllFilter={() => ({
+					imageFit: 'cover',
+				})}
+				isShownByDefault
+				key={clientId}>
+				<ToggleGroupControl
+					label={__('Scale', 'blocksy-companion')}
+					value={imageFit}
+					isBlock
+					onChange={(nextImageFir) =>
+						setAttributes({ imageFit: nextImageFir })
+					}>
+					<ToggleGroupControlOption
+						key="cover"
+						value="cover"
+						label={__('Cover', 'blocksy-companion')}
+					/>
+					<ToggleGroupControlOption
+						key="contain"
+						value="contain"
+						label={__('Contain', 'blocksy-companion')}
+					/>
+				</ToggleGroupControl>
+			</ToolsPanelItem>
+
 			{!!imageSizeOptions.length && (
 				<ToolsPanelItem
 					hasValue={() => !!sizeSlug}

@@ -74,6 +74,7 @@ class Autoloader {
 			'Editor\\Blocks\\BlockWrapper' => 'framework/features/blocks/block-wrapper/block.php',
 			'Editor\\Blocks\\BreadCrumbs' => 'framework/features/blocks/breadcrumbs/block.php',
 			'Editor\\Blocks\\Query' => 'framework/features/blocks/query/block.php',
+			'Editor\\Blocks\\TaxQuery' => 'framework/features/blocks/tax-query/block.php',
 			'Editor\\Blocks\\DynamicData' => 'framework/features/blocks/dynamic-data/block.php',
 
 			/**

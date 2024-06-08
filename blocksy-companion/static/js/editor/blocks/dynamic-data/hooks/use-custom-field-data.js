@@ -1,59 +1,50 @@
 import { useMemo, useState, useEffect } from '@wordpress/element'
+import { cachedFetch, getStableJsonKey } from 'blocksy-options'
 
-const cache = {}
-
+// TODO: maybe rename this hook to show that it can be used for something else
+// other than custom fields.
+//
+// Potentially, termId can also be provided to get term data.
 const useCustomFieldData = ({ postId, fieldDescriptor }) => {
-	const [fieldData, setFieldData] = useState(cache)
+	const [fieldData, setFieldData] = useState({})
 
-	const cacheKey = useMemo(() => {
-		return `${postId}-${fieldDescriptor.provider}-${fieldDescriptor.id}`
+	const requestDescriptor = useMemo(() => {
+		const url = `${wp.ajax.settings.url}?action=blocksy_dynamic_data_block_custom_field_data`
+
+		const body = {
+			post_id: postId,
+			field_provider: fieldDescriptor.provider,
+			field_id: fieldDescriptor.id,
+		}
+
+		return {
+			url,
+			body,
+			cacheKey: getStableJsonKey({ ...body, url }),
+		}
 	}, [postId, fieldDescriptor.provider, fieldDescriptor.id])
 
 	useEffect(() => {
-		if (!cache[cacheKey]) {
-			fetch(
-				`${wp.ajax.settings.url}?action=blocksy_dynamic_data_block_custom_field_data`,
-				{
-					headers: {
-						Accept: 'application/json',
-						'Content-Type': 'application/json',
-					},
-					method: 'POST',
-					body: JSON.stringify({
-						post_id: postId,
-						field_provider: fieldDescriptor.provider,
-						field_id: fieldDescriptor.id,
-					}),
-				}
-			)
-				.then((res) => res.json())
-				.then(({ success, data }) => {
+		if (!fieldData[requestDescriptor.cacheKey]) {
+			cachedFetch(requestDescriptor.url, requestDescriptor.body).then(
+				({ success, data }) => {
 					if (!success) {
 						return
 					}
 
-					cache[cacheKey] = {
-						value: data.field_data,
-					}
-
-					setFieldData({
-						...fieldData,
-						[cacheKey]: {
-							value: data.field_data,
-						},
-					})
-				})
+					setFieldData((prev) => ({
+						...prev,
+						[requestDescriptor.cacheKey]: data.field_data,
+					}))
+				}
+			)
 		}
-	}, [
-		postId,
-		fieldDescriptor.provider,
-		fieldDescriptor.id,
-		cacheKey,
-		fieldData,
-	])
+	}, [requestDescriptor, fieldData])
 
 	return {
-		fieldData: fieldData[cacheKey] ? fieldData[cacheKey] : null,
+		fieldData: fieldData[requestDescriptor.cacheKey]
+			? fieldData[requestDescriptor.cacheKey]
+			: null,
 	}
 }
 

@@ -17,6 +17,8 @@ import AuthorPreview from './wp/AuthorPreview'
 import TaxonomyPreview from './wp/TaxonomyPreview'
 import ImagePreview from './wp/ImagePreview'
 import AvatarPreview from './wp/AvatarPreview'
+import TermTextPreview from './wp/TermTextPreview'
+import TermImagePreview from './wp/TermImagePreview'
 
 const TextField = ({
 	fieldDescriptor,
@@ -26,6 +28,9 @@ const TextField = ({
 	attributes: { align, tagName: TagName, before, after, fallback },
 	postId,
 	postType,
+
+	termId,
+	taxonomy,
 }) => {
 	const blockProps = useBlockProps({
 		className: classnames('ct-dynamic-data', {
@@ -43,6 +48,14 @@ const TextField = ({
 
 	if (fieldDescriptor.id === 'archive_description') {
 		Component = () => __('Archive Description', 'blocksy')
+	}
+
+	if (
+		fieldDescriptor.id === 'term_title' ||
+		fieldDescriptor.id === 'term_description' ||
+		fieldDescriptor.id === 'term_count'
+	) {
+		Component = TermTextPreview
 	}
 
 	if (fieldDescriptor.id === 'title') {
@@ -91,6 +104,8 @@ const TextField = ({
 					attributes={attributes}
 					postId={postId}
 					postType={postType}
+					termId={termId}
+					taxonomy={taxonomy}
 					fallback={fallback}
 					fieldsDescriptor={fieldsDescriptor}
 				/>
@@ -112,6 +127,10 @@ const WpFieldPreview = (props) => {
 
 	if (fieldDescriptor.id === 'author_avatar') {
 		return <AvatarPreview {...props} />
+	}
+
+	if (fieldDescriptor.id === 'term_image') {
+		return <TermImagePreview {...props} />
 	}
 
 	if (fieldDescriptor.id === 'archive_image') {
