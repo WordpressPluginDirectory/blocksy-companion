@@ -6739,7 +6739,7 @@ msgstr "Читайте далее"
 
 #: framework/extensions/product-reviews/metabox.php:148
 msgid "Read More Button Label"
-msgstr "Ярлык кнопки «Читать далее»"
+msgstr "Ярлык кнопки «Читать д��лее»"
 
 #: framework/extensions/product-reviews/metabox.php:126
 msgid "Sponsored Attribute"
@@ -6747,7 +6747,7 @@ msgstr "Рекламный атрибут"
 
 #: framework/extensions/product-reviews/metabox.php:120
 msgid "Open Link In New Tab"
-msgstr "Открывать в новой вкладке"
+msgstr "Открывать в новой ��кладке"
 
 #: framework/extensions/product-reviews/metabox.php:114
 msgid "Affiliate Link"
@@ -7386,7 +7386,7 @@ msgstr "Форма подписки"
 
 #: framework/extensions/newsletter-subscribe/config.php:6
 msgid "Easily capture new leads for your newsletter with the help of a widget, shortcode or even a block inserted on your pages or posts."
-msgstr "Легко собирайте контакты новых потенциальных клиентов для своей рассылки с помощью виджета, шорткода или даже блока, вставленного в ваши страницы или записи."
+msgstr "Легко собирайте контакты новых потенциальных клиентов для своей рассылки с помощью виджета, шорткода и��и даже блока, вставленного в ваши страницы или записи."
 
 #: framework/extensions/cookies-consent/helpers.php:64
 msgid "I accept the %sPrivacy Policy%s"

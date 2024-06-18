@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-27 16:15:26+0000\n"
+"PO-Revision-Date: 2024-06-16 04:14:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -241,7 +241,7 @@ msgstr "Chèn một Khối nội dung cụ thể ở bất kỳ đâu trên tran
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:57
 msgid "Widget for filtering the WooCommerce products loop by category, attribute or brand."
-msgstr "Widget để lọc vòng lặp sản phẩm WooCommerce theo danh mục, thuộc tính hoặc thương hiệu."
+msgstr "Tiện ích để lọc vòng lặp sản phẩm WooCommerce theo danh mục, thuộc tính hoặc thương hiệu."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:566
 msgid "Shop Filters"
@@ -725,7 +725,7 @@ msgstr "Lưu trữ kích thước mẫu thẻ"
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:96,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:151
 msgid "Widget Swatch Size"
-msgstr "Kích thước mẫu màu của widget"
+msgstr "Kích thước mẫu màu của tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:33,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:87,
@@ -1006,7 +1006,7 @@ msgstr "Thanh bên WooCommerce"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:489
 msgid "Widget Area Source"
-msgstr "Nguồn Khu vực Widget"
+msgstr "Nguồn khu vực tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:293,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:100
@@ -1403,7 +1403,7 @@ msgstr "Cập nhật tự động số lượng"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:70
 msgid "Image AffiliateLink"
-msgstr "Liên kết hình ảnh Affiliate"
+msgstr "Li��n kết hình ảnh Affiliate"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:57,
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:90
@@ -2008,7 +2008,7 @@ msgstr "Tiện ích mở rộng này yêu cầu cài đặt và kích hoạt plu
 
 #: framework/premium/extensions/sidebars/extension.php:185
 msgid "Remove Widget Area"
-msgstr "Xóa bỏ khu vực Widget"
+msgstr "Xóa bỏ khu vực tiện ích"
 
 #: framework/premium/extensions/shortcuts/customizer.php:1055
 msgid "Compare Badge Color"
@@ -2284,7 +2284,7 @@ msgstr "Link sản phẩm tiếp thị liên kết"
 
 #: framework/helpers/exts.php:262
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."
-msgstr "Phân loại sản phẩm theo nhãn hiệu và hiển thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất c���a họ."
+msgstr "Phân loại sản phẩm theo nhãn hiệu và hiển thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất của họ."
 
 #: framework/helpers/exts.php:261
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:50
@@ -2347,7 +2347,7 @@ msgstr "Một tập hợp các tính năng cho phép bạn dễ dàng tạo danh
 
 #: framework/helpers/exts.php:198
 msgid "Drill down the product list with new filtering widgets, an off canvas area for them and showing the active filters on the page."
-msgstr "Lọc danh sách sản phẩm với các widget lọc mới, một khu vực ngoài khung cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
+msgstr "Lọc danh sách sản phẩm với các tiện ích lọc mới, một khu vực ngoài khung cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
 
 #: framework/helpers/exts.php:197
 msgid "Filters"
@@ -2977,7 +2977,7 @@ msgstr "Đóng modal bộ lọc"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/feature.php:134
 msgid "Add widgets here."
-msgstr "Thêm widget ở đây."
+msgstr "Thêm tiện ích ở đây."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:200
 msgid "Thumbnails Arrows Visibility"
@@ -3282,7 +3282,7 @@ msgstr "Nhập nội dung"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:168
 msgid "Import widgets"
-msgstr "Nhập widget"
+msgstr "Nhập tiện ích"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:158
 msgid "Import options"
@@ -3367,11 +3367,11 @@ msgstr "tải xuống các tùy chọn demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:38
 msgid "installing demo widgets"
-msgstr "cài đặt các widget demo"
+msgstr "cài đặt các tiện ích demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:34
 msgid "downloading demo widgets"
-msgstr "tải xuống các widget demo"
+msgstr "tải xuống các tiện ích demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:28
 msgid "activating plugin %s"
@@ -3452,11 +3452,11 @@ msgstr "Đang tải Trang web khởi động..."
 
 #: static/js/options/DisplayCondition.js:23
 msgid "Add one or more conditions to display the transparent header."
-msgstr "Thêm một hoặc nhiều điều kiện để hiển thị header trong suốt."
+msgstr "Thêm một hoặc nhiều điều kiện để hiển thị đầu trang trong suốt."
 
 #: static/js/options/DisplayCondition.js:19
 msgid "Transparent Header Display Conditions"
-msgstr "Điều kiện hiển thị Header trong suốt"
+msgstr "Điều kiện hiển thị Đầu trang trong suốt"
 
 #: static/js/options/CustomizerOptionsManager.js:107
 msgid "Export Customizations"
@@ -3476,7 +3476,7 @@ msgstr "Xuất"
 
 #: static/js/options/CustomizerOptionsManager.js:443
 msgid "Widgets settings"
-msgstr "Cài đặt Widget"
+msgstr "Cài đặt Tiện ích"
 
 #: static/js/options/CustomizerOptionsManager.js:439
 msgid "Customizer settings"
@@ -3738,7 +3738,7 @@ msgstr "Tạo đầu trang mới"
 #: framework/premium/static/js/header/CreateHeader.js:134
 #: static/js/header/PanelsManager.js:58
 msgid "Global Header"
-msgstr "Header toàn cầu"
+msgstr "Đầu trang cho toàn website"
 
 #: framework/premium/static/js/header/CreateHeader.js:117
 msgid "Picker header"
@@ -3887,7 +3887,7 @@ msgstr "Bạn có thể chèn liên kết tới hình ảnh tự lưu trữ ho�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:494
 msgid "Gutenberg Options Panel Icon URL"
-msgstr "URL biểu tượng bảng điều khiển tùy chọn Gutenberg"
+msgstr "URL biểu tượng bảng điều khiển tùy ch��n Gutenberg"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:485
 msgid "You can insert the link to a self hosted image or upload one. The recommended image size is 18px wide by 18px tall."
@@ -6384,11 +6384,11 @@ msgstr "Icon"
 
 #: framework/premium/features/premium-header.php:202
 msgid "Header Widget Area "
-msgstr "Khu vực Widget Header"
+msgstr "Khu vực tiện ích đầu trang "
 
 #: framework/premium/features/premium-header.php:57
 msgid "Header Menu 3"
-msgstr "Header Menu 3"
+msgstr "Menu đầu trang 3"
 
 #: framework/premium/features/premium-footer.php:29,
 #: framework/premium/features/premium-footer/items/menu-secondary/config.php:4
