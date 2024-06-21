@@ -6,8 +6,6 @@ class Blocks {
 	private $blocks = [];
 
 	public function __construct() {
-		add_filter('blocksy:general:blocks:mount-allowed', '__return_false');
-
 		// Mount at `after_setup_theme` to make sure the theme is loaded
 		add_action(
 			'after_setup_theme',

@@ -141,7 +141,7 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 						}}
 						value={
 							provider.indexOf('mailerlite') > -1
-								? 'mailerlite'
+								? 'mailerlite-new'
 								: provider
 						}
 					/>
@@ -165,13 +165,13 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 								),
 								choices: [
 									{
-										key: 'classic',
-										value: 'Classic',
+										key: 'new',
+										value: 'New',
 									},
 
 									{
-										key: 'new',
-										value: 'New',
+										key: 'classic',
+										value: 'Classic',
 									},
 								],
 							}}

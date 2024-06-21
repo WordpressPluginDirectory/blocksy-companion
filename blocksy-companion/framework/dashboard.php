@@ -4,6 +4,14 @@ namespace Blocksy;
 
 class Dashboard {
 	public function __construct() {
+		add_action(
+			'wp_ajax_blocksy_dismissed_blocksy_theme_version_mismatch_notice',
+			function () {
+				update_option('dismissed-blocksy_theme_version_mismatch_notice', true);
+				wp_die();
+			}
+		);
+
 		add_filter(
 			'blocksy:dashboard:redirect-after-activation',
 			function ($url) {
@@ -57,6 +65,23 @@ class Dashboard {
 				);
 			}
 		);
+
+		add_action('admin_notices', function () {
+			$blocksy_data = Plugin::instance()->is_blocksy_data;
+
+			if (
+				! Plugin::instance()->check_if_blocksy_is_activated()
+				&&
+				$blocksy_data
+				&&
+				$blocksy_data['is_correct_theme']
+			) {
+				echo blocksy_render_view(
+					dirname(__FILE__) . '/views/theme-mismatch.php',
+					[]
+				);
+			}
+		});
 
 		add_action(
 			'admin_menu',
@@ -271,7 +296,10 @@ class Dashboard {
 	}
 
 	public function enqueue_static() {
-		if (! $this->is_dashboard_page()) return;
+		if (! $this->is_dashboard_page()) {
+			$this->enqueue_static_global();
+			return;
+		}
 
 		$data = get_plugin_data(BLOCKSY__FILE__);
 
@@ -339,6 +367,45 @@ class Dashboard {
 			['wp-components'],
 			$data['Version']
 		);
+	}
+
+	public function enqueue_static_global() {
+		$slug = 'blocksy';
+
+		$themeIsInstalled = (
+			!! wp_get_theme($slug)
+			&&
+			! wp_get_theme($slug)->errors()
+		);
+
+		$blocksy_data = Plugin::instance()->is_blocksy_data;
+
+		if ($blocksy_data && $blocksy_data['is_correct_theme']) {
+			$data = get_plugin_data(BLOCKSY__FILE__);
+
+			wp_enqueue_style(
+				'blocksy-dashboard-styles',
+				BLOCKSY_URL . 'static/bundle/dashboard.min.css',
+				[],
+				$data['Version']
+			);
+
+			wp_enqueue_script(
+				'blocksy-admin-notifications-scripts',
+				BLOCKSY_URL . 'static/bundle/notifications.js',
+				[
+					'underscore',
+					'react',
+					'react-dom',
+					'wp-element',
+					'wp-date',
+					'wp-i18n',
+					'updates'
+				],
+				$data['Version'],
+				false
+			);
+		}
 	}
 
 	public function setup_framework_page() {

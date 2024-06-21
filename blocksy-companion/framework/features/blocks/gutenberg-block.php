@@ -14,8 +14,8 @@ class GutenbergBlock {
 		$this->name = $name;
 		$this->config = $config;
 
-		$this->uri = get_template_directory_uri() . '/static/bundle/blocks/' . $this->name;
-		$this->widget_path = get_template_directory() . '/inc/components/blocks/' . $name;
+		$this->uri = BLOCKSY_URL . '/static/bundle/blocks/' . $this->name;
+		$this->widget_path = BLOCKSY_PATH . '/framework/features/blocks/' . $name;
 
 		add_action('init', [$this, 'register_gutenberg_block']);
 		add_action('init', [$this, 'localize_data']);

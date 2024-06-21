@@ -1,13 +1,26 @@
-import { createElement, render, useState } from '@wordpress/element'
-import * as check from '@wordpress/element'
-import { __ } from 'ct-i18n'
-import cls from 'classnames'
+import {
+	createElement,
+	Component,
+	createRef,
+	useState,
+	useEffect,
+	useRef,
+} from '@wordpress/element'
+import { __, sprintf } from 'ct-i18n'
+import $ from 'jquery'
 
-const VersionMismatch = ({ className = '' }) => {
+import VersionMismatch from '../dashboard/VersionMismatch'
+
+const VersionMismatchNotice = ({ updatesUrl }) => {
+	const containerEl = useRef()
+
 	const [isLoading, setIsLoading] = useState(false)
 
 	return (
-		<div className={cls('ct-theme-required', className)}>
+		<div
+			className="ct-theme-required"
+			ref={containerEl}>
+
 			<h2>
 				<span>
 					<svg viewBox="0 0 24 24">
@@ -19,25 +32,29 @@ const VersionMismatch = ({ className = '' }) => {
 					'blocksy-companion'
 				)}
 			</h2>
-			<p>
-				{__(
-					'We detected that you are using an outdated version of Blocksy theme.',
-					'blocksy-companion'
-				)}
-			</p>
 
-			<p>
-				{__(
-					'In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme.',
-					'blocksy-companion'
-				)}
-			</p>
+			<p
+				dangerouslySetInnerHTML={{
+					__html: __(
+						'We detected that you are using an outdated version of Blocksy theme.',
+						'blocksy-companion'
+					),
+				}}
+			/>
+
+			<p
+				dangerouslySetInnerHTML={{
+					__html: __(
+						'In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme.',
+						'blocksy-companion'
+					),
+				}}
+			/>
 
 			<button
 				className="button button-primary"
 				onClick={(e) => {
 					e.preventDefault()
-					location = ctDashboardLocalizations.run_updates
 
 					setIsLoading(true)
 
@@ -59,8 +76,9 @@ const VersionMismatch = ({ className = '' }) => {
 					? __('Loading...', 'blocksy-companion')
 					: __('Update Blocksy Theme Now', 'blocksy-companion')}
 			</button>
+
 		</div>
 	)
 }
 
-export default VersionMismatch
+export default VersionMismatchNotice

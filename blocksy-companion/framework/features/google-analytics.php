@@ -10,7 +10,6 @@ class GoogleAnalytics {
 		);
 
 		add_filter('blocksy:cookies-consent:scripts-to-load', function ($data) {
-
 			$ga_3_code = $this->get_ga_3_code();
 			$ga_4_code = $this->get_ga_4_code();
 
@@ -27,18 +26,23 @@ class GoogleAnalytics {
 
 		if (is_admin()) return;
 
-		add_action('wp_print_scripts', function () {
-			if (is_admin()) return;
+		add_action(
+			'init',
+			function () {
+				add_action('wp_print_scripts', function () {
+					if (is_admin()) return;
 
-			if (class_exists('BlocksyExtensionCookiesConsent')) {
-				if (! \BlocksyExtensionCookiesConsent::has_consent()) {
-					return;
-				}
+					if (class_exists('BlocksyExtensionCookiesConsent')) {
+						if (! \BlocksyExtensionCookiesConsent::has_consent()) {
+							return;
+						}
+					}
+
+					echo $this->get_ga_3_code();
+					echo $this->get_ga_4_code();
+				});
 			}
-
-			echo $this->get_ga_3_code();
-			echo $this->get_ga_4_code();
-		});
+		);
 	}
 
 	private function get_ga_4_code() {

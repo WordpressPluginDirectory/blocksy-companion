@@ -373,7 +373,7 @@ if ($loggedin_interaction_type === 'dropdown') {
 					'class' => 'menu-item'
 				],
 
-				'link' => wp_logout_url(get_permalink()),
+				'link' => wp_logout_url(blocksy_current_url()),
 				'link_attr' => [
 					'class' => 'ct-menu-link'
 				],
