@@ -278,7 +278,7 @@ class ConditionsRulesResolver {
 				isset(get_queried_object()->taxonomy)
 			) {
 				$tax_name = get_queried_object()->taxonomy;
-								
+
 				return taxonomy_is_product_attribute($tax_name);
 			}
 		}
@@ -349,13 +349,29 @@ class ConditionsRulesResolver {
 				$rule['rule']
 			);
 
-			return is_post_type_archive($custom_post_type) || (
-				$wp_query->in_the_loop
-				&&
-				get_post_type($post) === $custom_post_type
-				&&
-				! is_singular($custom_post_type)
-			);
+			if (is_post_type_archive($custom_post_type)) {
+				return true;
+			}
+
+			if (
+				! $wp_query->in_the_loop
+				||
+				get_post_type($post) !== $custom_post_type
+			) {
+				return false;
+			}
+
+			if (! function_exists('blocksy_manager')) {
+				return false;
+			}
+
+			$manager = blocksy_manager();
+
+			if (! isset($manager->archive) || ! $manager->archive) {
+				return false;
+			}
+
+			return $manager->archive->is_doing_card_output();
 		}
 
 		if (strpos($rule['rule'], 'post_type_taxonomy_') !== false) {

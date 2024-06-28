@@ -4,14 +4,6 @@ namespace Blocksy;
 
 class Dashboard {
 	public function __construct() {
-		add_action(
-			'wp_ajax_blocksy_dismissed_blocksy_theme_version_mismatch_notice',
-			function () {
-				update_option('dismissed-blocksy_theme_version_mismatch_notice', true);
-				wp_die();
-			}
-		);
-
 		add_filter(
 			'blocksy:dashboard:redirect-after-activation',
 			function ($url) {
@@ -380,7 +372,13 @@ class Dashboard {
 
 		$blocksy_data = Plugin::instance()->is_blocksy_data;
 
-		if ($blocksy_data && $blocksy_data['is_correct_theme']) {
+		if (
+			! Plugin::instance()->check_if_blocksy_is_activated()
+			&&
+			$blocksy_data
+			&&
+			$blocksy_data['is_correct_theme']
+		) {
 			$data = get_plugin_data(BLOCKSY__FILE__);
 
 			wp_enqueue_style(

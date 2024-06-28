@@ -89,7 +89,7 @@ class TaxQuery {
 				}
 
 				$processor = new \WP_HTML_Tag_Processor($block_content);
-				
+
 				$is_grid_layout = isset($block['attrs']['layout']['type']) && $block['attrs']['layout']['type'] === 'grid';
 				$desktopColumns = isset($block['attrs']['layout']['columnCount']) ? $block['attrs']['layout']['columnCount'] : '3';
 				$tabletColumns = isset($block['attrs']['tabletColumns']) ? $block['attrs']['tabletColumns'] : '2';
@@ -135,7 +135,7 @@ class TaxQuery {
 									'grid-template-columns' => "repeat(var(--ct-grid-columns, {$desktopColumns}), minmax(0, 1fr));",
 									'--ct-grid-columns-tablet' => $tabletColumns,
 									'--ct-grid-columns-mobile' => $mobileColumns,
-								],
+								]
 							)
 						]
 					],
