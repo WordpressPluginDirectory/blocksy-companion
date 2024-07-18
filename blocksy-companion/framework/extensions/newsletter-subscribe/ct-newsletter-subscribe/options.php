@@ -84,7 +84,7 @@ $options = [
 	],
 
 	'newsletter_subscribe_height' => [
-		'label' => __( 'Input Height', 'blocksy' ),
+		'label' => __( 'Input Height', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 40,
 		'max' => 80,
@@ -95,7 +95,7 @@ $options = [
 	],
 
 	'newsletter_subscribe_gap' => [
-		'label' => __( 'Fields Gap', 'blocksy' ),
+		'label' => __( 'Fields Gap', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 0,
 		'max' => 50,

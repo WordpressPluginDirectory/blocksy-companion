@@ -149,7 +149,7 @@ export function TaxonomyItem({ taxonomy, termIds, onChange, label = false }) {
 			onChange={onTermsChange}
 			__experimentalShowHowTo={false}
 			__nextHasNoMarginBottom
-			placeholder={__('Search for a term', 'blocksy')}
+			placeholder={__('Search for a term', 'blocksy-companion')}
 		/>
 	)
 }

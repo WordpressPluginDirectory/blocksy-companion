@@ -5,9 +5,9 @@ import { __ } from 'ct-i18n'
 import classnames from 'classnames'
 
 const termLabels = {
-	'wp:term_title': __('Term Title', 'blocksy'),
-	'wp:term_description': __('Term Description', 'blocksy'),
-	'wp:term_count': __('Term Count', 'blocksy'),
+	'wp:term_title': __('Term Title', 'blocksy-companion'),
+	'wp:term_description': __('Term Description', 'blocksy-companion'),
+	'wp:term_count': __('Term Count', 'blocksy-companion'),
 }
 
 const fieldKeys = {

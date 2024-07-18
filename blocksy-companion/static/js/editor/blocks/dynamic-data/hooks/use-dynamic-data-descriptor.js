@@ -20,19 +20,19 @@ const wpFields = (args = {}) => {
 		fields = [
 			{
 				id: 'term_title',
-				label: __('Term Title', 'blocksy'),
+				label: __('Term Title', 'blocksy-companion'),
 			},
 			{
 				id: 'term_description',
-				label: __('Term Description', 'blocksy'),
+				label: __('Term Description', 'blocksy-companion'),
 			},
 			{
 				id: 'term_image',
-				label: __('Term Image', 'blocksy'),
+				label: __('Term Image', 'blocksy-companion'),
 			},
 			{
 				id: 'term_count',
-				label: __('Term Count', 'blocksy'),
+				label: __('Term Count', 'blocksy-companion'),
 			},
 		]
 	}
@@ -41,42 +41,42 @@ const wpFields = (args = {}) => {
 		fields = [
 			{
 				id: 'title',
-				label: __('Title', 'blocksy'),
+				label: __('Title', 'blocksy-companion'),
 			},
 
 			{
 				id: 'excerpt',
-				label: __('Excerpt', 'blocksy'),
+				label: __('Excerpt', 'blocksy-companion'),
 			},
 
 			{
 				id: 'date',
-				label: __('Post Date', 'blocksy'),
+				label: __('Post Date', 'blocksy-companion'),
 			},
 
 			{
 				id: 'comments',
-				label: __('Comments', 'blocksy'),
+				label: __('Comments', 'blocksy-companion'),
 			},
 
 			{
 				id: 'terms',
-				label: __('Terms', 'blocksy'),
+				label: __('Terms', 'blocksy-companion'),
 			},
 
 			{
 				id: 'author',
-				label: __('Author', 'blocksy'),
+				label: __('Author', 'blocksy-companion'),
 			},
 
 			{
 				id: 'featured_image',
-				label: __('Featured Image', 'blocksy'),
+				label: __('Featured Image', 'blocksy-companion'),
 			},
 
 			{
 				id: 'author_avatar',
-				label: __('Author Avatar', 'blocksy'),
+				label: __('Author Avatar', 'blocksy-companion'),
 			},
 		]
 	}
@@ -87,17 +87,17 @@ const wpFields = (args = {}) => {
 
 			{
 				id: 'archive_title',
-				label: __('Archive Title', 'blocksy'),
+				label: __('Archive Title', 'blocksy-companion'),
 			},
 
 			{
 				id: 'archive_description',
-				label: __('Archive Description', 'blocksy'),
+				label: __('Archive Description', 'blocksy-companion'),
 			},
 
 			{
 				id: 'archive_image',
-				label: __('Archive Image', 'blocksy'),
+				label: __('Archive Image', 'blocksy-companion'),
 			},
 		]
 	}
@@ -124,25 +124,25 @@ const wooFields = (postType, taxonomies = []) => {
 		fields: [
 			{
 				id: 'price',
-				label: __('Price', 'blocksy'),
+				label: __('Price', 'blocksy-companion'),
 			},
 			{
 				id: 'rating',
-				label: __('Rating', 'blocksy'),
+				label: __('Rating', 'blocksy-companion'),
 			},
 			{
 				id: 'stock_status',
-				label: __('Stock Status', 'blocksy'),
+				label: __('Stock Status', 'blocksy-companion'),
 			},
 			{
 				id: 'sku',
-				label: __('SKU', 'blocksy'),
+				label: __('SKU', 'blocksy-companion'),
 			},
 			...(hasBrands
 				? [
 						{
 							id: 'brands',
-							label: __('Brands', 'blocksy'),
+							label: __('Brands', 'blocksy-companion'),
 						},
 				  ]
 				: []),

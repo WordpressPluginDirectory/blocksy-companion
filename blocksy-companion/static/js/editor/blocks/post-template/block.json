@@ -21,6 +21,20 @@
 		}
 	},
 
+	"attributes": {
+		"tabletColumns": {
+			"type": "number",
+			"default": 2
+		},
+		"mobileColumns": {
+			"type": "number",
+			"default": 1
+		},
+		"verticalAlignment": {
+			"type": "string"
+		}
+	},
+
 	"usesContext": [
 		"uniqueId",
 		"post_type",

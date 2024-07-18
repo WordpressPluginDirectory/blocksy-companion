@@ -1,5 +1,26 @@
 <?php
 
+blocksy_output_responsive([
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'selector' => '.ct-trending-block-item',
+	'variableName' => 'trending-block-image-width',
+	'responsive' => true,
+	'unit' => 'px',
+	'value' => blocksy_get_theme_mod('trending_block_thumbnails_width', '60')
+]);
+
+blocksy_output_responsive([
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'selector' => '.ct-trending-block-item',
+	'variableName' => 'vertical-alignment',
+	'value' => blocksy_get_theme_mod( 'trendingItemsVerticalAlignment', 'center' ),
+	'unit' => '',
+]);
+
 blocksy_output_font_css([
 	'font_value' => blocksy_get_theme_mod( 'trendingBlockHeadingFont',
 		blocksy_typography_default_values([
@@ -40,13 +61,13 @@ blocksy_output_font_css([
 	'css' => $css,
 	'tablet_css' => $tablet_css,
 	'mobile_css' => $mobile_css,
-	'selector' => '.ct-trending-block .ct-post-title',
+	'selector' => '.ct-trending-block-item .ct-post-title',
 ]);
 
 blocksy_output_colors([
 	'value' => blocksy_get_theme_mod('trendingBlockFontColor'),
 	'default' => [
-		'default' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+		'default' => [ 'color' => 'var(--theme-text-color)' ],
 		'hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
 	],
 	'css' => $css,
@@ -54,16 +75,168 @@ blocksy_output_colors([
 	'mobile_css' => $mobile_css,
 	'variables' => [
 		'default' => [
-			'selector' => '.ct-trending-block a',
-			'variable' => 'theme-text-color'
+			'selector' => '.ct-trending-block-item .ct-post-title',
+			'variable' => 'theme-link-initial-color'
 		],
 
 		'hover' => [
-			'selector' => '.ct-trending-block a',
+			'selector' => '.ct-trending-block-item .ct-post-title',
 			'variable' => 'theme-link-hover-color'
 		],
 	],
 	'responsive' => true,
+]);
+
+
+blocksy_output_font_css([
+	'font_value' => blocksy_get_theme_mod( 'trendingBlockTaxonomyFont',
+		blocksy_typography_default_values([
+			'size' => '13px',
+			'variation' => 'n5',
+		])
+	),
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'selector' => '.ct-trending-block-item-content .entry-meta',
+]);
+
+blocksy_output_colors([
+	'value' => blocksy_get_theme_mod('trendingBlockTaxonomyFontColor'),
+	'default' => [
+		'default' => [ 'color' => 'var(--theme-text-color)' ],
+		'hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+	],
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'variables' => [
+		'default' => [
+			'selector' => '.ct-trending-block-item-content .entry-meta',
+			'variable' => 'theme-link-initial-color'
+		],
+
+		'hover' => [
+			'selector' => '.ct-trending-block-item-content .entry-meta',
+			'variable' => 'theme-link-hover-color'
+		],
+	],
+	'responsive' => true,
+]);
+
+
+
+blocksy_output_colors([
+	'value' => blocksy_get_theme_mod('trending_categories_font_colors'),
+	'default' => [
+		'default' => [ 'color' => 'var(--theme-text-color)' ],
+		'hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+	],
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'responsive' => true,
+	'variables' => [
+		'default' => [
+			'selector' => '.ct-trending-block-item-content .entry-meta',
+			'variable' => 'theme-link-initial-color'
+		],
+
+		'hover' => [
+			'selector' => '.ct-trending-block-item-content .entry-meta',
+			'variable' => 'theme-link-hover-color'
+		],
+	],
+]);
+
+blocksy_output_colors([
+	'value' => blocksy_get_theme_mod('trending_categories_button_type_font_colors'),
+	'default' => [
+		'default' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+		'hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+	],
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'responsive' => true,
+	'variables' => [
+		'default' => [
+			'selector' => '.ct-trending-block-item-content [data-type="pill"]',
+			'variable' => 'theme-button-text-initial-color'
+		],
+
+		'hover' => [
+			'selector' => '.ct-trending-block-item-content [data-type="pill"]',
+			'variable' => 'theme-button-text-hover-color'
+		],
+	],
+]);
+
+blocksy_output_colors([
+	'value' => blocksy_get_theme_mod('trending_categories_button_type_background_colors'),
+	'default' => [
+		'default' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+		'hover' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+	],
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'responsive' => true,
+	'variables' => [
+		'default' => [
+			'selector' => '.ct-trending-block-item-content [data-type="pill"]',
+			'variable' => 'theme-button-background-initial-color'
+		],
+
+		'hover' => [
+			'selector' => '.ct-trending-block-item-content [data-type="pill"]',
+			'variable' => 'theme-button-background-hover-color'
+		],
+	],
+]);
+
+
+blocksy_output_font_css([
+	'font_value' => blocksy_get_theme_mod( 'trendingBlockPriceFont',
+		blocksy_typography_default_values([
+			'size' => '13px',
+			// 'variation' => 'n5',a
+		])
+	),
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'selector' => '.ct-trending-block-item-content .price',
+]);
+
+blocksy_output_colors([
+	'value' => blocksy_get_theme_mod('trendingBlockPriceFontColor'),
+	'default' => [
+		'default' => [ 'color' => Blocksy_Css_Injector::get_skip_rule_keyword('DEFAULT') ],
+	],
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'variables' => [
+		'default' => [
+			'selector' => '.ct-trending-block-item-content .price',
+			'variable' => 'theme-text-color'
+		],
+	],
+	'responsive' => true,
+]);
+
+
+blocksy_output_spacing([
+	'css' => $css,
+	'tablet_css' => $tablet_css,
+	'mobile_css' => $mobile_css,
+	'selector' => '.ct-trending-block-item',
+	'property' => 'trending-block-image-radius',
+	'value' => blocksy_get_theme_mod(
+		'trendingBlockImageRadius',
+		blocksy_spacing_value()
+	)
 ]);
 
 blocksy_output_colors([

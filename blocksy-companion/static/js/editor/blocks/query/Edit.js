@@ -117,7 +117,7 @@ const Edit = ({
 					<ToolbarButton
 						className="components-toolbar__control"
 						icon="layout"
-						label={__('Reset layout', 'blocksy')}
+						label={__('Reset layout', 'blocksy-companion')}
 						disabled={isOnboarding}
 						onClick={() => {
 							if (hasInnerBlocks) {
@@ -166,7 +166,7 @@ const Edit = ({
 								options={{
 									post_type: {
 										type: 'ct-select',
-										label: __('Post Type', 'blocksy'),
+										label: __('Post Type', 'blocksy-companion'),
 										value: '',
 										defaultToFirstItem: false,
 										choices: postTypesSelectOptions,
@@ -175,7 +175,7 @@ const Edit = ({
 
 									limit: {
 										type: 'ct-number',
-										label: __('Limit', 'blocksy'),
+										label: __('Limit', 'blocksy-companion'),
 										value: '',
 										min: 1,
 										max: 100,
@@ -183,7 +183,7 @@ const Edit = ({
 
 									has_pagination: {
 										type: 'ct-switch',
-										label: __('Pagination', 'blocksy'),
+										label: __('Pagination', 'blocksy-companion'),
 										value: '',
 									},
 								}}
@@ -205,7 +205,7 @@ const Edit = ({
 				<TextControl
 					__nextHasNoMarginBottom
 					autoComplete="off"
-					label={__('Block ID', 'blocksy')}
+					label={__('Block ID', 'blocksy-companion')}
 					value={uniqueId}
 					onChange={(nextValue) => {}}
 					onFocus={(e) => {
@@ -213,7 +213,7 @@ const Edit = ({
 					}}
 					help={__(
 						'Please look at the documentation for more information on why this is useful.',
-						'blocksy'
+						'blocksy-companion'
 					)}
 				/>
 			</InspectorControls>

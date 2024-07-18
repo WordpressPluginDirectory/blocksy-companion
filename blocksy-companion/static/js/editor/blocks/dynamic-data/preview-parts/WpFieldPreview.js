@@ -43,11 +43,11 @@ const TextField = ({
 	let Component = null
 
 	if (fieldDescriptor.id === 'archive_title') {
-		Component = () => __('Archive Title', 'blocksy')
+		Component = () => __('Archive Title', 'blocksy-companion')
 	}
 
 	if (fieldDescriptor.id === 'archive_description') {
-		Component = () => __('Archive Description', 'blocksy')
+		Component = () => __('Archive Description', 'blocksy-companion')
 	}
 
 	if (

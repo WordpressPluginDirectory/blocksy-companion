@@ -56,18 +56,6 @@ const Edit = ({
 	}, [attributes.field, fieldsDescriptor])
 
 	useEffect(() => {
-		if (
-			attributes.field === 'wp:terms' &&
-			taxonomies &&
-			taxonomies.length === 0
-		) {
-			setAttributes({
-				field: `wp:title`,
-			})
-		}
-	}, [taxonomies, attributes.field])
-
-	useEffect(() => {
 		if (attributes.field === 'wp:title' && taxonomy) {
 			setAttributes({
 				field: 'wp:term_title',

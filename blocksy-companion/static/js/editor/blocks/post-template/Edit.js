@@ -13,27 +13,21 @@ import { list, grid } from '@wordpress/icons'
 import classnames from 'classnames'
 
 import { useSelect } from '@wordpress/data'
-
-import { TextControl } from '@wordpress/components'
-import { Spinner, ToolbarGroup } from '@wordpress/components'
+import { PanelBody, Spinner, ToolbarGroup } from '@wordpress/components'
 
 import {
 	InspectorControls,
-	withColors,
 	useInnerBlocksProps,
 	BlockControls,
 	BlockContextProvider,
 	__experimentalUseBlockPreview as useBlockPreview,
 	useBlockProps,
 	store as blockEditorStore,
+	BlockVerticalAlignmentToolbar,
 } from '@wordpress/block-editor'
-import ColorsPanel from '../../components/ColorsPanel'
-
-import { OptionsPanel } from 'blocksy-options'
-
-import { PanelBody } from '@wordpress/components'
 
 import { usePostsBlockData } from '../query/hooks/use-posts-block-data'
+import RangeControl from '../../components/RangeControl'
 
 const TEMPLATE = [
 	// ['core/post-title'],
@@ -92,7 +86,7 @@ const Edit = ({
 	className,
 
 	attributes,
-	attributes: { layout },
+	attributes: { layout, verticalAlignment },
 
 	setAttributes,
 
@@ -104,20 +98,37 @@ const Edit = ({
 	const [activeBlockContextId, setActiveBlockContextId] = useState()
 
 	const { type: layoutType, columnCount = 3 } = layout || {}
+	const isGridLayout = layoutType === 'grid'
+	const isManualMode = columnCount !== null
 
 	const blockProps = useBlockProps({
 		className: classnames(__unstableLayoutClassNames, {
-			// Ensure column count is flagged via classname for backwards compatibility.
-			[`columns-${columnCount}`]: layoutType === 'grid' && columnCount,
+			'ct-query-template-grid': isGridLayout,
+			'ct-query-template-list': !isGridLayout,
 		}),
-	})
+		style: isGridLayout
+			? {
+					...(isManualMode
+						? {
+								'grid-template-columns': `repeat(var(--ct-grid-columns, ${columnCount}), minmax(0, 1fr))`,
+								'--ct-grid-columns-tablet': `${attributes.tabletColumns}`,
+								'--ct-grid-columns-mobile': `${attributes.mobileColumns}`,
+						  }
+						: {}),
 
-	const innerBlocksProps = useInnerBlocksProps(
-		{},
-		{
-			// template: TEMPLATE,
-		}
-	)
+					...(verticalAlignment
+						? {
+								'align-items':
+									verticalAlignment === 'top'
+										? 'flex-start'
+										: verticalAlignment === 'bottom'
+										? 'flex-end'
+										: 'center',
+						  }
+						: {}),
+			  }
+			: {},
+	})
 
 	const { blockData } = usePostsBlockData({
 		attributes: context,
@@ -168,7 +179,7 @@ const Edit = ({
 					type: 'grid',
 					columnCount,
 				}),
-			isActive: layoutType === 'grid',
+			isActive: isGridLayout,
 		},
 	]
 
@@ -176,7 +187,57 @@ const Edit = ({
 		<>
 			<BlockControls>
 				<ToolbarGroup controls={displayLayoutControls} />
+
+				{isGridLayout ? (
+					<BlockVerticalAlignmentToolbar
+						onChange={(newVerticalAlignment) => {
+							setAttributes({
+								verticalAlignment: newVerticalAlignment,
+							})
+						}}
+						value={verticalAlignment}
+					/>
+				) : null}
 			</BlockControls>
+
+			<InspectorControls>
+				{isGridLayout && isManualMode ? (
+					<>
+						<PanelBody>
+							<RangeControl
+								attributes={attributes}
+								label={__(
+									'Tablet Columns',
+									'blocksy-companion'
+								)}
+								onChange={(columns) =>
+									setAttributes({
+										tabletColumns: columns,
+									})
+								}
+								initialPosition={attributes?.tabletColumns}
+								value={attributes?.tabletColumns}
+							/>
+						</PanelBody>
+						<PanelBody>
+							<RangeControl
+								attributes={attributes}
+								label={__(
+									'Mobile Columns',
+									'blocksy-companion'
+								)}
+								onChange={(columns) =>
+									setAttributes({
+										mobileColumns: columns,
+									})
+								}
+								initialPosition={attributes?.mobileColumns}
+								value={attributes?.mobileColumns}
+							/>
+						</PanelBody>
+					</>
+				) : null}
+			</InspectorControls>
 
 			<div {...blockProps}>
 				{blockContexts.map((blockContext) => (

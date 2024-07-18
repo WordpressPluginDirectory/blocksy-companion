@@ -11,7 +11,7 @@ export default function HeadingLevelDropdown({ tagName, onChange }) {
 				className: 'block-library-heading-level-dropdown',
 			}}
 			icon={<TagNameIcon level={tagName} />}
-			label={__('Change heading level', 'blocksy')}
+			label={__('Change heading level', 'blocksy-companion')}
 			controls={[
 				'h1',
 				'h2',
@@ -35,15 +35,15 @@ export default function HeadingLevelDropdown({ tagName, onChange }) {
 						),
 						label: targetTagName,
 						title: {
-							h1: __('Heading 1', 'blocksy'),
-							h2: __('Heading 2', 'blocksy'),
-							h3: __('Heading 3', 'blocksy'),
-							h4: __('Heading 4', 'blocksy'),
-							h5: __('Heading 5', 'blocksy'),
-							h6: __('Heading 6', 'blocksy'),
-							p: __('Paragraph', 'blocksy'),
-							span: __('Span', 'blocksy'),
-							div: __('Div', 'blocksy'),
+							h1: __('Heading 1', 'blocksy-companion'),
+							h2: __('Heading 2', 'blocksy-companion'),
+							h3: __('Heading 3', 'blocksy-companion'),
+							h4: __('Heading 4', 'blocksy-companion'),
+							h5: __('Heading 5', 'blocksy-companion'),
+							h6: __('Heading 6', 'blocksy-companion'),
+							p: __('Paragraph', 'blocksy-companion'),
+							span: __('Span', 'blocksy-companion'),
+							div: __('Div', 'blocksy-companion'),
 						}[targetTagName],
 						isActive,
 						onClick() {

@@ -9,8 +9,8 @@ import metadata from './block.json'
 
 registerBlockType('blocksy/query', {
 	...metadata,
-	title: __('Advanced Posts', 'blocksy'),
-	description: __('Advanced Posts', 'blocksy'),
+	title: __('Advanced Posts', 'blocksy-companion'),
+	description: __('Advanced Posts', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg

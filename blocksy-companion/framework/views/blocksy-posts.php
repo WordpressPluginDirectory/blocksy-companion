@@ -17,7 +17,8 @@ $query_args = [
 	'orderby' => $args['orderby'],
 	'posts_per_page' => $args['limit'],
 	'ignore_sticky_posts' => $args['ignore_sticky_posts'] === 'yes',
-	'post_status' => 'publish'
+	'post_status' => 'publish',
+	'blocksy_posts_shortcode' => true
 ];
 
 if (! empty($args['meta_value'])) {
@@ -229,7 +230,6 @@ if ($args['view'] === 'slider') {
 	$wp_query = $previous_query;
 
 	wp_reset_postdata();
-
 
 	echo '</div>';
 }

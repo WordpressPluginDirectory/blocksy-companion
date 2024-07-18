@@ -1,7 +1,7 @@
 <?php
 
 $pattern = [
-	'title'      => __( 'Posts - Layout 2', 'blocksy' ),
+	'title'      => __( 'Posts - Layout 2', 'blocksy-companion' ),
 	'categories' => ['blocksy'],
 	'blockTypes' => ['blocksy/query'],
 

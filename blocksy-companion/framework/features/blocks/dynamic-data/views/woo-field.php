@@ -22,8 +22,8 @@ if ($field === 'woo:price') {
 
 if ($field === 'woo:stock_status') {
 	$value = $product->get_stock_status() === 'instock' ?
-			__('In Stock', 'blocksy') :
-			__('Out of Stock', 'blocksy');
+			__('In Stock', 'blocksy-companion') :
+			__('Out of Stock', 'blocksy-companion');
 }
 
 if ($field === 'woo:sku') {

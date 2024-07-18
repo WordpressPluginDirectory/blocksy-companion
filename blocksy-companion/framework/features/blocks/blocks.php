@@ -19,7 +19,7 @@ class Blocks {
 			'label' => _x(
 				'Blocksy',
 				'Block pattern category',
-				'blocksy'
+				'blocksy-companion'
 			),
 			'description' => __(
 				'Patterns that contain buttons and call to actions.',

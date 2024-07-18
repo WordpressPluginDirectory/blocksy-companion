@@ -93,7 +93,7 @@ const Edit = ({
 			/>
 			<InspectorControls group="styles">
 				<ColorsPanel
-					label={__('Text Color', 'blocksy')}
+					label={__('Text Color', 'blocksy-companion')}
 					resetAll={() => {
 						setTextColor(colors.textColor)
 						setTextInitialColor(colors.textInitialColor)
@@ -104,14 +104,14 @@ const Edit = ({
 						{
 							colorValue: textColor.color,
 							enableAlpha: true,
-							label: __('Text', 'blocksy'),
+							label: __('Text', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setTextColor(value || colors.textColor),
 						},
 						{
 							colorValue: textInitialColor.color,
 							enableAlpha: true,
-							label: __('Link Initial', 'blocksy'),
+							label: __('Link Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setTextInitialColor(
 									value || colors.textInitialColor
@@ -120,7 +120,7 @@ const Edit = ({
 						{
 							colorValue: textHoverColor.color,
 							enableAlpha: true,
-							label: __('Link Hover', 'blocksy'),
+							label: __('Link Hover', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setTextHoverColor(
 									value || colors.textHoverColor
@@ -130,7 +130,7 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Icons Color', 'blocksy')}
+					label={__('Icons Color', 'blocksy-companion')}
 					resetAll={() => {
 						setIconsColor(colors.iconsColor)
 						setIconsHoverColor(colors.iconsHoverColor)
@@ -140,14 +140,14 @@ const Edit = ({
 						{
 							colorValue: iconsColor.color,
 							enableAlpha: true,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setIconsColor(value || colors.iconsColor),
 						},
 						{
 							colorValue: iconsHoverColor.color,
 							enableAlpha: true,
-							label: __('Hover', 'blocksy'),
+							label: __('Hover', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setIconsHoverColor(
 									value || colors.iconsHoverColor
@@ -159,7 +159,7 @@ const Edit = ({
 				{contacts_icon_shape !== 'simple' &&
 					(contacts_icon_fill_type === 'solid' ? (
 						<ColorsPanel
-							label={__('Icons Background Color', 'blocksy')}
+							label={__('Icons Background Color', 'blocksy-companion')}
 							resetAll={() => {
 								setBackgroundColor(colors.backgroundColor)
 								setBackgroundHoverColor(
@@ -171,7 +171,7 @@ const Edit = ({
 								{
 									colorValue: backgroundColor.color,
 									enableAlpha: true,
-									label: __('Initial', 'blocksy'),
+									label: __('Initial', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setBackgroundColor(
 											value || colors.backgroundColor
@@ -180,7 +180,7 @@ const Edit = ({
 								{
 									colorValue: backgroundHoverColor.color,
 									enableAlpha: true,
-									label: __('Hover', 'blocksy'),
+									label: __('Hover', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setBackgroundHoverColor(
 											value || colors.backgroundHoverColor
@@ -190,7 +190,7 @@ const Edit = ({
 						/>
 					) : (
 						<ColorsPanel
-							label={__('Icons Border Color', 'blocksy')}
+							label={__('Icons Border Color', 'blocksy-companion')}
 							resetAll={() => {
 								setBorderColor(colors.borderColor)
 								setBorderHoverColor(colors.borderHoverColor)
@@ -200,7 +200,7 @@ const Edit = ({
 								{
 									colorValue: borderColor.color,
 									enableAlpha: true,
-									label: __('Initial', 'blocksy'),
+									label: __('Initial', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setBorderColor(
 											value || colors.borderColor
@@ -209,7 +209,7 @@ const Edit = ({
 								{
 									colorValue: borderHoverColor.color,
 									enableAlpha: true,
-									label: __('Hover', 'blocksy'),
+									label: __('Hover', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setBorderHoverColor(
 											value || colors.borderHoverColor

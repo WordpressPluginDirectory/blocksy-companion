@@ -199,9 +199,9 @@ if ($field === 'wp:date') {
 
 if ($field === 'wp:comments') {
 	$value = get_comments_number_text(
-		blocksy_akg('zero_text', $attributes, __('No comments', 'blocksy')),
-		blocksy_akg('single_text', $attributes, __('One comment', 'blocksy')),
-		blocksy_akg('multiple_text', $attributes, __('% comments', 'blocksy'))
+		blocksy_akg('zero_text', $attributes, __('No comments', 'blocksy-companion')),
+		blocksy_akg('single_text', $attributes, __('One comment', 'blocksy-companion')),
+		blocksy_akg('multiple_text', $attributes, __('% comments', 'blocksy-companion'))
 	);
 
 	if (blocksy_akg('has_field_link', $attributes, 'no') === 'yes') {

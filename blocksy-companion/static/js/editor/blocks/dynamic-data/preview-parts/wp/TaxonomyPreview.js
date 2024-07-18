@@ -37,12 +37,15 @@ const TaxonomyPreview = ({
 		}
 	})
 
+	const taxonomyName =
+		taxonomies.find((t) => t.slug === req_taxonomy)?.name || 'Category'
+
 	if (!postId) {
-		return `Taxonomy: ${fieldsDescriptor.label}`
+		return `${taxonomyName}`
 	}
 
 	if (terms.length === 0) {
-		return fallback
+		return fallback || `${taxonomyName}`
 	}
 
 	let TagName = 'span'

@@ -37,7 +37,7 @@ addFilter(
 
 registerBlockType('blocksy/widgets-wrapper', {
 	apiVersion: 3,
-	title: __('Widgets Wrapper', 'blocksy'),
+	title: __('Widgets Wrapper', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg
@@ -55,7 +55,7 @@ registerBlockType('blocksy/widgets-wrapper', {
 	attributes: {
 		heading: {
 			type: 'string',
-			default: __('Socials', 'blocksy'),
+			default: __('Socials', 'blocksy-companion'),
 		},
 		block: {
 			type: 'string',

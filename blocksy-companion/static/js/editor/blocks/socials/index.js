@@ -12,7 +12,7 @@ export const defaultAttributes = getAttributesFromOptions(options)
 
 registerBlockType('blocksy/socials', {
 	apiVersion: 3,
-	title: __('Socials Controls', 'blocksy'),
+	title: __('Socials Controls', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg
@@ -41,9 +41,9 @@ registerBlockType('blocksy/socials', {
 
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-socials',
-	title: __('Socials', 'blocksy'),
+	title: __('Socials', 'blocksy-companion'),
 	attributes: {
-		heading: __('Socials', 'blocksy'),
+		heading: __('Socials', 'blocksy-companion'),
 		block: 'blocksy/socials',
 	},
 	isActive: (attributes) => attributes.block === 'blocksy/socials',

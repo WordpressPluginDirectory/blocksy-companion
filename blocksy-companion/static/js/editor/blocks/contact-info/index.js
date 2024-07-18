@@ -12,7 +12,7 @@ export const defaultAttributes = getAttributesFromOptions(options)
 
 registerBlockType('blocksy/contact-info', {
 	apiVersion: 3,
-	title: __('Contact Info Controls', 'blocksy'),
+	title: __('Contact Info Controls', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg
@@ -48,9 +48,9 @@ registerBlockType('blocksy/contact-info', {
 
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-contact-info',
-	title: __('Contact Info', 'blocksy'),
+	title: __('Contact Info', 'blocksy-companion'),
 	attributes: {
-		heading: __('Contact Info', 'blocksy'),
+		heading: __('Contact Info', 'blocksy-companion'),
 		block: 'blocksy/contact-info',
 		hasDescription: true,
 		description: defaultAttributes?.contact_text?.default || '',

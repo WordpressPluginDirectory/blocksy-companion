@@ -5,12 +5,7 @@ import { list, grid, desktop } from '@wordpress/icons'
 
 import classnames from 'classnames'
 import { useSelect } from '@wordpress/data'
-import {
-	Spinner,
-	ToolbarGroup,
-	PanelBody,
-	RangeControl,
-} from '@wordpress/components'
+import { Spinner, ToolbarGroup, PanelBody } from '@wordpress/components'
 
 import {
 	useInnerBlocksProps,
@@ -24,6 +19,7 @@ import {
 } from '@wordpress/block-editor'
 
 import { useTaxBlockData } from '../tax-query/hooks/use-tax-block-data'
+import RangeControl from '../../components/RangeControl'
 
 const TEMPLATE = []
 
@@ -190,7 +186,7 @@ const Edit = ({
 					<>
 						<PanelBody>
 							<RangeControl
-								__nextHasNoMarginBottom
+								attributes={attributes}
 								label={__(
 									'Tablet Columns',
 									'blocksy-companion'
@@ -200,15 +196,13 @@ const Edit = ({
 										tabletColumns: columns,
 									})
 								}
-								min={1}
-								max={6}
 								initialPosition={attributes?.tabletColumns}
 								value={attributes?.tabletColumns}
 							/>
 						</PanelBody>
 						<PanelBody>
 							<RangeControl
-								__nextHasNoMarginBottom
+								attributes={attributes}
 								label={__(
 									'Mobile Columns',
 									'blocksy-companion'
@@ -218,8 +212,6 @@ const Edit = ({
 										mobileColumns: columns,
 									})
 								}
-								min={1}
-								max={6}
 								initialPosition={attributes?.mobileColumns}
 								value={attributes?.mobileColumns}
 							/>

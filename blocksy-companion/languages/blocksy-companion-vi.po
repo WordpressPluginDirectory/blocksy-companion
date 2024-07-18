@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-06-16 04:14:51+0000\n"
+"PO-Revision-Date: 2024-07-17 09:46:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -755,7 +755,7 @@ msgstr "Mẫu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:315
 msgid "Display Variations Inline"
-msgstr "Hiển thị biến thể Nội dòng"
+msgstr "Hiển thị biến thể nội tuyến"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:81,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:501,
@@ -1403,7 +1403,7 @@ msgstr "Cập nhật tự động số lượng"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:70
 msgid "Image AffiliateLink"
-msgstr "Li��n kết hình ảnh Affiliate"
+msgstr "Liên kết hình ảnh Affiliate"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:57,
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:90
@@ -1748,12 +1748,12 @@ msgstr "Điều kiện hiển thị mẫu"
 #: framework/premium/features/content-blocks/options/archive.php:147,
 #: framework/premium/features/content-blocks/options/single.php:79
 msgid "Right Sidebar"
-msgstr "Thanh bên phải"
+msgstr "Thanh bên bên phải"
 
 #: framework/premium/features/content-blocks/options/archive.php:142,
 #: framework/premium/features/content-blocks/options/single.php:74
 msgid "Left Sidebar"
-msgstr "Thanh bên trái"
+msgstr "Thanh bên bên trái"
 
 #: framework/premium/features/content-blocks/options/archive.php:17
 msgid "Add Replace Condition"
@@ -1842,7 +1842,7 @@ msgstr "Đăng xuất"
 #: framework/features/header/items/account/views/login.php:163,
 #: framework/features/header/items/account/views/login.php:279
 msgid "Edit Profile"
-msgstr "Chỉnh sửa hồ sơ"
+msgstr "Sửa hồ sơ"
 
 #: framework/features/header/items/account/options.php:15
 msgid "User Avatar"
@@ -1864,7 +1864,7 @@ msgstr "Kết Nối Trước Font Adobe Typekit"
 
 #: framework/premium/features/performance-typography/feature.php:116
 msgid "Preconnect Google Fonts"
-msgstr "Kết Nối Trước Font Google"
+msgstr "Kết nối trước Google Fonts"
 
 #: framework/premium/features/media-video/options.php:113
 msgid "Display a minimalistic view of the video player."
@@ -2918,7 +2918,7 @@ msgstr "Trước các hành động mục vòng lặp cửa hàng"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:226
 msgid "After breadcrumbs"
-msgstr "Sau breadcrumbs"
+msgstr "Sau đường dẫn trang"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:218
 msgid "After description"
@@ -2926,7 +2926,7 @@ msgstr "Sau mô tả"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:178
 msgid "Before breadcrumbs"
-msgstr "Trước breadcrumbs"
+msgstr "Trước đường dẫn trang"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:170
 msgid "Before description"
@@ -2997,7 +2997,7 @@ msgstr "Nhãn trắng"
 #: framework/helpers/exts.php:142
 msgctxt "Extension Brand Name"
 msgid "Multiple Sidebars"
-msgstr "Nhiều Thanh bên"
+msgstr "Nhiều thanh bên"
 
 #: framework/premium/extensions/shortcuts/customizer.php:305
 msgid "Custom class"
@@ -3046,7 +3046,7 @@ msgstr "Fonts tuỳ chỉnh"
 #: framework/premium/extensions/code-snippets/extension.php:114
 msgctxt "Extension Brand Name"
 msgid "Custom Code Snippets"
-msgstr "Tuỳ chỉnh Code Snippets"
+msgstr "Đoạn mã tùy chỉnh"
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:7
@@ -3331,7 +3331,7 @@ msgstr "Người dùng"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:74
 msgid "resetting widgets"
-msgstr "đặt lại các widget"
+msgstr "đặt lại các tiện ích"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:70
 msgid "resetting customizer options"
@@ -3508,7 +3508,7 @@ msgstr "Sao chép từ giao diện con"
 
 #: static/js/options/CustomizerOptionsManager.js:308
 msgid "Copy From Parent Theme"
-msgstr "Sao chép từ giao diện mẹ"
+msgstr "Sao chép từ giao diện chính"
 
 #: static/js/options/CustomizerOptionsManager.js:252
 msgid "Copy and import your customizations from parent or child theme."
@@ -3867,7 +3867,7 @@ msgstr "Bạn có thể chèn liên kết tới hình ảnh tự lưu trữ ho�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:760
 msgid "Choose File"
-msgstr "Chọn tệp"
+msgstr "Chọn tệp tin"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:670
 msgid "Plugin Thumbnail URL"
@@ -3887,7 +3887,7 @@ msgstr "Bạn có thể chèn liên kết tới hình ảnh tự lưu trữ ho�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:494
 msgid "Gutenberg Options Panel Icon URL"
-msgstr "URL biểu tượng bảng điều khiển tùy ch��n Gutenberg"
+msgstr "URL biểu tượng bảng điều khiển tùy chọn Gutenberg"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:485
 msgid "You can insert the link to a self hosted image or upload one. The recommended image size is 18px wide by 18px tall."
@@ -3943,7 +3943,7 @@ msgstr "Tên thanh bên"
 
 #: framework/premium/extensions/sidebars/static/js/main.js:53
 msgid "Enter a name in the input below and hit the Create Sidebar button."
-msgstr "Nhập tên vào ô dưới đây và nhấn nút Tạo thanh bên."
+msgstr "Nhập tên vào ô dưới đây và nhấn nút tạo thanh bên."
 
 #: framework/premium/extensions/sidebars/static/js/SettingsManager.js:73
 msgid "Add one or more conditions in order to display your sidebar."
@@ -4108,7 +4108,7 @@ msgstr "Đang tải..."
 
 #: framework/premium/features/premium-header/items/widget-area-1/config.php:4
 msgid "Widget Area"
-msgstr "Khu vực Widget"
+msgstr "Khu vực tiện ích"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:848
 msgid "Dropdown Background"
@@ -5196,11 +5196,11 @@ msgstr "Sau Giỏ hàng nhỏ"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:823
 msgid "Widget Shopping Cart After Buttons"
-msgstr "Widget Giỏ hàng Sau các Nút"
+msgstr "Tiện ích giỏ hàng sau các nút"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:818
 msgid "Widget Shopping Cart Before Buttons"
-msgstr "Widget Giỏ hàng Trước các Nút"
+msgstr "Tiện ích giỏ hàng trước các nút"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:813
 msgid "Mini Cart Contents"
@@ -5551,7 +5551,7 @@ msgstr "Thanh bên động"
 #: framework/premium/features/content-blocks/hooks-manager.php:138,
 #: framework/premium/features/content-blocks/hooks-manager.php:146
 msgid "All widget areas"
-msgstr "Tất cả khu vực widget"
+msgstr "Tất cả khu vực tiện ích"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:130
 msgid "Dynamic sidebar before"
@@ -5705,23 +5705,23 @@ msgstr "Văn bản ban đầu"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:579
 msgid "Widgets Font Color"
-msgstr "Màu Phông chữ Widget"
+msgstr "Màu phông chữ tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:571
 msgid "Widgets Font"
-msgstr "Màu Phông chữ Widget"
+msgstr "Màu phông chữ tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:553
 msgid "Widgets Vertical Spacing"
-msgstr "Khoảng cách Dọc Widget"
+msgstr "Khoảng cách dọc tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:509
 msgid "Widgets"
-msgstr "Các widget"
+msgstr "Các tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:505
 msgid "Filter Widgets"
-msgstr "Lọc Widget"
+msgstr "Lọc tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/helpers.php:40,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:258
@@ -5822,7 +5822,7 @@ msgstr "Thay thế thương hiệu Blocksy bằng thương hiệu của bạn. D
 
 #: framework/premium/extensions/sidebars/form.php:20
 msgid "Available Sidebars/Widget Areas"
-msgstr "Thanh bên/ Khu vực widget khả dụng"
+msgstr "Thanh bên/ Khu vực tiện ích khả dụng"
 
 #: framework/premium/extensions/sidebars/form.php:16
 #: framework/premium/extensions/sidebars/static/js/main.js:66
@@ -5836,7 +5836,7 @@ msgstr "Để tạo một vùng tiện ích/thanh bên mới, chỉ cần nhập
 #: framework/premium/extensions/sidebars/form.php:3
 #: framework/premium/extensions/sidebars/static/js/main.js:50
 msgid "Create Sidebar/Widget Area"
-msgstr "Tạo Thanh bên/Khu vực widget"
+msgstr "Tạo Thanh bên/Khu vực tiện ích"
 
 #: framework/helpers/exts.php:147
 msgid "Create New Sidebar"
@@ -5844,7 +5844,7 @@ msgstr "Tạo Thanh bên mới"
 
 #: framework/helpers/exts.php:143
 msgid "Create unlimited personalized sets of widget areas and display them on any page or post using our conditional logic functionality."
-msgstr "Tạo không giới hạn các bộ khu vực widget cá nhân hóa và hiển thị chúng trên bất kỳ trang hoặc bài đăng nào bằng cách sử dụng chức năng logic có điều kiện của chúng tôi."
+msgstr "Tạo không giới hạn các bộ khu vực tiện ích cá nhân hóa và hiển thị chúng trên bất kỳ trang hoặc bài đăng nào bằng cách sử dụng chức năng logic có điều kiện của chúng tôi."
 
 #: framework/premium/extensions/shortcuts/customizer.php:1124,
 #: framework/features/header/items/account/options.php:1943,
@@ -7380,7 +7380,7 @@ msgstr "Form Subscribe"
 
 #: framework/extensions/newsletter-subscribe/config.php:6
 msgid "Easily capture new leads for your newsletter with the help of a widget, shortcode or even a block inserted on your pages or posts."
-msgstr "Dễ dàng thu thập lead mới cho bản tin của bạn với sự giúp đỡ của một widget, Mã ngắn hoặc thậm chí một khối được chèn vào trang hoặc bài đăng của bạn."
+msgstr "Dễ dàng tạo khách hàng tiềm năng mới cho bản tin của bạn với sự giúp đỡ của một tiện ích, Mã ngắn hoặc thậm chí một khối được chèn vào trang hoặc bài đăng của bạn."
 
 #: framework/extensions/cookies-consent/helpers.php:64
 msgid "I accept the %sPrivacy Policy%s"
@@ -7848,11 +7848,11 @@ msgstr "Google Analytics v4"
 #: framework/premium/features/premium-header/items/language-switcher/options.php:32
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:252
 msgid "Inline"
-msgstr "Nội dòng"
+msgstr "Nội tuyến"
 
 #: framework/features/dynamic-css.php:54
 msgid "File"
-msgstr "File"
+msgstr "Tệp tin"
 
 #: framework/features/dynamic-css.php:52
 msgid "The strategy of outputting the dynamic CSS. File - all the CSS code will be placed in a static file, otherwise it will be placed inline in head."

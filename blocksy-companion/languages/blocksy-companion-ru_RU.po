@@ -1722,7 +1722,7 @@ msgstr "Условия отображения модального окна"
 
 #: framework/premium/features/content-blocks/options/maintenance.php:16
 msgid "Add one or more conditions to display the Maintenance block."
-msgstr "Добавление одного или нескольких условий для отображения блока техобслуживания."
+msgstr "Добавление одного или нескольких условий для отображения блока техоб��луживания."
 
 #: framework/premium/features/content-blocks/options/maintenance.php:15
 msgid "Maintenance Block Display Conditions"
@@ -2398,7 +2398,7 @@ msgstr "Отображение приблизительного времени �
 
 #: framework/helpers/exts.php:32
 msgid "Add a dark colour scheme and switch to your website, which will make it pleasant to look at in low light environments."
-msgstr "Добавление тёмной цветовой гаммы и переключение сайта в комфортный для просмотра при слабом осве��ении режим."
+msgstr "Добавление тёмной цветовой гаммы и переключение сайта в комфортный для просмотра при слабом освещении режим."
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/helpers/exts.php:31
@@ -2806,7 +2806,7 @@ msgstr "Значки темы"
 
 #: framework/premium/static/js/hooks/CreateHook.js:86
 msgid "Custom Template"
-msgstr "Произвольный шаблон"
+msgstr "Произвольный ш��блон"
 
 #: framework/premium/features/content-blocks/admin-ui.php:240
 #: framework/premium/static/js/hooks/CreateHook.js:77
@@ -6016,7 +6016,7 @@ msgstr "Легко превратите свой сайт в адаптиров�
 
 #: framework/helpers/exts.php:85
 msgid "Enables support for Custom Fields inside archive cards and single page post title, adds a reading progress bar for your posts and lets you set featured images and colors for your categories archives."
-msgstr "Включает поддержку настраиваемых полей внутри карточек архива и заголов��а отельной страницы записи, добавляет индикатор прогресса чтения для записей и позволяет устанавливать изображения и цвета для архивов кат��горий."
+msgstr "Включает поддержку настраиваемых полей внутри карточек архива и заголовка отельной страницы записи, добавляет индикатор прогресса чтения для записей и позволяет устанавливать изображения и цвета для архивов кат��горий."
 
 #: framework/premium/extensions/mega-menu/options.php:825,
 #: framework/features/header/items/account/options.php:1295,
@@ -6739,7 +6739,7 @@ msgstr "Читайте далее"
 
 #: framework/extensions/product-reviews/metabox.php:148
 msgid "Read More Button Label"
-msgstr "Ярлык кнопки «Читать далее»"
+msgstr "Ярлык кнопки «Читат�� далее»"
 
 #: framework/extensions/product-reviews/metabox.php:126
 msgid "Sponsored Attribute"
@@ -6747,7 +6747,7 @@ msgstr "Рекламный атрибут"
 
 #: framework/extensions/product-reviews/metabox.php:120
 msgid "Open Link In New Tab"
-msgstr "Открывать в новой вкладке"
+msgstr "Открывать в новой ��кладке"
 
 #: framework/extensions/product-reviews/metabox.php:114
 msgid "Affiliate Link"
@@ -7386,7 +7386,7 @@ msgstr "Форма подписки"
 
 #: framework/extensions/newsletter-subscribe/config.php:6
 msgid "Easily capture new leads for your newsletter with the help of a widget, shortcode or even a block inserted on your pages or posts."
-msgstr "Легко собирайте контакты новых потенциальных клиентов для своей рассылки с помощью виджета, шорткода или даже блока, вставленного в ваши страницы или записи."
+msgstr "Легко собирайте контакты новых потенциальных клиентов для своей рассылки с помощью виджета, шорткод�� или даже блока, вставленного в ваши страницы или записи."
 
 #: framework/extensions/cookies-consent/helpers.php:64
 msgid "I accept the %sPrivacy Policy%s"
@@ -7870,7 +7870,7 @@ msgstr "Динамический вывод CSS"
 
 #: framework/features/demo-install.php:274
 msgid "Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so."
-msgstr "Ваша установка PHP не поддерживает XML. Уст��новите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь возможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
+msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь возможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
 
 #: framework/features/conditions-manager.php:256
 msgid "Language"

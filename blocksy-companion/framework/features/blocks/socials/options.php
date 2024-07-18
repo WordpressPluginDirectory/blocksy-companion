@@ -11,19 +11,19 @@
 $options = [
 	'title' => [
 		'type' => 'hidden',
-		'label' => __('Title', 'blocksy'),
-		'value' => __('Social Icons', 'blocksy'),
+		'label' => __('Title', 'blocksy-companion'),
+		'value' => __('Social Icons', 'blocksy-companion'),
 	],
 
 	'socials' => [
-		'label' => __('Social Channels', 'blocksy'),
+		'label' => __('Social Channels', 'blocksy-companion'),
 		'type' => 'ct-layers',
 		'manageable' => true,
 		'desc' => blocksy_safe_sprintf(
 			// translators: placeholder here means the actual URL.
 			__(
 				'Configure the social links in Customizer ➝ General ➝ %sSocial Network Accounts%s.',
-				'blocksy'
+				'blocksy-companion'
 			),
 			blocksy_safe_sprintf(
 				'<a href="%s" data-trigger-section="general:social_section_options" target="_blank">',
@@ -59,19 +59,19 @@ $options = [
 
 	'link_target' => [
 		'type' => 'ct-switch',
-		'label' => __('Open links in new tab', 'blocksy'),
+		'label' => __('Open links in new tab', 'blocksy-companion'),
 		'value' => 'no',
 		'divider' => 'top:full',
 	],
 
 	'link_nofollow' => [
 		'type' => 'ct-switch',
-		'label' => __('Set links to nofollow', 'blocksy'),
+		'label' => __('Set links to nofollow', 'blocksy-companion'),
 		'value' => 'no',
 	],
 
 	'social_icons_size' => [
-		'label' => __( 'Icons Size', 'blocksy' ),
+		'label' => __( 'Icons Size', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -81,7 +81,7 @@ $options = [
 	],
 
 	'items_spacing' => [
-		'label' => __( 'Icons Spacing', 'blocksy' ),
+		'label' => __( 'Icons Spacing', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -90,28 +90,28 @@ $options = [
 	],
 
 	'social_icons_color' => [
-		'label' => __('Icons Color', 'blocksy'),
+		'label' => __('Icons Color', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'default',
 		'view' => 'text',
 		'divider' => 'top:full',
 		'setting' => ['transport' => 'postMessage'],
 		'choices' => [
-			'default' => __('Custom', 'blocksy'),
-			'official' => __('Official', 'blocksy'),
+			'default' => __('Custom', 'blocksy-companion'),
+			'official' => __('Official', 'blocksy-companion'),
 		],
 	],
 
 	'social_type' => [
-		'label' => __('Icons Shape Type', 'blocksy'),
+		'label' => __('Icons Shape Type', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'simple',
 		'view' => 'text',
 		'setting' => ['transport' => 'postMessage'],
 		'choices' => [
-			'simple' => __('None', 'blocksy'),
-			'rounded' => __('Rounded', 'blocksy'),
-			'square' => __('Square', 'blocksy'),
+			'simple' => __('None', 'blocksy-companion'),
+			'rounded' => __('Rounded', 'blocksy-companion'),
+			'square' => __('Square', 'blocksy-companion'),
 		],
 	],
 
@@ -120,14 +120,14 @@ $options = [
 		'condition' => ['social_type' => '!simple'],
 		'options' => [
 			'social_icons_fill' => [
-				'label' => __('Shape Fill Type', 'blocksy'),
+				'label' => __('Shape Fill Type', 'blocksy-companion'),
 				'type' => 'ct-radio',
 				'value' => 'outline',
 				'view' => 'text',
 				'setting' => ['transport' => 'postMessage'],
 				'choices' => [
-					'outline' => __('Outline', 'blocksy'),
-					'solid' => __('Solid', 'blocksy'),
+					'outline' => __('Outline', 'blocksy-companion'),
+					'solid' => __('Solid', 'blocksy-companion'),
 				],
 			],
 		],

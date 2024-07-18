@@ -120,7 +120,7 @@ const Edit = ({
 					<ToolbarButton
 						className="components-toolbar__control"
 						icon="layout"
-						label={__('Reset layout', 'blocksy')}
+						label={__('Reset layout', 'blocksy-companion')}
 						disabled={isOnboarding}
 						onClick={() => {
 							if (hasInnerBlocks) {
@@ -153,7 +153,7 @@ const Edit = ({
 								options={{
 									taxonomy: {
 										type: 'ct-select',
-										label: __('Taxonomy', 'blocksy'),
+										label: __('Taxonomy', 'blocksy-companion'),
 										value: '',
 										defaultToFirstItem: false,
 										choices: taxonomiesSelectOptions,
@@ -162,7 +162,7 @@ const Edit = ({
 
 									limit: {
 										type: 'ct-number',
-										label: __('Limit', 'blocksy'),
+										label: __('Limit', 'blocksy-companion'),
 										value: '',
 										min: 1,
 										max: 100,
@@ -186,7 +186,7 @@ const Edit = ({
 				<TextControl
 					__nextHasNoMarginBottom
 					autoComplete="off"
-					label={__('Block ID', 'blocksy')}
+					label={__('Block ID', 'blocksy-companion')}
 					value={uniqueId}
 					onChange={(nextValue) => {}}
 					onFocus={(e) => {
@@ -194,7 +194,7 @@ const Edit = ({
 					}}
 					help={__(
 						'Please look at the documentation for more information on why this is useful.',
-						'blocksy'
+						'blocksy-companion'
 					)}
 				/>
 			</InspectorControls>

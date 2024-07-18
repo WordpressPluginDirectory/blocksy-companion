@@ -205,11 +205,33 @@ class Plugin {
 			}
 
 			if (! $is_cli) {
+				
 				$keys_to_check = [
 					'wp_theme_preview',
-					'theme',
 					'customize_theme'
 				];
+
+				$should_add_theme = true;
+
+				if (
+					isset($_REQUEST['theme'])
+					&&
+					$_REQUEST['theme'] === 'blocksy'
+					&&
+					isset($_REQUEST['action'])
+					&&
+					(
+						$_REQUEST['action'] === 'enable'
+						||
+						$_REQUEST['action'] === 'disable'
+					)
+				) {
+					$should_add_theme = false;
+				}
+
+				if ($should_add_theme) {
+					$keys_to_check[] = 'theme';
+				}
 
 				foreach ($keys_to_check as $key) {
 					if (! isset($_GET[$key])) {

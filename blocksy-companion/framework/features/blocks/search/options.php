@@ -3,8 +3,8 @@
 $is_pro = function_exists('blc_fs') && blc_fs()->can_use_premium_code();
 
 $cpt_choices = [
-	'post' => __('Posts', 'blocksy'),
-	'page' => __('Pages', 'blocksy'),
+	'post' => __('Posts', 'blocksy-companion'),
+	'page' => __('Pages', 'blocksy-companion'),
 ];
 
 $cpt_options = [
@@ -13,7 +13,7 @@ $cpt_options = [
 ];
 
 if (class_exists('WooCommerce')) {
-	$cpt_choices['product'] = __('Products', 'blocksy');
+	$cpt_choices['product'] = __('Products', 'blocksy-companion');
 	$cpt_options['product'] = true;
 }
 
@@ -43,31 +43,31 @@ $options = [
 
 	[
 		'buttonUseText' => [
-			'label' => __( 'Placeholder Text', 'blocksy' ),
+			'label' => __( 'Placeholder Text', 'blocksy-companion' ),
 			'type' => 'hidden',
 			'value' => 'no',
 		],
 
 		'buttonPosition' => [
-			'label' => __( 'Placeholder Text', 'blocksy' ),
+			'label' => __( 'Placeholder Text', 'blocksy-companion' ),
 			'type' => 'hidden',
 			'value' => 'inside',
 		],
 
 		'search_box_button_text' => [
-			'label' => __( 'Button Text', 'blocksy' ),
+			'label' => __( 'Button Text', 'blocksy-companion' ),
 			'type' => 'hidden',
-			'value' => __( 'Search', 'blocksy' ),
+			'value' => __( 'Search', 'blocksy-companion' ),
 		],
 
 		'search_box_placeholder' => [
-			'label' => __( 'Placeholder Text', 'blocksy' ),
+			'label' => __( 'Placeholder Text', 'blocksy-companion' ),
 			'type' => 'hidden',
-			'value' => __( 'Search', 'blocksy' ),
+			'value' => __( 'Search', 'blocksy-companion' ),
 		],
 
 		'searchBoxHeight' => [
-			'label' => __( 'Input Height', 'blocksy' ),
+			'label' => __( 'Input Height', 'blocksy-companion' ),
 			'type' => 'ct-slider',
 			'min' => 40,
 			'max' => 80,
@@ -83,7 +83,7 @@ $options = [
 			'options' => $is_pro ? [
 				'icon' => [
 					'type' => 'icon-picker',
-					'label' => __('Icon', 'blocksy'),
+					'label' => __('Icon', 'blocksy-companion'),
 					'design' => 'inline',
 					'divider' => 'top:full',
 					'value' => [
@@ -94,7 +94,7 @@ $options = [
 		],
 
 		'enable_live_results' => [
-			'label' => __( 'Live Results', 'blocksy' ),
+			'label' => __( 'Live Results', 'blocksy-companion' ),
 			'type' => 'ct-switch',
 			'value' => 'no',
 			'divider' => 'top:full',
@@ -106,7 +106,7 @@ $options = [
 			'options' => [
 
 				'live_results_images' => [
-					'label' => __( 'Live Results Images', 'blocksy' ),
+					'label' => __( 'Live Results Images', 'blocksy-companion' ),
 					'type' => 'ct-switch',
 					'value' => 'yes',
 				],
@@ -116,14 +116,14 @@ $options = [
 					'condition' => [ 'search_through/product' => true ],
 					'options' => [
 						'searchProductPrice' => [
-							'label' => __( 'Live Results Product Price', 'blocksy' ),
+							'label' => __( 'Live Results Product Price', 'blocksy-companion' ),
 							'type' => 'ct-switch',
 							'value' => 'no',
 							'setting' => [ 'transport' => 'postMessage' ],
 						],
 
 						'searchProductStatus' => [
-							'label' => __( 'Live Results Product Status', 'blocksy' ),
+							'label' => __( 'Live Results Product Status', 'blocksy-companion' ),
 							'type' => 'ct-switch',
 							'value' => 'no',
 							'setting' => [ 'transport' => 'postMessage' ],
@@ -135,16 +135,16 @@ $options = [
 		],
 
 		'has_taxonomy_filter' => [
-			'label' => __( 'Taxonomy Filter', 'blocksy' ),
+			'label' => __( 'Taxonomy Filter', 'blocksy-companion' ),
 			'type' => 'ct-switch',
 			'value' => 'no',
 			'divider' => 'top:full',
 		],
 
 		'taxonomy_filter_label' => [
-			'label' => __( 'Placeholder Text', 'blocksy' ),
+			'label' => __( 'Placeholder Text', 'blocksy-companion' ),
 			'type' => 'hidden',
-			'value' => __('Select Category', 'blocksy')
+			'value' => __('Select Category', 'blocksy-companion')
 		],
 
 		blocksy_rand_md5() => [
@@ -153,7 +153,7 @@ $options = [
 			'options' => [
 
 				'taxonomy_filter_visibility' => [
-					'label' => __( 'Filter Visibility', 'blocksy' ),
+					'label' => __( 'Filter Visibility', 'blocksy-companion' ),
 					'type' => 'ct-visibility',
 					'design' => 'block',
 					// 'allow_empty' => true,
@@ -165,14 +165,14 @@ $options = [
 					],
 
 					'choices' => blocksy_ordered_keys([
-						'desktop' => __( 'Desktop', 'blocksy' ),
-						'tablet' => __( 'Tablet', 'blocksy' ),
-						'mobile' => __( 'Mobile', 'blocksy' ),
+						'desktop' => __( 'Desktop', 'blocksy-companion' ),
+						'tablet' => __( 'Tablet', 'blocksy-companion' ),
+						'mobile' => __( 'Mobile', 'blocksy-companion' ),
 					]),
 				],
 
 				'has_taxonomy_children' => [
-					'label' => __( 'Taxonomy Children', 'blocksy' ),
+					'label' => __( 'Taxonomy Children', 'blocksy-companion' ),
 					'type' => 'ct-switch',
 					'value' => 'no',
 					// 'divider' => 'top',
@@ -182,11 +182,11 @@ $options = [
 
 		blocksy_rand_md5() => [
 			'type' => 'ct-title',
-			'label' => __('Search Through Criteria', 'blocksy'),
+			'label' => __('Search Through Criteria', 'blocksy-companion'),
 			'attr' => ['class' => 'components-base-control ct-title'],
 			'desc' => __(
 				'Chose in which post types do you want to perform searches.',
-				'blocksy'
+				'blocksy-companion'
 			)
 		],
 
@@ -202,11 +202,11 @@ $options = [
 
 	$is_pro ? [
 		'search_through_taxonomy' => [
-			'label' => __('Search Through Taxonomies', 'blocksy'),
+			'label' => __('Search Through Taxonomies', 'blocksy-companion'),
 			'type' => 'ct-switch',
 			'value' => 'no',
 			'divider' => 'top:full',
-			'desc' => __('Search through taxonomies from selected custom post types.', 'blocksy'),
+			'desc' => __('Search through taxonomies from selected custom post types.', 'blocksy-companion'),
 		]
 	] : []
 

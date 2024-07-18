@@ -78,7 +78,7 @@ const Edit = ({
 			{share_icons_color === 'default' ? (
 				<InspectorControls group="styles">
 					<ColorsPanel
-						label={__('Icon Color', 'blocksy')}
+						label={__('Icon Color', 'blocksy-companion')}
 						resetAll={() => {
 							setInitialColor(colors.initialColor)
 							setHoverColor(colors.hoverColor)
@@ -88,7 +88,7 @@ const Edit = ({
 							{
 								colorValue: initialColor.color,
 								enableAlpha: true,
-								label: __('Initial', 'blocksy'),
+								label: __('Initial', 'blocksy-companion'),
 								onColorChange: (value) =>
 									setInitialColor(
 										value || colors.initialColor
@@ -97,7 +97,7 @@ const Edit = ({
 							{
 								colorValue: hoverColor.color,
 								enableAlpha: true,
-								label: __('Hover', 'blocksy'),
+								label: __('Hover', 'blocksy-companion'),
 								onColorChange: (value) =>
 									setHoverColor(value || colors.hoverColor),
 							},
@@ -107,7 +107,7 @@ const Edit = ({
 					{share_type !== 'simple' &&
 						(share_icons_fill === 'solid' ? (
 							<ColorsPanel
-								label={__('Icons Background Colors', 'blocksy')}
+								label={__('Icons Background Colors', 'blocksy-companion')}
 								resetAll={() => {
 									setBackgroundColor(colors.backgroundColor)
 									setBackgroundHoverColor(
@@ -119,7 +119,7 @@ const Edit = ({
 									{
 										colorValue: backgroundColor.color,
 										enableAlpha: true,
-										label: __('Initial', 'blocksy'),
+										label: __('Initial', 'blocksy-companion'),
 										onColorChange: (value) =>
 											setBackgroundColor(
 												value || colors.backgroundColor
@@ -128,7 +128,7 @@ const Edit = ({
 									{
 										colorValue: backgroundHoverColor.color,
 										enableAlpha: true,
-										label: __('Hover', 'blocksy'),
+										label: __('Hover', 'blocksy-companion'),
 										onColorChange: (value) =>
 											setBackgroundHoverColor(
 												value ||
@@ -139,7 +139,7 @@ const Edit = ({
 							/>
 						) : (
 							<ColorsPanel
-								label={__('Icons Border Colors', 'blocksy')}
+								label={__('Icons Border Colors', 'blocksy-companion')}
 								resetAll={() => {
 									setBorderColor(colors.borderColor)
 									setBorderHoverColor(colors.borderHoverColor)
@@ -149,7 +149,7 @@ const Edit = ({
 									{
 										colorValue: borderColor.color,
 										enableAlpha: true,
-										label: __('Initial', 'blocksy'),
+										label: __('Initial', 'blocksy-companion'),
 										onColorChange: (value) =>
 											setBorderColor(
 												value || colors.borderColor
@@ -158,7 +158,7 @@ const Edit = ({
 									{
 										colorValue: borderHoverColor.color,
 										enableAlpha: true,
-										label: __('Hover', 'blocksy'),
+										label: __('Hover', 'blocksy-companion'),
 										onColorChange: (value) =>
 											setBorderHoverColor(
 												value || colors.borderHoverColor

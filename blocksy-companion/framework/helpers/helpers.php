@@ -139,9 +139,9 @@ function blc_stringify_url($parsed_url) {
 
 function blc_is_xhr() {
 	return (
-		isset($_SERVER['HTTP_X_REQUESTED_WITH'])
+		isset($_REQUEST['blocksy_ajax'])
 		&&
-		strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === strtolower('XMLHttpRequest')
+		strtolower($_REQUEST['blocksy_ajax']) === 'yes'
 	);
 }
 

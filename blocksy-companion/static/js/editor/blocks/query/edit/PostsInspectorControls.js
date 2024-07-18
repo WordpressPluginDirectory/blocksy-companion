@@ -40,10 +40,10 @@ const PostsInspectorControls = ({
 				}}
 				items={[
 					{
-						label: __('General', 'blocksy'),
+						label: __('General', 'blocksy-companion'),
 						items: [
 							{
-								label: __('Offset', 'blocksy'),
+								label: __('Offset', 'blocksy-companion'),
 
 								hasValue: () => {
 									return attributes.offset !== 0
@@ -72,7 +72,7 @@ const PostsInspectorControls = ({
 													type: 'ct-number',
 													label: __(
 														'Offset',
-														'blocksy'
+														'blocksy-companion'
 													),
 													value: '',
 													min: 0,
@@ -87,7 +87,7 @@ const PostsInspectorControls = ({
 							},
 
 							{
-								label: __('Order by', 'blocksy'),
+								label: __('Order by', 'blocksy-companion'),
 
 								hasValue: () => {
 									return attributes.orderby !== 'post_date'
@@ -116,7 +116,7 @@ const PostsInspectorControls = ({
 													type: 'ct-select',
 													label: __(
 														'Order by',
-														'blocksy'
+														'blocksy-companion'
 													),
 													value: '',
 													choices: [
@@ -124,7 +124,7 @@ const PostsInspectorControls = ({
 															key: 'title',
 															value: __(
 																'Title',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -132,7 +132,7 @@ const PostsInspectorControls = ({
 															key: 'post_date',
 															value: __(
 																'Publish Date',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -140,7 +140,7 @@ const PostsInspectorControls = ({
 															key: 'modified',
 															value: __(
 																'Modified Date',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -148,7 +148,7 @@ const PostsInspectorControls = ({
 															key: 'comment_count',
 															value: __(
 																'Most commented',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -156,7 +156,7 @@ const PostsInspectorControls = ({
 															key: 'author',
 															value: __(
 																'Author',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -164,7 +164,7 @@ const PostsInspectorControls = ({
 															key: 'rand',
 															value: __(
 																'Random',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -172,7 +172,7 @@ const PostsInspectorControls = ({
 															key: 'menu_order',
 															value: __(
 																'Menu Order',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 													],
@@ -186,7 +186,7 @@ const PostsInspectorControls = ({
 							},
 
 							{
-								label: __('Order', 'blocksy'),
+								label: __('Order', 'blocksy-companion'),
 
 								hasValue: () => {
 									return attributes.order !== 'desc'
@@ -215,7 +215,7 @@ const PostsInspectorControls = ({
 													type: 'ct-select',
 													label: __(
 														'Order',
-														'blocksy'
+														'blocksy-companion'
 													),
 													value: '',
 													choices: [
@@ -223,7 +223,7 @@ const PostsInspectorControls = ({
 															key: 'DESC',
 															value: __(
 																'Descending',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -231,7 +231,7 @@ const PostsInspectorControls = ({
 															key: 'ASC',
 															value: __(
 																'Ascending',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 													],
@@ -245,7 +245,7 @@ const PostsInspectorControls = ({
 							},
 
 							{
-								label: __('Sticky Posts', 'blocksy'),
+								label: __('Sticky Posts', 'blocksy-companion'),
 
 								hasValue: () => {
 									return attributes.sticky_posts !== 'include'
@@ -274,7 +274,7 @@ const PostsInspectorControls = ({
 													type: 'ct-select',
 													label: __(
 														'Sticky Posts',
-														'blocksy'
+														'blocksy-companion'
 													),
 													value: 'include',
 													choices: [
@@ -282,7 +282,7 @@ const PostsInspectorControls = ({
 															key: 'include',
 															value: __(
 																'Include',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -290,7 +290,7 @@ const PostsInspectorControls = ({
 															key: 'exclude',
 															value: __(
 																'Exclude',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 
@@ -298,7 +298,7 @@ const PostsInspectorControls = ({
 															key: 'only',
 															value: __(
 																'Only',
-																'blocksy'
+																'blocksy-companion'
 															),
 														},
 													],
@@ -315,7 +315,7 @@ const PostsInspectorControls = ({
 
 					...(taxonomiesGroup ? [taxonomiesGroup] : []),
 				]}
-				label={__('Parameters', 'blocksy')}
+				label={__('Parameters', 'blocksy-companion')}
 			/>
 		</InspectorControls>
 	)

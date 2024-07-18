@@ -9,8 +9,8 @@ import metadata from './block.json'
 
 registerBlockType('blocksy/tax-template', {
 	...metadata,
-	title: __('Taxonomy Template', 'blocksy'),
-	description: __('Taxonomy Template', 'blocksy'),
+	title: __('Taxonomy Template', 'blocksy-companion'),
+	description: __('Taxonomy Template', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg

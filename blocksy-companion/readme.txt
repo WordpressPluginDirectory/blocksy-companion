@@ -2,10 +2,10 @@
 Tags: widget, widgets
 Requires at least: 5.2
 Requires PHP: 7.0
-Tested up to: 6.5
+Tested up to: 6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.56
+Stable tag: 2.0.58
 
 == Description ==
 
@@ -52,6 +52,16 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.58: 2024-07-17
+- Improvement: Account module - better integration with Admin Enhancements Pro login redirection plugin
+- Improvement: Advanced posts block - add option to change columns number per device
+- Improvement: Trending posts module improvements
+- Fix: Advanced posts and taxonomies blocks - columns issue in WordPress 6.6
+
+2.0.57: 2024-07-04
+- Fix: Multi site crashes with Companion file referenced when Blocksy theme is attempted to be activated
+- Fix: Trending Posts extension gets stuck if a selected post type gets un-registered
+
 2.0.56: 2024-06-27
 - Fix: Fixed an issue when dashboard bulk select was not working properly
 

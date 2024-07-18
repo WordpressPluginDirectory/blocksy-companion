@@ -8,10 +8,10 @@ import metadata from './block.json'
 
 registerBlockType('blocksy/breadcrumbs', {
 	...metadata,
-	title: __('Breadcrumbs', 'blocksy'),
+	title: __('Breadcrumbs', 'blocksy-companion'),
 	description: __(
 		'Insert the breadcrumbs navigation anywhere you might want.',
-		'blocksy'
+		'blocksy-companion'
 	),
 	icon: {
 		src: (

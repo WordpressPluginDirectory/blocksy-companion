@@ -12,19 +12,19 @@ require_once dirname(__FILE__) . '/helpers.php';
 $options = [
 	'title' => [
 		'type' => 'hidden',
-		'label' => __('Title', 'blocksy'),
-		'value' => __('About me', 'blocksy'),
+		'label' => __('Title', 'blocksy-companion'),
+		'value' => __('About me', 'blocksy-companion'),
 		'disableRevertButton' => true,
 	],
 
 	'about_source' => [
-		'label' => __('User Source', 'blocksy'),
+		'label' => __('User Source', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'from_wp',
 		'inline' => true,
 		'choices' => [
-			'from_wp' => __('Dynamic', 'blocksy'),
-			'custom' => __('Custom', 'blocksy'),
+			'from_wp' => __('Dynamic', 'blocksy-companion'),
+			'custom' => __('Custom', 'blocksy-companion'),
 		],
 	],
 
@@ -34,7 +34,7 @@ $options = [
 		'options' => [
 			'wp_user' => [
 				'type' => 'ct-select',
-				'label' => __('User', 'blocksy'),
+				'label' => __('User', 'blocksy-companion'),
 				'value' => array_keys(blc_get_user_choices())[0],
 				'choices' => blocksy_ordered_keys(blc_get_user_choices()),
 			],
@@ -46,27 +46,27 @@ $options = [
 		'condition' => ['about_source' => 'custom'],
 		'options' => [
 			'about_avatar' => [
-				'label' => __('Image', 'blocksy'),
+				'label' => __('Image', 'blocksy-companion'),
 				'type' => 'ct-image-uploader',
 				'value' => ['attachment_id' => null],
 				'attr' => ['data-type' => 'no-frame'],
-				'emptyLabel' => __('Select Image', 'blocksy'),
-				'filledLabel' => __('Change Image', 'blocksy'),
+				'emptyLabel' => __('Select Image', 'blocksy-companion'),
+				'filledLabel' => __('Change Image', 'blocksy-companion'),
 			],
 
 			'about_name' => [
-				'label' => __('Name', 'blocksy'),
+				'label' => __('Name', 'blocksy-companion'),
 				'type' => 'hidden',
 				'value' => 'John Doe',
 			],
 
 			'about_text' => [
-				'label' => __('Description', 'blocksy'),
+				'label' => __('Description', 'blocksy-companion'),
 				'type' => 'hidden',
 				'value' => 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tincidunt tortor aliquam.',
 				'desc' => __(
 					'You can add here some arbitrary HTML code.',
-					'blocksy'
+					'blocksy-companion'
 				),
 
 				'mediaButtons' => false,
@@ -78,30 +78,30 @@ $options = [
 	],
 
 	'about_avatar_size' => [
-		'label' => __('Image Size', 'blocksy'),
+		'label' => __('Image Size', 'blocksy-companion'),
 		'type' => 'ct-select',
 		'value' => 'small',
 		'choices' => [
-			'small' => __('Small', 'blocksy'),
-			'medium' => __('Medium', 'blocksy'),
-			'large' => __('Large', 'blocksy'),
+			'small' => __('Small', 'blocksy-companion'),
+			'medium' => __('Medium', 'blocksy-companion'),
+			'large' => __('Large', 'blocksy-companion'),
 		],
 	],
 
 	'avatar_shape' => [
-		'label' => __('Image Shape', 'blocksy'),
+		'label' => __('Image Shape', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'rounded',
 		'inline' => true,
 		'choices' => [
-			'rounded' => __('Rounded', 'blocksy'),
-			'square' => __('Square', 'blocksy'),
+			'rounded' => __('Rounded', 'blocksy-companion'),
+			'square' => __('Square', 'blocksy-companion'),
 		],
 	],
 
 	'about_alignment' => [
 		'type' => 'ct-radio',
-		'label' => __('Alignment', 'blocksy'),
+		'label' => __('Alignment', 'blocksy-companion'),
 		'value' => 'center',
 		'divider' => 'top:full',
 		'attr' => ['data-type' => 'alignment'],
@@ -116,16 +116,16 @@ $options = [
 	],
 
 	'about_socials' => [
-		'label' => __('Social Channels', 'blocksy'),
+		'label' => __('Social Channels', 'blocksy-companion'),
 		'type' => 'ct-layers',
 		'divider' => 'top:full',
 		'manageable' => true,
 		'desc' => blocksy_safe_sprintf(
-			__('You can configure social URLs in %s.', 'blocksy'),
+			__('You can configure social URLs in %s.', 'blocksy-companion'),
 			blocksy_safe_sprintf(
 				'<a href="%s" target="_blank">%s</a>',
 				admin_url('/customize.php?autofocus[section]=social_accounts'),
-				__('Customizer', 'blocksy')
+				__('Customizer', 'blocksy-companion')
 			)
 		),
 		'value' => [
@@ -153,19 +153,19 @@ $options = [
 
 	'link_target' => [
 		'type' => 'ct-switch',
-		'label' => __('Open links in new tab', 'blocksy'),
+		'label' => __('Open links in new tab', 'blocksy-companion'),
 		'value' => 'no',
 		'divider' => 'top:full',
 	],
 
 	'link_nofollow' => [
 		'type' => 'ct-switch',
-		'label' => __('Set links to nofollow', 'blocksy'),
+		'label' => __('Set links to nofollow', 'blocksy-companion'),
 		'value' => 'no',
 	],
 
 	'about_social_icons_size' => [
-		'label' => __( 'Icons Size', 'blocksy' ),
+		'label' => __( 'Icons Size', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -175,7 +175,7 @@ $options = [
 	],
 
 	'about_items_spacing' => [
-		'label' => __( 'Items Spacing', 'blocksy' ),
+		'label' => __( 'Items Spacing', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -184,26 +184,26 @@ $options = [
 	],
 
 	'about_social_icons_color' => [
-		'label' => __('Icons Color', 'blocksy'),
+		'label' => __('Icons Color', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'default',
 		'view' => 'text',
 		'divider' => 'top:full',
 		'setting' => ['transport' => 'postMessage'],
 		'choices' => [
-			'default' => __('Custom', 'blocksy'),
-			'official' => __('Official', 'blocksy'),
+			'default' => __('Custom', 'blocksy-companion'),
+			'official' => __('Official', 'blocksy-companion'),
 		],
 	],
 
 	'about_social_type' => [
-		'label' => __('Icons Shape Type', 'blocksy'),
+		'label' => __('Icons Shape Type', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'rounded',
 		'choices' => [
-			'simple' => __('None', 'blocksy'),
-			'rounded' => __('Rounded', 'blocksy'),
-			'square' => __('Square', 'blocksy'),
+			'simple' => __('None', 'blocksy-companion'),
+			'rounded' => __('Rounded', 'blocksy-companion'),
+			'square' => __('Square', 'blocksy-companion'),
 		],
 	],
 
@@ -212,12 +212,12 @@ $options = [
 		'condition' => ['about_social_type' => '!simple'],
 		'options' => [
 			'about_social_icons_fill' => [
-				'label' => __('Shape Fill Type', 'blocksy'),
+				'label' => __('Shape Fill Type', 'blocksy-companion'),
 				'type' => 'ct-radio',
 				'value' => 'outline',
 				'choices' => [
-					'outline' => __('Outline', 'blocksy'),
-					'solid' => __('Solid', 'blocksy'),
+					'outline' => __('Outline', 'blocksy-companion'),
+					'solid' => __('Solid', 'blocksy-companion'),
 				],
 			],
 		],

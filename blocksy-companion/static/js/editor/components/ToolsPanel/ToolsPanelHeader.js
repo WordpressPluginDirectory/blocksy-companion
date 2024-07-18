@@ -38,12 +38,12 @@ const ToolsPanelHeader = ({
 
 			<DropdownMenu
 				icon={selectedItems.length === 0 ? plus : moreVertical}
-				label={__('Parameters options', 'blocksy')}
+				label={__('Parameters options', 'blocksy-companion')}
 				toggleProps={{
 					isSmall: true,
 					describedBy:
 						selectedItems.length === 0
-							? __('All options are currently hidden', 'blocksy')
+							? __('All options are currently hidden', 'blocksy-companion')
 							: undefined,
 				}}>
 				{() => (
@@ -79,12 +79,12 @@ const ToolsPanelHeader = ({
 									if (canResetAll) {
 										resetAll()
 										speak(
-											__('All options reset', 'blocksy'),
+											__('All options reset', 'blocksy-companion'),
 											'assertive'
 										)
 									}
 								}}>
-								{__('Reset all', 'blocksy')}
+								{__('Reset all', 'blocksy-companion')}
 							</MenuItem>
 						</MenuGroup>
 					</>

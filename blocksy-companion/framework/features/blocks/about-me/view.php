@@ -194,7 +194,7 @@ if (! empty($items_spacing)) {
 
 		<?php if ($about_source === 'from_wp') { ?>
 			<a href="<?php echo get_author_posts_url($user_id); ?>">
-				<?php echo __('View Profile', 'blocksy'); ?>
+				<?php echo __('View Profile', 'blocksy-companion'); ?>
 			</a>
 		<?php } ?>
 	</div>

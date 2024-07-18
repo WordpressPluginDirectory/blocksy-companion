@@ -13,7 +13,11 @@ if (empty($value) && ! empty($value_fallback)) {
 	$value = do_shortcode($value_fallback);
 }
 
-if (empty(trim($value))) {
+if (
+	! is_string($value)
+	||
+	empty(trim($value))
+) {
 	return;
 }
 

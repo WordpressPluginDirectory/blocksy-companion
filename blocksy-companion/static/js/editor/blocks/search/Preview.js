@@ -20,8 +20,8 @@ const OVERWRITE_ATTRIBUTES = {
 	searchBoxHeight: '',
 	searchProductPrice: 'no',
 	searchProductStatus: 'no',
-	search_box_placeholder: __('Search', 'blocksy'),
-	taxonomy_filter_label: __('Select category', 'blocksy'),
+	search_box_placeholder: __('Search', 'blocksy-companion'),
+	taxonomy_filter_label: __('Select category', 'blocksy-companion'),
 	search_through: { post: true, page: true, product: true, custom: true },
 	taxonomy_filter_visibility: { desktop: true, tablet: true, mobile: false },
 

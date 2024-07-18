@@ -45,7 +45,7 @@ export const loadPage = (args = {}) => {
 		return
 	}
 
-	if (args.el.querySelectorAll('.ct-container > a').length < 4) {
+	if (args.el.querySelectorAll('.ct-trending-block-item').length < 4) {
 		if (currentPage === 1) {
 			return
 		}
@@ -57,17 +57,17 @@ export const loadPage = (args = {}) => {
 		}
 	}
 
-	args.el.classList.add('ct-loading')
+	args.el.querySelectorAll('.ct-trending-block-item').forEach((el, idx) => {
+		el.style.opacity = 0
+		el.style.transform = 'translateY(3px)'
+		el.style.transitionDelay = `${idx ? idx * 0.15 - 0.05 : 0}s`
+	})
 
 	let newPage = args.action === 'prev' ? currentPage - 1 : currentPage + 1
 
 	Promise.all([
 		new Promise((resolve) => {
-			args.el.classList.add('ct-leave-active')
 			requestAnimationFrame(() => {
-				args.el.classList.remove('ct-leave-active')
-				args.el.classList.add('ct-leave')
-
 				setTimeout(() => resolve(), 650)
 			})
 		}),
@@ -85,31 +85,46 @@ export const loadPage = (args = {}) => {
 		} = data
 
 		args.el.dataset.page = `${newPage}${is_last_page ? ':last' : ''}`
-		;[...args.el.querySelectorAll('a')].map((el) => el.remove())
+		;[...args.el.querySelectorAll('.ct-trending-block-item')].map((el) =>
+			el.remove()
+		)
 
-		posts.map((post) =>
+		posts.map((post, idx) =>
 			args.el.insertAdjacentHTML(
 				'beforeend',
-				`<a href="${post.url}">
-                        ${post.image}
-                        <span class="ct-post-title">
-                         ${post.title}
-                        </span>
-                    </a>`
+
+				`<div class="ct-trending-block-item" style="opacity: 0; transform: translateY(3px); transition-delay: ${
+					idx ? idx * 0.15 - 0.05 : 0
+				}s;">
+					${post.image}
+
+					<div class="ct-trending-block-item-content">
+						${post.taxonomy}
+						<a href="${post.url}" class="ct-post-title">
+							${post.title}
+						</a>
+						${post.price}
+					</div>
+				</a>`
 			)
 		)
 
 		setTimeout(() => {
-			args.el.classList.remove('ct-leave')
-			args.el.classList.add('ct-enter-active')
+			args.el
+				.querySelectorAll('.ct-trending-block-item')
+				.forEach((el, idx) => {
+					el.style.opacity = 1
+					el.style.transform = 'translateY(0)'
+					el.style.transitionDelay = `${idx ? idx * 0.15 - 0.05 : 0}s`
+				})
 
 			requestAnimationFrame(() => {
-				args.el.classList.remove('ct-enter-active')
-				args.el.classList.add('ct-active')
-
 				setTimeout(() => {
-					args.el.classList.remove('ct-active')
-					args.el.classList.remove('ct-loading')
+					args.el
+						.querySelectorAll('.ct-trending-block-item')
+						.forEach((el) => {
+							el.removeAttribute('style')
+						})
 				}, 650)
 			})
 		}, 50)

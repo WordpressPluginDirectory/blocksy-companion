@@ -157,7 +157,18 @@ export const maybeHandleLoginForm = (el) => {
 				method: maybeLogin.method,
 				body,
 			})
-				.then((response) => response.json())
+				.then((response) => {
+					if (response.redirected && response.url) {
+						return {
+							data: {
+								html: '',
+								redirect_to: response.url,
+							},
+						}
+					}
+
+					return response.json()
+				})
 				.then(({ data: { html, redirect_to } }) => {
 					const { doc, hasError } = maybeAddErrors(
 						maybeLogin.closest('.ct-login-form'),

@@ -43,7 +43,7 @@ const Preview = () => {
 	}, [])
 
 	const GetTitle = (props) => (
-		<span>{props?.title || __('Page', 'blocksy')}</span>
+		<span>{props?.title || __('Page', 'blocksy-companion')}</span>
 	)
 
 	const selectTitle = withSelect((select) => ({
@@ -60,7 +60,7 @@ const Preview = () => {
 			</span>
 
 			<span>
-				<span>{__('Subpage', 'blocksy')}</span>
+				<span>{__('Subpage', 'blocksy-companion')}</span>
 				{breadcrumb_page_title && separator}
 			</span>
 

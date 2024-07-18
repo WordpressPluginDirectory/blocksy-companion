@@ -12,7 +12,7 @@ export const defaultAttributes = getAttributesFromOptions(options)
 
 registerBlockType('blocksy/about-me', {
 	apiVersion: 3,
-	title: __('About Me Controls', 'blocksy'),
+	title: __('About Me Controls', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg
@@ -39,9 +39,9 @@ registerBlockType('blocksy/about-me', {
 
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-about-me',
-	title: __('About Me', 'blocksy'),
+	title: __('About Me', 'blocksy-companion'),
 	attributes: {
-		heading: __('About Me', 'blocksy'),
+		heading: __('About Me', 'blocksy-companion'),
 		block: 'blocksy/about-me',
 	},
 	isDefault: true,

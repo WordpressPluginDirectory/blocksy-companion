@@ -77,7 +77,7 @@ $colors = [
 
 $buttonUseText = blocksy_akg('buttonUseText', $atts, 'no') === 'yes';
 $buttonPosition = blocksy_akg('buttonPosition', $atts, 'inside');
-$search_box_button_text = blocksy_default_akg('search_box_button_text', $atts, __('Search', 'blocksy'));
+$search_box_button_text = blocksy_default_akg('search_box_button_text', $atts, __('Search', 'blocksy-companion'));
 $has_live_results = blocksy_akg('enable_live_results', $atts, 'no');
 
 if (isset($atts['inputFontColor'])) {
@@ -258,11 +258,11 @@ foreach ($button_colors as $key => $value) {
 				'search_placeholder' => blocksy_default_akg(
 					'search_box_placeholder',
 					$atts,
-					__('Search', 'blocksy')
+					__('Search', 'blocksy-companion')
 				),
 				'has_taxonomy_filter' => blocksy_akg('has_taxonomy_filter', $atts, 'no') === 'yes',
 				'has_taxonomy_children' => blocksy_akg('has_taxonomy_children', $atts, 'no') === 'yes',
-				'taxonomy_filter_label' => blocksy_akg('taxonomy_filter_label', $atts, __('Select Category', 'blocksy')),
+				'taxonomy_filter_label' => blocksy_akg('taxonomy_filter_label', $atts, __('Select Category', 'blocksy-companion')),
 				'search_through_taxonomy' => blocksy_akg('search_through_taxonomy', $atts, 'no'),
 				'taxonomy_filter_visibility' => blocksy_akg(
 					'taxonomy_filter_visibility',

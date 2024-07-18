@@ -1,4 +1,4 @@
-import { createElement, useCallback, RawHTML } from '@wordpress/element'
+import { createElement, useCallback } from '@wordpress/element'
 
 import { __ } from 'ct-i18n'
 

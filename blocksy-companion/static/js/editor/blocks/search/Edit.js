@@ -193,7 +193,7 @@ const Edit = ({
 			</BlockControls>
 			<InspectorControls group="styles">
 				<ColorsPanel
-					label={__('Input Font Color', 'blocksy')}
+					label={__('Input Font Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputFontColor(colors.inputFontColor)
 						setInputFontColorFocus(colors.inputFontColorFocus)
@@ -202,7 +202,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputFontColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputFontColor(
 									value || colors.inputFontColor
@@ -210,7 +210,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputFontColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputFontColorFocus(
 									value || colors.inputFontColorFocus
@@ -220,7 +220,7 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Input Border Color', 'blocksy')}
+					label={__('Input Border Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputBorderColor(colors.inputBorderColor)
 						setInputBorderColorFocus(colors.inputBorderColorFocus)
@@ -229,7 +229,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputBorderColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputBorderColor(
 									value || colors.inputBorderColor
@@ -237,7 +237,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputBorderColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputBorderColorFocus(
 									value || colors.inputBorderColorFocus
@@ -247,7 +247,7 @@ const Edit = ({
 				/>
 
 				<ColorsPanel
-					label={__('Input Background Color', 'blocksy')}
+					label={__('Input Background Color', 'blocksy-companion')}
 					resetAll={() => {
 						setInputBackgroundColor(colors.inputBackgroundColor)
 						setInputBackgroundColorFocus(
@@ -258,7 +258,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputBackgroundColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputBackgroundColor(
 									value || colors.inputBackgroundColor
@@ -266,7 +266,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputBackgroundColorFocus.color,
-							label: __('Focus', 'blocksy'),
+							label: __('Focus', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputBackgroundColorFocus(
 									value || colors.inputBackgroundColorFocus
@@ -278,8 +278,8 @@ const Edit = ({
 				<ColorsPanel
 					label={
 						buttonUseText === 'yes'
-							? __('Button Text Color', 'blocksy')
-							: __('Button Icon Color', 'blocksy')
+							? __('Button Text Color', 'blocksy-companion')
+							: __('Button Icon Color', 'blocksy-companion')
 					}
 					resetAll={() => {
 						setInputIconColor(colors.inputIconColor)
@@ -289,7 +289,7 @@ const Edit = ({
 					settings={[
 						{
 							colorValue: inputIconColor.color,
-							label: __('Initial', 'blocksy'),
+							label: __('Initial', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputIconColor(
 									value || colors.inputIconColor
@@ -297,7 +297,7 @@ const Edit = ({
 						},
 						{
 							colorValue: inputIconColorFocus.color,
-							label: __('Hover', 'blocksy'),
+							label: __('Hover', 'blocksy-companion'),
 							onColorChange: (value) =>
 								setInputIconColorFocus(
 									value || colors.inputIconColorFocus
@@ -308,7 +308,7 @@ const Edit = ({
 
 				{buttonPosition === 'outside' ? (
 					<ColorsPanel
-						label={__('Button Background Color', 'blocksy')}
+						label={__('Button Background Color', 'blocksy-companion')}
 						resetAll={() => {
 							setButtonBackgroundColor(
 								colors.buttonBackgroundColor
@@ -321,7 +321,7 @@ const Edit = ({
 						settings={[
 							{
 								colorValue: buttonBackgroundColor.color,
-								label: __('Initial', 'blocksy'),
+								label: __('Initial', 'blocksy-companion'),
 								onColorChange: (value) =>
 									setButtonBackgroundColor(
 										value || colors.buttonBackgroundColor
@@ -329,7 +329,7 @@ const Edit = ({
 							},
 							{
 								colorValue: buttonBackgroundColorHover.color,
-								label: __('Hover', 'blocksy'),
+								label: __('Hover', 'blocksy-companion'),
 								onColorChange: (value) =>
 									setButtonBackgroundColorHover(
 										value ||
@@ -343,7 +343,7 @@ const Edit = ({
 				{enable_live_results === 'yes' ? (
 					<>
 						<ColorsPanel
-							label={__('Dropdown Text Color', 'blocksy')}
+							label={__('Dropdown Text Color', 'blocksy-companion')}
 							resetAll={() => {
 								setDropdownTextInitialColor(
 									colors.dropdownTextInitialColor
@@ -356,7 +356,7 @@ const Edit = ({
 							settings={[
 								{
 									colorValue: dropdownTextInitialColor.color,
-									label: __('Initial', 'blocksy'),
+									label: __('Initial', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setDropdownTextInitialColor(
 											value ||
@@ -365,7 +365,7 @@ const Edit = ({
 								},
 								{
 									colorValue: dropdownTextHoverColor.color,
-									label: __('Hover', 'blocksy'),
+									label: __('Hover', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setDropdownTextHoverColor(
 											value ||
@@ -376,7 +376,7 @@ const Edit = ({
 						/>
 
 						<ColorsPanel
-							label={__('Dropdown Background Color', 'blocksy')}
+							label={__('Dropdown Background Color', 'blocksy-companion')}
 							resetAll={() => {
 								setDropdownBackgroundColor(
 									colors.dropdownBackgroundColor
@@ -386,7 +386,7 @@ const Edit = ({
 							settings={[
 								{
 									colorValue: dropdownBackgroundColor.color,
-									label: __('Initial', 'blocksy'),
+									label: __('Initial', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setDropdownBackgroundColor(
 											value ||
@@ -397,7 +397,7 @@ const Edit = ({
 						/>
 
 						<ColorsPanel
-							label={__('Dropdown Shadow Color', 'blocksy')}
+							label={__('Dropdown Shadow Color', 'blocksy-companion')}
 							resetAll={() => {
 								setShadowColor(colors.shadowColor)
 							}}
@@ -406,7 +406,7 @@ const Edit = ({
 								{
 									colorValue: shadowColor.color,
 									enableAlpha: true,
-									label: __('Initial', 'blocksy'),
+									label: __('Initial', 'blocksy-companion'),
 									onColorChange: (value) =>
 										setShadowColor(
 											value || colors.shadowColor

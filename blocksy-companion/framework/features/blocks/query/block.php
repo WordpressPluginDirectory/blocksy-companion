@@ -16,7 +16,7 @@ class Query {
 			}
 
 			$all_post_types = [
-				'post' => __('Posts', 'blocksy')
+				'post' => __('Posts', 'blocksy-companion')
 			];
 
 			$post_types = blocksy_manager()->post_types->get_supported_post_types();
@@ -98,6 +98,93 @@ class Query {
 			]);
 		});
 
+		add_filter(
+			'render_block',
+			function ($block_content, $block) {
+				
+				if ($block['blockName'] !== 'blocksy/post-template') {
+					return $block_content;
+				}
+
+				$processor = new \WP_HTML_Tag_Processor($block_content);
+
+				$is_grid_layout = isset($block['attrs']['layout']['type']) && $block['attrs']['layout']['type'] === 'grid';
+				$desktopColumns = isset($block['attrs']['layout']['columnCount']) ? $block['attrs']['layout']['columnCount'] : null;
+				$tabletColumns = isset($block['attrs']['tabletColumns']) ? $block['attrs']['tabletColumns'] : '2';
+				$mobileColumns = isset($block['attrs']['mobileColumns']) ? $block['attrs']['mobileColumns'] : '1';
+
+				$class = [];
+
+				if ($processor->next_tag('div')) {
+					$class = explode(' ', $processor->get_attribute('class'));
+				}
+
+				$unique_class = '';
+
+				foreach ($class as $class_name) {
+					if (strpos($class_name, 'wp-container-blocksy-post-template-is-layout-') === 0) {
+						$unique_class = $class_name;
+					}
+				}
+
+				$class = array_filter(
+					$class,
+					function ($class_name) {
+						return ! in_array(
+							$class_name,
+							[
+								'wp-block-post-template-is-layout-grid',
+								'wp-block-post-template-is-layout-flow'
+							]
+						);
+					}
+				);
+
+				$processor->set_attribute('class', implode(' ', $class));
+				$block_content = $processor->get_updated_html();
+
+				$alignmentStyles = [];
+
+				if (
+					isset($block['attrs']['verticalAlignment'])
+					&&
+					$is_grid_layout
+				) {
+					if ($block['attrs']['verticalAlignment'] === 'top') {
+						$alignmentStyles['align-items'] = 'flex-start;';
+					} elseif ($block['attrs']['verticalAlignment'] === 'bottom') {
+						$alignmentStyles['align-items'] = 'flex-end;';
+					} else {
+						$alignmentStyles['align-items'] = 'center';
+					}
+				}
+
+				wp_style_engine_get_stylesheet_from_css_rules(
+					[
+						[
+							'selector' => '.' . $unique_class . '.' . $unique_class,
+							'declarations' => array_merge(
+								$alignmentStyles,
+								$desktopColumns !== null ? [
+									'grid-template-columns' => "repeat(var(--ct-grid-columns, {$desktopColumns}), minmax(0, 1fr));",
+									'--ct-grid-columns-tablet' => $tabletColumns,
+									'--ct-grid-columns-mobile' => $mobileColumns,
+								] : []
+							)
+						]
+					],
+					[
+						'context'  => 'block-supports',
+						'prettify' => false
+					]
+				);
+
+				return $block_content;
+			},
+			11,
+			2
+		);
+
 		register_block_type(
 			BLOCKSY_PATH . '/static/js/editor/blocks/query/block.json',
 			[
@@ -141,7 +228,7 @@ class Query {
 
 						return '';
 					}
-
+					
 					$block_reader = new \WP_HTML_Tag_Processor($content);
 
 					if (
@@ -172,23 +259,28 @@ class Query {
 						return '';
 					}
 
-					$classnames = 'entries';
+					$attributes = wp_parse_args(
+						$attributes,
+						[
+							'tabletColumns' => '2',
+							'mobileColumns' => '1'
+						]
+					);
+
+					$content = '';
+					$is_grid_layout = isset($attributes['layout']['type']) && $attributes['layout']['type'] === 'grid';
+
+					// $classnames = 'entries';
+					$classnames = '';
+
+					if ($is_grid_layout) {
+						$classnames .= ' ct-query-template-grid';
+					} else {
+						$classnames .= ' ct-query-template-list';
+					}
 
 					if (isset($attributes['style']['elements']['link']['color']['text'])) {
 						$classnames .= ' has-link-color';
-					}
-
-					// Ensure backwards compatibility by flagging the number of columns via classname when using grid layout.
-					if (
-						isset($attributes['layout']['type'])
-						&&
-						'grid' === $attributes['layout']['type']
-						&&
-						! empty($attributes['layout']['columnCount'])
-					) {
-						$classnames .= ' ' . sanitize_title(
-							'columns-' . $attributes['layout']['columnCount']
-						);
 					}
 
 					$wrapper_attributes = get_block_wrapper_attributes([

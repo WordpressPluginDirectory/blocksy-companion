@@ -17,7 +17,7 @@ const getIncludeLayer = ({
 	previewedPostMatchesType,
 }) => {
 	return {
-		label: sprintf(__('Include %s', 'blocksy'), taxonomy.name),
+		label: sprintf(__('Include %s', 'blocksy-companion'), taxonomy.name),
 
 		hasValue: () => {
 			return attributes.include_term_ids[taxonomy.slug]
@@ -44,7 +44,7 @@ const getIncludeLayer = ({
 				<div>
 					<ToggleGroupControl
 						label={sprintf(
-							__('Include %s', 'blocksy'),
+							__('Include %s', 'blocksy-companion'),
 							taxonomy.name
 						)}
 						value={taxonomyDescriptor.strategy}
@@ -62,17 +62,17 @@ const getIncludeLayer = ({
 						}}>
 						<ToggleGroupControlOption
 							value={'all'}
-							label={__('All', 'blocksy')}
+							label={__('All', 'blocksy-companion')}
 						/>
 						<ToggleGroupControlOption
 							value={'specific'}
-							label={__('Specific', 'blocksy')}
+							label={__('Specific', 'blocksy-companion')}
 						/>
 
 						{previewedPostMatchesType && (
 							<ToggleGroupControlOption
 								value={'related'}
-								label={__('Related', 'blocksy')}
+								label={__('Related', 'blocksy-companion')}
 							/>
 						)}
 					</ToggleGroupControl>
@@ -101,7 +101,7 @@ const getIncludeLayer = ({
 
 const getExcludeLayer = ({ taxonomy, attributes, setAttributes }) => {
 	return {
-		label: sprintf(__('Exclude %s', 'blocksy'), taxonomy.name),
+		label: sprintf(__('Exclude %s', 'blocksy-companion'), taxonomy.name),
 
 		hasValue: () => {
 			return attributes.exclude_term_ids[taxonomy.slug]
@@ -126,7 +126,7 @@ const getExcludeLayer = ({ taxonomy, attributes, setAttributes }) => {
 
 			return (
 				<TaxonomyItem
-					label={sprintf(__('Exclude %s', 'blocksy'), taxonomy.name)}
+					label={sprintf(__('Exclude %s', 'blocksy-companion'), taxonomy.name)}
 					taxonomy={taxonomy}
 					termIds={taxonomyDescriptor.terms}
 					onChange={(newTermIds) => {
@@ -183,7 +183,7 @@ export const useTaxonomiesLayers = ({
 		taxonomiesGroup:
 			layers.length > 0
 				? {
-						label: __('Taxonomies', 'blocksy'),
+						label: __('Taxonomies', 'blocksy-companion'),
 						items: layers,
 				  }
 				: null,
@@ -226,7 +226,7 @@ export const useTaxonomyLayers = ({
 		taxonomiesGroup:
 			layers.length > 0
 				? {
-						label: __('Taxonomies', 'blocksy'),
+						label: __('Taxonomies', 'blocksy-companion'),
 						items: layers,
 				  }
 				: null,

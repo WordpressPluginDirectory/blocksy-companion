@@ -76,7 +76,7 @@ const Edit = ({ attributes, setAttributes, clientId, ...rest }) => {
 				<InspectorControls>
 					<PanelBody>
 						<ToggleControl
-							label={__('Expandable Container', 'blocksy')}
+							label={__('Expandable Container', 'blocksy-companion')}
 							checked={attributes.isCollapsible}
 							onChange={() =>
 								setAttributes({
@@ -87,7 +87,7 @@ const Edit = ({ attributes, setAttributes, clientId, ...rest }) => {
 
 						{attributes.isCollapsible ? (
 							<ToggleControl
-								label={__('Expanded by Default', 'blocksy')}
+								label={__('Expanded by Default', 'blocksy-companion')}
 								checked={attributes.defaultExpanded}
 								onChange={() =>
 									setAttributes({

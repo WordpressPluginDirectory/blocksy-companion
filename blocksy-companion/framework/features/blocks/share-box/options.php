@@ -11,96 +11,103 @@
 $options = [
 	'title' => [
 		'type' => 'hidden',
-		'label' => __('Title', 'blocksy'),
-		'value' => __('Share Icons', 'blocksy'),
+		'label' => __('Title', 'blocksy-companion'),
+		'value' => __('Share Icons', 'blocksy-companion'),
 	],
 	
 	'share_facebook' => [
-		'label' => __( 'Facebook', 'blocksy' ),
+		'label' => __( 'Facebook', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'yes',
 	],
 
 	'share_twitter' => [
-		'label' => __( 'X (Twitter)', 'blocksy' ),
+		'label' => __( 'X (Twitter)', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'yes',
 	],
 
 	'share_pinterest' => [
-		'label' => __( 'Pinterest', 'blocksy' ),
+		'label' => __( 'Pinterest', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'yes',
 	],
 
 	'share_linkedin' => [
-		'label' => __( 'LinkedIn', 'blocksy' ),
+		'label' => __( 'LinkedIn', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'yes',
 	],
 
 	'share_reddit' => [
-		'label' => __( 'Reddit', 'blocksy' ),
+		'label' => __( 'Reddit', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_hacker_news' => [
-		'label' => __( 'Hacker News', 'blocksy' ),
+		'label' => __( 'Hacker News', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_vk' => [
-		'label' => __( 'VKontakte', 'blocksy' ),
+		'label' => __( 'VKontakte', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_ok' => [
-		'label' => __( 'Odnoklassniki', 'blocksy' ),
+		'label' => __( 'Odnoklassniki', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_telegram' => [
-		'label' => __( 'Telegram', 'blocksy' ),
+		'label' => __( 'Telegram', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_viber' => [
-		'label' => __( 'Viber', 'blocksy' ),
+		'label' => __( 'Viber', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_whatsapp' => [
-		'label' => __( 'WhatsApp', 'blocksy' ),
+		'label' => __( 'WhatsApp', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_flipboard' => [
-		'label' => __( 'Flipboard', 'blocksy' ),
+		'label' => __( 'Flipboard', 'blocksy-companion' ),
+		'type' => 'ct-switch',
+		'value' => 'no',
+	],
+
+	'share_line' => [
+		'label' => __( 'Line', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'share_email' => [
-		'label' => __( 'Email', 'blocksy' ),
+		'label' => __( 'Email', 'blocksy-companion' ),
 		'type' => 'ct-switch',
 		'value' => 'no',
 	],
 
 	'link_nofollow' => [
 		'type' => 'ct-switch',
-		'label' => __('Set links to nofollow', 'blocksy'),
+		'label' => __('Set links to nofollow', 'blocksy-companion'),
 		'value' => 'no',
+		'divider' => 'top:full',
 	],
 
 	'share_icons_size' => [
-		'label' => __( 'Icons Size', 'blocksy' ),
+		'label' => __( 'Icons Size', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -110,7 +117,7 @@ $options = [
 	],
 
 	'items_spacing' => [
-		'label' => __( 'Icons Spacing', 'blocksy' ),
+		'label' => __( 'Icons Spacing', 'blocksy-companion' ),
 		'type' => 'ct-slider',
 		'min' => 5,
 		'max' => 50,
@@ -119,28 +126,28 @@ $options = [
 	],
 
 	'share_icons_color' => [
-		'label' => __('Icons Color', 'blocksy'),
+		'label' => __('Icons Color', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'default',
 		'view' => 'text',
 		'divider' => 'top:full',
 		'setting' => ['transport' => 'postMessage'],
 		'choices' => [
-			'default' => __('Custom', 'blocksy'),
-			'official' => __('Official', 'blocksy'),
+			'default' => __('Custom', 'blocksy-companion'),
+			'official' => __('Official', 'blocksy-companion'),
 		],
 	],
 
 	'share_type' => [
-		'label' => __('Icons Shape Type', 'blocksy'),
+		'label' => __('Icons Shape Type', 'blocksy-companion'),
 		'type' => 'ct-radio',
 		'value' => 'simple',
 		'view' => 'text',
 		'setting' => ['transport' => 'postMessage'],
 		'choices' => [
-			'simple' => __('None', 'blocksy'),
-			'rounded' => __('Rounded', 'blocksy'),
-			'square' => __('Square', 'blocksy'),
+			'simple' => __('None', 'blocksy-companion'),
+			'rounded' => __('Rounded', 'blocksy-companion'),
+			'square' => __('Square', 'blocksy-companion'),
 		],
 	],
 
@@ -149,14 +156,14 @@ $options = [
 		'condition' => ['share_type' => '!simple'],
 		'options' => [
 			'share_icons_fill' => [
-				'label' => __('Shape Fill Type', 'blocksy'),
+				'label' => __('Shape Fill Type', 'blocksy-companion'),
 				'type' => 'ct-radio',
 				'value' => 'outline',
 				'view' => 'text',
 				'setting' => ['transport' => 'postMessage'],
 				'choices' => [
-					'outline' => __('Outline', 'blocksy'),
-					'solid' => __('Solid', 'blocksy'),
+					'outline' => __('Outline', 'blocksy-companion'),
+					'solid' => __('Solid', 'blocksy-companion'),
 				],
 			],
 		],

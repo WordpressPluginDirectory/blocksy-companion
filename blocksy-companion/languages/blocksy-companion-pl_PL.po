@@ -7402,7 +7402,7 @@ msgstr "Akceptuję %sPolitykę prywatności%s*"
 
 #: framework/extensions/cookies-consent/customizer.php:98
 msgid "Maximum Width"
-msgstr "Maksymalna szerokość"
+msgstr "Maksymalna szerokoś��"
 
 #: framework/extensions/cookies-consent/customizer.php:178,
 #: framework/extensions/cookies-consent/customizer.php:234,

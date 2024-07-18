@@ -79,7 +79,7 @@ const PatternSelectionModal = ({
 	return (
 		<Modal
 			overlayClassName="block-library-query-pattern__selection-modal"
-			title={__('Choose a pattern', 'blocksy')}
+			title={__('Choose a pattern', 'blocksy-companion')}
 			onRequestClose={() => setIsPatternSelectionModalOpen(false)}
 			isFullScreen={true}>
 			<div className="block-library-query-pattern__selection-content">
@@ -88,8 +88,8 @@ const PatternSelectionModal = ({
 						__nextHasNoMarginBottom
 						onChange={setSearchValue}
 						value={searchValue}
-						label={__('Search for patterns', 'blocksy')}
-						placeholder={__('Search', 'blocksy')}
+						label={__('Search for patterns', 'blocksy-companion')}
+						placeholder={__('Search', 'blocksy-companion')}
 					/>
 				</div>
 

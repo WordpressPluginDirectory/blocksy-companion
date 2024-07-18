@@ -34,13 +34,13 @@ const PostsPlaceholder = ({
 					<path d="M5.5 18v-1c0-.3.2-.5.5-.5h3c.3 0 .5.2.5.5v1c0 .3-.2.5-.5.5H6c-.3 0-.5-.2-.5-.5zm.5 2c-1.1 0-2-.9-2-2v-1c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2H6zm-.5-9V6c0-.3.2-.5.5-.5h3c.3 0 .5.2.5.5v5c0 .3-.2.5-.5.5H6c-.3 0-.5-.2-.5-.5zm.5 2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2H6zm8.5 0v5c0 .3.2.5.5.5h3c.3 0 .5-.2.5-.5v-5c0-.3-.2-.5-.5-.5h-3c-.3 0-.5.2-.5.5zM13 18c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-3c-1.1 0-2 .9-2 2v5zm1.5-11V6c0-.3.2-.5.5-.5h3c.3 0 .5.2.5.5v1c0 .3-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5zm.5 2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2h-3z" fill-rule="evenodd"/>
 				</svg>
 
-				{__('Advanced Posts', 'blocksy')}
+				{__('Advanced Posts', 'blocksy-companion')}
 			</div>
 			<fieldset className="components-placeholder__fieldset">
 				<legend className="components-placeholder__instructions">
 					{__(
 						'Inherit the Customizer layout, start with a pattern or create a custom layout',
-						'blocksy'
+						'blocksy-companion'
 					)}
 				</legend>
 
@@ -53,7 +53,7 @@ const PostsPlaceholder = ({
 							design: 'default',
 						})
 					}}>
-					{__('Inherit From Customizer', 'blocksy')}
+					{__('Inherit From Customizer', 'blocksy-companion')}
 				</button>
 
 				<button
@@ -63,7 +63,7 @@ const PostsPlaceholder = ({
 
 						setIsPatternSelectionModalOpen(true)
 					}}>
-					{__('Choose Pattern', 'blocksy')}
+					{__('Choose Pattern', 'blocksy-companion')}
 				</button>
 
 				<button
@@ -102,7 +102,7 @@ const PostsPlaceholder = ({
 							false
 						)
 					}}>
-					{__('Create Custom Layout', 'blocksy')}
+					{__('Create Custom Layout', 'blocksy-companion')}
 				</button>
 			</fieldset>
 		</div>

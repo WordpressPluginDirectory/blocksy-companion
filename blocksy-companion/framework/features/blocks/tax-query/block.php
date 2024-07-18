@@ -91,7 +91,7 @@ class TaxQuery {
 				$processor = new \WP_HTML_Tag_Processor($block_content);
 
 				$is_grid_layout = isset($block['attrs']['layout']['type']) && $block['attrs']['layout']['type'] === 'grid';
-				$desktopColumns = isset($block['attrs']['layout']['columnCount']) ? $block['attrs']['layout']['columnCount'] : '3';
+				$desktopColumns = isset($block['attrs']['layout']['columnCount']) ? $block['attrs']['layout']['columnCount'] : null;
 				$tabletColumns = isset($block['attrs']['tabletColumns']) ? $block['attrs']['tabletColumns'] : '2';
 				$mobileColumns = isset($block['attrs']['mobileColumns']) ? $block['attrs']['mobileColumns'] : '1';
 
@@ -108,6 +108,22 @@ class TaxQuery {
 						$unique_class = $class_name;
 					}
 				}
+
+				$class = array_filter(
+					$class,
+					function ($class_name) {
+						return ! in_array(
+							$class_name,
+							[
+								'wp-block-tax-template-is-layout-grid',
+								'wp-block-tax-template-is-layout-flow'
+							]
+						);
+					}
+				);
+
+				$processor->set_attribute('class', implode(' ', $class));
+				$block_content = $processor->get_updated_html();
 
 				$alignmentStyles = [];
 
@@ -131,11 +147,11 @@ class TaxQuery {
 							'selector' => '.' . $unique_class . '.' . $unique_class,
 							'declarations' => array_merge(
 								$alignmentStyles,
-								[
+								$desktopColumns !== null ? [
 									'grid-template-columns' => "repeat(var(--ct-grid-columns, {$desktopColumns}), minmax(0, 1fr));",
 									'--ct-grid-columns-tablet' => $tabletColumns,
 									'--ct-grid-columns-mobile' => $mobileColumns,
-								]
+								] : []
 							)
 						]
 					],

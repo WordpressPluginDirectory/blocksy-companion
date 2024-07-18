@@ -103,6 +103,8 @@ if (! $field_render) {
 if (
 	is_array($field_render['value'])
 	&&
+	isset($field_render['value']['type'])
+	&&
 	$field_render['value']['type'] === 'image'
 ) {
 	echo blocksy_render_view(

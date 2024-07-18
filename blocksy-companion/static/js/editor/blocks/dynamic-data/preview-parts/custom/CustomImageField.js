@@ -41,14 +41,14 @@ const CustomImageField = ({
 	})
 
 	const borderProps = useBorderProps(attributes)
+	console.log(fieldData)
+	let maybeUrl = fieldData?.value?.url
 
-	let maybeUrl = fieldData?.value?.value?.url
-
-	if (fieldData?.value?.value?.sizes[sizeSlug]) {
-		if (typeof fieldData.value.value.sizes[sizeSlug] === 'string') {
-			maybeUrl = fieldData.value.value.sizes[sizeSlug]
+	if (fieldData?.value?.sizes[sizeSlug]) {
+		if (typeof fieldData.value.sizes[sizeSlug] === 'string') {
+			maybeUrl = fieldData.value.sizes[sizeSlug]
 		} else {
-			maybeUrl = fieldData.value.value.sizes[sizeSlug].url
+			maybeUrl = fieldData.value.sizes[sizeSlug].url
 		}
 	}
 

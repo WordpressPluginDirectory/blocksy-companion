@@ -12,7 +12,7 @@ $contact_information = blocksy_default_akg('contact_information', $atts, [
 	[
 		'id' => 'address',
 		'enabled' => true,
-		'title' => __('Address:', 'blocksy'),
+		'title' => __('Address:', 'blocksy-companion'),
 		'content' => 'Street Name, NY 38954',
 		'link' => '',
 	],
@@ -20,7 +20,7 @@ $contact_information = blocksy_default_akg('contact_information', $atts, [
 	[
 		'id' => 'phone',
 		'enabled' => true,
-		'title' => __('Phone:', 'blocksy'),
+		'title' => __('Phone:', 'blocksy-companion'),
 		'content' => '578-393-4937',
 		'link' => 'tel:578-393-4937',
 	],
@@ -28,7 +28,7 @@ $contact_information = blocksy_default_akg('contact_information', $atts, [
 	[
 		'id' => 'mobile',
 		'enabled' => true,
-		'title' => __('Mobile:', 'blocksy'),
+		'title' => __('Mobile:', 'blocksy-companion'),
 		'content' => '578-393-4937',
 		'link' => 'tel:578-393-4937',
 	],

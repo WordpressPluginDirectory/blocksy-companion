@@ -13,8 +13,8 @@ export const defaultAttributes = getAttributesFromOptions(options)
 
 registerBlockType('blocksy/dynamic-data', {
 	...metadata,
-	title: __('Dynamic Data', 'blocksy'),
-	description: __('Insert dynamic data anywhere you might want.', 'blocksy'),
+	title: __('Dynamic Data', 'blocksy-companion'),
+	description: __('Insert dynamic data anywhere you might want.', 'blocksy-companion'),
 	attributes: {
 		...metadata.attributes,
 		...defaultAttributes,
@@ -30,73 +30,73 @@ registerBlockType('blocksy/dynamic-data', {
 	save: () => null,
 	__experimentalLabel: (attributes) => {
 		if (attributes.field === 'wp:title') {
-			return __('Dynamic Title', 'blocksy')
+			return __('Dynamic Title', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:excerpt') {
-			return __('Dynamic Excerpt', 'blocksy')
+			return __('Dynamic Excerpt', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:date') {
-			return __('Dynamic Post Date', 'blocksy')
+			return __('Dynamic Post Date', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:comments') {
-			return __('Dynamic Comments', 'blocksy')
+			return __('Dynamic Comments', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:terms') {
-			return __('Dynamic Terms', 'blocksy')
+			return __('Dynamic Terms', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:author') {
-			return __('Dynamic Author', 'blocksy')
+			return __('Dynamic Author', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:featured_image') {
-			return __('Dynamic Featured Image', 'blocksy')
+			return __('Dynamic Featured Image', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:author_avatar') {
-			return __('Dynamic Author Avatar', 'blocksy')
+			return __('Dynamic Author Avatar', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'woo:price') {
-			return __('Dynamic Price', 'blocksy')
+			return __('Dynamic Price', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'woo:stock_status') {
-			return __('Dynamic Stock Status', 'blocksy')
+			return __('Dynamic Stock Status', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'woo:brands') {
-			return __('Dynamic Brands', 'blocksy')
+			return __('Dynamic Brands', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'woo:sku') {
-			return __('Dynamic SKU', 'blocksy')
+			return __('Dynamic SKU', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'woo:rating') {
-			return __('Dynamic Rating', 'blocksy')
+			return __('Dynamic Rating', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:term_title') {
-			return __('Dynamic Term Title', 'blocksy')
+			return __('Dynamic Term Title', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:term_description') {
-			return __('Dynamic Term Description', 'blocksy')
+			return __('Dynamic Term Description', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:term_count') {
-			return __('Dynamic Term Count', 'blocksy')
+			return __('Dynamic Term Count', 'blocksy-companion')
 		}
 
 		if (attributes.field === 'wp:term_image') {
-			return __('Dynamic Term Image', 'blocksy')
+			return __('Dynamic Term Image', 'blocksy-companion')
 		}
 
-		return __('Dynamic Data', 'blocksy')
+		return __('Dynamic Data', 'blocksy-companion')
 	},
 })

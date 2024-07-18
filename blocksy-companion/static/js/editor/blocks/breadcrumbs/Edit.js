@@ -40,7 +40,7 @@ const Edit = ({
 				<Preview />
 				<InspectorControls group="styles">
 					<ColorsPanel
-						label={__('Text Color', 'blocksy')}
+						label={__('Text Color', 'blocksy-companion')}
 						resetAll={() => {
 							setTextColor('')
 							setLinkColor('')
@@ -51,19 +51,19 @@ const Edit = ({
 							{
 								colorValue: textColor.color,
 								enableAlpha: true,
-								label: __('Text', 'blocksy'),
+								label: __('Text', 'blocksy-companion'),
 								onColorChange: setTextColor,
 							},
 							{
 								colorValue: linkColor.color,
 								enableAlpha: true,
-								label: __('Link Initial', 'blocksy'),
+								label: __('Link Initial', 'blocksy-companion'),
 								onColorChange: setLinkColor,
 							},
 							{
 								colorValue: linkHoverColor.color,
 								enableAlpha: true,
-								label: __('Link Hover', 'blocksy'),
+								label: __('Link Hover', 'blocksy-companion'),
 								onColorChange: setLinkHoverColor,
 							},
 						]}

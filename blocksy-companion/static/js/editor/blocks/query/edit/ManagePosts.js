@@ -137,7 +137,7 @@ function PostItem({ label, post_type, postIds, onChange, hasLabel = false }) {
 			suggestions={suggestions}
 			onChange={onPostsChange}
 			__experimentalShowHowTo={false}
-			placeholder={__('Search for a post', 'blocksy')}
+			placeholder={__('Search for a post', 'blocksy-companion')}
 		/>
 	)
 }

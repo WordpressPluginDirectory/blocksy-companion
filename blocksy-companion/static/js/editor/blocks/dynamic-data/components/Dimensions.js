@@ -54,7 +54,7 @@ const DimensionControls = ({
 
 	return (
 		<ToolsPanel
-			label={__('Image Settings', 'blocksy')}
+			label={__('Image Settings', 'blocksy-companion')}
 			resetAll={() => {
 				setAttributes({
 					aspectRatio: 'auto',
@@ -65,7 +65,7 @@ const DimensionControls = ({
 			}}>
 			<ToolsPanelItem
 				hasValue={() => !!aspectRatio}
-				label={__('Aspect Ratio', 'blocksy')}
+				label={__('Aspect Ratio', 'blocksy-companion')}
 				onDeselect={() => setAttributes({ aspectRatio: undefined })}
 				resetAllFilter={() => ({
 					aspectRatio: 'auto',
@@ -74,40 +74,40 @@ const DimensionControls = ({
 				key={clientId}>
 				<SelectControl
 					__nextHasNoMarginBottom
-					label={__('Aspect Ratio', 'blocksy')}
+					label={__('Aspect Ratio', 'blocksy-companion')}
 					value={aspectRatio}
 					options={[
 						// These should use the same values as AspectRatioDropdown in @wordpress/block-editor
 						{
-							label: __('Original', 'blocksy'),
+							label: __('Original', 'blocksy-companion'),
 							value: 'auto',
 						},
 						{
-							label: __('Square', 'blocksy'),
+							label: __('Square', 'blocksy-companion'),
 							value: '1',
 						},
 						{
-							label: __('16:9', 'blocksy'),
+							label: __('16:9', 'blocksy-companion'),
 							value: '16/9',
 						},
 						{
-							label: __('4:3', 'blocksy'),
+							label: __('4:3', 'blocksy-companion'),
 							value: '4/3',
 						},
 						{
-							label: __('3:2', 'blocksy'),
+							label: __('3:2', 'blocksy-companion'),
 							value: '3/2',
 						},
 						{
-							label: __('9:16', 'blocksy'),
+							label: __('9:16', 'blocksy-companion'),
 							value: '9/16',
 						},
 						{
-							label: __('3:4', 'blocksy'),
+							label: __('3:4', 'blocksy-companion'),
 							value: '3/4',
 						},
 						{
-							label: __('2:3', 'blocksy'),
+							label: __('2:3', 'blocksy-companion'),
 							value: '2/3',
 						},
 					]}
@@ -122,7 +122,7 @@ const DimensionControls = ({
 					'grid-column': 'span 1 / auto',
 				}}
 				hasValue={() => !!width}
-				label={__('Width', 'blocksy')}
+				label={__('Width', 'blocksy-companion')}
 				onDeselect={() => setAttributes({ width: undefined })}
 				resetAllFilter={() => ({
 					width: undefined,
@@ -130,7 +130,7 @@ const DimensionControls = ({
 				isShownByDefault
 				key={clientId}>
 				<UnitControl
-					label={__('Width', 'blocksy')}
+					label={__('Width', 'blocksy-companion')}
 					labelPosition="top"
 					value={width || ''}
 					min={0}
@@ -146,7 +146,7 @@ const DimensionControls = ({
 					'grid-column': 'span 1 / auto',
 				}}
 				hasValue={() => !!height}
-				label={__('Height', 'blocksy')}
+				label={__('Height', 'blocksy-companion')}
 				onDeselect={() => setAttributes({ height: undefined })}
 				resetAllFilter={() => ({
 					height: undefined,
@@ -154,7 +154,7 @@ const DimensionControls = ({
 				isShownByDefault
 				key={clientId}>
 				<UnitControl
-					label={__('Height', 'blocksy')}
+					label={__('Height', 'blocksy-companion')}
 					labelPosition="top"
 					value={height || ''}
 					min={0}
@@ -167,7 +167,7 @@ const DimensionControls = ({
 
 			<ToolsPanelItem
 				hasValue={() => !!imageFit}
-				label={__('Scale', 'blocksy')}
+				label={__('Scale', 'blocksy-companion')}
 				onDeselect={() => setAttributes({ imageFit: undefined })}
 				resetAllFilter={() => ({
 					imageFit: 'cover',
@@ -197,7 +197,7 @@ const DimensionControls = ({
 			{!!imageSizeOptions.length && (
 				<ToolsPanelItem
 					hasValue={() => !!sizeSlug}
-					label={__('Resolution', 'blocksy')}
+					label={__('Resolution', 'blocksy-companion')}
 					onDeselect={() => setAttributes({ sizeSlug: undefined })}
 					resetAllFilter={() => ({
 						sizeSlug: undefined,
@@ -206,7 +206,7 @@ const DimensionControls = ({
 					key={clientId}>
 					<SelectControl
 						__nextHasNoMarginBottom
-						label={__('Resolution', 'blocksy')}
+						label={__('Resolution', 'blocksy-companion')}
 						value={sizeSlug || DEFAULT_SIZE}
 						options={imageSizeOptions}
 						onChange={(nextSizeSlug) =>
@@ -214,7 +214,7 @@ const DimensionControls = ({
 						}
 						help={__(
 							'Select the size of the source image.',
-							'blocksy'
+							'blocksy-companion'
 						)}
 					/>
 				</ToolsPanelItem>

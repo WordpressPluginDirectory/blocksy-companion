@@ -12,7 +12,7 @@ export const defaultAttributes = getAttributesFromOptions(options)
 
 registerBlockType('blocksy/share-box', {
 	apiVersion: 3,
-	title: __('Share Box Controls', 'blocksy'),
+	title: __('Share Box Controls', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg
@@ -41,9 +41,9 @@ registerBlockType('blocksy/share-box', {
 
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-share-box',
-	title: __('Share Box', 'blocksy'),
+	title: __('Share Box', 'blocksy-companion'),
 	attributes: {
-		heading: __('Share Box', 'blocksy'),
+		heading: __('Share Box', 'blocksy-companion'),
 		block: 'blocksy/share-box',
 	},
 	isActive: (attributes) => attributes.block === 'blocksy/share-box',
