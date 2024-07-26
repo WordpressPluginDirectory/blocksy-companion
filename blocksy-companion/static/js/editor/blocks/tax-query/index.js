@@ -10,7 +10,7 @@ import metadata from './block.json'
 registerBlockType('blocksy/tax-query', {
 	...metadata,
 	title: __('Advanced Taxonomies', 'blocksy-companion'),
-	description: __('Advanced taxonomies query.', 'blocksy-companion'),
+	description: __('Create advanced queries based on your specified criterias.', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg

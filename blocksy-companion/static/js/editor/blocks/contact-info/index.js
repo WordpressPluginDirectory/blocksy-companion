@@ -49,6 +49,7 @@ registerBlockType('blocksy/contact-info', {
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-contact-info',
 	title: __('Contact Info', 'blocksy-companion'),
+	description: __('Display essential contact details to your visitors.', 'blocksy-companion'),
 	attributes: {
 		heading: __('Contact Info', 'blocksy-companion'),
 		block: 'blocksy/contact-info',

@@ -10,12 +10,7 @@ class GoogleAnalytics {
 		);
 
 		add_filter('blocksy:cookies-consent:scripts-to-load', function ($data) {
-			$ga_3_code = $this->get_ga_3_code();
 			$ga_4_code = $this->get_ga_4_code();
-
-			if (! empty($ga_3_code)) {
-				$data[] = $ga_3_code;
-			}
 
 			if (! empty($ga_4_code)) {
 				$data[] = $ga_4_code;
@@ -38,7 +33,6 @@ class GoogleAnalytics {
 						}
 					}
 
-					echo $this->get_ga_3_code();
 					echo $this->get_ga_4_code();
 				});
 			}
@@ -68,36 +62,7 @@ class GoogleAnalytics {
 		<?php
 		return ob_get_clean();
 	}
-
-	private function get_ga_3_code() {
-		$analytics_id = blocksy_get_theme_mod('analytics_id', '');
-
-		// https://stackoverflow.com/a/70251467/3220977
-
-		if (empty($analytics_id)) {
-			return '';
-		}
-
-		ob_start(); ?>
-		<!-- Google Analytics -->
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', '<?php echo $analytics_id ?>', 'auto');
-		ga('send', 'pageview');
-
-		<?php if (blocksy_get_theme_mod('ip_anonymization', 'no') === 'yes') { ?>
-			ga('set', 'anonymizeIp', true);
-		<?php } ?>
-		</script>
-		<!-- End Google Analytics -->
-		<?php
-
-		return ob_get_clean();
-	}
-
+	
 	public function generate_google_analytics_opts($options) {
 		$options[] = [
 			'analytics_v4_id' => [

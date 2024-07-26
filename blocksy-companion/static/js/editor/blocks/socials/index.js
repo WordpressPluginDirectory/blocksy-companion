@@ -42,6 +42,7 @@ registerBlockType('blocksy/socials', {
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-socials',
 	title: __('Socials', 'blocksy-companion'),
+	description: __('Display your social media profiles and boost the site engagement.', 'blocksy-companion'),
 	attributes: {
 		heading: __('Socials', 'blocksy-companion'),
 		block: 'blocksy/socials',

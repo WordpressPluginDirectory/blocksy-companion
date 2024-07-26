@@ -10,7 +10,7 @@ import metadata from './block.json'
 registerBlockType('blocksy/query', {
 	...metadata,
 	title: __('Advanced Posts', 'blocksy-companion'),
-	description: __('Advanced Posts', 'blocksy-companion'),
+	description: __('Create advanced queries based on your specified criterias.', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg

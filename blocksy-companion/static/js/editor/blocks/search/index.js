@@ -14,7 +14,7 @@ import Edit from './Edit'
 registerBlockType('blocksy/search', {
 	apiVersion: 3,
 	title: __('Advanced Search', 'blocksy-companion'),
-	description: __('Insert a search block anywhere on the site.', 'blocksy-companion'),
+	description: __('Quickly find specific content on your site.', 'blocksy-companion'),
 	icon: {
 		src: (
 			<svg

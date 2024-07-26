@@ -242,7 +242,7 @@ class ConditionsRulesResolver {
 		}
 
 		if ($rule['rule'] === 'single_product') {
-			return function_exists('is_product') && is_product();
+			return blocksy_manager()->screen->is_product();
 		}
 
 		if ($rule['rule'] === 'all_product_archives') {

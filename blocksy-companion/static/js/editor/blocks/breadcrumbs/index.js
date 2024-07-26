@@ -10,7 +10,7 @@ registerBlockType('blocksy/breadcrumbs', {
 	...metadata,
 	title: __('Breadcrumbs', 'blocksy-companion'),
 	description: __(
-		'Insert the breadcrumbs navigation anywhere you might want.',
+		'Display navigational links, showing users their path within the site.',
 		'blocksy-companion'
 	),
 	icon: {

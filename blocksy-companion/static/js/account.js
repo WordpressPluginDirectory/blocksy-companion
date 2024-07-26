@@ -4,31 +4,44 @@ import { handleAccountModal, activateScreen } from './frontend/account'
 
 let maybeTemplate = ''
 
+const turnstileSelectors = {
+	login: '.ct-account-modal #loginform .cf-turnstile',
+	lostpassword: '.ct-account-modal #lostpasswordform .cf-turnstile',
+	register: '.ct-account-modal #registerform .cf-turnstile',
+}
+
+const removeTurnstile = () => {
+	if (!window.turnstile) {
+		return
+	}
+
+	Object.keys(turnstileSelectors).forEach((selector) => {
+		const element = document.querySelector(turnstileSelectors[selector])
+
+		if (element) {
+			turnstile.remove(turnstileSelectors[selector])
+
+			if (selector === 'register') {
+				turnstile.remove(
+					'.ct-account-modal #registerform .sct-woocommerce-register'
+				)
+			}
+		}
+	})
+}
+
 const resetTurnstile = () => {
 	if (!window.turnstile) {
 		return
 	}
 
-	if (document.querySelector('.ct-account-modal #loginform .cf-turnstile')) {
-		turnstile.reset('.ct-account-modal #loginform .cf-turnstile')
-	}
+	Object.keys(turnstileSelectors).forEach((selector) => {
+		const element = document.querySelector(turnstileSelectors[selector])
 
-	if (
-		document.querySelector(
-			'.ct-account-modal #lostpasswordform .cf-turnstile'
-		)
-	) {
-		turnstile.reset('.ct-account-modal #lostpasswordform .cf-turnstile')
-	}
-
-	if (
-		document.querySelector('.ct-account-modal #registerform .cf-turnstile')
-	) {
-		turnstile.reset('.ct-account-modal #registerform .cf-turnstile')
-		turnstile.remove(
-			'.ct-account-modal #registerform .sct-woocommerce-register'
-		)
-	}
+		if (element) {
+			turnstile.render(turnstileSelectors[selector])
+		}
+	})
 }
 
 const integrations = () => {
@@ -69,6 +82,7 @@ registerDynamicChunk('blocksy_account', {
 			}
 
 			maybeTemplate = maybeAccount.outerHTML
+			removeTurnstile()
 			maybeAccount.remove()
 		}
 

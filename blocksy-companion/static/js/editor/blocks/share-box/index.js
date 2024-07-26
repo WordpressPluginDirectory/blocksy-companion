@@ -42,6 +42,7 @@ registerBlockType('blocksy/share-box', {
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-share-box',
 	title: __('Share Box', 'blocksy-companion'),
+	description: __('Share content on social media, boosting visibility & engagement.', 'blocksy-companion'),
 	attributes: {
 		heading: __('Share Box', 'blocksy-companion'),
 		block: 'blocksy/share-box',

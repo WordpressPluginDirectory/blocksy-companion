@@ -277,7 +277,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'free-shipping',
 					'title' => __('Free Shipping Bar', 'blocksy-companion'),
 					'description' => __('Add a visual cue that tells your visitors how much the cart total must be to be able to benefit of free shipping.', 'blocksy-companion'),
-					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/free-shipping-progress-bar/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_free_shipping_panel'),
 				],
 
@@ -293,7 +293,7 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'single-product-share-box',
 					'title' => __('Product Share Box', 'blocksy-companion'),
 					'description' => __('Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection.', 'blocksy-companion'),
-					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/product-share-box/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_single:woo_product_elements'),
 				],
 
@@ -308,9 +308,17 @@ function blc_exts_get_preliminary_config($ext = null) {
 					'id' => 'product-affiliates',
 					'title' => __('Affiliate Product Links', 'blocksy-companion'),
 					'description' => __('Better management for affiliate products with a few simple options that strengthen the external integration with these.', 'blocksy-companion'),
-					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/affiliate-product-links/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_product_affiliates_panel'),
 				],
+
+				[
+					'id' => 'stock-scarcity',
+					'title' => __('Stock Scarcity', 'blocksy-companion'),
+					'description' => __('Show the remaining stock of a product to create a sense of urgency and encourage your visitors to make a purchase.', 'blocksy-companion'),
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/stock-scarcity/',
+					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_stock_scarcity_panel'),
+				]
 			],
 		],
 

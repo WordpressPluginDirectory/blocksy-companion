@@ -14,7 +14,7 @@ export const defaultAttributes = getAttributesFromOptions(options)
 registerBlockType('blocksy/dynamic-data', {
 	...metadata,
 	title: __('Dynamic Data', 'blocksy-companion'),
-	description: __('Insert dynamic data anywhere you might want.', 'blocksy-companion'),
+	description: __('Fetch and display content from various sources.', 'blocksy-companion'),
 	attributes: {
 		...metadata.attributes,
 		...defaultAttributes,

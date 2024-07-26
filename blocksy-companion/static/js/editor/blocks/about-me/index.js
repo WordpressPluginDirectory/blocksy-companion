@@ -40,6 +40,7 @@ registerBlockType('blocksy/about-me', {
 wp.blocks.registerBlockVariation('blocksy/widgets-wrapper', {
 	name: 'blocksy-about-me',
 	title: __('About Me', 'blocksy-companion'),
+	description: __('Showcase your personal information across your website.', 'blocksy-companion'),
 	attributes: {
 		heading: __('About Me', 'blocksy-companion'),
 		block: 'blocksy/about-me',

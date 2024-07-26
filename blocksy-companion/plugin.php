@@ -36,7 +36,7 @@ class Plugin {
 
 	private $is_blocksy = '__NOT_SET__';
 	public $is_blocksy_data = null;
-	private $desired_blocksy_version = '2.0.55-beta1';
+	private $desired_blocksy_version = '2.0.59-beta1';
 
 	/**
 	 * Instance.
@@ -205,7 +205,7 @@ class Plugin {
 			}
 
 			if (! $is_cli) {
-				
+
 				$keys_to_check = [
 					'wp_theme_preview',
 					'customize_theme'
