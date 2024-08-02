@@ -40,13 +40,15 @@ const Edit = ({ attributes, setAttributes, clientId, ...rest }) => {
 	}
 
 	if (attributes.hasDescription) {
-		template.push([
-			'core/paragraph',
-			{
-				content: attributes.description,
-				placeholder: 'Description',
-			},
-		])
+		if (attributes.description) {
+			template.push([
+				'core/paragraph',
+				{
+					content: attributes.description,
+					placeholder: 'Description',
+				},
+			])
+		}
 
 		allowedBlocks.push('core/paragraph')
 	}
@@ -76,7 +78,10 @@ const Edit = ({ attributes, setAttributes, clientId, ...rest }) => {
 				<InspectorControls>
 					<PanelBody>
 						<ToggleControl
-							label={__('Expandable Container', 'blocksy-companion')}
+							label={__(
+								'Expandable Container',
+								'blocksy-companion'
+							)}
 							checked={attributes.isCollapsible}
 							onChange={() =>
 								setAttributes({
@@ -87,7 +92,10 @@ const Edit = ({ attributes, setAttributes, clientId, ...rest }) => {
 
 						{attributes.isCollapsible ? (
 							<ToggleControl
-								label={__('Expanded by Default', 'blocksy-companion')}
+								label={__(
+									'Expanded by Default',
+									'blocksy-companion'
+								)}
 								checked={attributes.defaultExpanded}
 								onChange={() =>
 									setAttributes({

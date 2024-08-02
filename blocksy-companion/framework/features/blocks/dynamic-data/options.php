@@ -130,17 +130,17 @@ $options = [
 			'author_field' => [
 				'type' => 'ct-select',
 				'label' => __('Author Field', 'blocksy-companion'),
-				'value' => 'email',
+				'value' => 'display_name',
 				'design' => 'inline',
 				'purpose' => 'default',
 				'choices' => blocksy_ordered_keys(
 					[
-						'email' => __('Email', 'blocksy-companion'),
-						'nicename' => __('Nicename', 'blocksy-companion'),
 						'display_name' => __('Display Name', 'blocksy-companion'),
+						'nicename' => __('Nickname', 'blocksy-companion'),
 						'first_name' => __('First Name', 'blocksy-companion'),
 						'last_name' => __('Last Name', 'blocksy-companion'),
-						'description' => __('Description', 'blocksy-companion')
+						'description' => __('Description', 'blocksy-companion'),
+						'email' => __('Email', 'blocksy-companion'),
 					]
 				),
 			]

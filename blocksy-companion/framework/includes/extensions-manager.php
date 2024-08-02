@@ -374,8 +374,13 @@ class ExtensionsManager {
 
 		$maybe_config = null;
 
-		if (isset($this->get_preliminary_exts_info()[$id])) {
-			$maybe_config = $this->get_preliminary_exts_info()[$id];
+		$preliminary_config = blc_exts_get_preliminary_config(
+			null,
+			['only_billing_data' => true]
+		);
+
+		if (isset($preliminary_config[$id])) {
+			$maybe_config = $preliminary_config[$id];
 		}
 
 		if (

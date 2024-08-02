@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-12 21:23:33+0000\n"
+"PO-Revision-Date: 2024-07-31 12:48:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -847,49 +847,49 @@ msgstr ""
 #: framework/features/demo-install/content-installer.php:142,
 #: framework/features/demo-install/demo-register.php:9
 msgid "No demo name provided."
-msgstr ""
+msgstr "Название демо не указано."
 
 #: framework/helpers/exts.php:317,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:314,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:4
 msgid "Stock Scarcity"
-msgstr ""
+msgstr "Нехватка запасов"
 
 #: framework/helpers/exts.php:318
 msgid "Show the remaining stock of a product to create a sense of urgency and encourage your visitors to make a purchase."
-msgstr ""
+msgstr "Отображение оставшихся запасов товара, для создания ощущения срочности и побуждения посетителей совершить покупку."
 
 #: framework/views/theme-mismatch.php:36
 #: static/js/dashboard/VersionMismatch.js:17
 #: static/js/notifications/VersionMismatchNotice.js:30
 msgid "Action required - please update Blocksy theme to the latest version!"
-msgstr ""
+msgstr "Необходимо обновить активную тему до последней версии!"
 
 #: framework/views/theme-mismatch.php:41
 #: static/js/dashboard/VersionMismatch.js:23
 #: static/js/notifications/VersionMismatchNotice.js:38
 msgid "We detected that you are using an outdated version of Blocksy theme."
-msgstr ""
+msgstr "Система обнаружила, что вы используете устаревшую версию темы."
 
 #: framework/views/theme-mismatch.php:45
 #: static/js/dashboard/VersionMismatch.js:30
 #: static/js/notifications/VersionMismatchNotice.js:47
 msgid "In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme."
-msgstr ""
+msgstr "Чтобы в полной мере воспользоваться всеми возможностями, установите и активируйте также тему Blocksy."
 
 #: framework/extensions/newsletter-subscribe/customizer.php:94,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:127
 msgid "Make Name Field Required"
-msgstr ""
+msgstr "Сделать поле \"Имя\" обязательным для заполнения"
 
 #: framework/extensions/trending/customizer.php:121
 msgid "Tag"
-msgstr ""
+msgstr "Метка"
 
 #: framework/extensions/trending/customizer.php:142
 msgid "Taxonomy Source"
-msgstr ""
+msgstr "Источник таксономии"
 
 #: framework/extensions/trending/customizer.php:216
 msgid "Module Title Icon Source"
@@ -1281,232 +1281,232 @@ msgstr ""
 
 #: framework/features/blocks/query/block-patterns/posts-layout-1.php:4
 msgid "Posts - Layout 1"
-msgstr ""
+msgstr "Записи - макет 1"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-2.php:4
 msgid "Posts - Layout 2"
-msgstr ""
+msgstr "Записи - макет 2"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-3.php:4
 msgid "Posts - Layout 3"
-msgstr ""
+msgstr "Записи - макет 3"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-4.php:4
 msgid "Posts - Layout 4"
-msgstr ""
+msgstr "Записи - макет 4"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-5.php:4
 msgid "Posts - Layout 5"
-msgstr ""
+msgstr "Записи - макет 5"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-1.php:4
 msgid "Taxonomies - Layout 1"
-msgstr ""
+msgstr "Таксономии - макет 1"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-2.php:4
 msgid "Taxonomies - Layout 2"
-msgstr ""
+msgstr "Таксономии - макет 2"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-3.php:4
 msgid "Taxonomies - Layout 3"
-msgstr ""
+msgstr "Таксономии - макет 3"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-4.php:4
 msgid "Taxonomies - Layout 4"
-msgstr ""
+msgstr "Таксономии - макет 4"
 
 #: framework/features/header/items/account/options.php:15
 msgid "Action Link"
-msgstr ""
+msgstr "Ссылка действия"
 
 #: framework/features/header/items/account/options.php:49
 msgid "Additional User Info"
-msgstr ""
+msgstr "Доп. информация"
 
 #: framework/features/header/items/account/options.php:53
 msgid "Available fields: {user_email}, {user_name}, {user_role}"
-msgstr ""
+msgstr "Доступные поля: {user_email}, {user_name}, {user_role}"
 
 #: framework/features/header/items/account/options.php:142
 msgid "Menu"
-msgstr ""
+msgstr "Меню"
 
 #: framework/features/header/items/account/options.php:717
 msgid "Items Hover Effect"
-msgstr ""
+msgstr "Эффект при наведении"
 
 #: framework/features/header/items/account/options.php:727
 msgid "Boxed Color"
-msgstr ""
+msgstr "Цвет блока"
 
 #: framework/features/header/items/account/options.php:1945
 msgid "Link Active"
-msgstr ""
+msgstr "Активная ссылка"
 
 #: framework/premium/features/content-blocks/options/popup.php:262
 msgid "Close Trigger Delay"
-msgstr ""
+msgstr "Задержка при закрытии"
 
 #: framework/premium/features/content-blocks/options/popup.php:269
 msgid "Set the close delay time (in seconds) after the form submit action is detected."
-msgstr ""
+msgstr "Установка времени задержки закрытия (в секундах) после отправки формы."
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:100,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:753
 msgid "Featured Icon/Logo"
-msgstr ""
+msgstr "Значок/логотип"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:563
 msgid "Upvote"
-msgstr ""
+msgstr "Плюсануть"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:577
 msgid "Downvote"
-msgstr ""
+msgstr "Минусануть"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/brands-import-export.php:17,
 #: framework/premium/extensions/woocommerce-extra/features/brands/brands-import-export.php:69
 msgid "Blocksy Brands"
-msgstr ""
+msgstr "Бренды Blocksy"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/select.php:18
 msgid "Choose page"
-msgstr ""
+msgstr "Выбор страницы"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/select.php:33
 msgid "Choose a custom thank you page for this product."
-msgstr ""
+msgstr "Выбор произвольной страницы благодарности за покупку товара."
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:49
 msgid "Product Image Visibility"
-msgstr ""
+msgstr "Видимость изобр. товара"
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:87
 msgid "Product Price & Stock Visibility"
-msgstr ""
+msgstr "Видимость цены и наличия товара"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:42
 msgid "Trigger Icon Type"
-msgstr ""
+msgstr "Тип значка триггера"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:77
 msgid "Trigger Visibility"
-msgstr ""
+msgstr "Видимость триггера"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:107
 msgid "Trigger Label"
-msgstr ""
+msgstr "Ярлык триггера"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:233
 msgid "Panel Default State"
-msgstr ""
+msgstr "Исходное состояние панели"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:240
 msgid "Closed"
-msgstr ""
+msgstr "Закрыто"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:241
 msgid "Opened"
-msgstr ""
+msgstr "Открыто"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:488
 msgid "Panel AJAX Reveal"
-msgstr ""
+msgstr "Ajax-раскрытие панели"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:137
 msgid "Autoplay Gallery"
-msgstr ""
+msgstr "Автозапуск галереи"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:149
 msgid "Delay (in seconds)"
-msgstr ""
+msgstr "Задержка (сек.)"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:216
 msgid "Columns Spacing"
-msgstr ""
+msgstr "Интервал колонок"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:244,
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:272
 msgid "Arrows Visibility"
-msgstr ""
+msgstr "Видимость стрелок"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:11
 msgid "Prev/Next Arrow"
-msgstr ""
+msgstr "Стрелки вперёд/назад"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:41
 msgid "Prev/Next Background"
-msgstr ""
+msgstr "Фон вперёд/назад"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:372,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:160
 msgid "Add {items} more items to get free shipping!"
-msgstr ""
+msgstr "Добавьте ещё {items} товаров, чтобы получить бесплатную доставку!"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:52
 msgid "Count Criteria"
-msgstr ""
+msgstr "Критерий подсчёта"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:59,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:246,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/price-filter.php:280
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:127
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:60
 msgid "Items"
-msgstr ""
+msgstr "Товары"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:86
 msgid "Goal Items"
-msgstr ""
+msgstr "Целевое количество"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90
 msgid "Amount of items the client has to buy in order to get free shipping."
-msgstr ""
+msgstr "Количество товаров, которые клиент должен приобрести, чтобы получить бесплатную доставку."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:168
 msgid "You can use dynamic code tags such as {items} inside this option."
-msgstr ""
+msgstr "Можно использовать теги динамического кода, такие как {items}, внутри этого параметра."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:195,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:62
 msgid "Bar Color"
-msgstr ""
+msgstr "Цвет панели"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:229,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:29
 msgid "🚨 Hurry up! Only {items} units left in stock!"
-msgstr ""
+msgstr "🚨 Поторопитесь! Осталось только {items}!"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:15
 msgid "Stock Threshold"
-msgstr ""
+msgstr "Пороговый уровень запасов"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:23
 msgid "Show the stock scarcity module when product stock is below this number."
-msgstr ""
+msgstr "Отображение модуля дефицита товара, когда складской запас меньше указанного значения."
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:27
 msgid "Message"
-msgstr ""
+msgstr "Сообщение"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:43
 msgid "Bar Height"
-msgstr ""
+msgstr "Высота панели"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:668
 msgid "Swatches removed"
-msgstr ""
+msgstr "Образцы удалены"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:675
 msgid "Swatches saved"
-msgstr ""
+msgstr "Образцы сохранены"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:737
 msgid "Custom Attributes"
-msgstr ""
+msgstr "Произвольные атрибуты"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:743,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:782,
@@ -1517,7 +1517,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:746,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:785
 msgid "Set how many terms you want to display in this attribute."
-msgstr ""
+msgstr "Сколько объектов нужно отображать в данном атрибуте."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:756,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:795,
@@ -1525,24 +1525,24 @@ msgstr ""
 #: static/js/editor/blocks/query/Edit.js:178
 #: static/js/editor/blocks/tax-query/Edit.js:165
 msgid "Limit"
-msgstr ""
+msgstr "Лимит"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:858
 msgid "Set how many terms you want to display in each attribute."
-msgstr ""
+msgstr "Сколько объектов нужно отображать в каждом атрибуте."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:179,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:462
 msgid "Mixed Swatches"
-msgstr ""
+msgstr "Смешанные образцы"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:233
 msgid "Generate Variation URL"
-msgstr ""
+msgstr "Генерировать URL вариации"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:239
 msgid "Generate a shareable single product page URL with pre-selected variation attributes."
-msgstr ""
+msgstr "Генерирование URL-адреса страницы отдельного товара, доступного для повторного использования, с заранее установленными атрибутами вариации."
 
 #: static/js/options/ConditionsManager/SingleCondition.js:440
 msgid "Display if query string is present in URL"
@@ -1714,7 +1714,7 @@ msgstr "Профессиональный"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:27
 msgid "This is a Pro feature"
-msgstr "Это про��ессиональный функционал"
+msgstr "Это профессиональный функционал"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:28
 msgid "Upgrade to any pro plan and get instant access to this and many other feature."
@@ -1869,7 +1869,7 @@ msgstr "Отобьражать образцы"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/VariableTab.js:30
 msgid "Upload only the %s.woff2%s or %s.ttf%s font file formats. Don't convert variable fonts by yourself. Ask the font provider to hand a correct file or the %svariable%s font won't work."
-msgstr "Загружайте только файлы шрифтов в форматах %s.woff2%s или %s.ttf%s. Не конвертируйте вариативные шрифты самостоятельно. Попросите поставщика шрифтов предоставить правильный файл, иначе %svariable%s шрифта не будет работать."
+msgstr "Загружайте то��ько файлы шрифтов в форматах %s.woff2%s или %s.ttf%s. Не конвертируйте вариативные шрифты самостоя��ельно. Попросите поставщика шрифтов предоставить правильный файл, иначе %svariable%s шрифта не будет работать."
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/AdvancedTab.js:54
 msgid "Preload Subsets"
@@ -2486,7 +2486,7 @@ msgstr "Навигация по товарам"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:108
 msgid "Display next/previous buttons that will help to easily navigate through products."
-msgstr ""
+msgstr "Отображение кнопок следующий/предыдущий, которые помогают перемещаться между товарами."
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:138
 msgid "Title Font"
@@ -2925,7 +2925,7 @@ msgstr "Звёзды"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:435
 msgid "%s%% of customers recommend this product."
-msgstr ""
+msgstr "%s %% пользователей рекомендуют этот товар."
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:597
 msgid "%s of %s found this review helpful"
@@ -3043,7 +3043,7 @@ msgstr "Ярлык тёмного режима"
 
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:114
 msgid "Light Mode Label"
-msgstr "Ярлык светлого реж��ма"
+msgstr "Ярлык светлого режима"
 
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:118,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/view.php:56
@@ -3767,7 +3767,7 @@ msgstr "Образцы вариаций"
 
 #: framework/helpers/exts.php:219
 msgid "Compare products with a clear and concise table system that gives your users a way to make a quick decision."
-msgstr ""
+msgstr "Сравнение товаров с помощью чёткой и лаконичной системы таблиц, которая дает пользователям возможность быстро принимать решение."
 
 #: framework/helpers/exts.php:294
 msgid "Product Share Box"
@@ -6157,7 +6157,7 @@ msgstr "До таблицы корзины"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:750
 msgid "Before cart contents"
-msgstr "П��сле содержимого корзины"
+msgstr "После содержимого корзины"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:754
 msgid "Cart contents"
@@ -6601,7 +6601,7 @@ msgstr "Тип записи"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:149
 msgid "Most commented"
-msgstr ""
+msgstr "Обсуждаемое"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:165
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:145
@@ -6616,7 +6616,7 @@ msgstr "Диапазон вывода"
 #: framework/features/blocks/dynamic-data/options.php:109,
 #: framework/features/blocks/dynamic-data/views/wp-field.php:204
 msgid "% comments"
-msgstr ""
+msgstr "Комментарии (%)"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:79
 msgid "Author Avatar"
@@ -6698,7 +6698,7 @@ msgstr "Выберите меню..."
 #. translators: placeholder here means the actual URL.
 #: framework/features/header/items/account/options.php:155
 msgid "Manage your menus in the %sMenus screen%s."
-msgstr ""
+msgstr "Управление пунктами меню в %sразделе «Меню»%s."
 
 #: framework/features/header/items/account/options.php:702,
 #: framework/features/header/items/account/options.php:1073
@@ -7095,7 +7095,7 @@ msgstr "Произвольный зацеп"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:712
 msgid "Mixed"
-msgstr ""
+msgstr "Разное"
 
 #: framework/premium/features/content-blocks/options/popup.php:438
 msgid "Popup Position"
@@ -7807,7 +7807,7 @@ msgstr "Создание нового подвала"
 
 #: framework/premium/static/js/footer/CreateFooter.js:53
 msgid "Create a new footer and assign it to different pages or posts based on your conditions."
-msgstr "Создайте новый подвал и назначьте его разным страницам или записям, в соответствии со своими целями."
+msgstr "Создайте новый подвал и назначь��е его разным страницам или записям, в соответствии со своими целями."
 
 #: framework/premium/static/js/footer/CreateFooter.js:72
 msgid "Footer name"
@@ -8294,7 +8294,7 @@ msgstr "Мы используем файлы cookie, чтобы обеспечи
 
 #: framework/features/blocks/search/options.php:58
 msgid "Button Text"
-msgstr ""
+msgstr "Текст кнопки"
 
 #: framework/extensions/cookies-consent/customizer.php:80,
 #: framework/extensions/cookies-consent/helpers.php:10
@@ -9272,7 +9272,7 @@ msgstr "Рейтинг"
 
 #: framework/extensions/product-reviews/metabox.php:10
 msgid "Review Entity"
-msgstr "Объект обзора"
+msgstr "Объект обзор��"
 
 #: framework/extensions/product-reviews/metabox.php:18,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:39
@@ -9402,7 +9402,7 @@ msgstr "Популярные записи"
 
 #: framework/extensions/trending/config.php:6
 msgid "Highlight your most popular posts or products based on the number of comments or reviews they have gotten in the specified period of time."
-msgstr "Выделите свои самые популярны�� записи или товары на основе количества комментариев или отзывов, полученных за указанный период времени."
+msgstr "Выделите свои самые популярные записи или товары на основе количества комментариев или отзывов, полученных за указанный период времени."
 
 #: framework/extensions/trending/customizer.php:8,
 #: framework/features/blocks/search/options.php:16,
@@ -9833,7 +9833,7 @@ msgstr "Сюда можно вставить произвольный HTML-ко�
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:74
 msgid "Container Style"
-msgstr ""
+msgstr "Стиль контейнера"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:82,
 #: framework/premium/features/content-blocks/options/404.php:85,

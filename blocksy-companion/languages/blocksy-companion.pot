@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-25 16:30+0000\n"
+"POT-Creation-Date: 2024-08-01 19:34+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -21,12 +21,12 @@ msgstr ""
 "x-generator: babel-plugin-wp-i18n\n"
 
 #. translators: %s: PHP version
-#: blocksy-companion.php:175
+#: blocksy-companion.php:178
 msgid "Blocksy requires PHP version %s+, plugin is currently NOT RUNNING."
 msgstr ""
 
 #. translators: %s: WordPress version
-#: blocksy-companion.php:186
+#: blocksy-companion.php:189
 msgid ""
 "Blocksy requires WordPress version %s+. Because you are using an earlier "
 "version, the plugin is currently NOT RUNNING."
@@ -253,19 +253,19 @@ msgid "Twitter Username"
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:7
+#: framework/helpers/exts-configs.php:59
 msgctxt "Extension Brand Name"
 msgid "Adobe Fonts"
 msgstr ""
 
-#: framework/helpers/exts.php:8
+#: framework/helpers/exts-configs.php:60
 msgid ""
 "Connect your Adobe Fonts project and use the selected fonts throughout "
 "Blocksy and your favorite page builder."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:18,
+#: framework/helpers/exts-configs.php:70,
 #: framework/premium/extensions/code-snippets/extension.php:24,
 #: framework/premium/extensions/code-snippets/extension.php:79,
 #: framework/premium/extensions/code-snippets/extension.php:122
@@ -273,43 +273,43 @@ msgctxt "Extension Brand Name"
 msgid "Custom Code Snippets"
 msgstr ""
 
-#: framework/helpers/exts.php:19
+#: framework/helpers/exts-configs.php:71
 msgid ""
 "Inject custom code snippets throughout your website. The extension works "
 "globally or on a per post/page basis."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:31
+#: framework/helpers/exts-configs.php:83
 msgctxt "Extension Brand Name"
 msgid "Color Mode Switch"
 msgstr ""
 
-#: framework/helpers/exts.php:32
+#: framework/helpers/exts-configs.php:84
 msgid ""
 "Add a dark colour scheme and switch to your website, which will make it "
 "pleasant to look at in low light environments."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:44
+#: framework/helpers/exts-configs.php:96
 msgctxt "Extension Brand Name"
 msgid "Custom Fonts"
 msgstr ""
 
-#: framework/helpers/exts.php:45
+#: framework/helpers/exts-configs.php:97
 msgid ""
 "Upload an unlimited number of custom fonts or variable fonts and use them "
 "throughout Blocksy and your favorite page builder."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:56
+#: framework/helpers/exts-configs.php:108
 msgctxt "Extension Brand Name"
 msgid "Local Google Fonts"
 msgstr ""
 
-#: framework/helpers/exts.php:57
+#: framework/helpers/exts-configs.php:109
 msgid ""
 "Serve your chosen Google Fonts from your own web server. This will increase "
 "the loading speed and makes sure your website complies with the privacy "
@@ -317,12 +317,12 @@ msgid ""
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:71
+#: framework/helpers/exts-configs.php:123
 msgctxt "Extension Brand Name"
 msgid "Advanced Menu"
 msgstr ""
 
-#: framework/helpers/exts.php:72
+#: framework/helpers/exts-configs.php:124
 msgid ""
 "Create beautiful personalised menus that set your website apart from the "
 "others. Add icons and badges to your entries and even add Content Blocks "
@@ -330,71 +330,71 @@ msgid ""
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:84
+#: framework/helpers/exts-configs.php:136
 msgctxt "Extension Brand Name"
 msgid "Post Types Extra"
 msgstr ""
 
-#: framework/helpers/exts.php:85
+#: framework/helpers/exts-configs.php:137
 msgid ""
 "Enables support for Custom Fields inside archive cards and single page post "
 "title, adds a reading progress bar for your posts and lets you set featured "
 "images and colors for your categories archives."
 msgstr ""
 
-#: framework/helpers/exts.php:90,
+#: framework/helpers/exts-configs.php:142,
 #: framework/premium/extensions/post-types-extra/features/read-time/estimated-read-time.php:11,
 #: framework/premium/extensions/post-types-extra/features/read-time/estimated-read-time.php:68
 msgid "Read Time"
 msgstr ""
 
-#: framework/helpers/exts.php:91
+#: framework/helpers/exts-configs.php:143
 msgid ""
 "Display the approximate reading time of an article, so that visitors know "
 "what to expect when starting to read the content."
 msgstr ""
 
-#: framework/helpers/exts.php:97
+#: framework/helpers/exts-configs.php:149
 #: static/js/editor/blocks/dynamic-data/index.js:100
 msgid "Dynamic Data"
 msgstr ""
 
-#: framework/helpers/exts.php:98
+#: framework/helpers/exts-configs.php:150
 msgid ""
 "Integrates custom fields solutions in the meta layers of a post and presents "
 "additional information."
 msgstr ""
 
-#: framework/helpers/exts.php:104,
+#: framework/helpers/exts-configs.php:156,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:25
 msgid "Posts Filter"
 msgstr ""
 
-#: framework/helpers/exts.php:105
+#: framework/helpers/exts-configs.php:157
 msgid ""
 "Let your guests easily filter the posts by their category or tags taxonomy "
 "terms, instantly drilling down the listings."
 msgstr ""
 
-#: framework/helpers/exts.php:111
+#: framework/helpers/exts-configs.php:163
 msgid "Taxonomy Customisations"
 msgstr ""
 
-#: framework/helpers/exts.php:112
+#: framework/helpers/exts-configs.php:164
 msgid ""
 "Additional customisation options for your taxonomies such as hero "
 "backgrounds and custom colour labels."
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:127,
+#: framework/helpers/exts-configs.php:179,
 #: framework/premium/extensions/shortcuts/config.php:5,
 #: framework/premium/extensions/shortcuts/customizer.php:657
 msgctxt "Extension Brand Name"
 msgid "Shortcuts Bar"
 msgstr ""
 
-#: framework/helpers/exts.php:128,
+#: framework/helpers/exts-configs.php:180,
 #: framework/premium/extensions/shortcuts/config.php:6
 msgid ""
 "Easily turn your websites into mobile first experiences. You can easily add "
@@ -402,28 +402,28 @@ msgid ""
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:142
+#: framework/helpers/exts-configs.php:194
 msgctxt "Extension Brand Name"
 msgid "Multiple Sidebars"
 msgstr ""
 
-#: framework/helpers/exts.php:143
+#: framework/helpers/exts-configs.php:195
 msgid ""
 "Create unlimited personalized sets of widget areas and display them on any "
 "page or post using our conditional logic functionality."
 msgstr ""
 
-#: framework/helpers/exts.php:147
+#: framework/helpers/exts-configs.php:199
 msgid "Create New Sidebar"
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:162
+#: framework/helpers/exts-configs.php:214
 msgctxt "Extension Brand Name"
 msgid "White Label"
 msgstr ""
 
-#: framework/helpers/exts.php:163
+#: framework/helpers/exts-configs.php:215
 msgid ""
 "Replace Blocksy's branding with your own. Easily hide licensing info and "
 "other sections of the theme and companion plugin from your clients and make "
@@ -431,52 +431,52 @@ msgid ""
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
-#: framework/helpers/exts.php:175
+#: framework/helpers/exts-configs.php:227
 msgctxt "Extension Brand Name"
 msgid "Shop Extra"
 msgstr ""
 
-#: framework/helpers/exts.php:176
+#: framework/helpers/exts-configs.php:228
 msgid ""
 "Make the shopping experience better for your visitors! Add features such as "
 "Product Quick View, Wishlist functionality and a Floating Add to Cart "
 "button. Customize the single product gallery/slider and the layout."
 msgstr ""
 
-#: framework/helpers/exts.php:186,
+#: framework/helpers/exts-configs.php:238,
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:4
 msgid "Floating Cart"
 msgstr ""
 
-#: framework/helpers/exts.php:187
+#: framework/helpers/exts-configs.php:239
 msgid ""
 "Adds the “add to cart” actions to the product page as a floating bar if the "
 "product summary has disappeared from view."
 msgstr ""
 
-#: framework/helpers/exts.php:194,
+#: framework/helpers/exts-configs.php:246,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58
 msgid "Quick View"
 msgstr ""
 
-#: framework/helpers/exts.php:195
+#: framework/helpers/exts-configs.php:247
 msgid ""
 "Preview the available products and let your users make quick and informative "
 "decisions about their purchase."
 msgstr ""
 
-#: framework/helpers/exts.php:202,
+#: framework/helpers/exts-configs.php:254,
 #: framework/premium/extensions/shortcuts/views/bar.php:52
 msgid "Filters"
 msgstr ""
 
-#: framework/helpers/exts.php:203
+#: framework/helpers/exts-configs.php:255
 msgid ""
 "Drill down the product list with new filtering widgets, an off canvas area "
 "for them and showing the active filters on the page."
 msgstr ""
 
-#: framework/helpers/exts.php:210,
+#: framework/helpers/exts-configs.php:262,
 #: framework/premium/extensions/shortcuts/customizer.php:521,
 #: framework/premium/extensions/shortcuts/customizer.php:544,
 #: framework/features/header/items/account/views/login.php:516,
@@ -492,55 +492,55 @@ msgstr ""
 msgid "Wishlist"
 msgstr ""
 
-#: framework/helpers/exts.php:211
+#: framework/helpers/exts-configs.php:263
 msgid ""
 "A set of features that lets you create easily your dream products wishlists "
 "and share them with friends and family."
 msgstr ""
 
-#: framework/helpers/exts.php:218
+#: framework/helpers/exts-configs.php:270
 msgid "Compare View"
 msgstr ""
 
-#: framework/helpers/exts.php:219
+#: framework/helpers/exts-configs.php:271
 msgid ""
 "Compare products with a clear and concise table system that gives your users "
 "a way to make a quick decision."
 msgstr ""
 
-#: framework/helpers/exts.php:226,
+#: framework/helpers/exts-configs.php:278,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
 msgstr ""
 
-#: framework/helpers/exts.php:227
+#: framework/helpers/exts-configs.php:279
 msgid ""
 "Catch the attention of your clients by showcasing your product variations as "
 "colour, image or button swatches."
 msgstr ""
 
-#: framework/helpers/exts.php:234,
+#: framework/helpers/exts-configs.php:286,
 #: framework/features/conditions/rules/woo.php:42
 msgid "Product Brands"
 msgstr ""
 
-#: framework/helpers/exts.php:235
+#: framework/helpers/exts-configs.php:287
 msgid ""
 "Categorise products by brands and show their logo in archive or single page "
 "so users could discover more about their makers."
 msgstr ""
 
-#: framework/helpers/exts.php:243
+#: framework/helpers/exts-configs.php:295
 msgid "Custom Tabs"
 msgstr ""
 
-#: framework/helpers/exts.php:244
+#: framework/helpers/exts-configs.php:296
 msgid ""
 "Present additional information about your products by adding new custom tabs "
 "to the product information section."
 msgstr ""
 
-#: framework/helpers/exts.php:252,
+#: framework/helpers/exts-configs.php:304,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:58,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:62,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:260,
@@ -550,96 +550,104 @@ msgstr ""
 msgid "Size Guide"
 msgstr ""
 
-#: framework/helpers/exts.php:253
+#: framework/helpers/exts-configs.php:305
 msgid ""
 "Show a size chart guide so that your visitors can pick the right size for "
 "them when ordering a product."
 msgstr ""
 
-#: framework/helpers/exts.php:261
+#: framework/helpers/exts-configs.php:313
 msgid "Custom Thank You Pages"
 msgstr ""
 
-#: framework/helpers/exts.php:262
+#: framework/helpers/exts-configs.php:314
 msgid ""
 "Create a customized order “Thank You” page for your customers, giving them a "
 "personalized experience."
 msgstr ""
 
-#: framework/helpers/exts.php:270,
+#: framework/helpers/exts-configs.php:322,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:5
 msgid "Advanced Reviews"
 msgstr ""
 
-#: framework/helpers/exts.php:271
+#: framework/helpers/exts-configs.php:323
 msgid ""
 "Enhance your WooCommerce reviews with rich content, images and a thumbs up "
 "system that help your shoppers find the perfect product."
 msgstr ""
 
-#: framework/helpers/exts.php:278,
+#: framework/helpers/exts-configs.php:330,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:180,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:4
 msgid "Free Shipping Bar"
 msgstr ""
 
-#: framework/helpers/exts.php:279
+#: framework/helpers/exts-configs.php:331
 msgid ""
 "Add a visual cue that tells your visitors how much the cart total must be to "
 "be able to benefit of free shipping."
 msgstr ""
 
-#: framework/helpers/exts.php:286
+#: framework/helpers/exts-configs.php:338
 msgid "Advanced Gallery"
 msgstr ""
 
-#: framework/helpers/exts.php:287
+#: framework/helpers/exts-configs.php:339
 msgid ""
 "Replace the standard product gallery with additional layouts which can "
 "showcase the photos as a grid or even a slider."
 msgstr ""
 
-#: framework/helpers/exts.php:294
+#: framework/helpers/exts-configs.php:346
 msgid "Product Share Box"
 msgstr ""
 
-#: framework/helpers/exts.php:295
+#: framework/helpers/exts-configs.php:347
 msgid ""
 "Enable social sharing abilities for products available on the site, letting "
 "even more users discover your great shop selection."
 msgstr ""
 
-#: framework/helpers/exts.php:302
+#: framework/helpers/exts-configs.php:354
 msgid "Search by SKU"
 msgstr ""
 
-#: framework/helpers/exts.php:303
+#: framework/helpers/exts-configs.php:355
 msgid ""
 "Advanced searching for products by their SKU classification can be useful in "
 "cases of vast product catalogues."
 msgstr ""
 
-#: framework/helpers/exts.php:309
+#: framework/helpers/exts-configs.php:361
 msgid "Affiliate Product Links"
 msgstr ""
 
-#: framework/helpers/exts.php:310
+#: framework/helpers/exts-configs.php:362
 msgid ""
 "Better management for affiliate products with a few simple options that "
 "strengthen the external integration with these."
 msgstr ""
 
-#: framework/helpers/exts.php:317,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:291,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:314,
+#: framework/helpers/exts-configs.php:369,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:231,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:254,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:4
 msgid "Stock Scarcity"
 msgstr ""
 
-#: framework/helpers/exts.php:318
+#: framework/helpers/exts-configs.php:370
 msgid ""
 "Show the remaining stock of a product to create a sense of urgency and "
 "encourage your visitors to make a purchase."
+msgstr ""
+
+#: framework/helpers/exts-configs.php:377
+msgid "Added to cart popup"
+msgstr ""
+
+#: framework/helpers/exts-configs.php:378
+msgid "Added to cart popup description"
 msgstr ""
 
 #: framework/views/theme-mismatch.php:36
@@ -1238,7 +1246,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/customizer.php:26,
 #: framework/features/blocks/about-me/options.php:64,
-#: framework/features/blocks/dynamic-data/options.php:143,
+#: framework/features/blocks/dynamic-data/options.php:142,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:159,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:248
 msgid "Description"
@@ -1714,8 +1722,8 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:335,
 #: framework/premium/extensions/woocommerce-extra/features/share-box-layer/feature.php:203,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:190,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:294,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:317,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:234,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:257,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:885
 msgid "Bottom Spacing"
 msgstr ""
@@ -2786,7 +2794,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:262,
 #: framework/features/blocks/contact-info/options.php:391,
-#: framework/features/blocks/dynamic-data/options.php:138,
+#: framework/features/blocks/dynamic-data/options.php:143,
 #: framework/features/blocks/share-box/options.php:97,
 #: framework/features/header/modal/register.php:47,
 #: framework/premium/extensions/shortcuts/customizer.php:130,
@@ -3212,19 +3220,19 @@ msgstr ""
 msgid "Author Field"
 msgstr ""
 
-#: framework/features/blocks/dynamic-data/options.php:139
-msgid "Nicename"
-msgstr ""
-
-#: framework/features/blocks/dynamic-data/options.php:140
+#: framework/features/blocks/dynamic-data/options.php:138
 msgid "Display Name"
 msgstr ""
 
-#: framework/features/blocks/dynamic-data/options.php:141
+#: framework/features/blocks/dynamic-data/options.php:139
+msgid "Nickname"
+msgstr ""
+
+#: framework/features/blocks/dynamic-data/options.php:140
 msgid "First Name"
 msgstr ""
 
-#: framework/features/blocks/dynamic-data/options.php:142
+#: framework/features/blocks/dynamic-data/options.php:141
 msgid "Last Name"
 msgstr ""
 
@@ -7324,7 +7332,7 @@ msgstr ""
 msgid "Choose where you want this size guide to be displayed."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:229,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:170,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:29
 msgid "🚨 Hurry up! Only {items} units left in stock!"
 msgstr ""
@@ -8481,7 +8489,7 @@ msgid "Expandable"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:336
-#: static/js/editor/blocks/widgets-wrapper/Edit.js:90
+#: static/js/editor/blocks/widgets-wrapper/Edit.js:95
 msgid "Expanded by Default"
 msgstr ""
 
@@ -9908,7 +9916,7 @@ msgstr ""
 msgid "Taxonomy Template"
 msgstr ""
 
-#: static/js/editor/blocks/widgets-wrapper/Edit.js:79
+#: static/js/editor/blocks/widgets-wrapper/Edit.js:81
 msgid "Expandable Container"
 msgstr ""
 

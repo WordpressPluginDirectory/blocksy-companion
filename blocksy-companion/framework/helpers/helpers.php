@@ -311,5 +311,57 @@ function blc_get_jed_locale_data($domain) {
 		$locale[$domain][$entry->key()] = $entry->translations;
 	}
 
+	if (! function_exists('blocksy_get_json_translation_files')) {
+		return $locale[$domain];
+	}
+
+	foreach (blocksy_get_json_translation_files('blocksy-companion') as $file_path) {
+		$parsed_json = json_decode(
+			call_user_func(
+				'file' . '_get_contents',
+				$file_path
+			),
+			true
+		);
+
+		if (
+			! $parsed_json
+			||
+			! isset($parsed_json['locale_data']['messages'])
+		) {
+			continue;
+		}
+
+		foreach ($parsed_json['locale_data']['messages'] as $msgid => $entry) {
+			if (empty($msgid)) {
+				continue;
+			}
+
+			$locale[$domain][$msgid] = $entry;
+		}
+	}
+
 	return $locale[$domain];
+}
+
+function blc_get_variables_from_file(
+	$file_path,
+	array $_extract_variables,
+	array $_set_variables = array()
+) {
+	// phpcs:ignore WordPress.PHP.DontExtract.extract_extract
+	extract($_set_variables, EXTR_REFS);
+	unset($_set_variables);
+
+	if (is_file($file_path)) {
+		require $file_path;
+	}
+
+	foreach ($_extract_variables as $variable_name => $default_value) {
+		if (isset($$variable_name) ) {
+			$_extract_variables[$variable_name] = $$variable_name;
+		}
+	}
+
+	return $_extract_variables;
 }

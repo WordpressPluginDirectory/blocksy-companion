@@ -228,7 +228,7 @@ if ($field === 'wp:comments') {
 
 if ($field === 'wp:author') {
 	$author_id = get_post_field('post_author', get_the_ID());
-	$author_field = blocksy_akg('author_field', $attributes, 'email');
+	$author_field = blocksy_akg('author_field', $attributes, 'display_name');
 
 	$overide_link = '';
 
@@ -245,7 +245,7 @@ if ($field === 'wp:author') {
 	}
 
 	if ($author_field === 'display_name') {
-		$value = blocksy_get_the_author_meta('nickname', $author_id);
+		$value = blocksy_get_the_author_meta('display_name', $author_id);
 	}
 
 	if ($author_field === 'first_name') {

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-23 13:24:15+0000\n"
+"PO-Revision-Date: 2024-07-26 07:49:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1554,55 +1554,55 @@ msgstr "Додайте умови"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:68
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Оновіть план агентства та отримайте миттєвий доступ до цього початкового сайту та багатьох інших функцій."
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:316
 msgid "Documentation"
-msgstr ""
+msgstr "Документація"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:346
 msgid "Manage"
-msgstr ""
+msgstr "Керувати"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:86
 msgid "Video Tutorial"
-msgstr ""
+msgstr "Відеоінструкція"
 
 #: static/js/options/ConditionsManager.js:207
 msgid "Advanced Mode"
-msgstr ""
+msgstr "Розширений режим"
 
 #: static/js/options/ConditionsManager/PostIdPicker.js:78
 msgid "Select product"
-msgstr ""
+msgstr "Виберіть товар"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:149
 msgid "Monday"
-msgstr ""
+msgstr "Понеділок"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Вівторок"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Середа"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Четвер"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
-msgstr ""
+msgstr "П'ятниця"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:174
 msgid "Saturday"
-msgstr ""
+msgstr "Субота"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:179
 msgid "Sunday"
-msgstr ""
+msgstr "Неділя"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:21
 msgid "Mon"
@@ -8127,7 +8127,7 @@ msgstr "Google Analytics v4"
 
 #: framework/features/google-analytics.php:74
 msgid "Link your Google Analytics 4 tracking ID. More info and instructions can be found %shere%s."
-msgstr "Прив’яжіть свій ідентифікатор відстеження Google Analytics 4. Додаткову інфор��ацію та інструкції можна знайти %sтут%s."
+msgstr "Прив’яжіть свій ідентифікатор відстеження Google Analytics 4. Додаткову інформацію та інструкції можна знайти %sтут%s."
 
 #: framework/features/opengraph-meta-data.php:13
 msgid "OpenGraph Meta Data"

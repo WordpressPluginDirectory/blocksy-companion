@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-23 13:23:56+0000\n"
+"PO-Revision-Date: 2024-07-26 07:49:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1546,15 +1546,15 @@ msgstr ""
 
 #: static/js/options/ConditionsManager/SingleCondition.js:440
 msgid "Display if query string is present in URL"
-msgstr ""
+msgstr "Toon als querystring aanwezig is in URL"
 
 #: static/js/options/DisplayCondition.js:62
 msgid "Add Conditions"
-msgstr ""
+msgstr "Voeg voorwaarden toe"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:68
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr ""
+msgstr "Upgrade naar het Agency-abonnement voor directe toegang tot deze starterssite en andere functies."
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:316
 msgid "Documentation"
@@ -1582,15 +1582,15 @@ msgstr "Maandag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:154
 msgid "Tuesday"
-msgstr ""
+msgstr "Dinsdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:159
 msgid "Wednesday"
-msgstr ""
+msgstr "Woensdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:164
 msgid "Thursday"
-msgstr ""
+msgstr "Donderdag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:169
 msgid "Friday"
@@ -1642,27 +1642,27 @@ msgstr "Zo"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:58
 msgid "Every day"
-msgstr ""
+msgstr "Elke dag"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:66
 msgid "Only weekends"
-msgstr ""
+msgstr "Alleen in het weekend"
 
 #: static/js/options/ConditionsManager/ScheduleDate.js:74
 msgid "Only weekdays"
-msgstr ""
+msgstr "Alleen werkdagen"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:319
 msgid "Select sub field"
-msgstr ""
+msgstr "Selecteer subveld"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:372
 msgid "Display based on referer domain"
-msgstr ""
+msgstr "Weergave gebaseerd op verwijzingsdomein"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:406
 msgid "Display if cookie is present"
-msgstr ""
+msgstr "Toon als cookie zichtbaar is"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:42
 msgid "Upgrade to the agency plan and get instant access to this and many other features."
@@ -1670,11 +1670,11 @@ msgstr ""
 
 #: static/js/dashboard/helpers/useUpsellModal.js:88
 msgid "Professional or Agency"
-msgstr ""
+msgstr "Professional of Agency"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:53
 msgid "This is a Pro starter site"
-msgstr ""
+msgstr "Dit is een Pro-starterssite"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:54
 msgid "Upgrade to any pro plan and get instant access to this starter site and many other features."
@@ -1686,12 +1686,12 @@ msgstr ""
 
 #: static/js/dashboard/helpers/useProExtensionInFree.js:14
 msgid "This is a Pro extension"
-msgstr ""
+msgstr "Dit is een Pro- extensie"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:103
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:115
 msgid "Agency"
-msgstr ""
+msgstr "Agency"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:11
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:14
@@ -1705,20 +1705,20 @@ msgstr "Vergelijk abbonnementen"
 #: static/js/dashboard/helpers/useUpsellModal.js:17
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:107
 msgid "Personal"
-msgstr ""
+msgstr "Personal"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:18
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:111
 msgid "Professional"
-msgstr ""
+msgstr "Professional"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:27
 msgid "This is a Pro feature"
-msgstr ""
+msgstr "Dit is een Pro-functie"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:28
 msgid "Upgrade to any pro plan and get instant access to this and many other feature."
-msgstr ""
+msgstr "Upgrade naar een Pro-abonnement voor directe toegang tot deze en vele andere functies."
 
 #: static/js/dashboard/helpers/useUpsellModal.js:35
 msgid "Upgrade to the professional or agency plan and get instant access to this and many other features."
@@ -1730,11 +1730,11 @@ msgstr ""
 
 #: static/js/dashboard/NoTheme.js:63
 msgid "Install and activate the Blocksy theme"
-msgstr ""
+msgstr "Installeer en activeer het Blocksy-thema"
 
 #: static/js/dashboard/NoTheme.js:16
 msgid "Action Required - Install Blocksy Theme"
-msgstr ""
+msgstr "Actie vereist — Installeer Blocksy-thema"
 
 #: static/js/dashboard/NoTheme.js:22
 msgid "Blocksy Companion is the complementary plugin to Blocksy theme. It adds a bunch of great features to the theme and acts as an unlocker for the Blocksy Pro package."
@@ -1742,11 +1742,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:423
 msgid "Show Image Frame"
-msgstr ""
+msgstr "Toon afbeeldingsframe"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:444
 msgid "Show Label"
-msgstr ""
+msgstr "Toon label"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:457
 msgid "Show Counter"
@@ -1756,7 +1756,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:82
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:526
 msgid "Show Reset Button"
-msgstr ""
+msgstr "Toon resetknop"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:168
 msgid "Show or hide reset filter button."
@@ -1784,11 +1784,11 @@ msgstr ""
 
 #: framework/premium/static/js/hooks/CreateHook.js:164
 msgid "Maintenance Template"
-msgstr ""
+msgstr "Onderhoudstemplate"
 
 #: framework/premium/static/js/media-video/components/EditVideoMeta.js:44
 msgid "Video Options"
-msgstr ""
+msgstr "Video-opties"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:75
 msgid "Display order overhiew section."
@@ -1796,7 +1796,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:90
 msgid "Order Details"
-msgstr ""
+msgstr "Bestelgegevens"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:94
 msgid "Display order details section."
@@ -1804,23 +1804,23 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:177
 msgid "Filter By"
-msgstr ""
+msgstr "Filter op"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:92
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:221
 msgid "Attribute"
-msgstr ""
+msgstr "Attribuut"
 
 #: framework/premium/features/premium-header/items/language-switcher/options/common.php:11
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:145
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:192
 msgid "Display Type"
-msgstr ""
+msgstr "Type weergave"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:154
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:200
 msgid "List"
-msgstr ""
+msgstr "Lijst"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:387
 msgid "Image Aspect Ratio"
@@ -1840,11 +1840,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:118
 msgid "Select attribute"
-msgstr ""
+msgstr "Selecteer attribute"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:305
 msgid "Show Hierarchy"
-msgstr ""
+msgstr "Toon hiërarchie"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:321
 msgid "Expandable"
@@ -1916,15 +1916,15 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:10
 msgid "Billing address"
-msgstr ""
+msgstr "Factuuradres"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/CustomerDetails.js:34
 msgid "Shipping address"
-msgstr ""
+msgstr "Verzendadres"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:64
 msgid "Subtotal"
-msgstr ""
+msgstr "Subtotaal"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:77
 msgid "Shipping"
@@ -1932,12 +1932,12 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:79
 msgid "Free shipping"
-msgstr ""
+msgstr "Gratis bezorging"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:83
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:42
 msgid "Payment method"
-msgstr ""
+msgstr "Betaalmethode"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:85
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:43
@@ -1947,15 +1947,15 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:88
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:28
 msgid "Total"
-msgstr ""
+msgstr "Totaal"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:8
 msgid "Order number"
-msgstr ""
+msgstr "Bestelnummer"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:108
 msgid "Customer Details"
-msgstr ""
+msgstr "Klantgegevens"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:112
 msgid "Display customer details section."
@@ -1963,7 +1963,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:71
 msgid "Order Overview"
-msgstr ""
+msgstr "Besteloverzicht"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:89
 msgid "Once you insert your %sProject ID%s and click the \"Fetch Fonts\" button, your fonts will become available in all theme’s typography options."
@@ -2036,7 +2036,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:221
 #: static/js/editor/blocks/search/Edit.js:281
 msgid "Button Text Color"
-msgstr ""
+msgstr "Kleur knoptekst"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:17
 msgid "Newsletter Controls"
@@ -2098,18 +2098,18 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/Preview.js:59
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Preview.js:183
 msgid "Reset Filter"
-msgstr ""
+msgstr "Reset filter"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:710,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:24,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:46,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:142
 msgid "Color"
-msgstr ""
+msgstr "Kleur"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:78
 msgid "Short Name"
-msgstr ""
+msgstr "Korte naam"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:236
 msgid "Sorry, this product is unavailable. Please choose a different combination."
@@ -2198,7 +2198,7 @@ msgstr "Met deze mogelijkheid voeg je een specifieke productvariatie toe aan de 
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:601,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/table-no-results.php:3
 msgid "Browse products"
-msgstr ""
+msgstr "Bekijk producten"
 
 #: framework/features/blocks/contact-info/options.php:533,
 #: framework/premium/features/premium-header/items/contacts/options.php:417
@@ -2207,7 +2207,7 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/contacts/view.php:59
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: framework/premium/features/premium-header/items/divider/options.php:22,
 #: framework/premium/features/premium-header/items/divider/options.php:51,
@@ -2222,7 +2222,7 @@ msgstr ""
 
 #: framework/premium/features/premium-header/items/menu-tertiary/config.php:4
 msgid "Menu 3"
-msgstr ""
+msgstr "Menu 3"
 
 #: framework/features/blocks/search/options.php:119,
 #: framework/premium/features/premium-header/items/search-input/options.php:111
@@ -2289,7 +2289,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:133,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:158
 msgid "Default Message"
-msgstr ""
+msgstr "Standaardbericht"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:143
 msgid "You can use dynamic code tags such as {price} inside this option."
@@ -2297,7 +2297,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:174
 msgid "Success Message"
-msgstr ""
+msgstr "Succesbericht"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:5,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:259,
@@ -2311,7 +2311,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:23
 msgid "Side Panel"
-msgstr ""
+msgstr "Zijpaneel"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:33
 msgid "Reveal From"
@@ -2342,7 +2342,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:382,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:176
 msgid "Congratulations! You got free shipping 🎉"
-msgstr ""
+msgstr "Gratis bezorgd!"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:359,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:135
@@ -2796,7 +2796,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:14
 msgid "Quantity Auto Update"
-msgstr ""
+msgstr "Hoeveelheid automatisch bijwerken"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:37
 msgid "Product brands base"
@@ -2877,7 +2877,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:657
 msgid "Update Brand"
-msgstr ""
+msgstr "Werk merk bij"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:658
 msgid "Add New Brand"
@@ -3573,7 +3573,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/providers/demo.php:16
 msgid "Demo List"
-msgstr ""
+msgstr "Demolijst"
 
 #: framework/features/conditions/rules/basic.php:6,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/options.php:12
@@ -4547,7 +4547,7 @@ msgstr ""
 
 #: framework/features/account-auth.php:238
 msgid "Your account was created successfully and a password has been sent to your email address. Please visit the %1$slogin page%2$s."
-msgstr ""
+msgstr "Account aangemaakt! Er is een wachtwoord naar je e-mailadres gestuurd. Bezoek de %1$sinlogpagina%2$s."
 
 #. translators: This is a brand name. Preferably to not be translated
 #: framework/extensions/cookies-consent/config.php:5,
@@ -5033,7 +5033,7 @@ msgstr ""
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:66
 msgid "removing default WordPress pages"
-msgstr ""
+msgstr "standaard WordPress-pagina's verwijderen"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:70
 msgid "resetting customizer options"
@@ -5223,7 +5223,7 @@ msgstr ""
 
 #: framework/premium/extensions/mega-menu/options.php:57
 msgid "Default Width"
-msgstr ""
+msgstr "Standaard breedte"
 
 #: framework/premium/extensions/mega-menu/options.php:86,
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:175,
@@ -5308,7 +5308,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:512,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:542
 msgid "Background"
-msgstr ""
+msgstr "Background"
 
 #: framework/premium/extensions/mega-menu/options.php:599
 msgid "Link Color"
@@ -5406,7 +5406,7 @@ msgstr ""
 #: static/js/editor/blocks/share-box/Edit.js:81
 #: static/js/editor/blocks/socials/Edit.js:81
 msgid "Icon Color"
-msgstr ""
+msgstr "Kleur icoon"
 
 #: framework/helpers/exts.php:85
 msgid "Enables support for Custom Fields inside archive cards and single page post title, adds a reading progress bar for your posts and lets you set featured images and colors for your categories archives."
@@ -5447,7 +5447,7 @@ msgstr ""
 #: framework/premium/extensions/shortcuts/customizer.php:360,
 #: framework/premium/extensions/shortcuts/views/bar.php:49
 msgid "Cart"
-msgstr ""
+msgstr "Winkelwagen"
 
 #: framework/premium/extensions/shortcuts/customizer.php:393,
 #: framework/premium/extensions/shortcuts/customizer.php:416
@@ -5568,7 +5568,7 @@ msgstr ""
 
 #: framework/premium/extensions/shortcuts/customizer.php:1042
 msgid "Cart Badge Color"
-msgstr ""
+msgstr "Kleur winkelwagenbadge"
 
 #: framework/premium/extensions/shortcuts/customizer.php:1181
 msgid "Items Divider Height"
@@ -5580,7 +5580,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:150,
 #: framework/premium/features/premium-header/items/language-switcher/options/dropdown.php:175
 msgid "Shadow"
-msgstr ""
+msgstr "Schaduw"
 
 #: framework/helpers/exts.php:143
 msgid "Create unlimited personalized sets of widget areas and display them on any page or post using our conditional logic functionality."
@@ -5614,7 +5614,7 @@ msgstr ""
 
 #: framework/helpers/exts.php:176
 msgid "Make the shopping experience better for your visitors! Add features such as Product Quick View, Wishlist functionality and a Floating Add to Cart button. Customize the single product gallery/slider and the layout."
-msgstr "Maak de winkelervaring beter voor je bezoekers! Voeg functies toe als Product Snel Bekijken, Verlanglijst functionaliteit en een Zwevende Doe In Winkelwagen knop. Pas de enkele product gallerij/slider aan en de indeling."
+msgstr "Verbeter je winkelervaring met snelle weergave van producten, verlanglijstjes en een zwevende winkelwagentje. Wijzig daarnaast de productgalerij of lay-out."
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/feature.php:14
 msgid "Quick View Button"
@@ -5630,7 +5630,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:65,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:66
 msgid "Type 3"
-msgstr ""
+msgstr "Type 3"
 
 #: framework/features/header/items/account/options.php:477,
 #: framework/features/header/items/account/options.php:851,
@@ -5671,7 +5671,7 @@ msgstr ""
 #: framework/helpers/exts.php:186,
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:4
 msgid "Floating Cart"
-msgstr ""
+msgstr "Zwevend winkelwagen"
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:15
 msgid "Position"
@@ -6142,7 +6142,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:738
 msgid "Cart is empty"
-msgstr ""
+msgstr "Je winkelwagentje is leeg."
 
 #: framework/premium/features/content-blocks/hooks-manager.php:742
 msgid "Before cart"
@@ -6782,7 +6782,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:313,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:434
 msgid "Default State"
-msgstr ""
+msgstr "Standaard"
 
 #: framework/features/header/header-options.php:219,
 #: framework/features/header/items/account/options.php:1148,
@@ -6935,7 +6935,7 @@ msgstr ""
 #: framework/premium/extensions/shortcuts/views/bar.php:51,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/feature.php:263
 msgid "Wish List"
-msgstr ""
+msgstr "Verlanglijstje"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/helpers.php:150,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/helpers.php:211
@@ -6961,11 +6961,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:40
 msgid "Wish List Page"
-msgstr ""
+msgstr "Verlanglijstje-pagina"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:46
 msgid "The page you select here will display the wish list for your logged out users."
-msgstr ""
+msgstr "De pagina die je hier selecteert, toont het verlanglijstje voor uitgelogde gebruikers."
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:227,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:240,
@@ -6984,7 +6984,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/table-no-results.php:6
 msgid "You don't have any products in your wish list yet."
-msgstr ""
+msgstr "Je hebt nog geen producten op je verlanglijstje staan."
 
 #: framework/premium/extensions/woocommerce-extra/features/archive-card/feature.php:56,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:40
@@ -6996,7 +6996,7 @@ msgstr "Toevoegen aan winkelwagen"
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:145,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/columns/product-remove-button.php:12
 msgid "Remove Product"
-msgstr ""
+msgstr "Verwijder product"
 
 #: framework/premium/extensions/woocommerce-extra/includes/woo-import-export.php:36
 msgid "Blocksy Variation Images"
@@ -7364,7 +7364,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:625,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:557
 msgid "Margin"
-msgstr ""
+msgstr "Marge"
 
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:106,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/view.php:47
@@ -7861,46 +7861,46 @@ msgstr ""
 
 #: framework/premium/extensions/adobe-typekit/extension.php:46
 msgid "Adobe Typekit"
-msgstr ""
+msgstr "Adobe Typekit"
 
 #: framework/premium/extensions/custom-fonts/extension.php:154
 msgid "Custom Fonts"
-msgstr ""
+msgstr "Eigen fonts"
 
 #: framework/premium/extensions/local-google-fonts/extension.php:122
 msgid "Local Google Fonts"
-msgstr ""
+msgstr "Locale Google Fonts"
 
 #: framework/theme-integration.php:220,
 #: framework/features/blocks/share-box/options.php:19
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: framework/theme-integration.php:222,
 #: framework/features/blocks/share-box/options.php:37
 msgid "LinkedIn"
-msgstr ""
+msgstr "LinkedIn"
 
 #: framework/theme-integration.php:223
 msgid "Dribbble"
-msgstr ""
+msgstr "Dribbble"
 
 #: framework/theme-integration.php:224
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: framework/theme-integration.php:225,
 #: framework/features/blocks/share-box/options.php:31
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 #: framework/theme-integration.php:226
 msgid "WordPress"
-msgstr ""
+msgstr "WordPress"
 
 #: framework/theme-integration.php:227
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: framework/theme-integration.php:228,
 #: framework/features/blocks/about-me/options.php:86,
@@ -7911,47 +7911,47 @@ msgstr "Medium"
 #: framework/theme-integration.php:229,
 #: framework/premium/features/media-video/options.php:14
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 #: framework/theme-integration.php:230,
 #: framework/premium/features/media-video/options.php:15
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: framework/theme-integration.php:231,
 #: framework/features/blocks/share-box/options.php:55
 msgid "VKontakte"
-msgstr ""
+msgstr "VKontakte"
 
 #: framework/theme-integration.php:232,
 #: framework/features/blocks/share-box/options.php:61
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: framework/theme-integration.php:233
 msgid "TikTok"
-msgstr ""
+msgstr "TikTok"
 
 #: framework/theme-integration.php:278
 msgid "Companion"
-msgstr ""
+msgstr "Companion"
 
 #: framework/theme-integration.php:296
 msgid "PRO"
-msgstr ""
+msgstr "PRO"
 
 #: framework/features/account-auth.php:119,
 #: framework/features/account-auth.php:267
 msgid "Check your email"
-msgstr ""
+msgstr "Check je e-mail"
 
 #: framework/features/account-auth.php:273
 msgid "Registration Form"
-msgstr ""
+msgstr "Registratieformulier"
 
 #: framework/features/account-auth.php:274
 msgid "Register For This Site"
-msgstr ""
+msgstr "Meld je aan voor deze site"
 
 #: framework/features/conditions/rules/cpt.php:17
 msgid "%s Single"
@@ -8003,16 +8003,16 @@ msgstr ""
 #: framework/features/conditions/rules/pages.php:52,
 #: framework/premium/features/premium-header/items/search-input/options.php:5
 msgid "Pages"
-msgstr ""
+msgstr "Pagina's"
 
 #: framework/features/conditions/rules/pages.php:8
 msgid "Single Page"
-msgstr ""
+msgstr "Enkele pagina"
 
 #: framework/features/conditions/rules/specific.php:48
 #: static/js/editor/blocks/query/edit/layers/useTaxonomiesLayers.js:69
 msgid "Specific"
-msgstr ""
+msgstr "Specifiek"
 
 #: framework/features/conditions/rules/specific.php:10
 msgid "Post ID"
@@ -8038,7 +8038,7 @@ msgstr ""
 
 #: framework/features/conditions/rules/pages.php:15
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #: framework/features/blocks/search/options.php:60,
 #: framework/features/blocks/search/options.php:66,
@@ -8051,15 +8051,15 @@ msgstr ""
 #: static/js/editor/blocks/search/Preview.js:23
 #: static/js/editor/blocks/tax-query/edit/PatternSelectionModal.js:78
 msgid "Search"
-msgstr ""
+msgstr "Zoek"
 
 #: framework/features/conditions/rules/pages.php:27
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: framework/features/conditions/rules/pages.php:33
 msgid "Front Page"
-msgstr ""
+msgstr "Voorpagina"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:69
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:157
@@ -8120,7 +8120,7 @@ msgstr ""
 
 #: framework/features/google-analytics.php:69
 msgid "Google Analytics v4"
-msgstr ""
+msgstr "Google Analytics v4"
 
 #: framework/features/google-analytics.php:74
 msgid "Link your Google Analytics 4 tracking ID. More info and instructions can be found %shere%s."
@@ -8128,23 +8128,23 @@ msgstr ""
 
 #: framework/features/opengraph-meta-data.php:13
 msgid "OpenGraph Meta Data"
-msgstr ""
+msgstr "OpenGraph metadata"
 
 #: framework/features/opengraph-meta-data.php:17
 msgid "Enable the OpenGraph rich meta data features for your website."
-msgstr ""
+msgstr "Schakel de OpenGraph rich metadata-functies in voor je website."
 
 #: framework/features/opengraph-meta-data.php:26
 msgid "Facebook Page URL"
-msgstr ""
+msgstr "Facebook Page URL"
 
 #: framework/features/opengraph-meta-data.php:33
 msgid "Facebook App ID"
-msgstr ""
+msgstr "Facebook App ID"
 
 #: framework/features/opengraph-meta-data.php:40
 msgid "Twitter Username"
-msgstr ""
+msgstr "Twitter-gebruikersnaam"
 
 #: framework/extensions/cookies-consent/config.php:6
 msgid "Display a cookie acceptance box in order to comply with the privacy regulations in your country."
@@ -8194,7 +8194,7 @@ msgstr ""
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:43
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:39
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: framework/extensions/cookies-consent/customizer.php:28,
 #: framework/premium/extensions/shortcuts/customizer.php:679,
@@ -8209,7 +8209,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:55,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:56
 msgid "Type 1"
-msgstr ""
+msgstr "Type 1"
 
 #: framework/extensions/cookies-consent/customizer.php:33,
 #: framework/premium/extensions/shortcuts/customizer.php:684,
@@ -8224,7 +8224,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:60,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:61
 msgid "Type 2"
-msgstr ""
+msgstr "Type 2"
 
 #: framework/extensions/cookies-consent/customizer.php:40
 msgid "Cookie period"
@@ -8248,19 +8248,19 @@ msgstr ""
 
 #: framework/extensions/cookies-consent/customizer.php:52
 msgid "Three months"
-msgstr ""
+msgstr "Drie maanden"
 
 #: framework/extensions/cookies-consent/customizer.php:53
 msgid "Six months"
-msgstr ""
+msgstr "Zes maanden"
 
 #: framework/extensions/cookies-consent/customizer.php:54
 msgid "One year"
-msgstr ""
+msgstr "Een jaar"
 
 #: framework/extensions/cookies-consent/customizer.php:55
 msgid "Forever"
-msgstr ""
+msgstr "Voor altijd"
 
 #: framework/extensions/cookies-consent/customizer.php:62,
 #: framework/features/blocks/contact-info/options.php:87,
@@ -8296,7 +8296,7 @@ msgstr ""
 #: framework/extensions/cookies-consent/customizer.php:80,
 #: framework/extensions/cookies-consent/helpers.php:10
 msgid "Accept"
-msgstr ""
+msgstr "Accepteer"
 
 #: framework/extensions/cookies-consent/customizer.php:142,
 #: framework/extensions/newsletter-subscribe/customizer.php:170,
@@ -8335,7 +8335,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:152,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:154
 msgid "Design"
-msgstr ""
+msgstr "Ontwerp"
 
 #: framework/extensions/cookies-consent/customizer.php:203,
 #: framework/extensions/cookies-consent/customizer.php:270,
@@ -8368,7 +8368,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:240,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:269
 msgid "Font Color"
-msgstr ""
+msgstr "Kleur lettertype"
 
 #: framework/extensions/cookies-consent/customizer.php:164,
 #: framework/extensions/cookies-consent/customizer.php:191,
@@ -8590,12 +8590,12 @@ msgstr ""
 #: static/js/editor/blocks/share-box/Edit.js:161
 #: static/js/editor/blocks/socials/Edit.js:161
 msgid "Hover"
-msgstr ""
+msgstr "Hover"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:328,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:253
 msgid "Button Color"
-msgstr ""
+msgstr "Kleur knop"
 
 #: framework/extensions/cookies-consent/customizer.php:178,
 #: framework/extensions/cookies-consent/customizer.php:234,
@@ -8610,11 +8610,11 @@ msgstr ""
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:92,
 #: framework/premium/features/premium-header/items/language-switcher/options/dropdown.php:141
 msgid "Background Color"
-msgstr ""
+msgstr "Achtergrondkleur"
 
 #: framework/extensions/cookies-consent/customizer.php:98
 msgid "Maximum Width"
-msgstr ""
+msgstr "Maximale breedte"
 
 #: framework/extensions/cookies-consent/customizer.php:119
 msgid "I accept the %sPrivacy Policy%s*"
@@ -8638,7 +8638,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/customizer.php:4
 msgid "Subscribe Form"
-msgstr ""
+msgstr "Inschrijfformulier"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:18,
 #: framework/features/blocks/about-me/options.php:15,
@@ -8664,13 +8664,13 @@ msgstr ""
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:44
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:125
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:20,
 #: framework/extensions/newsletter-subscribe/helpers.php:21,
 #: framework/extensions/newsletter-subscribe/helpers.php:69
 msgid "Newsletter Updates"
-msgstr ""
+msgstr "Updates nieuwsbrief"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:26,
 #: framework/features/blocks/about-me/options.php:64,
@@ -8715,7 +8715,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:17,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:17
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:49,
 #: framework/extensions/trending/customizer.php:236,
@@ -8752,23 +8752,23 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:18
 #: static/js/editor/blocks/dynamic-data/utils.js:10
 msgid "Custom"
-msgstr ""
+msgstr "Aangepast"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:61,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:50
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:204
 msgid "List ID"
-msgstr ""
+msgstr "Lijst ID"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:79,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:109
 msgid "Name Field"
-msgstr ""
+msgstr "Naam veld"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:117,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:121
 msgid "Name Label"
-msgstr ""
+msgstr "Naam label"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:119,
 #: framework/extensions/newsletter-subscribe/extension.php:208,
@@ -8777,25 +8777,25 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:122,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:147
 msgid "Your name"
-msgstr ""
+msgstr "Jouw naam"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:128,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:136
 msgid "Mail Label"
-msgstr ""
+msgstr "Label mail"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:130,
 #: framework/extensions/newsletter-subscribe/extension.php:209,
 #: framework/extensions/newsletter-subscribe/helpers.php:41,
 #: framework/extensions/newsletter-subscribe/helpers.php:82
 msgid "Your email"
-msgstr ""
+msgstr "Jouw e-mail"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:137,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:142,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:416
 msgid "Button Label"
-msgstr ""
+msgstr "Label knop"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:139,
 #: framework/extensions/newsletter-subscribe/extension.php:203,
@@ -8804,7 +8804,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:143,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:21
 msgid "Subscribe"
-msgstr ""
+msgstr "Meld je aan"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:149,
 #: framework/extensions/trending/customizer.php:516,
@@ -8825,7 +8825,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:425,
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:43
 msgid "Visibility"
-msgstr ""
+msgstr "Zichtbaarheid"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:160,
 #: framework/extensions/trending/customizer.php:528,
@@ -8871,7 +8871,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:104,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:105
 msgid "Desktop"
-msgstr ""
+msgstr "Desktop"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:161,
 #: framework/extensions/trending/customizer.php:529,
@@ -8921,7 +8921,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:106,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:589
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:162,
 #: framework/extensions/trending/customizer.php:530,
@@ -8976,16 +8976,16 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:107,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:590
 msgid "Mobile"
-msgstr ""
+msgstr "Mobiel"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:175,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:146
 msgid "Title Color"
-msgstr ""
+msgstr "Kleur titel"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:197
 msgid "Description Color"
-msgstr ""
+msgstr "Kleur beschrijving"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:227,
 #: framework/features/header/items/account/options.php:1553,
@@ -9019,7 +9019,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:210
 #: static/js/editor/blocks/search/Edit.js:269
 msgid "Focus"
-msgstr ""
+msgstr "Focus"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:259,
 #: framework/features/header/items/account/options.php:1588,
@@ -9073,7 +9073,7 @@ msgstr ""
 #: framework/features/header/items/account/options.php:578
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:129
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:262,
 #: framework/features/blocks/contact-info/options.php:391,
@@ -9188,7 +9188,7 @@ msgstr ""
 
 #: framework/extensions/product-reviews/extension.php:553
 msgid "Update Product Review"
-msgstr ""
+msgstr "Werk productbeoordelingen bij"
 
 #: framework/extensions/product-reviews/extension.php:554
 msgid "Search Product Review"
@@ -9239,7 +9239,7 @@ msgstr ""
 
 #: framework/extensions/product-reviews/extension.php:597
 msgid "Update Category"
-msgstr ""
+msgstr "Werk categorie bij"
 
 #: framework/extensions/product-reviews/extension.php:598
 msgid "Add New Category"
@@ -9275,7 +9275,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:39
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:11
 msgid "Product"
-msgstr ""
+msgstr "Product"
 
 #: framework/extensions/product-reviews/metabox.php:19
 msgid "Book"
@@ -9759,7 +9759,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:28,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:28
 msgid "Icon"
-msgstr ""
+msgstr "Icoon"
 
 #: framework/premium/features/premium-header.php:277,
 #: framework/features/blocks/about-me/options.php:168,
@@ -9784,7 +9784,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:129,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:130
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 #: framework/premium/features/premium-header.php:297,
 #: framework/premium/extensions/mega-menu/options.php:517,
@@ -9795,7 +9795,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:130,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:131
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:14
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:56
@@ -9821,7 +9821,7 @@ msgstr ""
 #: static/js/editor/blocks/breadcrumbs/Edit.js:54
 #: static/js/editor/blocks/contact-info/Edit.js:107
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:19,
 #: framework/features/blocks/about-me/options.php:67

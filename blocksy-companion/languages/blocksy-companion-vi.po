@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-17 18:30:26+0000\n"
+"PO-Revision-Date: 2024-07-31 01:01:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,988 +13,988 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:9
 msgid "Color Mode"
-msgstr ""
+msgstr "Chế độ màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:17
 msgid "One Color"
-msgstr ""
+msgstr "Một màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:18
 msgid "Dual Color"
-msgstr ""
+msgstr "Hai màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:28
 msgid "Colors"
-msgstr ""
+msgstr "Màu sắc"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:50
 msgid "Color 1"
-msgstr ""
+msgstr "Màu 1"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:58
 msgid "Color 2"
-msgstr ""
+msgstr "Màu 2"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:88
 msgid "Tooltip"
-msgstr ""
+msgstr "Chú thích"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:108
 msgid "Tooltip Text"
-msgstr ""
+msgstr "Văn bản chú thích"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:111
 msgid "{term_name}"
-msgstr ""
+msgstr "{term_name}"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:122
 msgid "Tooltip Image"
-msgstr ""
+msgstr "Hình ảnh chú thích"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:135
 msgid "Subtype"
-msgstr ""
+msgstr "Loại phụ"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:174
 msgid "here"
-msgstr ""
+msgstr "tại đây"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:21
 msgid "Item Visibility"
-msgstr ""
+msgstr "Hiển thị mục"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:36
 msgid "Hide Missing Language"
-msgstr ""
+msgstr "Ẩn ngôn ngữ bị thiếu"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php:52
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Preview.js:94
 msgid "Please wait until the lookup table is generated."
-msgstr ""
+msgstr "Vui lòng đợi cho đến khi bảng tra cứu được tạo."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php:461
 msgid "Collapse"
-msgstr ""
+msgstr "Thu gọn"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php:462
 msgid "Expand"
-msgstr ""
+msgstr "Mở rộng"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/filter-presenter.php:64
 msgid "category"
-msgstr ""
+msgstr "danh mục"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/filter-presenter.php:108
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Preview.js:32
 msgid "Find by %s"
-msgstr ""
+msgstr "Tìm theo %s"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:434
 msgid "Regenerate the product taxonomies lookup table"
-msgstr ""
+msgstr "Tạo lại bảng tra cứu phân loại sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:435
 msgid "This tool will regenerate the product taxonomies lookup table data from existing product(s) data. This process may take a while."
-msgstr ""
+msgstr "Công cụ này sẽ tái tạo dữ liệu bảng tra cứu phân loại sản phẩm từ dữ liệu sản phẩm hiện có. Quá trình này có thể mất một thời gian."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:446
 msgid "Product taxonomies lookup table data is regenerating"
-msgstr ""
+msgstr "Dữ liệu bảng tra cứu phân loại sản phẩm đang được tái tạo"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:459
 msgid "Regenerate"
-msgstr ""
+msgstr "Tái tạo"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:453
 msgid "Filling in progress (%d)"
-msgstr ""
+msgstr "Đang tiến hành điền (%d)"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:494
 msgid "Resume the product taxonomies lookup table regeneration"
-msgstr ""
+msgstr "Tiếp tục quá trình tái tạo bảng tra cứu phân loại sản phẩm"
 
 #. translators: %1$s = count of products already processed.
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:497
 msgid "This tool will resume the product taxonomies lookup table regeneration at the point in which it was aborted (%1$s products were already processed)."
-msgstr ""
+msgstr "Công cụ này sẽ tiếp tục quá trình tái tạo bảng tra cứu phân loại sản phẩm tại thời điểm nó bị hủy bỏ (%1$s sản phẩm đã được xử lý)."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:516
 msgid "Product taxonomies lookup table regeneration process has been resumed."
-msgstr ""
+msgstr "Quá trình tái tạo bảng tra cứu phân loại sản phẩm đã được tiếp tục."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:518
 msgid "Resume"
-msgstr ""
+msgstr "Tiếp tục"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:466
 msgid "Abort the product taxonomies lookup table regeneration"
-msgstr ""
+msgstr "Hủy quá trình tái tạo bảng tra cứu phân loại sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:486
 msgid "Product taxonomies lookup table regeneration process has been aborted."
-msgstr ""
+msgstr "Quá trình tái tạo bảng tra cứu phân loại sản phẩm đã bị hủy."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:488
 msgid "Abort"
-msgstr ""
+msgstr "Hủy"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:158
 msgid "Container Border Color"
-msgstr ""
+msgstr "Màu viền của vùng chứa"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:189
 msgid "Container Background Color"
-msgstr ""
+msgstr "Màu nền của vùng chứa"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:152
 msgid "API Version"
-msgstr ""
+msgstr "Phiên bản API"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:272
 msgid "More information on how to generate an API key for Brevo can be found %shere%s."
-msgstr ""
+msgstr "Thông tin thêm về cách tạo khóa API cho Brevo có thể được tìm thấy %stại đây%s."
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:834
 msgid "Hide Documentation Links"
-msgstr ""
+msgstr "Ẩn liên kết tài liệu"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:842
 msgid "Hide Video Links"
-msgstr ""
+msgstr "Ẩn liên kết video"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:104
 msgid "Display the currently active filters."
-msgstr ""
+msgstr "Hiển thị các bộ lọc hiện đang hoạt động."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:47
 msgid "Category 1"
-msgstr ""
+msgstr "Danh mục 1"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:53
 msgid "Category 2"
-msgstr ""
+msgstr "Danh mục 2"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:66
 msgid "Attribute 1"
-msgstr ""
+msgstr "Thuộc tính 1"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:72
 msgid "Attribute 2"
-msgstr ""
+msgstr "Thuộc tính 2"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:12
 msgid "Date"
-msgstr ""
+msgstr "Ngày"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:10
 msgid "Filter by Price Controls"
-msgstr ""
+msgstr "Lọc theo điều khiển giá"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:106
 msgid "Filter by Price"
-msgstr ""
+msgstr "Lọc theo giá"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:11
 msgid "Widget for filtering the WooCommerce products by price."
-msgstr ""
+msgstr "Widget để lọc sản phẩm WooCommerce theo giá."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:58
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:473
 msgid "Show Tooltip"
-msgstr ""
+msgstr "Hiển thị gợi ý"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:70
 msgid "Show Prices"
-msgstr ""
+msgstr "Hiển thị giá"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Disabled.js:6
 msgid "Please select a valid taxonomy."
-msgstr ""
+msgstr "Vui lòng chọn một phân loại hợp lệ."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:174
 msgid "Filter Settings"
-msgstr ""
+msgstr "Cài đặt bộ lọc"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:253
 msgid "Show Search Box"
-msgstr ""
+msgstr "Hiển thị hộp tìm kiếm"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:496
 msgid "Container Maximum Height"
-msgstr ""
+msgstr "Chiều cao tối đa của vùng chứa"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/TaxonomySelector.js:55
 msgid "Exclude Speciffic Items"
-msgstr ""
+msgstr "Loại trừ các mục cụ thể"
 
 #: static/js/dashboard/VersionMismatch.js:60
 #: static/js/notifications/VersionMismatchNotice.js:77
 msgid "Update Blocksy Theme Now"
-msgstr ""
+msgstr "Cập nhật chủ đề Blocksy ngay bây giờ"
 
 #: static/js/dashboard/screens/DemoInstall.js:205
 msgid "Your site is misconfigured and AJAX requests are not reaching your backend. Please click %shere%s to find the common causes and possible solutions to this.<br> Error code - %s"
-msgstr ""
+msgstr "Trang web của bạn đã được cấu hình sai và các yêu cầu AJAX không đến được backend của bạn. Vui lòng nhấn %svào đây%s để tìm hiểu nguyên nhân phổ biến và các giải pháp có thể cho điều này.<br> Mã lỗi - %s"
 
 #: static/js/dashboard/screens/DemoInstall.js:223
 msgid "Failed to retrieve starter sites list.<br> Error code - %s"
-msgstr ""
+msgstr "Không thể lấy danh sách các mẫu web bắt đầu.<br> Mã lỗi - %s"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:129
 msgid "Installing %s"
-msgstr ""
+msgstr "Đang cài đặt %s"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:341
 msgid "Preparing data..."
-msgstr ""
+msgstr "Đang chuẩn bị dữ liệu..."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:89
 msgid "Required plan"
-msgstr ""
+msgstr "Kế hoạch cần thiết"
 
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:13
 msgid "All Plans"
-msgstr ""
+msgstr "Tất cả các kế hoạch"
 
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:15
 msgid "Pro"
-msgstr ""
+msgstr "Chuyên nghiệp"
 
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:182
 msgid "All Builders"
-msgstr ""
+msgstr "Tất cả các nhà xây dựng"
 
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:206
 msgid "Search for a starter site..."
-msgstr ""
+msgstr "Tìm kiếm một mẫu web bắt đầu..."
 
 #: static/js/dashboard/screens/SiteExport.js:176
 msgid "Export Site"
-msgstr ""
+msgstr "Xuất trang web"
 
 #: static/js/dashboard/screens/SiteExport.js:191
 msgid "Starter site"
-msgstr ""
+msgstr "Mẫu web bắt đầu"
 
 #: static/js/dashboard/screens/SiteExport.js:203
 msgid "Select a starter site"
-msgstr ""
+msgstr "Chọn một mẫu web bắt đầu"
 
 #: static/js/editor/blocks/about-me/index.js:15
 msgid "About Me Controls"
-msgstr ""
+msgstr "Điều khiển về tôi"
 
 #: static/js/editor/blocks/about-me/index.js:43
 msgid "Showcase your personal information across your website."
-msgstr ""
+msgstr "Trưng bày thông tin cá nhân của bạn trên toàn bộ trang web của bạn."
 
 #: static/js/editor/blocks/breadcrumbs/Preview.js:63
 msgid "Subpage"
-msgstr ""
+msgstr "Trang phụ"
 
 #: static/js/editor/blocks/breadcrumbs/index.js:11
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Breadcrumbs"
 
 #: static/js/editor/blocks/breadcrumbs/index.js:12
 msgid "Display navigational links, showing users their path within the site."
-msgstr ""
+msgstr "Hiển thị các liên kết điều hướng, cho người dùng thấy đường đi của họ trong trang web."
 
 #: static/js/editor/blocks/contact-info/index.js:15
 msgid "Contact Info Controls"
-msgstr ""
+msgstr "Điều khiển thông tin liên hệ"
 
 #: static/js/editor/blocks/contact-info/index.js:52
 msgid "Display essential contact details to your visitors."
-msgstr ""
+msgstr "Hiển thị chi tiết liên hệ cần thiết cho khách truy cập của bạn."
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:102
 msgid "9:16"
-msgstr ""
+msgstr "9:16"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:106
 msgid "3:4"
-msgstr ""
+msgstr "3:4"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:110
 msgid "2:3"
-msgstr ""
+msgstr "2:3"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:133
 msgid "Width"
-msgstr ""
+msgstr "Chiều rộng"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:157
 msgid "Height"
-msgstr ""
+msgstr "Chiều cao"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:178
 msgid "Scale"
-msgstr ""
+msgstr "Tỉ lệ"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:209
 msgid "Resolution"
-msgstr ""
+msgstr "Độ phân giải"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:215
 msgid "Select the size of the source image."
-msgstr ""
+msgstr "Chọn kích thước của hình ảnh nguồn."
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:57
 msgid "Image Settings"
-msgstr ""
+msgstr "Cài đặt hình ảnh"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:77
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Tỉ lệ khung hình"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:82
 msgid "Original"
-msgstr ""
+msgstr "Gốc"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:90
 msgid "16:9"
-msgstr ""
+msgstr "16:9"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:94
 msgid "4:3"
-msgstr ""
+msgstr "4:3"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:98
 msgid "3:2"
-msgstr ""
+msgstr "3:2"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:100
 msgid "Icon/Logo"
-msgstr ""
+msgstr "Biểu tượng/Logo"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:138
 msgid "Expand on click"
-msgstr ""
+msgstr "Mở rộng khi nhấp"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:151
 msgid "Video thumbnail"
-msgstr ""
+msgstr "Hình thu nhỏ video"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:161
 msgid "Image Hover Effect"
-msgstr ""
+msgstr "Hiệu ứng di chuột qua hình ảnh"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:174
 msgid "Zoom In"
-msgstr ""
+msgstr "Phóng to"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:178
 msgid "Zoom Out"
-msgstr ""
+msgstr "Thu nhỏ"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:202
 msgid "Alternative Text"
-msgstr ""
+msgstr "Văn bản thay thế"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:215
 msgid "Describe the purpose of the image."
-msgstr ""
+msgstr "Mô tả mục đích của hình ảnh."
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:221
 msgid "Leave empty if decorative."
-msgstr ""
+msgstr "Để trống nếu là trang trí."
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:238
 msgid "Image size"
-msgstr ""
+msgstr "Kích thước hình ảnh"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:271
 msgid "Logo Gap"
-msgstr ""
+msgstr "Khoảng cách Logo"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:323
 msgid "Custom field fallback"
-msgstr ""
+msgstr "Trường tùy chỉnh dự phòng"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:343
 msgid "Term additional class"
-msgstr ""
+msgstr "Lớp bổ sung cho thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:350
 msgid "Additional class for term items. Useful for styling."
-msgstr ""
+msgstr "Lớp bổ sung cho các mục thuật ngữ. Hữu ích cho việc thiết kế."
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:45
 msgid "Content Source"
-msgstr ""
+msgstr "Nguồn nội dung"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:51
 msgid "Search for field"
-msgstr ""
+msgstr "Tìm kiếm trường"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:87
 msgid "Image Source"
-msgstr ""
+msgstr "Nguồn hình ảnh"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:14
 msgid "Change heading level"
-msgstr ""
+msgstr "Thay đổi cấp độ tiêu đề"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:38
 msgid "Heading 1"
-msgstr ""
+msgstr "Tiêu đề 1"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:39
 msgid "Heading 2"
-msgstr ""
+msgstr "Tiêu đề 2"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:40
 msgid "Heading 3"
-msgstr ""
+msgstr "Tiêu đề 3"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:41
 msgid "Heading 4"
-msgstr ""
+msgstr "Tiêu đề 4"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:42
 msgid "Heading 5"
-msgstr ""
+msgstr "Tiêu đề 5"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:43
 msgid "Heading 6"
-msgstr ""
+msgstr "Tiêu đề 6"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:44
 msgid "Paragraph"
-msgstr ""
+msgstr "Đoạn văn"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:45
 msgid "Span"
-msgstr ""
+msgstr "Khoảng"
 
 #: static/js/editor/blocks/dynamic-data/components/TagNameDropdown.js:46
 msgid "Div"
-msgstr ""
+msgstr "Div"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:100
 msgid "Archive Image"
-msgstr ""
+msgstr "Hình ảnh lưu trữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:135
 msgid "Stock Status"
-msgstr ""
+msgstr "Trạng thái hàng tồn kho"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:23
 #: static/js/editor/blocks/dynamic-data/preview-parts/wp/TermTextPreview.js:8
 msgid "Term Title"
-msgstr ""
+msgstr "Tiêu đề thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:27
 #: static/js/editor/blocks/dynamic-data/preview-parts/wp/TermTextPreview.js:9
 msgid "Term Description"
-msgstr ""
+msgstr "Mô tả thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:31
 msgid "Term Image"
-msgstr ""
+msgstr "Hình ảnh thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:35
 #: static/js/editor/blocks/dynamic-data/preview-parts/wp/TermTextPreview.js:10
 msgid "Term Count"
-msgstr ""
+msgstr "Số lượng thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:49
 msgid "Excerpt"
-msgstr ""
+msgstr "Trích dẫn"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:54
 msgid "Post Date"
-msgstr ""
+msgstr "Ngày đăng"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:64
 msgid "Terms"
-msgstr ""
+msgstr "Thuật ngữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:90
 #: static/js/editor/blocks/dynamic-data/preview-parts/WpFieldPreview.js:46
 msgid "Archive Title"
-msgstr ""
+msgstr "Tiêu đề lưu trữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:95
 #: static/js/editor/blocks/dynamic-data/preview-parts/WpFieldPreview.js:50
 msgid "Archive Description"
-msgstr ""
+msgstr "Mô tả lưu trữ"
 
 #: static/js/editor/blocks/dynamic-data/index.js:17
 msgid "Fetch and display content from various sources."
-msgstr ""
+msgstr "Lấy và hiển thị nội dung từ nhiều nguồn."
 
 #: static/js/editor/blocks/dynamic-data/index.js:33
 msgid "Dynamic Title"
-msgstr ""
+msgstr "Tiêu đề động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:37
 msgid "Dynamic Excerpt"
-msgstr ""
+msgstr "Trích dẫn động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:41
 msgid "Dynamic Post Date"
-msgstr ""
+msgstr "Ngày đăng động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:45
 msgid "Dynamic Comments"
-msgstr ""
+msgstr "Bình luận động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:49
 msgid "Dynamic Terms"
-msgstr ""
+msgstr "Thuật ngữ động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:53
 msgid "Dynamic Author"
-msgstr ""
+msgstr "Tác giả động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:57
 msgid "Dynamic Featured Image"
-msgstr ""
+msgstr "Hình ảnh nổi bật động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:61
 msgid "Dynamic Author Avatar"
-msgstr ""
+msgstr "Hình đại diện tác giả động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:65
 msgid "Dynamic Price"
-msgstr ""
+msgstr "Giá động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:69
 msgid "Dynamic Stock Status"
-msgstr ""
+msgstr "Trạng thái hàng tồn kho động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:73
 msgid "Dynamic Brands"
-msgstr ""
+msgstr "Thương hiệu động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:77
 msgid "Dynamic SKU"
-msgstr ""
+msgstr "SKU động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:81
 msgid "Dynamic Rating"
-msgstr ""
+msgstr "Đánh giá động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:85
 msgid "Dynamic Term Title"
-msgstr ""
+msgstr "Tiêu đề thuật ngữ động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:89
 msgid "Dynamic Term Description"
-msgstr ""
+msgstr "Mô tả thuật ngữ động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:93
 msgid "Dynamic Term Count"
-msgstr ""
+msgstr "Số lượng thuật ngữ động"
 
 #: static/js/editor/blocks/dynamic-data/index.js:97
 msgid "Dynamic Term Image"
-msgstr ""
+msgstr "Hình ảnh thuật ngữ động"
 
 #: static/js/editor/blocks/dynamic-data/preview-parts/woo/RatingPreview.js:13
 msgid "Rated %s out of 5"
-msgstr ""
+msgstr "Được đánh giá %s trên 5"
 
 #: static/js/editor/blocks/dynamic-data/utils.js:15
 msgid "Unknown"
-msgstr ""
+msgstr "Không rõ"
 
 #: static/js/editor/blocks/post-template/Edit.js:170
 #: static/js/editor/blocks/tax-template/Edit.js:152
 msgid "List view"
-msgstr ""
+msgstr "Xem dạng danh sách"
 
 #: static/js/editor/blocks/post-template/Edit.js:176
 #: static/js/editor/blocks/tax-template/Edit.js:158
 msgid "Grid view"
-msgstr ""
+msgstr "Xem dạng lưới"
 
 #: static/js/editor/blocks/post-template/Edit.js:209
 #: static/js/editor/blocks/tax-template/Edit.js:190
 msgid "Tablet Columns"
-msgstr ""
+msgstr "Cột máy tính bảng"
 
 #: static/js/editor/blocks/post-template/Edit.js:225
 #: static/js/editor/blocks/tax-template/Edit.js:206
 msgid "Mobile Columns"
-msgstr ""
+msgstr "Cột di động"
 
 #: static/js/editor/blocks/post-template/index.js:13
 msgid "Post Template"
-msgstr ""
+msgstr "Mẫu bài viết"
 
 #: static/js/editor/blocks/query/Edit.js:120
 #: static/js/editor/blocks/tax-query/Edit.js:123
 msgid "Reset layout"
-msgstr ""
+msgstr "Đặt lại bố cục"
 
 #: static/js/editor/blocks/query/Edit.js:186
 msgid "Pagination"
-msgstr ""
+msgstr "Phân trang"
 
 #: static/js/editor/blocks/query/Edit.js:208
 #: static/js/editor/blocks/tax-query/Edit.js:189
 msgid "Block ID"
-msgstr ""
+msgstr "ID khối"
 
 #: static/js/editor/blocks/query/Edit.js:214
 #: static/js/editor/blocks/tax-query/Edit.js:195
 msgid "Please look at the documentation for more information on why this is useful."
-msgstr ""
+msgstr "Vui lòng xem tài liệu để biết thêm thông tin về lý do tại sao điều này hữu ích."
 
 #: static/js/editor/blocks/query/edit/PatternSelectionModal.js:82
 #: static/js/editor/blocks/tax-query/edit/PatternSelectionModal.js:68
 msgid "Choose a pattern"
-msgstr ""
+msgstr "Chọn một mẫu"
 
 #: static/js/editor/blocks/query/edit/PatternSelectionModal.js:91
 #: static/js/editor/blocks/tax-query/edit/PatternSelectionModal.js:77
 msgid "Search for patterns"
-msgstr ""
+msgstr "Tìm kiếm mẫu"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:133
 msgid "Publish Date"
-msgstr ""
+msgstr "Ngày xuất bản"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:173
 msgid "Menu Order"
-msgstr ""
+msgstr "Thứ tự menu"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:216
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:188
 msgid "Order"
-msgstr ""
+msgstr "Thứ tự"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:224
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:196
 msgid "Descending"
-msgstr ""
+msgstr "Giảm dần"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:232
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:204
 msgid "Ascending"
-msgstr ""
+msgstr "Tăng dần"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:275
 msgid "Sticky Posts"
-msgstr ""
+msgstr "Bài viết dính"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:299
 msgid "Only"
-msgstr ""
+msgstr "Chỉ"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:318
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:223
 msgid "Parameters"
-msgstr ""
+msgstr "Tham số"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:105
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:91
 msgid "Create Custom Layout"
-msgstr ""
+msgstr "Tạo bố cục tùy chỉnh"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:37
 #: static/js/editor/blocks/query/index.js:12
 msgid "Advanced Posts"
-msgstr ""
+msgstr "Bài viết nâng cao"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:41
 msgid "Inherit the Customizer layout, start with a pattern or create a custom layout"
-msgstr ""
+msgstr "Kế thừa bố cục của Customizer, bắt đầu với một mẫu hoặc tạo một bố cục tùy chỉnh"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:56
 msgid "Inherit From Customizer"
-msgstr ""
+msgstr "Kế thừa từ Customizer"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:66
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:57
 msgid "Choose Pattern"
-msgstr ""
+msgstr "Chọn mẫu"
 
 #: static/js/editor/blocks/query/edit/TaxonomyControls.js:167
 msgid "Search for a term"
-msgstr ""
+msgstr "Tìm kiếm một thuật ngữ"
 
 #: static/js/editor/blocks/query/edit/layers/useTaxonomiesLayers.js:47
 msgid "Include %s"
-msgstr ""
+msgstr "Bao gồm %s"
 
 #: static/js/editor/blocks/query/edit/layers/useTaxonomiesLayers.js:75
 msgid "Related"
-msgstr ""
+msgstr "Liên quan"
 
 #: static/js/editor/blocks/query/index.js:13
 #: static/js/editor/blocks/tax-query/index.js:13
 msgid "Create advanced queries based on your specified criterias."
-msgstr ""
+msgstr "Tạo các truy vấn nâng cao dựa trên các tiêu chí bạn đã chỉ định."
 
 #: static/js/editor/blocks/search/Edit.js:163
 msgid "Button Outside"
-msgstr ""
+msgstr "Nút Bên ngoài"
 
 #: static/js/editor/blocks/search/Edit.js:180
 msgid "Use button with text"
-msgstr ""
+msgstr "Sử dụng nút với văn bản"
 
 #: static/js/editor/blocks/search/Edit.js:282
 msgid "Button Icon Color"
-msgstr ""
+msgstr "Màu biểu tượng nút"
 
 #: static/js/editor/blocks/search/Edit.js:379
 msgid "Dropdown Background Color"
-msgstr ""
+msgstr "Màu nền Dropdown"
 
 #: static/js/editor/blocks/search/Edit.js:400
 msgid "Dropdown Shadow Color"
-msgstr ""
+msgstr "Màu bóng Dropdown"
 
 #: static/js/editor/blocks/search/Preview.js:24
 msgid "Select category"
-msgstr ""
+msgstr "Chọn danh mục"
 
 #: static/js/editor/blocks/search/index.js:16
 msgid "Advanced Search"
-msgstr ""
+msgstr "Tìm kiếm nâng cao"
 
 #: static/js/editor/blocks/search/index.js:17
 msgid "Quickly find specific content on your site."
-msgstr ""
+msgstr "Nhanh chóng tìm thấy nội dung cụ thể trên trang web của bạn."
 
 #: static/js/editor/blocks/share-box/Edit.js:110
 #: static/js/editor/blocks/socials/Edit.js:110
 msgid "Icons Background Colors"
-msgstr ""
+msgstr "Màu nền biểu tượng"
 
 #: static/js/editor/blocks/share-box/Edit.js:142
 #: static/js/editor/blocks/socials/Edit.js:142
 msgid "Icons Border Colors"
-msgstr ""
+msgstr "Màu viền biểu tượng"
 
 #: static/js/editor/blocks/share-box/index.js:15
 msgid "Share Box Controls"
-msgstr ""
+msgstr "Điều khiển hộp chia sẻ"
 
 #: static/js/editor/blocks/share-box/index.js:45
 msgid "Share content on social media, boosting visibility & engagement."
-msgstr ""
+msgstr "Chia sẻ nội dung trên mạng xã hội, tăng tầm nhìn & sự tham gia."
 
 #: static/js/editor/blocks/socials/index.js:15
 msgid "Socials Controls"
-msgstr ""
+msgstr "Điều khiển mạng xã hội"
 
 #: static/js/editor/blocks/socials/index.js:45
 msgid "Display your social media profiles and boost the site engagement."
-msgstr ""
+msgstr "Hiển thị hồ sơ mạng xã hội của bạn và tăng sự tham gia trang web."
 
 #: static/js/editor/blocks/socials/index.js:47
 #: static/js/editor/blocks/widgets-wrapper/index.js:58
 msgid "Socials"
-msgstr ""
+msgstr "Mạng xã hội"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:121
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:137
 msgid "Count"
-msgstr ""
+msgstr "Đếm"
 
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:40
 #: static/js/editor/blocks/tax-query/index.js:12
 msgid "Advanced Taxonomies"
-msgstr ""
+msgstr "Phân loại nâng cao"
 
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:44
 msgid "Start with a pattern or create a custom layout"
-msgstr ""
+msgstr "Bắt đầu với một mẫu hoặc tạo bố cục tùy chỉnh"
 
 #: static/js/editor/blocks/tax-template/index.js:13
 msgid "Taxonomy Template"
-msgstr ""
+msgstr "Mẫu phân loại"
 
 #: static/js/editor/blocks/widgets-wrapper/Edit.js:79
 msgid "Expandable Container"
-msgstr ""
+msgstr "Container có thể mở rộng"
 
 #: static/js/editor/blocks/widgets-wrapper/index.js:40
 msgid "Widgets Wrapper"
-msgstr ""
+msgstr "Bao bọc Widget"
 
 #: static/js/editor/components/ToolsPanel/ToolsPanelHeader.js:41
 msgid "Parameters options"
-msgstr ""
+msgstr "Tùy chọn tham số"
 
 #: static/js/editor/components/ToolsPanel/ToolsPanelHeader.js:46
 msgid "All options are currently hidden"
-msgstr ""
+msgstr "Tất cả các tùy chọn hiện đang bị ẩn"
 
 #: static/js/editor/components/ToolsPanel/ToolsPanelHeader.js:82
 msgid "All options reset"
-msgstr ""
+msgstr "Đặt lại tất cả các tùy chọn"
 
 #: static/js/editor/components/ToolsPanel/ToolsPanelHeader.js:87
 msgid "Reset all"
-msgstr ""
+msgstr "Đặt lại tất cả"
 
 #: static/js/options/ConditionsManager/ExpireCondition.js:119
 msgid "The expiration date cannot be set earlier than the start date."
-msgstr ""
+msgstr "Ngày hết hạn không thể được đặt sớm hơn ngày bắt đầu."
 
 #: framework/features/demo-install.php:115,
 #: framework/features/demo-install/content-installer.php:147,
 #: framework/features/demo-install/content-installer.php:142,
 #: framework/features/demo-install/demo-register.php:9
 msgid "No demo name provided."
-msgstr ""
+msgstr "Không có tên demo được cung cấp."
 
 #: framework/helpers/exts.php:317,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:314,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:4
 msgid "Stock Scarcity"
-msgstr ""
+msgstr "Khan hiếm hàng tồn kho"
 
 #: framework/helpers/exts.php:318
 msgid "Show the remaining stock of a product to create a sense of urgency and encourage your visitors to make a purchase."
-msgstr ""
+msgstr "Hiển thị số lượng hàng tồn kho còn lại của một sản phẩm để tạo cảm giác gấp rút và khuyến khích khách truy cập của bạn thực hiện mua hàng."
 
 #: framework/views/theme-mismatch.php:36
 #: static/js/dashboard/VersionMismatch.js:17
 #: static/js/notifications/VersionMismatchNotice.js:30
 msgid "Action required - please update Blocksy theme to the latest version!"
-msgstr ""
+msgstr "Yêu cầu hành động - vui lòng cập nhật chủ đề Blocksy lên phiên bản mới nhất!"
 
 #: framework/views/theme-mismatch.php:41
 #: static/js/dashboard/VersionMismatch.js:23
 #: static/js/notifications/VersionMismatchNotice.js:38
 msgid "We detected that you are using an outdated version of Blocksy theme."
-msgstr ""
+msgstr "Chúng tôi phát hiện ra rằng bạn đang sử dụng phiên bản lỗi thời của chủ đề Blocksy."
 
 #: framework/views/theme-mismatch.php:45
 #: static/js/dashboard/VersionMismatch.js:30
 #: static/js/notifications/VersionMismatchNotice.js:47
 msgid "In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme."
-msgstr ""
+msgstr "Để tận dụng tối đa tất cả các tính năng mà lõi phải cung cấp - vui lòng cài đặt và kích hoạt phiên bản mới nhất của chủ đề Blocksy."
 
 #: framework/extensions/newsletter-subscribe/customizer.php:94,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:127
 msgid "Make Name Field Required"
-msgstr ""
+msgstr "Yêu cầu trường tên"
 
 #: framework/extensions/trending/customizer.php:121
 msgid "Tag"
-msgstr ""
+msgstr "Thẻ"
 
 #: framework/extensions/trending/customizer.php:142
 msgid "Taxonomy Source"
-msgstr ""
+msgstr "Nguồn phân loại"
 
 #: framework/extensions/trending/customizer.php:216
 msgid "Module Title Icon Source"
-msgstr ""
+msgstr "Nguồn biểu tượng tiêu đề module"
 
 #: framework/extensions/trending/customizer.php:303
 msgid "Products Status"
-msgstr ""
+msgstr "Trạng thái sản phẩm"
 
 #: framework/extensions/trending/customizer.php:307
 msgid "On Sale"
-msgstr ""
+msgstr "Đang giảm giá"
 
 #: framework/extensions/trending/customizer.php:308
 msgid "Top Rated"
-msgstr ""
+msgstr "Đánh giá hàng đầu"
 
 #: framework/extensions/trending/customizer.php:309
 msgid "Best Sellers"
-msgstr ""
+msgstr "Bán chạy nhất"
 
 #: framework/extensions/trending/customizer.php:409
 msgid "Show Product Price"
-msgstr ""
+msgstr "Hiển thị giá sản phẩm"
 
 #: framework/extensions/trending/customizer.php:423
 msgid "Show Taxonomy"
-msgstr ""
+msgstr "Hiển thị phân loại"
 
 #: framework/extensions/trending/customizer.php:441
 msgid "Taxonomy Style"
-msgstr ""
+msgstr "Kiểu phân loại"
 
 #: framework/extensions/trending/customizer.php:450
 msgid "Underline"
-msgstr ""
+msgstr "Gạch dưới"
 
 #: framework/extensions/trending/customizer.php:465
 msgid "Image Width"
-msgstr ""
+msgstr "Chiều rộng hình ảnh"
 
 #: framework/extensions/trending/customizer.php:693,
 #: framework/extensions/trending/customizer.php:825
 msgid "Taxonomy Font"
-msgstr ""
+msgstr "Phông chữ phân loại"
 
 #: framework/extensions/trending/customizer.php:708,
 #: framework/extensions/trending/customizer.php:748
 msgid "Taxonomies Font Color"
-msgstr ""
+msgstr "Màu phông chữ phân loại"
 
 #: framework/extensions/trending/customizer.php:780
 msgid "Taxonomies Button Color"
-msgstr ""
+msgstr "Màu nút phân loại"
 
 #: framework/extensions/trending/customizer.php:835
 msgid "Taxonomy Font Color"
-msgstr ""
+msgstr "Màu phông chữ phân loại"
 
 #: framework/extensions/trending/customizer.php:860
 msgid "Image Border Radius"
-msgstr ""
+msgstr "Bán kính viền hình ảnh"
 
 #: framework/features/blocks/blocks.php:19
 msgctxt "Block pattern category"
 msgid "Blocksy"
-msgstr ""
+msgstr "Blocksy"
 
 #: framework/features/blocks/blocks.php:24
 msgid "Patterns that contain buttons and call to actions."
-msgstr ""
+msgstr "Các mẫu chứa nút và kêu gọi hành động."
 
 #: framework/features/blocks/blocks.php:71
 msgid "Home Page Text"
-msgstr ""
+msgstr "Văn bản trang chủ"
 
 #: framework/features/demo-install/child-theme.php:9
 msgid "Sorry, you don't have permission to install child themes."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền cài đặt chủ đề con."
 
 #: framework/features/demo-install/content-eraser.php:23
 msgid "Sorry, you don't have permission to erase content."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền xóa nội dung."
 
 #: framework/features/demo-install/content-installer.php:52
 msgid "Sorry, you don't have permission to install content."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền cài đặt nội dung."
 
 #: framework/features/demo-install/content-installer.php:178,
 #: framework/features/demo-install/content-installer.php:172
 msgid "No demo data found."
-msgstr ""
+msgstr "Không tìm thấy dữ liệu demo."
 
 #: framework/features/demo-install/content-installer.php:334,
 #: framework/features/demo-install/content-installer.php:329
 msgid "No pages to assign."
-msgstr ""
+msgstr "Không có trang để gán."
 
 #: framework/features/demo-install/install-finish.php:23
 msgid "Sorry, you don't have permission to finish the installation."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền hoàn thành việc cài đặt."
 
 #: framework/features/demo-install/options-import.php:38
 msgid "Sorry, you don't have permission to install options."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền cài đặt tùy chọn."
 
 #: framework/features/demo-install/options-import.php:50,
 #: framework/features/demo-install/options-import.php:45,
@@ -1003,521 +1003,521 @@ msgstr ""
 #: framework/features/demo-install/widgets-import.php:48,
 #: framework/features/demo-install/widgets-import.php:43
 msgid "No demo to install"
-msgstr ""
+msgstr "Không có demo để cài đặt"
 
 #: framework/features/demo-install/plugins-uninstaller.php:9
 msgid "Sorry, you don't have permission to uninstall plugins."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền gỡ cài đặt plugin."
 
 #: framework/features/demo-install/required-plugins.php:37
 msgid "Sorry, you don't have permission to install plugins."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền cài đặt plugin."
 
 #: framework/features/demo-install/required-plugins.php:49,
 #: framework/features/demo-install/required-plugins.php:44
 msgid "No plugins to install."
-msgstr ""
+msgstr "Không có plugin để cài đặt."
 
 #: framework/features/demo-install/widgets-import.php:36
 msgid "Sorry, you don't have permission to install widgets."
-msgstr ""
+msgstr "Xin lỗi, bạn không có quyền cài đặt widget."
 
 #: framework/features/demo-install/widgets-import.php:79,
 #: framework/features/demo-install/widgets-import.php:73
 msgid "No widgets to install."
-msgstr ""
+msgstr "Không có widget để cài đặt."
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:98
 msgid "Fields Gap"
-msgstr ""
+msgstr "Khoảng cách trường"
 
 #: framework/features/blocks/about-me/options.php:21
 msgid "User Source"
-msgstr ""
+msgstr "Nguồn người dùng"
 
 #: framework/features/blocks/about-me/options.php:26
 msgid "Dynamic"
-msgstr ""
+msgstr "Động"
 
 #: framework/features/blocks/about-me/options.php:37
 msgid "User"
-msgstr ""
+msgstr "Người dùng"
 
 #: framework/features/blocks/about-me/options.php:92
 msgid "Image Shape"
-msgstr ""
+msgstr "Hình dạng hình ảnh"
 
 #: framework/features/blocks/about-me/options.php:104
 msgid "Alignment"
-msgstr ""
+msgstr "Căn chỉnh"
 
 #: framework/features/blocks/about-me/options.php:119,
 #: framework/features/blocks/socials/options.php:19
 msgid "Social Channels"
-msgstr ""
+msgstr "Kênh xã hội"
 
 #: framework/features/blocks/about-me/options.php:195,
 #: framework/features/blocks/share-box/options.php:137,
 #: framework/features/blocks/socials/options.php:101
 msgid "Official"
-msgstr ""
+msgstr "Chính thức"
 
 #: framework/features/blocks/about-me/view.php:197
 msgid "View Profile"
-msgstr ""
+msgstr "Xem hồ sơ"
 
 #: framework/features/blocks/contact-info/options.php:44
 msgid "Contact Information"
-msgstr ""
+msgstr "Thông tin liên hệ"
 
 #: framework/features/blocks/dynamic-data/options.php:24,
 #: framework/features/blocks/dynamic-data/options.php:49
 msgid "Date type"
-msgstr ""
+msgstr "Loại ngày"
 
 #: framework/features/blocks/dynamic-data/options.php:31
 msgid "Published Date"
-msgstr ""
+msgstr "Ngày xuất bản"
 
 #: framework/features/blocks/dynamic-data/options.php:32
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:141
 msgid "Modified Date"
-msgstr ""
+msgstr "Ngày sửa đổi"
 
 #: framework/features/blocks/dynamic-data/options.php:39
 msgid "Default format"
-msgstr ""
+msgstr "Định dạng mặc định"
 
 #: framework/features/blocks/dynamic-data/options.php:41
 msgid "Example: January 24, 2022"
-msgstr ""
+msgstr "Ví dụ: 24 tháng 1, 2022"
 
 #: framework/features/blocks/dynamic-data/options.php:75
 msgid "Custom date format"
-msgstr ""
+msgstr "Định dạng ngày tùy chỉnh"
 
 #: framework/features/blocks/dynamic-data/options.php:79
 msgid "Enter a date or time"
-msgstr ""
+msgstr "Nhập ngày hoặc thời gian"
 
 #: framework/features/blocks/dynamic-data/options.php:96,
 #: framework/features/blocks/dynamic-data/options.php:97,
 #: framework/features/blocks/dynamic-data/views/wp-field.php:202
 msgid "No comments"
-msgstr ""
+msgstr "Không có bình luận"
 
 #: framework/features/blocks/dynamic-data/options.php:102,
 #: framework/features/blocks/dynamic-data/options.php:103,
 #: framework/features/blocks/dynamic-data/views/wp-field.php:203
 msgid "One comment"
-msgstr ""
+msgstr "Một bình luận"
 
 #: framework/features/blocks/dynamic-data/options.php:108
 msgid "Multiple comments"
-msgstr ""
+msgstr "Nhiều bình luận"
 
 #: framework/features/blocks/dynamic-data/options.php:120
 msgid "Separator"
-msgstr ""
+msgstr "Dấu phân cách"
 
 #: framework/features/blocks/dynamic-data/options.php:132
 msgid "Author Field"
-msgstr ""
+msgstr "Trường tác giả"
 
 #: framework/features/blocks/dynamic-data/options.php:139
 msgid "Nicename"
-msgstr ""
+msgstr "Tên đẹp"
 
 #: framework/features/blocks/dynamic-data/options.php:140
 msgid "Display Name"
-msgstr ""
+msgstr "Tên hiển thị"
 
 #: framework/features/blocks/dynamic-data/options.php:141
 msgid "First Name"
-msgstr ""
+msgstr "Tên"
 
 #: framework/features/blocks/dynamic-data/options.php:142
 msgid "Last Name"
-msgstr ""
+msgstr "Họ"
 
 #: framework/features/blocks/dynamic-data/options.php:172
 msgid "Link to post"
-msgstr ""
+msgstr "Liên kết đến bài viết"
 
 #: framework/features/blocks/dynamic-data/options.php:176
 msgid "Link to author page"
-msgstr ""
+msgstr "Liên kết đến trang tác giả"
 
 #: framework/features/blocks/dynamic-data/options.php:180
 msgid "Link to term page"
-msgstr ""
+msgstr "Liên kết đến trang thuật ngữ"
 
 #: framework/features/blocks/dynamic-data/options.php:184
 msgid "Link to archive page"
-msgstr ""
+msgstr "Liên kết đến trang lưu trữ"
 
 #: framework/features/blocks/dynamic-data/options.php:197
 msgid "Open in new tab"
-msgstr ""
+msgstr "Mở trong tab mới"
 
 #: framework/features/blocks/dynamic-data/options.php:203
 msgid "Link Rel"
-msgstr ""
+msgstr "Liên kết Rel"
 
 #: framework/features/blocks/dynamic-data/options.php:220
 msgid "Terms accent color"
-msgstr ""
+msgstr "Màu sắc nhấn mạnh thuật ngữ"
 
 #: framework/features/blocks/search/options.php:147,
 #: framework/features/blocks/search/view.php:265
 msgid "Select Category"
-msgstr ""
+msgstr "Chọn danh mục"
 
 #: framework/features/blocks/search/options.php:175,
 #: framework/premium/features/premium-header/items/search-input/options.php:164
 msgid "Taxonomy Children"
-msgstr ""
+msgstr "Thuật ngữ con"
 
 #: framework/features/blocks/search/options.php:205,
 #: framework/premium/features/premium-header/items/search-input/options.php:192
 msgid "Search Through Taxonomies"
-msgstr ""
+msgstr "Tìm kiếm qua các thuật ngữ"
 
 #: framework/features/blocks/search/options.php:209,
 #: framework/premium/features/premium-header/items/search-input/options.php:196
 msgid "Search through taxonomies from selected custom post types."
-msgstr ""
+msgstr "Tìm kiếm qua các thuật ngữ từ các loại bài viết tùy chỉnh đã chọn."
 
 #: framework/features/blocks/share-box/options.php:15
 msgid "Share Icons"
-msgstr ""
+msgstr "Biểu tượng chia sẻ"
 
 #: framework/features/blocks/share-box/options.php:43
 msgid "Reddit"
-msgstr ""
+msgstr "Reddit"
 
 #: framework/features/blocks/share-box/options.php:49
 msgid "Hacker News"
-msgstr ""
+msgstr "Hacker News"
 
 #: framework/features/blocks/share-box/options.php:67
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: framework/features/blocks/share-box/options.php:73
 msgid "Viber"
-msgstr ""
+msgstr "Viber"
 
 #: framework/features/blocks/share-box/options.php:79
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 #: framework/features/blocks/share-box/options.php:85
 msgid "Flipboard"
-msgstr ""
+msgstr "Flipboard"
 
 #: framework/features/blocks/share-box/options.php:91
 msgid "Line"
-msgstr ""
+msgstr "Line"
 
 #: framework/features/conditions/rules/archive-loop.php:6
 msgid "Archive Item with Taxonomy ID"
-msgstr ""
+msgstr "Mục lưu trữ với ID thuật ngữ"
 
 #: framework/features/conditions/rules/archive-loop.php:13
 msgid "WooCommerce Archive Item with Taxonomy ID"
-msgstr ""
+msgstr "Mục lưu trữ WooCommerce với ID thuật ngữ"
 
 #: framework/features/conditions/rules/archive-loop.php:19
 msgid "Archive Loop Speciffic"
-msgstr ""
+msgstr "Lặp lưu trữ cụ thể"
 
 #: framework/features/conditions/rules/posts.php:10
 msgid "Post Archives"
-msgstr ""
+msgstr "Lưu trữ bài viết"
 
 #: framework/features/conditions/rules/woo.php:54
 msgid "Single Product ID"
-msgstr ""
+msgstr "ID sản phẩm đơn"
 
 #: framework/features/conditions/rules/woo.php:59
 msgid "Single Product with Taxonomy ID"
-msgstr ""
+msgstr "Sản phẩm đơn với ID thuật ngữ"
 
 #: framework/premium/extensions/woocommerce-extra/utils.php:141
 msgid "Private: %s"
-msgstr ""
+msgstr "Riêng tư: %s"
 
 #: framework/premium/extensions/woocommerce-extra/utils.php:131
 msgid "Protected: %s"
-msgstr ""
+msgstr "Được bảo vệ: %s"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:733
 msgid "WooCommerce Single Product"
-msgstr ""
+msgstr "Sản phẩm đơn WooCommerce"
 
 #: framework/premium/features/media-video/options.php:119
 msgid "Video Size"
-msgstr ""
+msgstr "Kích thước video"
 
 #: framework/premium/features/media-video/options.php:127
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:192
 msgid "Contain"
-msgstr ""
+msgstr "Chứa"
 
 #: framework/premium/features/media-video/options.php:128
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:187
 msgid "Cover"
-msgstr ""
+msgstr "Bìa"
 
 #. translators: placeholder here means the actual URL.
 #: framework/premium/features/media-video/options.php:132
 msgid "Choose how the video will fill its container. More info about this can be found %shere%s."
-msgstr ""
+msgstr "Chọn cách video sẽ điền vào vùng chứa của nó. Thông tin thêm về điều này có thể được tìm thấy %stại đây%s."
 
 #: framework/features/blocks/dynamic-data/views/avatar-field.php:30
 msgid "%s Avatar"
-msgstr ""
+msgstr "%s Avatar"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-1.php:4
 msgid "Posts - Layout 1"
-msgstr ""
+msgstr "Bài viết - Bố cục 1"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-2.php:4
 msgid "Posts - Layout 2"
-msgstr ""
+msgstr "Bài viết - Bố cục 2"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-3.php:4
 msgid "Posts - Layout 3"
-msgstr ""
+msgstr "Bài viết - Bố cục 3"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-4.php:4
 msgid "Posts - Layout 4"
-msgstr ""
+msgstr "Bài viết - Bố cục 4"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-5.php:4
 msgid "Posts - Layout 5"
-msgstr ""
+msgstr "Bài viết - Bố cục 5"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-1.php:4
 msgid "Taxonomies - Layout 1"
-msgstr ""
+msgstr "Thuật ngữ - Bố cục 1"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-2.php:4
 msgid "Taxonomies - Layout 2"
-msgstr ""
+msgstr "Thuật ngữ - Bố cục 2"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-3.php:4
 msgid "Taxonomies - Layout 3"
-msgstr ""
+msgstr "Thuật ngữ - Bố cục 3"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-4.php:4
 msgid "Taxonomies - Layout 4"
-msgstr ""
+msgstr "Thuật ngữ - Bố cục 4"
 
 #: framework/features/header/items/account/options.php:15
 msgid "Action Link"
-msgstr ""
+msgstr "Liên kết hành động"
 
 #: framework/features/header/items/account/options.php:49
 msgid "Additional User Info"
-msgstr ""
+msgstr "Thông tin người dùng bổ sung"
 
 #: framework/features/header/items/account/options.php:53
 msgid "Available fields: {user_email}, {user_name}, {user_role}"
-msgstr ""
+msgstr "Các trường có sẵn: {user_email}, {user_name}, {user_role}"
 
 #: framework/features/header/items/account/options.php:142
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: framework/features/header/items/account/options.php:717
 msgid "Items Hover Effect"
-msgstr ""
+msgstr "Hiệu ứng di chuột qua các mục"
 
 #: framework/features/header/items/account/options.php:727
 msgid "Boxed Color"
-msgstr ""
+msgstr "Màu đóng hộp"
 
 #: framework/features/header/items/account/options.php:1945
 msgid "Link Active"
-msgstr ""
+msgstr "Liên kết đang hoạt động"
 
 #: framework/premium/features/content-blocks/options/popup.php:262
 msgid "Close Trigger Delay"
-msgstr ""
+msgstr "Độ trễ kích hoạt đóng"
 
 #: framework/premium/features/content-blocks/options/popup.php:269
 msgid "Set the close delay time (in seconds) after the form submit action is detected."
-msgstr ""
+msgstr "Đặt thời gian độ trễ đóng (theo giây) sau khi hành động gửi biểu mẫu được phát hiện."
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:100,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:753
 msgid "Featured Icon/Logo"
-msgstr ""
+msgstr "Biểu tượng/Logo nổi bật"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:563
 msgid "Upvote"
-msgstr ""
+msgstr "Bình chọn lên"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:577
 msgid "Downvote"
-msgstr ""
+msgstr "Bình chọn xuống"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/brands-import-export.php:17,
 #: framework/premium/extensions/woocommerce-extra/features/brands/brands-import-export.php:69
 msgid "Blocksy Brands"
-msgstr ""
+msgstr "Thương hiệu Blocksy"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/select.php:18
 msgid "Choose page"
-msgstr ""
+msgstr "Chọn trang"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/select.php:33
 msgid "Choose a custom thank you page for this product."
-msgstr ""
+msgstr "Chọn một trang cảm ơn tùy chỉnh cho sản phẩm này."
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:49
 msgid "Product Image Visibility"
-msgstr ""
+msgstr "Hiển thị hình ảnh sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:87
 msgid "Product Price & Stock Visibility"
-msgstr ""
+msgstr "Hiển thị giá & kho sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:42
 msgid "Trigger Icon Type"
-msgstr ""
+msgstr "Loại biểu tượng kích hoạt"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:77
 msgid "Trigger Visibility"
-msgstr ""
+msgstr "Hiển thị kích hoạt"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:107
 msgid "Trigger Label"
-msgstr ""
+msgstr "Nhãn kích hoạt"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:233
 msgid "Panel Default State"
-msgstr ""
+msgstr "Trạng thái mặc định của bảng điều khiển"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:240
 msgid "Closed"
-msgstr ""
+msgstr "Đã đóng"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:241
 msgid "Opened"
-msgstr ""
+msgstr "Đã mở"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:488
 msgid "Panel AJAX Reveal"
-msgstr ""
+msgstr "Bảng điều khiển hiển thị AJAX"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:137
 msgid "Autoplay Gallery"
-msgstr ""
+msgstr "Tự động phát thư viện"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:149
 msgid "Delay (in seconds)"
-msgstr ""
+msgstr "Trễ (theo giây)"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:216
 msgid "Columns Spacing"
-msgstr ""
+msgstr "Khoảng cách cột"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:244,
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:272
 msgid "Arrows Visibility"
-msgstr ""
+msgstr "Hiển thị mũi tên"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:11
 msgid "Prev/Next Arrow"
-msgstr ""
+msgstr "Mũi tên Trước/Sau"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:41
 msgid "Prev/Next Background"
-msgstr ""
+msgstr "Nền Trước/Sau"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:372,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:160
 msgid "Add {items} more items to get free shipping!"
-msgstr ""
+msgstr "Thêm {items} mục nữa để nhận miễn phí vận chuyển!"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:52
 msgid "Count Criteria"
-msgstr ""
+msgstr "Tiêu chí đếm"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:59,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/active-filters.php:246,
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/price-filter.php:280
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:127
 msgid "Price"
-msgstr ""
+msgstr "Giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:60
 msgid "Items"
-msgstr ""
+msgstr "Mục"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:86
 msgid "Goal Items"
-msgstr ""
+msgstr "Mục mục tiêu"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90
 msgid "Amount of items the client has to buy in order to get free shipping."
-msgstr ""
+msgstr "Số lượng mục mà khách hàng phải mua để nhận miễn phí vận chuyển."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:168
 msgid "You can use dynamic code tags such as {items} inside this option."
-msgstr ""
+msgstr "Bạn có thể sử dụng các thẻ mã động như {items} bên trong tùy chọn này."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:195,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:62
 msgid "Bar Color"
-msgstr ""
+msgstr "Màu thanh"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:229,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:29
 msgid "🚨 Hurry up! Only {items} units left in stock!"
-msgstr ""
+msgstr "🚨 Nhanh lên! Chỉ còn {items} đơn vị trong kho!"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:15
 msgid "Stock Threshold"
-msgstr ""
+msgstr "Ngưỡng kho"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:23
 msgid "Show the stock scarcity module when product stock is below this number."
-msgstr ""
+msgstr "Hiển thị mô-đun khan hiếm kho khi số lượng sản phẩm trong kho dưới con số này."
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:27
 msgid "Message"
-msgstr ""
+msgstr "Tin nhắn"
 
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:43
 msgid "Bar Height"
-msgstr ""
+msgstr "Chiều cao thanh"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:668
 msgid "Swatches removed"
-msgstr ""
+msgstr "Đã xóa mẫu màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:675
 msgid "Swatches saved"
-msgstr ""
+msgstr "Đã lưu mẫu màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:737
 msgid "Custom Attributes"
-msgstr ""
+msgstr "Thuộc tính tùy chỉnh"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:743,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:782,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:855
 msgid "Terms Limit"
-msgstr ""
+msgstr "Giới hạn điều khoản"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:746,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:785
 msgid "Set how many terms you want to display in this attribute."
-msgstr ""
+msgstr "Đặt số lượng điều khoản bạn muốn hiển thị trong thuộc tính này."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:756,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:795,
@@ -1525,24 +1525,24 @@ msgstr ""
 #: static/js/editor/blocks/query/Edit.js:178
 #: static/js/editor/blocks/tax-query/Edit.js:165
 msgid "Limit"
-msgstr ""
+msgstr "Giới hạn"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:858
 msgid "Set how many terms you want to display in each attribute."
-msgstr ""
+msgstr "Đặt số lượng điều khoản bạn muốn hiển thị trong mỗi thuộc tính."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:179,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:462
 msgid "Mixed Swatches"
-msgstr ""
+msgstr "Mẫu màu hỗn hợp"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:233
 msgid "Generate Variation URL"
-msgstr ""
+msgstr "Tạo URL biến thể"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:239
 msgid "Generate a shareable single product page URL with pre-selected variation attributes."
-msgstr ""
+msgstr "Tạo URL trang sản phẩm đơn có thể chia sẻ với các thuộc tính biến thể được chọn trước."
 
 #: static/js/options/ConditionsManager/SingleCondition.js:440
 msgid "Display if query string is present in URL"
@@ -1554,7 +1554,7 @@ msgstr "Thêm điều kiện"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:68
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr "Nâng cấp lên gói đại lý và có quyền truy cập ngay vào mẫu trang web khởi đầu này cùng nhiều tính năng khác"
+msgstr "Nâng cấp lên gói đại lý và có quyền truy cập ngay vào mẫu web bắt đầu này cùng nhiều tính năng khác."
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:316
 msgid "Documentation"
@@ -1566,7 +1566,7 @@ msgstr "Quản lý"
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:86
 msgid "Video Tutorial"
-msgstr "Video Hướng dẫn"
+msgstr "Video hướng dẫn"
 
 #: static/js/options/ConditionsManager.js:207
 msgid "Advanced Mode"
@@ -1670,19 +1670,19 @@ msgstr "Nâng cấp lên gói đại lý và có quyền truy cập ngay vào t�
 
 #: static/js/dashboard/helpers/useUpsellModal.js:88
 msgid "Professional or Agency"
-msgstr "Chuyên nghiệp hoặc Đại lý"
+msgstr "Chuyên nghiệp hoặc đại lý"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:53
 msgid "This is a Pro starter site"
-msgstr "Đây là mẫu web khởi động Pro"
+msgstr "Đây là mẫu web bắt đầu Pro"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:54
 msgid "Upgrade to any pro plan and get instant access to this starter site and many other features."
-msgstr "Nâng cấp lên bất kỳ gói pro nào và có quyền truy cập ngay vào mẫu trang web khởi đầu này cũng như nhiều tính năng khác."
+msgstr "Nâng cấp lên bất kỳ gói pro nào và có quyền truy cập ngay vào mẫu web bắt đầu này cũng như nhiều tính năng khác."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:61
 msgid "Upgrade to the professional or agency plan and get instant access to this starter site and many other features."
-msgstr "Nâng cấp lên gói chuyên nghiệp hoặc đại lý và có quyền truy cập ngay vào mẫu trang web khởi đầu này cùng nhiều tính năng khác."
+msgstr "Nâng cấp lên gói chuyên nghiệp hoặc đại lý và có quyền truy cập ngay vào mẫu web bắt đầu này cùng nhiều tính năng khác."
 
 #: static/js/dashboard/helpers/useProExtensionInFree.js:14
 msgid "This is a Pro extension"
@@ -1873,12 +1873,12 @@ msgstr "Chỉ tải lên định dạng tệp phông chữ %s.woff2%s hoặc %s.
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/AdvancedTab.js:54
 msgid "Preload Subsets"
-msgstr "Tải Trước Tập Hợp Con"
+msgstr "Tải trước tập hợp con"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/GeneralTab.js:10
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/SingleFont.js:65
 msgid "Select Variations"
-msgstr "Chọn Biến Thể"
+msgstr "Chọn biến thể"
 
 #: framework/premium/extensions/local-google-fonts/dashboard-static/js/LocalGoogleFonts.js:255
 msgid "Local Google Fonts Settings"
@@ -2136,7 +2136,7 @@ msgstr "Mẫu"
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:16,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:250
 msgid "Color Swatches"
-msgstr "M���u màu"
+msgstr "Mẫu màu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:20,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:74,
@@ -2231,11 +2231,11 @@ msgstr "Kết quả trực tiếp Giá sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:262
 msgid "Add New Size Guide"
-msgstr "Thêm Hướng dẫn kích thước"
+msgstr "Thêm hướng dẫn kích thước"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:263
 msgid "Edit Size Guide"
-msgstr "Sửa Hướng dẫn kích thước"
+msgstr "Sửa hướng dẫn kích thước"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:264
 msgid "New Size Guide"
@@ -2486,7 +2486,7 @@ msgstr "Điều hướng Sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:108
 msgid "Display next/previous buttons that will help to easily navigate through products."
-msgstr ""
+msgstr "Hiển thị các nút tiếp theo/trước đó sẽ giúp dễ dàng điều hướng qua các sản phẩm."
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:138
 msgid "Title Font"
@@ -2494,11 +2494,11 @@ msgstr "Phông chữ tiêu đề"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:168
 msgid "Price Font"
-msgstr "Font Giá"
+msgstr "Font giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:176
 msgid "Price Color"
-msgstr "Màu Giá"
+msgstr "Màu giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:219
 msgid "Add To Cart Button"
@@ -2506,7 +2506,7 @@ msgstr "Nút thêm vào giỏ hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:291
 msgid "View Cart Button"
-msgstr "Nút Xem Giỏ hàng"
+msgstr "Nút xem giỏ hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:361
 msgid "Product Page Button"
@@ -2514,7 +2514,7 @@ msgstr "Nút trang sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-badges/options.php:46
 msgid "How many days the products will be marked as \"New\" after creation."
-msgstr "Bao nhiêu ngày sản phẩm sẽ được đánh dấu là \"Mới\" sau khi tạo."
+msgstr "Bao nhiêu ngày sản phẩm sẽ được đánh dấu là \"Mới\" sau khi t���o."
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:118,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:124
@@ -2539,7 +2539,7 @@ msgstr "Thêm tab sản phẩm mới"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:125
 msgid "View Product Tab"
-msgstr "Xem Tab Sản phẩm"
+msgstr "Xem tab sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:126
 msgid "Search Product Tabs"
@@ -2563,7 +2563,7 @@ msgstr "Thứ tự các tab mặc định: Mô tả - 10, Thông tin bổ sung -
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:106
 msgid "Payment Gateways"
-msgstr "Các Cổng Thanh Toán"
+msgstr "Các cổng thanh Toán"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:112,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/options.php:65
@@ -2577,7 +2577,7 @@ msgstr "Trang cảm ơn"
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:468,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:474
 msgid "Thank You Pages"
-msgstr "Trang Cảm Ơn"
+msgstr "Trang cảm ơn"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:469
 msgid "Thank You Page"
@@ -2585,11 +2585,11 @@ msgstr "Trang cảm ơn"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:471
 msgid "Add New Thank You Page"
-msgstr "Thêm Trang cảm ơn mới"
+msgstr "Thêm trang cảm ơn mới"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:472
 msgid "Edit Thank You Page"
-msgstr "Sửa Trang cảm ơn"
+msgstr "Sửa trang cảm ơn"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:473
 msgid "New Thank You Page"
@@ -2861,11 +2861,11 @@ msgstr "Tất cả thương hiệu"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:653
 msgid "Parent Brand"
-msgstr "Thương Hiệu cha"
+msgstr "Thương hiệu cha"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:654
 msgid "Parent Brand:"
-msgstr "Thương Hiệu cha:"
+msgstr "Thương hiệu cha:"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:655
 msgid "View Brand"
@@ -2889,7 +2889,7 @@ msgstr "Tên thương hiệu mới"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/options.php:5
 msgid "Product Brand Tab"
-msgstr "Tab Thương Hiệu Sản Phẩm"
+msgstr "Tab thương hiệu sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/options.php:20
 msgid "Brand Name In Tab Title"
@@ -2897,7 +2897,7 @@ msgstr "Tên thương hiệu trong tiêu đề tab"
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:5
 msgid "Product Image"
-msgstr "Hình ảnh Sản phẩm"
+msgstr "Hình ảnh sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:54
 msgid "Quantity Input"
@@ -2925,7 +2925,7 @@ msgstr "Ngôi sao"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:435
 msgid "%s%% of customers recommend this product."
-msgstr ""
+msgstr "%s%% khách hàng giới thiệu sản phẩm này"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:597
 msgid "%s of %s found this review helpful"
@@ -2938,7 +2938,7 @@ msgstr "Tiêu đề đánh giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:687
 msgid "Upload Image (Optional)"
-msgstr "Tải hình ảnh lên (Tùy chọn)"
+msgstr "Tải hình ảnh lên (tùy chọn)"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:11
 msgid "Reviews Order"
@@ -3014,7 +3014,7 @@ msgstr "Tự động phát"
 #: framework/premium/extensions/post-types-extra/features/related-slideshow/feature.php:111,
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/general-options.php:90
 msgid "Delay (Seconds)"
-msgstr "Độ trễ (Giây)"
+msgstr "Độ trễ (giây)"
 
 #: framework/premium/extensions/post-types-extra/features/related-slideshow/feature.php:112,
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/general-options.php:91
@@ -3097,7 +3097,7 @@ msgstr "Đặt tùy chọn này thành luôn luôn nếu bạn có nội dung đ
 
 #: framework/premium/features/content-blocks/options/popup.php:495
 msgid "Popup Visibility"
-msgstr "Khả Năng Hiển Thị Popup"
+msgstr "Khả năng hiển thị popup"
 
 #: framework/premium/features/content-blocks/options/popup.php:573
 msgid "Scroll Lock"
@@ -3206,7 +3206,7 @@ msgstr "Thông tin Người dùng"
 
 #: framework/features/header/items/account/options.php:60
 msgid "User Avatar"
-msgstr "Hình đại diện Người dùng"
+msgstr "Hình đại diện người dùng"
 
 #: framework/features/header/items/account/options.php:91,
 #: framework/features/header/items/account/options.php:658,
@@ -3400,11 +3400,11 @@ msgstr "Giỏ hàng Offcanvas - Trạng thái trống"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:705
 msgid "Before single product gallery"
-msgstr "Trước Album Ảnh sản phẩm đơn"
+msgstr "Trước Album ảnh sản phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:710
 msgid "After single product gallery"
-msgstr "Sau Album Ảnh sản phẩm đơn"
+msgstr "Sau Album ảnh sản phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:715
 msgid "Before single product \"Add to cart\" button"
@@ -3440,7 +3440,7 @@ msgstr "Màu nền mục"
 
 #: framework/premium/extensions/shortcuts/customizer.php:1084
 msgid "Wishlist Badge Color"
-msgstr "Màu Huy hiệu Yêu thích"
+msgstr "Màu huy hiệu yêu thích"
 
 #: framework/premium/extensions/shortcuts/customizer.php:1126
 msgid "Compare Badge Color"
@@ -3763,15 +3763,15 @@ msgstr "Thêm một dấu hiệu hình ảnh cho biết khách truy cập của 
 #: framework/helpers/exts.php:226,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
-msgstr "Bảng màu Biến thể"
+msgstr "Bảng màu biến thể"
 
 #: framework/helpers/exts.php:219
 msgid "Compare products with a clear and concise table system that gives your users a way to make a quick decision."
-msgstr ""
+msgstr "So sánh sản phẩm với hệ thống bảng rõ ràng và ngắn gọn giúp người dùng của bạn có cách để đưa ra quyết định nhanh chóng."
 
 #: framework/helpers/exts.php:294
 msgid "Product Share Box"
-msgstr "Hộp Chia Sẻ Sản Phẩm"
+msgstr "Hộp chia sẻ sản phẩm"
 
 #: framework/helpers/exts.php:295
 msgid "Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection."
@@ -3827,7 +3827,7 @@ msgstr "Các tùy chọn tùy chỉnh bổ sung cho các phân loại của bạ
 #: framework/helpers/exts.php:175
 msgctxt "Extension Brand Name"
 msgid "Shop Extra"
-msgstr "Mở rộng Cửa hàng"
+msgstr "Mở rộng cửa hàng"
 
 #: framework/helpers/exts.php:91
 msgid "Display the approximate reading time of an article, so that visitors know what to expect when starting to read the content."
@@ -3904,7 +3904,7 @@ msgstr "Sản phẩm đơn"
 
 #: framework/features/conditions/rules/woo.php:25
 msgid "Product Archives"
-msgstr "Sản phẩm Lưu trữ"
+msgstr "Sản phẩm lưu trữ"
 
 #: framework/features/conditions/rules/woo.php:30,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/options.php:91
@@ -3949,7 +3949,7 @@ msgstr "Trước chân trang"
 
 #: framework/extensions/trending/customizer.php:550
 msgid "After Footer"
-msgstr "Sau Chân trang"
+msgstr "Sau chân trang"
 
 #: framework/extensions/trending/customizer.php:555
 msgid "After Header"
@@ -4015,7 +4015,7 @@ msgstr "Tệp lệnh chân trang"
 #: framework/premium/features/premium-header/items/content-block/options.php:21
 #: framework/premium/static/js/blocks/ContentBlock.js:110
 msgid "Select Content Block"
-msgstr "Chọn Content Block"
+msgstr "Chọn khối nội dung"
 
 #: framework/premium/extensions/mega-menu/options.php:380,
 #: framework/premium/features/content-blocks/content-block-layer.php:173,
@@ -4023,11 +4023,11 @@ msgstr "Chọn Content Block"
 #: framework/features/header/items/account/options.php:257,
 #: framework/premium/features/premium-header/items/content-block/options.php:16
 msgid "Create a new content Block/Hook"
-msgstr "Tạo một Content Block/Hook mới"
+msgstr "Tạo một khối nội dung/Hook mới"
 
 #: framework/premium/extensions/mega-menu/options.php:637
 msgid "Heading Font"
-msgstr "Font Tiêu đề"
+msgstr "Phông chữ tiêu đề"
 
 #: framework/premium/features/content-blocks/admin-ui.php:148
 msgid "Enable"
@@ -4102,7 +4102,7 @@ msgstr "Sau ảnh đại diện"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:389
 msgid "Card bottom"
-msgstr "Card bottom"
+msgstr "Phần dưới của thẻ"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:397
 msgid "Related posts bottom"
@@ -4127,12 +4127,12 @@ msgstr "Hành vi thay thế"
 
 #: framework/premium/features/content-blocks/options/archive.php:38
 msgid "Only Card"
-msgstr "Only Card"
+msgstr "Chỉ thẻ"
 
 #: framework/premium/features/content-blocks/options/archive.php:39,
 #: framework/premium/features/content-blocks/options/single.php:38
 msgid "Full Page"
-msgstr "Full Page"
+msgstr "Toàn trang"
 
 #: framework/premium/features/content-blocks/options/404.php:51,
 #: framework/premium/features/content-blocks/options/archive.php:118,
@@ -4176,7 +4176,7 @@ msgstr "Chiều dọc"
 #: static/js/editor/blocks/about-me/Edit.js:148
 #: static/js/editor/blocks/contact-info/Edit.js:162
 msgid "Icons Background Color"
-msgstr "Màu nền Icons"
+msgstr "Màu nền biểu tượng"
 
 #: framework/premium/features/premium-header/items/contacts/options.php:893,
 #: framework/premium/features/premium-header/items/contacts/options.php:935,
@@ -4185,7 +4185,7 @@ msgstr "Màu nền Icons"
 #: static/js/editor/blocks/about-me/Edit.js:179
 #: static/js/editor/blocks/contact-info/Edit.js:193
 msgid "Icons Border Color"
-msgstr "Màu viền Icons"
+msgstr "Màu viền biểu tượng"
 
 #: framework/premium/static/js/options/IconPicker/CustomIcon.js:22
 msgid "Click to upload"
@@ -4193,7 +4193,7 @@ msgstr "Nhấp để tải lên"
 
 #: framework/premium/static/js/options/IconPicker/Modal.js:135
 msgid "All Icons"
-msgstr "Tất cả Icons"
+msgstr "Tất cả biểu tượng"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:290
 msgid "All authors"
@@ -4201,11 +4201,11 @@ msgstr "Tất cả tác giả"
 
 #: static/js/dashboard/screens/DemoInstall/components/Error.js:25
 msgid "Can't Import Starter Site"
-msgstr "Không thể nhập Web mẫu"
+msgstr "Không thể nhập mẫu web bắt đầu"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:31
 msgid "Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site."
-msgstr "Thật không may, cấu hình hosting của bạn không đáp ứng các yêu cầu tối thiểu để nhập một Web mẫu."
+msgstr "Thật không may, cấu hình hosting của bạn không đáp ứng các yêu cầu tối thiểu để nhập một mẫu web bắt đầu."
 
 #: framework/premium/static/js/hooks/CreateHook.js:116
 msgid "Archive Template"
@@ -4369,12 +4369,12 @@ msgstr "Nhiều thanh bên"
 #: framework/helpers/exts.php:162
 msgctxt "Extension Brand Name"
 msgid "White Label"
-msgstr "Nhãn trắng"
+msgstr "Gắn nhãn trắng"
 
 #: framework/features/blocks/share-box/options.php:120,
 #: framework/features/blocks/socials/options.php:84
 msgid "Icons Spacing"
-msgstr "Khoảng cách Icons "
+msgstr "Khoảng cách biểu tượng "
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/feature.php:134
 msgid "Add widgets here."
@@ -4394,7 +4394,7 @@ msgstr "Chuyển đổi xem nhanh"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/helpers.php:32
 msgid "Quick view icon"
-msgstr "icon xem nhanh"
+msgstr "Biểu tượng xem nhanh"
 
 #: framework/features/header/items/account/options.php:1724,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:314,
@@ -4452,7 +4452,7 @@ msgstr "Sau các hành động mục vòng lặp cửa hàng"
 #. translators: placeholder here means the actual URL.
 #: framework/features/blocks/socials/options.php:24
 msgid "Configure the social links in Customizer ➝ General ➝ %sSocial Network Accounts%s."
-msgstr ""
+msgstr "Cấu hình các liên kết xã hội trong Customizer ➝ General ➝ %sTài khoản mạng xã hội%s."
 
 #: framework/features/header/items/account/options.php:306
 msgid "Customizing: Logged out State"
@@ -4498,7 +4498,7 @@ msgstr "Xem trước nội dung động"
 
 #: framework/premium/features/content-blocks/options/archive.php:60
 msgid "Select a post/page to preview it's content inside the editor while building the archive."
-msgstr "Chọn một bài đăng/trang để xem trước nội dung bên trong trình chỉnh sửa khi xây dựng lưu trữ."
+msgstr "Chọn một bài viết/trang để xem trước nội dung bên trong trình chỉnh sửa khi xây dựng lưu trữ."
 
 #: framework/premium/features/content-blocks/options/archive.php:66
 msgid "Editor/Card Width"
@@ -4519,7 +4519,7 @@ msgstr "Đặt sau bao nhiêu trang đã truy cập, khối Popup sẽ xuất hi
 #: framework/premium/features/content-blocks/options/popup.php:489,
 #: framework/premium/features/content-blocks/options/single.php:157
 msgid "Select a post/page to preview it's content inside the editor while building the post/page."
-msgstr "Chọn một bài đăng/trang để xem trước nội dung bên trong trình chỉnh sửa khi xây dựng lưu trữ."
+msgstr "Chọn một bài viết/trang để xem trước nội dung bên trong trình chỉnh sửa khi xây dựng lưu trữ."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:240
 msgid "More information on how to generate an API key for Mailerlite can be found %shere%s. Please note that it is required at least one group to be created in your account for the integration to work. More info on how to create a group %shere%s."
@@ -4647,7 +4647,7 @@ msgstr "Tạo đầu trang mới"
 
 #: framework/premium/static/js/header/CreateHeader.js:53
 msgid "Create a new header and assign it to different pages or posts based on your conditions."
-msgstr "Tạo tiêu đề mới và gán nó cho các trang hoặc bài đăng khác nhau dựa trên điều kiện của bạn."
+msgstr "Tạo tiêu đề mới và gán nó cho các trang hoặc bài viết khác nhau dựa trên điều kiện của bạn."
 
 #: framework/premium/static/js/header/CreateHeader.js:71
 msgid "Header name"
@@ -4671,7 +4671,7 @@ msgstr "Hướng lên đầu!"
 
 #: framework/premium/static/js/hooks/CodeEditor.js:166
 msgid "Enabling & disabling the code editor will erase everything from your post editor and this action is irreversible."
-msgstr "Việc bật và tắt trình chỉnh sửa mã sẽ xóa mọi thứ khỏi trình chỉnh sửa bài đăng của bạn và hành động này không thể thay đổi được."
+msgstr "Việc bật và tắt trình chỉnh sửa mã sẽ xóa mọi thứ khỏi trình chỉnh sửa bài viết của bạn và hành động này không thể thay đổi được."
 
 #: framework/premium/static/js/hooks/CodeEditor.js:173
 msgid "Are you sure you want to continue?"
@@ -4679,7 +4679,7 @@ msgstr "Bạn có chắc chắn muốn tiếp tục không?"
 
 #: framework/premium/static/js/hooks/CreateHook.js:223
 msgid "Create Content Block"
-msgstr "Tạo Khối nội dung"
+msgstr "Tạo khối nội dung"
 
 #: framework/premium/static/js/hooks/CreateHook.js:36
 msgid "Please select the type of your content block and place it in the location you want based on your display and user conditions."
@@ -4740,7 +4740,7 @@ msgstr "Chọn vị trí"
 
 #: static/js/dashboard.js:39
 msgid "Starter Sites"
-msgstr "Trang web khởi động"
+msgstr "Mẫu web bắt đầu"
 
 #: static/js/dashboard.js:51
 msgid "Extensions"
@@ -4897,7 +4897,7 @@ msgstr "Cài đặt tùy chỉnh"
 
 #: static/js/options/CustomizerOptionsManager.js:443
 msgid "Widgets settings"
-msgstr "Cài đặt Tiện ích"
+msgstr "Cài đặt tiện ích widget"
 
 #: static/js/options/CustomizerOptionsManager.js:536
 msgid "Export"
@@ -4925,7 +4925,7 @@ msgstr "Thêm một hoặc nhiều điều kiện để hiển thị đầu tran
 
 #: static/js/dashboard/screens/DemoInstall.js:188
 msgid "Loading Starter Sites..."
-msgstr "Đang tải Trang web khởi động..."
+msgstr "Đang tải mẫu web bắt đầu..."
 
 #: static/js/dashboard/screens/DemoInstall/components/Progress.js:29
 msgid "Installing"
@@ -4965,7 +4965,7 @@ msgstr "Sửa đổi"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/InstallCompleted.js:22
 msgid "Starter Site Imported Successfully"
-msgstr "Đã nhập thành công Trang web khởi động"
+msgstr "Đã nhập thành công mẫu web bắt đầu"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/InstallCompleted.js:25
 msgid "Now you can view your website or start customizing it"
@@ -5127,11 +5127,11 @@ msgstr "Tùy chọn này sẽ xóa nội dung đã nhập trước đó và sẽ
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/ModifyDemo.js:143
 msgid "This starter site is already installed"
-msgstr "Trang web khởi động đã được cài đặt"
+msgstr "Mẫu web bắt đầu đã được cài đặt"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/ModifyDemo.js:152
 msgid "Starter Site Removed"
-msgstr "Xoá Trang web khởi động"
+msgstr "Xoá mẫu web bắt đầu"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/ModifyDemo.js:161
 msgid "Dismiss"
@@ -5159,7 +5159,7 @@ msgstr "Chọn Trình tạo Trang"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/PickBuilder.js:65
 msgid "This starter site can be imported and used with one of these page builders. Please select one in order to continue."
-msgstr "Trang web mẫu khởi động này có thể được nhập và sử dụng với một trong những trình xây dựng trang này. Vui lòng chọn một để tiếp tục."
+msgstr "Mẫu web bắt đầu này có thể được nhập và sử dụng với một trong những trình xây dựng trang này. Vui lòng chọn một để tiếp tục."
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:70
 msgid "Install & Activate Plugins"
@@ -5167,7 +5167,7 @@ msgstr "Cài và Kích hoạt Plugin"
 
 #: static/js/dashboard/screens/DemoInstall/Wizzard/Plugins.js:72
 msgid "The following plugins are required for this starter site in order to work properly."
-msgstr "Các plugin sau là bắt buộc đối với Trang web khởi động để hoạt động bình thường."
+msgstr "Các plugin sau là bắt buộc đối với mẫu web bắt đầu để hoạt động bình thường."
 
 #: static/js/dashboard/screens/Extension.js:89
 #: static/js/dashboard/screens/Extensions.js:60
@@ -5407,7 +5407,7 @@ msgstr "Màu biểu tượng"
 
 #: framework/helpers/exts.php:85
 msgid "Enables support for Custom Fields inside archive cards and single page post title, adds a reading progress bar for your posts and lets you set featured images and colors for your categories archives."
-msgstr "Kích hoạt hỗ trợ cho Trường tùy chỉnh bên trong thẻ lưu trữ và tiêu đề bài đăng trên trang đơn, thêm thanh tiến trình đọc cho bài đăng của bạn và cho phép bạn đặt hình ảnh nổi bật và màu sắc cho lưu trữ danh mục của bạn."
+msgstr "Kích hoạt hỗ trợ cho trường tùy chỉnh bên trong thẻ lưu trữ và tiêu đề bài đăng trên trang đơn, thêm thanh tiến trình đọc cho bài viết của bạn và cho phép bạn đặt hình ảnh nổi bật và màu sắc cho lưu trữ danh mục của bạn."
 
 #: framework/helpers/exts.php:128,
 #: framework/premium/extensions/shortcuts/config.php:6
@@ -5421,7 +5421,7 @@ msgstr "Dễ dàng biến trang web của bạn thành trải nghiệm di độn
 #: framework/premium/extensions/shortcuts/views/bar.php:13,
 #: framework/premium/extensions/shortcuts/views/bar.php:45
 msgid "Home"
-msgstr "Trang chủ"
+msgstr "Tổng quan"
 
 #: framework/features/blocks/contact-info/options.php:139,
 #: framework/premium/extensions/shortcuts/customizer.php:68,
@@ -5513,7 +5513,7 @@ msgstr "Dưới cùng"
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:73,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:74
 msgid "Icon Size"
-msgstr "Kích thước icon"
+msgstr "Kích thước biểu tượng"
 
 #: framework/premium/extensions/shortcuts/customizer.php:815,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:385
@@ -5581,7 +5581,7 @@ msgstr "Bóng"
 
 #: framework/helpers/exts.php:143
 msgid "Create unlimited personalized sets of widget areas and display them on any page or post using our conditional logic functionality."
-msgstr "Tạo không giới hạn các bộ khu vực tiện ích cá nhân hóa và hiển thị chúng trên bất kỳ trang hoặc bài đăng nào bằng cách sử dụng chức năng logic có điều kiện của chúng tôi."
+msgstr "Tạo không giới hạn các bộ khu vực tiện ích cá nhân hóa và hiển thị chúng trên bất kỳ trang hoặc bài viết nào bằng cách sử dụng chức năng logic có điều kiện của chúng tôi."
 
 #: framework/helpers/exts.php:147
 msgid "Create New Sidebar"
@@ -6389,11 +6389,11 @@ msgstr "Trước số tiêu đề"
 
 #: static/js/editor/blocks/about-me/index.js:45
 msgid "About Me"
-msgstr ""
+msgstr "Giới thiệu về Tôi"
 
 #: framework/features/blocks/about-me/options.php:16
 msgid "About me"
-msgstr ""
+msgstr "Về tôi"
 
 #: framework/features/blocks/about-me/options.php:49,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:81,
@@ -6420,7 +6420,7 @@ msgstr "Chọn hình ảnh"
 
 #: framework/features/blocks/about-me/options.php:54
 msgid "Change Image"
-msgstr ""
+msgstr "Thay đổi hình ảnh"
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:20,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:123,
@@ -6437,7 +6437,7 @@ msgstr "Mở liên kết trong tab mới"
 #: framework/features/blocks/contact-info/options.php:35
 #: static/js/editor/blocks/contact-info/index.js:54
 msgid "Contact Info"
-msgstr ""
+msgstr "Thông tin liên hệ"
 
 #: framework/features/blocks/contact-info/options.php:51,
 #: framework/features/blocks/contact-info/options.php:81,
@@ -6530,7 +6530,7 @@ msgstr "Nhỏ"
 
 #: framework/features/blocks/about-me/options.php:87
 msgid "Large"
-msgstr ""
+msgstr "Lớn"
 
 #: framework/features/blocks/about-me/options.php:200,
 #: framework/features/blocks/contact-info/options.php:557,
@@ -6595,22 +6595,22 @@ msgstr "Loại bài viết"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:149
 msgid "Most commented"
-msgstr ""
+msgstr "Được bình luận nhiều nhất"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:165
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:145
 msgid "Random"
-msgstr ""
+msgstr "Ngẫu nhiên"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:117
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:113
 msgid "Order by"
-msgstr ""
+msgstr "Đặt theo"
 
 #: framework/features/blocks/dynamic-data/options.php:109,
 #: framework/features/blocks/dynamic-data/views/wp-field.php:204
 msgid "% comments"
-msgstr ""
+msgstr "% bình luận"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:79
 msgid "Author Avatar"
@@ -6618,17 +6618,17 @@ msgstr "Ảnh đại diện tác giả"
 
 #: framework/features/blocks/socials/options.php:15
 msgid "Social Icons"
-msgstr ""
+msgstr "Biểu tượng xã hội"
 
 #: framework/features/blocks/about-me/options.php:124
 msgid "You can configure social URLs in %s."
-msgstr ""
+msgstr "Bạn có thể cấu hình URL xã hội trong %s."
 
 #: framework/features/blocks/about-me/options.php:156,
 #: framework/features/blocks/socials/options.php:62,
 #: framework/premium/features/premium-header/items/contacts/options.php:405
 msgid "Open links in new tab"
-msgstr ""
+msgstr "Mở liên kết trong tab mới"
 
 #: framework/features/blocks/about-me/options.php:163,
 #: framework/features/blocks/contact-info/options.php:527,
@@ -6636,7 +6636,7 @@ msgstr ""
 #: framework/features/blocks/socials/options.php:69,
 #: framework/premium/features/premium-header/items/contacts/options.php:411
 msgid "Set links to nofollow"
-msgstr ""
+msgstr "Đặt liên kết thành nofollow"
 
 #: framework/features/header/items/account/options.php:4
 msgid "Profile Page"
@@ -6683,16 +6683,16 @@ msgstr "Hành động tài khoản"
 
 #: framework/features/header/items/account/options.php:145
 msgid "Select Menu"
-msgstr ""
+msgstr "Chọn Menu"
 
 #: framework/features/header/items/account/options.php:151
 msgid "Select menu..."
-msgstr ""
+msgstr "Chọn menu..."
 
 #. translators: placeholder here means the actual URL.
 #: framework/features/header/items/account/options.php:155
 msgid "Manage your menus in the %sMenus screen%s."
-msgstr ""
+msgstr "Quản lý menu của bạn trong màn hình %sMenus%s."
 
 #: framework/features/header/items/account/options.php:702,
 #: framework/features/header/items/account/options.php:1073
@@ -6876,7 +6876,7 @@ msgstr "Khả năng hiển thị phần tử"
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:655
 msgid "You have no %s fields declared for this custom post type."
-msgstr "Bạn không có trường %s nào được khai báo cho loại bài đăng tùy chỉnh này."
+msgstr "Bạn không có trường %s nào được khai báo cho loại bài viết tùy chỉnh này."
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:667,
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:1401,
@@ -7055,7 +7055,7 @@ msgstr "Khoảng cách dọc khu vực nội dung"
 #: framework/premium/features/content-blocks/options/nothing_found.php:120,
 #: framework/premium/features/content-blocks/options/single.php:111
 msgid "Top & Bottom"
-msgstr "Đầu & Dưới"
+msgstr "Trên cùng & Dưới cùng"
 
 #: framework/premium/features/content-blocks/options/404.php:105,
 #: framework/premium/features/content-blocks/options/archive.php:182,
@@ -7079,7 +7079,7 @@ msgstr "Chỉ dưới cùng"
 
 #: framework/premium/features/content-blocks/options/hook.php:60
 msgid "Location & Priority"
-msgstr "Vị trí & Ưu tiên"
+msgstr "Vị trí & ưu tiên"
 
 #: framework/premium/features/content-blocks/options/hook.php:23,
 #: framework/premium/features/content-blocks/options/hook.php:93
@@ -7089,15 +7089,15 @@ msgstr "Hook tùy chỉnh"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:712
 msgid "Mixed"
-msgstr ""
+msgstr "Hỗn hợp"
 
 #: framework/premium/features/content-blocks/options/popup.php:438
 msgid "Popup Position"
-msgstr "Vị Trí Popup"
+msgstr "Vị trí popup"
 
 #: framework/premium/features/content-blocks/options/popup.php:384
 msgid "Popup Size"
-msgstr "Kích thước Popup"
+msgstr "Kích thước popup"
 
 #: framework/premium/features/content-blocks/options/popup.php:390
 msgid "Small Size"
@@ -7306,7 +7306,7 @@ msgstr "Căn chỉnh ngang"
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:284
 msgid "Button Padding"
-msgstr "Lề Nút"
+msgstr "Lề trong của nút"
 
 #: framework/premium/extensions/post-types-extra/features/read-time/read-progress/customizer.php:4
 msgid "Read Progress"
@@ -7461,7 +7461,7 @@ msgstr "Tìm kiếm thông qua tiêu chí"
 #: framework/features/blocks/search/options.php:187,
 #: framework/premium/features/premium-header/items/search-input/options.php:176
 msgid "Chose in which post types do you want to perform searches."
-msgstr "Chọn loại bài đăng mà bạn muốn thực hiện tìm kiếm."
+msgstr "Chọn loại bài viết mà bạn muốn thực hiện tìm kiếm."
 
 #: framework/premium/features/premium-header/items/search-input/options.php:396,
 #: framework/premium/features/premium-header/items/search-input/options.php:425,
@@ -7473,11 +7473,11 @@ msgstr "Màu biểu tượng đầu vào"
 #: framework/premium/features/premium-header/items/search-input/options.php:833
 #: static/js/editor/blocks/search/Edit.js:346
 msgid "Dropdown Text Color"
-msgstr "Màu văn bản Menu thả xuống"
+msgstr "Màu văn bản menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:864
 msgid "Dropdown Background"
-msgstr "Nền Menu thả xuống"
+msgstr "Nền menu thả xuống"
 
 #: framework/premium/features/premium-header/items/widget-area-1/config.php:4
 msgid "Widget Area"
@@ -7494,7 +7494,7 @@ msgstr "Đang tải..."
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:73
 msgid "Invalid API Key..."
-msgstr "API Key Không hợp lệ..."
+msgstr "Mã API không hợp lệ..."
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:101
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/ListPicker.js:118
@@ -7525,7 +7525,7 @@ msgstr "Lưu cài đặt"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:162
 msgid "Pick Mailing Service"
-msgstr "Chọn dịch vụ gửi Email"
+msgstr "Chọn dịch vụ gửi email"
 
 #: framework/extensions/product-reviews/static/js/ProductReviews.js:22
 msgid "Product Reviews Settings"
@@ -7533,7 +7533,7 @@ msgstr "Cài đặt đánh giá sản phẩm"
 
 #: framework/extensions/product-reviews/static/js/ProductReviews.js:25
 msgid "Configure the slugs for single and category pages of the product review custom post type."
-msgstr "Định cấu hình slug cho các trang đơn và danh mục của loại bài đăng tùy chỉnh đánh giá sản phẩm."
+msgstr "Định cấu hình slug cho các trang đơn và danh mục của loại bài viết tùy chỉnh đánh giá sản phẩm."
 
 #: framework/extensions/product-reviews/static/js/ProductReviews.js:43
 msgid "Single Slug"
@@ -7549,7 +7549,7 @@ msgstr "Cài đặt phông chữ Adobe"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:116
 msgid "Project ID"
-msgstr "ID Dự án"
+msgstr "ID dự án"
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:158
 msgid "Fetch Fonts"
@@ -7571,7 +7571,7 @@ msgstr "Tại đây, bạn có thể thấy tất cả các phông chữ tùy ch
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:28
 msgid "Dynamic Font"
-msgstr "Phông chữ Động"
+msgstr "Phông chữ động"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:37
 msgid "Variable font"
@@ -7675,15 +7675,15 @@ msgstr "URL Hỗ trợ của Đại lý/Biểu mẫu liên hệ"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:220
 msgid "Theme Details"
-msgstr "Chi tiết Giao diện"
+msgstr "Chi tiết giao diện"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:228
 msgid "Theme Name"
-msgstr "Tên Theme"
+msgstr "Tên giao diện"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:256
 msgid "Theme Description"
-msgstr "Mô tả Giao diện"
+msgstr "Mô tả giao diện"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:286
 msgid "Theme Screenshot URL"
@@ -7711,15 +7711,15 @@ msgstr "Bạn có thể chèn liên kết tới hình ảnh tự lưu trữ ho�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:616
 msgid "Plugin Name"
-msgstr "Tên Plugin"
+msgstr "Tên plugin"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:644
 msgid "Plugin Description"
-msgstr "Mô tả Plugin"
+msgstr "Mô tả plugin"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:674
 msgid "Plugin Thumbnail URL"
-msgstr "URL Ảnh đại diện Plugin"
+msgstr "URL ảnh đại diện plugin"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:764
 msgid "Choose File"
@@ -7735,7 +7735,7 @@ msgstr "Ẩn mục menu tài khoản"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:803
 msgid "Hide Starter Sites Tab"
-msgstr "Ẩn Tab Web mẫu"
+msgstr "Ẩn Tab mẫu web bắt đầu"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:810
 msgid "Hide Useful Plugins Tab"
@@ -7743,7 +7743,7 @@ msgstr "Ẩn tab Tiện ích mở rộng hữu ích"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:818
 msgid "Hide Changelog Tab"
-msgstr "Ẩn tab Nhật ký thay đổi"
+msgstr "Ẩn tab nhật ký thay đổi"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:826
 msgid "Hide Support Section"
@@ -7751,11 +7751,11 @@ msgstr "Ẩn phần hỗ trợ"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:876
 msgid "Hide White Label Extension"
-msgstr "Ẩn tiện ích mở rộng Nhãn trắng"
+msgstr "Ẩn tiện ích mở rộng gắn nhãn trắng"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:891
 msgid "Please note that the white label extension will be hidden if this option is enabled. In order to bring it back you have to hit the SHIFT key and click on the dashboard logo."
-msgstr "Lưu ý tiện ích mở rộng Nhãn trắng sẽ bị ẩn nếu tùy chọn này được kích hoạt. Để mở lại, bạn phải nhấn phím SHIFT và nhấp vào biểu tượng bảng điều khiển."
+msgstr "Lưu ý tiện ích mở rộng gắn nhãn trắng sẽ bị ẩn nếu tùy chọn này được kích hoạt. Để mở lại, bạn phải nhấn phím SHIFT và nhấp vào biểu tượng bảng điều khiển."
 
 #: framework/premium/static/js/footer/CloneItem.js:66
 #: framework/premium/static/js/header/CloneItem.js:66
@@ -7801,7 +7801,7 @@ msgstr "Tạo chân trang mới"
 
 #: framework/premium/static/js/footer/CreateFooter.js:53
 msgid "Create a new footer and assign it to different pages or posts based on your conditions."
-msgstr "Tạo chân trang mới và gán nó cho các trang hoặc bài đăng khác nhau dựa trên điều kiện của bạn."
+msgstr "Tạo chân trang mới và gán nó cho các trang hoặc bài viết khác nhau dựa trên điều kiện của bạn."
 
 #: framework/premium/static/js/footer/CreateFooter.js:72
 msgid "Footer name"
@@ -7844,7 +7844,7 @@ msgstr "Xác nhận"
 #: static/js/header/PanelsManager.js:74
 #: static/js/options/DisplayCondition.js:61
 msgid "Edit Conditions"
-msgstr "Sửa Điều kiện"
+msgstr "Sửa điều kiện"
 
 #. translators: %s: PHP version
 #: blocksy-companion.php:175
@@ -7931,7 +7931,7 @@ msgstr "TikTok"
 
 #: framework/theme-integration.php:278
 msgid "Companion"
-msgstr "Bạn đồng hành"
+msgstr "Companion"
 
 #: framework/theme-integration.php:296
 msgid "PRO"
@@ -7986,7 +7986,7 @@ msgstr "Bài viết"
 #: framework/premium/features/content-blocks/hooks-manager.php:470,
 #: framework/premium/features/content-blocks/hooks-manager.php:478
 msgid "Single Post"
-msgstr "Bài đăng đơn"
+msgstr "Bài viết đơn"
 
 #: framework/features/conditions/rules/posts.php:15
 msgid "Post Categories"
@@ -8013,7 +8013,7 @@ msgstr "Riêng biệt"
 
 #: framework/features/conditions/rules/specific.php:10
 msgid "Post ID"
-msgstr "ID Bài viết"
+msgstr "ID bài viết"
 
 #: framework/features/conditions/rules/specific.php:15
 msgid "Page ID"
@@ -8027,11 +8027,11 @@ msgstr "ID Loại bài viết tùy chỉnh"
 #: framework/features/conditions/rules/specific.php:38,
 #: framework/features/conditions/rules/woo.php:65
 msgid "Taxonomy ID"
-msgstr "ID Taxonomy "
+msgstr "ID phân loại"
 
 #: framework/features/conditions/rules/specific.php:25
 msgid "Post with Taxonomy ID"
-msgstr "Đăng với ID Taxonomy"
+msgstr "Đăng với ID phân loại"
 
 #: framework/features/conditions/rules/pages.php:15
 msgid "404"
@@ -8056,12 +8056,12 @@ msgstr "Blog"
 
 #: framework/features/conditions/rules/pages.php:33
 msgid "Front Page"
-msgstr "Front Page"
+msgstr "Trang chính"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:69
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:157
 msgid "Author"
-msgstr ""
+msgstr "Tác giả"
 
 #: framework/features/conditions/rules/user-auth.php:20
 msgid "User Auth"
@@ -8093,7 +8093,7 @@ msgstr "Ngôn ngữ"
 
 #: framework/features/demo-install.php:181
 msgid "Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so."
-msgstr "Cài đặt PHP của bạn không có hỗ trợ cho XML. Vui lòng cài đặt phần mở rộng <i>xml</i> hoặc <i>simplexml</i> PHP để có thể cài đặt Trang web khởi động. Bạn có thể cần liên hệ với nhà cung cấp dịch vụ lưu trữ của mình để hỗ trợ bạn làm việc này."
+msgstr "Cài đặt PHP của bạn không có hỗ trợ cho XML. Vui lòng cài đặt phần mở rộng <i>xml</i> hoặc <i>simplexml</i> PHP để có thể cài đặt mẫu web bắt đầu. Bạn có thể cần liên hệ với nhà cung cấp dịch vụ lưu trữ của mình để hỗ trợ bạn làm việc này."
 
 #: framework/features/dynamic-css.php:48
 msgid "Dynamic CSS Output"
@@ -8288,7 +8288,7 @@ msgstr "Chúng tôi sử dụng cookie để đảm bảo sẽ mang đến cho b
 
 #: framework/features/blocks/search/options.php:58
 msgid "Button Text"
-msgstr ""
+msgstr "Văn bản nút"
 
 #: framework/extensions/cookies-consent/customizer.php:80,
 #: framework/extensions/cookies-consent/helpers.php:10
@@ -8619,7 +8619,7 @@ msgstr "Tôi chấp nhận %sChính sách bảo mật%s*"
 
 #: framework/extensions/cookies-consent/customizer.php:123
 msgid "This text will appear under each comment form and subscribe form."
-msgstr "Văn bản này sẽ xuất hiện dưới mỗi form bình luận và form subscribe."
+msgstr "Văn bản này sẽ xuất hiện dưới mỗi biểu mẫu bình luận và biểu mẫu đăng ký."
 
 #: framework/extensions/cookies-consent/helpers.php:55
 msgid "I accept the %sPrivacy Policy%s"
@@ -8627,15 +8627,15 @@ msgstr "Tôi chấp nhận %sChính sách bảo mật%s"
 
 #: framework/features/blocks/about-me/options.php:128
 msgid "Customizer"
-msgstr ""
+msgstr "Người tùy chỉnh"
 
 #: framework/extensions/newsletter-subscribe/config.php:6
 msgid "Easily capture new leads for your newsletter with the help of a widget, shortcode or even a block inserted on your pages or posts."
-msgstr "Dễ dàng tạo khách hàng tiềm năng mới cho bản tin của bạn với sự giúp đỡ của một tiện ích, Mã ngắn hoặc thậm chí một khối được chèn vào trang hoặc bài đăng của bạn."
+msgstr "Dễ dàng tạo khách hàng tiềm năng mới cho bản tin của bạn với sự giúp đỡ của một tiện ích, Mã ngắn hoặc thậm chí một khối được chèn vào trang hoặc bài viết của bạn."
 
 #: framework/extensions/newsletter-subscribe/customizer.php:4
 msgid "Subscribe Form"
-msgstr "Form Subscribe"
+msgstr "Biểu mẫu đăng ký"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:18,
 #: framework/features/blocks/about-me/options.php:15,
@@ -8779,7 +8779,7 @@ msgstr "Tên của bạn"
 #: framework/extensions/newsletter-subscribe/customizer.php:128,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:136
 msgid "Mail Label"
-msgstr "Nhãn Mail"
+msgstr "Nhãn mail"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:130,
 #: framework/extensions/newsletter-subscribe/extension.php:209,
@@ -8792,7 +8792,7 @@ msgstr "Email của bạn"
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:142,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:416
 msgid "Button Label"
-msgstr "Nhãn Nút"
+msgstr "Nhãn nút"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:139,
 #: framework/extensions/newsletter-subscribe/extension.php:203,
@@ -8801,7 +8801,7 @@ msgstr "Nhãn Nút"
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:143,
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:21
 msgid "Subscribe"
-msgstr "Subscribe"
+msgstr "Đăng ký"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:149,
 #: framework/extensions/trending/customizer.php:516,
@@ -8918,7 +8918,7 @@ msgstr "Máy tính"
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:106,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:589
 msgid "Tablet"
-msgstr "Tablet"
+msgstr "Máy tính bảng"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:162,
 #: framework/extensions/trending/customizer.php:530,
@@ -9059,11 +9059,11 @@ msgstr "Khoảng cách trong vùng chứa"
 #: framework/extensions/newsletter-subscribe/customizer.php:422,
 #: framework/premium/extensions/shortcuts/customizer.php:1235
 msgid "Container Border Radius"
-msgstr "Bán kính đường viền Container"
+msgstr "Góc bo đường viền vùng chứa"
 
 #: framework/extensions/newsletter-subscribe/extension.php:155
 msgid "Disable Subscribe Form"
-msgstr "Tắt Subscribe Form"
+msgstr "Tắt biểu mẫu đăng ký"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:253,
 #: framework/features/blocks/about-me/options.php:58,
@@ -9111,11 +9111,11 @@ msgstr "Chiều rộng hộp điểm số"
 
 #: framework/extensions/product-reviews/extension.php:397
 msgid "Read More Button"
-msgstr "Nút Xem Thêm"
+msgstr "Nút xem thêm"
 
 #: framework/extensions/product-reviews/extension.php:408
 msgid "Buy Now Button"
-msgstr "Nút Mua Ngay"
+msgstr "Nút mua ngay"
 
 #: framework/extensions/product-reviews/extension.php:256,
 #: framework/extensions/product-reviews/extension.php:427
@@ -9197,7 +9197,7 @@ msgstr "Không tìm thấy"
 
 #: framework/extensions/product-reviews/extension.php:556
 msgid "Not found in Trash"
-msgstr "Không có trong Thùng rác"
+msgstr "Không có trong thùng rác"
 
 #: framework/extensions/product-reviews/extension.php:590,
 #: framework/extensions/product-reviews/extension.php:600,
@@ -9266,7 +9266,7 @@ msgstr "Xếp hạng"
 
 #: framework/extensions/product-reviews/metabox.php:10
 msgid "Review Entity"
-msgstr "Review Entity"
+msgstr "Lượt nhập đánh giá"
 
 #: framework/extensions/product-reviews/metabox.php:18,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/table.php:39
@@ -9276,7 +9276,7 @@ msgstr "Sản phẩm"
 
 #: framework/extensions/product-reviews/metabox.php:19
 msgid "Book"
-msgstr "Book"
+msgstr "Sách"
 
 #: framework/extensions/product-reviews/metabox.php:21
 msgid "Creative Work Season"
@@ -9288,7 +9288,7 @@ msgstr "Chuỗi công việc sáng tạo"
 
 #: framework/extensions/product-reviews/metabox.php:23
 msgid "Episode"
-msgstr "Episode"
+msgstr "Tập phim"
 
 #: framework/extensions/product-reviews/metabox.php:25
 msgid "Game"
@@ -9349,7 +9349,7 @@ msgstr "Mua Ngay"
 
 #: framework/extensions/product-reviews/metabox.php:114
 msgid "Affiliate Link"
-msgstr "Liên kết Affiliate"
+msgstr "Liên kết affiliate"
 
 #: framework/extensions/product-reviews/metabox.php:120
 msgid "Open Link In New Tab"
@@ -9361,7 +9361,7 @@ msgstr "Thuộc tính được tài trợ"
 
 #: framework/extensions/product-reviews/metabox.php:148
 msgid "Read More Button Label"
-msgstr "Nhãn nút Đọc thêm "
+msgstr "Nhãn nút đọc thêm "
 
 #: framework/extensions/product-reviews/metabox.php:150,
 #: framework/extensions/product-reviews/views/single-top.php:162
@@ -9415,7 +9415,7 @@ msgstr "Tất cả danh mục"
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:66
 #: static/js/editor/blocks/tax-query/Edit.js:156
 msgid "Taxonomy"
-msgstr "Taxonomy"
+msgstr "Phân loại"
 
 #: framework/extensions/trending/customizer.php:43
 msgid "All taxonomies"
@@ -9432,7 +9432,7 @@ msgstr "Đang là xu hướng"
 
 #: framework/extensions/trending/customizer.php:187
 msgid "Module Title Tag"
-msgstr "Tag tiêu đề mô-đun"
+msgstr "Tag tiêu đề module"
 
 #: framework/extensions/trending/customizer.php:324
 msgid "Source"
@@ -9445,7 +9445,7 @@ msgstr "Phân loại"
 
 #: framework/extensions/trending/customizer.php:330
 msgid "Custom Query"
-msgstr "Query Tuỳ chỉnh"
+msgstr "Truy vấn tùy chỉnh"
 
 #: framework/extensions/trending/customizer.php:354
 msgid "Posts ID"
@@ -9499,7 +9499,7 @@ msgstr "Chỉ hàng chính"
 
 #: framework/features/header/header-options.php:42
 msgid "Top & Main Row"
-msgstr "Hàng trên cùng & Hàng chính"
+msgstr "Hàng trên cùng & hàng chính"
 
 #: framework/features/header/header-options.php:47
 msgid "All Rows"
@@ -9527,7 +9527,7 @@ msgstr "Mờ dần"
 
 #: framework/features/header/header-options.php:79
 msgid "Auto Hide/Show"
-msgstr "Tự động Ẩn/Hiện"
+msgstr "Tự động ẩn/hiện"
 
 #: framework/features/header/header-options.php:97,
 #: framework/features/header/header-options.php:179
@@ -9660,7 +9660,7 @@ msgstr "Khối nội dung"
 #: framework/premium/features/premium-header/items/content-block/config.php:4
 #: framework/premium/static/js/blocks/ContentBlock.js:78
 msgid "Content Block"
-msgstr "Content Block"
+msgstr "Khối nội dung"
 
 #: framework/premium/features/content-blocks.php:303,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:120,
@@ -9671,25 +9671,25 @@ msgstr "Thêm mới"
 
 #: framework/premium/features/content-blocks.php:304
 msgid "Add New Content Block"
-msgstr "Thêm mới Content Block"
+msgstr "Thêm mới khối nội dung"
 
 #: framework/premium/features/content-blocks.php:305
 #: framework/premium/static/js/blocks/ContentBlock.js:89
 msgid "Edit Content Block"
-msgstr "Sửa Content Block"
+msgstr "Sửa khối nội dung"
 
 #: framework/premium/features/content-blocks.php:306
 #: framework/premium/static/js/hooks/CreateHook.js:33
 msgid "New Content Block"
-msgstr "Content Block Mới"
+msgstr "Khối nội dung mới"
 
 #: framework/premium/features/content-blocks.php:308
 msgid "View Content Block"
-msgstr "Xem Content Block"
+msgstr "Xem khối nội dung"
 
 #: framework/premium/features/content-blocks.php:309
 msgid "Search Content Blocks"
-msgstr "Tìm kiếm Khối nội dung"
+msgstr "Tìm kiếm khối nội dung"
 
 #: framework/premium/features/content-blocks.php:310,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:127,
@@ -9756,7 +9756,7 @@ msgstr "Khu vực tiện ích đầu trang "
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:28,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:28
 msgid "Icon"
-msgstr "Icon"
+msgstr "Biểu tượng"
 
 #: framework/premium/features/premium-header.php:277,
 #: framework/features/blocks/about-me/options.php:168,
@@ -9765,12 +9765,12 @@ msgstr "Icon"
 #: framework/features/blocks/socials/options.php:74,
 #: framework/premium/features/premium-header/items/contacts/options.php:426
 msgid "Icons Size"
-msgstr "Kích thước Icons"
+msgstr "Kích thước biểu tượng"
 
 #: framework/premium/features/premium-header.php:289,
 #: framework/premium/extensions/mega-menu/options.php:509
 msgid "Icon Position"
-msgstr "Vị trí Icon"
+msgstr "Vị trí biểu tượng"
 
 #: framework/premium/features/premium-header.php:296,
 #: framework/premium/extensions/mega-menu/options.php:516,
@@ -9797,7 +9797,7 @@ msgstr "Bên phải"
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:14
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:56
 msgid "Newsletter"
-msgstr "Newsletter"
+msgstr "Bản tin"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:13,
 #: framework/features/blocks/contact-info/options.php:39,
@@ -9827,7 +9827,7 @@ msgstr "Bạn có thể thêm vào đây một số code HTML tùy ý."
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:74
 msgid "Container Style"
-msgstr ""
+msgstr "Kiểu vùng chứa"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:82,
 #: framework/premium/features/content-blocks/options/404.php:85,
@@ -9910,8 +9910,8 @@ msgstr "Chọn Google Font lưu trên máy chủ web của bạn. Điều này s
 
 #: framework/helpers/exts.php:72
 msgid "Create beautiful personalised menus that set your website apart from the others. Add icons and badges to your entries and even add Content Blocks inside your dropdowns."
-msgstr "Tạo menu cá nhân hóa đẹp mắt giúp trang web của bạn khác biệt với các menu khác. Thêm icon và huy hiệu vào các mục của bạn và thậm chí thêm Khối nội dung bên trong danh sách thả xuống của bạn."
+msgstr "Tạo menu cá nhân hóa đẹp mắt giúp trang web của bạn khác biệt với các menu khác. Thêm biểu tượng và huy hiệu vào các mục của bạn và thậm chí thêm khối nội dung bên trong danh sách thả xuống của bạn."
 
 #: framework/premium/extensions/mega-menu/extension.php:150
 msgid "Menu Item Settings"
-msgstr "Cài đặt mục Menu"
+msgstr "Cài đặt mục menu"
