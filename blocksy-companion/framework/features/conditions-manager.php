@@ -279,7 +279,7 @@ class ConditionsManager {
 					$condition['payload']['taxonomy_id']
 				);
 
-				if ($tax) {
+				if ($tax && ! is_wp_error($tax)) {
 					$to_append .= ' (<a href="' . get_edit_term_link(
 						$condition['payload']['taxonomy_id']
 					) . '" target="_blank">' . $tax->name . '</a>)';

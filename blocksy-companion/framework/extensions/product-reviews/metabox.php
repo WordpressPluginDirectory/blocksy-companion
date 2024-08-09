@@ -11,7 +11,7 @@ $options = [
 				'type' => 'ct-select',
 				'value' => 'Thing',
 				'view' => 'text',
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'choices' => blocksy_ordered_keys(
 					[
 						'Thing' => __( 'Default', 'blocksy-companion' ),
@@ -67,21 +67,21 @@ $options = [
 					'product_entity_price' => [
 						'type' => 'text',
 						'label' => __('Product Price', 'blocksy-companion'),
-						'design' => 'inline',
+						'design' => 'inline:start',
 						'value' => '',
 					],
 
 					'product_entity_sku' => [
 						'type' => 'text',
 						'label' => __('Product SKU', 'blocksy-companion'),
-						'design' => 'inline',
+						'design' => 'inline:start',
 						'value' => '',
 					],
 
 					'product_entity_brand' => [
 						'type' => 'text',
 						'label' => __('Product Brand', 'blocksy-companion'),
-						'design' => 'inline',
+						'design' => 'inline:start',
 						'value' => '',
 					],
 				]
@@ -94,7 +94,7 @@ $options = [
 			'gallery' => [
 				'type' => 'ct-multi-image-uploader',
 				'label' => __('Gallery', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => []
 			],
 
@@ -105,26 +105,28 @@ $options = [
 			'product_button_label' => [
 				'type' => 'text',
 				'label' => __('Affiliate Button Label', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => __('Buy Now', 'blocksy-companion')
 			],
 
 			'product_link' => [
 				'type' => 'text',
 				'label' => __('Affiliate Link', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => '#'
 			],
 
 			'product_link_target' => [
 				'label' => __( 'Open Link In New Tab', 'blocksy-companion' ),
 				'type'  => 'ct-switch',
+				'design' => 'inline:start',
 				'value' => 'no',
 			],
 
 			'product_link_sponsored' => [
 				'label' => __( 'Sponsored Attribute', 'blocksy-companion' ),
 				'type'  => 'ct-switch',
+				'design' => 'inline:start',
 				'value' => 'no',
 			],
 
@@ -132,7 +134,7 @@ $options = [
 			'product_button_icon' => [
 				'type' => 'icon-picker',
 				'label' => __('Button Icon', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => [
 					'icon' => 'fas fa-shopping-cart'
 				]
@@ -146,7 +148,7 @@ $options = [
 			'product_read_content_button_label' => [
 				'type' => 'text',
 				'label' => __('Read More Button Label', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => __('Read More', 'blocksy-companion')
 			],
 
@@ -154,7 +156,7 @@ $options = [
 			'product_read_content_button_icon' => [
 				'type' => 'icon-picker',
 				'label' => __('Button Icon', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'value' => [
 					'icon' => 'fas fa-arrow-down'
 				]
@@ -169,7 +171,7 @@ $options = [
 				'type' => 'wp-editor',
 				'label' => __('Short Description', 'blocksy-companion'),
 				'value' => '',
-				'design' => 'inline',
+				'design' => 'inline:start',
 			],
 
 		],
@@ -183,7 +185,7 @@ $options = [
 			'scores' => [
 				'type' => 'ct-addable-box',
 				'label' => __('Scores', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'preview-template' => '<%= label %> (<%= score === 1 ? "1 star" : score + " stars" %>)',
 
 				'inner-options' => [
@@ -223,7 +225,7 @@ $options = [
 			'product_specs' => [
 				'type' => 'ct-addable-box',
 				'label' => __('Product specs', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'preview-template' => '<%= label %>',
 
 				'inner-options' => [
@@ -248,7 +250,7 @@ $options = [
 			'product_pros' => [
 				'type' => 'ct-addable-box',
 				'label' => __('Pros', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'preview-template' => '<%= label %>',
 
 				'inner-options' => [
@@ -268,7 +270,7 @@ $options = [
 			'product_cons' => [
 				'type' => 'ct-addable-box',
 				'label' => __('Cons', 'blocksy-companion'),
-				'design' => 'inline',
+				'design' => 'inline:start',
 				'preview-template' => '<%= label %>',
 
 				'inner-options' => [

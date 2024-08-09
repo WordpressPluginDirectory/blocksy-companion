@@ -374,9 +374,9 @@ if (! $only_billing_data) {
 
 				[
 					'id' => 'added-to-cart-popup',
-					'title' => __('Added to cart popup', 'blocksy-companion'),
-					'description' => __('Added to cart popup description', 'blocksy-companion'),
-					// 'documentation' => 'https://creativethemes.com/blocksy/docs/extensions/woocommerce-extra/',
+					'title' => __('Added to Cart Popup', 'blocksy-companion'),
+					'description' => __('Show a dynamic confirmation popup with product recommendations whenever items are added to the cart.', 'blocksy-companion'),
+					'documentation' => 'https://creativethemes.com/blocksy/docs/woocommerce/added-to-cart-pop-up/',
 					'customize' => admin_url('customize.php?ct_autofocus=woocommerce_general:has_added_to_cart_panel'),
 				]
 			],

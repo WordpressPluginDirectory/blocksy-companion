@@ -1,18 +1,21 @@
-.ct-product-actions-group {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.ct-product-hero {
 
-	&:not(:last-child) {
-		margin-bottom: 60px;
-	}
+	.ct-product-actions-group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-	.ct-button:not(:last-child) {
-		margin-inline-end: 25px;
-	}
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
 
-	.ct-icon-container {
-		color: inherit;
-		margin-inline-start: 10px;
+		.ct-button:not(:last-child) {
+			margin-inline-end: 25px;
+		}
+
+		.ct-icon-container {
+			color: inherit;
+			margin-inline-start: 10px;
+		}
 	}
 }

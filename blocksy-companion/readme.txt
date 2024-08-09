@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.60
+Stable tag: 2.0.61
 
 == Description ==
 
@@ -52,6 +52,10 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.61: 2024-08-08
+- Improvement: Starter sites installer ensure content type header is passed correctly in all requests
+- Fix: Product reviews extension - issue with short description option
+
 2.0.60: 2024-08-01
 - Improvement: Correctly load JSON translation files for JS files
 - Improvement: Declare text domain correctly so that Loco Translate is able to override translations

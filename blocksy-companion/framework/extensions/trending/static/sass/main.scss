@@ -31,36 +31,20 @@
 
 
 	// arrows
-	[class*='ct-arrow'] {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 23px;
-		height: 23px;
-		cursor: pointer;
-		background: transparent;
-		border-radius: 2px;
-		opacity: 0.5;
-		color: var(--theme-text-color);
-		border: 1px solid currentColor;
-		transition: var(--theme-transition);
+	.ct-slider-arrows {
+		margin-inline-start: auto;
 
-		&:hover {
-			opacity: 1;
-			color: #fff;
-			border-color: var(--theme-link-hover-color);
-			background: var(--theme-link-hover-color);
+		--slider-arrow-button-size: 22px;
+		--theme-border-color: currentColor;
+
+		> *:not(:hover) {
+			opacity: 0.4;
 		}
 	}
-
-	.ct-arrow-left {
-		margin-inline-start: auto;
-		margin-inline-end: 8px;
-	}
-
+	
 	// disable arrows
-	[data-page='1'] .ct-arrow-left,
-	[data-page*='last'] .ct-arrow-right {
+	[data-page='1'] .ct-arrow-prev,
+	[data-page*='last'] .ct-arrow-next {
 		opacity: 0.2;
 		pointer-events: none;
 	}

@@ -217,7 +217,7 @@ $product_description = blocksy_akg('product_description', $atts, '');
 if (! empty($product_description)) {
 	echo '<div class="ct-product-description" ' . blocksy_schema_org_definitions('reviewBody') . '>';
 
-	echo '<div class="entry-content">';
+	echo '<div class="entry-content is-layout-flow">';
 	echo do_shortcode($product_description);
 	echo '</div>';
 

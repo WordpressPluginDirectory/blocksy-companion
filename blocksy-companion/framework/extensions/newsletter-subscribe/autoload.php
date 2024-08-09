@@ -9,6 +9,7 @@ $autoload = [
 	'MailerliteClassicProvider' => 'providers/mailerlite-classic.php',
 	'MailerliteNewProvider' => 'providers/mailerlite-new.php',
 	'ConvertKitProvider' => 'providers/convertkit.php',
-	'DemoProvider' => 'providers/demo.php'
+	'DemoProvider' => 'providers/demo.php',
+	'MailPoetProvider' => 'providers/mailpoet.php',
 ];
 

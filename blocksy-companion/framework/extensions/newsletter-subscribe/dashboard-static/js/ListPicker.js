@@ -93,7 +93,7 @@ const ListPicker = ({ listId, provider, apiKey, onChange }) => {
 		</div>
 	) : (
 		<Downshift
-			selectedItem={listId || ''}
+			selectedItem={lists.find(({ id }) => id === listId) ? listId : ''}
 			onChange={(selection) => onChange(selection)}
 			itemToString={(item) =>
 				item ? (lists.find(({ id }) => id === item) || {}).name : ''

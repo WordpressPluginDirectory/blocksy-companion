@@ -37,6 +37,10 @@ class Provider {
 			return new DemoProvider();
 		}
 
+		if ($provider === 'mailpoet') {
+			return new MailPoetProvider();
+		}
+
 		return new MailerliteClassicProvider();
 	}
 

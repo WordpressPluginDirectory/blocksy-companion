@@ -273,6 +273,10 @@ export const useInstaller = (demoConfiguration) => {
 					const response = await fetch(prepareUrl(request.params), {
 						method: 'POST',
 
+						headers: {
+							'Content-Type': 'application/json',
+						},
+
 						body: JSON.stringify({
 							requestsPayload,
 							...(request.body || {}),

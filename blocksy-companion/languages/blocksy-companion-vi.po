@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-31 01:01:15+0000\n"
+"PO-Revision-Date: 2024-08-01 22:43:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -702,11 +702,11 @@ msgstr "Bài viết nâng cao"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:41
 msgid "Inherit the Customizer layout, start with a pattern or create a custom layout"
-msgstr "Kế thừa bố cục của Customizer, bắt đầu với một mẫu hoặc tạo một bố cục tùy chỉnh"
+msgstr "Kế thừa bố cục của tùy biến, bắt đầu với một mẫu hoặc tạo một bố cục tùy chỉnh"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:56
 msgid "Inherit From Customizer"
-msgstr "Kế thừa từ Customizer"
+msgstr "Kế thừa từ tùy biến"
 
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:66
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:57
@@ -1226,7 +1226,7 @@ msgstr "Mục lưu trữ với ID thuật ngữ"
 
 #: framework/features/conditions/rules/archive-loop.php:13
 msgid "WooCommerce Archive Item with Taxonomy ID"
-msgstr "Mục lưu trữ WooCommerce với ID thuật ngữ"
+msgstr "Mục lưu trữ WooCommerce v��i ID thuật ngữ"
 
 #: framework/features/conditions/rules/archive-loop.php:19
 msgid "Archive Loop Speciffic"
@@ -2514,7 +2514,7 @@ msgstr "Nút trang sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-badges/options.php:46
 msgid "How many days the products will be marked as \"New\" after creation."
-msgstr "Bao nhiêu ngày sản phẩm sẽ được đánh dấu là \"Mới\" sau khi t���o."
+msgstr "Bao nhiêu ngày sản phẩm sẽ được đánh dấu là \"Mới\" sau khi tạo."
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:118,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:124
@@ -2897,7 +2897,7 @@ msgstr "Tên thương hiệu trong tiêu đề tab"
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:5
 msgid "Product Image"
-msgstr "Hình ảnh sản phẩm"
+msgstr "Hình ��nh sản phẩm"
 
 #: framework/premium/extensions/woocommerce-extra/features/checkout/options.php:54
 msgid "Quantity Input"
@@ -6389,7 +6389,7 @@ msgstr "Trước số tiêu đề"
 
 #: static/js/editor/blocks/about-me/index.js:45
 msgid "About Me"
-msgstr "Giới thiệu về Tôi"
+msgstr "Giới thiệu về tôi"
 
 #: framework/features/blocks/about-me/options.php:16
 msgid "About me"

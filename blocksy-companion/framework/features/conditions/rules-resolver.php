@@ -506,6 +506,8 @@ class ConditionsRulesResolver {
 					&&
 					get_term($rule['payload']['taxonomy_id'])
 					&&
+					! is_wp_error(get_term($rule['payload']['taxonomy_id']))
+					&&
 					in_array(
 						get_term($rule['payload']['taxonomy_id'])->taxonomy,
 						get_object_taxonomies([

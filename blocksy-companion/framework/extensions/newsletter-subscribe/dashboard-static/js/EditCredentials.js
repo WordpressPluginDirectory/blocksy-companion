@@ -1,17 +1,13 @@
 import {
 	createElement,
-	Component,
 	useEffect,
 	useState,
-	useMemo,
-	useReducer,
 	Fragment,
 } from '@wordpress/element'
 
 import classnames from 'classnames'
 import { __, sprintf } from 'ct-i18n'
 import ListPicker from './ListPicker'
-import Overlay from '../../../../../static/js/helpers/Overlay'
 import { Select } from 'blocksy-options'
 
 import useProExtensionInFree from '../../../../../static/js/dashboard/helpers/useProExtensionInFree'
@@ -86,7 +82,13 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 
 			<div
 				className="ct-newsletter-credentials"
-				data-columns={provider.indexOf('mailerlite') > -1 ? 4 : 3}>
+				data-columns={
+					provider.indexOf('mailerlite') > -1
+						? 4
+						: provider.indexOf('mailpoet') > -1
+						? 2
+						: 3
+				}>
 				<section>
 					<label>{__('Provider', 'blocksy-companion')}</label>
 					<Select
@@ -107,37 +109,7 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 								'Pick Mailing Service',
 								'blocksy-companion'
 							),
-							choices: [
-								{
-									key: 'mailchimp',
-									value: 'Mailchimp',
-								},
-
-								{
-									key: 'mailerlite-new',
-									value: 'Mailerlite',
-								},
-
-								{
-									key: 'brevo',
-									value: 'Brevo (Sendinblue)',
-								},
-
-								{
-									key: 'campaignmonitor',
-									value: 'Campaign Monitor',
-								},
-
-								{
-									key: 'convertkit',
-									value: 'ConvertKit',
-								},
-
-								{
-									key: 'demo',
-									value: 'Demo',
-								},
-							],
+							choices: extension.data.providers,
 						}}
 						value={
 							provider.indexOf('mailerlite') > -1
@@ -187,19 +159,23 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 				{(freeProviders.includes(provider) ||
 					ctDashboardLocalizations.plugin_data.is_pro) && (
 					<Fragment>
-						<section>
-							<label>{__('API Key', 'blocksy-companion')}</label>
+						{provider !== 'mailpoet' ? (
+							<section>
+								<label>
+									{__('API Key', 'blocksy-companion')}
+								</label>
 
-							<div className="ct-option-input">
-								<input
-									type="text"
-									onChange={({ target: { value } }) =>
-										setApiKey(value)
-									}
-									value={apiKey || ''}
-								/>
-							</div>
-						</section>
+								<div className="ct-option-input">
+									<input
+										type="text"
+										onChange={({ target: { value } }) =>
+											setApiKey(value)
+										}
+										value={apiKey || ''}
+									/>
+								</div>
+							</section>
+						) : null}
 						<section>
 							<label>{__('List ID', 'blocksy-companion')}</label>
 
@@ -317,9 +293,26 @@ const EditCredentials = ({ extension, onCredentialsValidated }) => {
 					/>
 				)}
 
+			{ctDashboardLocalizations.plugin_data.is_pro &&
+				provider === 'mailpoet' && (
+					<span
+						className="ct-option-description"
+						dangerouslySetInnerHTML={{
+							__html: sprintf(
+								__('More information on how to create a list in MailPoet can be found %shere%s.', 'blocksy-companion'),
+
+								'<a target="_blank" href="https://kb.mailpoet.com/article/282-create-a-list">',
+								'</a>'
+							),
+						}}
+					/>
+				)}
+
 			<button
 				className="ct-button-primary"
-				disabled={!apiKey || !listId || isLoading}
+				disabled={
+					(!apiKey && provider !== 'mailpoet') || !listId || isLoading
+				}
 				onClick={() => attemptToSaveCredentials()}>
 				{isLoading
 					? __('Loading...', 'blocksy-companion')

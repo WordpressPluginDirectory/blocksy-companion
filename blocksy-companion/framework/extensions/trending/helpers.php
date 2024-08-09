@@ -390,16 +390,18 @@ function blc_get_trending_block($result = null) {
 				?>
 				
 				<?php if (! $result['is_last_page']) { ?>
-					<span class="ct-arrow-left">
-						<svg width="8" height="8" fill="currentColor" viewBox="0 0 8 8">
-							<path d="M5.05555,8L1.05555,4,5.05555,0l.58667,1.12-2.88,2.88,2.88,2.88-.58667,1.12Z"/>
-						</svg>
-					</span>
+					<span class="ct-slider-arrows">
+						<span class="ct-arrow-prev">
+							<svg width="8" height="8" fill="currentColor" viewBox="0 0 8 8">
+								<path d="M5.05555,8L1.05555,4,5.05555,0l.58667,1.12-2.88,2.88,2.88,2.88-.58667,1.12Z"/>
+							</svg>
+						</span>
 
-					<span class="ct-arrow-right">
-						<svg width="8" height="8" fill="currentColor" viewBox="0 0 8 8">
-							<path d="M2.35778,6.88l2.88-2.88L2.35778,1.12,2.94445,0l4,4-4,4-.58667-1.12Z"/>
-						</svg>
+						<span class="ct-arrow-next">
+							<svg width="8" height="8" fill="currentColor" viewBox="0 0 8 8">
+								<path d="M2.35778,6.88l2.88-2.88L2.35778,1.12,2.94445,0l4,4-4,4-.58667-1.12Z"/>
+							</svg>
+						</span>
 					</span>
 				<?php } ?>
 			</<?php echo $label_tag ?>>

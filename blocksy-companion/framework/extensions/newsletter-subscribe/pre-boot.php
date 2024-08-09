@@ -39,9 +39,57 @@ class BlocksyExtensionNewsletterSubscribePreBoot {
 		);
 	}
 
+	public function get_providers() {
+		$providers = [
+			[
+				'key' => 'mailchimp',
+				'value' => 'Mailchimp',
+			],
+
+			[
+				'key' => 'mailerlite-new',
+				'value' => 'Mailerlite',
+			],
+
+			[
+				'key' => 'brevo',
+				'value' => 'Brevo (Sendinblue)',
+			],
+
+			[
+				'key' => 'campaignmonitor',
+				'value' => 'Campaign Monitor',
+			],
+
+			[
+				'key' => 'convertkit',
+				'value' => 'ConvertKit',
+			],
+		];
+
+		if (class_exists(\MailPoet\API\API::class)) {
+			$providers[] = [
+				'key' => 'mailpoet',
+				'value' => 'MailPoet',
+			];
+		}
+
+		$providers[] = [
+			'key' => 'demo',
+			'value' => 'Demo',
+		];
+
+		return $providers;
+	}
+
 	public function ext_data() {
 		$m = new \Blocksy\Extensions\NewsletterSubscribe\MailchimpProvider();
-		return $m->get_settings();
+		return array_merge(
+			$m->get_settings(),
+			[
+				'providers' => $this->get_providers()
+			]
+		);
 	}
 
 	public function save_credentials() {

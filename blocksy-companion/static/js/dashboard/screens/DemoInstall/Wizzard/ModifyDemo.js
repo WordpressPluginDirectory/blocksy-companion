@@ -93,6 +93,10 @@ const ModifyDemo = ({ style, nextStep }) => {
 				const response = await fetch(prepareUrl(request.params), {
 					method: 'POST',
 
+					headers: {
+						'Content-Type': 'application/json',
+					},
+
 					body: JSON.stringify({
 						...(request.body || {}),
 					}),
