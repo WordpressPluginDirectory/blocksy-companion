@@ -9,6 +9,12 @@ class Capabilities {
 
 	private $module_slug = 'blocksy-companion';
 
+	private $wp_capabilities = [
+		'dashboard' => 'manage_options',
+		'custom_post_type' => 'manage_options',
+		'conditions' => 'manage_options'
+	];
+
 	public function __construct() {
 		// Drop current cache if it is broken.
 		$option_cache = wp_cache_get('fs_accounts', 'options');
@@ -199,6 +205,19 @@ class Capabilities {
 
 		$this->plan = 'free';
 		return 'free';
+	}
+
+	public function get_wp_capability_by($scope, $scope_details = []) {
+		if (! isset($this->wp_capabilities[$scope])) {
+			return false;
+		}
+
+		return apply_filters(
+			'blocksy:capabilities:wp_capability',
+			$this->wp_capabilities[$scope],
+			$scope,
+			$scope_details
+		);
 	}
 
 	private function get_site() {

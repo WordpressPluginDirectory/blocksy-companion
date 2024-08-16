@@ -292,6 +292,10 @@ class TaxQuery {
 			! empty($attributes['include_term_ids'])
 			&&
 			isset($attributes['include_term_ids'][$attributes['taxonomy']])
+			&&
+			isset($attributes['include_term_ids'][$attributes['taxonomy']]['strategy'])
+			&&
+			$attributes['include_term_ids'][$attributes['taxonomy']]['strategy'] === 'specific'
 		) {
 			foreach ($attributes['include_term_ids'][$attributes['taxonomy']]['terms'] as $key => $value) {
 				$term = get_term_by('slug', $value, $attributes['taxonomy']);
@@ -306,6 +310,10 @@ class TaxQuery {
 			! empty($attributes['exclude_term_ids'])
 			&&
 			isset($attributes['exclude_term_ids'][$attributes['taxonomy']])
+			&&
+			isset($attributes['exclude_term_ids'][$attributes['taxonomy']]['strategy'])
+			&&
+			$attributes['exclude_term_ids'][$attributes['taxonomy']]['strategy'] === 'specific'
 		) {
 			foreach ($attributes['exclude_term_ids'][$attributes['taxonomy']]['terms'] as $key => $value) {
 				$term = get_term_by('slug', $value, $attributes['taxonomy']);

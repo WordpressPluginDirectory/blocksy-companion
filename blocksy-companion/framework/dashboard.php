@@ -259,6 +259,10 @@ class Dashboard {
 					$result['has_beta_consent'] = Plugin::instance()->premium->user_wants_beta_updates();
 				}
 
+				if (function_exists('blocksy_get_pricing_links')) {
+					$result['modal_links'] = blocksy_get_pricing_links();
+				}
+
 				return array_merge($result, $d);
 			}
 		);
@@ -407,7 +411,7 @@ class Dashboard {
 	}
 
 	public function setup_framework_page() {
-		if (! current_user_can('manage_options')) {
+		if (! current_user_can(blc_get_capabilities()->get_wp_capability_by('dashboard'))) {
 			return;
 		}
 
@@ -416,7 +420,7 @@ class Dashboard {
 		$options = [
 			'title' => __('Blocksy', 'blocksy-companion'),
 			'menu-title' => __('Blocksy', 'blocksy-companion'),
-			'permision' => 'manage_options',
+			'permision' => blc_get_capabilities()->get_wp_capability_by('dashboard'),
 			'top-level-handle' => 'ct-dashboard',
 			'callback' => [$this, 'welcome_page_template'],
 			'icon-url' => apply_filters(
@@ -456,7 +460,7 @@ class Dashboard {
 	}
 
 	public function welcome_page_template() {
-		if (! current_user_can('manage_options')) {
+		if (! current_user_can(blc_get_capabilities()->get_wp_capability_by('dashboard'))) {
 			wp_die(
 				esc_html(
 					__( 'You do not have sufficient permissions to access this page.', 'blocksy-companion' )

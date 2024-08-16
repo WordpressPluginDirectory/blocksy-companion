@@ -36,7 +36,7 @@ class Plugin {
 
 	private $is_blocksy = '__NOT_SET__';
 	public $is_blocksy_data = null;
-	private $desired_blocksy_version = '2.0.61-beta1';
+	private $desired_blocksy_version = '2.0.62-beta1';
 
 	/**
 	 * Instance.
@@ -204,54 +204,6 @@ class Plugin {
 				$theme = $theme->parent();
 			}
 
-			if (! $is_cli) {
-
-				$keys_to_check = [
-					'wp_theme_preview',
-					'customize_theme'
-				];
-
-				$should_add_theme = true;
-
-				if (
-					isset($_REQUEST['theme'])
-					&&
-					$_REQUEST['theme'] === 'blocksy'
-					&&
-					isset($_REQUEST['action'])
-					&&
-					(
-						$_REQUEST['action'] === 'enable'
-						||
-						$_REQUEST['action'] === 'disable'
-					)
-				) {
-					$should_add_theme = false;
-				}
-
-				if ($should_add_theme) {
-					$keys_to_check[] = 'theme';
-				}
-
-				foreach ($keys_to_check as $key) {
-					if (! isset($_GET[$key])) {
-						continue;
-					}
-
-					$maybe_theme = wp_get_theme($_GET[$key]);
-
-					if (! $maybe_theme->exists()) {
-						continue;
-					}
-
-					if ($maybe_theme->parent() && $maybe_theme->parent()->exists()) {
-						$maybe_theme = $maybe_theme->parent();
-					}
-
-					$theme = $maybe_theme;
-				}
-			}
-
 			$is_correct_theme = strpos(
 				$theme->get('Name'), 'Blocksy'
 			) !== false;
@@ -266,6 +218,8 @@ class Plugin {
 			if (! $is_cli) {
 				$maybe_foreign_theme = '';
 
+				// Handle customizer preview iframe and all AJAX requests that
+				// are made within the preview.
 				if (
 					isset($_REQUEST['customize_theme'])
 					&&
@@ -275,9 +229,22 @@ class Plugin {
 				}
 
 				if (
+					isset($_REQUEST['wp_theme_preview'])
+					&&
+					! empty($_REQUEST['wp_theme_preview'])
+				) {
+					$maybe_foreign_theme = $_REQUEST['wp_theme_preview'];
+				}
+
+				$server_uri = $_SERVER['REQUEST_URI'];
+
+				// If previewing a theme in the customizer.
+				if (
 					isset($_REQUEST['theme'])
 					&&
 					! empty($_REQUEST['theme'])
+					&&
+					strpos($_SERVER['REQUEST_URI'], 'customize.php') !== false
 				) {
 					$maybe_foreign_theme = $_REQUEST['theme'];
 				}

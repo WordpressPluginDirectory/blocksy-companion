@@ -3,7 +3,7 @@
 /*
 Plugin Name: Blocksy Companion
 Description: This plugin is the companion for the Blocksy theme, it runs and adds its enhacements only if the Blocksy theme is installed and active.
-Version: 2.0.61
+Version: 2.0.62
 Author: CreativeThemes
 Author URI: https://creativethemes.com
 Text Domain: blocksy-companion
@@ -61,7 +61,7 @@ if ( function_exists( 'blc_fs' ) || class_exists( '\\Blocksy\\Plugin' ) ) {
                     'slug'    => 'ct-dashboard',
                     'support' => false,
                     'contact' => false,
-                    'pricing' => true,
+                    'pricing' => false,
                     'account' => $has_account,
                 ] : [
                     'support' => false,

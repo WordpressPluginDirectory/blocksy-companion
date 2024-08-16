@@ -5,7 +5,9 @@ namespace Blocksy;
 class ConditionsManagerAPI {
 	public function __construct() {
 		add_action('wp_ajax_blocksy_conditions_get_all_posts', function () {
-			if (! current_user_can('manage_options')) {
+			$capability = blc_get_capabilities()->get_wp_capability_by('conditions');
+
+			if (! current_user_can($capability)) {
 				wp_send_json_error();
 			}
 
@@ -69,7 +71,9 @@ class ConditionsManagerAPI {
 		});
 
 		add_action('wp_ajax_blc_retrieve_conditions_data', function () {
-			if (! current_user_can('manage_options')) {
+			$capability = blc_get_capabilities()->get_wp_capability_by('conditions');
+
+			if (! current_user_can($capability)) {
 				wp_send_json_error();
 			}
 
