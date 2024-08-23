@@ -126,6 +126,13 @@ class DemoInstallOptionsExport {
 			);
 		}
 
+		if (class_exists('\FluentBooking\App\Hooks\Handlers\DataExporter')) {
+			$exporter = new \FluentBooking\App\Hooks\Handlers\DataExporter();
+			$fluent_booking_data = $exporter->prepareCalendarExportData(null);
+
+			$data['fluent_booking_data'] = $fluent_booking_data;
+		}
+
 		if (function_exists('wc_get_attribute_taxonomies')) {
 			$attribute_taxonomies = wc_get_attribute_taxonomies();
 

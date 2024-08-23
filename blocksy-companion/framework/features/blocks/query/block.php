@@ -270,8 +270,8 @@ class Query {
 					$content = '';
 					$is_grid_layout = isset($attributes['layout']['type']) && $attributes['layout']['type'] === 'grid';
 
-					// $classnames = 'entries';
-					$classnames = '';
+					$classnames = 'entries';
+					// $classnames = '';
 
 					if ($is_grid_layout) {
 						$classnames .= ' ct-query-template-grid';

@@ -11,13 +11,11 @@ if ($field === 'wp:archive_title') {
 		'has_label' => false
 	]);
 
-	add_filter(
-		'get_the_archive_title',
-		[$archive_title_renderer, 'render_title'],
-		10, 3
-	);
-
 	$value = get_the_archive_title();
+
+	if (method_exists($archive_title_renderer, 'get_the_archive_title')) {
+		$value = $archive_title_renderer->get_the_archive_title();
+	}
 
 	if (is_home() && !is_front_page()) {
 		$post_id = get_option('page_for_posts');
@@ -26,12 +24,6 @@ if ($field === 'wp:archive_title') {
 			$value = get_the_title($post_id);
 		}
 	}
-
-	remove_filter(
-		'get_the_archive_title',
-		[$archive_title_renderer, 'render_title'],
-		10, 3
-	);
 }
 
 if ($field === 'wp:archive_description') {
@@ -87,11 +79,11 @@ if ($field === 'wp:term_title') {
 			$link_attr = [
 				'href' => get_term_link($blocksy_term_obj)
 			];
-	
+
 			if (blocksy_akg('has_field_link_new_tab', $attributes, 'no') === 'yes') {
 				$link_attr['target'] = '_blank';
 			}
-	
+
 			if (! empty(blocksy_akg('has_field_link_rel', $attributes, ''))) {
 				$link_attr['rel'] = blocksy_akg(
 					'has_field_link_rel',
@@ -99,7 +91,7 @@ if ($field === 'wp:term_title') {
 					''
 				);
 			}
-	
+
 			$value = blocksy_html_tag('a', $link_attr, $value);
 		}
 	}
@@ -115,11 +107,11 @@ if ($field === 'wp:term_count') {
 			$link_attr = [
 				'href' => get_term_link($blocksy_term_obj)
 			];
-	
+
 			if (blocksy_akg('has_field_link_new_tab', $attributes, 'no') === 'yes') {
 				$link_attr['target'] = '_blank';
 			}
-	
+
 			if (! empty(blocksy_akg('has_field_link_rel', $attributes, ''))) {
 				$link_attr['rel'] = blocksy_akg(
 					'has_field_link_rel',
@@ -127,7 +119,7 @@ if ($field === 'wp:term_count') {
 					''
 				);
 			}
-	
+
 			$value = blocksy_html_tag('a', $link_attr, $value);
 		}
 	}

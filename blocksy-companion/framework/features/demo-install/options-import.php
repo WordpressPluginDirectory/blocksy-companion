@@ -141,6 +141,15 @@ class DemoInstallOptionsInstaller {
 		 */
 
 		if (
+			class_exists('\FluentBooking\App\Services\ImportService')
+			&&
+			isset($options['fluent_booking_data'])
+		) {
+			$import_service = new \FluentBooking\App\Services\ImportService();
+			$import_service->importHostJson($json);
+		}
+
+		if (
 			class_exists('\FluentForm\App\Hooks\Handlers\ActivationHandler')
 			&&
 			isset($options['fluent_form_forms'])
