@@ -99,11 +99,23 @@ $options = [
 		'value' => 'no',
 	],
 
+	'share_clipboard' => [
+		'label' => __( 'Clipboard', 'blocksy-companion' ),
+		'type' => 'ct-switch',
+		'value' => 'no',
+	],
+
+	'share_item_tooltip' => [
+		'type' => 'ct-switch',
+		'label' => __('Tooltip', 'blocksy-companion'),
+		'value' => 'no',
+		'divider' => 'top:full',
+	],
+
 	'link_nofollow' => [
 		'type' => 'ct-switch',
 		'label' => __('Set links to nofollow', 'blocksy-companion'),
 		'value' => 'no',
-		'divider' => 'top:full',
 	],
 
 	'share_icons_size' => [
