@@ -138,7 +138,8 @@ class CustomizerOptionsManager {
 				'template' => $theme_slug,
 				'site_url' => get_site_url(),
 				'mods' => $mods ? $mods : array(),
-				'options' => array()
+				'options' => array(),
+				'custom_palettes' => get_option('blocksy_custom_palettes', []),
 			];
 
 			$core_options = [

@@ -102,6 +102,16 @@ class DemoInstallOptionsInstaller {
 			set_theme_mod($key, $val);
 		}
 
+		if (
+			isset($options['custom_palettes'])
+			&&
+			is_array($options['custom_palettes'])
+			&&
+			! empty($options['custom_palettes'])
+		) {
+			update_option('blocksy_custom_palettes', $options['custom_palettes']);
+		}
+
 		do_action('customize_save_after', $wp_customize);
 
 		foreach ($options['options'] as $key => $val) {
@@ -145,6 +155,9 @@ class DemoInstallOptionsInstaller {
 			&&
 			isset($options['fluent_booking_data'])
 		) {
+			\FluentBooking\Database\DBMigrator::run(false);
+			\FluentBooking\Database\DBSeeder::run();
+
 			$import_service = new \FluentBooking\App\Services\ImportService();
 			$import_service->importHostJson($options['fluent_booking_data']);
 		}

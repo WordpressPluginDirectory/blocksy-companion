@@ -86,6 +86,10 @@ class DynamicCss {
 			$this->generate_css_files();
 		});
 
+		add_action('ai1wm_status_import_done', function () {
+			do_action('blocksy:dynamic-css:refresh-caches');
+		});
+
 		$this->enqueue_dynamic_css();
 	}
 
