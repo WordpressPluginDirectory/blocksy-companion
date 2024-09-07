@@ -4695,7 +4695,7 @@ msgstr "Проверьте свою электронную почту на на�
 
 #: framework/features/account-auth.php:226
 msgid "Your account was created successfully. Your login details have been sent to your email address. Please visit the %1$slogin page%2$s."
-msgstr "Ваша учётная запись была успешно создана. Данные для входа отправлены на ваш адрес электронной почты. Перей��ите на %1$sстраницу входа%2$s."
+msgstr "Ваша учётная запись была успешно создана. Данные для входа отправлены на ваш адрес электронной почты. П��рейдите на %1$sстраницу входа%2$s."
 
 #: framework/features/account-auth.php:238
 msgid "Your account was created successfully and a password has been sent to your email address. Please visit the %1$slogin page%2$s."
@@ -5741,7 +5741,7 @@ msgstr "Создавайте сколько угодно персонализи�
 
 #: framework/helpers/exts-configs.php:199
 msgid "Create New Sidebar"
-msgstr "Созда��ь сайдбар"
+msgstr "Создать сайдбар"
 
 #: framework/premium/extensions/sidebars/form.php:3
 #: framework/premium/extensions/sidebars/static/js/main.js:50
@@ -6507,7 +6507,7 @@ msgstr "После профиля"
 #: framework/features/header/items/account/options.php:284,
 #: framework/features/header/items/account/options.php:285
 msgid "WooCommerce Account"
-msgstr "WooCommerce-��рофиль"
+msgstr "WooCommerce-профиль"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:957
 msgid "WP footer"
@@ -7509,7 +7509,7 @@ msgstr "Главный цвет"
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:83,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:84
 msgid "Icon Badge"
-msgstr "Подпись значка"
+msgstr "��одпись значка"
 
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:174,
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:178,

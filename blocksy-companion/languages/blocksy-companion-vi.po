@@ -3909,7 +3909,7 @@ msgstr "Thêm một dấu hiệu hình ảnh cho biết khách truy cập của 
 #: framework/helpers/exts-configs.php:278,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
-msgstr "Bảng màu biến thể"
+msgstr "Bảng màu bi��n thể"
 
 #: framework/helpers/exts-configs.php:271
 msgid "Compare products with a clear and concise table system that gives your users a way to make a quick decision."
