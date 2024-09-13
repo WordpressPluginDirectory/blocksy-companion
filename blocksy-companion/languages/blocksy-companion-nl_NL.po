@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-08-26 10:39:48+0000\n"
+"PO-Revision-Date: 2024-09-12 12:28:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,7 +14,7 @@ msgstr ""
 #: framework/helpers/exts-configs.php:377,
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:4
 msgid "Added to Cart Popup"
-msgstr ""
+msgstr "Toegevoegd aan winkelwagen pop-up"
 
 #: framework/helpers/exts-configs.php:378
 msgid "Show a dynamic confirmation popup with product recommendations whenever items are added to the cart."
@@ -22,7 +22,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:15
 msgid "Trigger Popup On"
-msgstr ""
+msgstr "Pop-up activeren op"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:26
 msgid "Product Page"
@@ -46,7 +46,7 @@ msgstr "Knop verder winkelen"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:140
 msgid "Shipping Info"
-msgstr ""
+msgstr "Verzendinfo"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:149
 msgid "Tax Info"
@@ -58,16 +58,16 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:264
 msgid "Suggested Products"
-msgstr ""
+msgstr "Aanbevolen Producten"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:292,
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/suggested-products.php:41
 msgid "Related Products"
-msgstr ""
+msgstr "Gerelateerde Producten"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:293
 msgid "Recently Viewed Products"
-msgstr ""
+msgstr "Recent Bekeken Producten"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:366
 msgid "Products Card Type"
@@ -79,13 +79,13 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:514
 msgid "Popup Options"
-msgstr ""
+msgstr "Pop-up Opties"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:713,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:315,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:96
 msgid "Popup Backdrop"
-msgstr ""
+msgstr "Pop-up achtergrond"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:732
 msgid "Close Icon Size"
@@ -111,7 +111,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:227
 msgid "Shipping Cost"
-msgstr ""
+msgstr "Verzendkosten"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:236
 msgid "Tax Amount"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/product-actions.php:42
 msgid "Continue Shopping"
-msgstr ""
+msgstr "Verder winkelen"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/suggested-products.php:43
 msgid "Recently Viewed"
@@ -204,11 +204,11 @@ msgstr "Wacht tot de zoektabel is gegenereerd."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php:465
 msgid "Collapse"
-msgstr ""
+msgstr "Samenvouwen"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php:466
 msgid "Expand"
-msgstr ""
+msgstr "Uitbreiden"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/filter-presenter.php:64
 msgid "category"
@@ -1677,7 +1677,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:239
 msgid "Generate a shareable single product page URL with pre-selected variation attributes."
-msgstr ""
+msgstr "Genereer een deelbare URL voor een enkele productpagina met vooraf geselecteerde varianteigenschappen."
 
 #: static/js/options/ConditionsManager/SingleCondition.js:440
 msgid "Display if query string is present in URL"
@@ -2653,7 +2653,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:361
 msgid "Product Page Button"
-msgstr ""
+msgstr "Product Pagina Knop"
 
 #: framework/premium/extensions/woocommerce-extra/features/custom-badges/options.php:46
 msgid "How many days the products will be marked as \"New\" after creation."
@@ -3950,7 +3950,7 @@ msgstr ""
 
 #: framework/helpers/exts-configs.php:239
 msgid "Adds the “add to cart” actions to the product page as a floating bar if the product summary has disappeared from view."
-msgstr ""
+msgstr "Voegt de acties “Toevoegen aan winkelwagen” toe aan de productpagina als een zwevende balk als het productoverzicht uit beeld is verdwenen."
 
 #: framework/helpers/exts-configs.php:246,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:58
@@ -5842,7 +5842,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/view.php:77
 msgid "Go to product page"
-msgstr ""
+msgstr "Ga naar de productpagina"
 
 #: framework/premium/extensions/shortcuts/customizer.php:483,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/helpers.php:40,
@@ -6751,7 +6751,7 @@ msgstr ""
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:149
 msgid "Most commented"
-msgstr ""
+msgstr "Meeste reacties"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:165
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:144

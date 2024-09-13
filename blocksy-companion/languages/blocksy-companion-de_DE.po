@@ -7764,7 +7764,7 @@ msgstr "Schrift entfernen"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:216
 msgid "Change"
-msgstr "��ndern"
+msgstr "Ändern"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:217
 msgid "Choose"

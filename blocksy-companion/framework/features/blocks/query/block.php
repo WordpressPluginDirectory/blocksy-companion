@@ -101,7 +101,7 @@ class Query {
 		add_filter(
 			'render_block',
 			function ($block_content, $block) {
-				
+
 				if ($block['blockName'] !== 'blocksy/post-template') {
 					return $block_content;
 				}
@@ -228,7 +228,7 @@ class Query {
 
 						return '';
 					}
-					
+
 					$block_reader = new \WP_HTML_Tag_Processor($content);
 
 					if (

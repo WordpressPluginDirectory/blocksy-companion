@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-09-04 10:02:10+0000\n"
+"PO-Revision-Date: 2024-09-10 03:11:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -424,7 +424,7 @@ msgstr "Trang phụ"
 
 #: static/js/editor/blocks/breadcrumbs/index.js:11
 msgid "Breadcrumbs"
-msgstr "Đường dẫn trang"
+msgstr "Điều hướng trang"
 
 #: static/js/editor/blocks/breadcrumbs/index.js:12
 msgid "Display navigational links, showing users their path within the site."
@@ -809,7 +809,7 @@ msgstr "Tăng dần"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:275
 msgid "Sticky Posts"
-msgstr "Bài viết dính"
+msgstr "Bài viết ghim"
 
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:299
 msgid "Only"
@@ -1566,11 +1566,11 @@ msgstr "Hiển thị mũi tên"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:11
 msgid "Prev/Next Arrow"
-msgstr "Mũi tên Trước/Sau"
+msgstr "Mũi tên trước/sau"
 
 #: framework/premium/extensions/woocommerce-extra/features/related-slideshow/design-options.php:41
 msgid "Prev/Next Background"
-msgstr "Nền Trước/Sau"
+msgstr "Nền trước/sau"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:372,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:160
@@ -2976,7 +2976,7 @@ msgstr "Thương hiệu"
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:257,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:275
 msgid "Sticky Row"
-msgstr "Hàng dính"
+msgstr "Hàng ghim"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:535,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:586
@@ -3909,7 +3909,7 @@ msgstr "Thêm một dấu hiệu hình ảnh cho biết khách truy cập của 
 #: framework/helpers/exts-configs.php:278,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:4
 msgid "Variation Swatches"
-msgstr "Bảng màu bi��n thể"
+msgstr "Bảng màu biến thể"
 
 #: framework/helpers/exts-configs.php:271
 msgid "Compare products with a clear and concise table system that gives your users a way to make a quick decision."
@@ -3938,7 +3938,7 @@ msgstr "Bộ lọc"
 
 #: framework/helpers/exts-configs.php:255
 msgid "Drill down the product list with new filtering widgets, an off canvas area for them and showing the active filters on the page."
-msgstr "Lọc danh sách sản phẩm với các tiện ích lọc mới, một khu vực ngoài khung cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
+msgstr "Lọc danh sách sản phẩm với các tiện ích lọc mới, một khu vực cửa sổ bên ngoài cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
 
 #: framework/helpers/exts-configs.php:263
 msgid "A set of features that lets you create easily your dream products wishlists and share them with friends and family."
@@ -4672,7 +4672,7 @@ msgstr "Trước mô tả"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:178
 msgid "Before breadcrumbs"
-msgstr "Trước đường dẫn trang"
+msgstr "Trước điều hướng trang"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:218
 msgid "After description"
@@ -4680,7 +4680,7 @@ msgstr "Sau mô tả"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:226
 msgid "After breadcrumbs"
-msgstr "Sau đường dẫn trang"
+msgstr "Sau điều hướng trang"
 
 #. translators: 1: link open 2: link close
 #: framework/features/account-auth.php:106
@@ -4758,7 +4758,7 @@ msgstr "Hiệu ứng"
 #: static/js/editor/blocks/query/edit/PostsInspectorControls.js:73
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:68
 msgid "Offset"
-msgstr "Độ lệch"
+msgstr "Độ dịch chuyển"
 
 #: framework/premium/features/content-blocks/admin-ui.php:275
 msgid "All types"
@@ -6121,7 +6121,7 @@ msgstr "Sau bình luận"
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:705
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:298
 msgid "Before"
-msgstr "Trước"
+msgstr "Đằng trước"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:412,
 #: framework/premium/features/content-blocks/hooks-manager.php:419
@@ -6132,7 +6132,7 @@ msgstr "Vòng lặp"
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:716
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:307
 msgid "After"
-msgstr "Sau"
+msgstr "Đằng sau"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:425
 msgid "Start"
@@ -6980,7 +6980,7 @@ msgstr "Trạng thái trong suốt"
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:327,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:452
 msgid "Sticky State"
-msgstr "Trạng thái dính"
+msgstr "Trạng thái ghim"
 
 #: framework/features/header/items/account/options.php:1499
 msgid "Item Margin"
@@ -7394,7 +7394,7 @@ msgstr "Bán kính viền"
 #: framework/premium/features/content-blocks/options/popup.php:563,
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:643
 msgid "Popup Offset"
-msgstr "Độ Lệch cửa sổ bật lên"
+msgstr "Khoảng cách cửa sổ bật lên"
 
 #: framework/premium/features/content-blocks/options/popup.php:581
 msgid "Container Overflow"
@@ -7591,7 +7591,7 @@ msgstr "Tùy chọn Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/language-switcher/options/dropdown.php:70
 msgid "Dropdown Top Offset"
-msgstr "Độ lệch trên Menu thả xuống"
+msgstr "Khoảng cách trên menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/config.php:4
 msgid "Search Box"
@@ -9684,7 +9684,7 @@ msgstr "Quay lại đăng nhập"
 
 #: framework/features/header/header-options.php:11
 msgid "Sticky Functionality"
-msgstr "Chức năng dính"
+msgstr "Chức năng ghim"
 
 #: framework/features/header/header-options.php:37
 msgid "Only Main Row"
