@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-12 16:40+0000\n"
+"POT-Creation-Date: 2024-09-19 16:46+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -42,12 +42,12 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: framework/dashboard.php:421, framework/dashboard.php:422,
+#: framework/dashboard.php:469, framework/dashboard.php:470,
 #: framework/extensions/product-reviews/extension.php:619
 msgid "Blocksy"
 msgstr ""
 
-#: framework/dashboard.php:466
+#: framework/dashboard.php:514
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
@@ -185,19 +185,19 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: framework/features/demo-install.php:115,
-#: framework/features/demo-install/content-installer.php:164,
-#: framework/features/demo-install/content-installer.php:159,
-#: framework/features/demo-install/demo-register.php:9
-msgid "No demo name provided."
-msgstr ""
-
-#: framework/features/demo-install.php:181
+#: framework/features/demo-install.php:98
 msgid ""
 "Your PHP installation doesn't have support for XML. Please install the "
 "<i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install "
 "starter sites. You might need to contact your hosting provider to assist you "
 "in doing so."
+msgstr ""
+
+#: framework/features/demo-install.php:155,
+#: framework/features/demo-install/content-installer.php:164,
+#: framework/features/demo-install/content-installer.php:159,
+#: framework/features/demo-install/demo-register.php:9
+msgid "No demo name provided."
 msgstr ""
 
 #: framework/features/dynamic-css.php:48
@@ -630,8 +630,8 @@ msgid ""
 msgstr ""
 
 #: framework/helpers/exts-configs.php:369,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:247,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:270,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:248,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:271,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:4
 msgid "Stock Scarcity"
 msgstr ""
@@ -972,7 +972,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:232,
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:431,
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:461,
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:782,
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:795,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:480,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:511,
 #: framework/premium/extensions/woocommerce-extra/features/floating-cart/options.php:126,
@@ -1092,7 +1092,7 @@ msgstr ""
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:381,
 #: framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/options.php:410,
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:1436,
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:787,
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:800,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:486,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:517,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:354,
@@ -1241,7 +1241,7 @@ msgstr ""
 #: framework/features/blocks/contact-info/options.php:460,
 #: framework/features/blocks/share-box/options.php:14,
 #: framework/features/blocks/socials/options.php:14,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:524,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:528,
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:327,
 #: framework/premium/features/premium-header/items/contacts/options.php:87,
 #: framework/premium/features/premium-header/items/contacts/options.php:132,
@@ -1743,13 +1743,13 @@ msgstr ""
 #: framework/premium/features/content-blocks/content-block-layer.php:244,
 #: framework/premium/extensions/woocommerce-extra/features/sku-layer.php:64,
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:739,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:559,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:610,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:563,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:614,
 #: framework/premium/extensions/woocommerce-extra/features/product-sale-countdown/feature.php:339,
 #: framework/premium/extensions/woocommerce-extra/features/share-box-layer/feature.php:203,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:190,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:250,
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:273,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:251,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:274,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:897
 msgid "Bottom Spacing"
 msgstr ""
@@ -2593,12 +2593,12 @@ msgstr ""
 msgid "Post copy created."
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:320,
-#: framework/premium/features/content-blocks.php:326
+#: framework/premium/features/content-blocks.php:193,
+#: framework/premium/features/content-blocks.php:199
 msgid "Content Blocks"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:321,
+#: framework/premium/features/content-blocks.php:194,
 #: framework/premium/extensions/mega-menu/options.php:346,
 #: framework/premium/features/content-blocks/content-block-layer.php:163,
 #: framework/premium/features/content-blocks/content-block-layer.php:214,
@@ -2608,43 +2608,43 @@ msgstr ""
 msgid "Content Block"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:322,
+#: framework/premium/features/content-blocks.php:195,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:138,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:482,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:273
 msgid "Add New"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:323
+#: framework/premium/features/content-blocks.php:196
 msgid "Add New Content Block"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:324
+#: framework/premium/features/content-blocks.php:197
 #: framework/premium/static/js/blocks/ContentBlock.js:89
 msgid "Edit Content Block"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:325
+#: framework/premium/features/content-blocks.php:198
 #: framework/premium/static/js/hooks/CreateHook.js:33
 msgid "New Content Block"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:327
+#: framework/premium/features/content-blocks.php:200
 msgid "View Content Block"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:328
+#: framework/premium/features/content-blocks.php:201
 msgid "Search Content Blocks"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:329,
+#: framework/premium/features/content-blocks.php:202,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:145,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:489,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:280
 msgid "Nothing found"
 msgstr ""
 
-#: framework/premium/features/content-blocks.php:330,
+#: framework/premium/features/content-blocks.php:203,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:146,
 #: framework/premium/extensions/woocommerce-extra/features/custom-thank-you-page/feature.php:490,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:281
@@ -2884,8 +2884,8 @@ msgstr ""
 #: framework/features/blocks/about-me/options.php:53,
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:96,
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:106,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:749,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:759,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:753,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:763,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:72
 msgid "Select Image"
 msgstr ""
@@ -5153,7 +5153,7 @@ msgstr ""
 msgid "Before Heading Number"
 msgstr ""
 
-#: framework/premium/features/content-blocks/popups.php:373
+#: framework/premium/features/content-blocks/popups.php:376
 msgid "Close popup"
 msgstr ""
 
@@ -6204,7 +6204,7 @@ msgid "Outside"
 msgstr ""
 
 #: framework/premium/features/content-blocks/options/popup.php:615,
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:764
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:777
 msgid "Close Icon Color"
 msgstr ""
 
@@ -6449,13 +6449,13 @@ msgid ""
 msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:92,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:743
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:747
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:74
 msgid "Featured Image"
 msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/taxonomies-customization/feature.php:100,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:753
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:757
 msgid "Featured Icon/Logo"
 msgstr ""
 
@@ -6586,12 +6586,13 @@ msgid "Popup Options"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:734,
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:750,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:315,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:96
 msgid "Popup Backdrop"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:753
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:766
 msgid "Close Icon Size"
 msgstr ""
 
@@ -6750,27 +6751,27 @@ msgstr ""
 msgid "brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:442,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:474
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:446,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:478
 msgid "About Brands"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:443,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:476
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:447,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:480
 msgid "About %s"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:500,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:520,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:582,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:649,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:660,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:504,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:524,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:586,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:653,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:664,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:493
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:145
 msgid "Brands"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:504,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:508,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:150,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:177,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:221,
@@ -6780,54 +6781,54 @@ msgstr ""
 msgid "Sticky Row"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:535,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:586
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:539,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:590
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:257
 msgid "Logo Size"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:547,
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:598
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:551,
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:602
 msgid "Logos Gap"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:650
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:654
 msgid "Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:651
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:655
 msgid "Search Brands"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:652
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:656
 msgid "All Brands"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:653
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:657
 msgid "Parent Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:654
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:658
 msgid "Parent Brand:"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:655
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:659
 msgid "View Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:656
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:660
 msgid "Edit Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:657
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:661
 msgid "Update Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:658
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:662
 msgid "Add New Brand"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:659
+#: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:663
 msgid "New Brand Name"
 msgstr ""
 
@@ -7520,7 +7521,7 @@ msgstr ""
 msgid "Choose where you want this size guide to be displayed."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:186,
+#: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/feature.php:187,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:29
 msgid "🚨 Hurry up! Only {items} units left in stock!"
 msgstr ""
@@ -9083,11 +9084,11 @@ msgstr ""
 msgid "%s System"
 msgstr ""
 
-#: static/js/dashboard.js:39
+#: static/js/dashboard.js:65
 msgid "Starter Sites"
 msgstr ""
 
-#: static/js/dashboard.js:51
+#: static/js/dashboard.js:77
 msgid "Extensions"
 msgstr ""
 
@@ -9193,18 +9194,18 @@ msgstr ""
 msgid "Business or Agency"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:188
+#: static/js/dashboard/screens/DemoInstall.js:155
 msgid "Loading Starter Sites..."
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:205
+#: static/js/dashboard/screens/DemoInstall.js:172
 msgid ""
 "Your site is misconfigured and AJAX requests are not reaching your backend. "
 "Please click %shere%s to find the common causes and possible solutions to "
 "this.<br> Error code - %s"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall.js:223
+#: static/js/dashboard/screens/DemoInstall.js:190
 msgid "Failed to retrieve starter sites list.<br> Error code - %s"
 msgstr ""
 
@@ -9525,8 +9526,8 @@ msgstr ""
 msgid "Search for a starter site..."
 msgstr ""
 
-#: static/js/dashboard/screens/Extension.js:89
-#: static/js/dashboard/screens/Extensions.js:60
+#: static/js/dashboard/screens/Extension.js:95
+#: static/js/dashboard/screens/Extensions.js:86
 msgid "Loading Extensions Status..."
 msgstr ""
 

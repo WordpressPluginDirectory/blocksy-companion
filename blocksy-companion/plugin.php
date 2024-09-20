@@ -78,7 +78,6 @@ class Plugin {
 		$this->extensions_api = new ExtensionsManagerApi();
 		$this->theme_integration = new ThemeIntegration();
 		$this->demo = new DemoInstall();
-		$this->dynamic_css = new DynamicCss();
 
 		new CustomizerOptionsManager();
 
@@ -154,6 +153,8 @@ class Plugin {
 		if (defined('WP_CLI') && WP_CLI) {
 			$this->cli = new Cli();
 		}
+
+		$this->dynamic_css = new DynamicCss();
 	}
 
 	/**

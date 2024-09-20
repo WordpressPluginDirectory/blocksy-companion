@@ -86,11 +86,16 @@ class DynamicCss {
 			$this->generate_css_files();
 		});
 
+		add_action('init', function () {
+			$this->enqueue_dynamic_css();
+		});
+
+		// Needs to run very early.
+		// Will catch when the import is done and will refresh the dynamic CSS.
+		// All in One WP Migration compatibility.
 		add_action('ai1wm_status_import_done', function () {
 			do_action('blocksy:dynamic-css:refresh-caches');
 		});
-
-		$this->enqueue_dynamic_css();
 	}
 
 	public function should_use_files() {

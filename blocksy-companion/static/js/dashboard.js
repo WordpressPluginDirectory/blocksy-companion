@@ -12,7 +12,33 @@ import DemoInstall from './dashboard/screens/DemoInstall'
 import SiteExport from './dashboard/screens/SiteExport'
 import DemoToInstall from './dashboard/screens/DemoInstall/DemoToInstall'
 
-import { getRawExtsStatus } from './dashboard/screens/Extensions/useExtsStatus'
+import cachedFetch from './helpers/cached-fetch'
+import { getStarterSitesStatus } from './dashboard/helpers/starter-sites'
+
+getStarterSitesStatus()
+	.then((response) => {
+		if (response.status !== 511) {
+			// We are good, do nothing
+			return
+		}
+
+		fetch(
+			`${ctDashboardLocalizations.ajax_url}?action=blocksy_dashboard_handle_incorrect_license`,
+			{
+				method: 'POST',
+				body: JSON.stringify({}),
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+				},
+			}
+		).then(({ success, data }) => {
+			// Ignore result
+		})
+	})
+	.catch((response) => {
+		console.error('Error:', response)
+	})
 
 ctEvents.on('ct:dashboard:routes', (r) => {
 	r.push({

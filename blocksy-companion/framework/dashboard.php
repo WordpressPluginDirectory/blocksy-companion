@@ -211,15 +211,50 @@ class Dashboard {
 					wp_send_json_success();
 				}
 			);
+
+			add_action(
+				'wp_ajax_blocksy_dashboard_handle_incorrect_license',
+				function () {
+					if (! current_user_can(
+						blc_get_capabilities()->get_wp_capability_by('dashboard')
+					)) {
+						wp_send_json_error();
+					}
+
+					$blocksy_active_extensions_old = get_option(
+						'blocksy_active_extensions_old',
+						'__empty__'
+					);
+
+					if ($blocksy_active_extensions_old !== '__empty__') {
+						return;
+					}
+
+					$activated_extensions = get_option('blocksy_active_extensions', []);
+
+					update_option(
+						'blocksy_active_extensions_old',
+						$activated_extensions
+					);
+
+					delete_option('blocksy_active_extensions');
+
+					wp_send_json_success();
+				}
+			);
 		}
 
 		add_filter(
 			'blocksy_dashboard_localizations',
 			function ($d) {
+				$plugin_data = get_plugin_data(BLOCKSY__FILE__);
+
 				$result = [
 					'is_pro' => false,
 					'is_anonymous' => false,
-					'connect_template' => ''
+					'connect_template' => '',
+					'retrieve_demos_data' => [],
+					'plugin_version' => $plugin_data['Version']
 				];
 
 				if (function_exists('blc_fs')) {
@@ -236,6 +271,17 @@ class Dashboard {
 
 					// $current_plan = 'free';
 
+					$retrieve_demos_data = [
+					];
+
+					if (blc_fs()->_get_license()) {
+						$retrieve_demos_data['license_id'] = blc_fs()->_get_license()->id;
+					}
+
+					if (blc_fs()->get_site()) {
+						$retrieve_demos_data['install_id'] = blc_fs()->get_site()->id;
+					}
+
 					$result = [
 						'is_pro' => $current_plan !== 'free',
 						'current_plan' => $current_plan,
@@ -244,7 +290,9 @@ class Dashboard {
 						'pro_starter_sites_enhanced' => blc_get_capabilities()->get_features()['pro_starter_sites_enhanced'],
 
 						'is_anonymous' => $is_anonymous,
-						'connect_template' => $connect_template
+						'connect_template' => $connect_template,
+						'retrieve_demos_data' => $retrieve_demos_data,
+						'plugin_version' => $plugin_data['Version']
 					];
 				}
 

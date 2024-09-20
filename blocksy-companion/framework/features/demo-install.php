@@ -23,11 +23,6 @@ class DemoInstall {
 			],
 
 			[
-				'id' => 'blocksy_demo_list',
-				'handler' => [$this, 'get_demo_list']
-			],
-
-			[
 				'id' => 'blocksy_demo_install_child_theme',
 				'handler' => [new DemoInstallChildThemeInstaller(), 'import']
 			],
@@ -97,6 +92,51 @@ class DemoInstall {
 					'yes'
 				);
 
+				$d['demo_install_error'] = null;
+
+				if (! extension_loaded('xml') && ! extension_loaded('simplexml')) {
+					$d['demo_install_error'] = __("Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so.", 'blocksy-companion');
+				}
+
+				$d['current_installed_demo'] = $this->get_current_demo();
+
+				$plugins = [
+					'gutenberg' => false,
+					'stackable-ultimate-gutenberg-blocks' => false,
+					'wpforms-lite' => false,
+					'woocommerce' => false,
+					'elementor' => false,
+					'brizy' => false,
+					'getwid' => false,
+					'simply-gallery-block' => false,
+					'recipe-card-blocks-by-wpzoom' => false,
+					'map-block-gutenberg' => false,
+					'mb-custom-post-type' => false,
+					'leadin' => false,
+					'block-slider' => false,
+					'ht-slider-for-elementor' => false,
+					'modula-best-grid-gallery' => false,
+					'advanced-custom-fields' => false,
+					'greenshift-animation-and-page-builder-blocks' => false,
+					'fluentform' => false,
+					'translatepress-multilingual' => false,
+					'fluent-booking' => false
+				];
+
+				foreach ($plugins as $plugin_name => $status) {
+					$plugins_manager = $this->get_plugins_manager();
+
+					$path = $plugins_manager->is_plugin_installed($plugin_name);
+
+					if ($path) {
+						if ($plugins_manager->is_plugin_active($path)) {
+							$plugins[$plugin_name] = true;
+						}
+					}
+				}
+
+				$d['active_plugins'] = $plugins;
+
 				return $d;
 			}
 		);
@@ -136,57 +176,6 @@ class DemoInstall {
 		]);
 
 		wp_send_json_success($demo_content);
-	}
-
-	public function get_demo_list() {
-		$demos = $this->fetch_all_demos();
-
-		if (! $demos || is_wp_error($demos)) {
-			wp_send_json_error([
-				'demos' => [],
-				'error_message' => is_wp_error($demos) ? $demos->get_error_message() : '',
-				'error_reason' => 'remote_fetch_failed'
-			]);
-		}
-
-		$plugins = [];
-
-		foreach ($demos as $demo_index => $demo) {
-			foreach ($demo['plugins'] as $plugin) {
-				if (! isset($plugins[$plugin])) {
-					$plugins[$plugin] = false;
-				}
-			}
-
-			if ($demo_index === 0) {
-				// $demos[0]['is_pro'] = true;
-			}
-		}
-
-		foreach ($plugins as $plugin_name => $status) {
-			$plugins_manager = $this->get_plugins_manager();
-
-			$path = $plugins_manager->is_plugin_installed($plugin_name);
-
-			if ($path) {
-				if ($plugins_manager->is_plugin_active($path)) {
-					$plugins[$plugin_name] = true;
-				}
-			}
-		}
-
-		if (! extension_loaded('xml') && ! extension_loaded('simplexml')) {
-			wp_send_json_error([
-				'demos' => [],
-				'error_message' => __("Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so.", 'blocksy-companion')
-			]);
-		}
-
-		wp_send_json_success([
-			'demos' => $demos,
-			'active_plugins' => $plugins,
-			'current_installed_demo' => $this->get_current_demo()
-		]);
 	}
 
 	public function get_current_demo() {

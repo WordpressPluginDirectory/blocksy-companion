@@ -15,12 +15,14 @@ import CurrentExtension from './Extensions/CurrentExtension'
 import SubmitSupport from '../helpers/SubmitSupport'
 
 import DashboardContext from '../DashboardContext'
+import NoLicense from '../NoLicense'
 
 const Extension = (props) => {
 	const { history } = useContext(DashboardContext)
 
 	const { navigate } = props
-	const { exts_status, syncExts, isLoading, setExtsStatus } = useExtsStatus()
+	const { forceEmptyExts, exts_status, syncExts, isLoading, setExtsStatus } =
+		useExtsStatus()
 
 	let currentExtension = null
 
@@ -29,6 +31,10 @@ const Extension = (props) => {
 			...exts_status[props.extension],
 			name: props.extension,
 		}
+	}
+
+	if (forceEmptyExts) {
+		return <NoLicense />
 	}
 
 	return (
