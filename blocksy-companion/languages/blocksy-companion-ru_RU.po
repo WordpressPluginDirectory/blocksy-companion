@@ -1603,7 +1603,7 @@ msgstr "Количество товаров, которые клиент дол�
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:168
 msgid "You can use dynamic code tags such as {items} inside this option."
-msgstr "Можно использовать те��и динамического кода, такие как {items}, внутри этого параметра."
+msgstr "Можно использовать теги динамического кода, такие как {items}, внутри этого параметра."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:195,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:62
@@ -7849,7 +7849,7 @@ msgstr "URL сайта агенства"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:187
 msgid "Agency Support/Contact Form URL"
-msgstr "URL конта��тной формы/портала поддержки агентства"
+msgstr "URL контактной формы/портала поддержки агентства"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:220
 msgid "Theme Details"
