@@ -2,10 +2,10 @@
 Tags: widget, widgets
 Requires at least: 5.2
 Requires PHP: 7.0
-Tested up to: 6.6
+Tested up to: 6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.76
+Stable tag: 2.0.79
 
 == Description ==
 
@@ -52,6 +52,15 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.79: 2024-11-28
+- Improvement: Fetch only relevant user fields for the conditions module
+
+2.0.78: 2024-11-21
+- Improvement: Improve handling of global CSS file generation when no direct WP file system is used
+
+2.0.77: 2024-11-14
+- Improvement: Smarter handling of translations in JS files
+
 2.0.76: 2024-11-07
 - Improvement: Account modal - better integration with SecuPress plugin
 - Improvement: Make sure uploaded SVG's receive the correct sizes for ratio calculations

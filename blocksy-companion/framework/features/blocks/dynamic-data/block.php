@@ -242,12 +242,16 @@ class DynamicData {
 		}
 
 		$post_id = get_the_ID();
-		$maybe_special_post_id = blocksy_get_special_post_id('local');
+
+		$maybe_special_post_id = blocksy_get_special_post_id([
+			'context' => 'local'
+		]);
 
 		$old_post = null;
 
 		if ($maybe_special_post_id && $post_id !== $maybe_special_post_id) {
 			global $post;
+
 			$old_post = $post;
 
 			$post = get_post($maybe_special_post_id);
