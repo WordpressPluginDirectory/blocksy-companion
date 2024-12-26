@@ -1,18 +1,56 @@
 import { createElement } from '@wordpress/element'
 import { __ } from 'ct-i18n'
 
-import { InspectorControls } from '@wordpress/block-editor'
+import {
+	InspectorControls,
+	// __experimentalUseGradient,
+	useSettings,
+	getGradientValueBySlug,
+	getGradientSlugByValue,
+} from '@wordpress/block-editor'
 import {
 	RangeControl,
 	PanelBody,
-	TextareaControl,
-	ExternalLink,
 	TextControl,
+	__experimentalToolsPanelItem as ToolsPanelItem,
 } from '@wordpress/components'
 import { OptionsPanel } from 'blocksy-options'
+import { useDispatch } from '@wordpress/data'
 
 import { fieldIsImageLike } from '../utils'
 import DimensionControls from './Dimensions'
+import { CoverImageEdit } from './CoverImageControls'
+import ColorsPanel from '../../../components/ColorsPanel'
+
+import { getValueFromVariable } from '@wordpress/block-editor/src/components/global-styles/utils'
+
+import {
+	useBlockSettings,
+	styleToAttributes,
+	attributesToStyle,
+	useColorsPerOrigin,
+} from './utils'
+
+export function setImmutably(object, path, value) {
+	// Normalize path
+	path = Array.isArray(path) ? [...path] : [path]
+
+	// Shallowly clone the base of the object
+	object = Array.isArray(object) ? [...object] : { ...object }
+
+	const leaf = path.pop()
+
+	// Traverse object from root to leaf, shallowly cloning at each level
+	let prev = object
+	for (const key of path) {
+		const lvl = prev[key]
+		prev = prev[key] = Array.isArray(lvl) ? [...lvl] : { ...lvl }
+	}
+
+	prev[leaf] = value
+
+	return object
+}
 
 const DynamicDataInspectorControls = ({
 	fieldDescriptor,
@@ -26,8 +64,214 @@ const DynamicDataInspectorControls = ({
 
 	clientId,
 
+	name,
+	__unstableParentLayout,
+
 	taxonomies,
+
+	postId,
+	postType,
 }) => {
+	const { replaceInnerBlocks } = useDispatch('core/block-editor')
+
+	const value = attributesToStyle({
+		style: attributes.style,
+		textColor: attributes.textColor,
+		backgroundColor: attributes.backgroundColor,
+	})
+
+	const settings = useBlockSettings(name, __unstableParentLayout)
+
+	const decodeValue = (rawValue) =>
+		getValueFromVariable({ settings }, '', rawValue)
+
+	const colors = useColorsPerOrigin(settings)
+
+	const encodeColorValue = (colorValue) => {
+		const allColors = colors.flatMap(
+			({ colors: originColors }) => originColors
+		)
+
+		const colorObject = allColors.find(({ color }) => color === colorValue)
+
+		return colorObject ? 'var:preset|color|' + colorObject.slug : colorValue
+	}
+
+	const onChange = (newStyle) => {
+		setAttributes(styleToAttributes(newStyle))
+	}
+
+	const linkColor = decodeValue(value?.elements?.link?.color?.text)
+
+	const hoverLinkColor = decodeValue(
+		value?.elements?.link?.[':hover']?.color?.text
+	)
+
+	const setLinkColorCustom = (newColor) => {
+		onChange(
+			setImmutably(
+				value,
+				['elements', 'link', 'color', 'text'],
+				encodeColorValue(newColor)
+			)
+		)
+	}
+
+	const overlayColor = decodeValue(
+		attributes?.style?.elements?.overlay?.color?.background
+	)
+
+	const setOverlayColor = (newColor) => {
+		// if (!newColor) {
+		// 	return
+		// }
+
+		onChange(
+			setImmutably(
+				value,
+				['elements', 'overlay', 'color', 'background'],
+				encodeColorValue(newColor)
+			)
+		)
+	}
+
+	const textColor = decodeValue(value?.color?.text)
+
+	const setTextColor = (newColor) => {
+		let changedObject = setImmutably(
+			value,
+			['color', 'text'],
+			encodeColorValue(newColor)
+		)
+
+		if (textColor === linkColor) {
+			changedObject = setImmutably(
+				changedObject,
+				['elements', 'link', 'color', 'text'],
+				encodeColorValue(newColor)
+			)
+		}
+
+		onChange(changedObject)
+	}
+
+	const setLinkColor = (newColor) => {
+		onChange(
+			setImmutably(
+				value,
+				['elements', 'link', 'color', 'text'],
+				encodeColorValue(newColor)
+			)
+		)
+	}
+
+	const gradients = [
+		...(settings.color?.gradients?.custom ?? []),
+		...(settings.color?.gradients?.theme ?? []),
+		...(settings.color?.gradients?.default ?? []),
+	]
+
+	const backgroundColor = decodeValue(value?.color?.background)
+	const gradientValue =
+		attributes.customGradient ||
+		getGradientValueBySlug(gradients, attributes.gradient)
+
+	const setBackgroundColor = (newColor) => {
+		const newValue = setImmutably(
+			value,
+			['color', 'background'],
+			encodeColorValue(newColor)
+		)
+
+		onChange(newValue)
+	}
+
+	const setHoverLinkColor = (newColor) => {
+		onChange(
+			setImmutably(
+				value,
+				['elements', 'link', ':hover', 'color', 'text'],
+				encodeColorValue(newColor)
+			)
+		)
+	}
+
+	const setOverlayAttribute = (attributeName, value) => {
+		setAttributes({
+			// Clear all related attributes (only one should be set)
+			overlayColor: undefined,
+			customOverlayColor: undefined,
+			gradient: undefined,
+			customGradient: undefined,
+			[attributeName]: value,
+		})
+	}
+
+	const onGradientChange = (value) => {
+		// Do nothing for falsy values.
+		if (!value) {
+			return
+		}
+		const slug = getGradientSlugByValue(gradients, value)
+
+		if (slug) {
+			setOverlayAttribute('gradient', slug)
+		} else {
+			setOverlayAttribute('customGradient', value)
+		}
+	}
+
+	const colorsPanelSettings =
+		attributes.viewType === 'default' || !fieldIsImageLike(fieldDescriptor)
+			? [
+					{
+						colorValue: textColor,
+						label: __('Text', 'blocksy-companion'),
+						enableAlpha: true,
+						onColorChange: setTextColor,
+					},
+
+					{
+						colorValue: backgroundColor,
+
+						label: __('Background', 'blocksy-companion'),
+						enableAlpha: true,
+						onColorChange: setBackgroundColor,
+					},
+
+					...(attributes.has_field_link === 'yes'
+						? [
+								{
+									colorValue: linkColor,
+									label: __('Link', 'blocksy-companion'),
+									enableAlpha: true,
+									onColorChange: setLinkColor,
+								},
+
+								{
+									colorValue: hoverLinkColor,
+									label: __(
+										'Link Hover',
+										'blocksy-companion'
+									),
+									enableAlpha: true,
+									onColorChange: setHoverLinkColor,
+								},
+						  ]
+						: []),
+			  ]
+			: [
+					{
+						colorValue: overlayColor,
+						// gradientValue,
+						label: __('Overlay', 'blocksy-companion'),
+						enableAlpha: true,
+						onColorChange: setOverlayColor,
+						// onGradientChange: onGradientChange,
+						isShownByDefault: true,
+					},
+			  ]
+
 	return (
 		<>
 			<InspectorControls>
@@ -38,6 +282,22 @@ const DynamicDataInspectorControls = ({
 							setAttributes({
 								[optionId]: optionValue,
 							})
+
+							if (optionId === 'viewType' && !overlayColor) {
+								setTimeout(() => {
+									setOverlayColor('#000000')
+								}, 50)
+							}
+
+							if (
+								optionId === 'viewType' ||
+								(optionId === 'field' &&
+									(!fieldIsImageLike(optionValue) ||
+										attributes.field ===
+											'wp:author_avatar'))
+							) {
+								replaceInnerBlocks(clientId, [], false)
+							}
 						}}
 						options={{
 							field: {
@@ -56,6 +316,33 @@ const DynamicDataInspectorControls = ({
 								choices: fieldsChoices,
 								purpose: 'default',
 							},
+
+							...(attributes.field !== 'wp:author_avatar' &&
+							fieldIsImageLike(fieldDescriptor)
+								? {
+										viewType: {
+											type: 'ct-radio',
+											label: __(
+												'View Type',
+												'blocksy-companion'
+											),
+											value: attributes.viewType,
+											design: 'inline',
+											purpose: 'gutenberg',
+											divider: 'bottom:full',
+											choices: {
+												default: __(
+													'Image',
+													'blocksy-companion'
+												),
+												cover: __(
+													'Cover',
+													'blocksy-companion'
+												),
+											},
+										},
+								  }
+								: {}),
 
 							...(attributes.field === 'wp:terms' &&
 							taxonomies &&
@@ -120,7 +407,8 @@ const DynamicDataInspectorControls = ({
 
 					{fieldIsImageLike(fieldDescriptor) &&
 						attributes.field !== 'wp:author_avatar' &&
-						attributes.field !== 'wp:archive_image' && (
+						attributes.field !== 'wp:archive_image' &&
+						attributes.viewType === 'default' && (
 							<OptionsPanel
 								purpose="gutenberg"
 								onChange={(optionId, optionValue) => {
@@ -166,6 +454,7 @@ const DynamicDataInspectorControls = ({
 										value: 'none',
 										view: 'text',
 										design: 'inline',
+										divider: 'top:full',
 										choices: {
 											none: __(
 												'None',
@@ -191,42 +480,18 @@ const DynamicDataInspectorControls = ({
 				{fieldIsImageLike(fieldDescriptor) &&
 					attributes.field !== 'wp:author_avatar' && (
 						<>
+							<CoverImageEdit
+								attributes={attributes}
+								setAttributes={setAttributes}
+								postId={postId}
+								postType={postType}
+							/>
+
 							<DimensionControls
 								clientId={clientId}
 								attributes={attributes}
 								setAttributes={setAttributes}
 							/>
-
-							<PanelBody>
-								<TextareaControl
-									label={__(
-										'Alternative Text',
-										'blocksy-companion'
-									)}
-									value={attributes.alt_text || ''}
-									onChange={(value) => {
-										setAttributes({
-											alt_text: value,
-										})
-									}}
-									help={
-										<>
-											<ExternalLink href="https://www.w3.org/WAI/tutorials/images/decision-tree">
-												{__(
-													'Describe the purpose of the image.',
-													'blocksy-companion'
-												)}
-											</ExternalLink>
-											<br />
-											{__(
-												'Leave empty if decorative.',
-												'blocksy-companion'
-											)}
-										</>
-									}
-									__nextHasNoMarginBottom
-								/>
-							</PanelBody>
 						</>
 					)}
 
@@ -333,6 +598,96 @@ const DynamicDataInspectorControls = ({
 							/>
 						</PanelBody>
 					)}
+			</InspectorControls>
+
+			<InspectorControls
+				group="color"
+				resetAllFilter={() => {
+					const fieldType = fieldIsImageLike(fieldDescriptor)
+						? 'image'
+						: 'text'
+
+					if (fieldType === 'text') {
+						setTextColor()
+						setBackgroundColor()
+						setLinkColor()
+						setHoverLinkColor()
+
+						setTimeout(() => {
+							const { link, ...rest } =
+								attributes?.style?.elements
+
+							const newStyle = {
+								...attributes.style,
+
+								elements: rest,
+							}
+
+							setAttributes({
+								textColor: undefined,
+								backgroundColor: undefined,
+
+								style: newStyle,
+							})
+						})
+					}
+
+					if (fieldType === 'image') {
+						setTimeout(() => {
+							setOverlayColor('#000000')
+						}, 50)
+					}
+				}}>
+				<ColorsPanel
+					label={__('Colors', 'blocksy-companion')}
+					panelId={clientId}
+					settings={colorsPanelSettings}
+					skipToolsPanel
+					containerProps={{
+						'data-field-type': fieldIsImageLike(fieldDescriptor)
+							? `image:${attributes.viewType}`
+							: 'text',
+					}}
+				/>
+
+				{fieldIsImageLike(fieldDescriptor) &&
+				attributes.viewType !== 'default' ? (
+					<ToolsPanelItem
+						hasValue={() => {
+							// If there's a media background the dimRatio will be
+							// defaulted to 50 whereas it will be 100 for colors.
+							return attributes.dimRatio === undefined
+								? false
+								: attributes.dimRatio !== 50
+						}}
+						label={__('Overlay opacity')}
+						onDeselect={() =>
+							setAttributes({
+								dimRatio: 50,
+							})
+						}
+						resetAllFilter={() => ({
+							dimRatio: 50,
+						})}
+						isShownByDefault
+						panelId={clientId}>
+						<RangeControl
+							__nextHasNoMarginBottom
+							label={__('Overlay opacity')}
+							value={attributes.dimRatio}
+							onChange={(newDimRatio) =>
+								setAttributes({
+									dimRatio: newDimRatio,
+								})
+							}
+							min={0}
+							max={100}
+							step={10}
+							required
+							__next40pxDefaultSize
+						/>
+					</ToolsPanelItem>
+				) : null}
 			</InspectorControls>
 
 			{attributes.field === 'wp:terms' && (
