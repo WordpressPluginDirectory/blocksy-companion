@@ -4270,7 +4270,7 @@ msgstr "Zaawansowane recenzje"
 
 #: framework/helpers/exts-configs.php:323
 msgid "Enhance your WooCommerce reviews with rich content, images and a thumbs up system that help your shoppers find the perfect product."
-msgstr "Wzbogać swoje recenzje WooCommerce o bogate treści, obrazy i system kciuków w górę, które pomogą kupującym znaleźć idealny produkt."
+msgstr "Wzbogać swoje recenzje WooCommerce o bogate treści, obrazy i system kciuków w górę, które pomogą kupującym znale��ć idealny produkt."
 
 #: framework/extensions/cookies-consent/customizer.php:112
 msgid "Forms Cookies Content"

@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.1.0
+Stable tag: 2.1.3
 
 == Description ==
 
@@ -52,6 +52,19 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.1.3: 2025-07-10
+- Improvement: Advanced Posts block - properly compute the spacing option
+- Improvement: Customizer import/export feature - safely unserialize data on import
+- Improvement: Dynamic Data block - small accessibility improvement when the block is used as a featured image
+- Improvement: Introduce PHP filter to disable SVG sanitization
+
+2.1.2: 2025-07-03
+- Improvement: Correctly respect Loco Translate custom translation locations
+
+2.1.1: 2025-06-26
+- Improvement: Sticky header - better calculations for sticky position of rows hidden on mobile devices
+- Improvement: Sticky header - proper offset when store notice is enabled
+
 2.1.0: 2025-06-05
 - Improvement: Breadcrumbs block - make sure the editor preview respects the context
 - Improvement: Newsletter subscribe - integration with Email Octopus
