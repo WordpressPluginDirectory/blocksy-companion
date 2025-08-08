@@ -40,7 +40,7 @@ msgstr "Bộ nhớ tạm"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/feature.php:193,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-account.php:67
 msgid "Waitlist"
-msgstr "Danh sách chờ"
+msgstr "Danh sách ch���"
 
 #: framework/premium/extensions/shortcuts/customizer.php:895
 msgid "Tooltip Visibility"
@@ -124,7 +124,7 @@ msgstr "Xác nhận đăng ký"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:84
 msgid "Specify which users should verify their waitlist subscription through email confirmation."
-msgstr "Chỉ định người dùng cần xác nhận đăng ký danh sách chờ thông qua email."
+msgstr "Chỉ định người dùng cần xác nhận ��ăng ký danh sách chờ thông qua email."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:107
 msgid "Waitlist Form Display Conditions"
@@ -2674,7 +2674,7 @@ msgstr "Tên ngắn"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:245
 msgid "Sorry, this product is unavailable. Please choose a different combination."
-msgstr "Xin lỗi, s��n phẩm này không có sẵn. Vui lòng chọn một sự kết hợp khác."
+msgstr "Xin lỗi, sản phẩm này không có sẵn. Vui lòng chọn một sự kết hợp khác."
 
 #: framework/features/blocks/dynamic-data/views/woo-field.php:26,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:246,
@@ -3980,7 +3980,7 @@ msgstr "Trước Album ảnh sản phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:710
 msgid "After single product gallery"
-msgstr "Sau Album ảnh sản phẩm đơn"
+msgstr "Sau Album ảnh s��n phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:715
 msgid "Before single product \"Add to cart\" button"
