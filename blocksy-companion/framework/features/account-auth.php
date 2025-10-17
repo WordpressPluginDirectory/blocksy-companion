@@ -175,7 +175,7 @@ class AccountAuth {
 		}
 
 		if (isset($_POST['user_pass']) && is_string($_POST['user_pass'])) {
-			$user_pass = wp_unslash($_POST['user_pass']);
+			$user_pass = sanitize_text_field(wp_unslash($_POST['user_pass']));
 		}
 
 		if (

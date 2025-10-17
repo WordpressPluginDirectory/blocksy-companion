@@ -180,6 +180,27 @@ class DemoInstallFinalActions {
 				json_encode(get_option($single_key->option_name))
 			), true));
 		}
+
+		$demo_to_install = Plugin::instance()->demo->get_currently_installing_demo();
+
+		$from_menu_link = $demo_content['url'];
+		$to_menu_link = trailingslashit(get_site_url());
+
+		$escaped_from = esc_sql($from_menu_link);
+		$escaped_to = esc_sql($to_menu_link);
+
+		$wpdb->query(
+			$wpdb->prepare(
+				"UPDATE {$wpdb->postmeta}
+				SET meta_value = REPLACE(meta_value, %s, %s)
+				WHERE meta_key = %s
+				AND meta_value LIKE %s",
+				$from_menu_link,
+				$to_menu_link,
+				'_menu_item_url',
+				'%' . $wpdb->esc_like($from_menu_link) . '%'
+			)
+		);
 	}
 
 	private function handle_brizy_posts() {

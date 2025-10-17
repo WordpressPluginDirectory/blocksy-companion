@@ -4862,7 +4862,7 @@ msgstr "Nadzorna plošča"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:31
 msgid "Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site."
-msgstr "Vaša strežniška konfiguracija ne izpolnjuje minimalnih zahtev za uvoz začetne strani."
+msgstr "Va��a strežniška konfiguracija ne izpolnjuje minimalnih zahtev za uvoz začetne strani."
 
 #: static/js/dashboard/screens/DemoInstall/components/Error.js:25
 msgid "Can't Import Starter Site"
@@ -8007,7 +8007,7 @@ msgstr "Konec modalnega prijavnega obrazca"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:506
 msgid "Login form modal start"
-msgstr "Za��etek modalnega prijavnega obrazca"
+msgstr "Začetek modalnega prijavnega obrazca"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:499
 msgid "Login form end"

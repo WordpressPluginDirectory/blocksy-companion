@@ -177,7 +177,9 @@ $form_attrs = [
 	'data-provider' => $provider_data['provider'],
 ];
 
-$container_atts = [];
+$container_atts = [
+	'class' => 'ct-newsletter-subscribe-form-elements'
+];
 
 if ($view_type === 'inline') {
 	$container_atts['data-columns'] = $fields_number;
@@ -245,13 +247,9 @@ foreach ($button_colors as $key => $value) {
 }
 
 ?>
-	<?php // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-	<form <?php echo blocksy_attr_to_html($form_attrs); ?>>
+	<form <?php blocksy_attr_to_html_e($form_attrs); ?>>
 
-		<div class="ct-newsletter-subscribe-form-elements"  <?php 
-			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo blocksy_attr_to_html($container_atts); 
-		?>>
+		<div <?php blocksy_attr_to_html_e($container_atts); ?>>
 			<?php if ($has_name) { ?>
 				<input
 					type="text"

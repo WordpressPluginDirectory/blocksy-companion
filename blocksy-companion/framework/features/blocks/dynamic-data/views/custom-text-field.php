@@ -60,9 +60,5 @@ wp_apply_colors_support($block_type, $attributes);
 
 $wrapper_attr = get_block_wrapper_attributes($wrapper_attr);
 
-echo blocksy_html_tag(
-	$tagName,
-	$wrapper_attr,
-	$value
-);
+blocksy_html_tag_e($tagName, $wrapper_attr, $value);
 

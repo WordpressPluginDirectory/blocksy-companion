@@ -143,8 +143,7 @@ function blc_ext_newsletter_subscribe_output_form($args = []) {
 
 			<div
 				<?php
-					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo blocksy_attr_to_html(
+					blocksy_attr_to_html_e(
 						array_merge(
 							[
 								'class' => 'ct-newsletter-subscribe-form-elements',

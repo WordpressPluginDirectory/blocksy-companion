@@ -208,4 +208,5 @@ $content = blocksy_html_tag(
 	)
 );
 
+// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 echo $content;

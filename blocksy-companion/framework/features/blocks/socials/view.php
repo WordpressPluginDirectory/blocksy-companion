@@ -112,12 +112,9 @@ if (empty($wrapper_attr['style'])) {
 	unset($wrapper_attr['style']);
 }
 
-echo '<div ' . blocksy_attr_to_html($wrapper_attr) . '>';
+blocksy_html_tag_e('div', $wrapper_attr, false);
 
-/**
- * blocksy_social_icons() function is already properly escaped.
- * Escaping it again here would cause SVG icons to not be outputed
- */
+// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 echo blocksy_social_icons(
 	blocksy_default_akg('socials', $atts, [
 		[

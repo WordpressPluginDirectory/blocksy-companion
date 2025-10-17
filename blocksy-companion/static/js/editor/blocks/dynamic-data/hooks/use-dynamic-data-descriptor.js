@@ -117,7 +117,7 @@ const wooFields = ({ fieldsContext, taxonomies = [] }) => {
 	const shouldHaveWooFields =
 		// Single product picked
 		(fieldsContext.type === 'post' &&
-			fieldsContext.entity_type === 'product') ||
+			fieldsContext.post_type === 'product') ||
 		// Product tab or size guide picked
 		(fieldsContext.type === 'post_type' &&
 			fieldsContext.post_type === 'product')
@@ -179,8 +179,8 @@ const useDynamicDataDescriptor = ({ postId, postType, termId, taxonomy }) => {
 		postTypeForTaxonomies = fieldsContext.post_type
 	}
 
-	if (fieldsContext.type === 'post' && fieldsContext.entity_type) {
-		postTypeForTaxonomies = fieldsContext.entity_type
+	if (fieldsContext.type === 'post' && fieldsContext.post_type) {
+		postTypeForTaxonomies = fieldsContext.post_type
 	}
 
 	const taxonomies = useTaxonomies(postTypeForTaxonomies)

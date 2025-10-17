@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-15 19:06:22+0000\n"
+"PO-Revision-Date: 2025-10-05 19:16:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,613 +14,613 @@ msgstr ""
 #: static/js/editor/blocks/dynamic-data/components/utils.js:504
 msgctxt "Indicates this palette is created by the user."
 msgid "Custom"
-msgstr ""
+msgstr "Собственная"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:495
 msgctxt "Indicates this palette comes from WordPress."
 msgid "Default"
-msgstr ""
+msgstr "WordPress'ная"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:482
 msgctxt "Indicates this palette comes from the theme."
 msgid "Theme"
-msgstr ""
+msgstr "Из темы"
 
 #: static/js/notifications/VersionMismatchNotice.js:112
 msgid "Update %s Now"
-msgstr ""
+msgstr "Обновить %s сейчас"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:311
 msgid "Hide Empty Taxonomies"
-msgstr ""
+msgstr "Скрывать пустые таксономии"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:293
 msgid "Taxonomies Visibility"
-msgstr ""
+msgstr "Видимость таксономий"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:277
 msgid "Relevant Taxonomies"
-msgstr ""
+msgstr "Соответствующие таксономии"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:269
 msgid "Only Parent Taxonomies"
-msgstr ""
+msgstr "Только родительские таксономии"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:261
 msgid "All Taxonomies"
-msgstr ""
+msgstr "Все таксономии"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:253
 msgid "Level"
-msgstr ""
+msgstr "Уровень"
 
 #: static/js/editor/blocks/query/Edit.js:231
 #: static/js/editor/blocks/tax-query/Edit.js:216
 msgid "Autoplay Speed"
-msgstr ""
+msgstr "Скорость листания"
 
 #: static/js/editor/blocks/query/Edit.js:205
 #: static/js/editor/blocks/tax-query/Edit.js:190
 msgid "Arrows"
-msgstr ""
+msgstr "Стрелки"
 
 #: static/js/editor/blocks/query/Edit.js:192
 #: static/js/editor/blocks/tax-query/Edit.js:177
 msgid "Slideshow"
-msgstr ""
+msgstr "Слайдшоу"
 
 #: static/js/editor/blocks/post-template/Edit.js:359
 #: static/js/editor/blocks/tax-template/Edit.js:296
 msgid "Desktop Columns"
-msgstr ""
+msgstr "Колонки на ПК"
 
 #: static/js/editor/blocks/post-template/Edit.js:292
 #: static/js/editor/blocks/query/Preview.js:126
 #: static/js/editor/blocks/tax-template/Edit.js:233
 msgid "No results found."
-msgstr ""
+msgstr "Ничего не найдено."
 
 #: static/js/editor/blocks/dynamic-data/index.js:81
 msgid "Dynamic Attributes"
-msgstr ""
+msgstr "Динамические атрибуты"
 
 #: static/js/editor/blocks/dynamic-data/index.js:121
 msgid "Dynamic Archive Description"
-msgstr ""
+msgstr "Динамическое описание архива"
 
 #: static/js/editor/blocks/dynamic-data/index.js:117
 msgid "Dynamic Archive Title"
-msgstr ""
+msgstr "Динамический заголовок архива"
 
 #: static/js/editor/blocks/dynamic-data/index.js:113
 msgid "Dynamic Archive Image"
-msgstr ""
+msgstr "Динамическое изображение архива"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:750
 msgid "Overlay opacity"
-msgstr ""
+msgstr "Непрозрачность наложения"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:401
 msgid "View Type"
-msgstr ""
+msgstr "Тип просмотра"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:285
 msgid "Overlay"
-msgstr ""
+msgstr "Перекрытие"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:54
 msgid "Block Settings"
-msgstr ""
+msgstr "Настройки блока"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:218
 msgid "Minimum height"
-msgstr ""
+msgstr "Минимальная высота"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:286
 msgid "Repeated background"
-msgstr ""
+msgstr "Повторяющийся фон"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:269
 msgid "Fixed background"
-msgstr ""
+msgstr "Фиксированный фон"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:236
 msgid "Focal point"
-msgstr ""
+msgstr "Фокусная точка"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:206
 msgid "Customize the width for all elements that are assigned to the center or wide columns."
-msgstr ""
+msgstr "Настройте ширину для всех элементов, которые назначены центральным или широким колонкам."
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:186
 msgid "Wide width"
-msgstr ""
+msgstr "Широкий формат"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:165
 msgid "Content width"
-msgstr ""
+msgstr "Ширина содержимого"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:156
 msgid "Nested blocks will fill the width of this container. Toggle to constrain."
-msgstr ""
+msgstr "Вложенные блоки будут занимать всю ширину этого контейнера. Включите, чтобы ограничить."
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:153
 msgid "Nested blocks use content width with options for full and wide widths."
-msgstr ""
+msgstr "Вложенные блоки используют ширину содержимого с возможностью выбора полной ширины и широкого формата."
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:143
 msgid "Inner blocks use content width"
-msgstr ""
+msgstr "Внутренние блоки используют ширину содержимого"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:129
 msgid "Layout"
-msgstr ""
+msgstr "Макет"
 
 #: static/js/editor/blocks/dynamic-data/components/AlignmentControls.js:126
 msgid "Change content position"
-msgstr ""
+msgstr "Изменить положение содержимого"
 
 #: static/js/editor/blocks/dynamic-data/Preview.js:57
 msgid "Field not found"
-msgstr ""
+msgstr "Поле не найдено"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/RenderOptions.js:35
 msgid "Show %s Image"
-msgstr ""
+msgstr "Показать изображение %s"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/RenderOptions.js:139
 msgid "Max width"
-msgstr ""
+msgstr "Предел ширины"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:27
 msgid "Filter by products status."
-msgstr ""
+msgstr "Фильтрация по статусу товаров."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:26
 msgid "Filter by Status Controls"
-msgstr ""
+msgstr "Опции фильтра по статусу"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:178
 msgid "Filter by Status"
-msgstr ""
+msgstr "Фильтрация по статусу"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:142
 msgid "Show Counters"
-msgstr ""
+msgstr "Отображать счётчики"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:60
 msgid "Show only products that match the selected rating exactly."
-msgstr ""
+msgstr "Отображение лишь товаров, рейтинг которых точно соответствуют указанному."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:59
 msgid "Match Rating Exactly"
-msgstr ""
+msgstr "Определённый рейтинг"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:12
 msgid "Filter by products rating."
-msgstr ""
+msgstr "Фильтрация по рейтингу товаров."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:11
 msgid "Filter by Rating Controls"
-msgstr ""
+msgstr "Опции фильтрации по рейтингу"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:108
 msgid "Filter by Rating"
-msgstr ""
+msgstr "Фильтрация по рейтингу"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:380
 msgid "Modern Font Stacks"
-msgstr ""
+msgstr "Набор современных шрифтов"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/StackTab.js:28
 msgid "Collection of %s15 handpicked%s font families that ensure a similar look and feel of your text across all platforms, in the fastest and most robust way possible."
-msgstr ""
+msgstr "Коллекция из %s15 специально подобранных%s семейств шрифтов, которые обеспечивают одинаковый внешний вид вашего текста на всех платформах самым быстрым и надежным способом."
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/StackTab.js:21
 msgid "Font Stacks"
-msgstr ""
+msgstr "Наборы шрифтов"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:142
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:330
 msgid "Add Fonts"
-msgstr ""
+msgstr "Добить шрифты"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:123
 msgid "Modern Font Stack"
-msgstr ""
+msgstr "Набор современных шрифтов"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:424
 msgid "More information on how to create a list in fluentcrm can be found %shere%s."
-msgstr ""
+msgstr "Более подробную информацию о создании списка во FluentCRM смотрите %sздесь%s."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/waitlist-email.php:203
 msgid "Product Name"
-msgstr ""
+msgstr "Название товара"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/options/status.php:31
 msgid "Statuses"
-msgstr ""
+msgstr "Статусы"
 
 #. translators: %s is the number of additional swatches.
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:225
 msgid "+%s More"
-msgstr ""
+msgstr "+%s"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/frontend.php:219
 msgid "Show more swatches"
-msgstr ""
+msgstr "Показать больше образцов"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:222
 msgid "Retry Send"
-msgstr ""
+msgstr "Повторите отправку"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:176
 msgid "Pending"
-msgstr ""
+msgstr "В ожидании"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/views/panel.php:53
 msgid "Filters panel"
-msgstr ""
+msgstr "Панель фильтров"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:172,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:197
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:147
 msgid "Featured"
-msgstr ""
+msgstr "Рекомендуем"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:146
 msgid "On sale"
-msgstr ""
+msgstr "Распродажа"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:107
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:25
 msgid "5 stars"
-msgstr ""
+msgstr "5 звёзд"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:106
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:21
 msgid "4 stars"
-msgstr ""
+msgstr "4 звезды"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:105
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:17
 msgid "3 stars"
-msgstr ""
+msgstr "3 звезды"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:104
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:13
 msgid "2 stars"
-msgstr ""
+msgstr "2 звезды"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:103
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:9
 msgid "1 star"
-msgstr ""
+msgstr "1 звезда"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:64,
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:129
 msgid "%s and up"
-msgstr ""
+msgstr "%s и выше"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/main.php:93
 msgid "Checkout Page"
-msgstr ""
+msgstr "Страница оформления заказа"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/main.php:67
 msgid "Mini Cart"
-msgstr ""
+msgstr "Мини-корзина"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:238
 msgid "Module Visibility"
-msgstr ""
+msgstr "Видимость модуля"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:224
 msgid "Below Cart Module"
-msgstr ""
+msgstr "Ниже модуля корзины"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:223
 msgid "After Products Table"
-msgstr ""
+msgstr "После таблицы товаров"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:222
 msgid "Inside Cart Totals"
-msgstr ""
+msgstr "В итогах корзины"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:216
 msgid "Module Placement"
-msgstr ""
+msgstr "Размещение модуля"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:203
 msgid "Add to Cart Button"
-msgstr ""
+msgstr "Кнопка добавления в корзину"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:35
 msgid "Block"
-msgstr ""
+msgstr "Блок"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:619
 msgid "Crossed"
-msgstr ""
+msgstr "Перечёркнутый"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:618
 msgid "Faded"
-msgstr ""
+msgstr "Блеклый"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:611
 msgid "Out of Stock Swatch Type"
-msgstr ""
+msgstr "Тип образца отсутствующего на складе"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:594
 msgid "Reveal hidden swatches when the limit is exceeded."
-msgstr ""
+msgstr "Система показа скрытых при превышении лимита образцов."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:590
 msgid "Expand Button"
-msgstr ""
+msgstr "Кнопка раскрытия"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:586
 msgid "Limit the number of swatches shown on single product pages."
-msgstr ""
+msgstr "Ограничение количества образцов, отображаемых на страницах отдельных товаров."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:579
 msgid "Product Page Limit"
-msgstr ""
+msgstr "Лимит страницы товара"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:575
 msgid "Limit the number of swatches shown on archive pages."
-msgstr ""
+msgstr "Ограничение количество образцов, отображаемых на страницах архива."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:569
 msgid "Archive Limit"
-msgstr ""
+msgstr "Лимит архи��а"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:561
 msgid "Attribute Terms Limit"
-msgstr ""
+msgstr "Ограничение объектов атрибута"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:190
 msgid "Automatically use the product variation image when no attribute term image is assigned."
-msgstr ""
+msgstr "Автоматически использовать изображение вариации товара, если изображение атрибута не назначено."
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:186
 msgid "Use Variation Image"
-msgstr ""
+msgstr "Использовать изображение вариации"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:64
 msgid "+{items} More"
-msgstr ""
+msgstr "+{items}"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/modal-view.php:15
 msgid "Size guide modal"
-msgstr ""
+msgstr "Модальное окно таблицы размеров"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:115
 msgid "Include or exclude virtual and downloadable products in calculating the shipping progress."
-msgstr ""
+msgstr "Включение или исключение виртуальных и загружаемых товаров при расчёте хода доставки."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:111
 msgid "Count Non-Physical Products"
-msgstr ""
+msgstr "Подсчёт нефизических товаров"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:254
 msgid "Panel Visibility"
-msgstr ""
+msgstr "Видимость панели"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-cart/feature.php:162
 msgid "Shopping cart panel"
-msgstr ""
+msgstr "Панель корзины покупок"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:217,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:341
 msgid "Add to Cart"
-msgstr ""
+msgstr "Добавить в корзину"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/feature.php:279
 msgid "Compare products modal"
-msgstr ""
+msgstr "Модальное окно сравнения"
 
 #: framework/premium/features/content-blocks/options/popup.php:647
 msgid "Close Button Position"
-msgstr ""
+msgstr "Позиция кнопки закрытия"
 
 #: framework/premium/features/content-blocks/options/popup.php:572
 msgid "Lock the page scroll while the popup is triggered/oppened."
-msgstr ""
+msgstr "Блокировка прокрутки страницы под модальным окном."
 
 #: framework/premium/features/content-blocks/options/popup.php:473
 msgid "Select a post/page to preview it's content inside the editor while building the popup."
-msgstr ""
+msgstr "Выберите запись/страницу для предпросмотра её содержимого в редакторе при создании модального окна."
 
 #: framework/premium/features/content-blocks/options/popup.php:368
 msgid "Delay"
-msgstr ""
+msgstr "Задержка"
 
 #: framework/premium/features/content-blocks/options/popup.php:348
 msgid "Form Submit"
-msgstr ""
+msgstr "Отправка формы"
 
 #: framework/premium/features/content-blocks/options/popup.php:333
 msgid "On Custom Action"
-msgstr ""
+msgstr "По иному действию"
 
 #: framework/premium/features/content-blocks/options/popup.php:325
 msgid "On Backdrop Click"
-msgstr ""
+msgstr "По нажатию по фону"
 
 #: framework/premium/features/content-blocks/options/popup.php:313
 msgid "On ESC Button Press"
-msgstr ""
+msgstr "По нажатию кнопки ESC"
 
 #: framework/premium/features/content-blocks/options/popup.php:305
 msgid "On Close Button Click"
-msgstr ""
+msgstr "По нажатию кнопки закрытия"
 
 #: framework/premium/features/content-blocks/options/popup.php:295
 msgid "Close Actions"
-msgstr ""
+msgstr "Закрывающие действия"
 
 #: framework/premium/features/content-blocks/options/popup.php:279
 msgid "Days before the popup relaunches after the additional close trigger is activated."
-msgstr ""
+msgstr "Дней до повторного запуска модального окна после активации дополнительного триггера закрытия."
 
 #: framework/premium/features/content-blocks/options/popup.php:245
 msgid "Number of days before the popup will automatically relaunch again."
-msgstr ""
+msgstr "Количество дней до того, как модальное окно будет автоматически запущено снова."
 
 #: framework/premium/features/content-blocks/options/popup.php:228
 msgid "Custom interval"
-msgstr ""
+msgstr "Определённый интервал"
 
 #: framework/premium/features/content-blocks/options/popup.php:227
 msgid "Always relaunch"
-msgstr ""
+msgstr "Всегда перезапускать"
 
 #: framework/premium/features/content-blocks/options/popup.php:69
 msgid "Launch Trigger"
-msgstr ""
+msgstr "Триггер запуска"
 
 #: framework/premium/features/content-blocks/options/hook.php:352
 msgid "Separate multiple attributes with spaces."
-msgstr ""
+msgstr "Разделяйте атрибуты пробелами."
 
 #: framework/premium/features/content-blocks/options/hook.php:344
 msgid "Separate multiple classes with spaces."
-msgstr ""
+msgstr "Разделяйте классы пробелами."
 
 #: framework/premium/features/content-blocks/options/hook.php:158
 #: framework/premium/static/js/options/MultipleLocationsSelect.js:150
 msgid "Repeat"
-msgstr ""
+msgstr "Повтор"
 
 #: framework/premium/features/content-blocks/options/hook.php:150
 #: framework/premium/static/js/options/MultipleLocationsSelect.js:137
 msgid "After Card Number"
-msgstr ""
+msgstr "После номера карты"
 
 #: framework/premium/extensions/woocommerce-extra/features/attributes-layer.php:124
 msgid "Attributes Table"
-msgstr ""
+msgstr "Таблица атрибутов"
 
 #: framework/features/header/items/account/options.php:785
 msgid "Page "
-msgstr ""
+msgstr "Страница "
 
 #: framework/features/header/items/account/options.php:757
 msgid "Top Offset (Sticky State)"
-msgstr ""
+msgstr "Смещение сверху (закреплённый режим)"
 
 #: framework/features/header/items/account/options.php:662
 msgid "Link to Page"
-msgstr ""
+msgstr "Ссылка на страницу"
 
 #: framework/features/header/items/account/options.php:532,
 #: framework/features/header/items/account/options.php:985,
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:83,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:92
 msgid "Icon Visibility"
-msgstr ""
+msgstr "Видимость значка"
 
 #: framework/features/header/items/account/options.php:298,
 #: framework/features/header/items/account/options.php:299
 msgid "Open WooCommerce Account Page"
-msgstr ""
+msgstr "Открыть страницу профиля WooCommerce"
 
 #: framework/features/header/items/account/options.php:294
 msgid "Open Custom Link"
-msgstr ""
+msgstr "Открыть определённую ссылку"
 
 #: framework/features/header/items/account/options.php:293
 msgid "Open Login Modal"
-msgstr ""
+msgstr "Открыть модальное окно входа"
 
 #: framework/features/header/items/account/options.php:19
 msgid "Available fields: {first_name}, {last_name}, {user_name}"
-msgstr ""
+msgstr "Доступные поля: {first_name}, {last_name}, {user_name}"
 
 #: framework/features/header/items/account/options.php:15
 msgid "User Name"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: framework/features/header/items/account/options.php:7
 msgid "Logout Action"
-msgstr ""
+msgstr "Действие выхода из системы"
 
 #: framework/features/blocks/tax-query/block-patterns/tax-layout-5.php:4
 msgid "Taxonomies - Layout 5"
-msgstr ""
+msgstr "Таксономии - макет 5"
 
 #. translators: 1: the search query
 #: framework/features/blocks/dynamic-data/views/wp-field.php:37
 msgid "Search Results for %1$s"
-msgstr ""
+msgstr "Результаты поиска «%1$s»"
 
 #: framework/premium/features/media-video/video-import-export.php:113
 msgid "Blocksy Images Metadata"
-msgstr ""
+msgstr "Метаданные изображений Blocksy"
 
 #: framework/premium/features/media-video/options.php:91
 msgid "Automatically pauses the video when the user stops hovering."
-msgstr ""
+msgstr "Автоматически приостанавливать воспроизведение видео, когда пользователь уводит курсор."
 
 #: framework/premium/features/media-video/options.php:88
 msgid "Pause on Hover Out"
-msgstr ""
+msgstr "Пауза при отведении курсора"
 
 #: framework/premium/features/media-video/options.php:75
 msgid "Click"
-msgstr ""
+msgstr "Клик"
 
 #: framework/premium/features/media-video/options.php:67
 msgid "Select when the video thumbnail should start playing - on click, on hover, or as soon as the page loads."
-msgstr ""
+msgstr "Когда будет стартовать воспроизведение видео-миниатюры – по клику мыши, при наведении курсора или сразу после загрузки страницы."
 
 #: framework/premium/features/media-video/options.php:66
 msgid "Playback Trigger"
-msgstr ""
+msgstr "Триггер запуска"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:593
 msgid "Offcanvas Cart - List After"
-msgstr ""
+msgstr "Плавающая корзина – список после"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:439
 msgid "After certain number of cards"
-msgstr ""
+msgstr "После определённого количества карточек"
 
 #: framework/features/blocks/dynamic-data/options.php:223
 msgid "Link to website"
-msgstr ""
+msgstr "Ссылка на сайт"
 
 #: framework/features/blocks/dynamic-data/options.php:218
 msgid "Link to email"
-msgstr ""
+msgstr "Ссылка на Email"
 
 #: framework/extensions/newsletter-subscribe/providers/mailchimp.php:180
 msgid "%s is already a list member."
-msgstr ""
+msgstr "%s уже в списке."
 
 #: framework/premium/features/premium-header.php:296
 msgid "Icon Gap"
-msgstr ""
+msgstr "Интервал значков"
 
 #: framework/features/header/account-modal.php:23
 msgid "Account modal"
-msgstr ""
+msgstr "Модальный блок профиля"
 
 #: framework/views/theme-mismatch.php:45
 #: static/js/notifications/VersionMismatchNotice.js:65
 msgid "In order to take full advantage of all features the core has to offer - please install and activate the latest version of %s."
-msgstr ""
+msgstr "Чтобы в полной мере воспользоваться всеми функциями, которые может предложить ядро темы, установите и активируйте последнюю версию %s."
 
 #: framework/helpers/exts-configs.php:395
 msgid "Display a curated list of recommended products based on customer selection to enhance their experience and increase conversion rates."
-msgstr ""
+msgstr "Отображение списка товаров, основанного на выборе клиентов, чтобы улучшить их опыт и повысить конверсию."
 
 #: framework/helpers/exts-configs.php:286
 msgid "Advanced Product Brands"
-msgstr ""
+msgstr "Расширенные бренды товаров"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:459
 msgid "Select value"
@@ -756,7 +756,7 @@ msgstr "Вы были добавлены в список ожидания это
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:75
 msgid "No worries! Please enter your e-mail address and we will promptly notify you as soon as the item is back in stock."
-msgstr "Введите свой Email, чтобы получить у��едомление когда товар появится на складе."
+msgstr "Введите свой Email, чтобы получить уведомление когда товар появится на складе."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:67
 msgid "This product is currently sold out!"
@@ -781,7 +781,7 @@ msgstr "Вы будете уведомлены, когда {product_title} сн�
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/subscription-confirmed.php:10
 msgid "Waitlist subscription confirmed"
-msgstr "Пре��заказ подтверждён"
+msgstr "Предзаказ подтверждён"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/subscription-confirmed.php:9
 msgid "This email is sent after a user confirmed the subscription to a product stock alert"
@@ -1055,7 +1055,7 @@ msgstr "Более подробную информацию о том, как с�
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/product-actions.php:44
 msgid "Continue Shopping"
-msgstr "Продолжить пок��пки"
+msgstr "Продолжить покупки"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/product-actions.php:34
 msgid "Checkout"
@@ -1093,7 +1093,7 @@ msgstr "Закрытие окна"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/view.php:113
 msgid "Product successfully added to your cart!"
-msgstr ""
+msgstr "Товар успешно добавлен в вашу корзину!"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:531
 msgid "Close Icon Size"
@@ -1230,7 +1230,7 @@ msgstr "Отображение профилей в соцсетях повыша
 
 #: static/js/editor/blocks/socials/index.js:15
 msgid "Socials Controls"
-msgstr "Настройки соцсетей"
+msgstr "Опции соцсетей"
 
 #: static/js/editor/blocks/share-box/index.js:50
 msgid "Share content on social media, boosting visibility & engagement."
@@ -1238,7 +1238,7 @@ msgstr "Распространение контента в соцсетях по
 
 #: static/js/editor/blocks/share-box/index.js:17
 msgid "Share Box Controls"
-msgstr "Настройки блока шеринга"
+msgstr "Опции блока шеринга"
 
 #: static/js/editor/blocks/share-box/Edit.js:148
 #: static/js/editor/blocks/socials/Edit.js:148
@@ -1698,7 +1698,7 @@ msgstr "Отображение посетителям контактных да�
 
 #: static/js/editor/blocks/contact-info/index.js:15
 msgid "Contact Info Controls"
-msgstr "Настройки контактов"
+msgstr "Опции контактов"
 
 #: static/js/editor/blocks/breadcrumbs/index.js:12
 msgid "Display navigational links, showing users their path within the site."
@@ -1714,7 +1714,7 @@ msgstr "Отображение личной информации на сайте
 
 #: static/js/editor/blocks/about-me/index.js:15
 msgid "About Me Controls"
-msgstr "Настройки анкеты"
+msgstr "Опции анкеты"
 
 #: static/js/dashboard/screens/SiteExport.js:207
 msgid "Select a starter site"
@@ -1762,7 +1762,7 @@ msgstr "Не удалось получить список стартовых с�
 
 #: static/js/dashboard/screens/DemoInstall.js:183
 msgid "Your site is misconfigured and AJAX requests are not reaching your backend. Please click %shere%s to find the common causes and possible solutions to this.<br> Error code - %s"
-msgstr "Ваш сайт неправильно настроен, и AJAX-запросы не доходят до вашего сервера. Нажмите %sсюда%s, чтобы узнать о наиболее распространенных причинах и возможных решениях этой проблемы. <br>Код ошибки - %s"
+msgstr "Ваш сайт неправильно настроен, и AJAX-запросы не доходят до вашего сервера. Нажмите %sсюда%s, чтобы узнать о наиболее распространенных причинах и ��озможных решениях этой проблемы. <br>Код ошибки - %s"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/TaxonomySelector.js:49
 msgid "Exclude Speciffic Items"
@@ -1804,7 +1804,7 @@ msgstr "Фильтрация по ценам"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/price-filter/index.js:11
 msgid "Filter by Price Controls"
-msgstr "Настройка фильтра по ценам"
+msgstr "Опции фильтра по ценам"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:12
 msgid "Date"
@@ -2157,7 +2157,7 @@ msgstr "Значок/логотип"
 
 #: framework/premium/features/content-blocks/options/popup.php:375
 msgid "Close delay time (in seconds) after the form submit action is detected."
-msgstr ""
+msgstr "Время задержки закрытия (в секундах) после отправки формы."
 
 #: framework/features/header/items/account/options.php:1968
 msgid "Link Active"
@@ -2594,12 +2594,12 @@ msgstr "Чтобы в полной мере воспользоваться вс�
 #: framework/views/theme-mismatch.php:40
 #: static/js/notifications/VersionMismatchNotice.js:48
 msgid "We detected that you are using an outdated version of %s."
-msgstr ""
+msgstr "Система обнаружила, что вы используете устаревшую версию %s."
 
 #: framework/views/theme-mismatch.php:35
 #: static/js/notifications/VersionMismatchNotice.js:37
 msgid "Action required - please update %s to the latest version!"
-msgstr ""
+msgstr "Необходимо обновить %s до последней версии!"
 
 #: framework/helpers/exts-configs.php:370
 msgid "Show the remaining stock of a product to create a sense of urgency and encourage your visitors to make a purchase."
@@ -2792,7 +2792,7 @@ msgstr "Это профессиональное расширение"
 
 #: static/js/dashboard/NoTheme.js:84
 msgid "Install and activate the Blocksy theme"
-msgstr "Установите и активируйте тему Blocksy"
+msgstr "Установить и активиро��ать тему Blocksy"
 
 #: static/js/dashboard/NoTheme.js:49
 msgid "In order to take full advantage of all features it has to offer - please install and activate the Blocksy theme also."
@@ -2804,7 +2804,7 @@ msgstr "Blocksy Companion - это дополнительный плагин т�
 
 #: static/js/dashboard/NoTheme.js:36
 msgid "Action Required - Install Blocksy Theme"
-msgstr "Требуется действие - установите тему Blocksy"
+msgstr "Требуется действие – установите тему Blocksy"
 
 #: framework/premium/static/js/media-video/components/EditVideoMeta.js:44
 msgid "Video Options"
@@ -2832,7 +2832,7 @@ msgstr "Фильтры"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/index.js:10
 msgid "Shop Filters Controls"
-msgstr "Настройки фильтров товаров"
+msgstr "Опции фильтров товаров"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/active-filters/index.js:174
 msgid "Show or hide reset filter button."
@@ -3079,7 +3079,7 @@ msgstr "Этот сервис используется только в целя�
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:17
 msgid "Newsletter Controls"
-msgstr "Настройки рассылки"
+msgstr "Опции рассылки"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:233
 #: static/js/editor/blocks/search/Edit.js:281
@@ -3319,7 +3319,7 @@ msgstr "Новая таблица размеров"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:300
 msgid "Edit Size Guide"
-msgstr "Править таблицу р��змеров"
+msgstr "Править таблицу размеров"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/feature.php:299
 msgid "Add New Size Guide"
@@ -3327,7 +3327,7 @@ msgstr "Добавить таблицу размеров"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:33
 msgid "Reveal From"
-msgstr "Раскрывать из"
+msgstr "Раскрытие"
 
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:23
 msgid "Side Panel"
@@ -3349,7 +3349,7 @@ msgstr "Сообщение об успехе"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:147
 msgid "You can use dynamic code tags such as {price} inside this option."
-msgstr "Внутри этой опции можно использовать теги динамического кода, такие как {price}."
+msgstr "Внутри этой опции можно использовать теги динамичес��ого кода, такие как {price}."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:137,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:162
@@ -3845,7 +3845,7 @@ msgstr "Размер логотипа"
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:333,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:351
 msgid "Sticky Row"
-msgstr "Плавающий ряд"
+msgstr "Закреплённый ряд"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:459,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:503,
@@ -3959,7 +3959,7 @@ msgstr "Сначала новые"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:18
 msgid "Oldest First"
-msgstr "Сначала старые"
+msgstr "Сначала ста��ые"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:11
 msgid "Reviews Order"
@@ -4135,7 +4135,7 @@ msgstr "Дни после закрытия"
 
 #: framework/premium/features/content-blocks/options/popup.php:226
 msgid "Never relaunch"
-msgstr "Никогда не запускать повторно"
+msgstr "Никогда не запус��ать повторно"
 
 #: framework/premium/features/content-blocks/options/popup.php:220
 msgid "Relaunch Trigger"
@@ -4143,7 +4143,7 @@ msgstr "Триггер повторного запуска"
 
 #: framework/premium/features/content-blocks/options/popup.php:362
 msgid "Button class selector that will trigger popup to close."
-msgstr ""
+msgstr "Cелектор класса кнопки, закрывающей модальное окно."
 
 #: framework/premium/features/content-blocks/options/popup.php:358
 msgid "Button Class Selector"
@@ -4415,7 +4415,7 @@ msgstr "Отступ снизу "
 
 #: framework/premium/features/content-blocks/admin-ui.php:374
 msgid "On click to element"
-msgstr "При нажатии по элементу"
+msgstr "При н��жатии по элементу"
 
 #: framework/premium/features/content-blocks/admin-ui.php:270
 msgid "Maintenance"
@@ -4764,7 +4764,7 @@ msgstr "Сравнение товаров с помощью чёткой и ла
 
 #: framework/helpers/exts-configs.php:270
 msgid "Compare View"
-msgstr "Таблица сравнени��"
+msgstr "Таблица сравнения"
 
 #: framework/helpers/exts-configs.php:263
 msgid "A set of features that lets you create easily your dream products wishlists and share them with friends and family."
@@ -5102,7 +5102,7 @@ msgstr "Показать зацепы темы"
 
 #: framework/premium/features/content-blocks/admin-ui.php:698
 msgid "Hide Theme Hooks"
-msgstr "Спрятат�� зацепы темы"
+msgstr "Спрятать зацепы темы"
 
 #: framework/premium/features/content-blocks/admin-ui.php:642
 msgid "Show Hooks"
@@ -6524,7 +6524,7 @@ msgstr "API-ключ"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:388
 msgid "More information on how to generate an API key for EmailOctopus can be found %shere%s."
-msgstr ""
+msgstr "Информацию о том, как сгенерировать ключ API для EmailOctopus, можно найти %sздесь%s."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:266
 msgid "More information on how to generate an API key for Mailchimp can be found %shere%s."
@@ -7063,7 +7063,7 @@ msgstr "Добавить в корзину"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/table-no-results.php:6
 msgid "You don't have any products in your wishlist yet."
-msgstr ""
+msgstr "В вашем списке желаний ещё нет товаров."
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:227,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:240,
@@ -7531,7 +7531,7 @@ msgstr "Факс"
 #: framework/features/blocks/contact-info/options.php:272,
 #: framework/premium/features/premium-header/items/contacts/options.php:223
 msgid "Opening hours:"
-msgstr ""
+msgstr "Часы приёма:"
 
 #: framework/features/blocks/contact-info/options.php:265,
 #: framework/premium/features/premium-header/items/contacts/options.php:217
@@ -8859,7 +8859,7 @@ msgstr "Настройки пункта меню"
 
 #: framework/helpers/exts-configs.php:124
 msgid "Create beautiful personalised menus that set your website apart from the others. Add icons and badges to your entries and even add Content Blocks inside your dropdowns."
-msgstr "Создавайте красивые меню, которые будут отличать ваш сайт от прочих. Добавляйте значки и метки к пунктам меню или даже добавляйте блоки кон��ента в раскрывающиеся списки."
+msgstr "Создавайте красивые меню, которые будут отличать ваш сайт от прочих. Добавляйте значки и метки к пунктам меню или даже добавляйте блоки контента в раскрывающиеся списки."
 
 #: framework/helpers/exts-configs.php:109
 msgid "Serve your chosen Google Fonts from your own web server. This will increase the loading speed and makes sure your website complies with the privacy regulations."
@@ -9622,7 +9622,7 @@ msgstr "Обзор родительского товара"
 
 #: framework/extensions/product-reviews/extension.php:545
 msgid "Product Review"
-msgstr "Обзор товар��"
+msgstr "Обзор товара"
 
 #: framework/extensions/product-reviews/extension.php:480
 msgid "Overll Score Background"
@@ -10747,7 +10747,7 @@ msgstr "Динамический вывод CSS"
 
 #: framework/features/demo-install.php:98
 msgid "Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so."
-msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь возможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
+msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь в��зможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
 
 #: framework/features/conditions-manager.php:315
 msgid "Language"
@@ -10969,7 +10969,7 @@ msgstr "Facebook"
 
 #: framework/premium/extensions/shortcuts/views/bar.php:526
 msgid "Shortcuts bar"
-msgstr ""
+msgstr "Мобильная панель кнопок"
 
 #: framework/premium/extensions/local-google-fonts/extension.php:134
 msgid "Local Google Fonts"

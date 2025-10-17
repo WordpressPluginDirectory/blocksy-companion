@@ -38,7 +38,7 @@ class Plugin {
 
 	private $is_blocksy = '__NOT_SET__';
 	public $is_blocksy_data = null;
-	private $desired_blocksy_version = '2.0.96-beta1';
+	private $desired_blocksy_version = '2.1.16-dev1';
 
 	private $request_uri = '';
 
@@ -191,7 +191,12 @@ class Plugin {
 		// helper function.
 		//
 		// Mainly caused by TranslatePress Business SEO pack.
-		$this->request_uri = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '';
+		//
+		// Important -- should not be escaped in order to preserve the original
+		// value.
+		//
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		$this->request_uri = isset($_SERVER['REQUEST_URI']) ? wp_unslash($_SERVER['REQUEST_URI']) : '';
 
 		add_filter(
 			'extra_theme_headers',
@@ -266,7 +271,13 @@ class Plugin {
 					&&
 					! empty($_REQUEST['customize_theme'])
 				) {
-					$maybe_foreign_theme = sanitize_text_field(wp_unslash($_REQUEST['customize_theme']));
+					// It's important to not sanitize this value here. We need
+					// the exact theme slug to compare it with the current one.
+					//
+					// We will not persist this value anywhere, so it's safe.
+					//
+					// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+					$maybe_foreign_theme = wp_unslash($_REQUEST['customize_theme']);
 				}
 
 				if (
@@ -274,6 +285,12 @@ class Plugin {
 					&&
 					! empty($_REQUEST['wp_theme_preview'])
 				) {
+					// It's important to not sanitize this value here. We need
+					// the exact theme slug to compare it with the current one.
+					//
+					// We will not persist this value anywhere, so it's safe.
+					//
+					// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 					$maybe_foreign_theme = sanitize_text_field(wp_unslash($_REQUEST['wp_theme_preview']));
 				}
 

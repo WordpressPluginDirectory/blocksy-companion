@@ -6016,7 +6016,7 @@ msgstr "Оберіть мову"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:204
 msgid "Select taxonomy"
-msgstr "��брати таксономію"
+msgstr "Обрати таксономію"
 
 #: static/js/options/ConditionsManager/SingleCondition.js:112
 msgid "Select rule"
@@ -6032,7 +6032,7 @@ msgstr "Приєднуйтесь до Facebook спільноти"
 
 #: static/js/dashboard/helpers/SubmitSupport.js:33
 msgid "Submit a Support Ticket"
-msgstr "Відправте запит на підтримку"
+msgstr "Відправте зап��т на підтримку"
 
 #: static/js/dashboard/helpers/SubmitSupport.js:21
 msgid "Got a question or need help with the theme? You can always submit a support ticket or ask for help in our friendly Facebook community."

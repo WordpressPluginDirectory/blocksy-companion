@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:ignoreFile
+
 /** Display verbose errors */
 if (! defined('IMPORT_DEBUG')) {
 	define('IMPORT_DEBUG', false);
@@ -122,7 +124,8 @@ class Blocksy_WP_Import extends WP_Importer {
 	function dispatch() {
 		$this->header();
 
-		$step = empty( $_GET['step'] ) ? 0 : (int) $_GET['step'];
+		$raw_step = isset($_GET['step']) ? wp_unslash($_GET['step']) : '';
+		$step = $raw_step === '' ? 0 : intval($raw_step);
 		switch ( $step ) {
 			case 0:
 				$this->greet();
@@ -134,8 +137,10 @@ class Blocksy_WP_Import extends WP_Importer {
 				break;
 			case 2:
 				check_admin_referer( 'import-wordpress' );
-				$this->fetch_attachments = ( ! empty( $_POST['fetch_attachments'] ) && $this->allow_fetch_attachments() );
-				$this->id = (int) $_POST['import_id'];
+				$raw_fetch_attachments = isset($_POST['fetch_attachments']) ? wp_unslash($_POST['fetch_attachments']) : '';
+				$this->fetch_attachments = ($raw_fetch_attachments !== '' && $this->allow_fetch_attachments());
+				$raw_import_id = isset($_POST['import_id']) ? wp_unslash($_POST['import_id']) : 0;
+				$this->id = intval($raw_import_id);
 				$file = get_attached_file( $this->id );
 				set_time_limit(0);
 				$this->import( $file );
@@ -1547,4 +1552,3 @@ class Blocksy_WP_Import extends WP_Importer {
 }
 
 } // class_exists( 'WP_Importer' )
-

@@ -483,7 +483,6 @@ class TaxQuery {
 
 	private static function get_attributes($attributes) {
 		// migrate to native brands
-
 		if ($attributes['taxonomy'] === 'product_brands') {
 			$attributes['taxonomy'] = 'product_brand';
 		}

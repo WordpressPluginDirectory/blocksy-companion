@@ -9304,7 +9304,7 @@ msgstr "7 روز اخیر"
 
 #: framework/extensions/trending/customizer.php:388
 msgid "Last 24 Hours"
-msgstr "24 ساعت ��خیر"
+msgstr "24 ساعت اخیر"
 
 #: framework/extensions/trending/customizer.php:387
 msgid "All Time"

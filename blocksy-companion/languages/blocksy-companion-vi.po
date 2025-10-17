@@ -882,7 +882,7 @@ msgstr "%s %s Biểu mẫu danh sách chờ"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-dashboard.php:320
 msgid "You have been removed from the waitlist"
-msgstr "Bạn đã được xóa khỏi danh sách chờ"
+msgstr "Bạn đã ��ược xóa khỏi danh sách chờ"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-dashboard.php:294
 msgid "You have been added to the waitlist"
@@ -936,7 +936,7 @@ msgstr "Màu thông điệp"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:160
 msgid "Message Font"
-msgstr "Phông chữ thông điệp"
+msgstr "Ph��ng chữ thông điệp"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:108
 msgid "Choose where you want this Waitlist Form to be displayed."
@@ -984,7 +984,7 @@ msgstr "Chiều rộng tối đa của biểu mẫu"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:15
 msgid "Form Type"
-msgstr "Loại biểu mẫu"
+msgstr "Loại biểu m��u"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:541
 msgid "Automatically close the panel when a filter option is selected."
@@ -1071,7 +1071,7 @@ msgstr "Tổng giỏ hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:256
 msgid "Tax Amount"
-msgstr "Số tiền thu��"
+msgstr "Số tiền thu���"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:247
 msgid "Shipping Cost"
@@ -2489,7 +2489,7 @@ msgstr "Xin lỗi, bạn không có quyền hoàn thành việc cài đặt."
 #: framework/features/demo-install/content-installer.php:351,
 #: framework/features/demo-install/content-installer.php:346
 msgid "No pages to assign."
-msgstr "Không có trang để gán."
+msgstr "Không có trang đ��� gán."
 
 #: framework/features/demo-install/content-installer.php:195,
 #: framework/features/demo-install/content-installer.php:189
@@ -2737,7 +2737,7 @@ msgstr "Tài liệu hướng dẫn"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:68
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr "Nâng cấp lên gói đại lý và có quyền truy cập ngay vào mẫu web bắt đầu này cùng nhiều tính năng khác."
+msgstr "Nâng cấp lên gói đại lý và có quyền truy c��p ngay vào mẫu web bắt đầu này cùng nhiều tính năng khác."
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:61
 msgid "Upgrade to the business or agency plan and get instant access to this starter site and many other features."
@@ -2929,7 +2929,7 @@ msgstr "Hiển thị phần tổng quan đơn hàng."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:71
 msgid "Order Overview"
-msgstr "Tổng quan đơn h��ng"
+msgstr "Tổng quan đơn hàng"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:112
 msgid "Display customer details section."
@@ -3155,7 +3155,7 @@ msgstr "Bán kính viền đầu vào"
 #: framework/features/blocks/search/options.php:173,
 #: framework/premium/features/premium-header/items/search-input/options.php:163
 msgid "Filter Visibility"
-msgstr "Hi��n thị bộ lọc"
+msgstr "Hiển thị bộ lọc"
 
 #: framework/features/blocks/search/options.php:155,
 #: framework/premium/features/premium-header/items/search-input/options.php:151
@@ -4808,7 +4808,7 @@ msgstr "Tùy chỉnh phân loại"
 
 #: framework/helpers/exts-configs.php:157
 msgid "Let your guests easily filter the posts by their category or tags taxonomy terms, instantly drilling down the listings."
-msgstr "Cho phép khách của bạn dễ dàng lọc các bài viết theo danh mục hoặc từ kh��a của họ, ngay lập tức lọc thông tin."
+msgstr "Cho phép khách của bạn dễ dàng lọc các bài viết theo danh mục hoặc từ khóa của họ, ngay lập tức lọc thông tin."
 
 #: framework/helpers/exts-configs.php:150
 msgid "Integrates custom fields solutions in the meta layers of a post and presents additional information."
@@ -4985,7 +4985,7 @@ msgstr "Card top"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:347
 msgid "Related posts top"
-msgstr "Bài viết liên quan top"
+msgstr "Bài vi���t liên quan top"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:341,
 #: framework/premium/features/content-blocks/hooks-manager.php:348,
@@ -5082,7 +5082,7 @@ msgstr "Tệp lệnh đầu trang"
 
 #: framework/features/header/modal/register.php:76
 msgid "A link to set a new password will be sent to your email address."
-msgstr "Một liên kết để đặt mật khẩu m���i sẽ được gửi đến địa chỉ email của bạn."
+msgstr "Một liên kết để đặt mật khẩu mới sẽ được gửi đến địa chỉ email của bạn."
 
 #: framework/premium/features/content-blocks/admin-ui.php:708
 msgid "Show WooCommerce Hooks"

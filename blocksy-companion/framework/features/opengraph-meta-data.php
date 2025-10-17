@@ -208,6 +208,7 @@ class OpenGraphMetaData {
 			$output .= $this->get_open_graph_tag('name', 'twitter:creator', trim($twitter_handle));
 		}
 
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo $output;
 	}
 
