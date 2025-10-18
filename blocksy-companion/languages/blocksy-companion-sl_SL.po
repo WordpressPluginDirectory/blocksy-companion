@@ -4862,7 +4862,7 @@ msgstr "Nadzorna plošča"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:31
 msgid "Unfortunately, your hosting configuration doesn't meet the minimum requirements for importing a starter site."
-msgstr "Va��a strežniška konfiguracija ne izpolnjuje minimalnih zahtev za uvoz začetne strani."
+msgstr "Vaša strežniška konfiguracija ne izpolnjuje minimalnih zahtev za uvoz začetne strani."
 
 #: static/js/dashboard/screens/DemoInstall/components/Error.js:25
 msgid "Can't Import Starter Site"

@@ -4676,7 +4676,7 @@ msgid "Advanced Reviews"
 msgstr "Avancerede anmeldelser"
 
 #: framework/helpers/exts-configs.php:314
-msgid "Create a customized order ��Thank You” page for your customers, giving them a personalized experience."
+msgid "Create a customized order “Thank You” page for your customers, giving them a personalized experience."
 msgstr "Opret en tilpasset ordrebekræftelsesside, der giver dine kunder en personlig oplevelse."
 
 #: framework/helpers/exts-configs.php:313

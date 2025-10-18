@@ -9337,7 +9337,7 @@ msgstr "Taksonomie"
 #: framework/extensions/trending/customizer.php:324,
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:42
 msgid "Source"
-msgstr "Źródło"
+msgstr "��ródło"
 
 #: framework/extensions/trending/customizer.php:187
 msgid "Module Title Tag"

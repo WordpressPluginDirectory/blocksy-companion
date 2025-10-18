@@ -5517,7 +5517,7 @@ msgstr "Adobe Fonts"
 #: framework/extensions/newsletter-subscribe/providers/mailerlite-new.php:123,
 #: framework/extensions/newsletter-subscribe/providers/mailpoet.php:90
 msgid "Thank you for subscribing to our newsletter!"
-msgstr "Vă mulțumim c�� v-ați abonat la newsletter-ul nostru!"
+msgstr "Vă mulțumim că v-ați abonat la newsletter-ul nostru!"
 
 #: framework/premium/features/premium-header.php:59,
 #: framework/premium/features/premium-header/items/mobile-menu-secondary/config.php:4

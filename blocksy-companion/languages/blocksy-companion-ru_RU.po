@@ -146,7 +146,7 @@ msgstr "Вложенные блоки будут занимать всю шир�
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:153
 msgid "Nested blocks use content width with options for full and wide widths."
-msgstr "Вложенные блоки используют ширину содержимого с возможностью выбора полной ширины и широкого формата."
+msgstr "Вложенные блоки использу��т ширину содержимого с возможностью выбора полной ширины и широкого формата."
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:143
 msgid "Inner blocks use content width"
@@ -252,7 +252,7 @@ msgstr "Показать больше образцов"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:222
 msgid "Retry Send"
-msgstr "Повторите отправку"
+msgstr "По��торите отправку"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:176
 msgid "Pending"
@@ -375,7 +375,7 @@ msgstr "Ограничение количество образцов, отобр
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:569
 msgid "Archive Limit"
-msgstr "Лимит архи��а"
+msgstr "Лимит архива"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:561
 msgid "Attribute Terms Limit"
@@ -468,7 +468,7 @@ msgstr "Дней до повторного запуска модального �
 
 #: framework/premium/features/content-blocks/options/popup.php:245
 msgid "Number of days before the popup will automatically relaunch again."
-msgstr "Количество дней до того, как модальное окно будет автоматически запущено снова."
+msgstr "��оличество дней до того, как модальное окно будет автоматически запущено снова."
 
 #: framework/premium/features/content-blocks/options/popup.php:228
 msgid "Custom interval"
@@ -1762,7 +1762,7 @@ msgstr "Не удалось получить список стартовых с�
 
 #: static/js/dashboard/screens/DemoInstall.js:183
 msgid "Your site is misconfigured and AJAX requests are not reaching your backend. Please click %shere%s to find the common causes and possible solutions to this.<br> Error code - %s"
-msgstr "Ваш сайт неправильно настроен, и AJAX-запросы не доходят до вашего сервера. Нажмите %sсюда%s, чтобы узнать о наиболее распространенных причинах и ��озможных решениях этой проблемы. <br>Код ошибки - %s"
+msgstr "Ваш сайт неправильно настроен, и AJAX-запросы не доходят до вашего сервера. Нажмите %sсюда%s, чтобы узнать о наиболее распространенных причинах и возможных решениях этой проблемы. <br>Код ошибки - %s"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/TaxonomySelector.js:49
 msgid "Exclude Speciffic Items"
@@ -2484,7 +2484,7 @@ msgstr "У вас нет прав на установку параметров."
 
 #: framework/features/demo-install/install-finish.php:23
 msgid "Sorry, you don't have permission to finish the installation."
-msgstr "У вас нет разрешения на завершение установки."
+msgstr "У вас нет разрешения н�� завершение установки."
 
 #: framework/features/demo-install/content-installer.php:351,
 #: framework/features/demo-install/content-installer.php:346
@@ -2589,7 +2589,7 @@ msgstr "Сделать поле \"Имя\" обязательным для за�
 
 #: static/js/notifications/VersionMismatchNotice.js:59
 msgid "In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme."
-msgstr "Чтобы в полной мере воспользоваться всеми возможностями, установите и активируйте также тему Blocksy."
+msgstr "Чтобы в полной мере воспользоваться всеми возможностями, ус��ановите и активируйте также тему Blocksy."
 
 #: framework/views/theme-mismatch.php:40
 #: static/js/notifications/VersionMismatchNotice.js:48
@@ -2792,7 +2792,7 @@ msgstr "Это профессиональное расширение"
 
 #: static/js/dashboard/NoTheme.js:84
 msgid "Install and activate the Blocksy theme"
-msgstr "Установить и активиро��ать тему Blocksy"
+msgstr "Установить и активировать тему Blocksy"
 
 #: static/js/dashboard/NoTheme.js:49
 msgid "In order to take full advantage of all features it has to offer - please install and activate the Blocksy theme also."
@@ -3349,7 +3349,7 @@ msgstr "Сообщение об успехе"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:147
 msgid "You can use dynamic code tags such as {price} inside this option."
-msgstr "Внутри этой опции можно использовать теги динамичес��ого кода, такие как {price}."
+msgstr "Внутри этой опции можно использовать теги динамического кода, такие как {price}."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:137,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:162
@@ -3738,7 +3738,7 @@ msgstr "Добавьте условие (или несколько) для от�
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:534
 msgid "Compare Bar Display Conditions"
-msgstr "Условия отображения панели сравнения"
+msgstr "Усл��вия отображения панели сравнения"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:479
 msgid "Button Icon"
@@ -3825,7 +3825,7 @@ msgstr "Вкладка бренда товара"
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:530,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:581
 msgid "Logos Gap"
-msgstr "Интервал логотипов"
+msgstr "Инт��рвал логотипов"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:462,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:518,
@@ -3959,7 +3959,7 @@ msgstr "Сначала новые"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:18
 msgid "Oldest First"
-msgstr "Сначала ста��ые"
+msgstr "Сначала старые"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:11
 msgid "Reviews Order"
@@ -4135,7 +4135,7 @@ msgstr "Дни после закрытия"
 
 #: framework/premium/features/content-blocks/options/popup.php:226
 msgid "Never relaunch"
-msgstr "Никогда не запус��ать повторно"
+msgstr "Никогда не запускать повторно"
 
 #: framework/premium/features/content-blocks/options/popup.php:220
 msgid "Relaunch Trigger"
@@ -4415,7 +4415,7 @@ msgstr "Отступ снизу "
 
 #: framework/premium/features/content-blocks/admin-ui.php:374
 msgid "On click to element"
-msgstr "При н��жатии по элементу"
+msgstr "При нажатии по элементу"
 
 #: framework/premium/features/content-blocks/admin-ui.php:270
 msgid "Maintenance"
@@ -10747,7 +10747,7 @@ msgstr "Динамический вывод CSS"
 
 #: framework/features/demo-install.php:98
 msgid "Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so."
-msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь в��зможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
+msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь ��озможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
 
 #: framework/features/conditions-manager.php:315
 msgid "Language"

@@ -9536,7 +9536,7 @@ msgstr "%s Налаштування"
 
 #: framework/extensions/product-reviews/extension.php:599
 msgid "New Category Name"
-msgstr "Назва нової категорії"
+msgstr "Назва нової катего��ії"
 
 #: framework/extensions/product-reviews/extension.php:598
 msgid "Add New Category"
