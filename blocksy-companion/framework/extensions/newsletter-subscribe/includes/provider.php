@@ -57,6 +57,10 @@ class Provider {
 			return new EmailOctopusProvider();
 		}
 
+		if ($provider === 'klaviyo') {
+			return new KlaviyoProvider();
+		}
+
 		return new MailerliteClassicProvider();
 	}
 

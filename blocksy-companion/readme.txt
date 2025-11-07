@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.1.17
+Stable tag: 2.1.19
 
 The official companion plugin for Blocksy theme, packed with starter sites, extra features, and integrations.
 
@@ -67,6 +67,15 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.1.19: 2025-11-06
+- Improvement: Account modal - better integration with JetPack plugin
+- Improvement: Better detection for Breakdance "theme disabler" option
+- Improvement: Demo install - correctly reset the install process after closing the demo import modal
+- Improvement: Make sure the SVG upload through customizer works properly
+
+2.1.18: 2025-10-30
+- Fix: Site Icon feature does not work with SVGs when Companion plugin is active
+
 2.1.17: 2025-10-17
 - Improvement: General fixes and improvements
 

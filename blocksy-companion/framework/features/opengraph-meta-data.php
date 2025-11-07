@@ -37,7 +37,7 @@ class OpenGraphMetaData {
 							],
 
 							'opengraph_twitter_username' => [
-								'label' => __( 'Twitter Username', 'blocksy-companion' ),
+								'label' => __( 'X (Twitter) Username', 'blocksy-companion' ),
 								'type' => 'text',
 								'design' => 'inline',
 								'value' => ''

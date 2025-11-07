@@ -387,6 +387,20 @@ class Plugin {
 				}
 			}
 
+			if (is_plugin_active('breakdance/plugin.php')) {
+				$is_theme_disabled = (string) json_decode(
+					get_option('breakdance_is_theme_disabled', 'false'),
+					true
+				);
+
+				$is_theme_disabled = $is_theme_disabled === 'yes' || boolval($_GET['builder_preview'] ?? false);
+
+				if ($is_theme_disabled) {
+					$is_correct_theme = false;
+					$is_correct_version = false;
+				}
+			}
+
 			$this->is_blocksy_data = [
 				'is_correct_theme' => (
 					$is_correct_theme

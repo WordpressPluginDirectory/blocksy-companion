@@ -752,7 +752,7 @@ msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:83
 msgid "Great! You have been added to the waitlist for this product. Please check your inbox and confirm the subscription to this waitlist."
-msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản phẩm này. Vui lòng kiểm tra hộp thư đến và xác nhận đăng ký danh sách chờ này."
+msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản phẩm này. Vui lòng kiểm tra h���p thư đến và xác nhận đăng ký danh sách chờ này."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:75
 msgid "No worries! Please enter your e-mail address and we will promptly notify you as soon as the item is back in stock."
@@ -797,7 +797,7 @@ msgstr "Nhận thông báo khi {product_title} có hàng trở lại"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/confirm-subscription.php:10
 msgid "Confirm waitlist subscription"
-msgstr "Xác nhận đăng ký danh sách chờ"
+msgstr "Xác nh���n đăng ký danh sách chờ"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/confirm-subscription.php:9
 msgid "This email is sent when a user subscribes to a product stock alert and should confirm their subscription"
@@ -2929,7 +2929,7 @@ msgstr "Hiển thị phần tổng quan đơn hàng."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:71
 msgid "Order Overview"
-msgstr "Tổng quan đơn hàng"
+msgstr "Tổng quan đơn h��ng"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/index.js:112
 msgid "Display customer details section."
@@ -3155,7 +3155,7 @@ msgstr "Bán kính viền đầu vào"
 #: framework/features/blocks/search/options.php:173,
 #: framework/premium/features/premium-header/items/search-input/options.php:163
 msgid "Filter Visibility"
-msgstr "Hiển thị bộ lọc"
+msgstr "Hi��n thị bộ lọc"
 
 #: framework/features/blocks/search/options.php:155,
 #: framework/premium/features/premium-header/items/search-input/options.php:151
@@ -3436,7 +3436,7 @@ msgstr "Nút xem giỏ hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:219
 msgid "Add To Cart Button"
-msgstr "N��t thêm vào giỏ hàng"
+msgstr "Nút thêm vào giỏ hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:232,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:176,
@@ -4711,7 +4711,7 @@ msgstr "Quản lý tốt hơn các sản phẩm liên kết với một số tù
 
 #: framework/helpers/exts-configs.php:361
 msgid "Affiliate Product Links"
-msgstr "Link sản phẩm tiếp th��� liên kết"
+msgstr "Link sản phẩm tiếp thị liên kết"
 
 #: framework/helpers/exts-configs.php:287
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."

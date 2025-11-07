@@ -53,6 +53,14 @@ if (function_exists('is_account_page') && is_account_page()) {
 		</span>
 	</p>
 
+	<?php
+		remove_action("login_form", "wp_login_attempt_focus_start");
+
+		// login_form action hook should be right after password field, just like
+		// in the wp-login.php core file.
+		do_action('login_form')
+	?>
+
 	<p class="login-remember col-2">
 		<span>
 			<input name="rememberme" type="checkbox" id="rememberme" class="ct-checkbox" value="forever">
@@ -75,9 +83,9 @@ if (function_exists('is_account_page') && is_account_page()) {
 			}
 		}
 
-		remove_action("login_form", "wp_login_attempt_focus_start");
+		// remove_action("login_form", "wp_login_attempt_focus_start");
 
-		do_action('login_form')
+		// do_action('login_form')
 	?>
 
 	<p class="login-submit">

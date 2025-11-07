@@ -29,24 +29,6 @@ class SvgHandling {
 		);
 
 		add_filter(
-			'wp_check_filetype_and_ext',
-			function ($data = null, $file = null, $filename = null, $mimes = null) {
-				if (strpos($filename, '.svg') !== false) {
-					$data['type'] = 'image/svg+xml';
-					$data['ext'] = 'svg';
-				}
-
-				return $data;
-			},
-			75, 4
-		);
-
-		add_filter('upload_mimes', function ($mimes) {
-			$mimes['svg'] = 'image/svg+xml';
-			return $mimes;
-		});
-
-		add_filter(
 			'wp_get_attachment_metadata',
 			[$this, 'filter_get_attachment_metadata'],
 			10, 2
@@ -84,6 +66,39 @@ class SvgHandling {
 			},
 			10, 4
 		);
+
+		$should_add_filter = true;
+
+		// Avoid adding the filter during image cropping to prevent issues with SVGs.
+		// WP can't locate editor for SVGs so it throws an error.
+		if (
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			isset($_REQUEST['action'])
+			&&
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			$_REQUEST['action'] === 'crop-image'
+		) {
+			$should_add_filter = false;
+		}
+
+		if ($should_add_filter) {
+			add_filter('upload_mimes', [$this, 'upload_mimes']);
+			add_filter('wp_check_filetype_and_ext', [$this, 'wp_check_filetype_and_ext'], 75, 4);
+		}
+	}
+
+	public function wp_check_filetype_and_ext($data = null, $file = null, $filename = null, $mimes = null) {
+		if (strpos($filename, '.svg') !== false) {
+			$data['type'] = 'image/svg+xml';
+			$data['ext'] = 'svg';
+		}
+
+		return $data;
+	}
+
+	public function upload_mimes($mimes) {
+		$mimes['svg'] = 'image/svg+xml';
+		return $mimes;
 	}
 
 	public function filter_get_attachment_metadata($data, $attachment_id) {

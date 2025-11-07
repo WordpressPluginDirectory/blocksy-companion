@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-17 16:02+0000\n"
+"POT-Creation-Date: 2025-11-06 17:39+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -349,7 +349,7 @@ msgid "Facebook App ID"
 msgstr ""
 
 #: framework/features/opengraph-meta-data.php:40
-msgid "Twitter Username"
+msgid "X (Twitter) Username"
 msgstr ""
 
 #. translators: This is a brand name. Preferably to not be translated
@@ -817,8 +817,8 @@ msgstr ""
 
 #: framework/extensions/cookies-consent/config.php:6
 msgid ""
-"Display a cookie acceptance box in order to comply with the privacy "
-"regulations in your country."
+"Display a simple consent banner to inform users about the use of cookies on "
+"the website."
 msgstr ""
 
 #: framework/extensions/cookies-consent/customizer.php:15,
@@ -3241,6 +3241,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/providers/demo.php:40,
 #: framework/extensions/newsletter-subscribe/providers/emailoctopus.php:107,
 #: framework/extensions/newsletter-subscribe/providers/fluent-crm.php:87,
+#: framework/extensions/newsletter-subscribe/providers/klaviyo.php:116,
 #: framework/extensions/newsletter-subscribe/providers/mailchimp.php:194,
 #: framework/extensions/newsletter-subscribe/providers/mailerlite-classic.php:109,
 #: framework/extensions/newsletter-subscribe/providers/mailerlite-new.php:133,
@@ -4122,15 +4123,15 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: framework/features/header/modal/login.php:59
+#: framework/features/header/modal/login.php:67
 msgid "Remember Me"
 msgstr ""
 
-#: framework/features/header/modal/login.php:63
+#: framework/features/header/modal/login.php:71
 msgid "Forgot Password?"
 msgstr ""
 
-#: framework/features/header/modal/login.php:85
+#: framework/features/header/modal/login.php:93
 msgid "Log In"
 msgstr ""
 
@@ -4470,8 +4471,8 @@ msgstr ""
 #: framework/premium/extensions/shortcuts/views/bar.php:53,
 #: framework/features/header/items/account/views/login.php:589,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:4,
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/feature.php:197,
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/feature.php:201,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/feature.php:198,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/feature.php:202,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-account.php:69
 msgid "Waitlist"
 msgstr ""
@@ -4658,7 +4659,7 @@ msgstr ""
 msgid "Quick view summary after"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/extension.php:402,
+#: framework/premium/extensions/woocommerce-extra/extension.php:403,
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:66,
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/main.php:80
 msgid "Cart Page"
@@ -5728,7 +5729,8 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:339,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:424,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/includes/swatch-element-render.php:47,
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:57
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:19,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:64
 #: static/js/editor/blocks/dynamic-data/preview-parts/woo/StockPreview.js:7
 msgid "Out of Stock"
 msgstr ""
@@ -7027,8 +7029,8 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:59,
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:192,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:313,
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:249,
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:289,
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:251,
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:246,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-back-in-stock.php:57,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-confirm-subscription.php:38,
@@ -7113,38 +7115,38 @@ msgstr ""
 msgid "Close Modal"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:389
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:402
 msgid "Star"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:389
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:402
 msgid "Stars"
 msgstr ""
 
 #. translators: %s is the percentage of customers
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:456
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:469
 msgid "%s%% of customers recommend this product."
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:582
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:595
 msgid "Upvote"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:596
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:609
 msgid "Downvote"
 msgstr ""
 
 #. translators: %1$s is the number of helpful votes, %2$s is the total votes
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:617
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:630
 msgid "%1$s of %2$s found this review helpful"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:685,
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:698,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:44
 msgid "Review Title"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:713
+#: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:726
 msgid "Upload Image (Optional)"
 msgstr ""
 
@@ -7336,11 +7338,14 @@ msgstr ""
 msgid "Quantity Auto Update"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/feature.php:249,
-#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:40
+#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/cart-reservation-cleaner.php:16
+msgid "Every 12 Hours"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/feature.php:417
 msgid ""
-"<p><strong>🔥 Hurry up! Your selected items are in high demand!</"
-"strong><br>Your cart will be reserved for {time} minutes.</p>"
+"<p><strong>🔥 Hurry up! Your selected items are reserved for {time} minutes."
+"</strong></p>"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:15,
@@ -7365,6 +7370,12 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:38,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:27
 msgid "Message"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:40
+msgid ""
+"<p><strong>🔥 Hurry up! Your selected items are in high demand!</"
+"strong><br>Your cart will be reserved for {time} minutes.</p>"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:48
@@ -8638,7 +8649,7 @@ msgstr ""
 msgid "Checkout Page"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/compare/views/bar.php:105,
+#: framework/premium/extensions/woocommerce-extra/features/compare/views/bar.php:111,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:170,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:173,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/columns/product-remove-button.php:13
@@ -8675,7 +8686,7 @@ msgstr ""
 msgid "Minimum:"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:137
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/price.php:138
 msgid "Maximum:"
 msgstr ""
 
@@ -9190,31 +9201,36 @@ msgid ""
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:168,
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:86
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:45,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:93
 msgid "Unsubscribe"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:65
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:17,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table.php:38
+#: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:148
+msgid "Stock Status"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:27,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table.php:42
+msgid "Confirmed"
+msgstr ""
+
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:29,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:72
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:331
 msgid "Yes"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:65
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/product-mobile-actions.php:29,
+#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table-single-product-row.php:72
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:324
 msgid "No"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table.php:21
 msgid "You don't have any products in your waitlist yet."
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table.php:38
-#: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:148
-msgid "Stock Status"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/table.php:42
-msgid "Confirmed"
 msgstr ""
 
 #. translators: %s is the user name
@@ -9310,7 +9326,7 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker.js:14
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:72
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:448
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:466
 #: static/js/dashboard/NoTheme.js:83
 #: static/js/dashboard/screens/SiteExport.js:314
 #: static/js/notifications/VersionMismatchNotice.js:110
@@ -9385,45 +9401,51 @@ msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:316
 msgid ""
-"More information on how to generate an API key for Brevo can be found "
+"More information on how to generate an API key for Klaviyo can be found "
 "%shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:334
 msgid ""
-"More information on how to generate an API key for Kit (ConvertKit) can be "
-"found %shere%s."
+"More information on how to generate an API key for Brevo can be found "
+"%shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:352
 msgid ""
-"More information on how to generate an API key for ActiveCampaign can be "
+"More information on how to generate an API key for Kit (ConvertKit) can be "
 "found %shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:370
 msgid ""
-"More information on how to generate an API key for Campaign Monitor can be "
+"More information on how to generate an API key for ActiveCampaign can be "
 "found %shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:388
 msgid ""
-"More information on how to generate an API key for EmailOctopus can be found "
-"%shere%s."
+"More information on how to generate an API key for Campaign Monitor can be "
+"found %shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:406
 msgid ""
-"More information on how to create a list in MailPoet can be found %shere%s."
+"More information on how to generate an API key for EmailOctopus can be found "
+"%shere%s."
 msgstr ""
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:424
 msgid ""
+"More information on how to create a list in MailPoet can be found %shere%s."
+msgstr ""
+
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:442
+msgid ""
 "More information on how to create a list in fluentcrm can be found %shere%s."
 msgstr ""
 
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:449
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:467
 #: framework/extensions/product-reviews/static/js/ProductReviews.js:96
 #: framework/premium/extensions/mega-menu/static/js/SettingsManager.js:291
 #: framework/premium/extensions/sidebars/static/js/SettingsManager.js:110
@@ -10513,15 +10535,15 @@ msgstr ""
 msgid "Failed to retrieve starter sites list.<br> Error code - %s"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:316
+#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:317
 msgid "Back"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:356
+#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:357
 msgid "Install"
 msgstr ""
 
-#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:357
+#: static/js/dashboard/screens/DemoInstall/DemoToInstall.js:358
 msgid "Next"
 msgstr ""
 

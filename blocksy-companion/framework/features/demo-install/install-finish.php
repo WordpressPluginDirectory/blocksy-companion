@@ -188,7 +188,7 @@ class DemoInstallFinalActions {
 
 		$escaped_from = esc_sql($from_menu_link);
 		$escaped_to = esc_sql($to_menu_link);
-
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 		$wpdb->query(
 			$wpdb->prepare(
 				"UPDATE {$wpdb->postmeta}

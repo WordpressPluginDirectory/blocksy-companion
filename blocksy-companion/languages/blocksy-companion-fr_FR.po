@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-24 17:23:07+0000\n"
+"PO-Revision-Date: 2025-11-03 23:01:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,119 +14,119 @@ msgstr ""
 #: static/js/editor/blocks/dynamic-data/components/utils.js:504
 msgctxt "Indicates this palette is created by the user."
 msgid "Custom"
-msgstr ""
+msgstr "Personnalisée"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:495
 msgctxt "Indicates this palette comes from WordPress."
 msgid "Default"
-msgstr ""
+msgstr "Défaut"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:482
 msgctxt "Indicates this palette comes from the theme."
 msgid "Theme"
-msgstr ""
+msgstr "Thème"
 
 #: static/js/notifications/VersionMismatchNotice.js:112
 msgid "Update %s Now"
-msgstr ""
+msgstr "Mettre %s à jour maintenant"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:311
 msgid "Hide Empty Taxonomies"
-msgstr ""
+msgstr "Cacher les taxonomies vides"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:293
 msgid "Taxonomies Visibility"
-msgstr ""
+msgstr "Visibilité des taxonomies"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:277
 msgid "Relevant Taxonomies"
-msgstr ""
+msgstr "Taxonomies pertinentes"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:269
 msgid "Only Parent Taxonomies"
-msgstr ""
+msgstr "Uniquement la taxonomie parent"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:261
 msgid "All Taxonomies"
-msgstr ""
+msgstr "Toutes les taxonomies"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:253
 msgid "Level"
-msgstr ""
+msgstr "Niveau"
 
 #: static/js/editor/blocks/query/Edit.js:231
 #: static/js/editor/blocks/tax-query/Edit.js:216
 msgid "Autoplay Speed"
-msgstr ""
+msgstr "Vitesse de lecture automatique"
 
 #: static/js/editor/blocks/query/Edit.js:205
 #: static/js/editor/blocks/tax-query/Edit.js:190
 msgid "Arrows"
-msgstr ""
+msgstr "Flèches"
 
 #: static/js/editor/blocks/query/Edit.js:192
 #: static/js/editor/blocks/tax-query/Edit.js:177
 msgid "Slideshow"
-msgstr ""
+msgstr "Diaporama"
 
 #: static/js/editor/blocks/post-template/Edit.js:359
 #: static/js/editor/blocks/tax-template/Edit.js:296
 msgid "Desktop Columns"
-msgstr ""
+msgstr "Colonnes sur ordinateur"
 
 #: static/js/editor/blocks/post-template/Edit.js:292
 #: static/js/editor/blocks/query/Preview.js:126
 #: static/js/editor/blocks/tax-template/Edit.js:233
 msgid "No results found."
-msgstr ""
+msgstr "Aucun résultat trouvé."
 
 #: static/js/editor/blocks/dynamic-data/index.js:81
 msgid "Dynamic Attributes"
-msgstr ""
+msgstr "Attributs dynamiques"
 
 #: static/js/editor/blocks/dynamic-data/index.js:121
 msgid "Dynamic Archive Description"
-msgstr ""
+msgstr "Description dynamique de l’archive"
 
 #: static/js/editor/blocks/dynamic-data/index.js:117
 msgid "Dynamic Archive Title"
-msgstr ""
+msgstr "Titre dynamique de l’archive"
 
 #: static/js/editor/blocks/dynamic-data/index.js:113
 msgid "Dynamic Archive Image"
-msgstr ""
+msgstr "Image dynamique de l’archive"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:750
 msgid "Overlay opacity"
-msgstr ""
+msgstr "Opacité de la superposition"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:401
 msgid "View Type"
-msgstr ""
+msgstr "Type d’affichage"
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:285
 msgid "Overlay"
-msgstr ""
+msgstr "Superposition"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:54
 msgid "Block Settings"
-msgstr ""
+msgstr "Réglages du bloc"
 
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:218
 msgid "Minimum height"
-msgstr ""
+msgstr "Hauteur minimale"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:286
 msgid "Repeated background"
-msgstr ""
+msgstr "Arrière-plan répété"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:269
 msgid "Fixed background"
-msgstr ""
+msgstr "Arrière-plan épinglé"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:236
 msgid "Focal point"
-msgstr ""
+msgstr "Point focal"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:206
 msgid "Customize the width for all elements that are assigned to the center or wide columns."
@@ -134,11 +134,11 @@ msgstr ""
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:186
 msgid "Wide width"
-msgstr ""
+msgstr "Grande largeur"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:165
 msgid "Content width"
-msgstr ""
+msgstr "Largeur du contenu"
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:156
 msgid "Nested blocks will fill the width of this container. Toggle to constrain."
@@ -154,39 +154,39 @@ msgstr ""
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:129
 msgid "Layout"
-msgstr ""
+msgstr "Mise en page"
 
 #: static/js/editor/blocks/dynamic-data/components/AlignmentControls.js:126
 msgid "Change content position"
-msgstr ""
+msgstr "Modifier la position du contenu"
 
 #: static/js/editor/blocks/dynamic-data/Preview.js:57
 msgid "Field not found"
-msgstr ""
+msgstr "Champ non trouvé"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/RenderOptions.js:35
 msgid "Show %s Image"
-msgstr ""
+msgstr "Afficher %s image"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/RenderOptions.js:139
 msgid "Max width"
-msgstr ""
+msgstr "Largeur max"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:27
 msgid "Filter by products status."
-msgstr ""
+msgstr "Filtrer par états des produits."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:26
 msgid "Filter by Status Controls"
-msgstr ""
+msgstr "Filtrer par contrôles des états"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:178
 msgid "Filter by Status"
-msgstr ""
+msgstr "Filtrer par états"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:142
 msgid "Show Counters"
-msgstr ""
+msgstr "Afficher les compteurs"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:60
 msgid "Show only products that match the selected rating exactly."
@@ -206,7 +206,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/index.js:108
 msgid "Filter by Rating"
-msgstr ""
+msgstr "Filtrer par évaluation"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:380
 msgid "Modern Font Stacks"
@@ -223,7 +223,7 @@ msgstr ""
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:142
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:330
 msgid "Add Fonts"
-msgstr ""
+msgstr "Ajouter des polices"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:123
 msgid "Modern Font Stack"
@@ -269,11 +269,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:147
 msgid "Featured"
-msgstr ""
+msgstr "En vedette"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:146
 msgid "On sale"
-msgstr ""
+msgstr "En promotion"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:107
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:25
@@ -335,11 +335,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:203
 msgid "Add to Cart Button"
-msgstr ""
+msgstr "Bouton ajouter au panier"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/options/generic.php:35
 msgid "Block"
-msgstr ""
+msgstr "Bloc"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:619
 msgid "Crossed"
@@ -347,7 +347,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:618
 msgid "Faded"
-msgstr ""
+msgstr "FOndu"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:611
 msgid "Out of Stock Swatch Type"
@@ -359,7 +359,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:590
 msgid "Expand Button"
-msgstr ""
+msgstr "Bouton déplier"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:586
 msgid "Limit the number of swatches shown on single product pages."
@@ -407,7 +407,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:254
 msgid "Panel Visibility"
-msgstr ""
+msgstr "Visibilité du panneau"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-cart/feature.php:162
 msgid "Shopping cart panel"
@@ -416,7 +416,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:217,
 #: framework/premium/extensions/woocommerce-extra/features/compare/views/table.php:341
 msgid "Add to Cart"
-msgstr ""
+msgstr "Ajouter au panier"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/feature.php:279
 msgid "Compare products modal"
@@ -424,7 +424,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/options/popup.php:647
 msgid "Close Button Position"
-msgstr ""
+msgstr "Position du bouton fermer"
 
 #: framework/premium/features/content-blocks/options/popup.php:572
 msgid "Lock the page scroll while the popup is triggered/oppened."
@@ -436,7 +436,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/options/popup.php:368
 msgid "Delay"
-msgstr ""
+msgstr "Délai"
 
 #: framework/premium/features/content-blocks/options/popup.php:348
 msgid "Form Submit"
@@ -493,7 +493,7 @@ msgstr ""
 #: framework/premium/features/content-blocks/options/hook.php:158
 #: framework/premium/static/js/options/MultipleLocationsSelect.js:150
 msgid "Repeat"
-msgstr ""
+msgstr "Répéter"
 
 #: framework/premium/features/content-blocks/options/hook.php:150
 #: framework/premium/static/js/options/MultipleLocationsSelect.js:137
@@ -506,7 +506,7 @@ msgstr ""
 
 #: framework/features/header/items/account/options.php:785
 msgid "Page "
-msgstr ""
+msgstr "Page "
 
 #: framework/features/header/items/account/options.php:757
 msgid "Top Offset (Sticky State)"
@@ -514,14 +514,14 @@ msgstr ""
 
 #: framework/features/header/items/account/options.php:662
 msgid "Link to Page"
-msgstr ""
+msgstr "Lien vers la page"
 
 #: framework/features/header/items/account/options.php:532,
 #: framework/features/header/items/account/options.php:985,
 #: framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/options.php:83,
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/options.php:92
 msgid "Icon Visibility"
-msgstr ""
+msgstr "Visibilité de l’icône"
 
 #: framework/features/header/items/account/options.php:298,
 #: framework/features/header/items/account/options.php:299
@@ -542,7 +542,7 @@ msgstr ""
 
 #: framework/features/header/items/account/options.php:15
 msgid "User Name"
-msgstr ""
+msgstr "Nom de l’utilisateur/utilisatrice"
 
 #: framework/features/header/items/account/options.php:7
 msgid "Logout Action"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: framework/premium/features/media-video/options.php:75
 msgid "Click"
-msgstr ""
+msgstr "Clic"
 
 #: framework/premium/features/media-video/options.php:67
 msgid "Select when the video thumbnail should start playing - on click, on hover, or as soon as the page loads."
@@ -591,11 +591,11 @@ msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:223
 msgid "Link to website"
-msgstr ""
+msgstr "Lien vers le site"
 
 #: framework/features/blocks/dynamic-data/options.php:218
 msgid "Link to email"
-msgstr ""
+msgstr "Lien vers l’e-mail"
 
 #: framework/extensions/newsletter-subscribe/providers/mailchimp.php:180
 msgid "%s is already a list member."
@@ -980,11 +980,11 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:29
 msgid "Form Max Width"
-msgstr ""
+msgstr "Largeur max du formulaire"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:15
 msgid "Form Type"
-msgstr ""
+msgstr "Type de formulaire"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:541
 msgid "Automatically close the panel when a filter option is selected."
@@ -1075,7 +1075,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:247
 msgid "Shipping Cost"
-msgstr ""
+msgstr "Coût d'expédition"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:434,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:143
@@ -1089,7 +1089,7 @@ msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/view.php:120
 msgid "Close Modal"
-msgstr ""
+msgstr "Fermer la modale"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/view.php:113
 msgid "Product successfully added to your cart!"
@@ -1998,7 +1998,7 @@ msgstr "Limite"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:864
 msgid "Custom Attributes"
-msgstr ""
+msgstr "Attributs personnalisés"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:723
 msgid "Swatches saved"
@@ -3562,7 +3562,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/feature.php:157,
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:563
 msgid "WooCommerce Filters Canvas"
-msgstr ""
+msgstr "Panneau de filtres WooCommerce"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-cart/feature.php:172
 msgid "Close cart drawer"
@@ -4480,7 +4480,7 @@ msgstr ""
 
 #: framework/premium/extensions/mega-menu/options.php:312
 msgid "If you have complex data inside your mega menu you can enable this option in order to load the dropdown content with AJAX and improve the website loading time."
-msgstr ""
+msgstr "Si vous avez des données complexes dans votre méga menu, vous pouvez activer cette option afin de charger le contenu de la liste déroulante en AJAX et d'améliorer le temps de chargement de votre site."
 
 #: framework/premium/extensions/mega-menu/options.php:309
 msgid "AJAX Content Loading"
@@ -6521,7 +6521,7 @@ msgstr "Clé de l’API"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:388
 msgid "More information on how to generate an API key for EmailOctopus can be found %shere%s."
-msgstr ""
+msgstr "Plus d’informations sur comment générer une clé de l’API pour EmailOctopus peuvent être trouvées %sici%s."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:266
 msgid "More information on how to generate an API key for Mailchimp can be found %shere%s."
@@ -7060,7 +7060,7 @@ msgstr "Ajouter au panier"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/views/table-no-results.php:6
 msgid "You don't have any products in your wishlist yet."
-msgstr ""
+msgstr "Vous n’avez encore aucun produit dans votre liste de souhaits."
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:227,
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:240,
@@ -9049,7 +9049,7 @@ msgstr "Icône"
 
 #: framework/premium/features/premium-header.php:210
 msgid "Header Widget Area "
-msgstr ""
+msgstr "Zone de widget de l’en-tête "
 
 #: framework/premium/features/premium-header.php:57
 msgid "Header Menu 3"

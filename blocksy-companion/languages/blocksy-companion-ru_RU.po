@@ -146,7 +146,7 @@ msgstr "Вложенные блоки будут занимать всю шир�
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:153
 msgid "Nested blocks use content width with options for full and wide widths."
-msgstr "Вложенные блоки использу��т ширину содержимого с возможностью выбора полной ширины и широкого формата."
+msgstr "Вложенные блоки используют ширину содержимого с возможностью выбора полной ширины и широкого формата."
 
 #: static/js/editor/blocks/dynamic-data/components/CoverImageControls.js:143
 msgid "Inner blocks use content width"
@@ -252,7 +252,7 @@ msgstr "Показать больше образцов"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:222
 msgid "Retry Send"
-msgstr "По��торите отправку"
+msgstr "Повторите отправку"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:176
 msgid "Pending"
@@ -2002,7 +2002,7 @@ msgstr "Произвольные атрибуты"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:723
 msgid "Swatches saved"
-msgstr "Образцы сохранены"
+msgstr "��бразцы сохранены"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:716
 msgid "Swatches removed"
@@ -3574,7 +3574,7 @@ msgstr "Корзина покупок"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:145
 msgid "Automatically scroll page to top after user interaction."
-msgstr "Автоматическая прокрутка страницы вверх после действия."
+msgstr "Автоматическая прокрутк�� страницы вверх после действия."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:144
 msgid "Scroll to Top"
@@ -3738,7 +3738,7 @@ msgstr "Добавьте условие (или несколько) для от�
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:534
 msgid "Compare Bar Display Conditions"
-msgstr "Усл��вия отображения панели сравнения"
+msgstr "Условия отображения панели сравнения"
 
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:479
 msgid "Button Icon"
@@ -3825,7 +3825,7 @@ msgstr "Вкладка бренда товара"
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:530,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:581
 msgid "Logos Gap"
-msgstr "Инт��рвал логотипов"
+msgstr "Интервал логотипов"
 
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:462,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:518,
@@ -4167,7 +4167,7 @@ msgstr "Условия отображения модального окна"
 
 #: framework/premium/features/content-blocks/options/maintenance.php:16
 msgid "Add one or more conditions to display the Maintenance block."
-msgstr "Добавление одного или нескольких условий для отображения блока техобслуживания."
+msgstr "Добавление одного или нескольких условий для отображения блока техоб��луживания."
 
 #: framework/premium/features/content-blocks/options/maintenance.php:15
 msgid "Maintenance Block Display Conditions"
@@ -10747,7 +10747,7 @@ msgstr "Динамический вывод CSS"
 
 #: framework/features/demo-install.php:98
 msgid "Your PHP installation doesn't have support for XML. Please install the <i>xml</i> or <i>simplexml</i> PHP extension in order to be able to install starter sites. You might need to contact your hosting provider to assist you in doing so."
-msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь ��озможность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
+msgstr "Ваша установка PHP не поддерживает XML. Установите расширение PHP <i>XML</i> или <i>simplexml</i>, чтобы иметь во��можность устанавливать стартовые сайты. Возможно, вам потребуется связаться с вашим хостинг-провайдером, чтобы он помог вам в этом."
 
 #: framework/features/conditions-manager.php:315
 msgid "Language"

@@ -23,7 +23,8 @@
 		// boxed type
 		&[data-container="boxed"] {
 			padding: calc(var(--theme-form-field-gap, 10px) / 2);
-			border-radius: calc(var(--theme-form-field-border-radius, 3px) + 2px);
+			// border-radius: calc(var(--theme-form-field-border-radius, 3px) + 3px);
+			border-radius: var(--theme-form-field-border-radius, 3px);
 			border: var(--theme-form-field-border-width, 1px) solid var(--theme-form-field-border-initial-color);
 			background-color: var(--theme-form-field-background-initial-color);
 			transition: border 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
@@ -32,6 +33,10 @@
 			input {
 				border: none;
 				background: transparent;
+			}
+
+			button {
+				--theme-button-border-radius: calc(var(--theme-form-field-border-radius, 3px) * 0.6);
 			}
 
 			&:has(input:focus) {

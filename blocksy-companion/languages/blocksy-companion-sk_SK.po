@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-29 05:50:05+0000\n"
+"PO-Revision-Date: 2025-11-03 15:50:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,60 +14,60 @@ msgstr ""
 #: static/js/editor/blocks/dynamic-data/components/utils.js:504
 msgctxt "Indicates this palette is created by the user."
 msgid "Custom"
-msgstr ""
+msgstr "Vlastné"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:495
 msgctxt "Indicates this palette comes from WordPress."
 msgid "Default"
-msgstr ""
+msgstr "Predvolené"
 
 #: static/js/editor/blocks/dynamic-data/components/utils.js:482
 msgctxt "Indicates this palette comes from the theme."
 msgid "Theme"
-msgstr ""
+msgstr "Téma"
 
 #: static/js/notifications/VersionMismatchNotice.js:112
 msgid "Update %s Now"
-msgstr ""
+msgstr "Aktualizovať %s teraz"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:311
 msgid "Hide Empty Taxonomies"
-msgstr ""
+msgstr "Skryť prázdne taxonómie"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:293
 msgid "Taxonomies Visibility"
-msgstr ""
+msgstr "Viditeľnosť taxonómií"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:277
 msgid "Relevant Taxonomies"
-msgstr ""
+msgstr "Relevantné taxonómie"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:269
 msgid "Only Parent Taxonomies"
-msgstr ""
+msgstr "Iba nadradené taxonómie"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:261
 msgid "All Taxonomies"
-msgstr ""
+msgstr "Všetky taxonómie"
 
 #: static/js/editor/blocks/tax-query/edit/TermsInspectorControls.js:253
 msgid "Level"
-msgstr ""
+msgstr "Úroveň"
 
 #: static/js/editor/blocks/query/Edit.js:231
 #: static/js/editor/blocks/tax-query/Edit.js:216
 msgid "Autoplay Speed"
-msgstr ""
+msgstr "Rýchlosť automatického prehrávania"
 
 #: static/js/editor/blocks/query/Edit.js:205
 #: static/js/editor/blocks/tax-query/Edit.js:190
 msgid "Arrows"
-msgstr ""
+msgstr "Šípky"
 
 #: static/js/editor/blocks/query/Edit.js:192
 #: static/js/editor/blocks/tax-query/Edit.js:177
 msgid "Slideshow"
-msgstr ""
+msgstr "Slideshow"
 
 #: static/js/editor/blocks/post-template/Edit.js:359
 #: static/js/editor/blocks/tax-template/Edit.js:296
@@ -7531,7 +7531,7 @@ msgstr "Fax"
 #: framework/features/blocks/contact-info/options.php:272,
 #: framework/premium/features/premium-header/items/contacts/options.php:223
 msgid "Opening hours:"
-msgstr ""
+msgstr "Otváracie hodiny:"
 
 #: framework/features/blocks/contact-info/options.php:265,
 #: framework/premium/features/premium-header/items/contacts/options.php:217
