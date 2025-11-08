@@ -711,7 +711,7 @@ msgstr "Klik på linket herunder for at sikre dig dit køb, før det er væk!"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-back-in-stock.php:33,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-back-in-stock.php:19
 msgid "Great news! The %s from your waitlist is now back in stock!"
-msgstr "Gode nyheder! %s fra din venteliste er nu tilbage på lager!"
+msgstr "Gode nyheder! %s fra din venteliste er nu tilbage p�� lager!"
 
 #. translators: %s User name.
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-back-in-stock.php:21,

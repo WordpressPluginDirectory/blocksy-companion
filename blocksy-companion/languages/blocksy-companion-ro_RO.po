@@ -3075,7 +3075,7 @@ msgstr "Mai multe informații despre cum să generezi o cheie API pentru Campaig
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:302
 msgid "This provider is used only for testing purposes. It doesnt register any real subscribers."
-msgstr "Acest furnizor este utilizat doar în scopuri de testare. Nu înregistrează abona��i reali."
+msgstr "Acest furnizor este utilizat doar în scopuri de testare. Nu înregistrează abonați reali."
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/index.js:17
 msgid "Newsletter Controls"

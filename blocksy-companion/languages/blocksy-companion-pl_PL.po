@@ -683,7 +683,7 @@ msgstr "anuluj subskrypcję"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-confirm-subscription.php:80,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-subscription-confirmed.php:69
 msgid "If you don't want to receive any further notifications, please %s"
-msgstr "Jeśli nie chcesz już otrzymywa�� powiadomień, prosimy %s"
+msgstr "Jeśli nie chcesz już otrzymywać powiadomień, prosimy %s"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-confirm-subscription.php:73,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-confirm-subscription.php:26

@@ -673,7 +673,7 @@ msgstr "Sản phẩm:"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-subscription-confirmed.php:30,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-subscription-confirmed.php:15
 msgid "You have been successfully added to the waitlist for the following item:"
-msgstr "Bạn đã được thêm thành công vào danh sách chờ cho sản phẩm sau:"
+msgstr "Bạn đã được thêm thành công v��o danh sách chờ cho sản phẩm sau:"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-confirm-subscription.php:81,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-subscription-confirmed.php:70
@@ -752,7 +752,7 @@ msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:83
 msgid "Great! You have been added to the waitlist for this product. Please check your inbox and confirm the subscription to this waitlist."
-msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản phẩm này. Vui lòng kiểm tra h���p thư đến và xác nhận đăng ký danh sách chờ này."
+msgstr "Tuyệt vời! Bạn đã được thêm vào danh sách chờ cho sản phẩm này. Vui lòng kiểm tra hộp thư đến và xác nhận đăng ký danh sách chờ này."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/views/form.php:75
 msgid "No worries! Please enter your e-mail address and we will promptly notify you as soon as the item is back in stock."
@@ -797,7 +797,7 @@ msgstr "Nhận thông báo khi {product_title} có hàng trở lại"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/confirm-subscription.php:10
 msgid "Confirm waitlist subscription"
-msgstr "Xác nh���n đăng ký danh sách chờ"
+msgstr "Xác nhận đăng ký danh sách chờ"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/confirm-subscription.php:9
 msgid "This email is sent when a user subscribes to a product stock alert and should confirm their subscription"
@@ -3155,7 +3155,7 @@ msgstr "Bán kính viền đầu vào"
 #: framework/features/blocks/search/options.php:173,
 #: framework/premium/features/premium-header/items/search-input/options.php:163
 msgid "Filter Visibility"
-msgstr "Hi��n thị bộ lọc"
+msgstr "Hiển thị bộ lọc"
 
 #: framework/features/blocks/search/options.php:155,
 #: framework/premium/features/premium-header/items/search-input/options.php:151
@@ -4365,7 +4365,7 @@ msgstr "Sau nút \"Thêm vào giỏ hàng\" của sản phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:728
 msgid "Before single product \"Add to cart\" button"
-msgstr "Trước nút \"Thêm vào giỏ hàng\" của sản phẩm đơn"
+msgstr "Trước nút \"Thêm vào giỏ hàng\" c���a sản phẩm đơn"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:723
 msgid "After single product gallery"
@@ -4652,7 +4652,7 @@ msgstr "Gửi bình luận thất bại"
 
 #: framework/extensions/cookies-consent/extension.php:105
 msgid "Please accept the Privacy Policy in order to comment."
-msgstr "Vui lòng chấp nhận Chính Sách Bảo Mật để bình luận."
+msgstr "Vui lòng chấp nh��n Chính Sách Bảo Mật để bình luận."
 
 #: framework/extensions/cookies-consent/customizer.php:266
 msgid "Decline Button"

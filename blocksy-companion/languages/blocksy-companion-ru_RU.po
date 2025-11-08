@@ -1832,7 +1832,7 @@ msgstr "Отображение активных фильтров."
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:846
 msgid "Hide Video Links"
-msgstr "Скрыть ссылки на видео"
+msgstr "Скрыть ��сылки на видео"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:838
 msgid "Hide Documentation Links"
@@ -1897,7 +1897,7 @@ msgstr "Обновляются данные таблицы поиска такс
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:470
 msgid "This tool will regenerate the product taxonomies lookup table data from existing product(s) data. This process may take a while."
-msgstr "Этот механизм восстановит данные таблицы поиска таксономий товаров из существующих данных о товарах. Этот процесс может занять некоторое время."
+msgstr "Этот механизм восстановит данные таблицы поиска таксон��мий товаров из существующих данных о товарах. Этот процесс может занять некоторое время."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:469
 msgid "Regenerate the product taxonomies lookup table"
@@ -2002,7 +2002,7 @@ msgstr "Произвольные атрибуты"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:723
 msgid "Swatches saved"
-msgstr "��бразцы сохранены"
+msgstr "Образцы сохранены"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/feature.php:716
 msgid "Swatches removed"
@@ -2484,7 +2484,7 @@ msgstr "У вас нет прав на установку параметров."
 
 #: framework/features/demo-install/install-finish.php:23
 msgid "Sorry, you don't have permission to finish the installation."
-msgstr "У вас нет разрешения н�� завершение установки."
+msgstr "У вас нет разрешения на завершение установки."
 
 #: framework/features/demo-install/content-installer.php:351,
 #: framework/features/demo-install/content-installer.php:346
@@ -2589,7 +2589,7 @@ msgstr "Сделать поле \"Имя\" обязательным для за�
 
 #: static/js/notifications/VersionMismatchNotice.js:59
 msgid "In order to take full advantage of all features the core has to offer - please install and activate the latest version of Blocksy theme."
-msgstr "Чтобы в полной мере воспользоваться всеми возможностями, ус��ановите и активируйте также тему Blocksy."
+msgstr "Чтобы в полной мере воспользоваться всеми возможностями, установите и активируйте также тему Blocksy."
 
 #: framework/views/theme-mismatch.php:40
 #: static/js/notifications/VersionMismatchNotice.js:48
@@ -2941,7 +2941,7 @@ msgstr "Информация о клиенте"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:8
 msgid "Order number"
-msgstr "Номер заказа"
+msgstr "Номер зака��а"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderDetails.js:88
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/ct-order/OrderOverview.js:28
@@ -3574,7 +3574,7 @@ msgstr "Корзина покупок"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:145
 msgid "Automatically scroll page to top after user interaction."
-msgstr "Автоматическая прокрутк�� страницы вверх после действия."
+msgstr "Автоматическая прокр��тка страницы вверх после действия."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:144
 msgid "Scroll to Top"
@@ -4167,7 +4167,7 @@ msgstr "Условия отображения модального окна"
 
 #: framework/premium/features/content-blocks/options/maintenance.php:16
 msgid "Add one or more conditions to display the Maintenance block."
-msgstr "Добавление одного или нескольких условий для отображения блока техоб��луживания."
+msgstr "Добавление одного или нескольких условий для отображения блока техобслуживания."
 
 #: framework/premium/features/content-blocks/options/maintenance.php:15
 msgid "Maintenance Block Display Conditions"
@@ -4184,7 +4184,7 @@ msgstr "Выберите, где нужно отображать этот бло
 
 #: framework/premium/features/content-blocks/options/hook.php:40
 msgid "Content Block Display Conditions"
-msgstr "Условия отображения блока содержимого"
+msgstr "Условия отображения блока с��держимого"
 
 #: framework/premium/features/content-blocks/options/header.php:35,
 #: framework/premium/features/content-blocks/options/single.php:15
@@ -4389,7 +4389,7 @@ msgstr "После мета первой записи"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:202
 msgid "Before second post meta"
-msgstr "Перед мета второй записи"
+msgstr "Перед мета второй запи��и"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:194
 msgid "Before first post meta"
@@ -4634,7 +4634,7 @@ msgstr "Цвет заголовка модуля"
 
 #: framework/extensions/trending/customizer.php:594
 msgid "Module Title Font"
-msgstr "Шрифт заголовка модуля"
+msgstr "Шриф�� заголовка модуля"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:389
 msgid "Container Shadow"

@@ -387,6 +387,10 @@ class Plugin {
 				}
 			}
 
+			if (! function_exists('is_plugin_active')) {
+				include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+			}
+
 			if (is_plugin_active('breakdance/plugin.php')) {
 				$is_theme_disabled = (string) json_decode(
 					get_option('breakdance_is_theme_disabled', 'false'),
