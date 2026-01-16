@@ -20,6 +20,7 @@ class SvgHandling {
 				$svg_content = file_get_contents($file['tmp_name']);
 
 				$trimmed_content = trim($svg_content);
+
 				if (
 					strpos($trimmed_content, '<?xml') !== 0
 					&&
@@ -284,6 +285,10 @@ class SvgHandling {
 		require_once($base_path . '/Sanitizer.php');
 
 		$sanitizer = new \blocksy\enshrined\svgSanitize\Sanitizer();
+
+		// Remove <?xml tag from the SVG content to avoid html5
+		// validation issues when embedding SVGs inline.
+		$sanitizer->removeXMLTag(true);
 
 		return $sanitizer->sanitize($content);
 	}

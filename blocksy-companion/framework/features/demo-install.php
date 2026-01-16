@@ -140,6 +140,7 @@ class DemoInstall {
 				return $d;
 			}
 		);
+
 	}
 
 	public function get_demo_remote_url($args = []) {

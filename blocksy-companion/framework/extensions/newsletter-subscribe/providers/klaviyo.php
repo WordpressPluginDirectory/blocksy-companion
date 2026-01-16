@@ -60,23 +60,20 @@ class KlaviyoProvider extends Provider {
 
 		$settings = $this->get_settings();
 
-		$lname = '';
-		$fname = '';
-
-		if (! empty($args['name'])) {
-			$parts = explode(' ', $args['name']);
-
-			$lname = array_pop($parts);
-			$fname = implode(' ', $parts);
-		}
+		$name_parts = $this->maybe_split_name($args['name']);
+		$fname = $name_parts['first_name'];
+		$lname = $name_parts['last_name'];
 
 		$list_ids = [$args['group']];
 
 		$subscriber = [
 			'email' => $args['email'],
-			'first_name' => $fname,
-			'last_name' => $lname
+			'first_name' => $fname
 		];
+
+		if (! empty($lname)) {
+			$subscriber['last_name'] = $lname;
+		}
 
 		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_init
 		$curl = curl_init();
@@ -94,11 +91,49 @@ class KlaviyoProvider extends Provider {
 			CURLOPT_POSTFIELDS => json_encode([
 				'data' => [
 					'type' => 'profile',
-					'attributes' => [
-						'list_ids' => $list_ids,
-						'email' => $subscriber['email'],
-						'first_name' => $subscriber['first_name'],
-						'last_name' => $subscriber['last_name'],
+					'attributes' => $subscriber,
+				]
+			]),
+			CURLOPT_HTTPHEADER => array(
+				'Authorization: Klaviyo-API-Key ' . $settings['api_key'],
+				'accept: application/vnd.api+json',
+				'content-type: application/vnd.api+json',
+				'revision: 2025-10-15'
+			),
+		));
+
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_exec
+		$response = curl_exec($curl);
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_error
+		$err = curl_error($curl);
+
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_close
+		curl_close($curl);
+
+		if ($err) {
+			return [
+				'result' => 'no',
+				'error' => $err
+			];
+		}
+
+		$curl = curl_init();
+
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt_array
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => 'https://a.klaviyo.com/api/lists/' . $args['group'] . '/relationships/profiles',
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => '',
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 2,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => 'POST',
+			CURLOPT_POSTFIELDS => json_encode([
+				'data' => [
+					[
+						'type' => 'profile',
+						'id' => json_decode($response, true)['data']['id']
 					]
 				]
 			]),
@@ -110,6 +145,20 @@ class KlaviyoProvider extends Provider {
 			),
 		));
 
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_exec
+		$response = curl_exec($curl);
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_error
+		$err = curl_error($curl);
+
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_close
+		curl_close($curl);
+
+		if ($err) {
+			return [
+				'result' => 'no',
+				'error' => $err
+			];
+		}
 
 		return [
 			'result' => 'yes',

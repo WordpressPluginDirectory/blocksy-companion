@@ -43,18 +43,47 @@ if (! empty($newsletter_subscribe_gap)) {
 }
 
 if (isset($atts['style']['border']['radius'])) {
+	$maybe_radius = $atts['style']['border']['radius'];
+
 	if (
-		gettype($atts['style']['border']['radius']) === 'string'
+		is_array($maybe_radius)
 		&&
-		! empty(gettype($atts['style']['border']['radius']))
+		! empty($maybe_radius)
 	) {
-		$style .= '--theme-form-field-border-radius:' . $atts['style']['border']['radius'] . ';';
-	} else if (
-		gettype($atts['style']['border']['radius']) === 'array'
+		if (
+			isset($maybe_radius['topLeft'])
+			&&
+			isset($maybe_radius['topRight'])
+			&&
+			isset($maybe_radius['bottomLeft'])
+			&&
+			isset($maybe_radius['bottomRight'])
+		) {
+			if (
+				$maybe_radius['topLeft'] === $maybe_radius['topRight']
+				&&
+				$maybe_radius['topLeft'] === $maybe_radius['bottomLeft']
+				&&
+				$maybe_radius['topLeft'] === $maybe_radius['bottomRight']
+			) {
+				$maybe_radius = $maybe_radius['topLeft'];
+			} else {
+				$style .= '--theme-form-field-border-radius:' . join(' ', [
+					$atts['style']['border']['radius']['topLeft'] ?? '0px',
+					$atts['style']['border']['radius']['topRight'] ?? '0px',
+					$atts['style']['border']['radius']['bottomLeft'] ?? '0px',
+					$atts['style']['border']['radius']['bottomRight'] ?? '0px'
+				]) . ';';
+			}
+		}
+	}
+
+	if (
+		gettype($maybe_radius) === 'string'
 		&&
-		! empty($atts['style']['border']['radius'])
+		! empty($maybe_radius)
 	) {
-		$style .= '--theme-form-field-border-radius:' . $atts['style']['border']['radius']['topLeft'] . $atts['style']['border']['radius']['topRight'] . $atts['style']['border']['radius']['bottomLeft'] . $atts['style']['border']['radius']['bottomRight'] . ';';
+		$style .= '--theme-form-field-border-radius:' . $maybe_radius . ';';
 	}
 
 	unset($atts['style']['border']);

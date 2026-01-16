@@ -36,6 +36,8 @@ class Plugin {
 
 	public $inline_styles_collector = null;
 
+	public $blocks = null;
+
 	private $is_blocksy = '__NOT_SET__';
 	public $is_blocksy_data = null;
 	private $desired_blocksy_version = '2.1.16-dev1';
@@ -144,7 +146,7 @@ class Plugin {
 
 		$this->header = new HeaderAdditions();
 
-		new Editor\Blocks();
+		$this->blocks = new Editor\Blocks();
 
 		$this->feat_google_analytics = new GoogleAnalytics();
 		new OpenGraphMetaData();

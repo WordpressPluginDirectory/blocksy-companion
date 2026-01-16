@@ -178,6 +178,46 @@ class Blocksy_WP_Import extends WP_Importer {
 		$this->import_end();
 	}
 
+	// TODO: partial import function, added by us
+	function import_partial($file) {
+		add_filter( 'import_post_meta_key', array( $this, 'is_valid_meta_key' ) );
+		add_filter( 'http_request_timeout', array( &$this, 'bump_request_timeout' ) );
+
+		// Simplified import start without any hooks
+		$import_data = $this->parse( $file );
+
+		if ( is_wp_error( $import_data ) ) {
+			echo '<p><strong>' . __( 'Sorry, there has been an error.', 'blocksy-companion' ) . '</strong><br />';
+			echo esc_html( $import_data->get_error_message() ) . '</p>';
+			$this->footer();
+			die();
+		}
+
+		$this->version = $import_data['version'];
+		$this->get_authors_from_import( $import_data );
+		$this->posts = $import_data['posts'];
+		$this->terms = $import_data['terms'];
+		$this->categories = $import_data['categories'];
+		$this->tags = $import_data['tags'];
+		$this->base_url = esc_url( $import_data['base_url'] );
+
+		wp_defer_term_counting( true );
+		wp_defer_comment_counting( true );
+
+		do_action( 'import_start_partial' );
+
+		wp_suspend_cache_invalidation( true );
+		$this->process_posts();
+		wp_suspend_cache_invalidation( false );
+
+		// update incorrect/missing information in the DB
+		$this->backfill_parents();
+		$this->backfill_attachment_urls();
+		$this->remap_featured_images();
+
+		$this->import_end();
+	}
+
 	/**
 	 * Parses the WXR file and prepares us for the task of processing parsed data
 	 *
@@ -1183,7 +1223,6 @@ class Blocksy_WP_Import extends WP_Importer {
 			'menu-item-status' => $item['status']
 		);
 
-
 		$id = wp_update_nav_menu_item( $menu_id, 0, $args );
 
 		if (! empty($item['postmeta'])) {
@@ -1197,7 +1236,6 @@ class Blocksy_WP_Import extends WP_Importer {
 						$value = maybe_unserialize(wp_unslash($meta['value']));
 					}
 
-					// add_post_meta($post_id, wp_slash($key), wp_slash_strings_only($value), true);
 					add_post_meta($id, wp_slash($key), $value, true);
 
 					do_action('import_post_meta', $id, $key, $value);
@@ -1205,8 +1243,12 @@ class Blocksy_WP_Import extends WP_Importer {
 			}
 		}
 
-		if ( $id && ! is_wp_error( $id ) )
+		if ( $id && ! is_wp_error( $id ) ) {
 			$this->processed_menu_items[intval($item['post_id'])] = (int) $id;
+			update_post_meta($id, 'blocksy_demos_imported_post', true);
+			// Store original post_id for duplicate cleanup in finish step
+			update_post_meta($id, 'blocksy_original_post_id', $item['post_id']);
+		}
 	}
 
 	/**
