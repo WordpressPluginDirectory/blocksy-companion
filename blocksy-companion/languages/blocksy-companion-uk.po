@@ -3309,7 +3309,7 @@ msgstr "Додайте умови"
 
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:68
 msgid "Upgrade to the agency plan and get instant access to this starter site and many other features."
-msgstr "Оновіть план агентства та отримайте миттєвий доступ до цього початкового сайту та багатьох інших функцій."
+msgstr "Оновіть план агентства ��а отримайте миттєвий доступ до цього початкового сайту та багатьох інших функцій."
 
 #: static/js/dashboard/screens/Extensions/CurrentExtension.js:316
 msgid "Documentation"
@@ -6438,7 +6438,7 @@ msgstr "Зберегти умови"
 
 #: static/js/header/EditConditions.js:106
 msgid "Add one or more conditions in order to display your header."
-msgstr "Додайте одну або декілька умов, для відображення заголовку."
+msgstr "Додайте одну або декілька ум��в, для відображення заголовку."
 
 #: static/js/header/PanelsManager.js:174
 msgid "Remove header"
@@ -9691,7 +9691,7 @@ msgstr "Авторизація користувача"
 
 #: framework/features/conditions/rules/user-auth.php:24
 msgid "User Logged In"
-msgstr "Користувач авторизований"
+msgstr "Користувач ��вторизований"
 
 #: framework/features/conditions/rules/user-auth.php:29
 msgid "User Logged Out"

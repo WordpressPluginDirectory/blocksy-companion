@@ -8854,7 +8854,7 @@ msgstr "Slike rezultata uživo"
 #: framework/features/blocks/search/options.php:202,
 #: framework/premium/features/premium-header/items/search-input/options.php:194
 msgid "Search Through Criteria"
-msgstr "Pretra��ivanje po kriterijima"
+msgstr "Pretraživanje po kriterijima"
 
 #: framework/features/blocks/search/options.php:204,
 #: framework/premium/features/premium-header/items/search-input/options.php:195

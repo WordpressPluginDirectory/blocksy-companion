@@ -40,7 +40,7 @@ msgid "Determine for how long items in the cart are reserved before being remove
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:40
-msgid "<p><strong>🔥 Hurry up! Your selected items are in high demand!</strong><br>Your cart will be reserved for {time} minutes.</p>"
+msgid "<p><strong>��� Hurry up! Your selected items are in high demand!</strong><br>Your cart will be reserved for {time} minutes.</p>"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:48
@@ -141,7 +141,7 @@ msgstr "En stock"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:217
 msgid "Subscribers"
-msgstr "Abonnés/abonnées"
+msgstr "Abonn��s/abonnées"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:224
 msgid "Pending entries"
@@ -277,7 +277,7 @@ msgstr "Tutoriels vidéo"
 
 #: static/js/dashboard/helpers/SubmitSupport.js:60
 msgid "Learn how to do just about anything within Blocksy by following our byte-sized video tutorials."
-msgstr "Apprenez à faire à peu près tout avec Blocksy en suivant nos tutoriels vidéo �� l’octet près."
+msgstr "Apprenez à faire à peu près tout avec Blocksy en suivant nos tutoriels vidéo à l’octet près."
 
 #: static/js/dashboard/helpers/SubmitSupport.js:68
 msgid "Watch Tutorials"

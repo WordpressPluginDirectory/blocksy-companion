@@ -9644,7 +9644,7 @@ msgstr "ID stranice"
 #: framework/features/conditions/rules/specific.php:20
 #: static/js/options/ConditionsManager/SingleCondition.js:153
 msgid "Custom Post Type ID"
-msgstr "ID prilago��ene vrste objava"
+msgstr "ID prilagođene vrste objava"
 
 #: framework/features/conditions/rules/specific.php:38,
 #: framework/features/conditions/rules/woo.php:65

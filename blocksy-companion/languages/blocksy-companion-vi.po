@@ -4021,7 +4021,7 @@ msgstr "Tính toán giảm giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:133
 msgid "Include or exclude the discount code when calculating the shipping progress."
-msgstr "Bao gồm hoặc loại trừ mã giảm giá khi tính toán tiến trình vận chuyển."
+msgstr "Bao gồm hoặc loại trừ mã gi��m giá khi tính toán tiến trình vận chuyển."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:137,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:162
