@@ -772,7 +772,7 @@ class Query {
 		]);
 
 		if (empty($result)) {
-			return '';
+			$result = __('No posts found.', 'blocksy-companion');
 		}
 
 		return blocksy_html_tag(

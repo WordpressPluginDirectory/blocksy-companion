@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.1.25
+Stable tag: 2.1.26
 
 The official companion plugin for Blocksy theme, packed with starter sites, extra features, and integrations.
 
@@ -67,6 +67,10 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.1.26: 2026-01-29
+- Improvement: Advanced Posts Block - display a "no results found" message if posts don't meet the query criteria
+- Improvement: Dynamic data - add option to show "Archive Label" if "Archive Title" source is selected
+
 2.1.25: 2026-01-16
 - Improvement: General fixes and improvements
 

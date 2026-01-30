@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-01-16 10:54+0000\n"
+"POT-Creation-Date: 2026-01-29 17:02+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -2254,7 +2254,7 @@ msgstr ""
 #: framework/extensions/trending/customizer.php:42
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:197
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/TaxonomySelector.js:23
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:490
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:503
 #: static/js/editor/blocks/tax-query/Edit.js:157
 msgid "Taxonomy"
 msgstr ""
@@ -3314,7 +3314,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:243,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:196,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:196
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:520
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:533
 msgid "Image"
 msgstr ""
 
@@ -3465,7 +3465,7 @@ msgstr ""
 #: framework/premium/features/premium-header/items/contacts/options.php:451,
 #: framework/premium/features/premium-header/items/content-block/options.php:26
 #: framework/premium/static/js/blocks/ContentBlock.js:57
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:596
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:609
 msgid "None"
 msgstr ""
 
@@ -3691,13 +3691,13 @@ msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:106,
 #: framework/features/blocks/dynamic-data/options.php:107,
-#: framework/features/blocks/dynamic-data/views/wp-field.php:218
+#: framework/features/blocks/dynamic-data/views/wp-field.php:220
 msgid "No comments"
 msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:112,
 #: framework/features/blocks/dynamic-data/options.php:113,
-#: framework/features/blocks/dynamic-data/views/wp-field.php:219
+#: framework/features/blocks/dynamic-data/views/wp-field.php:221
 msgid "One comment"
 msgstr ""
 
@@ -3706,7 +3706,7 @@ msgid "Multiple comments"
 msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:119,
-#: framework/features/blocks/dynamic-data/views/wp-field.php:220
+#: framework/features/blocks/dynamic-data/views/wp-field.php:222
 msgid "% comments"
 msgstr ""
 
@@ -3768,17 +3768,21 @@ msgid "Link to archive page"
 msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:245
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:434
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:447
 msgid "Open in new tab"
 msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:251
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:444
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:457
 msgid "Link Rel"
 msgstr ""
 
 #: framework/features/blocks/dynamic-data/options.php:268
 msgid "Terms accent color"
+msgstr ""
+
+#: framework/features/blocks/query/block.php:775
+msgid "No posts found."
 msgstr ""
 
 #: framework/features/blocks/search/options.php:7,
@@ -5168,7 +5172,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:411,
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:372
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:700
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:713
 msgid "Before"
 msgstr ""
 
@@ -5179,7 +5183,7 @@ msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:418,
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:383
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:709
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:722
 msgid "After"
 msgstr ""
 
@@ -5757,7 +5761,7 @@ msgstr ""
 #: framework/premium/features/media-video/options.php:136
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/RenderOptions.js:129
 #: static/js/editor/blocks/dynamic-data/components/Dimensions.js:194
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:475
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:488
 msgid "Cover"
 msgstr ""
 
@@ -5802,7 +5806,7 @@ msgid "Out of Stock"
 msgstr ""
 
 #. translators: 1: the search query
-#: framework/features/blocks/dynamic-data/views/wp-field.php:34
+#: framework/features/blocks/dynamic-data/views/wp-field.php:36
 msgid "Search Results for %1$s"
 msgstr ""
 
@@ -6920,7 +6924,7 @@ msgid "Label"
 msgstr ""
 
 #: framework/premium/extensions/post-types-extra/features/dynamic-data/feature.php:395
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:721
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:734
 msgid "Fallback"
 msgstr ""
 
@@ -7358,7 +7362,7 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:478,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:534,
 #: framework/premium/extensions/woocommerce-extra/features/brands/feature.php:585
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:659
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:672
 msgid "Logo Size"
 msgstr ""
 
@@ -7401,10 +7405,11 @@ msgstr ""
 msgid "Every 12 Hours"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/feature.php:417
+#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/feature.php:417,
+#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:40
 msgid ""
-"<p><strong>🔥 Hurry up! Your selected items are reserved for {time} minutes."
-"</strong></p>"
+"<p><strong>🔥 Hurry up! Your selected items are in high demand!</"
+"strong><br>Your cart will be reserved for {time} minutes.</p>"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:15,
@@ -7429,12 +7434,6 @@ msgstr ""
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:38,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:27
 msgid "Message"
-msgstr ""
-
-#: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:40
-msgid ""
-"<p><strong>🔥 Hurry up! Your selected items are in high demand!</"
-"strong><br>Your cart will be reserved for {time} minutes.</p>"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:48
@@ -8436,7 +8435,7 @@ msgid "Dual Color"
 msgstr ""
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/woo-tab-options.php:28
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:792
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:805
 msgid "Colors"
 msgstr ""
 
@@ -8636,15 +8635,15 @@ msgstr ""
 msgid "Main Color"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:249
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:247
 msgid "Shipping Cost"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:258
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:256
 msgid "Tax Amount"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:267
+#: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/added-product.php:265
 msgid "Cart Total"
 msgstr ""
 
@@ -8781,15 +8780,15 @@ msgstr ""
 msgid "5 stars"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:147
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:150
 msgid "On sale"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:148
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:151
 msgid "Featured"
 msgstr ""
 
-#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:174,
+#: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:177,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:247,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-users-table.php:203
 msgid "Status"
@@ -11170,74 +11169,78 @@ msgid "Content Source"
 msgstr ""
 
 #: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:401
+msgid "Show archive label"
+msgstr ""
+
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:414
 msgid "Enable field link"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:411
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:424
 msgid "Link Source"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:417
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:430
 msgid "Search for field"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:462
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:475
 msgid "View Type"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:511
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:524
 msgid "Image Source"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:524
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:537
 msgid "Icon/Logo"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:563
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:576
 msgid "Expand on click"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:576
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:589
 msgid "Video thumbnail"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:586
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:599
 msgid "Image Hover Effect"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:600
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:613
 msgid "Zoom In"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:604
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:617
 msgid "Zoom Out"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:640
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:653
 msgid "Image size"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:673
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:686
 msgid "Logo Gap"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:725
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:738
 msgid "Custom field fallback"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:739
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:752
 msgid "Include Before/After in link"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:826
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:839
 msgid "Overlay opacity"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:848
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:861
 msgid "Term additional class"
 msgstr ""
 
-#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:855
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:868
 msgid "Additional class for term items. Useful for styling."
 msgstr ""
 

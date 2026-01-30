@@ -9,9 +9,11 @@ $has_fallback = false;
 $has_field_link = blocksy_akg('has_field_link', $attributes, 'no') === 'yes';
 $has_field_link_wrap_content = blocksy_akg('has_field_link_wrap_content', $attributes, 'no');
 
+$has_archive_prefix = blocksy_akg('has_archive_prefix', $attributes, 'no') === 'yes';
+
 if ($field === 'wp:archive_title') {
 	$archive_title_renderer = new \Blocksy\ArchiveTitleRenderer([
-		'has_label' => false
+		'has_label' => $has_archive_prefix
 	]);
 
 	$value = get_the_archive_title();
@@ -243,7 +245,7 @@ if ($field === 'wp:comments') {
 }
 
 if ($field === 'wp:author') {
-	$author_id = get_post_field('post_author', get_the_ID());
+	$author_id = blocksy_get_author_id();
 	$author_field = blocksy_akg('author_field', $attributes, 'display_name');
 
 	$overide_link = '';

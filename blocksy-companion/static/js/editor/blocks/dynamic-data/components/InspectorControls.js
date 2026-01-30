@@ -394,6 +394,19 @@ const DynamicDataInspectorControls = ({
 								purpose: 'default',
 							},
 
+							...(attributes.field === 'wp:archive_title'
+								? {
+										has_archive_prefix: {
+											type: 'ct-switch',
+											label: __(
+												'Show archive label',
+												'blocksy-companion'
+											),
+											value: 'no',
+										},
+								  }
+								: {}),
+
 							...(fieldIsCustomField(fieldDescriptor)
 								? {
 										has_field_link: {
