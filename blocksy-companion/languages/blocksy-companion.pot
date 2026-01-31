@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-01-29 17:02+0000\n"
+"POT-Creation-Date: 2026-01-30 14:56+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -2731,78 +2731,78 @@ msgstr ""
 
 #. translators: %1$s is the term taxonomy, %2$s is the term name.
 #. translators: %1$s is the taxonomy name, %2$s is the term name.
-#: framework/features/demo-install/wp-importer.php:698,
-#: framework/features/demo-install/wp-importer.php:1009
+#: framework/features/demo-install/wp-importer.php:704,
+#: framework/features/demo-install/wp-importer.php:1015
 msgid "Failed to import %1$s %2$s"
 msgstr ""
 
 #. translators: %1$s is the post type name, %2$s is the post title.
-#: framework/features/demo-install/wp-importer.php:964
+#: framework/features/demo-install/wp-importer.php:970
 msgid "Failed to import %1$s &#8220;%2$s&#8221;"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:873
+#: framework/features/demo-install/wp-importer.php:879
 msgid "%1$s &#8220;%1$s&#8221; already exists."
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1157
+#: framework/features/demo-install/wp-importer.php:1163
 msgid "Menu item skipped due to missing menu slug"
 msgstr ""
 
 #. translators: %s is the menu slug.
-#: framework/features/demo-install/wp-importer.php:1171
+#: framework/features/demo-install/wp-importer.php:1177
 msgid "Menu item skipped due to invalid menu slug: %s"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1264
+#: framework/features/demo-install/wp-importer.php:1270
 msgid "Fetching attachments is not enabled"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1278
+#: framework/features/demo-install/wp-importer.php:1284
 msgid "Invalid file type"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1330
+#: framework/features/demo-install/wp-importer.php:1336
 msgid "Remote server did not respond"
 msgstr ""
 
 #. translators: %1$d is the HTTP response code, %2$s is the HTTP response message.
-#: framework/features/demo-install/wp-importer.php:1343
+#: framework/features/demo-install/wp-importer.php:1349
 msgid "Remote server returned error response %1$d %2$s"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1364
+#: framework/features/demo-install/wp-importer.php:1370
 msgid "Remote file is incorrect size"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1373
+#: framework/features/demo-install/wp-importer.php:1379
 msgid "Zero size file downloaded"
 msgstr ""
 
 #. translators: %s is the maximum file size allowed.
-#: framework/features/demo-install/wp-importer.php:1386
+#: framework/features/demo-install/wp-importer.php:1392
 msgid "Remote file is too large, limit is %s"
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1498
+#: framework/features/demo-install/wp-importer.php:1504
 msgid "Import WordPress"
 msgstr ""
 
 #. translators: %s is the new version number.
-#: framework/features/demo-install/wp-importer.php:1510
+#: framework/features/demo-install/wp-importer.php:1516
 msgid ""
 "A new version of this importer is available. Please update to version %s to "
 "ensure compatibility with newer export files."
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1531
+#: framework/features/demo-install/wp-importer.php:1537
 msgid ""
 "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
 "the posts, pages, comments, custom fields, categories, and tags into this "
 "site."
 msgstr ""
 
-#: framework/features/demo-install/wp-importer.php:1532
+#: framework/features/demo-install/wp-importer.php:1538
 msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
 msgstr ""
 

@@ -4087,7 +4087,7 @@ msgstr "تبرک! شما حمل و نقل رایگان را دریافت کرد�
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:422,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:139
 msgid "Add {price} more to get free shipping!"
-msgstr "{price} بیشتر اضافه کنید تا حمل و نقل رایگان را دریافت کنید!"
+msgstr "{price} بیشتر اضافه کنی�� تا حمل و نقل رایگان را دریافت کنید!"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:15,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:15
@@ -4512,7 +4512,7 @@ msgstr "کاربران مجاز"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:106
 msgid "Set which users are allowed to vote."
-msgstr "تنظیم کنید که کدام کاربران مجاز به رای دادن باشند."
+msgstr "تنظیم کنید که کدام کاربران مجاز ��ه رای دادن باشند."
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:5
 msgid "Affiliate Products"
@@ -5302,7 +5302,7 @@ msgstr "دکمه‌ی پذیرش"
 
 #: framework/extensions/cookies-consent/customizer.php:267
 msgid "Decline Button"
-msgstr "دکمه‌ی رد کردن"
+msgstr "دک��ه‌ی رد کردن"
 
 #: framework/extensions/cookies-consent/extension.php:106
 msgid "Please accept the Privacy Policy in order to comment."
@@ -6218,7 +6218,7 @@ msgstr ""
 
 #: framework/features/account-auth.php:237
 msgid "Your account was created successfully. Your login details have been sent to your email address. Please visit the %1$slogin page%2$s."
-msgstr "��ساب شما با موفقیت ایجاد شد. جزئیات ورود شما به نشانی رایانامه‌ی شما ارسال شد. لطفا %1$sبرگه‌ی ورود%2$s را مشاهده کنید."
+msgstr "حساب شما با موفقیت ایجاد شد. جزئیات ورود شما به نشانی رایانامه‌ی شما ارسال شد. لطفا %1$sبرگه‌ی ورود%2$s را مشاهده کنید."
 
 #: framework/features/account-auth.php:248
 msgid "Your account was created successfully and a password has been sent to your email address. Please visit the %1$slogin page%2$s."

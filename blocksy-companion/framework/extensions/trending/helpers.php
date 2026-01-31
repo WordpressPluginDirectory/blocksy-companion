@@ -110,7 +110,7 @@ if (! function_exists('blc_get_trending_posts_value')) {
 			$trending_product_type = blc_theme_functions()->blocksy_get_theme_mod('trending_block_product_type', 'defualt');
 
 			if ($trending_product_type === 'sale') {
-				$query_args['post__in'] = wc_get_product_ids_on_sale();
+				$query_args['post__in'] = blc_get_product_ids_on_sale();
 				$date_query = [];
 			}
 

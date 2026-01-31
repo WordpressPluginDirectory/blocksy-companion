@@ -187,6 +187,7 @@ class Plugin {
 		require_once BLOCKSY_PATH . '/framework/helpers/theme-functions.php';
 		require_once BLOCKSY_PATH . '/framework/helpers/helpers.php';
 		require_once BLOCKSY_PATH . '/framework/helpers/exts.php';
+		require_once BLOCKSY_PATH . '/framework/helpers/woo.php';
 
 		// Some plugins override the REQUEST_URI server variable and we need to
 		// persist the original value for use within the blocksy_current_url()

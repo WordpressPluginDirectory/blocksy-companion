@@ -386,7 +386,7 @@ msgstr "Vui lòng nhập ít nhất {0} ký tự."
 
 #: framework/theme-integration.php:101
 msgid "Please enter a value between {0} and {1} characters long."
-msgstr "Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký tự."
+msgstr "Vui lòng nh��p giá trị có độ dài từ {0} đến {1} ký tự."
 
 #: framework/theme-integration.php:102
 msgid "Please enter a value between {0} and {1}."
@@ -533,7 +533,7 @@ msgstr "- Chọn -"
 #. translators: %s is the author's display name.
 #: framework/features/demo-install/wp-importer.php:476
 msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
-msgstr "Không thể tạo người dùng mới cho %s. Các bài viết của họ sẽ được gán cho người d��ng hiện tại."
+msgstr "Không thể tạo người dùng mới cho %s. Các bài viết của họ sẽ được gán cho người dùng hiện tại."
 
 #. translators: %s is the category slug.
 #: framework/features/demo-install/wp-importer.php:540
@@ -1936,7 +1936,7 @@ msgstr "Công cụ này sẽ tái tạo dữ liệu bảng tra cứu phân loạ
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:512
 msgid "Product taxonomies lookup table data is regenerating"
-msgstr "Dữ liệu bảng tra cứu phân loại sản ph��m đang được tái tạo"
+msgstr "Dữ liệu bảng tra cứu phân loại sản phẩm đang được tái tạo"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:525
 msgid "Regenerate"

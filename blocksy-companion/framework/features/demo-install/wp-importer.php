@@ -685,7 +685,13 @@ class Blocksy_WP_Import extends WP_Importer {
 			$termarr = array( 'slug' => $term['slug'], 'description' => $description, 'parent' => intval($parent) );
 
 			if (! taxonomy_exists($term['term_taxonomy'])) {
-				register_taxonomy($term['term_taxonomy'], 'post');
+				$object_types = $this->get_taxonomy_object_types($term['term_taxonomy']);
+
+				if (empty($object_types)) {
+					$object_types = ['post'];
+				}
+
+				register_taxonomy($term['term_taxonomy'], $object_types);
 			}
 
 			$id = wp_insert_term( $term['term_name'], $term['term_taxonomy'], $termarr );
@@ -1585,6 +1591,39 @@ class Blocksy_WP_Import extends WP_Importer {
 	 */
 	function bump_request_timeout( $val ) {
 		return 60;
+	}
+
+	/**
+	 * Get object types for a taxonomy by scanning which posts use it.
+	 *
+	 * @param string $taxonomy_name The taxonomy slug to look for.
+	 * @return array Array of post type names that use this taxonomy.
+	 */
+	function get_taxonomy_object_types($taxonomy_name) {
+		if (empty($this->posts)) {
+			return [];
+		}
+
+		$object_types = [];
+
+		foreach ($this->posts as $post) {
+			if (empty($post['terms']) || empty($post['post_type'])) {
+				continue;
+			}
+
+			foreach ($post['terms'] as $term) {
+				if (
+					isset($term['domain'])
+					&&
+					$term['domain'] === $taxonomy_name
+				) {
+					$object_types[$post['post_type']] = true;
+					break;
+				}
+			}
+		}
+
+		return array_keys($object_types);
 	}
 
 	// return the difference in length between two strings

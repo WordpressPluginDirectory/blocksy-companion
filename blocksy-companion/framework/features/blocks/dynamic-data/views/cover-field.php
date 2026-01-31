@@ -208,6 +208,6 @@ $content = blocksy_html_tag(
 	)
 );
 
-// wp_enqueue_style('wp-block-cover');
+wp_enqueue_style('wp-block-cover');
 // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 echo $content;
