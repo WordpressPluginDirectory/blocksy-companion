@@ -32,6 +32,14 @@ if (! empty($args['meta_key'])) {
 }
 
 if ($args['has_pagination'] === 'yes') {
+	if (
+		$args['view'] !== 'slider'
+		&&
+		wp_style_is('ct-pagination-styles', 'registered')
+	) {
+		wp_enqueue_style('ct-pagination-styles');
+	}
+
 	if (get_query_var('paged')) {
 		$query_args['paged'] = get_query_var('paged');
 	} elseif (get_query_var('page')) {
@@ -253,5 +261,3 @@ if ($args['view'] === 'slider') {
 
 	echo '</div>';
 }
-
-

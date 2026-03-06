@@ -3,6 +3,12 @@
 namespace Blocksy\Editor\Blocks;
 
 class TaxQuery {
+	private function maybe_enqueue_pagination_styles() {
+		if (wp_style_is('ct-pagination-styles', 'registered')) {
+			wp_enqueue_style('ct-pagination-styles');
+		}
+	}
+
 	public function __construct() {
 		add_action('wp_ajax_blocksy_get_tax_block_data', function () {
 			if (! current_user_can('edit_posts')) {
@@ -134,6 +140,10 @@ class TaxQuery {
 				$class = array_merge(
 					$is_slideshow_layout ? ['ct-query-template', 'is-layout-slider'] : ['ct-query-template-' . $layout],
 				);
+
+				if ($is_slideshow_layout) {
+					wp_enqueue_style('ct-flexy-styles');
+				}
 
 				if (
 					! $is_slideshow_layout
@@ -456,6 +466,8 @@ class TaxQuery {
 						&&
 						! $is_slideshow_layout
 					) {
+						$this->maybe_enqueue_pagination_styles();
+
 						$term_query = $this->get_term_query($block->context);
 
 						if ($term_query) {
@@ -939,4 +951,3 @@ class TaxQuery {
 		}
 	}
 }
-
