@@ -168,7 +168,7 @@ msgstr "Hình chữ nhật"
 
 #: framework/premium/features/premium-header/items/language-switcher/options/common.php:251
 msgid "Flag Border Radius"
-msgstr "��ộ bo góc của cờ"
+msgstr "Độ bo góc của cờ"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:316
 msgid "More information on how to generate an API key for Klaviyo can be found %shere%s."
@@ -1261,7 +1261,7 @@ msgstr "Xem thêm thông tin về cách tạo danh sách trong FluentCRM %stại
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:123
 msgid "Modern Font Stack"
-msgstr "Bộ phông chữ hiện đại"
+msgstr "Bộ phông chữ hi��n đại"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:142
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:330
@@ -2324,7 +2324,7 @@ msgstr "Mục phân loại"
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:88
 #: static/js/editor/blocks/dynamic-data/preview-parts/WpFieldPreview.js:73
 msgid "Archive Title"
-msgstr "Tiêu đề lưu tr��"
+msgstr "Tiêu đề lưu trữ"
 
 #: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:93
 #: static/js/editor/blocks/dynamic-data/preview-parts/WpFieldPreview.js:77
@@ -4361,7 +4361,7 @@ msgstr "Ưu Tiên"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:5
 msgid "Coupon Form"
-msgstr "Biểu mẫu mã giảm giá"
+msgstr "Biểu mẫu mã giảm gi��"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/feature.php:138
 msgid "AJAX Filtering"
@@ -5352,7 +5352,7 @@ msgstr "Không có bài viết để tạo bản sao"
 
 #: framework/helpers/exts-configs.php:314
 msgid "Create a customized order “Thank You” page for your customers, giving them a personalized experience."
-msgstr "Tạo một trang “Cảm ơn�� đơn hàng tùy chỉnh cho khách hàng của bạn, mang lại cho họ một trải nghiệm cá nhân hóa."
+msgstr "Tạo một trang “Cảm ơn” đơn hàng tùy chỉnh cho khách hàng của bạn, mang lại cho họ một trải nghiệm cá nhân hóa."
 
 #: framework/helpers/exts-configs.php:322,
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:5
