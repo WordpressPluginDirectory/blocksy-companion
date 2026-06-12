@@ -474,7 +474,7 @@ msgstr "Không tìm thấy tệp xuất tại <code>%s</code>. Có thể nguyên
 #. translators: %s is the WXR version number.
 #: framework/features/demo-install/wp-importer.php:282
 msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
-msgstr "Tệp WXR này (phiên bản %s) có thể không được hỗ trợ bởi phiên bản trình nhập liệu hiện tại. Vui lòng cân nhắc cập nhật."
+msgstr "Tệp WXR này (phiên bản %s) có thể không được hỗ trợ bởi phiên bản trình nhập liệu hiện tại. Vui lòng cân nhắc cập nh��t."
 
 #. translators: %s is the author's display name.
 #: framework/features/demo-install/wp-importer.php:315
@@ -612,7 +612,7 @@ msgstr "Đã có phiên bản mới của trình nhập này. Vui lòng cập nh
 
 #: framework/features/demo-install/wp-importer.php:1489
 msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
-msgstr "Chào bạn! Hãy tải lên tệp WordPress eXtended RSS (WXR) của bạn và chúng tôi sẽ nhập bài vi���t, trang, bình luận, trường tùy chỉnh, chuyên mục và thẻ vào trang web này."
+msgstr "Chào bạn! Hãy tải lên tệp WordPress eXtended RSS (WXR) của bạn và chúng tôi sẽ nhập bài viết, trang, bình luận, trường tùy chỉnh, chuyên mục và thẻ vào trang web này."
 
 #: framework/features/demo-install/wp-importer.php:1490
 msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
@@ -707,7 +707,7 @@ msgstr "Hiển thị ảnh %s"
 
 #: static/js/editor/blocks/dynamic-data/Preview.js:57
 msgid "Field not found"
-msgstr "Kh��ng tìm thấy trường"
+msgstr "Không tìm thấy trường"
 
 #: static/js/editor/blocks/dynamic-data/components/AlignmentControls.js:126
 msgid "Change content position"
@@ -5197,7 +5197,7 @@ msgstr "Bản sao bài viết đã được tạo."
 
 #: framework/premium/features/local-gravatars.php:36
 msgid "Store Gravatars Locally"
-msgstr "Lưu trữ Gravatars c���c bộ"
+msgstr "Lưu trữ Gravatars cục bộ"
 
 #: framework/premium/features/local-gravatars.php:41
 msgid "Store and load Gravatars locally for increased privacy and performance."
