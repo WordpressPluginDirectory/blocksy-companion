@@ -15,7 +15,7 @@ if ($view_type === 'cover') {
 		return;
 	}
 
-	blocksy_render_view_e(
+	blocksy_companion_render_view_e(
 		dirname(__FILE__) . '/cover-field.php',
 		[
 			'attributes' => $attributes,
@@ -85,7 +85,6 @@ if (
 
 $wrapper_attr = [
 	'class' => 'ct-dynamic-media',
-	'aria-label' => wp_strip_all_tags($aria_label),
 ];
 
 $link_attr = [];
@@ -158,7 +157,8 @@ if (
 	)
 ) {
 	$link_attr = [
-		'href' => $url
+		'href' => $url,
+		'aria-label' => wp_strip_all_tags($aria_label),
 	];
 
 	if ($has_field_link_new_tab !== 'no') {

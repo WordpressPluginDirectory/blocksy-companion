@@ -178,11 +178,11 @@ msgstr "Детальну інформацію про те, як згенерув
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:352
 msgid "More information on how to generate an API key for Kit (ConvertKit) can be found %shere%s."
-msgstr "Детальну інформацію про те, як згенерувати API-ключ ConvertKit, можна знайти %sтут%s."
+msgstr "��етальну інформацію про те, як згенерувати API-ключ ConvertKit, можна знайти %sтут%s."
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:149
 msgid "White Label Extension"
-msgstr "Роз��ирення White Label"
+msgstr "Розширення White Label"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:161
 msgid "Please note that disabling this option will hide the white-label extension. To restore it, press the SHIFT key while clicking the dashboard logo."
@@ -481,7 +481,7 @@ msgstr "Цей WXR-файл (версія %s) може не підтримува
 #. translators: %s is the author's display name.
 #: framework/features/demo-install/wp-importer.php:315
 msgid "Failed to import author %s. Their posts will be attributed to the current user."
-msgstr "Не вдалося імпортувати автора %s. Його публікації будуть приписані до вашого профілю."
+msgstr "��е вдалося імпортувати автора %s. Його публікації будуть приписані до вашого профілю."
 
 #: framework/features/demo-install/wp-importer.php:349
 msgid "Assign Authors"
@@ -494,7 +494,7 @@ msgstr "Щоб спростити редагування та збереженн
 #. translators: %s is the default user role.
 #: framework/features/demo-install/wp-importer.php:355
 msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
-msgstr "Якщо в WordPress буде створено нового корис��увача, новий пароль буде згенеровано випадковим чином, а роль нового користувача буде встановлено як %s. Потрібно буде вручну змінити дані нового користувача."
+msgstr "Якщо в WordPress буде створено нового користувача, новий пароль буде згенеровано випадковим чином, а роль нового користувача буде встановлено як %s. Потрібно буде вручну змінити дані нового користувача."
 
 #: framework/features/demo-install/wp-importer.php:371
 msgid "Import Attachments"
@@ -610,7 +610,7 @@ msgstr "Імпорт WordPress"
 #. translators: %s is the new version number.
 #: framework/features/demo-install/wp-importer.php:1468
 msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
-msgstr "Доступна нова версія цього імпортера. Оновіть його до версії %s, щоб заб��зпечити сумісність з новими файлами експорту."
+msgstr "Доступна нова версія цього імпортера. Оновіть його до версії %s, щоб забезпечити сумісність з ��овими файлами експорту."
 
 #: framework/features/demo-install/wp-importer.php:1489
 msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
@@ -2519,7 +2519,7 @@ msgstr "Спадкувати з налаштувальника"
 #: static/js/editor/blocks/query/edit/PostsPlaceholder.js:69
 #: static/js/editor/blocks/tax-query/edit/TermsPlaceholder.js:57
 msgid "Choose Pattern"
-msgstr "Оберіть пате��н"
+msgstr "Оберіть патерн"
 
 #: static/js/editor/blocks/query/edit/TaxonomyControls.js:167
 msgid "Search for a term"
@@ -2859,7 +2859,7 @@ msgstr "Записи - макет 2"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-3.php:4
 msgid "Posts - Layout 3"
-msgstr "Записи - макет 3"
+msgstr "��аписи - макет 3"
 
 #: framework/features/blocks/query/block-patterns/posts-layout-4.php:4
 msgid "Posts - Layout 4"
@@ -2965,7 +2965,7 @@ msgstr "Початковий стан панелі"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:240
 msgid "Closed"
-msgstr "Зачинено"
+msgstr "Зачине��о"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:241
 msgid "Opened"
@@ -3451,7 +3451,7 @@ msgstr "Безкоштовний"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:119
 msgid "Compare Plans"
-msgstr "Порівняння тари��ів"
+msgstr "Порівняння тарифів"
 
 #: static/js/dashboard/helpers/useUpsellModal.js:17
 #: static/js/dashboard/screens/DemoInstall/SingleDemo.js:107
@@ -3751,7 +3751,7 @@ msgstr "Отримання..."
 
 #: framework/premium/extensions/adobe-typekit/dashboard-static/js/AdobeTypekit.js:164
 msgid "Please enter a valid Project ID to get all fonts."
-msgstr "Введіть дійсний ID проекту, щоб отримати всі шрифти."
+msgstr "Вве��іть дійсний ID проекту, щоб отримати всі шрифти."
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:302
 msgid "This provider is used only for testing purposes. It doesnt register any real subscribers."
@@ -8051,7 +8051,7 @@ msgstr "Ви можете налаштувати соціальні URL-адре
 #: framework/features/blocks/socials/options.php:62,
 #: framework/premium/features/premium-header/items/contacts/options.php:405
 msgid "Open links in new tab"
-msgstr "Відкривати посила��ня в новій вкладці"
+msgstr "Відкривати посилання в новій вкладці"
 
 #: framework/features/blocks/about-me/options.php:175,
 #: framework/features/blocks/contact-info/options.php:527,
@@ -8690,7 +8690,7 @@ msgstr "Горизонтальний інтервал"
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:115,
 #: framework/premium/features/premium-header/items/language-switcher/options/dropdown.php:55
 msgid "Items Vertical Spacing"
-msgstr "Вертикальний інт��рвал"
+msgstr "Вертикальний інтервал"
 
 #: framework/premium/extensions/post-types-extra/features/filtering/customizer.php:127
 msgid "Container Bottom Spacing"
