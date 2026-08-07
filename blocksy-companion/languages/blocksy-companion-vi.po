@@ -29,7 +29,7 @@ msgstr "Mỗi 12 giờ"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/feature.php:417
 msgid "<p><strong>🔥 Hurry up! Your selected items are reserved for {time} minutes.</strong></p>"
-msgstr "<p><strong>🔥 Nhanh tay lên! Các món bạn chọn đang được giữ chỗ trong {time} phút.</strong></p>"
+msgstr "<p><strong>🔥 Nhanh tay lên! Các món bạn chọn đang đư��c giữ chỗ trong {time} phút.</strong></p>"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:28
 msgid "Countdown Duration"
@@ -140,7 +140,7 @@ msgstr "Còn hàng"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:217
 msgid "Subscribers"
-msgstr "Người đăng ký"
+msgstr "Ngư���i đăng ký"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-table.php:224
 msgid "Pending entries"
@@ -386,7 +386,7 @@ msgstr "Vui lòng nhập ít nhất {0} ký tự."
 
 #: framework/theme-integration.php:101
 msgid "Please enter a value between {0} and {1} characters long."
-msgstr "Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký t��."
+msgstr "Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký tự."
 
 #: framework/theme-integration.php:102
 msgid "Please enter a value between {0} and {1}."
@@ -492,7 +492,7 @@ msgstr "Để việc chỉnh sửa và lưu nội dung đã nhập dễ dàng h�
 #. translators: %s is the default user role.
 #: framework/features/demo-install/wp-importer.php:355
 msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
-msgstr "Nếu người dùng mới được tạo bởi WordPress, một mật khẩu mới sẽ được tạo ngẫu nhiên và vai trò của người dùng mới sẽ được đặt là %s. Bạn sẽ cần thay đổi chi tiết của người dùng mới theo cách thủ công."
+msgstr "Nếu người dùng mới được tạo bởi WordPress, một mật khẩu mới s�� được tạo ngẫu nhiên và vai trò của người dùng mới sẽ được đặt là %s. Bạn sẽ cần thay đổi chi tiết của người dùng mới theo cách thủ công."
 
 #: framework/features/demo-install/wp-importer.php:371
 msgid "Import Attachments"
@@ -612,7 +612,7 @@ msgstr "Đã có phiên bản mới của trình nhập này. Vui lòng cập nh
 
 #: framework/features/demo-install/wp-importer.php:1489
 msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
-msgstr "Chào bạn! Hãy tải lên tệp WordPress eXtended RSS (WXR) của bạn và chúng tôi s��� nhập bài viết, trang, bình luận, trường tùy chỉnh, chuyên mục và thẻ vào trang web này."
+msgstr "Chào bạn! Hãy tải lên tệp WordPress eXtended RSS (WXR) của bạn và chúng tôi sẽ nhập bài viết, trang, bình luận, trường tùy chỉnh, chuyên mục và thẻ vào trang web này."
 
 #: framework/features/demo-install/wp-importer.php:1490
 msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
@@ -644,7 +644,7 @@ msgstr "Mẫu tùy chỉnh"
 
 #: framework/premium/features/content-blocks/options/hook.php:341
 msgid "Custom Class"
-msgstr "L��p tùy chỉnh"
+msgstr "Lớp tùy chỉnh"
 
 #: framework/premium/features/content-blocks/options/hook.php:349
 msgid "Custom Attribute"
@@ -1261,7 +1261,7 @@ msgstr "Xem thêm thông tin về cách tạo danh sách trong FluentCRM %stại
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:123
 msgid "Modern Font Stack"
-msgstr "Bộ phông chữ hi��n đại"
+msgstr "Bộ phông chữ hiện đại"
 
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:142
 #: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:330
@@ -4076,7 +4076,7 @@ msgstr "Thanh vận chuyển miễn phí"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:212
 msgid "Show if cart is empty"
-msgstr "Hiển thị nếu giỏ hàng trống"
+msgstr "Hiển thị nếu giỏ h��ng trống"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:445,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:180

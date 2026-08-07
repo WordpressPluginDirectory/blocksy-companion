@@ -453,7 +453,7 @@ msgstr "Il semble que ce ne soit pas un fichier WXR, le numéro de version WXR e
 #: framework/features/demo-install/wp-importer.php:250,
 #: framework/features/demo-install/wp-importer.php:271
 msgid "Sorry, there has been an error."
-msgstr "Désolé, il y a eu une erreur."
+msgstr "D��solé, il y a eu une erreur."
 
 #: framework/features/demo-install/wp-importer.php:234
 msgid "All done."
