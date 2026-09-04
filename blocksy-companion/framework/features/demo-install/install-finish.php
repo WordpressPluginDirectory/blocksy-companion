@@ -96,9 +96,28 @@ class DemoInstallFinalActions {
 		$this->cleanup_duplicate_menu_items();
 
 		do_action('customize_save_after');
+		/**
+		 * Fires when the dynamic CSS caches should be invalidated.
+		 *
+		 * Listeners drop their generated CSS files/transients so the
+		 * next request regenerates them.
+		 *
+		 * @since 1.6.2
+		 * @since 1.8.0 Renamed from `blocksy:dynamic-css:regenere_css_files`.
+		 */
 		do_action('blocksy:dynamic-css:refresh-caches');
+		/**
+		 * Fires when all the caches managed by Blocksy need to be purged.
+		 *
+		 * @since 2.0.27
+		 */
 		do_action('blocksy:cache-manager:purge-all');
 
+		/**
+		 * Fires after a starter site import has finished and all the caches were refreshed.
+		 *
+		 * @since 2.0.84
+		 */
 		do_action('blocksy:demo-install:finish');
 
 		if ($this->is_ajax_request) {
@@ -168,13 +187,22 @@ class DemoInstallFinalActions {
 
 		global $wpdb;
 
-		// @codingStandardsIgnoreStart cannot use `$wpdb->prepare` because it remove's the backslashes
+		// `_elementor_data` is stored as JSON, so the slashes inside the URLs
+		// are escaped -- the needle and the replacement have to be escaped the
+		// same way in order to match.
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 		$wpdb->query(
-			"UPDATE {$wpdb->postmeta} " .
-			"SET `meta_value` = REPLACE(`meta_value`, '" . str_replace( '/', '\\\/', $from ) . "', '" . str_replace( '/', '\\\/', $to ) . "') " .
-			"WHERE `meta_key` = '_elementor_data' AND `meta_value` LIKE '[%' ;"
-		); // meta_value LIKE '[%' are json formatted
-		// @codingStandardsIgnoreEnd
+			$wpdb->prepare(
+				"UPDATE {$wpdb->postmeta}
+				SET meta_value = REPLACE(meta_value, %s, %s)
+				WHERE meta_key = %s
+				AND meta_value LIKE %s",
+				str_replace('/', '\\/', $from),
+				str_replace('/', '\\/', $to),
+				'_elementor_data',
+				'[%'
+			)
+		);
 
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 		$option_keys = $wpdb->get_results(
@@ -197,8 +225,6 @@ class DemoInstallFinalActions {
 		$from_menu_link = $demo_content['url'];
 		$to_menu_link = trailingslashit(get_site_url());
 
-		$escaped_from = esc_sql($from_menu_link);
-		$escaped_to = esc_sql($to_menu_link);
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 		$wpdb->query(
 			$wpdb->prepare(

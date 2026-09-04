@@ -10,9 +10,9 @@ function blocksy_companion_ext_newsletter_subscribe_form() {
 	}
 
 	if (
-		blocksy_default_akg(
+		blocksy_companion_akg(
 			'disable_subscribe_form',
-			blocksy_get_post_options(),
+			blocksy_companion_theme_functions()->blocksy_get_post_options(),
 			'no'
 		) === 'yes'
 	) {
@@ -112,16 +112,11 @@ function blocksy_companion_ext_newsletter_subscribe_output_form($args = []) {
 
 	$form_url = $provider_data['form_url'];
 	$has_gdpr_fields = $provider_data['has_gdpr_fields'];
-	$has_double_optin = isset($provider_data['double_optin']) ? $provider_data['double_optin'] : false;
 
 	$additional_output = '';
 
 	if ($has_gdpr_fields) {
 		$additional_output = 'data-skip-submit';
-	}
-
-	if ($has_double_optin) {
-		$additional_output .= ' data-double-optin';
 	}
 
 	$fields_number = '2';
@@ -145,7 +140,7 @@ function blocksy_companion_ext_newsletter_subscribe_output_form($args = []) {
 
 	?>
 
-	<div <?php blocksy_attr_to_html_e($html_args) ?>>
+	<div <?php blocksy_companion_attr_to_html_e($html_args) ?>>
 		<?php if ($args['has_title']) { ?>
 			<h3><?php echo esc_html($args['title']) ?></h3>
 		<?php } ?>
@@ -163,7 +158,7 @@ function blocksy_companion_ext_newsletter_subscribe_output_form($args = []) {
 
 			<div
 				<?php
-					blocksy_attr_to_html_e(
+					blocksy_companion_attr_to_html_e(
 						array_merge(
 							[
 								'class' => trim(

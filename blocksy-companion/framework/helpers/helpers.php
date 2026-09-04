@@ -5,6 +5,57 @@ if (! defined('ABSPATH')) {
 }
 
 /**
+ * Recursively find a key's value in array
+ *
+ * Companion-owned copy of the theme's blocksy_companion_akg(), so companion code never
+ * depends on the theme being present or on a specific theme version. Keep it
+ * in sync with inc/helpers/options.php in the theme.
+ *
+ * @param string       $keys 'a/b/c' path.
+ * @param array|object $array_or_object array to extract from.
+ * @param null|mixed   $default_value defualt value.
+ *
+ * @return null|mixed
+ */
+function blocksy_companion_akg($keys, $array_or_object, $default_value = null) {
+	if (! is_array($keys)) {
+		$keys = explode('/', (string) $keys);
+	}
+
+	$key_or_property = array_shift($keys);
+
+	if (is_null($key_or_property)) {
+		return $default_value;
+	}
+
+	$is_object = is_object($array_or_object);
+
+	if ($is_object) {
+		if (! property_exists($array_or_object, $key_or_property)) {
+			return $default_value;
+		}
+	} else {
+		if (! is_array($array_or_object) || ! array_key_exists($key_or_property, $array_or_object)) {
+			return $default_value;
+		}
+	}
+
+	if (isset($keys[0])) { // not used count() for performance reasons.
+		if ($is_object) {
+			return blocksy_companion_akg($keys, $array_or_object->{$key_or_property}, $default_value);
+		} else {
+			return blocksy_companion_akg($keys, $array_or_object[$key_or_property], $default_value);
+		}
+	} else {
+		if ($is_object) {
+			return $array_or_object->{$key_or_property};
+		} else {
+			return $array_or_object[ $key_or_property ];
+		}
+	}
+}
+
+/**
  * Post name.
  */
 function blocksy_companion_post_name() {
@@ -243,8 +294,9 @@ if (! function_exists('blocksy_companion_load_xml_file')) {
 		if (ini_get('allow_url_fopen') && ini_get('allow_url_fopen') !== 'Off') {
 			$context_options = [
 				"ssl" => [
-					"verify_peer" => false,
-					"verify_peer_name" => false,
+					"verify_peer" => true,
+					"verify_peer_name" => true,
+					'cafile' => ABSPATH . WPINC . '/certificates/ca-bundle.crt',
 				]
 			];
 
@@ -271,9 +323,11 @@ if (! function_exists('blocksy_companion_load_xml_file')) {
 			// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 			// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt
-			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
+			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
 			// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt
-			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
+			// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt
+			curl_setopt($curl, CURLOPT_CAINFO, ABSPATH . WPINC . '/certificates/ca-bundle.crt');
 
 			// phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_exec
 			$result = curl_exec($curl);
@@ -644,7 +698,7 @@ function blocksy_companion_get_options($path, $pass_inside = [], $relative = tru
 	 * @param string $path        Absolute path to the loaded options file.
 	 * @param array  $pass_inside Variables passed into the file scope.
 	 */
-	return apply_filters('blocksy:options:retrieve', blocksy_akg(
+	return apply_filters('blocksy:options:retrieve', blocksy_companion_akg(
 		'options',
 		blocksy_companion_get_variables_from_file(
 			$path,
@@ -655,33 +709,25 @@ function blocksy_companion_get_options($path, $pass_inside = [], $relative = tru
 }
 
 function blocksy_companion_get_json_translation_files($domain) {
-	$cached_mofiles = [];
+	$locale = determine_locale();
 
 	$locations = [
 		WP_LANG_DIR . '/themes',
 		WP_LANG_DIR . '/plugins'
 	];
 
-	foreach ($locations as $location) {
-		$mofiles = glob($location . '/*.json');
-
-		if (! $mofiles) {
-			continue;
-		}
-
-		$cached_mofiles = array_merge($cached_mofiles, $mofiles);
-	}
-
-	$locale = determine_locale();
-
 	$result = [];
 
-	foreach ($cached_mofiles as $single_file) {
-		if (strpos($single_file, $locale) === false) {
+	foreach ($locations as $location) {
+		$files = glob(
+			$location . '/' . $domain . '-' . $locale . '-*.json'
+		);
+
+		if (! $files) {
 			continue;
 		}
 
-		$result[] = $single_file;
+		$result = array_merge($result, $files);
 	}
 
 	return $result;

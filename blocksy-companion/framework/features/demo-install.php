@@ -91,6 +91,13 @@ class DemoInstall {
 		add_filter(
 			'blocksy_dashboard_localizations',
 			function ($d) {
+				/**
+				 * Filters whether the starter sites installer is available in the dashboard.
+				 *
+				 * @since 1.7.4
+				 *
+				 * @param string $enabled Either 'yes' or 'no'. Default 'yes'.
+				 */
 				$d['has_demo_install'] = apply_filters(
 					'blocksy_ext_demo_install_enabled',
 					'yes'
@@ -155,6 +162,10 @@ class DemoInstall {
 	}
 
 	public function demo_get_content_preliminary_data() {
+		if (! current_user_can('edit_theme_options')) {
+			wp_send_json_error();
+		}
+
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$raw_demo_name = isset($_REQUEST['demo_name']) ? sanitize_text_field(wp_unslash($_REQUEST['demo_name'])) : '';
 

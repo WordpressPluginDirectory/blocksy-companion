@@ -489,7 +489,7 @@ msgstr "Przypisz autorów"
 
 #: framework/features/demo-install/wp-importer.php:350
 msgid "To make it simpler for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site, such as your primary administrator account."
-msgstr "Aby ułatwić sobie edycję i zapisywanie zaimportowanych treści, warto przypisać autora zaimportowanego elementu do istniejącego użytkownika tej witryny, na przykład do głównego konta administratora."
+msgstr "Aby ułatwi�� sobie edycję i zapisywanie zaimportowanych treści, warto przypisać autora zaimportowanego elementu do istniejącego użytkownika tej witryny, na przykład do głównego konta administratora."
 
 #. translators: %s is the default user role.
 #: framework/features/demo-install/wp-importer.php:355
@@ -1649,7 +1649,7 @@ msgstr "Cześć %s!"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-back-in-stock.php:35,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-back-in-stock.php:20
 msgid "Great news! The %s from your waitlist is now back in stock!"
-msgstr "Dobra wiadomo��ć! Produkt %s z Twojej listy oczekujących jest już dostępny!"
+msgstr "Dobra wiadomość! Produkt %s z Twojej listy oczekujących jest już dostępny!"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-back-in-stock.php:46,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-back-in-stock.php:25
@@ -4409,7 +4409,7 @@ msgstr "Porównaj pola tabeli"
 #: framework/features/blocks/dynamic-data/options.php:19,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:239
 msgid "Length"
-msgstr "D��ugość"
+msgstr "Długość"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:143,
 #: framework/premium/extensions/woocommerce-extra/features/compare/options.php:263
@@ -5446,7 +5446,7 @@ msgstr "Skrzynka udostępniania produktu"
 
 #: framework/helpers/exts-configs.php:347
 msgid "Enable social sharing abilities for products available on the site, letting even more users discover your great shop selection."
-msgstr "Włącz funkcje udostępniania w serwisach społecznościowych produktów dostępnych w witrynie, dzięki czemu jeszcze więcej użytkowników będzie mogło zapoznać się z ofert�� Twojego sklepu."
+msgstr "Włącz funkcje udostępniania w serwisach społecznościowych produktów dostępnych w witrynie, dzięki czemu jeszcze więcej użytkowników będzie mogło zapoznać się z ofertą Twojego sklepu."
 
 #: framework/helpers/exts-configs.php:338
 msgid "Advanced Gallery"
