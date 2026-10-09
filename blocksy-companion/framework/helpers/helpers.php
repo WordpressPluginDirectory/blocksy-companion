@@ -534,12 +534,16 @@ function blocksy_companion_get_jed_locale_data($domain) {
  * PARITY: mirrored by the theme's blocksy_handle_contained_fatal() (inc/helpers.php)
  * — keep both in sync.
  *
- * @param \Throwable $e       The contained error (carries the backtrace).
- * @param string     $context The file being loaded when it threw.
+ * @param \Throwable $e           The contained error (carries the backtrace).
+ * @param string     $context     The file being loaded when it threw.
+ * @param array|null $containment State from the theme's blocksy_start_fatal_containment(),
+ *                                taken before the file was loaded.
  *
  * @return void
  */
-function blocksy_companion_handle_contained_fatal(\Throwable $e, $context = '') {
+function blocksy_companion_handle_contained_fatal(\Throwable $e, $context = '', $containment = []) {
+	blocksy_companion_theme_functions()->blocksy_restore_fatal_containment($containment);
+
 	blocksy_companion_debug_log(
 		sprintf(
 			'[Blocksy Companion] Contained fatal while loading %s: %s in %s:%d',
@@ -597,11 +601,13 @@ function blocksy_companion_render_view($file_path, $view_variables = [], $defaul
 
 	ob_start();
 
+	$blocksy_fatal_containment = blocksy_companion_theme_functions()->blocksy_start_fatal_containment();
+
 	try {
 		require $file_path;
 	} catch (\Throwable $e) {
 		ob_end_clean();
-		blocksy_companion_handle_contained_fatal($e, $file_path);
+		blocksy_companion_handle_contained_fatal($e, $file_path, $blocksy_fatal_containment);
 		return $default_value;
 	}
 
@@ -647,10 +653,12 @@ function blocksy_companion_get_variables_from_file(
 	unset($_set_variables);
 
 	if (is_file($file_path)) {
+		$blocksy_fatal_containment = blocksy_companion_theme_functions()->blocksy_start_fatal_containment();
+
 		try {
 			require $file_path;
 		} catch (\Throwable $e) {
-			blocksy_companion_handle_contained_fatal($e, $file_path);
+			blocksy_companion_handle_contained_fatal($e, $file_path, $blocksy_fatal_containment);
 		}
 	}
 
@@ -794,6 +802,31 @@ function blocksy_companion_parse_attributes_string($input) {
 		if (! array_key_exists($key, $result)) {
 			$result[$key] = '';
 		}
+	}
+
+	return $result;
+}
+
+function blocksy_companion_sanitize_html_for_display($html) {
+	$result = blocksy_companion_theme_functions()->blocksy_sanitize_html_for_display([
+		'html' => $html,
+	]);
+
+	if ($result === \Blocksy\ThemeFunctions::$NON_EXISTING_FUNCTION) {
+		return wp_kses_post($html);
+	}
+
+	return $result;
+}
+
+function blocksy_companion_get_viewable_post_types($post_types) {
+	$result = array_values(array_filter(
+		array_map('trim', explode(',', $post_types)),
+		'is_post_type_viewable'
+	));
+
+	if (empty($result)) {
+		return ['post'];
 	}
 
 	return $result;

@@ -347,7 +347,13 @@ class TaxQuery {
 							'include' => [$term_obj->term_id]
 						]);
 
-						$term_obj->count = $all_terms[0]->count;
+						if (
+							! is_wp_error($all_terms)
+							&&
+							! empty($all_terms[0])
+						) {
+							$term_obj->count = $all_terms[0]->count;
+						}
 
 						$block_instance = $block->parsed_block;
 
@@ -488,7 +494,7 @@ class TaxQuery {
 						);
 					}
 
-					$result = blocksy_safe_sprintf(
+					$result = blocksy_companion_safe_sprintf(
 						'<div %1$s>%2$s</div>',
 						$wrapper_attributes,
 						$content
@@ -869,7 +875,7 @@ class TaxQuery {
 				];
 			}
 
-			$term_atts = blocksy_get_taxonomy_options($term->term_id);
+			$term_atts = blocksy_companion_theme_functions()->blocksy_get_taxonomy_options($term->term_id);
 
 			$maybe_image_id = isset($term->term_id) ? get_term_meta($term->term_id, 'thumbnail_id', true) : '';
 

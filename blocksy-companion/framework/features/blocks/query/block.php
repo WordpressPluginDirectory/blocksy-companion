@@ -458,6 +458,7 @@ class Query {
 							$link_attributes = [
 								'href' => get_permalink(),
 								'class' => 'ct-link-overlay',
+								'aria-label' => wp_strip_all_tags(get_the_title()),
 							];
 
 							$link_html = blocksy_companion_html_tag(
@@ -566,7 +567,7 @@ class Query {
 
 					$this->current_wp_query = null;
 
-					$result = blocksy_safe_sprintf(
+					$result = blocksy_companion_safe_sprintf(
 						'<div %1$s>%2$s</div>',
 						$wrapper_attributes,
 						$content
@@ -855,7 +856,7 @@ class Query {
 
 		$query_args = [
 			'order' => $attributes['order'],
-			'post_type' => explode(',', $attributes['post_type']),
+			'post_type' => blocksy_companion_get_viewable_post_types($attributes['post_type']),
 			'orderby' => $attributes['orderby'],
 			'posts_per_page' => $attributes['limit'],
 			'post_status' => 'publish'

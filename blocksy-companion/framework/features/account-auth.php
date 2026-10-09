@@ -60,7 +60,24 @@ class AccountAuth {
 		});
 	}
 
+	// Avoids "Undefined variable" PHP warnings for $error/$user_login,
+	// which wp-login.php's inline code expects to already be set.
+	private function require_wp_login() {
+		ob_start();
+
+		$error = '';
+		$user_login = '';
+
+		require_once ABSPATH . 'wp-login.php';
+
+		return ob_get_clean();
+	}
+
 	public function implement_user_lostpassword() {
+		if (is_user_logged_in()) {
+			wp_send_json_error([]);
+		}
+
 		/**
 		 * Fires before the account modal handles a lost password request.
 		 *
@@ -68,27 +85,10 @@ class AccountAuth {
 		 */
 		do_action('blocksy:account:user-flow:before-lostpassword');
 
-		ob_start();
-		require_once ABSPATH . 'wp-login.php';
-		$res = ob_get_clean();
+		$this->require_wp_login();
 
 		$errors = [];
 		$success = false;
-
-		$nonce_value = '';
-
-		if (
-			isset($_POST['blocksy-lostpassword-nonce'])
-			&&
-			is_string($_POST['blocksy-lostpassword-nonce'])
-		) {
-			$nonce_value = sanitize_key($_POST['blocksy-lostpassword-nonce']);
-		}
-
-		if (!wp_verify_nonce($nonce_value, 'blocksy-lostpassword')) {
-			wp_send_json_error([]);
-			exit;
-		}
 
 		if (class_exists('WC_Shortcode_My_Account')) {
 			$success = \WC_Shortcode_My_Account::retrieve_password();
@@ -164,6 +164,10 @@ class AccountAuth {
 	}
 
 	public function implement_user_registration() {
+		if (is_user_logged_in()) {
+			wp_send_json_error([]);
+		}
+
 		/**
 		 * Fires before the account modal handles a registration request.
 		 *
@@ -171,12 +175,11 @@ class AccountAuth {
 		 */
 		do_action('blocksy:account:user-flow:before-registration');
 
-		ob_start();
-		require_once ABSPATH . 'wp-login.php';
-		$res = ob_get_clean();
+		$this->require_wp_login();
 
-		$_POST['woocommerce-register-nonce'] = '~';
-		add_filter('dokan_register_nonce_check', '__return_false');
+		// Never disable dokan_register_nonce_check: Dokan then treats the
+		// request as its own vendor form and allows the seller role.
+		$_POST['woocommerce-register-nonce'] = wp_create_nonce('woocommerce-register');
 
 		if (! $this->get_registration_strategy()) {
 			exit;
@@ -185,31 +188,23 @@ class AccountAuth {
 		$user_login = '';
 		$user_email = '';
 		$user_pass = '';
-		$nonce_value = '';
 
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if (isset($_POST['user_login']) && is_string($_POST['user_login'])) {
+			// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$user_login = sanitize_user(wp_unslash($_POST['user_login']));
 		}
 
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if (isset($_POST['user_email']) && is_string($_POST['user_email'])) {
+			// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$user_email = sanitize_email(wp_unslash($_POST['user_email']));
 		}
 
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if (isset($_POST['user_pass']) && is_string($_POST['user_pass'])) {
+			// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$user_pass = sanitize_text_field(wp_unslash($_POST['user_pass']));
-		}
-
-		if (
-			isset($_POST['blocksy-register-nonce'])
-			&&
-			is_string($_POST['blocksy-register-nonce'])
-		) {
-			$nonce_value = sanitize_key($_POST['blocksy-register-nonce']);
-		}
-
-		if (!wp_verify_nonce($nonce_value, 'blocksy-register')) {
-			wp_send_json_error([]);
-			exit;
 		}
 
 		if ($this->get_registration_strategy() === 'woocommerce') {
@@ -222,28 +217,30 @@ class AccountAuth {
 				$user_email
 			);
 
-			$errors = wc_create_new_customer(
-				sanitize_email($user_email),
-				wc_clean($user_login),
-				$user_pass
-			);
+			$errors = $validation_error;
 
-			if (
-				! is_wp_error($errors)
-				&&
-				apply_filters(
-					'woocommerce_registration_auth_new_customer',
-					true,
-					$errors
-				)
-				&&
-				isset($_POST['role'])
-				&&
-				$_POST['role'] === 'seller'
-			) {
-				ob_start();
-				wc_set_customer_auth_cookie($errors);
-				ob_clean();
+			if (! $errors->has_errors()) {
+				$errors = wc_create_new_customer(
+					sanitize_email($user_email),
+					wc_clean($user_login),
+					$user_pass
+				);
+
+				if (
+					! is_wp_error($errors)
+					&&
+					apply_filters(
+						'woocommerce_registration_auth_new_customer',
+						true,
+						$errors
+					)
+					&&
+					in_array('seller', get_userdata($errors)->roles, true)
+				) {
+					ob_start();
+					wc_set_customer_auth_cookie($errors);
+					ob_clean();
+				}
 			}
 		} else {
 			$errors = register_new_user($user_login, $user_email);
@@ -350,9 +347,7 @@ class AccountAuth {
 			3
 		);
 
-		ob_start();
-		require_once ABSPATH . 'wp-login.php';
-		$html = ob_get_clean();
+		$html = $this->require_wp_login();
 
 		wp_send_json_success([
 			'html' => $html,

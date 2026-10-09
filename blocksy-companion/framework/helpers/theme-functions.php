@@ -14,19 +14,26 @@ namespace Blocksy;
 // Right now, these functions must be protected with this proxy:
 //
 // - blocksy_get_theme_mod()
-// - blocksy_manager()
 // - blocksy_get_search_post_type()
 // - blocksy_has_dynamic_css_in_frontend()
 // - blocksy_theme_get_dynamic_styles()
 // - blocksy_woo_has_ajax_add_to_cart()
 // - blocksy_has_product_specific_layer()
 // - blocksy_get_special_post_id()
+// - blocksy_get_product_default_variation()
 // - blocksy_get_taxonomy_options()
 // - blocksy_get_terms()
 // - blocksy_flexy_pills()
 // - blocksy_companion_theme_functions()->blocksy_get_post_options()
 // - blocksy_sanitize_post_meta_options()
+// - blocksy_product_get_gallery_images()
 // - blocksy_get_header_builder()
+// - blocksy_lazy_zone_start()
+// - blocksy_lazy_zone_end()
+// - blocksy_start_fatal_containment()
+// - blocksy_restore_fatal_containment()
+//
+// This list is machine-enforced by scripts/check-theme-guarding.js (npm run guard).
 //
 // If more functions will be called earlier than `after_setup_theme`, they
 // should be added here and should be only called through this proxy object.
@@ -42,6 +49,18 @@ class ThemeFunctions {
 	public function __call($name, $arguments) {
 		if (function_exists($name)) {
 			return call_user_func_array($name, $arguments);
+		}
+
+		$optional_functions = [
+			'blocksy_lazy_zone_start',
+			'blocksy_lazy_zone_end',
+			'blocksy_start_fatal_containment',
+			'blocksy_restore_fatal_containment',
+			'blocksy_sanitize_builder_value',
+		];
+
+		if (in_array($name, $optional_functions, true)) {
+			return self::$NON_EXISTING_FUNCTION;
 		}
 
 		ob_start();

@@ -182,7 +182,7 @@ msgstr "Детальну інформацію про те, як згенерув
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:149
 msgid "White Label Extension"
-msgstr "Ро��ширення White Label"
+msgstr "Розш��рення White Label"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:161
 msgid "Please note that disabling this option will hide the white-label extension. To restore it, press the SHIFT key while clicking the dashboard logo."
@@ -206,7 +206,7 @@ msgstr "Вкладка «Журнал змін»"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:41
 msgid "Extension Documentation Link"
-msgstr "Посилання н�� документацію розширення"
+msgstr "Посилання на документацію розширення"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/AdvancedTab.js:46
 msgid "Extension Video Link"
@@ -466,7 +466,7 @@ msgstr "Насолоджуйтесь!"
 
 #: framework/features/demo-install/wp-importer.php:235
 msgid "Remember to update the passwords and roles of imported users."
-msgstr "Не забудьте оновити паролі та ролі і��портованих користувачів."
+msgstr "Не забудьте оновити паролі та ролі імп��ртованих користувачів."
 
 #. translators: %s is the path to the WXR file.
 #: framework/features/demo-install/wp-importer.php:258
@@ -485,7 +485,7 @@ msgstr "Не вдалося імпортувати автора %s. Його п�
 
 #: framework/features/demo-install/wp-importer.php:349
 msgid "Assign Authors"
-msgstr "Призначити а��торів"
+msgstr "Призначити авт��рів"
 
 #: framework/features/demo-install/wp-importer.php:350
 msgid "To make it simpler for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site, such as your primary administrator account."
@@ -1032,7 +1032,7 @@ msgstr "При натисканні кнопки закриття"
 
 #: framework/premium/features/content-blocks/options/popup.php:313
 msgid "On ESC Button Press"
-msgstr "При натисканні кнопки ESC"
+msgstr "При натисканні кн��пки ESC"
 
 #: framework/premium/features/content-blocks/options/popup.php:325
 msgid "On Backdrop Click"
@@ -1391,7 +1391,7 @@ msgstr "Тільки авторизованим"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:70
 msgid "Display the waitlist feature exclusively to users who are logged in."
-msgstr "Відображення опції списку очікування виключно для користувачів, які увійшли в сист��му."
+msgstr "Відображення опції списку очікування виключно для користувачів, які увійшли в систему."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/customizer-options.php:83
 msgid "Subscription Confirmation"
@@ -1688,7 +1688,7 @@ msgstr "відписатися"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-subscription-confirmed.php:31,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-subscription-confirmed.php:15
 msgid "You have been successfully added to the waitlist for the following item:"
-msgstr "Ви додані до списку очікування цього товару:"
+msgstr "Ви додані до списку очікування ць��го товару:"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-back-in-stock.php:29,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-confirm-subscription.php:17
@@ -1959,7 +1959,7 @@ msgstr "Цей механізм відновить оновлення табли
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:584
 msgid "Product taxonomies lookup table regeneration process has been resumed."
-msgstr "Процес оновлен��я таблиці пошуку таксономій товарів відновлено."
+msgstr "Процес оновлення таблиці пошуку таксономій товарів відновлено."
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/includes/taxonomies-products-lookup-table.php:586
 msgid "Resume"
@@ -1983,7 +1983,7 @@ msgstr "Колір межі контейнера"
 
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:197
 msgid "Container Background Color"
-msgstr "Колір фону контейнера"
+msgstr "Ко��ір фону контейнера"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:188
 msgid "API Version"
@@ -2383,7 +2383,7 @@ msgstr "Динамічні бренди"
 
 #: static/js/editor/blocks/dynamic-data/index.js:89
 msgid "Dynamic SKU"
-msgstr "Дин��мічний артикул"
+msgstr "Динамічний артикул"
 
 #: static/js/editor/blocks/dynamic-data/index.js:93
 msgid "Dynamic Rating"
@@ -2741,7 +2741,7 @@ msgstr "Посилання на запис"
 #: framework/features/blocks/dynamic-data/options.php:209,
 #: framework/features/blocks/dynamic-data/options.php:213
 msgid "Link to author page"
-msgstr "Посилання на сторінку автора"
+msgstr "Посилання на с��орінку автора"
 
 #: framework/features/blocks/dynamic-data/options.php:228
 msgid "Link to term page"
@@ -2842,7 +2842,7 @@ msgstr "Перекриття"
 #. translators: placeholder here means the actual URL.
 #: framework/premium/features/media-video/options.php:140
 msgid "Choose how the video will fill its container. More info about this can be found %1$shere%2$s."
-msgstr "Як відео буде розміщено в контейнері. Детальну інформацію про це можна знайти %1$sтут%2$s."
+msgstr "Як відео буде розміщено в контейнері. Детальну інформацію про ��е можна знайти %1$sтут%2$s."
 
 #. translators: %s is the author's display name.
 #: framework/features/blocks/dynamic-data/views/avatar-field.php:31
@@ -3034,11 +3034,11 @@ msgstr "Цільова кількість"
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:90
 msgid "Amount of items the client has to buy in order to get free shipping."
-msgstr "Кількість товарів, які клієнт повинен придбати, щоб отримати безкоштовну доставку."
+msgstr "Кількість това��ів, які клієнт повинен придбати, щоб отримати безкоштовну доставку."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:172
 msgid "You can use dynamic code tags such as {items} inside this option."
-msgstr "Можна використовувати теги динам��чного коду, такі як {items}, всередині цього параметра."
+msgstr "Можна використовувати теги динамічного коду, такі як {items}, всередині цього параметра."
 
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:199,
 #: framework/premium/extensions/woocommerce-extra/features/stock-scarcity/options.php:62
@@ -3112,7 +3112,7 @@ msgstr "Нестача запасів"
 
 #: framework/helpers/exts-configs.php:370
 msgid "Show the remaining stock of a product to create a sense of urgency and encourage your visitors to make a purchase."
-msgstr "Відображення залишків товару, щоб створити відчуття терміновості та спонукати відвідувачів до покупки."
+msgstr "Відображення залишків товару, щоб створити відчуття терміновості та спону��ати відвідувачів до покупки."
 
 #. translators: %s is the product name (theme or plugin)
 #: framework/views/theme-mismatch.php:36
@@ -6583,7 +6583,7 @@ msgstr "Умови відображення прозорого заголовк�
 
 #: static/js/options/DisplayCondition.js:23
 msgid "Add one or more conditions to display the transparent header."
-msgstr "Додайте одну або декілька умов для відображення прозорого заголовка."
+msgstr "Додайте одну або декілька умов для відо��раження прозорого заголовка."
 
 #: static/js/dashboard/screens/DemoInstall.js:166
 msgid "Loading Starter Sites..."
@@ -6700,7 +6700,7 @@ msgstr "скидання параметрів налаштовувача"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:74
 msgid "resetting widgets"
-msgstr "скидання в��джетів"
+msgstr "скидання віджетів"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:89
 msgid "users"
@@ -7683,7 +7683,7 @@ msgstr "Оформлення перед відгуком"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:889
 msgid "Checkout order review"
-msgstr "Перег��яд оформлюваного замовлення"
+msgstr "Перегляд о��ормлюваного замовлення"
 
 #: framework/premium/features/content-blocks/hooks-manager.php:893
 msgid "Review order before cart contents"

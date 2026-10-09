@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-02 10:48:47+0000\n"
+"PO-Revision-Date: 2026-09-28 07:00:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -453,7 +453,7 @@ msgstr "Il semble que ce ne soit pas un fichier WXR, le numéro de version WXR e
 #: framework/features/demo-install/wp-importer.php:250,
 #: framework/features/demo-install/wp-importer.php:271
 msgid "Sorry, there has been an error."
-msgstr "Désolé, il y a eu une erreur."
+msgstr "D��solé, il y a eu une erreur."
 
 #: framework/features/demo-install/wp-importer.php:234
 msgid "All done."
@@ -1211,7 +1211,7 @@ msgstr "4 étoiles"
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/rating.php:120
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/rating-filter/Preview.js:25
 msgid "5 stars"
-msgstr "5 étoiles"
+msgstr "5 ��toiles"
 
 #: framework/premium/extensions/woocommerce-extra/features/filters/filter-types/status.php:147
 msgid "On sale"
@@ -4087,7 +4087,7 @@ msgstr "Félicitations ! Vous avez bénéficié de la livraison gratuite 🎉"
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/feature.php:422,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:139
 msgid "Add {price} more to get free shipping!"
-msgstr "Ajoutez {prix} de plus pour bénéficier de la livraison gratuite !"
+msgstr "Ajoutez {price} de plus pour bénéficier de la livraison gratuite !"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-reserved-timer/options.php:15,
 #: framework/premium/extensions/woocommerce-extra/features/shipping-progress/options.php:15
@@ -10791,7 +10791,7 @@ msgstr "Bouton « Lire la suite »"
 
 #: framework/extensions/product-reviews/extension.php:409
 msgid "Buy Now Button"
-msgstr "Bouton « Acheter maintenant »"
+msgstr "Bouton «��Acheter maintenant »"
 
 #: framework/extensions/product-reviews/extension.php:257,
 #: framework/extensions/product-reviews/extension.php:428

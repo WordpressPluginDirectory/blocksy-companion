@@ -344,7 +344,7 @@ msgstr "Это поле является обязательным"
 
 #: framework/theme-integration.php:90
 msgid "Please fix this field."
-msgstr "Испр��вьте содержимое этого поля."
+msgstr "И��правьте содержимое этого поля."
 
 #: framework/theme-integration.php:91
 msgid "Please enter a valid email address."
@@ -380,7 +380,7 @@ msgstr "Введите то же значение ещё раз."
 
 #: framework/theme-integration.php:99
 msgid "Please enter no more than {0} characters."
-msgstr "Введите не более {0} символов."
+msgstr "Введите н�� более {0} символов."
 
 #: framework/theme-integration.php:100
 msgid "Please enter at least {0} characters."
@@ -481,7 +481,7 @@ msgstr "Данный WXR-файл (версия %s) может не поддер
 #. translators: %s is the author's display name.
 #: framework/features/demo-install/wp-importer.php:315
 msgid "Failed to import author %s. Their posts will be attributed to the current user."
-msgstr "Не удалось импортировать автора %s. Его публикации будут приписаны к вашему пр��филю."
+msgstr "Не удалось импортировать автора %s. Его публикации будут приписаны к вашему профилю."
 
 #: framework/features/demo-install/wp-importer.php:349
 msgid "Assign Authors"
@@ -494,7 +494,7 @@ msgstr "Чтобы упростить редактирование и сохра
 #. translators: %s is the default user role.
 #: framework/features/demo-install/wp-importer.php:355
 msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
-msgstr "Если в WordPress будет создан новый пользователь, новый пароль будет сгенерирован случайным образом, а роль нового пользователя будет установлена как %s. Потребуется вручную изменить данные нового пользователя."
+msgstr "Если в WordPress будет создан новый пользователь, новый пароль будет сгенерирован случайным образом, а роль нового пользователя бу��ет установлена как %s. Потребуется вручную изменить данные нового пользователя."
 
 #: framework/features/demo-install/wp-importer.php:371
 msgid "Import Attachments"
@@ -557,7 +557,7 @@ msgstr "Не удалось импортировать %1$s %2$s"
 #. translators: %1$s is the post type name, %2$s is the post title.
 #: framework/features/demo-install/wp-importer.php:924
 msgid "Failed to import %1$s &#8220;%2$s&#8221;"
-msgstr "Не уда��ось импортировать %1$s &#8220;%2$s&#8221;"
+msgstr "Не ��далось импортировать %1$s &#8220;%2$s&#8221;"
 
 #: framework/features/demo-install/wp-importer.php:833
 msgid "%1$s &#8220;%1$s&#8221; already exists."
@@ -588,7 +588,7 @@ msgstr "Удалённый сервер не ответил"
 #. message.
 #: framework/features/demo-install/wp-importer.php:1301
 msgid "Remote server returned error response %1$d %2$s"
-msgstr "У��алённый сервер вернул ответ об ошибке %1$d %2$s"
+msgstr "Удалённый сервер вернул ответ об ошибке %1$d %2$s"
 
 #: framework/features/demo-install/wp-importer.php:1322
 msgid "Remote file is incorrect size"
@@ -1431,7 +1431,7 @@ msgstr "Действия"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-dashboard.php:218,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-dashboard.php:320
 msgid "Invalid request"
-msgstr "Недопустимый запрос"
+msgstr "Недопустимы�� запрос"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/waitlist-dashboard.php:111
 msgid "No waitlist found"
@@ -1576,7 +1576,7 @@ msgstr "Предзаказ подтверждён"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/subscription-confirmed.php:11
 msgid "You will be notified when {product_title} is back in stock"
-msgstr "Вы будете уведом��ены, когда {product_title} снова появится на складе."
+msgstr "Вы будете уведомлены, когда {product_title} снова появится на складе."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/waitlist-email.php:56,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/includes/emails/waitlist-email.php:192
@@ -1688,7 +1688,7 @@ msgstr "отписаться"
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/waitlist-subscription-confirmed.php:31,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-subscription-confirmed.php:15
 msgid "You have been successfully added to the waitlist for the following item:"
-msgstr "Вы добавлены в с��исок ожидания следующего товара:"
+msgstr "Вы добавлены в список ожидания следующего товара:"
 
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-back-in-stock.php:29,
 #: framework/premium/extensions/woocommerce-extra/features/product-waitlist/templates/emails/plain/waitlist-confirm-subscription.php:17
@@ -1755,7 +1755,7 @@ msgstr "Длина описания"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:115
 msgid "Cart Button"
-msgstr "Кнопка к��рзины"
+msgstr "Кнопка корзины"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:125
 msgid "Checkout Button"
@@ -1846,7 +1846,7 @@ msgstr "Оформление"
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/views/product-actions.php:44
 msgid "Continue Shopping"
-msgstr "Продолжить по��упки"
+msgstr "Продолжить покупки"
 
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:424
 msgid "More information on how to create a list in MailPoet can be found %shere%s."
@@ -3571,7 +3571,7 @@ msgstr "Формат"
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/status-filter/index.js:103
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:187
 msgid "List"
-msgstr "С��исок"
+msgstr "Список"
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters/tax-filters/Edit.js:220
 msgid "Multiple Selections"
@@ -4541,7 +4541,7 @@ msgstr "Заголовок партнёрской ссылки"
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:57,
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:90
 msgid "Open Button Link In New Tab"
-msgstr "Открывать кнопкой новую вкладку"
+msgstr "Открывать кноп��ой новую вкладку"
 
 #: framework/premium/extensions/woocommerce-extra/features/cart-page/options.php:14
 msgid "Quantity Auto Update"
@@ -5471,7 +5471,7 @@ msgstr "Набор функций, позволяющих легко созда�
 
 #: framework/helpers/exts-configs.php:270
 msgid "Compare View"
-msgstr "Таблица сравнения"
+msgstr "Таблица сравне��ия"
 
 #: framework/helpers/exts-configs.php:239
 msgid "Adds the “add to cart” actions to the product page as a floating bar if the product summary has disappeared from view."
@@ -8350,7 +8350,7 @@ msgstr "Страница списка желаний"
 
 #: framework/premium/extensions/woocommerce-extra/features/wish-list/options.php:46
 msgid "The page you select here will display the wish list for your logged out users."
-msgstr " На странице, которую вы выберете здесь, будет отображаться список желаний для невошедших в систему пользователей."
+msgstr " На странице, которую вы выберете з��есь, будет отображаться список желаний для невошедших в систему пользователей."
 
 #: framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/customizer-options.php:25
 msgid "Archive Page"
